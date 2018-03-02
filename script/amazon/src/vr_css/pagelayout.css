@@ -1,0 +1,384 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-size: 13px !important;
+	width: 100% !important;
+	margin: 0em;
+	padding: 0em;
+	background-repeat: no-repeat;
+	color: #333333;
+	height: 100%;
+}
+
+#scroll {
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+#site {
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: local;
+}
+
+#hilfe.plain-content {
+	min-height: inherit;
+}
+
+#main {
+	border-right: 1px solid;
+	border-right-color: #CCCCCC;
+	border-style: none solid solid;
+	border-width: 0 1px 1px;
+	border-color: #cccccc;
+	margin: 0 auto 30px;
+	position: relative;
+	background-repeat: repeat-x !important;
+	background-color: #FFFFFF;
+	font-size: 13px;
+	width: 950px;
+}
+
+#header {
+	background-repeat: no-repeat;
+	height: 81px;
+	padding: 17px 0 17px 20px;
+}
+
+.bannerHeader {
+	position: absolute;
+	top: 1.25em;
+	left: 31.25em;
+	visibility: visible;
+	width: 29.25em;
+	height: 4.44em;
+	border: 1px solid;
+	line-height: 0px;
+	overflow: hidden;
+	z-index: 2;
+}
+
+#primaernavi, #primaernaviBottom, #primaernaviBottomBottom {
+	border-bottom: 1px solid;
+	height: 2em;
+	padding: 0px;
+}
+
+#primaernaviBottom, #primaernaviBottomBottom {
+	clear: both;
+}
+
+#navBar {
+	width: 15.8em;
+	clear: both;
+	float: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+#sekundaernavi {
+	width: 15.8em;
+	margin: 0em;
+	padding: 2.6em 0em 0em 0em;
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+
+#headline_cntRoot .Beschriftung {
+	margin-right: 5px !important;
+}
+
+#headline_cntRoot .XLabel {
+	margin-right: 20px;
+}
+
+#headline {
+	float: left;
+	width: 625px;
+	padding-top: 10px;
+	margin-left: 0px;
+}
+
+#maincontent {
+	float: left;
+	overflow: visible;
+	font-size: 13px;
+	margin-top: 17px;
+	margin-bottom: 50px;
+	margin-left: 20px;
+	padding: 0em;
+	position: relative;
+	color: #333333;
+	background: none repeat scroll 0 0 transparent;
+}
+
+#hilfe #maincontent {
+	float: none;
+}
+
+.contentDiv {
+	margin-bottom: 50px;
+}
+
+.maincontent_DEFAULT, .maincontent_DEFAULT_NO_CN {
+	width: 600px !important;
+}
+
+.maincontent_DEFAULT_NO_CN_NO_SEK {
+	float: none !important;
+	width: 49.15em;
+}
+
+.maincontent_MASTER_EXCLUSIV {
+	width: 62.5em;
+	height: auto;
+}
+
+.maincontent_MAXIMUM_WIDTH {
+	width: 805px;
+}
+
+.maincontent_100PERCENT {
+	width: 100%;
+}
+
+.maincontent_100PERCENT #medItem {
+	display: block;
+	width: 930px;
+}
+
+#PV #content {
+	position: static !important;
+}
+
+#PV #content #products .productcolwide {
+	width: 96% !important;
+}
+
+#resource-fehlerseite #content {
+	position: static !important;
+}
+
+.contentWerbung {
+	padding-top: 0.7em;
+	clear: both;
+}
+
+#crossnavigation {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+	position: relative;
+	z-index: 10;
+}
+
+.crossnavigation_DEFAULT {
+	width: 17.1em;
+}
+
+#logoutBlock {
+	height: 110px;
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 300px;
+}
+
+.logoutBlock td {
+	border-color: #cccccc;
+}
+
+.logout_DEFAULT_NO_CN_NO_SEK, .logout_DEFAULT_NO_CN, .logout_MASTER_EXCLUSIV, .logout_MAXIMUM_WIDTH, .logout_100PERCENT {
+	border-color: #cccccc;
+}
+
+#logoutBlock #logoutstatus_root {
+	height: 93px;
+}
+
+#logoutBlock #logoutstatus_root table {
+	padding: 6px 1px 0 4px;
+	color: #333333;
+}
+
+#logoutBlock #logoutstatus_root tr {
+	line-height: 15px;
+}
+
+#logoutBlock #logoutstatus_root #cntBenutzerkennung table, #logoutBlock #logoutstatus_root #cntTimeout table {
+	padding: 0px;
+}
+
+#logoutBlock .TextButton {
+	background-size: 100% auto;
+	background-image: none !important;
+	background-color: #ff6600;
+	border: none;
+	font-size: 16px !important;
+	margin: 1px 0 0 !important;
+	position: relative;
+	top: -6px;
+	margin-right: 3px !important;
+	width: 92px;
+	height: 30px;
+	color: #ffffff;
+}
+
+#logoutBlock #lblLetzteAnmeldung, #logoutBlock #lblLetzteAnmeldungStatus, #logoutBlock #cntTimeout, #logoutBlock #cntBenutzerkennung {
+	font-size: 11px;
+}
+
+#logoutBlock #lblAngemeldeterBenutzername {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 18px;
+	color: #333333;
+}
+
+#logoutBlock #lblTimeoutStatus {
+	font-weight: 700;
+	color: #ff6600;
+}
+
+#logoutBlock #lblTimeoutStatus, #logoutBlock #lblBenutzerkennungValue {
+	padding-right: 4px;
+}
+
+#home {
+	display: none;
+}
+
+#home img {
+	vertical-align: middle;
+	margin-right: 0.3em;
+}
+
+#home a {
+	font-weight: bold;
+	vertical-align: middle;
+	color: #616161;
+}
+
+#home #bankname {
+	font-weight: bold;
+	float: left;
+	padding-left: 30em;
+	position: absolute;
+	top: 0.2em;
+	float: left;
+	color: #0066B3;
+	font-size: 1.1em;
+}
+
+#bank {
+	position: relative;
+	height: 2em;
+	margin: 0em 0em 0em 0em;
+}
+
+#logo {
+	height: 2em;
+}
+
+#logo img {
+	vertical-align: middle;
+	padding: 0px;
+	margin: 0px;
+}
+
+#header span#bankname {
+	vertical-align: middle;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-left: 0.7em;
+	color: #0066B3;
+}
+
+#distance {
+	height: 2em;
+}
+
+#exception {
+	font-size: 1em;
+	border: 1px solid;
+	margin: 50px;
+	border-color: #cccccc;
+}
+
+.exception .unitTitle {
+	font-weight: bold;
+}
+
+#webCKampagne {
+	width: 960px;
+	right: 0px;
+	position: relative;
+	z-index: 1;
+	margin: 1px 0px -18px 0px;
+	padding-bottom: 10px;
+}
+
+#wCContentEmbed {
+	width: 960px;
+	width: 980px\9;
+	right: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.seitenanfang a {
+	font-size: 12px;
+	font-weight: 400;
+	position: absolute;
+	right: 6px;
+	bottom: 5px;
+	text-indent: 0;
+	white-space: nowrap;
+	width: auto;
+	background-repeat: no-repeat;
+	padding-left: 19px;
+	color: #5a5a5a !important;
+}
+
+#footernaviInfoMenu {
+	border: 1px solid;
+	width: 948px;
+	height: 27px;
+	font-size: 11px !important;
+	clear: both;
+	margin: 0 auto 34px;
+	border-color: #cccccc;
+	background-color: #ffffff;
+}
+
+#footernaviInfoMenu ul {
+	list-style: none outside none;
+	padding: 7px 0 7px 20px;
+	margin: 0px;
+}
+
+#footernaviInfoMenu ul li:first-child {
+	padding: 0px;
+}
+
+#footernaviInfoMenu ul li {
+	display: inline;
+	padding: 0 0 0 18px;
+}
+
+#footernaviInfoMenu ul li a {
+	text-decoration: none !important;
+	color: #0066b3;
+}
+
+#footernaviInfoMenu ul li a:hover {
+	text-decoration: underline !important;
+}
+
+#contextCommands:empty {
+	display: none;
+}

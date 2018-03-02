@@ -1,0 +1,4673 @@
+/* Version 5.0.4 from 27 July, 2016 */
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Remove default margin.
+ * 2. Remove default padding.
+ * 3. http://stackoverflow.com/questions/7398763/android-browser-remove-outline-border-when-anchor-is-focused
+ */
+
+* { 
+	margin: 0; /* 1 */
+	padding: 0; /* 2 */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* 3 */
+}
+
+/**
+ * 1. Set default font family to sans-serif. http://www.jordanm.co.uk/tinytype
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: Arial, Helvetica, sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #363F51;
+}
+  
+a {
+    color: #069;
+}
+
+*::-moz-selection {
+    background: none repeat scroll 0 0 #cde6f4;
+    text-shadow: none;
+}
+
+/* Headlines */
+
+h1 {
+	color: #133c7f;
+	font-size: 1.6em;
+	font-weight: normal;
+	padding: 15px 0 11px 0;
+	margin-left: -2px;
+	line-height: 110%;
+}
+
+h1 .subline {
+	font-size: 14px;
+	display: block;
+	/*color: #4C566B;*/
+	margin: -5px 0 0 2px;
+}
+
+h2 {
+	color: #133C7F;
+	font-weight: normal;
+	font-size: 1.3em;
+	padding: 12px 0;
+}
+
+
+h3 {
+	font-size: 1em;
+	font-weight: normal;	
+}
+
+acronym, abbr { border: none; font-style: normal; text-transform: none; }
+
+/* Set global margin */
+
+p, ul, table { margin-bottom: 1em; }
+
+/* Positive and negative values */
+
+.credit, .pos {
+	color: #14a109 !important;	
+}
+
+.debit, .neg {
+	color: #e00034 !important;
+}
+
+
+/* ==========================================================================
+   prohibitedNavigation
+   ========================================================================== */
+
+body.prohibitedNavigation #headerContainer #menuOverview,
+body.prohibitedNavigation #footerContainer .menuBar:first-child {
+	display: none !important;
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+#headerContainer {
+	padding: 10px;
+	border-bottom: 1px solid #dbdfe6;
+}
+
+#headerContainer * {
+	margin: 0;
+}
+
+#headerContainer > .inner {
+	background: transparent url(../db_img//spriteLogo.png) right 0 no-repeat;
+	-webkit-background-size: 35px 35px;
+	-moz-background-size: 35px 35px;
+	background-size: 35px 35px;	
+}
+
+#headerContainer .menuBar {
+	margin-right: 35px;
+}
+
+#headerContainer .menuBar li {
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+	width: 60px;
+	height: 35px;
+	background: #edeff2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f6f7f8 0%, #edeff2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f7f8), color-stop(100%,#edeff2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f6f7f8 0%,#edeff2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f6f7f8 0%,#edeff2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f6f7f8 0%,#edeff2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f6f7f8 0%,#edeff2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f8', endColorstr='#edeff2',GradientType=0 ); /* IE6-9 */	
+}
+
+#headerContainer .menuBar li a {
+	font-size: 13px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	height: 27px;
+	padding-top: 8px;
+}
+
+#headerContainer .menuBar li#menuLogout {
+	float: right;
+}
+
+#headerContainer .menuBar li#menuLogout a {
+	color: #fff;
+	background: #e00034; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eb597b 0%, #e00034 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eb597b), color-stop(100%,#e00034)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eb597b 0%,#e00034 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb597b', endColorstr='#e00034',GradientType=0 ); /* IE6-9 */	
+}
+
+#customerNumberContainer {
+	position: absolute;
+	margin-top: 17px;
+	font-size: 13px;
+	display: block;
+	color: #7f899d;
+}
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+   
+#contentContainer {
+	padding: 10px;
+}
+
+
+/* ==========================================================================
+   Advices
+   ========================================================================== */
+
+.advice h3 {
+	color: #133C7F;
+	background: transparent url(../db_img//spriteAdvice_x2.png) 0 1px no-repeat;
+	background-size: 19px 16px;
+	font-size: 1em;
+	padding-left: 24px;
+	padding-bottom: 6px;
+	font-weight: bold;
+}
+
+.advice h3 img {
+	display: none;
+}
+
+.warning {
+	background: #fff8ed;
+	padding: 10px 10px 1px 10px;
+}
+
+.warning h3 {
+	color: #ffa100;
+	background-image: url(../db_img//spriteWarning_x2.png);
+	background-size: 19px 16px;
+}
+
+.warning p {
+	margin-bottom: 8px;
+}
+
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+#contentContainer ul { 
+	border-bottom: 1px solid #dbdfe6;
+}
+
+#contentContainer li { 
+	list-style: none;
+	background: #fff url(../db_img//arrows.png) right -192px no-repeat;
+	background-size: 23px 400px;
+}
+
+#contentContainer li a:link,
+#contentContainer li a:visited { 
+	display: block; 
+	text-decoration: none; 
+	padding: 12px 28px 12px 10px;
+	border-top: 1px solid #dbdfe6;
+	color: #222938;
+}
+	
+#contentContainer li a:hover, 
+#contentContainer li a:focus, 
+#contentContainer li a:active, 
+#contentContainer li.currentView a {
+	color: #069;
+}
+
+#contentContainer li.hasNarration a span {
+	display: block;
+	color: #7f899d;
+}
+
+#contentContainer ul.drawbacks {
+	border: none;
+}
+
+#contentContainer ul.drawbacks li {
+	background-position: -2px -205px;
+	margin-top: .5em;
+	padding: 0 1.25em;
+}
+
+#contentContainer ul.drawbacks li:first-child {
+	margin-top: 0;
+}
+
+
+/* ==========================================================================
+   Tab navigation
+   ========================================================================== */
+   
+.tabContainer { 
+	margin: 10px 18.5% 6px 0px;
+	margin: 1.5em 0 1em 0;
+}
+
+.tabNavigation {
+	text-align: center; 
+	margin: 0 0 -2px 0;
+}
+
+.tabNavigation ul {
+	width: 80%; 
+	overflow: hidden; 
+	text-align: center; 
+	margin: 0 9% 0 11%; 
+	padding: 0;
+	border-bottom: none !important;
+}
+
+.tabNavigation li { 
+	float: left; 
+	display: inline; 
+	background: transparent !important; 
+	margin: 0; 
+	padding: 0 0 20px 0;
+	width: 48%;
+}
+
+.tabNavigation li.active { 
+	background: url("../db_img//spriteTabNavigation.png") center bottom no-repeat !important;
+	background-size: 48px 48px !important; 
+}
+
+.tabNavigation li a, 
+.tabNavigation li .linkButton {
+	display: block;
+	padding: 8px 6px !important;
+	text-decoration: none; 
+	white-space: nowrap;
+	border: none !important;
+	color: #fff !important;
+	background: #bbc2ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbc2ce', endColorstr='#808a9d',GradientType=0 ); /* IE6-9 */	
+}
+
+.tabNavigation li .linkButton {
+	width: 100%;
+}
+
+.tabNavigation li.active a,
+.tabNavigation li.active .linkButton { 
+	color: #363F51 !important;	
+	background: #edeff2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f6f7f8 0%, #edeff2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f7f8), color-stop(100%,#edeff2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f6f7f8 0%,#edeff2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f6f7f8 0%,#edeff2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f6f7f8 0%,#edeff2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f6f7f8 0%,#edeff2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f8', endColorstr='#edeff2',GradientType=0 ); /* IE6-9 */	
+}
+
+.tabContent { 
+	clear: both; 
+	border: 2px solid #dbdfe6; 
+	padding: 6px 10px 4px 6px;
+	padding: 1em 1em 0 1em; 
+	margin: 0; 
+	min-height: 72px;
+}
+
+.tabContent input { 
+	width: 100%; 
+	margin: 0; 
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+/* ==========================================================================
+   Toggles
+   ========================================================================== */
+
+.toggleContainer {
+	border-top: 1px solid #dbdfe6;
+}
+
+.toggleContainer h3.toggleGroupHeader {
+	padding: 7px 5px;
+	background: #e6f2f9;
+	border-bottom: 1px solid #bbc2ce;
+	font-weight: bold;
+}
+
+.toggleContainer h3.toggleGroupHeader:first-child {
+	margin-top: -1px;
+}
+
+#DisplayTransactions .toggleContainer h3.toggleGroupHeader,
+#SearchTransactionsMobile .toggleContainer h3.toggleGroupHeader {
+	background: #f9f9f8;
+	border-top: 1px solid #bbc2ce;
+	margin-top: -1px;
+	font-size: 80%;
+	line-height: normal;
+	padding: 5px 5px 4px 5px;	
+}
+
+.toggleGroup {
+	border-bottom: 1px solid #dbdfe6;
+	padding: 10px 5px;
+}
+
+.toggleContainer ul { 
+	border: none !important;
+	margin: 5px 0 0 0 !important;
+}
+
+.toggleContainer .toggleDetailActions li {
+	background: transparent !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: right !important;
+}
+
+.toggleContainer .toggleDetailActions li a:link,
+.toggleContainer .toggleDetailActions li a:visited { 
+	display: inline-block !important;
+	border: none !important;
+	padding: 5px 30px 5px 0 !important;
+	background: transparent url(../db_img//spriteActions.png) right 0 no-repeat !important;
+	background-size: 24px 342px !important;
+/*	border: 1px solid red !important;*/
+}
+	
+.toggleContainer .toggleDetailActions li a:hover, 
+.toggleContainer .toggleDetailActions li a:focus, 
+.toggleContainer .toggleDetailActions li a:active, 
+.toggleContainer .toggleDetailActions li.currentView a {
+	color: #069 !important;
+}
+
+.toggleContainer .toggleDetailActions li.edit a,
+.toggleContainer .toggleDetailActions li.view a {
+	background-position: right -102px !important;
+}
+
+.toggleContainer .toggleDetailActions li.delete a,
+.toggleContainer .toggleDetailActions li.deleteOrder a {
+	background-position: right -156px !important;
+}
+
+.toggleContainer .toggleDetailActions li.template a {
+	background-position: right -46px !important;
+}
+
+.toggleContainer .toggleDetailActions li.buyOrder a {
+	background-position: right -318px !important;
+}
+
+.toggleContainer .toggleDetailActions li.sellOrder a {
+	background-position: right -264px !important;
+}
+
+.toggleContainer .toggleDetailActions li.directDebitReturn a {
+	background-position: right 6px !important;
+}
+
+.toggleContainer .directDebitReturn {
+	text-align: right;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.toggleContainer .directDebitReturn a {
+	background: transparent url(../db_img//spriteReturn_x2.png) left center no-repeat;
+	color: #363F51;
+	text-decoration: none;
+	padding: 10px 0 10px 20px;
+	background-size: 18px 14px;
+}
+
+.js .toggleTrigger:not(.disabled) {
+	cursor: pointer;
+}
+
+.js .toggleTrigger:not(.disabled) .val {
+	background: transparent url(../db_img//spriteToggle_x2.png) right 0 no-repeat;
+	background-size: 23px 800px;
+	padding-right: 30px;	
+}
+
+.js .toggleTrigger.disabled .val {
+	background-image: none !important;
+}
+
+.js .toggleVisible .toggleTrigger .val {
+	background-position: right -100px;
+}
+
+.prebooked .toggleTrigger .small {
+	margin: 0 0 5px 0;
+	display: block;
+	color: #0098db;
+	font-size: 100%;
+}
+
+.toggleTrigger .key {
+	width: 43%;
+	float: left;
+}
+
+.toggleTrigger .val {
+	width: 47%;
+	float: right;
+	text-align: right !important;
+}
+
+.toggleDetails p {
+	margin: 2px 0 0 0;
+	padding-bottom: 6px;
+}
+
+.debit .toggleDetails span,
+.credit .toggleDetails span,
+.toggleTrigger .key,
+.toggleTrigger .paymentDetails {
+	color: #363F51;
+}
+
+.toggleVisible .toggleDetails {
+	display: block !important;
+}
+
+.toggleVisible .toggleTrigger .paymentDetails,
+.no-js .toggleTrigger .paymentDetails {
+	display: none;
+}
+
+.js .toggleTrigger .paymentDetails {
+	width: 100%;
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	margin-top: 2px;
+	color: #7F899D;
+	font-size: 13px;
+}
+
+.js #DisplayTransactions .toggleTrigger .paymentDetails,
+.js #SearchTransactionsMobile .toggleTrigger .paymentDetails,
+.js #DisplayStandingOrders .toggleTrigger .paymentDetails {
+	font-size: inherit;
+} 
+
+.toggleDetails .key,
+.toggleDetails .val {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: none;
+}
+
+.toggleDetails .val {
+	word-wrap: break-word;
+	color: #7F899D !important;
+}
+
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table th,
+table td {
+	padding: 10px 5px;
+	vertical-align: top; 
+	text-align: left;
+	border-bottom: 1px solid #dbdfe6;
+	border-left: 4px solid #fff;
+}
+
+table th:first-child,
+table td:first-child {
+	border-left: 0;
+}
+
+table th {
+	border-top: 20px solid #fff;
+	background: #f4f3f2;
+	border-bottom-color: #bbc2ce;
+	color: #133C7F;
+}
+
+table tr:first-child th {
+	border-top: 0;
+}
+
+table td p {
+	margin: 0;
+}
+
+table td { /* OPENISSUE */
+/*	word-break: break-all; 
+	word-wrap: break-word;*/ 
+}
+
+table.vTop th, table.vTop td {
+	vertical-align: top;
+}
+
+tr.total td { 
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+tr.totalClosingRow td {
+	border-bottom-color: #4c566b;
+}
+
+tr.totalAmount td {
+	border-bottom: 3px solid #4c566b;
+}
+
+.balance { 
+	text-align: right;
+	white-space: nowrap;
+}
+
+/* Layout tables */
+
+table.layout th, table.layout td {
+	padding: 0; 
+	border: none;
+	background: none;
+}
+
+table.layout th {
+	padding: 10px 0;
+}
+
+table.layout tr:first-child th {
+	padding-top: 0;
+}
+
+/* Trimmed tables */
+
+table.trim {
+	table-layout: fixed;
+}
+
+table.trim td, table.trim th { 
+	width: 100%; 
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+/* Advice inside tables */
+
+table tr.containsAdvice td {
+	padding: 0;
+	border: none;
+	border-top: 20px solid #fff;
+}
+
+table tr.containsAdvice td .advice:not(.warning) {
+    padding: 10px;
+    background: #f9f9f8;
+}
+
+table tr.containsAdvice td .advice p {
+	margin-bottom: .5em;
+}
+
+
+/* ==========================================================================
+   Coloring alternate rows
+   ========================================================================== */
+ 
+table:not(.layout) tr:nth-child(even),
+.searchResults p:nth-child(odd) {
+	background-color: #f9f9f8;
+}
+
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Error messages */
+
+.errorMsg,
+.backendErrorMsg h3 {
+	display: inline-block;
+	color: #e00034;
+	background: transparent url(../db_img//spriteError_x2.png) 0 1px no-repeat;
+	background-size: 19px 16px;
+	padding-left: 24px;
+	margin-top: 5px;
+	line-height: normal;
+}
+
+.backendErrorMsg h3 {
+	margin-bottom: 1em;
+}
+
+.errorMsg img,
+.backendErrorMsg h3 img {
+	display: none;
+}
+
+.errorMsg input.linkButton {
+	background: none; 
+	padding: 0; 
+	color: #e00034;
+	border: none;
+	text-decoration: underline;
+}
+
+.hasError input,
+.hasError select {
+	border-color: #e00034 !important;
+}
+
+/* Emphasize (=highlight) forms */
+
+.emphasized {
+	background: #f4f3f2;
+	padding: 10px;
+}
+
+/* Buttons, inputs, and select elements */
+
+button,
+input,
+select {
+	width: 100%;
+}
+
+button:focus,
+input:focus,
+select:focus {
+	outline: none;
+}
+
+
+/* Text input */
+
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+	padding: 7px 5px 6px 5px;
+	background: #f9f8f7;
+	border: 2px solid #9ba5b5;
+	border-right-color: #e4e7ec;
+	border-bottom-color: #e4e7ec;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	-webkit-box-shadow: inset 1px 1px 0 0 rgba(163, 170, 183, 0.4);
+   box-shadow: inset 1px 1px 0 0 rgba(163, 170, 183, 0.4);
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+	background: #fff;
+	border: 2px solid #0098db; 
+	-webkit-transition: border 1s ease;
+	-moz-transition: border 1s ease;
+	-ms-transition: border 1s ease;
+	-o-transition: border 1s ease;
+	transition: border 1s ease;    
+}
+
+.emphasized input[type="text"],
+.emphasized input[type="tel"],
+.emphasized input[type="password"] {
+	border-right-color: #f9f8f7;
+	border-bottom-color: #f9f8f7;
+	background-color: #fff;
+}
+
+.emphasized input[type="text"]:focus,
+.emphasized input[type="tel"]:focus,
+.emphasized input[type="password"]:focus {
+	border: 2px solid #0098db; 
+}
+
+/* Buttons */
+
+input[type="button"],
+input[type="submit"],
+#opra_internet_trxm_db_self_ko_lastschriftrueckgabe a#DDR_menuBack {
+	width: auto;
+	color: #fff;
+	background: #bbc2ce;	
+	padding: 8px 39px 8px 15px;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;	
+	text-decoration: none;	
+}
+
+input.button {
+	background: #bbc2ce; /* Old browsers */
+	background: url(../db_img//spriteArrowButtonNext.png), -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+	background: url(../db_img//spriteArrowButtonNext.png), linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbc2ce', endColorstr='#808a9d',GradientType=0 ); /* IE6-9 */	
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 30px 30px, auto auto;
+	/*-webkit-appearance: none;*/
+}
+
+input.leftDir,
+input.previousStep,
+#opra_internet_trxm_db_self_ko_lastschriftrueckgabe #contentContainer a#DDR_menuBack {
+	background: #bbc2ce; /* Old browsers */
+	background: url(../db_img//spriteArrowButtonPrevious.png), -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+	background: url(../db_img//spriteArrowButtonPrevious.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+	background: url(../db_img//spriteArrowButtonPrevious.png), -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+	background: url(../db_img//spriteArrowButtonPrevious.png), -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+	background: url(../db_img//spriteArrowButtonPrevious.png), linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbc2ce', endColorstr='#808a9d',GradientType=0 ); /* IE6-9 */	
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px 30px, auto auto;
+	padding: 8px 15px 8px 39px;	
+}
+
+#opra_internet_trxm_db_self_ko_lastschriftrueckgabe #contentContainer a#DDR_menuBack {
+	text-decoration: none;
+	display: inline-block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+input[value*="ktual"] {
+	background-position: -999em center, 0 0;
+	padding-right: 15px;
+}
+
+input.search,
+input.create {
+	display: inline-block;
+	height: 24px;
+	padding: 0 12px 0 26px;
+	margin: 0;
+	border: none;
+	background: transparent url(../db_img//icSearch.png) 0 0 no-repeat;
+	background-size: 24px 24px;
+	vertical-align: bottom;
+	color: #9ba5b5;
+}
+
+input.create {
+	background-image: url(../db_img//spriteActions.png);
+	background-size: 24px 342px;
+	background-position: 4px -213px;
+}
+
+/* checkValidity */
+
+.checkValidity + .errorMsg,
+.checkValidity + * + .errorMsg {
+	max-height: 0;
+	overflow: hidden;
+	display: block;
+	margin-top: 5px;
+	padding: 0;
+	/*background-position: 0 4px;*/
+	-webkit-transition: all .75s ease;
+	-moz-transition: all .75s ease;
+	-o-transition: all .75s ease;
+	-ms-transition: all .75s ease;
+	transition: all .75s ease;
+}
+
+.checkValidity.validityWarning ~ .errorMsg,
+.checkValidity.validityFailed ~ .errorMsg {
+	max-height: 5em;
+	/*overflow: visible;*/
+
+}
+
+.checkValidity.validityWarning + .errorMsg,
+.checkValidity.validityWarning + * + .errorMsg {
+	background: transparent url(../db_img//spriteWarning_x2.png) 0 1px no-repeat;
+	background-size: 19px 16px;
+	color: #ffa000;
+}
+
+.checkValidity.validityWarning {
+	border: 2px solid #ffa000 !important;
+}
+
+.checkValidity.validityFailed {
+	border: 2px solid #e00034 !important;
+}
+
+.checkValidity.validitySucceeded:focus {
+	border: 2px solid #7ab800 !important;
+}
+
+.checkValidity + .errorMsg label,
+.checkValidity + * + .errorMsg label {
+	padding-left: 24px;
+	display: block;
+}
+
+.checkValidity.validityChecking {
+	background: #fff url('../db_img//ic_ajaxloader_white.gif') right 5px center / 20px 20px no-repeat !important;
+}
+
+.checkValidity.validitySucceeded {
+	background: #fff url('../db_img//spriteCheckValidity.png') right 5px center / 18px 18px no-repeat !important;
+}
+
+/* hasPasswordStrength */
+
+.hasPasswordStrength {
+	position: relative;
+}
+
+.passwordStrengthMeter {
+	background-color: #eae8e6;
+	position: absolute;
+	width: 60px;
+	height: 8px;
+	right: 0;
+	top: .5em;
+	z-index: 1;
+	cursor: help;
+}
+
+.passwordStrengthMeter,
+.passwordStrengthMeter span {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.passwordStrengthMeter span {
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.passwordStrengthMeter.extraWeak span {
+	width: 15%;
+	background-color: #e00034;
+}
+
+.passwordStrengthMeter.weak span {
+	width: 25%;
+	background-color: #e00034;
+}
+
+.passwordStrengthMeter.medium span {
+	width: 50%;
+	background-color: #ffa000;
+}
+
+.passwordStrengthMeter.strong span {
+	width: 75%;
+	background-color: #ffa000;
+}
+
+.passwordStrengthMeter.extraStrong span {
+	width: 100%;
+	background-color: #7ab800;
+}
+
+
+/* Annotations */
+
+.hasAnnotation {
+	position: relative;
+}
+
+.annotationContainer {
+	position: relative;
+	display: block;
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	z-index: 9999;
+	padding: 0;
+	width: 100%;
+	right: 0;
+	background-color: #363f51;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #fff;
+	line-height: normal;
+	font-size: 12px;
+}
+
+.annotationContainer:before {
+	position: absolute;
+	left: .75em;
+	top: -.5em;
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 .8em .7em .8em;
+	border-color: transparent transparent #363f51 transparent;
+}
+
+.hasAnnotation label {
+	display: inline-block;
+	line-height: normal;
+	vertical-align: top;
+}
+
+.hasAnnotation label + .toggleAnnotationTrigger {
+	display: inline-block;
+	cursor: pointer;
+	background: transparent url(../db_img//sprite_credentialsInfo.png) center 0 no-repeat;
+	background-size: 20px 150px;
+	width: 32px;
+	height: 20px;
+}
+
+.hasAnnotation.isVisible label + .toggleAnnotationTrigger {
+	background-position: center -50px;
+}
+
+.hasAnnotation.isVisible .annotationContainer {
+	margin-top: .55em;
+	max-height: 20em;
+	overflow: visible;
+	opacity: .9;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+
+.annotationContainer > .inner {
+	display: block;
+	padding: .75em 1em 0.8em 1em;
+
+}
+
+.annotationContainer > .inner a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.annotationContainer > .inner .annotationHead,
+.annotationContainer > .inner .annotationBody,
+.annotationContainer > .inner .annotationBody span {
+	display: block;
+}
+
+.annotationContainer > .inner .annotationHead {
+/*	font-weight: bold;
+	padding-bottom: .5em;*/
+	display: none;
+}
+
+.annotationContainer > .inner .annotationBody span {
+	padding-top: .5em;
+}
+
+.annotationContainer > .inner .annotationBody span:first-child {
+	padding-top: 0;
+}
+
+.annotationContainer > .inner .annotationBody span.annotationLI {
+	padding-left: .75em;
+}
+
+.annotationContainer > .inner .annotationBody span.annotationLI:before {
+	content: "-";
+	position: absolute;
+	left: 1em;
+}
+
+/* Acceptance */
+
+.acceptance {
+	padding-top: .5em;
+}
+
+.acceptance p {
+	position: relative;
+}
+
+.acceptance p span,
+.acceptance p span label {
+	display: block;
+}
+
+.acceptance p span input[type="checkbox"] {
+	position: absolute;
+	top: -.2em;
+}
+
+.acceptance p span label {
+	padding-left: 2em;
+}
+
+.acceptance p span.errorMsg {
+	padding-left: 0;
+	background-position: 3px 1px;
+}
+
+/* Confirm transaction */
+
+input.close {
+	background: #e00034; /* Old browsers */
+	background: url(../db_img//spriteArrowButtonNext.png), -moz-linear-gradient(top,  #eb597b 0%, #e00034 100%); /* FF3.6+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eb597b), color-stop(100%,#e00034)); /* Chrome,Safari4+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -webkit-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* Chrome10+,Safari5.1+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -o-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* Opera 11.10+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -ms-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* IE10+ */
+	background: url(../db_img//spriteArrowButtonNext.png), linear-gradient(to bottom,  #eb597b 0%,#e00034 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb597b', endColorstr='#e00034',GradientType=0 ); /* IE6-9 */	
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 30px 30px, auto auto;	
+}
+
+/* Invoke photoTAN-App */
+
+#photoTANInvokeApp {
+	margin: -10px 0 10px 0;
+	border-bottom: 2px solid #dbdfe6;
+	position: relative;
+}
+
+#photoTANInvokeApp > .inner {
+	padding-bottom: 10px;
+}
+								
+#photoTANInvokeAppAction div.inner {
+	background: #dbdee0;
+	padding: 1px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background: -moz-linear-gradient(top,  rgba(219,223,230,0.5) 0%, rgba(219,223,230,1) 50%, rgba(219,223,230,0.5) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(219,223,230,0.5)), color-stop(50%,rgba(219,223,230,1)), color-stop(100%,rgba(219,223,230,0.5))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(219,223,230,0.5) 0%,rgba(219,223,230,1) 50%,rgba(219,223,230,0.5) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(219,223,230,0.5) 0%,rgba(219,223,230,1) 50%,rgba(219,223,230,0.5) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(219,223,230,0.5) 0%,rgba(219,223,230,1) 50%,rgba(219,223,230,0.5) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(219,223,230,0.5) 0%,rgba(219,223,230,1) 50%,rgba(219,223,230,0.5) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80dbdfe6', endColorstr='#80dbdfe6',GradientType=0 ); /* IE6-9 */	
+}
+
+#photoTANInvokeAppAction a {
+	text-decoration: none;
+	padding: 20px 8px 8px 65px;
+	display: block;
+	height: 32px;
+	line-height: normal;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #133c7f;	
+	background: #f4f3f2;
+	background: url(../db_img//photoTANApp.png), -moz-linear-gradient(top,  #fff 0%, #f4f3f2 100%);
+	background: url(../db_img//photoTANApp.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#f4f3f2));
+	background: url(../db_img//photoTANApp.png), -webkit-linear-gradient(top,  #fff 0%,#f4f3f2 100%);
+	background: url(../db_img//photoTANApp.png), -o-linear-gradient(top,  #fff 0%,#f4f3f2 100%); 
+	background: url(../db_img//photoTANApp.png), -ms-linear-gradient(top,  #fff 0%,#f4f3f2 100%);
+	background: url(../db_img//photoTANApp.png), linear-gradient(to bottom,  #fff 0%,#f4f3f2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f3f2',GradientType=0 );
+	background-repeat: no-repeat;
+	background-position: 6px center, left center;
+	background-size: 50px 50px, auto auto;
+}
+
+@media all and (orientation:portrait) {
+	#photoTANInvokeAppAction a {
+		padding-top: 10px;
+		height: 42px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+#photoTANInvokeAppHelpTrigger {
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	cursor: pointer;
+	z-index: 2;
+	background: transparent; 
+	background: url(../db_img//sprite_credentialsInfo.png), url(../db_img//sprite_credentialsInfo.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px, 7px -80px;
+	background-size: 20px 150px;
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+
+#photoTANInvokeAppHelpTrigger.isVisible {
+	background-position: 10px -40px, 7px -80px;
+}
+
+#photoTANInvokeAppHelpContent {
+   color: #7F899D;
+	font-size: 14px;
+	font-size: 75%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: #f4f3f2;
+	border: 1px solid rgba(219,223,230,0.5);
+	border-top: none;
+	min-height: 80px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;	
+	-webkit-box-shadow: 0 8px 6px -6px #363f51;
+	-moz-box-shadow: 0 8px 6px -6px #363f51;
+	box-shadow: 0 8px 6px -6px #363f51;
+	margin-top: -5px;
+	z-index: 1;
+}
+
+#photoTANInvokeAppHelpContent .inner {
+	padding: 5px 10px 8px 6px;
+}
+
+#photoTANInvokeAppHelpContent {
+	display: none;
+}
+
+/* Reload */
+
+.reload { 
+	text-align: center;
+	padding: 10px 0;
+}
+
+.reload .button {
+	background: #fff url(../db_img//spriteReload_x2.png) left center no-repeat;
+	background-size: 18px 14px; 
+	color: #666;
+	border: none;
+	width: auto;
+	padding: 10px 15px 10px 15px;
+}
+
+.reload .button:disabled {
+	opacity: .5;
+}
+
+/* Image input */
+
+input.image {
+	width: auto; 
+	height: auto;
+	border: none;
+}
+
+/* Select */
+
+select {
+	line-height: 40px;
+	border: 2px solid #e4e7ec;
+	border-right-color: #9ba5b5;
+	border-bottom-color: #9ba5b5;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-khtml-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;	
+	background: #f9f8f7 url(../db_img//arrows.png) right 10px no-repeat;
+	background-size: 23px 400px;
+	padding: 0 26px 0 6px;
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+.emphasized select {
+	background-color: #fff;
+	border-top-color: #f9f8f7;
+	border-left-color: #f9f8f7;
+}
+
+select:focus {
+	border-color: #0098db;
+	background-color: #fff;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	outline: none;
+}
+
+/* 
+	@media -ms-high-contrast Hack:
+	http://www.apt-solutions.de/ie10-hack-innerhalb-des-css/ 
+	http://www.impressivewebs.com/ie10-css-hacks/
+*/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	select {
+		background-image: none;
+		padding: 4px;
+	}    
+}
+
+/* Checkboxes and radio buttons */
+
+input[type="checkbox"],
+input[type="radio"] {
+	border: none;
+	-khtml-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: url(../db_img//RadioAndCheckBoxSprite.png) no-repeat;
+	width: 24px !important;
+	height: 24px !important;
+	vertical-align: top;
+	background-size: 48px 48px;
+}
+
+input[type="checkbox"] {
+	background-position-x: left;
+}
+
+input[type="radio"] {
+	background-position-x: right;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+	background-position-y: -24px;
+}
+
+table.layout td.rdoInput {
+	padding-right: 5px !important;
+}
+
+/* Button groups */
+					
+.buttonGroup {
+	margin-bottom: 1em;
+	width: 100%;
+	display: table;
+}
+						
+.buttonGroup > .inner {
+	display: table-row;
+}
+						
+.buttonGroup .button {
+	display: table-cell;
+	width: 50%;
+	position: relative;
+}
+
+.buttonGroup.has3Childen .button {
+	width: 33%;
+}
+
+.buttonGroup.vertical .button {
+	display: table-row;
+}
+						
+.buttonGroup .button input[type=radio] {
+	display: none;
+}					
+						
+.buttonGroup .button label {
+	text-align: center;
+	display: block;
+	white-space: nowrap !important;
+	padding: 8px 6px;
+	margin-left: 1px;
+	cursor: pointer;
+	color: #363F51;
+	background: #edeff2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #edeff2 0%, #f6f7f8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edeff2), color-stop(100%,#f6f7f8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #edeff2 0%,#f6f7f8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #edeff2 0%,#f6f7f8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #edeff2 0%,#f6f7f8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #edeff2 0%,#f6f7f8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeff2', endColorstr='#f6f7f8',GradientType=0 ); /* IE6-9 */
+}
+
+.buttonGroup .button.disabled label {
+	color: #dbdfe6;
+	cursor: default;
+}
+
+.buttonGroup.vertical .button label {
+	padding: 0 10px;
+	text-align: left;
+}
+						
+.buttonGroup .button input[type=radio]:checked + label {
+	color: #fff;
+	border-color: #adadad;
+	background: #bbc2ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbc2ce', endColorstr='#808a9d',GradientType=0 ); /* IE6-9 */	
+}
+						
+.buttonGroup:not(.vertical) .button:first-child label {
+	margin-left: 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+						
+.buttonGroup:not(.vertical) .button:last-child label {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.buttonGroup.vertical .button:first-child label {
+	margin-left: 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+						
+.buttonGroup.vertical .button:last-child label {
+	margin-left: 0;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.buttonGroup.hasContent {
+	margin-bottom: 18px;
+}
+
+.buttonGroup.hasContentAbove {
+	margin-top: 18px;
+	margin-bottom: 0;
+}
+
+.buttonGroup.hasContent .button input[type=radio]:checked + label:after {
+	position: absolute;
+	left: 39%;
+	bottom: -20px;
+	content: " ";
+	width: 48px;
+	height: 24px;
+	background: url("../db_img//spriteTabNavigation.png") center bottom no-repeat !important;
+	background-size: 48px 48px !important;	
+}
+
+.buttonGroup.hasContentAbove .button input[type=radio]:checked + label:after {
+	top: -20px;
+	background-position: center top !important;
+}
+
+.buttonGroup.has3Childen.hasContentAbove .button input[type=radio]:checked + label:after {
+	left: 30%;
+}
+
+.buttonGroupContent {
+	border: 2px solid #dbdfe6;
+	margin-bottom: 1em;	
+}
+
+.buttonGroupContent > .inner {
+	padding: 1em 1em 0 1em;
+}
+
+
+/* Inline labels */
+
+.inlineLabel {
+	position: relative;
+}
+
+.inlineLabel label {
+	position: absolute;
+	top: 5px;
+	left: 8px;
+	/*color: #a9a9a9;*/
+	font-weight: bold;
+	font-size: 65%;
+	line-height: 100%;
+}
+
+.inlineLabel input {
+	padding: 12px 5px 1px 5px;
+	height: 41px;
+}
+
+/* Placeholder */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: #a9a9a9;
+	opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #a9a9a9;
+	opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #a9a9a9;
+	opacity: 1;
+}
+
+/* 
+http://stackoverflow.com/questions/6828263/how-to-get-rid-of-placeholder-on-password-field-taken-over-from-label
+-webkit-user-modify: read-write-plaintext-only;
+*/
+
+/* Input type date */
+
+.js .datePicker.inlineLabel label {
+	left: 7px;
+}
+
+.js .datePicker input,
+.js .datePicker input:focus {
+	background-image: url(../calendar/icon.png);
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+input[type="number"],
+input[type="date"] {
+	padding: 7px 5px 6px 5px;
+	background: #f9f8f7;
+	border: 2px solid #9ba5b5;
+	border-right-color: #e4e7ec;
+	border-bottom-color: #e4e7ec;	
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	-webkit-box-shadow: inset 1px 1px 0 0 rgba(163, 170, 183, 0.4);
+   box-shadow: inset 1px 1px 0 0 rgba(163, 170, 183, 0.4);
+   
+  	-khtml-appearance: icon;
+	-webkit-appearance: icon;
+	appearance: icon;
+	white-space: nowrap;
+	width: 100%;	
+}
+
+input[type="number"]:focus,
+input[type="date"]:focus {
+	background: #fff;
+	border: 2px solid #0098db; 
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;    
+}
+
+/* ==========================================================================
+   Display contextual information
+   ========================================================================== */
+
+.infoTrigger {
+	position: relative;
+}
+
+.infoTrigger span:first-child {
+	padding-right: 5px;
+}
+
+.infoTriggerIcon {
+	position: absolute;
+	margin-top: -6px;
+	/*	right: -10px; */
+	z-index: 2;
+	cursor: pointer;
+	background: transparent url(../db_img//sprite_credentialsInfo.png) 0 6px no-repeat;
+	background-size: 20px 150px;
+	width: 32px;
+	height: 32px;	
+}
+
+.infoTriggerIcon.isVisible {
+	background-position: 0 -44px;
+}
+
+.infoContent {
+	display: none;
+	color: #7F899D;
+	font-size: 14px;
+}
+
+/* ==========================================================================
+   TAN input and confirmation pages
+   ========================================================================== */
+
+.summary {
+	background: #f4f3f2;
+}
+
+.summary > .inner {
+	padding: 10px;
+}
+
+.summary .pair {
+	padding: 4px 5px 5px 5px;
+}
+
+.summary .pair:nth-child(odd) {
+	background: #dbdfe6;
+}
+
+.summary .pair > .inner {	
+	width: 100%;
+	overflow: hidden;
+}
+
+.summary .pair div.val {
+
+}
+
+.summary .pair div > .inner {
+	padding-right: 10px;
+}
+
+.summary .pair div.val > .inner { /* http://kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/ */
+ 	-ms-word-break: break-all;
+       word-break: break-all;
+       word-break: break-word;
+	-webkit-hyphens: auto;
+      -moz-hyphens: auto;
+       -ms-hyphens: auto;
+           hyphens: auto;	
+}
+
+.summary .pair div.key {
+	color: #7f899d;
+}
+
+.summary .pair div.val {
+	color: #363f51;
+}
+
+@media only screen and (max-width: 320px) {
+	.summary .pair div.key,
+	.summary .pair div.val {
+		border-bottom: none;
+	}
+
+	.summary .pair div.key {
+		font-size: 81.25%;
+	}
+}
+
+/* Confirmation page */
+
+.success {
+	background: #e6f2f9 url(../db_img//icSuccess.png) 10px 12px no-repeat;
+	background-size: 18px 18px;
+	margin-bottom: 10px;
+}
+
+.success p {
+	padding: 10px 10px 10px 38px;
+	margin: 0;
+}
+
+.success p:first-child {
+	padding-bottom: 0;
+	font-weight: bold;
+	color: #133c7f;
+}
+
+.success p:last-child {
+	padding-top: 5px;
+}
+
+/* ==========================================================================
+   TAN dialogue
+   ========================================================================== */
+
+#iTANForm {
+	background: #f4f3f2;
+	padding: 10px 10px 5px 10px;
+	margin: 30px 0 10px 0;
+}
+
+#iTANForm h2, 
+#iTANForm p {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#iTANForm h2 {
+	font-size: 1em;
+	font-weight: bold;
+	color: inherit;
+}
+
+#iTANForm div:not(.advice) p {
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+#iTANForm input#tanInput {
+	background: #fff;
+	width: 5em;
+}
+
+#iTANForm input.close {
+	margin: 0 0 2px 10px;
+}
+
+/* New iTAN */
+
+#iTANForm {
+	background: #fff;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+#iTANForm #iTANDescription p {
+	font-size: 75%;
+	padding: 10px 0 0 0;
+	margin: 0;
+}
+
+#iTANForm #iTANAuthentication {
+	background: #f4f3f2;
+	padding: 10px 15px;
+}
+
+#iTANForm #iTANAuthentication #iTANInput,
+#iTANForm #iTANAuthentication #iTANAction {
+	display: table-cell;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#iTANForm #iTANAuthentication #iTANAction {
+	width: 100%;
+}
+
+#iTANForm #iTANAuthentication #iTAN {
+	background: #fff;
+	width: 6em;
+}
+
+#iTANForm #iTANAuthentication input.close {
+	margin: 0 0 0 12px;
+}
+
+/* photoTAN */
+
+#photoTANForm {
+	background: #fff;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+#photoTANForm #photoTANGraphic {
+	text-align: center;
+	margin-top: -10px;
+}
+
+#photoTANForm #photoTANDescription p {
+	font-size: 75%;
+	margin: 10px 0 0 0;
+}
+
+#photoTANForm #photoTANAuthentication {
+	background: #f4f3f2;
+	padding: 10px 15px;
+}
+
+#photoTANForm #photoTANAuthentication #photoTANInput,
+#photoTANForm #photoTANAuthentication #photoTANAction {
+	display: table-cell;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#photoTANForm #photoTANAuthentication #photoTAN {
+	background: #fff;
+	width: 6em;
+}
+
+#photoTANForm #photoTANAuthentication input.close {
+	margin: 0 0 0 12px;
+}
+
+body#PaydirektEnrollment div[id$="TANAction"] input[type="submit"] {
+	font-size: 14px;
+	padding: 4px 20px 4px 8px;
+	line-height: 100%;
+	white-space: normal;
+	text-align: left;
+	width: 128px;
+}
+
+/*
+
+If a device is in portrait mode and user taps on any input field the soft-keyboard pops up - 
+which reduces the visible area of web page and forces it to render in landscape based css. 
+On android tablet devices, it depends on keyboard's height.
+
+http://stackoverflow.com/questions/16852422/css-media-query-landscape-android-soft-keyboard
+http://stackoverflow.com/questions/8883163/css-media-query-soft-keyboard-breaks-css-orientation-rules-alternative-solut
+
+*/
+
+@media screen and (max-aspect-ratio: 13/9) {
+
+	body#ChangeOrder div[id$="TANAction"] input[type="submit"],
+	body#CancelOrder div[id$="TANAction"] input[type="submit"],
+	body[id$="Security2And3Steps"] div[id$="TANAction"] input[type="submit"],
+	body[id$="StandingOrder"] div[id$="TANAction"] input[type="submit"],
+	body[id^="opra_internet_trxm"] div[id$="TANAction"] input[type="submit"]
+	{
+		font-size: 14px;
+		padding: 4px 20px 4px 8px;
+		line-height: 100%;
+		white-space: normal;
+		text-align: left;
+		width: 128px;
+	}
+
+}
+
+/* ==========================================================================
+   Floats
+   ========================================================================== */
+   
+#headerContainer:after,
+#headerContainer .menuBar ul:after,
+#footerContainer .menuBar ul:after,
+.pair:after,
+.toggleContainer h3:after,
+.toggleContainer p:after,
+#MortgageLoanDetails .emphasized p:after,
+#DisplayTransactions .emphasized p:after,
+#SepaDomesticTransfer .emphasized p:after,
+#CreateTransferToSubaccount .emphasized p:after,
+#CreateStandingOrder .emphasized p:after,
+#ChangeStandingOrder .emphasized p:after,
+#DisplayStatementOfAssets .emphasized p:after,
+form:after { /* Clearfix: http://css-tricks.com/snippets/css/clear-fix/ */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.key,
+.val {
+	display: block;
+	width: 50%;
+/*	overflow: hidden;
+	text-overflow: ellipsis;*/
+}
+
+.key {
+	float: left;
+}
+
+.val {
+	float: right;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footerContainer {
+	padding-top: 10px;
+}
+
+#footerContainer h2 {
+	padding: 12px 10px;
+ 	background: #edeff2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f6f7f8 0%, #edeff2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f7f8), color-stop(100%,#edeff2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f6f7f8 0%,#edeff2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f6f7f8 0%,#edeff2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f6f7f8 0%,#edeff2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f6f7f8 0%,#edeff2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f8', endColorstr='#edeff2',GradientType=0 ); /* IE6-9 */	
+}
+
+#footerContainer ul {
+	margin-bottom: 0;
+}
+
+#footerContainer li { 
+	list-style: none;
+	background: #fff url(../db_img//arrows.png) right -192px no-repeat;
+	background-size: 23px 400px;
+}
+
+#footerContainer li a:link, li a:visited { 
+	display: block; 
+	text-decoration: none; 
+	padding: 12px 10px;
+	border-top: 1px solid #dbdfe6;
+	color: #222938;
+}
+	
+#footerContainer li a:hover, 
+#footerContainer li a:focus, 
+#footerContainer li a:active, 
+#footerContainer li.currentView a {
+	color: #069;
+}
+
+#footerContainer .menuBar {
+	background: #edeff2;
+}
+
+#footerContainer .menuBar:first-child ul {
+	margin-bottom: 0;
+	border-bottom: 1px solid #dbdfe6;
+}
+
+#footerContainer .menuBar a:link,
+#footerContainer .menuBar a:visited {
+	background: transparent url(../db_img//spriteMenubar.png) 8px 6px no-repeat;
+	background-size: 32px 1792px; 
+	padding-left: 48px;
+	font-size: 16px;
+}
+
+#footerContainer .menuBar a:hover,
+#footerContainer .menuBar .currentView a {
+	background-position: 8px -58px;
+}
+
+#footerContainer #menuTransactions a {
+	background-position: 8px -122px !important;
+}
+
+#footerContainer #menuTransactions a:hover,
+#footerContainer #menuTransactions.currentView a {
+	background-position: 8px -186px !important;
+}
+
+#footerContainer #menuPfm a {
+	background-position: 8px -1657px !important;
+}
+
+#footerContainer #menuPfm a:hover,
+#footerContainer #menuPfm.currentView a {
+	background-position: 8px -1721px !important;
+}
+
+
+#footerContainer #menuTransactionSearch a {
+	background-position: 8px -1402px !important;
+}
+
+#footerContainer #menuTransactionSearch a:hover,
+#footerContainer #menuTransactionSearch.currentView a {
+	background-position: 8px -1466px !important;
+}
+
+#footerContainer #menuTransfer a {
+	background-position: 8px -250px !important;
+}
+
+#footerContainer #menuTransfer a:hover,
+#footerContainer #menuTransfer.currentView a {
+	background-position: 8px -314px !important;
+}
+
+#footerContainer #menuStandingOrders a {
+	background-position: 8px -1147px !important;
+}
+
+#footerContainer #menuStandingOrders a:hover,
+#footerContainer #menuStandingOrders.currentView a {
+	background-position: 8px -1211px !important;
+}
+
+#footerContainer #menuTransferToSubAccount a {
+	background-position: 8px -1275px !important;
+}
+
+#footerContainer #menuTransferToSubAccount a:hover,
+#footerContainer #menuTransferToSubAccount.currentView a {
+	background-position: 8px -1339px !important;
+}
+
+#footerContainer #menuIBAN a {
+	background-position: 8px -378px !important;
+}
+
+#footerContainer #menuIBAN a:hover,
+#footerContainer #menuIBAN.currentView a {
+	background-position: 8px -442px !important;
+}
+
+#footerContainer #menuAssets a {
+	background-position: 8px -506px !important;
+}
+
+#footerContainer #menuAssets a:hover,
+#footerContainer #menuAssets.currentView a {
+	background-position: 8px -570px !important;
+}
+
+#footerContainer #menuBuyOrder a {
+	background-position: 8px -634px !important;
+}
+
+#footerContainer #menuBuyOrder a:hover,
+#footerContainer #menuBuyOrder.currentView a {
+	background-position: 8px -698px !important;
+}
+
+#footerContainer #menuSellOrder a {
+	background-position: 8px -762px !important;
+}
+
+#footerContainer #menuSellOrder a:hover,
+#footerContainer #menuSellOrder.currentView a {
+	background-position: 8px -826px !important;
+}
+
+#footerContainer #menuOrderBook a {
+	background-position: 8px -890px !important;
+}
+
+#footerContainer #menuOrderBook a:hover,
+#footerContainer #menuOrderBook.currentView a {
+	background-position: 8px -954px !important;
+}
+
+#footerContainer #menuPostbox a {
+	background-position: 8px -1530px !important;
+}
+
+#footerContainer #menuPostbox a:hover,
+#footerContainer #menuPostbox.currentView a {
+	background-position: 8px -1594px !important;
+}
+
+#footerContainer #menuBackToTop,
+#footerContainer #menuBackToTop a,
+#footerContainer #menuCallService,
+#footerContainer #menuCallService a,
+#footerContainer #menuLogout,
+#footerContainer #menuLogout a,
+#footerContainer #menuBackToLogin,
+#footerContainer #menuBackToLogin a {
+	background: none;
+	padding: 0;
+	border: none;
+}
+
+#footerContainer #menuBackToTop,
+#footerContainer #menuCallService,
+#footerContainer #menuLogout,
+#footerContainer #menuBackToLogin {
+	float: left;
+	margin: 10px 0 10px 10px;	
+	height: 38px;
+	background: #fff;
+}
+
+#footerContainer #menuBackToTop a,
+#footerContainer #menuCallService a,
+#footerContainer #menuLogout a,
+#footerContainer #menuBackToLogin a {
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	height: 28px;
+	padding: 10px 10px 0 10px;
+	background: #bbc2ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbc2ce', endColorstr='#808a9d',GradientType=0 ); /* IE6-9 */	
+	background-repeat: no-repeat;
+	background-position: center center !important;
+	background-size: auto auto;
+}
+
+#footerContainer #menuCallService a,
+#footerContainer #menuBackToLogin a {
+	padding-top: 3px;
+	height: 35px;
+	line-height: normal;
+	width: 90px;
+}
+
+#footerContainer #menuLogout {
+	float: right;
+	margin-right: 10px;
+}
+
+#footerContainer #menuLogout a {
+	background: #e00034; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eb597b 0%, #e00034 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eb597b), color-stop(100%,#e00034)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eb597b 0%,#e00034 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb597b', endColorstr='#e00034',GradientType=0 ); /* IE6-9 */	
+	background-repeat: no-repeat;
+	background-position: center center !important;
+	background-size: auto auto;	
+}
+
+
+/* ==========================================================================
+   Misc
+   ========================================================================== */
+
+.disabled { color: #999; }
+
+.value,
+.optional { 
+	color: #7F899D;
+}
+
+.visible {
+	display: block !important;
+}
+
+.roll {
+	width: 100%;
+}
+
+.small {
+	font-size: 80%;
+}
+
+.rgtPadding {
+	padding-right: 1em !important;
+}
+
+.rgtPaddingS {
+	padding-right: 0.5em !important;
+}
+
+.lftPadding {
+	padding-left: 1em !important;
+}
+
+.lftPaddingS {
+	padding-left: 0.5em !important;
+}
+
+.rgtAlign {
+	text-align: right;
+}
+
+
+/* ==========================================================================
+   Login et al.
+   ========================================================================== */
+
+#login #headerContainer,
+#SessionExpiry #headerContainer,
+#NoCookieNotification #headerContainer {
+	background: transparent url(../db_img//spriteIdentifier.png) 0 0 no-repeat;
+	-webkit-background-size: 240px 60px;
+	-moz-background-size: 240px 60px;
+	background-size: 240px 60px;
+}
+
+#login #headerContainer .inner,
+#SessionExpiry #headerContainer .inner,
+#NoCookieNotification #headerContainer .inner {
+	height: 35px;
+}
+
+#login .emphasized {
+	margin-bottom: 20px;
+}
+
+#login form p {
+	margin: 0;
+	padding: 0 0 0.4em 0;
+}
+
+#login #fldBranch,
+#login #fldAccount,
+#login #fldSubAccount,
+#login #fldPIN {
+	display: inline-block;
+	float: left;
+	width: 29.4%;
+	margin-right: 1em;
+}
+
+#login #fldSubAccount {
+	margin-right: 0;
+}
+
+#login #fldPIN,
+#login #fldSaveCredentials {
+	clear: left;
+}
+
+#login #fldSaveCredentials {
+	padding-top: 0.6em;
+	font-size: 14px;
+	color: #4c566b;
+	position: relative;
+	z-index: 3;
+}
+
+#login #fldSaveCredentials input {
+	vertical-align: top;
+	margin: -4px 4px 0 -2px;
+}
+
+#login #credentialsInfoTrigger {
+	position: absolute;
+	right: -10px;
+	margin-top: -8px;
+	cursor: pointer;
+	z-index: 2;
+	background: transparent url(../db_img//sprite_credentialsInfo.png) 0 6px no-repeat;
+	background-size: 20px 150px;
+	width: 32px;
+	height: 32px;	
+}
+
+#login #credentialsInfoTrigger.isVisible {
+	background-position: 0 -44px;
+}
+
+#login #credentialsInfoContent {
+    color: #7F899D;
+    font-size: 14px;
+}
+
+.js #login #credentialsInfoContent {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	background: #f4f3f2;
+	-webkit-box-shadow: 0 8px 6px -6px #363f51;
+	-moz-box-shadow: 0 8px 6px -6px #363f51;
+	box-shadow: 0 8px 6px -6px #363f51;
+	margin-top: -34px;
+	z-index: 1;
+}
+
+.js #login #credentialsInfoContent .inner {
+	padding: 32px 40px 5px 10px;
+}
+
+.js #login #credentialsInfoContent {
+	display: none;
+}
+
+#login #fldLogin input {
+	margin-top: 1.4em;
+	/*width: 64%;*/
+	/* text-align: right; */
+}
+
+#login .advice {
+	padding-bottom: 5px;
+}
+
+#login .advice h3 {
+	background-image: url(../db_img//spriteLock_x2.png);
+	background-size: 14px 16px;
+	background-position: 2px 1px;
+	padding-bottom: 0;
+}
+
+
+/* ==========================================================================
+   Financial overview
+   ========================================================================== */
+
+#DisplayFinancialOverview table {
+    border-collapse: separate;
+}
+
+#DisplayFinancialOverview td.roll a {
+    -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word; /* Non standard for webkit */
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { /* IE */
+	#DisplayFinancialOverview td.roll a {
+		display: inline-block;
+	}
+}
+
+tr.total td,
+tr.totalClosingRow td {
+	border-bottom: none;
+	padding: 0 0 10px 0;
+	background: #fff;
+}
+
+tr.total td {
+	padding-top: 20px;
+}
+
+tr.totalAmount td {
+	border: none;
+	padding: 0;
+	border-top: 10px solid #fff;
+	border-bottom: 20px solid #fff; 
+}
+
+tr.totalAmount td strong {
+	background: #E6F2F9;
+	display: block;
+	padding: 10px 5px;
+	border-bottom: 1px solid #bbc2ce;
+}
+
+/* ==========================================================================
+   Construction loans details
+   ========================================================================== */
+
+#MortgageLoanDetails .emphasized {
+	padding-bottom: 4px;
+	margin-bottom: 1em;
+}
+
+#MortgageLoanDetails .emphasized p {
+	margin-bottom: 5px;
+}
+
+#MortgageLoanDetails .emphasized input.button {
+	width: 100%;
+}
+
+#MortgageLoanDetails .accountBalance {
+	line-height: normal;	
+}
+
+#MortgageLoanDetails .accountBalance span.small {
+	color: #7f899d;
+	white-space: nowrap;
+}
+
+@media only screen and (min-width: 480px) {
+	#MortgageLoanDetails .accountBalance .key {
+		width: 60%;
+	}
+	
+	#MortgageLoanDetails .accountBalance .val {
+		width: 40%;
+	}
+}
+
+/* ==========================================================================
+   Transactions
+   ========================================================================== */
+
+#DisplayTransactions .emphasized {
+	padding-bottom: 4px;
+}
+
+#DisplayTransactions .emphasized p {
+	margin-bottom: 5px;
+}
+
+#DisplayTransactions .emphasized input.button {
+	width: 100%;
+}
+
+#DisplayTransactions .warning {
+	margin-top: 20px;
+}
+
+#DisplayTransactions input.search {
+	position: absolute;
+	right: 0;
+	margin-top: -36px;
+}
+
+#DisplayTransactions .accountBalance {
+	line-height: normal;	
+}
+
+#DisplayTransactions .accountBalance span.small {
+	color: #7f899d;
+	white-space: nowrap;
+}
+
+@media only screen and (min-width: 480px) {
+	#DisplayTransactions .accountBalance .key {
+		width: 60%;
+	}
+	
+	#DisplayTransactions .accountBalance .val {
+		width: 40%;
+	}
+}
+
+
+/* ==========================================================================
+   Search transactions
+   ========================================================================== */
+
+#SearchTransactionsMobile table#turnoverAmount {
+	margin-top: -5px;
+}
+
+#SearchTransactionsMobile table#turnoverAmount td {
+	vertical-align: middle;
+}
+
+#SearchTransactionsMobile table#turnoverAmount td:nth-child(2) {
+	padding: 0 5px;	
+}
+
+#SearchTransactionsMobile table#turnoverAmount td:nth-child(4) {
+	padding-left: 10px;
+}
+
+#SearchTransactionsMobile table#turnoverAmount .buttonGroup {
+	margin-bottom: 1px;
+}
+
+#SearchTransactionsMobile table#turnoverAmount .button label {
+	font-size: 80%;
+	padding: 3px 20px 2px 5px;
+	background: url(../db_img//spriteCreditDebit.png), #edeff2;
+	background-repeat: no-repeat;
+	background-position: right -48px;
+	background-size: 18px 96px;		
+}
+
+#SearchTransactionsMobile table#turnoverAmount .button input[type=radio]:checked + label {
+	background-color: #14a109;
+	background-position: right -72px;
+}
+
+#SearchTransactionsMobile table#turnoverAmount .button:first-child label {
+	background-position: right 0;
+}
+
+#SearchTransactionsMobile table#turnoverAmount .button:first-child input[type=radio]:checked + label {
+	background-color: #e00034;
+	background-position: right -24px;	
+}
+
+#SearchTransactionsMobile table#turnoverPeriod select {
+	margin-bottom: 10px;
+}
+
+#SearchTransactionsMobile table#turnoverPeriod table.layout {
+	margin-bottom: 0;
+}
+
+#SearchTransactionsMobile table#turnoverPeriod td:first-child { /* Position radio buttons */
+	padding: 8px 8px 0 0;
+}
+
+#SearchTransactionsMobile table#turnoverPeriod table.layout td:nth-child(1) {
+	padding: 0;
+}
+
+#SearchTransactionsMobile table#turnoverPeriod table.layout td:nth-child(2) {
+	padding: 7px 5px;	
+}
+
+#SearchTransactionsMobile .warning em:first-child,
+#SearchTransactionsMobile .emphasized em:first-child {
+	word-break: break-all;
+	word-wrap: break-word;	
+}
+
+/* ==========================================================================
+   Domestic money transfer, Standing orders, Transfer to subaccount
+   ========================================================================== */
+
+#CreateStandingOrder h1 + .warning,
+#ChangeStandingOrder h1 + .warning {
+	margin-bottom: 1em;
+}
+
+#DisplayStandingOrders input.create {
+	position: absolute;
+	right: 0;
+	margin-top: -36px;
+}
+
+#CreateDomesticTransferOrder .emphasized,
+#SepaDomesticTransfer .emphasized,
+#CreateTransferToSubaccount .emphasized,
+#CreateStandingOrder .emphasized,
+#ChangeStandingOrder .emphasized,
+#DisplayStandingOrders .emphasized,
+#DisplayStandingOrders .advice.warning {
+	padding-bottom: 1px;
+	margin-bottom: 1em;
+}
+
+#CreateDomesticTransferOrder .emphasized input.button,
+#SepaDomesticTransfer .emphasized input.button,
+#CreateTransferToSubaccount .emphasized input.button,
+#CreateStandingOrder .emphasized input.button,
+#ChangeStandingOrder .emphasized input.button {
+	margin-top: 12px;
+}
+
+#CreateDomesticTransferOrder .emphasized p,
+#SepaDomesticTransfer .emphasized p,
+#CreateTransferToSubaccount .emphasized p,
+#CreateStandingOrder .emphasized p,
+#ChangeStandingOrder .emphasized p,
+#DisplayStandingOrders .emphasized p {
+	margin: 0 0 8px 0;
+}
+
+#DisplayStandingOrders .emphasized noscript p input {
+	width: 100%;
+}
+
+#DisplayStandingOrders p.small,
+#DisplayStandingOrders div.small p {
+	padding-top: 1em;
+}
+
+#SepaDomesticTransfer .tabPane,
+#CreateStandingOrder .tabPane,
+#ChangeStandingOrder .tabPane {
+	margin-bottom: 1em;
+}
+
+#SepaDomesticTransfer .tabPane td,
+#CreateStandingOrder .tabPane td,
+#ChangeStandingOrder .tabPane td { 
+	vertical-align: top;
+}
+
+#SepaDomesticTransfer .tabPane td p,
+#CreateStandingOrder .tabPane td p,
+#ChangeStandingOrder .tabPane td p { 
+	margin-bottom: 0;
+}
+
+#SepaDomesticTransfer .tabPane td.search,
+#CreateStandingOrder .tabPane td.search,
+#ChangeStandingOrder .tabPane td.search { 
+	padding: 25px 0 0 5px;
+}
+
+#SepaDomesticTransfer .tabPane td.search a,
+#SepaDomesticTransfer .tabPane td.search input,
+#CreateStandingOrder .tabPane td.search a,
+#CreateStandingOrder .tabPane td.search input,
+#ChangeStandingOrder .tabPane td.search a,
+#ChangeStandingOrder .tabPane td.search input {	
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	margin: 0;
+	border: none;	
+	background: transparent url(../db_img//icSearch.png) 0 0 no-repeat;
+	background-size: 32px 32px !important;
+	text-indent: -999em;
+}
+
+#CreateDomesticTransferOrder #SaveAsTemplate,
+#SepaDomesticTransfer #SaveAsTemplate,
+#CreateTransferToSubaccount #SaveAsTemplate {
+	margin: 0 0 8px 0;
+}
+
+#CreateDomesticTransferOrder #SaveAsTemplate input,
+#SepaDomesticTransfer #SaveAsTemplate input,
+#CreateTransferToSubaccount #SaveAsTemplate input {
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+#CreateDomesticTransferOrder .fieldsetContainer .value,
+#SepaDomesticTransfer .fieldsetContainer .value,
+#CreateTransferToSubaccount .fieldsetContainer .value,
+#CreateStandingOrder .fieldsetContainer .value,
+#ChangeStandingOrder .fieldsetContainer .value {
+	word-wrap: break-word;
+}
+
+table#standingOrderHistory {
+	table-layout: fixed;
+}
+
+table#standingOrderHistory td {
+	width: 50%;	
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;	
+}
+
+table#standingOrderHistory td.balance {
+	text-align: left;
+}
+
+table#standingOrderExecution td {
+	padding-top: 1em;
+	vertical-align: bottom;
+}
+
+table#standingOrderExecution tr:first-child td {
+	padding-top: 0;
+}
+
+table#standingOrderExecution td:first-child {
+	padding-right: 10px;
+}
+
+table#standingOrderExecution td:first-child:last-child {
+	padding-right: 0;
+}
+
+table#standingOrderExecution + p.errorMsg {
+	margin-top: -0.6em;
+	display: block;
+}
+
+#executeCurrentStandingOrderForm .emphasized {
+	padding-bottom: 10px;
+}
+
+#executeCurrentStandingOrderForm .emphasized table.layout {
+	margin-bottom: 0;
+}
+
+#executeCurrentStandingOrderForm .emphasized table.layout td.rdoInput + td {
+	width: 20%;
+}
+
+#executeCurrentStandingOrderForm .emphasized table.layout td.rdoInput + td + td.rdoInput + td {
+	width: 100%;
+}
+
+
+/* ==========================================================================
+   Search pages
+   ========================================================================== */
+   
+.pageNavContainer {
+	background: #f4f3f2;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.pageNavContainer p {
+	margin: 0;
+}
+
+.pageNavContainer .separator {
+	display: none;
+}
+
+.pageNavContainer .disabled,
+.pageNavContainer a.nextStep,
+.pageNavContainer a.previousStep {
+/*	display: inline-block;
+	padding: 8px 15px !important;
+	text-decoration: none;
+	margin: 10px 0;*/
+}
+
+.pageNavContainer .disabled,
+.pageNavContainer a,
+.pageNavContainer p + p strong {
+/*	display: inline-block;
+	padding: 8px 0;
+	min-width: 36px;
+	text-align: center;
+	background: #EAE8E6;
+	font-weight: normal;*/
+}
+
+.pageNavContainer ul {
+	display: table;
+	width: 100%;
+	border-bottom: none !important;
+	margin-bottom: 0 !important;	
+}
+
+.pageNavContainer ul + ul {
+	margin-top: 10px;
+}
+
+.pageNavContainer ul + ul li:nth-child(2) {
+	text-align: center;
+	font-size: 80%;
+}
+
+.pageNavContainer li {
+	display: table-cell;
+	background: none !important;
+	border-left: 4px solid #f4f3f2;
+}
+
+.pageNavContainer li:first-child,
+.pageNavContainer ul + ul li {
+	border-left: none;
+}
+
+.pageNavContainer li a,
+.pageNavContainer li span {
+	display: block;
+	padding: 8px 0 !important;
+	min-width: 20px;
+	text-align: center;
+	border: none !important;
+}
+
+.pageNavContainer li span {
+	background: #EAE8E6;
+	color: #999;
+}
+
+.pageNavContainer li a {
+	color: #fff !important;
+	text-decoration: none;
+	background: #bbc2ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbc2ce', endColorstr='#808a9d',GradientType=0 ); /* IE6-9 */	
+}
+
+.searchResults p {
+	margin: 0;
+	padding: 7px 10px;
+	border-bottom: 1px solid #DBDFE6;
+}
+
+.searchResults p:first-child {
+	border-top: 1px solid #DBDFE6;
+}
+
+/* ==========================================================================
+   OPrA
+   ========================================================================== */
+
+#OPRAcontainer #pathNavigation,
+#OPRAcontainer .pageFunctions,
+#OPRAcontainer #sideContent,
+#OPRAcontainer .spanlink,
+#OPRAcontainer #OPRA_module_completion_trxm #OPRA_downloadCopyLink,
+#OPRAcontainer .OPRA_nextStepsBox,
+#OPRAcontainer #OPRA_module_completion_trxm h2 + p + p,
+#opra_internet_trxm_db_self_ko_lastschriftrueckgabe #footerContainer {
+	display: none;
+}
+
+#opra_internet_trxm_db_self_ko_lastschriftrueckgabe #footerContainer + #footerContainer {
+	display: block;
+}
+
+.trxm_db_self_ko_lastschriftrueckgabe h1 {
+	width: 240px;
+	display: block;
+	font-size: inherit;
+	line-height: normal;
+	padding: 13px 0;
+}
+
+.trxm_db_self_ko_lastschriftrueckgabe h1:first-line {
+	font-size: 1.6em;
+}
+
+#OPRA_div-first_bookedtransactionstable_transactions table th {
+	border-top: 20px solid #fff;
+}
+
+#OPRA_module_client_dependant_text_notice_pre h3 {
+	background: transparent url(../db_img//spriteAdvice_x2.png) 0 1px no-repeat;
+	background-size: 19px 16px;
+}
+
+#OPRA_page_summary_productDataServices h3 {
+	background: #f4f3f2;
+	border-bottom: 1px solid #bbc2ce;
+	color: #133C7F;
+	font-weight: bold;
+	padding: 10px 5px;
+}
+
+#OPRA_div-first_bookedtransactionstable_transactions td,
+#OPRA_page_summary_productDataServices td {
+	width: 50%;
+	vertical-align: top;
+}
+
+#OPRA_div-first_bookedtransactionstable_transactions td:last-child,
+#OPRA_page_summary_productDataServices td:last-child {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#OPRA_label-first_bookedtransactionstable_amount {
+	white-space: nowrap;
+}
+
+#OPRA_module_client_dependant_text_notice_pre h3 {
+	padding-left: 24px;
+	color: #133C7F;
+	font-weight: bold;
+}
+
+br.hide {
+	display: none;
+}
+
+#OPRA_buttons {
+	margin-top: 1em;
+}
+
+
+/* ==========================================================================
+   Show IBAN and BIC
+   ========================================================================== */
+
+#ShowIbanAndBic .toggleTrigger {
+	cursor: default;
+}
+
+#ShowIbanAndBic .toggleTrigger p {
+	margin-bottom: 0.5em !important;
+}
+
+#ShowIbanAndBic .toggleTrigger p a {
+	text-decoration: none;
+	cursor: default;
+	color: inherit;
+}
+
+#ShowIbanAndBic .toggleContent table {
+	margin-bottom: 0 !important;
+}
+
+#ShowIbanAndBic .toggleContent td:first-child {
+	padding-right: 10px;
+}
+
+#ShowIbanAndBic .toggleContent td.roll {
+	color: #7F899D;
+}
+
+
+/* ==========================================================================
+   Display statement of assets
+   ========================================================================== */
+
+#DisplayStatementOfAssets .emphasized {
+	padding-bottom: 4px;
+}
+
+#DisplayStatementOfAssets .emphasized p {
+	margin-bottom: 5px;
+}
+
+#DisplayStatementOfAssets .emphasized input.button {
+	width: 100%;
+}
+
+#DisplayStatementOfAssets .warning,
+#DisplayOrderBook .warning {
+	margin-top: 20px;
+}
+
+.js #DisplayStatementOfAssets .toggleTrigger:not(.disabled) h3 span,
+.js #DisplayOrderBook .toggleTrigger:not(.disabled) h3 span {
+	background: transparent url(../db_img//spriteToggle_x2.png) right 0 no-repeat;
+	background-size: 23px 800px;
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	display: block;
+	padding-right: 30px;
+}
+
+.js #DisplayStatementOfAssets .toggleVisible .toggleTrigger:not(.disabled) h3 span,
+.js #DisplayOrderBook .toggleVisible .toggleTrigger:not(.disabled) h3 span  {
+	background-position: right -100px;
+}
+
+#DisplayStatementOfAssets .paymentDetails,
+#DisplayStatementOfAssets .paymentDetails *,
+#DisplayOrderBook .paymentDetails,
+#DisplayOrderBook .paymentDetails * {
+	font-size: inherit;
+	color: inherit;
+	background: transparent;
+	padding: 0;
+}
+
+#DisplayStatementOfAssets .toggleGroupHeader p {
+	margin-bottom: 0;
+}
+
+#DisplayStatementOfAssets .toggleGroupHeader .key {
+	width: 46%;
+	white-space: nowrap;
+	float: left;
+}
+
+#DisplayStatementOfAssets .toggleGroupHeader .val {
+	width: 54%;
+	float: right;
+}
+
+#DisplayStatementOfAssets .toggleTrigger .key,
+#DisplayOrderBook .toggleTrigger .key {
+	white-space: nowrap;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	width: 45.5%;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(1),
+#DisplayOrderBook .toggleDetails p:nth-child(1) {
+	position: relative;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(1) .key {
+	width: 90px;
+	float: left;
+}
+
+#DisplayOrderBook .toggleDetails p:nth-child(1) .key {
+	width: 150px;
+	float: left;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(1) .val,
+#DisplayOrderBook .toggleDetails p:nth-child(1) .val {
+	position: absolute;
+	text-align: right;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(2) span span {
+	white-space: nowrap;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(2) .credit,
+#DisplayOrderBook .toggleDetails p:first-child .credit  {
+	color: #14a109 !important;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(2) .credit:before {
+	content: "\21D1 \ ";
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(2) .debit,
+#DisplayOrderBook .toggleDetails p:first-child .debit {
+	color: #e00034 !important;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(2) .debit:before {
+	content: "\21D3 \ ";
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(n+3),
+#DisplayOrderBook .toggleDetails p:nth-child(n+2) {
+	width: 50%;
+	float: left;
+	background: #f4f3f2;
+	margin: 0;
+	padding: 0;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(n+3) span.key,
+#DisplayOrderBook .toggleDetails p:nth-child(n+2) span.key{
+	font-size: 80%;
+}
+#DisplayStatementOfAssets .toggleDetails p:nth-child(n+3) span,
+#DisplayOrderBook .toggleDetails p:nth-child(n+2) span {
+	padding: 10px 0 0 10px;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(n+3) .val,
+#DisplayOrderBook .toggleDetails p:nth-child(n+2) .val {
+	padding-top: 0;
+}
+
+#DisplayStatementOfAssets .toggleDetails p:nth-child(9),
+#DisplayStatementOfAssets .toggleDetails p:nth-child(10),
+#DisplayOrderBook .toggleDetails p:nth-child(14),
+#DisplayOrderBook .toggleDetails p:nth-child(15),
+#DisplayOrderBook .toggleContainer:not(.executedOrders) .toggleDetails p:nth-child(12) {
+	padding-bottom: 10px;
+}
+
+#DisplayOrderBook .toggleContainer:not(.executedOrders) .toggleDetails p:nth-child(12) {
+	width: 100%;
+}
+
+
+/* ==========================================================================
+   Trade securities
+   ========================================================================== */
+
+#tradeSecuritiesForm > div.emphasized {
+	margin-bottom: 1em;
+}
+
+#tradeSecuritiesForm > div.emphasized p {
+	margin-bottom: 5px;
+}
+
+#tradeSecuritiesForm input.search {
+	position: absolute;
+	right: 0;
+}
+
+/*#tradeSecuritiesForm tr:nth-child(-n+2) td:first-child {
+	padding-right: 5px;
+}*/
+
+#tradeSecuritiesForm td:first-child input.rdoInput {
+	margin-top: -2px;
+}
+
+#tradeSecuritiesForm tr:nth-child(3) input.rdoInput,
+#tradeSecuritiesForm tr:nth-child(4) input.rdoInput,
+#tradeSecuritiesForm tr:nth-child(7) input.rdoInput {
+	margin-top: 6px;
+}
+
+#tradeSecuritiesForm table {
+	background: #f4f3f2;
+}
+
+#tradeSecuritiesForm table input[type="text"],
+#tradeSecuritiesForm table select {
+	background-color: #fff;
+}
+
+#tradeSecuritiesForm th {
+	background: #fff;
+	padding-bottom: 5px;
+	border-bottom: 13px solid #f4f3f2;
+}
+
+#tradeSecuritiesForm td {
+	padding-bottom: 10px;
+}
+
+#tradeSecuritiesForm tr:first-child td {
+	padding-top: 13px;
+}
+
+#tradeSecuritiesForm td:first-child {
+	padding: 0 7px 0 8px;
+}
+
+#tradeSecuritiesForm td:last-child {
+	padding-right: 10px;
+}
+
+#tradeSecuritiesForm tr:last-child td[colspan="2"] {
+	padding: 0 10px 10px 10px;	
+}
+
+#tradeSecuritiesForm .datePicker table {
+	background: #fff;
+}
+
+#tradeSecuritiesForm .datePicker th {
+	background: #bbc2ce;
+	padding: 12px 0;
+	border: none !important;
+	border-left: 5px solid #fff !important;
+}
+
+#tradeSecuritiesForm .datePicker th:first-child {
+	border-left: none !important;
+}
+
+#tradeSecuritiesForm .datePicker td {
+	padding: 0 !important;
+}
+
+#tradeSecuritiesForm .orderAttributeSelection {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+#tradeSecuritiesForm .orderAttributeSelection > .inner {
+	display: table-row;
+}
+
+#tradeSecuritiesForm .orderAttributeSelection  > .inner > div {
+	display: table-cell;
+}
+
+#tradeSecuritiesForm .orderAttributeSelection  > .inner > div:last-child {
+	width: 100%;
+}
+
+#tradeSecuritiesForm .orderAttributeSelection  > .inner > div:first-child {
+	width: 80px;
+}
+
+#tradeSecuritiesForm .orderAttributeSelection + span.errorMsg {
+	margin-left: 80px;
+}
+
+/* ==========================================================================
+   Postbox
+   ========================================================================== */
+
+#menuPostbox.menuPostboxUnreadMessages a {
+	line-height: normal;
+	padding-top: 5px !important;
+	padding-bottom: 6px !important;
+}
+
+#menuPostbox.menuPostboxUnreadMessages .messageboxCounterContainer {
+	font-size: 80%;
+	display: block;
+	color: #7f899d;
+}
+
+#menuPostbox.menuPostboxUnreadMessages .messageboxCounterId {
+	background: #0098db;
+	color: #fff;
+	padding: 0 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#page .field-label label[wicketsource*="InternalErrorPage"] {
+	padding-top: 1em;
+	display: block;
+}
+
+#page .tbl-overview-account-statement table:nth-of-type(1), 
+#page .tbl-overview-creditcard-statement table:nth-of-type(1), 
+#page .tbl-overview-depot-statement table:nth-of-type(1),
+#page .tbl-overview-message {
+   display: none;
+}
+
+#page h2 {
+	font-size: 1.6em;
+	padding: 15px 0 11px 0;
+	margin-left: -2px;
+	line-height: 110%;
+}
+
+#page .table-hd {
+	padding: 10px 5px;
+	background: #f4f3f2;
+	border-bottom: 1px solid #bbc2ce;		
+}
+
+#page .table-hd h3 {
+	color: #133C7F;
+	font-weight: bold;
+	width: 180px;
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;	
+}
+
+#page .table-hd p {
+	position: absolute;
+	margin-top: -22px;
+	right: 15px;
+}
+
+#page div[class*="tbl-overview"] p[id^="keine"] {
+	padding: 10px 5px;
+}
+
+#page .state-unmarked {
+	font-weight: bold;
+}
+
+#page .headers-date,
+#page .headers-account {
+	position: absolute;
+	font-size: 80%;
+	color: #7f899d;
+	padding-top: 5px;
+	padding-bottom: 0;
+	border-bottom: none;
+	font-weight: normal;
+}
+
+#page .headers-account {
+	border: none;
+	left: 150px;
+	margin-top: -15px;
+}
+
+#page .headers-account:before {
+	content: "- Konto-Nr. ";
+	position: absolute;
+	left: -65px;
+}
+
+#page .tbl-overview-creditcard-statement .headers-account:before,
+#page .tbl-creditcard-statement .headers-account:before {
+	content: "- Karten-Nr. ";
+}
+
+#page .tbl-overview-creditcard-statement .headers-account .accountnumber-block,
+#page .tbl-creditcard-statement .headers-account .accountnumber-block {
+	padding-right: 4px;
+}
+
+#page .tbl-creditcard-statement table tr td:nth-of-type(3){
+	padding-top: 20px;
+}
+
+#page .tbl-creditcard-statement .headers-action a {
+	margin: 0 0 0 5px;
+}
+
+#page .tbl-overview-depot-statement .headers-account:before,
+#page .tbl-depot-statement .headers-account:before {
+	content: "- Depot-Nr. ";
+}
+
+#page .headers-subject {
+	width: 100%;
+	border-left: none;
+	/*word-break: break-all;
+	word-wrap: break-word;*/	
+}
+
+#page .headers-subject,
+#page .headers-account,
+#page .headers-action {
+	padding-top: 20px;
+	padding-bottom: 4px;
+}
+
+#page .headers-action {
+	white-space: nowrap;
+}
+
+#page .message-actions a.action-more {	
+	background: -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+	border: medium none;
+	color: #fff;
+	font-weight: bold;
+	padding: 7px 15px 8px;
+	width: auto;
+	text-decoration: none;
+}
+
+#page .headers-action a {
+	background: url(../db_img//spritePostboxActions.png) no-repeat transparent;
+	background-size: 24px 480px; 	
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 0 10px;
+}
+
+#page .headers-action a.action-icon-download {      
+	background-position: 0 0;
+}
+
+#page tr:not(.state-unmarked) .headers-action a.action-icon-download {
+	background-position: 0 -48px;
+}
+
+#page .headers-action a.action-icon-marked {	
+	background-position: 0 -96px;
+}
+
+#page .headers-action a.action-icon-delete {
+	background-position: 0 -192px;
+}
+
+#page .box-account-statement .box-title h2 + p,
+#page .box-creditcard-statement .box-title h2 + p,
+#page .box-depot-statement .box-title h2 + p {
+	display: none;
+}
+
+#page .tbl-account-statement,
+#page .tbl-creditcard-statement,
+#page .tbl-depot-statement {
+	/* margin-top: 65px; ALM 47321 */
+	border-top: 1px solid #dbdfe6; /* ALM 47321 */
+}
+
+#page .tbl-account-statement th,
+#page .tbl-creditcard-statement th,
+#page .tbl-depot-statement th {
+	background: #fff;
+}
+
+#page .tbl-account-statement .id-headers-account,
+#page .tbl-creditcard-statement .id-headers-account,
+#page .tbl-depot-statement .id-headers-account {
+	display: block;
+	width: 100%;
+	border: none;
+	position: absolute;
+	right: 0;
+	padding: 0;
+	margin-top: -65px;
+	display: none; /* ALM 47321 */
+}
+
+#page .tbl-account-statement .id-headers-account > span,
+#page .tbl-creditcard-statement .id-headers-account > span,
+#page .tbl-depot-statement .id-headers-account > span {
+	padding: 10px;
+	margin: 0 10px;
+	display: block;
+	background: #f4f3f2;
+	border-bottom: 1px solid #bbc2ce;
+}
+
+#page .tbl-account-statement .id-headers-account .static,
+#page .tbl-account-statement .id-headers-date,
+#page .tbl-account-statement .id-headers-subject,
+#page .tbl-account-statement .id-headers-action,
+#page .tbl-creditcard-statement .id-headers-account .static,
+#page .tbl-creditcard-statement .id-headers-date,
+#page .tbl-creditcard-statement .id-headers-subject,
+#page .tbl-creditcard-statement .id-headers-type,
+#page .tbl-creditcard-statement .id-headers-action,
+#page .tbl-depot-statement .id-headers-account .static,
+#page .tbl-depot-statement .id-headers-date,
+#page .tbl-depot-statement .id-headers-subject,
+#page .tbl-depot-statement .id-headers-action {
+	display: none;
+}
+
+
+#page + .ajax-placeholder .modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0; 
+	right: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color:rgba(19,60,127,0.4);
+	z-index: 1;
+}
+
+#page + .ajax-placeholder .modal > .modal-inner {
+	width: 100%;
+	height: 100%;
+	position: relative;	
+}
+
+#page + .ajax-placeholder .modal .modal-cn {
+	width: 90%;
+	height: 170px;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	text-align: left;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	     -o-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 25px 10px !important;
+	   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 25px 10px !important;
+	    -ms-box-shadow: rgba(0, 0, 0, 0.2) 0 0 25px 10px !important;
+	     -o-box-shadow: rgba(0, 0, 0, 0.2) 0 0 25px 10px !important;
+	        box-shadow: rgba(0, 0, 0, 0.2) 0 0 25px 10px !important;
+	background: #fff;	
+}
+
+@media all and (orientation:landscape) {
+	#page + .ajax-placeholder .modal .modal-cn {
+		height: 124px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#page + .ajax-placeholder .modal .modal-cn {
+		height: 200px;
+	}
+}
+
+#page + .ajax-placeholder .modal .modal-cn i {
+	font-style: normal;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-title {
+	padding: 8px 10px 5px 10px;
+	position: relative;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-title .modal-close {
+	position: absolute;
+	right: 10px;
+	top: 9px;
+	background: transparent url(../db_img//sprite_credentialsInfo.png) 0 -50px no-repeat;
+	background-size: 20px 150px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	font-size: 0;
+	cursor: pointer;
+	display: none; /* As requested by business (M. Laubsch, cp. "Antwort: Re: Antwort: Fwd: ALM 47319", 23.10.2014, 08:40) */
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-title .modal-close a {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-title h2 {
+	margin: 0;
+	padding: 0 40px 0 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-main {
+	padding: 0 10px;
+	position: relative;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-main .control {
+	margin-top: 10px;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-main .control .control-bd {
+	display: table;
+	width: 100%;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-main .control .control-bd .control-modal {
+	display: table-cell;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-main .control .control-bd .control-modal.display-left {
+	padding-right: 10px;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-main .control .control-bd .control-modal.display-right {
+	padding-left: 10px;
+	text-align: right;
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-main .control .control-bd .control-modal .control-cancel button,
+#page + .ajax-placeholder .modal .modal-cn .modal-main .control .control-bd .control-modal a.type-submit {
+	width: auto;
+	color: #fff;	
+	padding: 8px 39px 8px 15px;
+	border: none;
+	border-bottom: 1px solid #c0bbb5;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;	
+	text-decoration: none;
+	background: #bbc2ce; /* Old browsers */
+	background: url(../db_img//spriteArrowButtonNext.png), -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -o-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Opera 11.10+ */
+	background: url(../db_img//spriteArrowButtonNext.png), -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+	background: url(../db_img//spriteArrowButtonNext.png), linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbc2ce', endColorstr='#808a9d',GradientType=0 ); /* IE6-9 */	
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 30px 30px, auto auto;		
+}
+
+#page + .ajax-placeholder .modal .modal-cn .modal-main .control .control-bd .control-modal .control-cancel button {
+	padding: 8px 15px;
+	background-size: 0 0, auto auto;
+}
+
+
+/* ==========================================================================
+   pickadate -	overwrite default values
+   ========================================================================== */
+
+.datePicker td:nth-child(2) {
+    padding: 0 !important;
+}
+
+.datePicker table:not(.layout) tr:nth-child(2n) { 
+    background-color: transparent;
+}
+
+.datePicker .picker--focused .picker__day--highlighted, 
+.datePicker .picker__day--highlighted:hover {
+    border: none;
+}
+
+.datePicker table.picker__table {
+    margin-top: 4px;
+}
+
+.datePicker  table.picker__table td {
+    border-right: 5px solid #ffffff;
+    border-top: 5px solid #ffffff;
+}
+
+.datePicker  table.picker__table td:nth-child(7) {
+    border-right: none;
+}
+
+.datePicker .picker__year,
+.datePicker .picker__header {
+    color:  #ffffff;
+}
+
+.datePicker .picker__year {
+    font-style: normal;
+    font-size: 1em;
+}
+
+.datePicker .picker__header {
+    background-color: #7f899d;
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+.datePicker .picker__nav--next, 
+.datePicker .picker__nav--prev {
+    height: 30px;
+}
+
+.datePicker .picker__nav--next:hover, 
+.datePicker .picker__nav--prev:hover {
+    background-color: transparent;
+}
+
+.datePicker .picker__nav--prev:before {
+    border: none;   
+}
+
+.datePicker .picker__nav--prev,
+.datePicker .picker__nav--prev:hover {
+    border-right: 4px solid #ffffff;   
+    background: url("../db_img//spriteArrowButtonPrevious.png") no-repeat scroll 28px 11px;
+    background-size: 30px 30px;   
+    -webkit-background-size: 30px 30px;
+    -moz-background-size: 30px 30px;
+    
+}
+
+.datePicker .picker__nav--next:before {
+    border: none;   
+}
+
+.datePicker .picker__nav--next,
+.datePicker .picker__nav--next:hover {
+    border-left: 4px solid #ffffff;    
+    background: url("../db_img//spriteArrowButtonNext.png") no-repeat scroll 12px 10px;
+    background-size: 30px 30px;   
+    -webkit-background-size: 30px 30px;
+    -moz-background-size: 30px 30px;
+}
+
+.datePicker  tr:first-child th.picker__weekday {
+    color: #ffffff;
+    background-color: #bbc2ce;
+    padding: 12px 0;
+    border-right: 4px solid #ffffff;
+}
+
+.datePicker  tr:first-child th.picker__weekday:last-child {   
+    border-right: 0;
+}
+
+.datePicker .picker__weekday,
+.datePicker .picker__day {
+    text-align: center;
+    text-transform: uppercase;
+    border:none;
+}
+
+.datePicker .picker__day {
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f4f3f2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f4f3f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%, #f4f3f2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #f4f3f2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%, #f4f3f2 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%, #f4f3f2 100%); /* W3C */  
+    color: #7f899d;
+}
+
+
+.datePicker .picker__day.picker__day--highlighted {   
+    background: -moz-linear-gradient(top, #bbc2ce 0%, #7f899d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#7f899d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #bbc2ce 0%, #7f899d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,#bbc2ce 0%, #7f899d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #bbc2ce 0%, #7f899d 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #bbc2ce 0%, #7f899d 100%); /* W3C */      
+    color: #fff !important;    
+}
+
+.datePicker .picker__day:hover:not(.picker__day--disabled) { 
+    background: -moz-linear-gradient(top, #cdd2d9 0%, #aab2c0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdd2d9), color-stop(100%,#aab2c0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #cdd2d9 0%, #aab2c0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #cdd2d9 0%, #aab2c0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #cdd2d9 0%, #aab2c0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #cdd2d9 0%, #aab2c0 100%); /* W3C */  
+    color: #fff !important;
+}
+
+.datePicker .picker__day.picker__day--disabled {
+    color: #ddd;
+}
+
+.datePicker td:nth-child(6) .picker__day,
+.datePicker td:nth-child(7) .picker__day {
+    background: -moz-linear-gradient(top,  #edeff2 0%, #dbdfe6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edeff2), color-stop(100%,#dbdfe6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #edeff2 0%, #dbdfe6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #edeff2 0%, #dbdfe6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #edeff2 0%, #dbdfe6 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #edeff2 0%, #dbdfe6 100%); /* W3C */   
+}
+
+.datePicker td:nth-child(6) .picker__day.picker__day--disabled,
+.datePicker td:nth-child(7) .picker__day.picker__day--disabled {   
+    background: -moz-linear-gradient(top,  #f6f7f8 0%, #edeff2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f7f8), color-stop(100%,#edeff2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6f7f8 0%, #edeff2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6f7f8 0%, #edeff2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6f7f8 0%, #edeff2 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6f7f8 0%, #edeff2 100%); /* W3C */    
+}
+
+.datePicker .picker__button--today:before,
+.datePicker .picker__day--today:before {
+    border: none;
+    content: none;
+}
+
+.datePicker .picker__button--clear:before{
+    border: none;
+    content: none;    
+}
+
+.datePicker .picker__button--clear:focus, 
+.datePicker .picker__button--clear:hover, 
+.datePicker .picker__button--today:focus,
+.datePicker .picker__button--today:hover, 
+.datePicker .picker__button--today,
+.datePicker .picker__button--clear {      
+    border: 1px solid #ffffff;
+    background: #bbc2ce;
+    color:#ffffff;    
+    background: -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+}
+
+.datePicker .picker__footer {
+    margin-bottom: 0.75em;
+}
+
+/* ==========================================================================
+   AKK & OTMS
+   ========================================================================== */
+
+@media all and (orientation:landscape) {
+	.teaser {
+		display: none;
+	}
+}
+
+@media all and (orientation:portrait) {
+ 
+	.hasFixedTeaser #headerContainer {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		padding: 10px 0;
+	}
+
+	.hasFixedTeaser #headerContainer > .appInner,
+	.hasFixedTeaser #headerContainer > .inner,
+	.hasFixedTeaser div:not(.inApp) #customerNumberContainer {
+		border-right: 10px solid #fff;
+		border-left: 10px solid #fff;	
+	}
+
+	.hasFixedTeaser #contentContainer {
+		margin-top: 212px;
+		background: #fff;
+		padding-top: 0;
+		padding-bottom: 50px;
+		position: relative;	
+	}
+	
+	.hasFixedTeaser .inApp + * + .akkContainer + #contentContainer,
+	.hasFixedTeaser .inApp + .akkContainer + #contentContainer {
+		margin-top: 158px;
+	}
+
+	.hasFixedTeaser #footerContainer {
+		position: relative;
+		padding-top: 0;
+		margin-top: -50px;
+	}
+
+	.hasFixedTeaser .teaser {
+		position: fixed;
+		top: 85px;
+		left: 0;
+		right: 0;
+	}
+	
+	.hasFixedTeaser .inApp + * + .akkContainer .teaser,
+	.hasFixedTeaser .inApp + .akkContainer .teaser {
+		top: 31px;
+	}
+
+	.hasFixedTeaser .inApp #customerNumberContainer {
+		position: fixed;
+		top: 0;
+	}
+
+	body:not(.hasFixedTeaser) #headerContainer + .teaser {
+		margin-top: 30px;
+	}
+
+	.teaser {
+		text-align: center;
+	}
+
+	#contentContainer .teaser {
+		margin: 0 -10px;
+	}
+
+	.teaser > .inner {
+		width: 320px;
+		margin: 0 auto;
+	}
+
+	.teaser .teaserAction {
+		position: relative;
+		display: block;
+		color: inherit;
+	}
+
+	.teaser .teaserText {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		text-align: left;
+		font-size: 13px;
+	}
+
+	.teaserRgt .teaserText {
+		text-align: right;
+	}
+
+	.teaser .teaserText > .inner {
+		position: absolute;
+		width: 100%;
+	}
+
+	.teaser .teaserHeadline > .inner,
+	.teaser .teaserCopy > .inner {
+		padding: 8px 10px 0 15px;	
+		line-height: normal;
+	}
+
+	.teaser .teaserHeadline +  .teaserCopy > .inner {
+		padding-top: 0;
+	}
+
+	.teaser .teaserHeadline h3,
+	.teaser .teaserCopy p {
+		margin: 0;
+		padding: 2px 5px 3px 0;
+		display: inline-block;
+	}
+
+	.teaser .teaserHeadline h3 {
+		font-weight: bold;
+		font-size: 11px;
+	}
+
+	.teaser .teaserHeadline h3 * {
+		margin: 0;
+		padding: 0;  
+	}
+
+	.teaser .teaserImage img {
+		vertical-align: bottom;
+		width: 100%;
+		border: none; /* IE Mobile */
+	}
+
+}
+
+
+/* ==========================================================================
+   PFM
+   ========================================================================== */
+
+#ActivatePfm .tabContainer {
+	margin-top: .5em;
+}
+
+#ActivatePfm .act-teaser {
+	display: block;
+	background: #fff url('../db_img//teaser_pfm.png') right bottom no-repeat;
+	background-size: contain;
+	padding: 1em 0;
+	padding-bottom: 0.6em;
+	text-decoration: none;
+	margin-bottom: 1em;
+	color: #133c7f;
+}
+
+#ActivatePfm .act-teaser .act-text {
+	display: none;
+	font-size: 1.1em;
+}
+
+@media only screen and (max-width: 379px) {
+	#ActivatePfm .act-teaser .act-text-very-short {
+		display: block;
+		padding-right: 35px;
+	}
+}
+
+@media only screen and (min-width: 380px) {
+	#ActivatePfm .act-teaser .act-text-short {
+		display: block;
+		padding-right: 100px;
+	}
+}
+
+#ActivatePfm .act-teaser .act-watch-link {
+	display: inline-block;
+	border: none;
+	width: auto;
+	color: #fff;
+	padding: 8px 39px 8px 15px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	background:  url(../db_img//spriteArrowButtonNext.png), #bbc2ce; /* Old browsers */
+	background:  url(../db_img//spriteArrowButtonNext.png), -moz-linear-gradient(top,  #bbc2ce 0%, #808a9d 100%); /* FF3.6+ */
+	background:  url(../db_img//spriteArrowButtonNext.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2ce), color-stop(100%,#808a9d)); /* Chrome,Safari4+ */
+	background:  url(../db_img//spriteArrowButtonNext.png), -webkit-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Chrome10+,Safari5.1+ */
+	background:  url(../db_img//spriteArrowButtonNext.png), -o-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* Opera 11.10+ */
+	background:  url(../db_img//spriteArrowButtonNext.png), -ms-linear-gradient(top,  #bbc2ce 0%,#808a9d 100%); /* IE10+ */
+	background:  url(../db_img//spriteArrowButtonNext.png), linear-gradient(to bottom,  #bbc2ce 0%,#808a9d 100%); /* W3C */
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 30px 30px, auto auto;
+}
+
+
+#ActivatePfm .act-submit-button {
+	max-width: 250px;
+	display: block;
+	border: none;
+	padding: 8px 15px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	background: #fff1ba; /* Old browsers */
+	background: -moz-linear-gradient(top, #fff1ba 0%, #ffbd35 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff1ba), color-stop(100%,#ffbd35)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fff1ba 0%,#ffbd35 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fff1ba 0%,#ffbd35 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff1ba 0%,#ffbd35 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fff1ba 0%,#ffbd35 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff1ba', endColorstr='#ffbd35',GradientType=0 ); /* IE6-8 */
+	color: #133c7f;
+	margin: 0.3em auto 1.25em;
+	text-align: center;
+}
+
+#ActivatePfm .act-agreement {
+	display: block;
+	padding-left: 29px;
+	position: relative;
+	min-height: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+#ActivatePfm .act-agreement input[type='checkbox'] {
+	position: absolute;
+	left: 0;
+}
+
+#ActivatePfm .errorMsg {
+	margin-bottom: 0.9em;
+	padding-left: 29px;
+}
+
+
+/* ==========================================================================
+   Giftcards
+   ========================================================================== */
+
+#giftcardVisualContainer {
+	margin: 0 auto 10px auto;
+	text-align: center;
+	width: 300px;
+}   
+
+#giftcardVisualContainer > .inner {
+	position: relative;
+	height: 197px;
+}
+
+#giftcardVisualContainer #giftcardVisual {
+	width: 100%;
+	height: 100%;
+	background: url(../db_img//giftcard_amazon.jpg);
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;	
+}
+
+#giftcardVisualContainer .giftcardAmount {
+	position: absolute;
+	bottom: 80px;
+	right: 40px;
+	background: #fff;
+	color: #ffa100;
+	opacity: 0.85;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	width: 90px;
+	font-weight: bold;
+}
+
+#giftcardVisualContainer .giftcardAmount > .inner {
+	padding: 10px;
+
+}
+
+.giftcardAmount > .inner {
+	white-space: nowrap;
+}
+
+/* OPENISSUE */
+
+#giftcards .emphasized:after { /* Clearfix: http://css-tricks.com/snippets/css/clear-fix/ */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#giftcards .emphasized input.button {
+	margin-top: 12px;
+}
+
+#giftcards .emphasized p {
+	margin: 0 0 8px 0;
+}
+
+#giftcards .emphasized noscript p input {
+	width: 100%;
+}
+
+#giftcards .emphasized .accountBalance {
+	line-height: normal;	
+}
+
+@media only screen and (min-width: 480px) {
+	#giftcards .emphasized .accountBalance .key {
+		width: 60%;
+	}
+	
+	#giftcards .emphasized .accountBalance .val {
+		width: 40%;
+	}
+}
+
+#giftcards #SaveAsTemplate {
+	/*border-top: 1px solid #dbdfe6;*/
+	margin: 1em 0 1em 0;
+	position: relative;
+}
+
+#giftcards #SaveAsTemplate input {
+	vertical-align: middle;
+	margin-top: -2px;
+	position: absolute;
+}
+
+#giftcards #SaveAsTemplate label {
+	padding-left: 1.7em;
+	display: block;
+}
+
+
+/* ==========================================================================
+   payDirekt
+   ========================================================================== */
+
+#PaydirektOverview .emphasized {
+	border-top: 1px solid #dbdfe6;
+	padding-bottom: 1.125em;
+	background: #f4f3f2 url(../db_img//logo_paydirekt.png) right 10px bottom 10px / 80px 27px no-repeat;
+}
+
+#PaydirektOverview .emphasized p {
+	margin-bottom: 0;
+	padding-top: .3em;
+}
+
+#PaydirektOverview .emphasized p:first-child {
+	padding-top: 0;
+}
+
+#PaydirektOverview .emphasized + ul {
+	margin-bottom: .5em;
+}
+
+#PaydirektEnrollment .emphasized {
+	margin-bottom: 1em;
+}
+
+#PaydirektEnrollment .emphasized > h2:first-child,
+#PaydirektChangeAccessData .emphasized > h2:first-child {
+	padding-top: 0;
+}
+
+#PaydirektEnrollment #paymentProceduresWithTANContainer,
+#PaydirektChangeAccessData #paymentProceduresWithTANContainer {
+	position: relative;
+}
+
+#PaydirektEnrollment #paymentProceduresWithTANContainer span *,
+#PaydirektChangeAccessData #paymentProceduresWithTANContainer span * {
+	display: block;
+}
+
+#PaydirektEnrollment #paymentProceduresWithTANContainer span input[type="checkbox"],
+#PaydirektChangeAccessData #paymentProceduresWithTANContainer span input[type="checkbox"] {
+	position: absolute;
+	top: -.2em;
+}
+
+#PaydirektEnrollment #paymentProceduresWithTANContainer span label,
+#PaydirektChangeAccessData #paymentProceduresWithTANContainer span label {
+	padding-left: 2em;
+}
+
+#PaydirektEnrollment #paymentProceduresPasswordContainer,
+#PaydirektResetPassword #paymentProceduresPasswordContainer {
+	margin-bottom: .25em;
+}
+
+#PaydirektEnrollment .hasAnnotation > label[for="paymentProceduresPasswordRepetition"],
+#PaydirektResetPassword .hasAnnotation > label[for="paymentProceduresPasswordRepetition"] {
+	display: none;
+}
+
+#PaydirektEnrollment .success + .advice {
+	margin: 1em 0;
+}
+
+#PaydirektEnrollment .success + .advice ~ form > input {
+	width: 100%;
+	padding-right: 15px;
+	color: #fff;
+	background: #e00034; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eb597b 0%, #e00034 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eb597b), color-stop(100%,#e00034)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eb597b 0%,#e00034 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eb597b 0%,#e00034 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb597b', endColorstr='#e00034',GradientType=0 ); /* IE6-9 */	
+}
+
+#PaydirektResetPassword .emphasized p:last-child,
+#PaydirektChangeAccessData .emphasized p:last-child {
+	margin-bottom: .5em;
+}
+
+#PaydirektResetPassword .summary {
+	margin-bottom: 1em;
+}
+
+#PaydirektChangeAccessData .acceptance {
+	margin-bottom: 1.5em;
+}
+
+#pPPD {
+	position: relative;
+}
+
+#pPPD > h2 + p {
+	font-weight: bold;
+	margin-bottom: .25em;
+}
+
+#pPPD_output p:last-child {
+	position: absolute;
+	top: 1em;
+	right: 0;
+}
+
+#pPPD_output p:last-child a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+	background-color: #133C7F;
+	border-radius: 12px;
+	padding: 0 12px;
+	-webkit-transition: all 750ms ease;
+	-moz-transition: all 750ms ease;
+	-ms-transition: all 750ms ease;
+	-o-transition: all 750ms ease;
+	transition: all 750ms ease;	
+}
+
+#pPPD_output p:last-child a:hover {
+	background-color: transparent;
+	color: #f4f3f2;
+}
+
+#pPPD #pPPD_input #pPPD_input_street,
+#pPPD #pPPD_input #pPPD_input_city {
+	width: 73%;
+}
+
+#pPPD #pPPD_input #pPPD_input_streetNumber,
+#pPPD #pPPD_input #pPPD_input_postalCode {
+	width: 25%;
+}
+
+#pPPD #pPPD_input #pPPD_input_streetNumber,
+#pPPD #pPPD_input #pPPD_input_city {
+	float: right;
+}
+
+#pPPD #pPPD_input p + .errorMsg {
+	margin-top: -.5em;
+}
+
+#pPPD #pPPD_input .errorMsg + p,
+#pPPD #pPPD_input .errorMsg + select {
+	margin-top: .5em;
+}
+
+#pPPD #pPPD_input #pPPD_input_action {
+	display: none;
+}
+
+
+/* ==========================================================================
+   inApp browsing
+   ========================================================================== */
+
+body.inApp #linkLegal,
+body.inApp #linkDesktop {
+	display: none !important;
+}
+
+div.inApp #customerNumberContainer {
+	margin: 7px 0 0 10px;
+}
+
+body#sitemap #contentContainer {
+	padding-top: 31px;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+   
+@media only screen and (max-width: 320px) {
+	
+	.key,
+	.val {
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		float: none;
+	}
+	
+	.toggleTrigger .key {
+		width: 35%;	
+	}
+
+	.toggleTrigger .val {
+		width: 54%;
+	}	
+	
+	.toggleDetails .val {
+		color: #7F899D !important;
+	}
+	
+	#MortgageLoanDetails .balance,
+	#DisplayTransactions .balance {
+		text-align: left;
+	}
+	
+	#DisplayCreditCardTransactions th:nth-child(1),
+	#DisplayCreditCardTransactions td:nth-child(2) a {
+		word-break: break-all;
+		word-wrap: break-word;
+	}
+	
+	#CreateDomesticTransferOrder .emphasized .balance,
+	#SepaDomesticTransfer .emphasized .balance,
+	#CreateTransferToSubaccount .emphasized .balance,
+	#CreateStandingOrder .emphasized .balance,
+	#ChangeStandingOrder .emphasized .balance {
+		text-align: left;
+	}	
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	body {
+    	font-size: 1.6em;
+	}
+	
+	#logoContainer {
+		width: 55px;
+		height: 55px;
+	}
+	
+	.toggleTrigger h4 {
+		padding-left: 36px;
+	}
+	
+	.toggleTrigger h4 {
+		background-position: 0 -400px;
+	}
+
+	.toggleVisible .toggleTrigger h4 {
+		background-position: 0 -500px;
+	}
+
+	.prebooked .toggleTrigger h4 {
+		background-position: 0 -600px;
+	}
+
+	.toggleVisible.prebooked .toggleTrigger h4 {
+		background-position: 0 -700px;
+	}
+	
+	#headerContainer .menu {
+		background-position: 9px -93px;	
+		padding: 2px 10px 2px 33px;
+	}
+	
+	.advice h3 {
+		background-position: 2px 9px !important;
+		padding-left: 30px;
+	}
+	
+	#contentContainer li,
+	#footerContainer li { 
+		background-position: right -184px;
+	}
+	
+	.errorMsg {
+		font-size: 80%;
+		padding-left: 27px;
+		background-position: 0 3px;
+	}
+	
+	.backendErrorMsg h3 {
+		background-position: 0 7px;
+		padding-right: 10px !important;
+	}
+	
+	.js .toggleTrigger .val {
+		background-position: right 7px;	
+	}
+	
+	.js .toggleVisible .toggleTrigger .val {
+		background-position: right -93px;
+	}
+	
+	.js .toggleTrigger .paymentDetails {
+		font-size: 80%;
+	}
+	
+	.success {
+		background-position: 10px 18px;
+	}
+	
+	input.create {
+		background-position: 4px -210px;
+	}
+	
+	#page .table-hd p {
+	    margin-top: -36px;
+	}
+	
+	#page .headers-subject, 
+	#page .headers-action {
+	    padding-top: 25px;
+	}
+	
+	#page .headers-account:before {
+		left: -105px;
+	}
+	
+	#page .headers-account {
+		left: 230px;
+	}
+	
+	#page .table-hd h3 {
+	    width: auto;
+	}
+	
+	.toggleContainer .toggleDetailActions li.template a {
+		background-position: right -361px !important;
+	}
+	
+	.toggleContainer .toggleDetailActions li.edit a, 
+	.toggleContainer .toggleDetailActions li.view a {
+		background-position: right -94px !important;
+	}
+	
+	.toggleContainer .toggleDetailActions li.delete a, 
+	.toggleContainer .toggleDetailActions li.deleteOrder a {
+		background-position: right -147px !important;
+	}
+	
+	.datePicker .picker__nav--next, 
+	.datePicker .picker__nav--next:hover {
+		background-position: 20px 15px;
+	}
+	
+	.datePicker .picker__nav--prev, 
+	.datePicker .picker__nav--prev:hover {
+		background-position: 40px 16px;
+	}
+	
+	#SearchTransactionsMobile table#turnoverAmount .button:first-child input[type="radio"]:checked + label {
+		background-position: right -18px;
+	}
+	
+	#SearchTransactionsMobile table#turnoverAmount .button:first-child label {
+		background-position: right 6px;
+	}
+	
+	#SearchTransactionsMobile table#turnoverAmount .button input[type="radio"]:checked + label {
+		background-position: right -66px;
+	}
+	
+	#SearchTransactionsMobile table#turnoverAmount .button label {
+		background-position: right -42px;
+	}
+	
+	#SepaDomesticTransfer .tabPane td.search a,
+	#SepaDomesticTransfer .tabPane td.search input,
+	#CreateStandingOrder .tabPane td.search a,
+	#CreateStandingOrder .tabPane td.search input,
+	#ChangeStandingOrder .tabPane td.search a,
+	#ChangeStandingOrder .tabPane td.search input {
+		margin-top: 17px;
+	}
+	
+	#DisplayTransactions .directDebitReturn a {
+		padding-left: 26px;
+	}	
+	
+	#OPRA_module_client_dependant_text_notice_pre h3 {
+		background-position: 0 9px;
+	}	
+		
+	#tradeSecuritiesForm td:first-child input.rdoInput {
+		margin-top: 5px;
+		margin-right: 7px;
+	}
+	
+	#footerContainer .menuBar a:link,
+	#footerContainer .menuBar a:visited {
+		background-position: 8px 13px !important;
+	}
+
+	#footerContainer .menuBar a:hover,
+	#footerContainer .menuBar .currentView a {
+		background-position: 8px -51px !important;
+	}
+
+	#footerContainer #menuTransactions a {
+		background-position: 8px -115px !important;
+	}
+
+	#footerContainer #menuTransactions a:hover,
+	#footerContainer #menuTransactions.currentView a {
+		background-position: 8px -179px !important;
+	}
+
+	#footerContainer #menuPfm a {
+		background-position: 8px -1651px !important;
+	}
+
+	#footerContainer #menuPfm a:hover,
+	#footerContainer #menuPfm.currentView a {
+		background-position: 8px -1715px !important;
+	}		
+	
+	#footerContainer #menuTransactionSearch a {
+		background-position: 8px -1395px !important;
+	}
+
+	#footerContainer #menuTransactionSearch a:hover,
+	#footerContainer #menuTransactionSearch.currentView a {
+		background-position: 8px -1459px !important;
+	}
+
+	#footerContainer #menuTransfer a {
+		background-position: 8px -243px !important;
+	}
+
+	#footerContainer #menuTransfer a:hover,
+	#footerContainer #menuTransfer.currentView a {
+		background-position: 8px -307px !important;
+	}
+	
+	#footerContainer #menuStandingOrders a {
+		background-position: 8px -1140px !important;
+	}
+
+	#footerContainer #menuStandingOrders a:hover,
+	#footerContainer #menuStandingOrders.currentView a {
+		background-position: 8px -1204px !important;
+	}
+
+	#footerContainer #menuTransferToSubAccount a {
+		background-position: 8px -1268px !important;
+	}
+
+	#footerContainer #menuTransferToSubAccount a:hover,
+	#footerContainer #menuTransferToSubAccount.currentView a {
+		background-position: 8px -1332px !important;
+	}	
+
+	#footerContainer #menuIBAN a {
+		background-position: 8px -371px !important;
+	}
+
+	#footerContainer #menuIBAN a:hover,
+	#footerContainer #menuIBAN.currentView a {
+		background-position: 8px -435px !important;
+	}
+
+	#footerContainer #menuAssets a {
+		background-position: 8px -499px !important;
+	}
+
+	#footerContainer #menuAssets a:hover,
+	#footerContainer #menuAssets.currentView a {
+		background-position: 8px -563px !important;
+	}
+
+	#footerContainer #menuBuyOrder a {
+		background-position: 8px -627px !important;
+	}
+
+	#footerContainer #menuBuyOrder a:hover,
+	#footerContainer #menuBuyOrder.currentView a {
+		background-position: 8px -691px !important;
+	}
+
+	#footerContainer #menuSellOrder a {
+		background-position: 8px -755px !important;
+	}
+
+	#footerContainer #menuSellOrder a:hover,
+	#footerContainer #menuSellOrder.currentView a {
+		background-position: 8px -819px !important;
+	}
+
+	#footerContainer #menuOrderBook a {
+		background-position: 8px -883px !important;
+	}
+
+	#footerContainer #menuOrderBook a:hover,
+	#footerContainer #menuOrderBook.currentView a {
+		background-position: 8px -947px !important;
+	}
+	
+	#footerContainer #menuPostbox a {
+		background-position: 8px -1521px !important;
+	}
+
+	#footerContainer #menuPostbox a:hover,
+	#footerContainer #menuPostbox.currentView a {
+		background-position: 8px -1585px !important;
+	}
+	
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for viewports that meet the condition */
+}

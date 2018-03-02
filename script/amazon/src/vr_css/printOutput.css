@@ -1,0 +1,171 @@
+#header, #breadcrumb, #logoutBlock, #crossnavigation, #navigation, #contextCommands, #footernaviInfoMenu, .seitenanfang {display: none;}
+#main {width: auto; box-shadow: none; border: 0 none transparent;}
+body, #scroll, .contentDiv {background: none;}
+#maincontent.maincontent_DEFAULT, #maincontent.maincontent_100PERCENT  {float: none; margin: 0;}
+
+.maincontent_100PERCENT .v-app .rbf-entity-frame .rbf-entity-header .rbf-entity-header-buttonbar {display: none !important;}
+
+.breadcrumb {visibility: hidden;}
+
+.maincontent_100PERCENT .v-app .rbf-entity-header-menubutton .rbf-menuselector {display: none !important;}
+
+html, body, #scroll,.v-app.v-app, .v-table-body-wrapper {height: auto !important; overflow: visible !important;}
+#main, .maincontent_100PERCENT #medItem,
+.maincontent_100PERCENT .v-app .rbf-entity-frame .rbf-entity-center {width: 100% !important; display:block !important;}
+#main {margin:0 !important}
+
+/* Schatten der Ziehharmonika */
+.v-app .rbf-progressive-disclosure {boxshadow: none;}
+
+
+/* Dieser Printheader ist in allen RBF-Seiten mit style="display:none" enthalten */
+#printHeader2014 {display: block !important; width: 100%; margin-bottom: 20px;}
+
+/* Korrektur der Druckdarstellung in FF */
+.v-app .v-widget, .v-app  .rbf-viewinterpreter .v-widget, .v-app div.v-csslayout {display: inherit !important;}
+.v-app div.v-csslayout.unitBasedValueCell {display: initial !important;}
+.v-ie .v-app div.v-csslayout.unitBasedValueCell {display: inline !important;}
+.v-app .kontoinfo .v-widget {display: inline-block !important;}
+
+.v-app .rbf-progressive-disclosure {box-shadow: none !important;}
+
+.v-app .v-csslayout-button-row {display: none;}
+
+.DruckBankname {font-size:16px; font-weight: bold; margin-bottom: 3px;}
+.Kopfdaten {border: 2px solid black; margin: 3px 0; padding: 2px;}
+
+
+.v-app .rbf-entity-frame .rbf-entity-header,
+.v-app .rbf-entity-frame #webcenterSlot,
+.v-app .rbf-entity-frame .vdlContent>.v-layout:first-child>.v-layout {width: 910px !important;}
+.v-app .rbf-entity-frame .vdlContent table .vdlContent {width: 926px !important;}
+.v-app .rbf-entity-frame .vdlContent table .vdlContent>.v-layout>.v-layout {width: 100% !important;}
+
+.v-app .rbf-entity-frame .vdlContent>.v-layout:first-child>.v-layout .forms-field-group,
+.v-app .rbf-entity-frame .vdlContent .v-csslayout .v-button,
+.v-app .rbf-entity-frame .vdlContent>.v-layout:first-child>.v-layout .forms-field-group .block,
+.v-app .rbf-entity-frame .vdlContent>.v-layout:first-child>.v-layout .forms-field-group .v-csslayout.block,
+.v-app .rbf-entity-frame .vdlContent table .detail-view .vdlContent .forms-field-group .v-csslayout.block {display:inline-block !important;}
+
+.v-app .rbf-entity-frame .vdlContent .v-table-body-wrapper,
+.v-app .rbf-entity-frame .vdlContent .v-table-body-wrapper .v-table-body-noselection {width: 910px !important; overflow: hidden;}
+
+.v-app .vdlContent input[type="checkbox"], .v-app .vdlContent input[type="radio"] { opacity: 1 !important; width: auto !important; height: auto !important;}
+.v-app .vdlContent input[type="checkbox"] + label,
+.v-app .vdlContent input[type="checkbox"]:checked + label {backround-image: none !important;}
+
+.v-app .rbf-entity-objectchange-popup,
+.v-app .rbf-viewinterpreter .vdlContent .v-button,
+.v-app .rbf-viewinterpreter .vdlContent input[type="text"] {box-shadow: none !important;}
+
+.v-app .v-button.v-button-link, .v-app .v-button-rbf-default.v-button-link, .v-app .v-native-button.v-button-link { border-radius: 0px !important; border-radius: unset !important; background-image: none !important; }
+
+.v-app .v-nativebutton.v-widget {display: inline-block !important;}
+
+.v-app .v-label.v-label-rbf-h1 {padding-bottom: 20px !important;}
+.v-app .forms-field-group .block {display: inline-block !important;}
+.v-app .v-nativebutton.cancel:hover .v-nativebutton-caption,
+.v-app .v-nativebutton.cancel .v-nativebutton-caption {background-position: 0px 7px !important;}
+
+
+/************************************************/
+/*                UFC-PRINT                     */
+/************************************************/
+
+#UC .rbf-header-toolbar {
+	display: none !important;
+}
+
+.VWD .btn-cta,
+.VWD .btn, 
+.VWD .ui-selectmenu-bg,  
+.VWD .btn-cta2,
+.VWD .lst_tabs li>a,
+.VWD .lst_tabs li>span,
+.UnionOrdererteilungAssistant .v-nativebutton,
+.UnionOrdererteilungAssistant .v-nativebutton.forward,
+.UCFreistellungBearbeitenEinstiegB2C .v-nativebutton,
+.UCFreistellungBearbeitenEinstiegB2C .v-nativebutton.forward,
+.UnionOrdererteilungAssistant .v-app .v-tabsheet .v-tabsheet-tabcontainer .v-tabsheet-tabs .v-tabsheet-tabitemcell,
+#UC .v-filterselect-no-input input {
+	box-shadow: none !important;
+}
+
+.UnionFondsinformationenEntityWorkbench #suchergebnis > div {
+	width: auto !important;
+}
+
+#UC .rbf-entity-frame .vdlContent table .vdlContent {
+    width: auto !important
+}
+
+.UnionDepotuebersichtEntityWorkbench #UC .rbf-entity-frame .vdlContent table .vdlContent>.v-layout>.v-layout {
+	width: 437px !important;
+}
+
+.v-app table tr,
+.v-app table .v-table-row,
+.v-app table .v-table-row-odd {
+	page-break-before: auto !important;
+	page-break-after: auto !important;
+	page-break-inside: avoid !important;
+}
+
+.maincontent_100PERCENT .v-app #freistellungsuebersichtDaten .detail-view .v-slot-rbf-viewinterpreter>.rbf-viewinterpreter .forms-field-group .block {
+    width: 190px !important;
+}
+
+.v-app .UCFreistellungBearbeitenEinstiegB2C .vdlContent input[type="checkbox"], .v-app .UCFreistellungBearbeitenEinstiegB2C .vdlContent input[type="radio"] {
+	opacity: 0 !important;
+}
+
+.UCFreistellungBearbeitenEinstiegB2C #usbGeschaeftsbeziehung > div > .vdlContent > .container.large {
+	float: left !important;
+}
+
+.UCFreistellungBearbeitenEinstiegB2C #usbGeschaeftsbeziehung > div > .vdlContent > .container.large .action-text > div {
+    display: inline-block !important;
+    margin-right: 5px;
+}
+#SparerPauschbetrag.v-csslayout.v-layout.v-widget.forms-field-group.v-csslayout-forms-field-group {
+    display: inline-block !important;
+}
+
+
+.v-app #SparerPauschbetrag.v-csslayout.v-layout.v-widget.block,
+.v-app #selektierterSparerpauschbetrag .v-customcomponent.v-widget.v-has-width,
+.v-app #selektierterSparerpauschbetrag.v-csslayout.v-layout.v-widget.block,
+.v-app #selektierterSparerpauschbetrag .v-csslayout.v-layout.v-widget.block {display:inline-block !important}
+.v-app #selektierterSparerpauschbetrag .v-label.v-widget.rbf-componentoptiongroup-itemcontent.v-label-undef-w,
+.v-app #selektierterSparerpauschbetrag .v-flexibleoptiongroupitemcomponent.v-widget.rbf-componentoptiongroup-itemcontent  {display:inline-block !important}
+.v-app #selektierterSparerpauschbetrag .v-csslayout.v-layout.v-widget,
+.v-app #selektierterSparerpauschbetrag .v-csslayout.v-layout.v-widget.rbf-componentoptiongroup-itemcontainer,
+.v-app #selektierterSparerpauschbetrag .v-csslayout.v-layout.v-widget.icon-holder  {display:block !important}
+.v-app #selektierterSparerpauschbetrag #fieldGroup_selektierterSparerpauschbetragBis.v-csslayout.v-layout.v-widget.forms-field-group.required.rbf-componentoptiongroup-itemcontent,
+.v-app #selektierterSparerpauschbetrag #fieldGroup_selektierterSparerpauschbetragBis .v-csslayout.v-layout.v-widget.icon-holder,
+.v-app #selektierterSparerpauschbetrag #fieldGroup_nullEuro.v-csslayout.v-layout.v-widget.forms-field-group.rbf-componentoptiongroup-itemcontent,
+.v-app #selektierterSparerpauschbetrag #fieldGroup_nullEuro .v-csslayout.v-layout.v-widget.icon-holder  {display:inline-block !important}
+
+.v-app #usbGeschaeftsbeziehung .v-csslayout.v-layout.v-widget.action-text.v-csslayout-action-text {
+    display: inline-block !important;
+}
+
+#selektiertGueltigkeitAb .rbf-componentoptiongroup-itemcontainer,
+#selektiertGueltigkeitBis .rbf-componentoptiongroup-itemcontainer {
+    display: block !important;
+}
+
+#selektiertGueltigkeitAb .rbf-componentoptiongroup-itemcontainer div,
+#selektiertGueltigkeitBis .rbf-componentoptiongroup-itemcontainer div {
+    display: inline-block !important;
+}
+
+.v-app .UnionOrderbuchEntityWorkbench .v-widget, .v-app  .rbf-viewinterpreter .UnionOrderbuchEntityWorkbench .v-widget {display: block !important;}
+.v-app .UnionOrderbuchEntityWorkbench .v-grid-tablewrapper {height: auto !important;}
+.v-app .UnionOrderbuchEntityWorkbench .v-button,
+.v-app .UnionOrderbuchEntityWorkbench .rbf-objectchange-popup,
+.v-app .UnionOrderbuchEntityWorkbench .v-grid-row {display: inline-block !important;}
+.v-app .UnionOrderbuchEntityWorkbench #weitereTreffer {display: none !important;}
+.v-app .UnionOrderbuchEntityWorkbench #unionFooter {padding-top: 4em;}
+
+.v-app .rbf-objectchange.v-widget {display: inline-block !important;}

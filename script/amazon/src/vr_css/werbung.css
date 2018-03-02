@@ -1,0 +1,363 @@
+.werbungHeaderSchliessen {
+	background-color: #D9D8D8;
+}
+
+.wCadtext ul, .wCadtext ul li, .wCadtext ol, .wCadtext ol li, .wCadtext2 ul, .wCadtext2 ul li, .wCadtext2 ol, .wCadtext2 ol li, .wCadtextNavi ul, .wCadtextNavi ul li, .wCadtextNavi ol, .wCadtextNavi ol li, p {
+	margin: 0;
+	padding: 0;
+}
+
+.wCadtextNavi ol li, .wCadtext ol li {
+	list-style-type: decimal;
+}
+
+.wCadtextNavi ul li, .wCadtext ul li {
+	list-style-type: disc;
+}
+
+.wCadcrossnavigationNichtAngemeldet {
+	overflow: hidden;
+}
+
+.wCadcrossnavigationNichtAngemeldet .navTitleWerbung {
+	min-height: 1.2em;
+	font-weight: bold;
+	padding-left: 1.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-right: 0.2em;
+}
+
+.wCadcrossnavigationNichtAngemeldet .rahmen {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.wCadcrossnavigationNichtAngemeldet .wCadtextNavi {
+	padding: 0.5em 0.5em 0.5em 1.5em;
+	line-height: 1.3em;
+}
+
+.wCadcrossnavigationNichtAngemeldet .wCadlinkNavi, .wCadcrossnavigation .wCadlinkNavi {
+	padding: 0em 0.1em 0.5em 1em;
+}
+
+.wCadlinkNavi:hover {
+	text-decoration: underline;
+}
+
+.wCadcrossnavigation {
+	overflow: hidden;
+}
+
+.wCadcrossnavigation .navTitleWerbung {
+	min-height: 1.2em;
+	font-weight: bold;
+	padding-left: 1.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-right: 0.2em;
+}
+
+.wCadcrossnavigation .rahmen {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.wCadcrossnavigation .wCadtextNavi {
+	padding: 0.5em 0.1em 0.5em 1.5em;
+	line-height: 1.3em;
+	overflow: hidden;
+}
+
+.wCadcontentdetail {
+	border-width: 1px;
+	border-style: solid;
+	background-repeat: repeat-x;
+	background-position: 0 38px;
+	background-size: auto 38%;
+}
+
+.wCadcontentdetail .contentTitle {
+	min-height: 1.2em;
+	font-weight: bold;
+	padding-left: 0.6em;
+	padding-top: 0.5em;
+	padding-bottom: 0.1em;
+}
+
+.wCadcontentdetail .werbungrightpadding, .wCadcontentdetail .werbungtoppadding {
+	padding: 1em 0.8em 0.9em 0.8em;
+	float: left;
+}
+
+.wCadcontentdetail .wCadtext {
+	padding: 0.3em 1em 1em 1em;
+	line-height: 1.3em;
+	margin-top: 0.5em;
+	display: block;
+	zoom: normal;
+}
+
+.wCadcontentdetail .wCadtext2 {
+	padding: 0.3em 1em 1em 1em;
+	line-height: 1.3em;
+	margin-top: 0.3em;
+	display: block;
+	zoom: normal;
+}
+
+div.v-csslayout-werbung > div.v-label {
+	overflow: visible;
+}
+
+.wCadtextNavi li, .wCadtext li, .wCadtext2 li {
+	list-style-position: inside;
+}
+
+.wCadtextNavi ol li, .wCadtext ol li, .wCadtext2 ol li {
+	list-style: none outside none;
+	padding-left: 1.5em;
+	line-height: 1.3em;
+}
+
+.wCadcontentdetail .wCadclear {
+	clear: left;
+	padding: 0;
+	height: 0em;
+}
+
+.wCadcontentdetail .wCadlinkBR {
+	clear: left;
+	text-align: right;
+	padding: 0em 1em 1em 0em;
+}
+
+.wCadcontentdetailDetail {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.wCadcontentdetailDetail .contentTitle {
+	min-height: 1.2em;
+	font-weight: bold;
+	padding-left: 1em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+}
+
+.wCadcontentdetailDetail .werbungrightpadding, .wCadcontentdetailDetail .werbungtoppadding {
+	padding: 0.8em 1em 0.1em 0.8em;
+	float: left;
+}
+
+.wCadcontentdetail .werbungtoppadding, .wCadcontentdetailDetail .werbungtoppadding {
+	position: relative;
+}
+
+.wCadcontentdetailDetail .wCadtext, .wCadcontentdetailDetail .wCadtext2 {
+	padding: 0.3em 1em 1em 1em;
+	line-height: 1.3em;
+	margin-top: 0.3em;
+}
+
+.wCadcontentdetailDetail .wCadclear {
+	clear: left;
+	padding-bottom: 0.6em;
+	min-height: 0;
+}
+
+.wCadcontentdetailDetail .wCadlinkBR {
+	text-align: right;
+	padding: 0em 1em 0.5em 0em;
+	clear: left;
+}
+
+.backLink .less {
+	display: none;
+}
+
+.XMedia .more {
+	text-decoration: none;
+	padding-left: 1.2em;
+}
+
+.XMedia ul.bullet, .XMedia ul.rt-bullet {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.XMedia ul.bullet li, .XMedia ul.rt-bullet li {
+	padding-left: 1.6em;
+	list-style-type: none;
+}
+
+.XMedia ul.rt-bullet li {
+	display: table;
+}
+
+.wCadtextNavi ul.bullet li, .wCadtextNavi ul.rt-bullet li {
+	list-style-position: outside;
+}
+
+.wCadtextNavi strong, .wCadtextNavi b, .wCadtext strong, .wCadtext b, .wCadtext2 strong, .wCadtext2 b {
+	font-weight: bold;
+}
+
+.wCadtextNavi em, .wCadtextNavi i, .wCadtext em, .wCadtext i, .wCadtext2 em, .wCadtext2 i {
+	font-style: italic;
+}
+
+.wCadtextNavi cite, .wCadtextNavi u, .wCadtext cite, .wCadtext u, .wCadtext2 cite, .wCadtext2 u {
+	text-decoration: underline;
+}
+
+.wCadtextNavi strong em, .wCadtext strong em, .wCadtext2 strong em, .wCadtextNavi em strong, .wCadtext em strong, .wCadtext2 em strong, .wCadtextNavi b em, .wCadtext b em, .wCadtext2 b em, .wCadtextNavi em b, .wCadtext em b, .wCadtext2 em b, .wCadtextNavi b i, .wCadtext b i, .wCadtext2 b i, .wCadtextNavi i b, .wCadtext i b .wCadtext2 i b {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.wCadtextNavi em cite, .wCadtext em cite, .wCadtextNavi cite em, .wCadtext cite em, .wCadtextNavi em u, .wCadtext em u, .wCadtextNavi u em, .wCadtext u em, .wCadtextNavi i u, .wCadtext i u, .wCadtextNavi u i, .wCadtext u i {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.wCadtextNavi cite strong, .wCadtext cite strong, .wCadtextNavi strong cite, .wCadtext strong cite, .wCadtextNavi strong u, .wCadtext strong u, .wCadtextNavi u strong, .wCadtext u strong, .wCadtextNavi cite b, .wCadtext cite b, .wCadtextNavi b cite, .wCadtext b cite {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.wCadtextNavi acronym, .wCadtextNavi abbr, .wCadtext acronym, .wCadtext abbr, .wCadtext2 acronym, .wCadtext2 abbr {
+	vertical-align: top;
+	font-size: 0.75em;
+}
+
+.XMedia .color1 {
+	color: #0066B3;
+}
+
+.XMedia .color2 {
+	color: #2D8DD7;
+}
+
+.XMedia .rt-hinweis {
+	color: red;
+}
+
+.XMedia .rt-farbe1 {
+	color: #0066B3;
+}
+
+.XMedia .rt-farbe2 {
+	color: #2D8DD7;
+}
+
+.XMedia .rt-smallfont {
+	font-size: 0.75em;
+}
+
+.XMedia .more {
+	background-position: 2px 4px !important;
+	color: #5a5a5a !important;
+}
+
+.wCadcontentdetail .contentTitle {
+	color: #5a5a5a;
+	background-color: #ffffff !important;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.wCadcontentdetailDetail {
+	border-style: none;
+	border-width: 0px;
+}
+
+.wCadcontentdetailDetail .contentTitle {
+	color: #5a5a5a;
+	background-color: transparent !important;
+	font-weight: 400;
+	font-size: 30px;
+	padding-left: 0.4em;
+}
+
+.crossnavWerbung {
+	border-top: 0px none;
+	padding-top: 0em;
+	margin: 15px 0 10px;
+	border-color: #cccccc;
+}
+
+.wCadcrossnavigationNichtAngemeldet, .wCadcrossnavigation {
+	background-repeat: repeat-x;
+	background-position: 0 41px;
+	background-size: auto 38%;
+	background-color: #ffffff;
+	overflow: hidden;
+	width: 299px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	color: #333333;
+}
+
+.wCadcrossnavigation .werbungnopadding, .wCadcrossnavigationNichtAngemeldet .werbungnopadding {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 15px;
+	width: auto;
+}
+
+.wCadcrossnavigationNichtAngemeldet .rahmen, .wCadcrossnavigation .rahmen {
+	border-style: none;
+	border-width: 0px;
+	padding: 9px 0 14px 0;
+}
+
+.wCadcrossnavigation .werbungnopadding + .rahmen, .wCadcrossnavigationNichtAngemeldet .werbungnopadding + .rahmen {
+	padding-top: 0px;
+}
+
+.wCadcrossnavigationNichtAngemeldet .rahmen > div:first-child, .wCadcrossnavigation .rahmen > div:first-child {
+	padding-left: 15px;
+}
+
+.wCadcrossnavigationNichtAngemeldet .navTitleWerbung, .wCadcrossnavigation .navTitleWerbung {
+	background-color: #ffffff !important;
+	color: #5a5a5a !important;
+	font-size: 18px;
+	font-weight: 600 !important;
+	line-height: 21px;
+	margin-bottom: 0;
+	padding-top: 11px;
+	padding-bottom: 7px;
+	padding-left: 14px;
+}
+
+.wCadheader {
+	color: #131313;
+}
+
+.wCadcrossnavigationNichtAngemeldet, .wCadcrossnavigation, .wCadcontentdetail {
+	background-size: initial !important;
+}
+
+.wCadcrossnavigationNichtAngemeldet .rahmen, .wCadcrossnavigation .rahmen {
+	border-color: #cccccc;
+}
+
+.wCadcontentdetail .contentTitle, .wCadcontentdetailDetail .contentTitle {
+	color: #5a5a5a;
+	background-color: #ffffff;
+}
+
+.wCadcontentdetail, .wCadcontentdetailDetail {
+	color: #333333;
+	background-color: #ffffff;
+	border-color: #cccccc;
+}
+
+.XMedia .more {
+	color: #0066B3;
+}

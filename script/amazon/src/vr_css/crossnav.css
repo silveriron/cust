@@ -1,0 +1,94 @@
+.crossnavigation_MASTER_EXCLUSIV, .crossnavigation_MAXIMUM_WIDTH, .crossnavigation_DEFAULT_NO_CN {
+	width: 0px;
+}
+
+#crossnavigation {
+	width: 300px !important;
+	margin: 95px 0px 0px 20px !important;
+	margin-bottom: 50px;
+	border-color: #cccccc;
+}
+
+.crossnavBlock2, .crossnavBlock3 {
+	display: none;
+}
+
+.XContainer.crossnavBlock {
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #cccccc;
+}
+
+.crossnavBlock td, .crossnavBlock tr {
+	border: 0 none !important;
+	border-color: transparent !important;
+}
+
+.crossnavBlock td {
+	border-color: #cccccc;
+}
+
+.crossnavHeader {
+	margin-bottom: 10px;
+	line-height: 120%;
+	margin-bottom: 10px;
+	padding-top: 15px;
+}
+
+.crossnavHeader, .crossnavBlock2, .crossnavBlock3, .crossnavBlock4 .formInput, .crossnavBlock5, .crossnavBlock6 {
+	background-color: #ffffff;
+}
+
+.crossnavHeaderText {
+	font-size: 18px;
+	font-weight: 600 !important;
+	margin-left: 15px;
+	color: #5a5a5a;
+}
+
+#lblImage {
+	display: none;
+}
+
+.crossnavContent {
+	padding: 15px 0 20px 15px;
+	background-repeat: repeat-x;
+	color: #333333;
+}
+
+.crossnavContent .ImageButton {
+	display: inline !important;
+}
+
+.crossnavContent #cntInhalt {
+	margin-bottom: 0px;
+}
+
+#lblBeratername {
+	font-weight: 700;
+}
+
+.crossnavBlock #cntTelefon {
+	font-size: 18px;
+	font-weight: 700;
+	height: auto;
+	line-height: 18px;
+	margin: 0 0 10px;
+	width: auto;
+}
+
+#cntTelefon #lblTelefonnummer {
+	margin-left: -5px;
+}
+
+#lblTelNrLabel {
+	display: none;
+}
+
+.crossNavPFM .widgetframe {
+	width: 300px;
+	margin-left: 0px;
+	margin-bottom: 15px;
+	border: 0 solid transparent;
+}

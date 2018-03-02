@@ -1,0 +1,19 @@
+a img, #kopfrechts, #linkeNavi, #seitenNavi, #versteckt, #header, #logo, #middle, #left, #right, #top, #bHeadline, .headline, .rechts, .wpsFoot, .banner, .toolbar, .launch, .wpsPageBarFirstRow, .wpsUnSelectedPage, .wpsSelectedPage, .wpsButtonText, .wpsButton, .pageBarSeparator, .footer, .spacer, .wpsPortletTitleBar, .browseSpan, .slider { display: none !important; }
+#bHeadline.depotHeadline{ display: block !important; width: 600px; }
+input { border: 0px solid #00ff00; }
+select { border: 0px solid #000000; }
+.wpsFieldContainerLeft50,.wpsFieldContainerRight50 { width: 49.99%; font-weight: bold !important; }
+a,a:visited,a:hover,a:visited:hover { background: transparent; text-decoration: none; font-weight: normal !important; }
+th span a { font-weight: bold !important; }
+a:hover { cursor: auto; }
+a:active { visibility: hidden; text-decoration: none; cursor: auto; }
+a,input,select,textarea { color: #000; }
+#outer { overflow: visible !important; }
+#content,#contentContainer { float: left; width: 900px; margin-left: 10px; font-size: 14px; border: none !important; }
+.wpsContentItem { line-height: 18px; }
+#portletArea #portletAreaColumn1, #navContent #content, .wpsTable { width: 900px; position: absolute !important; }
+.wpsPortletBody,.wpsPortlet { border: 0px solid #FFFFFF; }
+thead { display: table-header-group; }
+#buehneOuter,#buehneInner { position: absolute !important; }
+#main,.inner { overflow: visible !important; }
+#clips { display: none; }

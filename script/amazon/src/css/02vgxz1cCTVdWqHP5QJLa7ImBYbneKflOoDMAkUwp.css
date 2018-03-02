@@ -1,0 +1,213 @@
+#c2c-widget-container {
+	font-family:verdana,helvetica,tahoma,arial,"sans serif";
+	font-size:.86em;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:400;
+	line-height:normal;
+	width:410px
+}
+.c2c-popup #c2c-widget-container {
+	margin:10px auto 0 auto;
+	font-size:12px
+}
+#c2c-widget-container h3 {
+	font-size:1.6em;
+	font-weight:400;
+	color:#e47911;
+	margin-top:15px
+}
+.hide-available-header #c2c-widget-container.c2c-state-available h3 {
+	display:none
+}
+#c2c-widget-container .s_errorSm {
+	margin-right:5px
+}
+.c2c-form-row {
+	min-height:30px
+}
+.c2c-wide-form .c2c-form-row {
+	margin-bottom:3px
+}
+.c2c-form-row label {
+	width:100px;
+	float:left
+}
+.c2c-wide-form .c2c-form-row label {
+	width:130px;
+	margin-right:10px
+}
+.c2c-form-row .c2c-extension-container {
+	position:relative;
+	margin-left:10px;
+	padding-left:0;
+	top:0;
+	left:0
+}
+.c2c-form-row label.c2c-extension-label {
+	float:none;
+	position:absolute;
+	top:-2.5em;
+	left:.1em;
+	font-size:.7em
+}
+.c2c-callme-button {
+	text-decoration:none
+}
+.c2c-callme-button-spacer {
+	margin-left:100px
+}
+.c2c-callme-whentocall-buttons a.c2c-callme-later-button {
+	margin-left:15px
+}
+.c2c-buttons-as-whentocall-options .c2c-form-row-callme-button {
+	margin-top:10px
+}
+.c2c-wide-form .c2c-callme-button-spacer {
+	margin-left:140px
+}
+.c2c-callme-button img {
+	border:none
+}
+.c2c-cancelcall-button,.c2c-cu-cancelcall-button {
+	text-decoration:none;
+	display:inline
+}
+.c2c-form-row-callme-button .c2c-cancelcall-button,.c2c-form-row-callme-button .c2c-cu-cancelcall-button {
+	display:inline
+}
+.c2c-state-callInProgress .c2c-cu-cancelcall-button {
+	display:none
+}
+.c2c-cancelcall-button img,.c2c-cu-cancelcall-button img {
+	border:none
+}
+.c2c-hangup-button {
+	text-decoration:none
+}
+.c2c-hangup-button img {
+	border:none
+}
+.c2c-callme-wait-time-estimate {
+	margin-left:100px;
+	margin-bottom:5px;
+	font-weight:700
+}
+.c2c-inprogress-status {
+	margin:20px 10px 20px 10px;
+	width:300px
+}
+.c2c-inprogress-wait-time-estimate {
+	margin-bottom:5px;
+	font-weight:700
+}
+.c2c-inprogress-status-content {
+	padding:10px 0 20px 20px
+}
+.c2c-messageoftheday {
+	margin-top:10px;
+	color:#000;
+	padding:10px;
+	background:#FFD;
+	border:1px solid #E47911
+}
+.c2c-messageoftheday-icon {
+	vertical-align:top;
+	padding-top:5px
+}
+.c2c-messageoftheday-content {
+	padding-left:10px;
+	padding-bottom:10px;
+	font-size:.7em
+}
+input.c2c-yournumber {
+	margin-left:.5em;
+	margin-right:.5em;
+	padding-left:.2em;
+	margin-bottom:.5em
+}
+input.c2c-yournumber-singlefield {
+	margin-left:0
+}
+.c2c-dialing-code {
+	margin-right:.5em
+}
+input.c2c-extension {
+	width:3em;
+	background:#EAF3FE;
+	margin-bottom:.5em
+}
+.c2c-extension-instructions {
+	margin:10px 0 15px 0;
+	padding:5px;
+	border:1px solid #DDDAC0;
+	background:#ffd;
+	width:30em;
+	font-size:11px
+}
+input.c2c-receptionist-radio {
+	margin-left:1em
+}
+.c2c-hours {
+	width:90%;
+	padding-bottom:1em
+}
+.c2c-hours-row {
+	clear:both;
+	padding-bottom:.4em
+}
+.c2c-day-range {
+	width:40%;
+	overflow:hidden;
+	font-weight:700
+}
+.c2c-hour-range-line {
+	display:block
+}
+.c2c-state-outOfHours p {
+	clear:both
+}
+.c2c-number-validation-error {
+	margin:10px 0 15px 0;
+	padding:5px;
+	border:1px solid #DDDAC0;
+	background:#ffd;
+	color:#A31919;
+	width:30em;
+	font-size:11px
+}
+input.c2c-invalid-field {
+	background:#ffd
+}
+.c2c-browser-not-supported {
+	margin:15px 0 0 15px
+}
+.copilot-main-block a:link,.copilot-main-block a:visited {
+	color:#004b91;
+	text-decoration:none
+}
+.copilot-main-block a:active,.copilot-main-block a:focus,.copilot-main-block a:hover {
+	color:#e47911;
+	text-decoration:underline
+}
+.copilot-main-block {
+	padding:10px 0;
+	font-size:12px;
+	line-height:1.416;
+	color:#333
+}
+.copilot-image {
+	margin:1px 10px 1px 0;
+	vertical-align:top
+}
+.copilot-checkbox {
+	margin-left:3px
+}
+.copilot-information {
+	margin-left:2px
+}
+.c2c-flow-default-trigger {
+	background-color:#F7F9FA;
+	padding:2px 0;
+	width:525px
+}

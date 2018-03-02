@@ -1,0 +1,165 @@
+@charset "utf-8";
+.if5 .if5_containerwrapper li,.if5 .if5_containerwrapper a,.if5 .if5_containerwrapper h4,.if5 .if5_containerwrapper h3{color:rgb(102,102,102);}
+.if5 .if5_container li,.if5 .if5_container a,.if5 .if5_container h4,.if5 .if5_container h3{color:rgb(102,102,102);}
+.if5 .if5_container{margin-bottom:1em;}
+.if5 .if5_container h3,.if5 .if5_container h4,.if5_container h5,.if5_container h6{font-size:1.2em;}
+.if5 .if5_container .l4{font-size:1.2em;}
+.if5 .if5_container .if5_rand{float:left;}
+.if5 .if5_containerwrapper{position:absolute;left:84em;top:12.9em;float:left;width:15.5em;background-color:rgb(255,255,255);z-index:1;}
+.if5 .if5_container{float:left;clear:right;margin-top:0em;width:15.5em;}
+.cont_flash{height:31.5em;}
+.if5 .if5_container .rounded_content{width:14em;margin-left:0.9em;}
+.if5 .if5_kontakt .rounded_content{padding-left:9px !important;margin-left:0 !important;}
+.if5 .if5_container .if5_container_link{background-image:url(../sparkasse_img/weiter_button.gif);background-repeat:no-repeat;margin-top:0.5em;margin-bottom:0em;width:100%;padding:0;}
+.if5 .if5_container .if5_container_link a{padding-left:2em;}
+.if5 .if5_white_u_rounded{width:15.3em;}
+.if5 .rounded .if5_verlauf_o{width:15.3em;}
+.if5 .rounded .if5_verlauf_u{width:15.3em;}
+.if5 .rounded .if5_rand{width:15.3em;overflow:hidden;}
+.if5 .if5_white_o_rounded{width:15.3em;}
+.if5 .if5_kontakt h1,.if5 .if5_kontakt p{margin:0;padding:0;}
+.if5 .if5_kontakt ul.kontakt_list{padding:0;margin:0 0 0.5em 0;margin-top:0em;margin-left:0em;}
+.if5 .if5_kontakt ul.kontakt_list li{margin-bottom:0em;background-repeat:no-repeat;padding-left:2em;padding-top:0.1em;margin-top:0.3em;color:rgb(102,102,102);}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_email{background-image:url(../sparkasse_img/container_kontakt_email_icon.gif);}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_rueckruf{background-image:url(../sparkasse_img/container_kontakt_rueckruf_icon.gif);min-height:14px;}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_fax{background-image:url(../sparkasse_img/container_kontakt_fax_icon.gif);min-height:14px;}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_filiale{background-image:url(../sparkasse_img/container_oeffnungszeiten1_icon.gif);}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_notfall{background-image:url(../sparkasse_img/container_kontakt_rueckruf_icon.gif);}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_berater{background-image:url(../sparkasse_img/container_kontakt_berater_icon.gif);}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_chat_intern{background-image:url(../sparkasse_img/container_kontakt_berater_aktiv.gif);}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_chat_intern_inaktiv{background-image:url(../sparkasse_img/container_kontakt_berater_inaktiv.gif);}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_chat_intern_inaktiv a{color:rgb(176,176,176);}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_newsletter{background-image:url(../sparkasse_img/container_kontakt_newsletter_icon.gif);}
+.if5 .if5_kontakt ul.kontakt_list li.noicon.l4{padding-left:0em;}
+.if5 .if5_kontakt ul.kontakt_list.containsimage li.noicon.l4{padding-left:0em;}
+.if5 .if5_kontakt #if5_kontakt_container_analyst_data li img{margin:0.3em 0 0 2em;}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_socialnet,.if5 .if5_kontakt ul.kontakt_list li.kontakt_social_networks{background-image:url(../sparkasse_img/container_kontakt_socialnet_icon.gif);}
+.if5 .if5_kontakt h5{color:rgb(102,102,102);}
+.if5 .if5_kontakt h5.kontakt{background:url(../sparkasse_img/if5_container_service_fon.png) no-repeat left top;margin-left:-10px;height:2.9em;width:10em;padding-top:2px;padding-left:32px;margin-top:1em;}
+.if5 .if5_kontakt h6{margin:0;padding-left:32px;color:rgb(102,102,102);margin-top:-3.4em;margin-left:-10px;}
+.if5 .if5_kontakt .preis{border-top:1px solid rgb(233,233,233);margin-top:0.5em;width:15.3em;margin-left:-1em;}
+.if5 .if5_kontakt .analyst{border-top:1px solid rgb(233,233,233);border-bottom:1px solid rgb(233,233,233);margin-top:1em;width:15.3em;margin-left:-1em;}
+.if5 .if5_kontakt .head{font-size:1.2em;padding-left:10px;margin-top:5px;margin-bottom:5px;}
+.if5 .if5_kontakt.collapsable .head{background:url(../sparkasse_img/nav_pfeil_aufgeklappt.gif) no-repeat;background-position:5px 6px;cursor:pointer;padding-left:20px;}
+.if5 .if5_kontakt.collapsable .collapsed .head{background:url(../sparkasse_img/nav_pfeil_zugeklappt.gif) no-repeat;background-position:8px 4px;}
+.if5 .if5_kontakt .standard .head{margin-left:-9px;}
+.if5 .if5_kontakt .analyst .datablock{margin-left:1em;}
+.if5 .if5_kontakt .collapsed .datablock{display:none;}
+.if5 .if5_kontakt .preis p{margin-top:0.5em;font-size:1em;margin-left:1.5em;padding-right:0.5em;color:rgb(102,102,102);}
+.if5 .if5_kontakt .if5_verlauf_u{margin-top:0;}
+.if5 .socialnet_list{margin:0px;padding:0px;overflow:hidden;width:100px;}
+.if5 ul.kontakt_list ul.socialnet_list li.socialnet_list_li{padding:0 5px 5px 1px !important;float:left;}
+.if5 .if5_werbung h4{color:rgb(102,102,102);margin-top:0.8em;margin-bottom:0.3em;min-height:1px;font-size:1.2em;}
+.if5 .if5_werbung .textsection{position:relative;z-index:1;top:-1.2em;}
+.if5 .if5_werbung h3{color:rgb(102,102,102);margin-top:0em;font-size:1.2em;margin-bottom:0em;}
+.if5 .if5_werbung p{color:rgb(0,0,0);margin-top:0.25em;margin-bottom:0;}
+.if5 .if5_werbung p a{color:rgb(68,68,68);}
+.if5 .if5_werbung .rounded_content{margin-top:0.5em;width:13.5em;}
+.if5 .if5_werbung .rounded_content .if5_container_link a{padding-left:20px;font-size:1.2em;color:rgb(102,102,102);display:block;}
+.if5 .if5_aktion_cont h4{color:rgb(102,102,102);margin-top:0.8em;margin-bottom:0.8px;min-height:1px;font-size:1.2em;}
+.if5 .if5_aktion_cont p{color:rgb(0,0,0);margin-top:0.25em;margin-bottom:0;}
+.if5 .if5_aktion_cont p a{color:rgb(68,68,68);}
+.if5 .if5_aktion_cont .rounded_content{margin-top:0.5em;width:13.5em;}
+.if5 .if5_aktion_cont .rounded_content .if5_container_link a{padding-left:20px;font-size:1.2em;color:rgb(102,102,102);display:block;}
+.if5 .if5_aktion_cont .clip,.if5 .if5_werbung .clip{margin:0.5em 0 0 0;width:13.5em;overflow:hidden;position:relative;}
+.if5 .if5_aktion_cont .clip img,.if5 .if5_werbung .clip img{left:-1em;position:relative;}
+.if5 .if5_aktion_cont .clip a{margin:0px;padding:0px;}
+.if5 .if5_aktion_cont a.inlinelink{color:rgb(255,0,0);text-decoration:underline;}
+.if5 .if5_ticker p.if5_afr_link{padding-right:10px;padding-top:6px;padding-left:6px;border-top:solid 1px rgb(233,233,233);background-position:6px 6px;margin-top:6px;margin-bottom:1px;}
+.if5 .if5_ticker .if5_verlauf_u{margin-top:0px;height:0.5em;}
+.if5 .if5_ticker .reiter,.if5 .if5_ticker .chartboxtopreiter{float:left;width:15.4em;background:url(../sparkasse_img/e9e9e9.gif) repeat-x bottom right;}
+.if5 .if5_ticker .if5_rand{padding-top:1.2em;margin-top:-1em;}
+.if5 .if5_ticker .reiter ul,.if5 .if5_ticker .chartboxtopreiter ul{display:inline-block;padding:0;margin:0;max-width:100%;overflow:hidden;white-space:nowrap;}
+.if5 .if5_ticker .reiter ul li,.if5 .if5_ticker .chartboxtopreiter ul li{display:inline-block;margin:0;margin-top:0.1em;border-bottom:1px solid rgb(233,233,233);border-left:solid 1px rgb(233,233,233);}
+.if5 .if5_ticker .reiter ul li a,.if5 .if5_ticker .chartboxtopreiter ul li a{background:transparent url(../sparkasse_img/if5_container_reiter_rechts_in.png) no-repeat scroll right top;display:block;padding:7px 9px 4px 7px;margin-top:0em;font-weight:bold;font-size:1.2em;}
+.if5 .if5_ticker #tabreiter li.active + li{border-left:none;}
+.if5 .if5_ticker .timelist{clear:both;width:154px;}
+.if5 .if5_ticker .timelist ul#timereiter{padding-left:7px;font-size:1em;background:url(../sparkasse_img/if5_container_timereiter_links.png);background-repeat:repeat-x;border-bottom:solid 1px rgb(233,233,233);border-left:solid 1px rgb(233,233,233);border-right:solid 1px rgb(233,233,233);}
+.if5 .if5_ticker .timelist ul#timereiter li{display:inline-block;padding:3px;padding-left:4px;padding-right:4px;max-width:20%;white-space:nowrap;overflow:hidden;}
+.if5 .if5_ticker .timelist ul#timereiter li:first-child{padding-left:0em;}
+.if5 .if5_ticker .timelist ul#timereiter li:last-child{padding-right:0.6em;}
+.if5 .if5_ticker .timelist ul#timereiter li.active{position:relative;}
+.if5 .if5_ticker .timelist ul#timereiter li.active a{color:rgb(0,0,0);}
+.if5 .if5_ticker .timelist ul#timereiter li.active img{position:absolute;left:25%;bottom:-5px;}
+.if5 .if5_ticker .reiter ul li.active,.if5 .if5_ticker .chartboxtopreiter ul li.active{margin-top:0;border-bottom:1px solid rgb(255,255,255);}
+.if5 .if5_ticker .reiter ul li.active a,.if5 .if5_ticker .chartboxtopreiter ul li.active a{background:url(../sparkasse_img/if5_container_reiter_rechts.png) no-repeat scroll right top;padding-bottom:0.4em;margin-top:0;padding-top:0.6em;}
+.if5 .if5_ticker .ticker_abfrage,.if5 .if5_ticker .chartsuchefeld,.if5 .if5_finanznachrichten .sucheFeld{margin-left:0.8em;margin-right:0.2em;margin-top:1em;width:9em;font-size:1.2em;}
+.if5 .if5_finanznachrichten .sucheFeld{margin-left:0em;margin-right:0.4em;}
+.if5 .if5_ticker .ticker_abfrage{margin-left:8px;margin-right:6px;}
+.if5 .if5_ticker .tickertextbild{margin-top:0em;margin-left:1px;}
+.if5 .if5_ticker .tickerchartbild{max-width:14.1em;margin-bottom:1.2em;}
+.if5 .if5_ticker img,.if5 .if5_ticker .default_symbol{overflow:hidden;margin-left:0.5em;margin-right:0.5em;}
+.if5 .if5_ticker form{float:left;}
+.if5 .if5_ticker #markt_link .default_symbol{border:dotted 1px gray;width:140px;height:80px;text-align:center;line-height:80px;}
+.if5 .if5_ticker .default_symbol:hover:after{content:" (Keine Grafik vorhanden.)";color:rgb(255,0,0);}
+.if5 .if5_expertenempfehlung p,.if5 .if5_expertenempfehlung p a{color:rgb(0,0,0);padding:0;margin:0;}
+.if5 .if5_expertenempfehlung p a{color:rgb(102,102,102);}
+.if5 .if5_expertenempfehlung a img,.if5 .if5_ergebnis a img{margin-top:0em;}
+.if5 .if5_externe .if5_container_link a{color:rgb(102,102,102);}
+.if5 .if5_externe .rounded_content h4,.if5 .if5_externe .rounded_content p{padding:0;margin:10px 0 10px 0;}
+.if5 .if5_externe .rounded_content h4{margin:0;}
+.if5 .if5_ergebnis{color:rgb(102,102,102);}
+.if5 .if5_ergebnis p{padding:0;margin:0;color:rgb(0,0,0);}
+.if5 .if5_ergebnis .if5_container_link{margin-bottom:1em;color:rgb(102,102,102);}
+.if5 .if5_ergebnis .if5_container_link a{color:rgb(102,102,102);}
+.if5 .if5_struktur .rounded_content{margin-left:0 !important;}
+.if5 .if5_struktur .headline{margin-bottom:1em;width:15em;}
+.if5 .if5_struktur select{width:9.5em;margin-right:0.2em;font-size:1.2em;}
+.if5 .if5_struktur .container form{width:14em;padding:0;margin-top:0em;margin-left:1em;margin-right:1em;margin-bottom:0em;}
+.if5 .if5_struktur .topline{border-top:1px solid rgb(233,233,233);width:15.3em;margin-top:1em;padding-top:0.7em;}
+.if5 .if5_struktur.block_condensed .topline{border-style:none;margin-top:0em;}
+.if5.js .if5_struktur.block_condensed select,.js .if5 .if5_struktur.block_condensed select{width:11.5em;}
+.if5 .if5_struktur .container h4{color:rgb(102,102,102);}
+.if5 .if5_struktur .container h4,.if5 .if5_struktur .container p{margin:0 0.5em;padding-left:0.2em;}
+.if5 .if5_struktur .container p a{padding-left:1.5em;}
+.if5 .if5_struktur .container p a.formular{background:url(../sparkasse_img/if5_container_formular.gif) no-repeat top left;color:rgb(68,68,68);}
+.if5 .if5_struktur .container p a.filiale{background:url(../sparkasse_img/container_kontakt_suche_icon.gif) no-repeat top left;color:rgb(68,68,68);}
+.if5 .if5_struktur .container p a.pfeil_link{background:url(../sparkasse_img/weiter_button.gif) no-repeat top left;}
+.if5 .if5_struktur ul.struktur_list{margin-top:1em;margin-left:1em;margin-bottom:0em;margin-right:1em;padding:0;}
+.if5 .if5_struktur ul.struktur_list li{background:url(../sparkasse_img/weiter_button.gif) no-repeat top left;margin-top:0.3em;background-repeat:no-repeat;padding-top:0.2em;color:rgb(102,102,102);}
+.if5 .if5_struktur ul.struktur_list .pfeil_link{font-size:1.2em;padding-left:1.7em;display:block;position:relative;top:-2px;}
+.if5 .if5_struktur .if5_verlauf_u{margin-top:0;}
+.if5 .if5_infobox .if5_rand{border-left:1px solid rgb(255,189,189);border-right:1px solid rgb(255,189,189);}
+.if5 .if5_infobox .if5_white_o_rounded,.if5 .if5_infobox .if5_white_u_rounded{background-color:rgb(255,189,189);}
+.if5 .if5_infobox h4{margin:0 0 0.5em;padding:0;}
+.if5 .if5_infobox h4.info,.if5 .if5_kursbox h4.info,.if5 .if5_finanznachrichten h4.info{background:url(../sparkasse_img/if5_container_info.png) no-repeat left top;line-height:2.3em;padding-left:2.2em;margin-top:0.8em;margin-left:-0.8em;color:rgb(102,102,102);margin-bottom:0;}
+.if5 .if5_kursbox h5{margin-top:0.1em;margin-bottom:0em;font-size:1.1em;font-weight:bold;color:rgb(102,102,102);}
+.if5 .if5_kursbox p{color:rgb(0,0,0);margin-top:0.1em;margin-bottom:0em;}
+.if5 .if5_infobox .info_finanzstatus,.if5 .if5_infobox .info_favoriten,.if5 .if5_kursbox .info_finanzstatus{width:13.5em;background-color:rgb(240,240,240);height:2em;margin-top:1em;}
+.if5 .if5_kursbox .info_finanzstatus p{padding-top:0.25em;margin-top:0;margin-bottom:0;}
+.if5 .if5_infobox a.tanlink{text-decoration:underline;color:rgb(102,102,102);}
+.if5 .if5_infobox .finanz_table th,.if5 .if5_infobox .finanz_table td{font-size:1.1em;padding:0.2em 0;}
+.if5 .if5_infobox .close .info_finanzstatus a,.if5 .if5_infobox .close .info_favoriten a,.if5 .if5_kursbox .info_finanzstatus a.finanz_zu{background:url(../sparkasse_img/nav_pfeil_zugeklappt.gif) no-repeat left center;padding-left:0.7em;}
+.if5 .if5_infobox .open .info_finanzstatus a,.if5 .if5_infobox .open .info_favoriten a,.if5 .if5_kursbox .info_finanzstatus a.finanz_auf{background:url(../sparkasse_img/nav_pfeil_aufgeklappt.gif) no-repeat left center;padding-left:1em;}
+.if5 .if5_infobox p.info_finanzstatus,.if5 .if5_infobox p.info_favoriten{padding:0.25em 1em;height:auto;}
+.if5 .if5_infobox p.if5_customize{background-color:rgb(240,240,240);margin-left:0;width:11.25em;padding:0.25em 0;}
+.if5 .if5_infobox .if5_customize a{background:url(../sparkasse_img/if5_s_customize.gif) no-repeat left center;padding-left:1.6em;}
+.if5 .if5_infobox .if5_finanzst_link a,.if5 .if5_infobox .if5_fav_link a,.if5 .if5_kursbox a.if5_finanzst_link{background:url(../sparkasse_img/if5_pf_klein.gif) no-repeat left 2px;padding-left:1.3em;display:block;}
+.if5 .if5_infobox p,.if5 .if5_finanznachrichten p{margin-top:0.5em;margin-bottom:0;}
+.if5 .if5_infobox .finanz_table{margin-top:0.5em;width:13.5em;border-bottom:1px solid rgb(176,176,176);border-spacing:0;border-collapse:collapse;}
+.if5 .if5_infobox .itancountdown{padding-left:2.38em;font-weight:bold;color:rgb(102,102,102);width:10em;}
+.if5 .if5_infobox .mark{color:rgb(255,0,0);}
+.if5 .if5_infobox .itancountdown .countdown{font-size:2.4em;font-weight:normal;}
+.if5 .if5_infobox .itancountdown a{background:url(../sparkasse_img/weiter_button.gif) left center no-repeat;padding-left:20px;display:block;margin-top:0.3em;color:rgb(0,0,0);}
+.if5 .if5_infobox .birthday{color:rgb(255,0,0);font-weight:bold;}
+.if5 .if5_kursbox p.if5_finanzst_link{margin-top:0.5em;margin-bottom:-0.2em;}
+.if5 .if5_finanznachrichten p{border-bottom:1px solid rgb(233,233,233);margin-left:-0.9em;padding:0 0.9em 0.5em;width:11.2em;}
+.if5 .if5_finanznachrichten p.last{border-bottom-style:none;}
+.if5 .if5_finanznachrichten .rounded_content .if5_container_link{margin-top:0.9em;}
+.if5 .if5_finanznachrichten .rounded_content .if5_container_link a{padding-left:20px;font-size:1.2em;color:rgb(102,102,102);display:block;}
+.if5 .if5_infobox .finanz_table th{font-weight:normal;text-align:left;border-bottom:1px solid rgb(176,176,176);}
+.if5 .if5_kursbox .finanz_table{margin-top:0.2em;width:13.3em;}
+.if5 .if5_kursbox .finanz_table tr th{font-size:1.1em;}
+.if5 .if5_kursbox .finanz_table tr td p{font-size:1.1em;margin-bottom:0.2em;margin-top:0.2em;padding-top:0;}
+.if5 .if5_kursbox div.hinweis{font-size:1.1em;width:12.1em;margin-top:0.2em;}
+.if5 .if5_kursbox tr.darkline th,.if5 .if5_kursbox tr.darkline td{background-color:rgb(233,233,233);}
+.if5 .if5_infobox .finanz_table .minus{color:rgb(255,0,0);}
+.if5 .if5_kursbox .finanz_table tr td.right,.if5 .if5_infobox .finanz_table .right{text-align:right;}
+.if5 .if5_containerwrapper .if5_mitbild .rounded_content{margin-left:0.9em;width:13.5em;padding-left:0;}
+.if5 .if5_containerwrapper .if5_mitbild .rounded_content h3{font-weight:bold;font-size:1.3em;line-height:1.3em;color:rgb(102,102,102);padding:0;margin:0;}
+.if5 .if5_containerwrapper .if5_mitbild .rounded_content p#text{padding:110px 0 0 0;margin-bottom:0.5em;margin-top:0;}
+.if5 .if5_containerwrapper .if5_mitbild .rounded_content ul{padding:0;margin:0;}
+.if5 .if5_containerwrapper .if5_mitbild .if5_verlauf_o{float:none;}
+.if5 .if5_containerwrapper .if5_mitbild .rounded_content ul .seclink{background:url(../sparkasse_img/weiter_button.gif) no-repeat;padding-left:20px;font-weight:bold;font-size:1.2em;}
+.if5 .if5_containerwrapper .if5_verlauf_u{margin-top:0;}
+.if5 .if5_container select{font-family:Arial , Helvetica , sans-serif;}

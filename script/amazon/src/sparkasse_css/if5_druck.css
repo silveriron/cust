@@ -1,0 +1,70 @@
+@charset "utf-8";
+.if5_header,.if5_containerwrapper,.if5_nav,.if5_hnav,.if5_metanavi,.if5_content_footer,.if5 #printnavi,.if5 .oph_footer,.if5 .oph_social{display:none;}
+body.if5{background:none !important;}
+body.if5,.if5 .if5_content{width:60.3em;}
+* html .if5_content_inner .if5_modul_content .if5_seiten .if5_white_o_reiter,* html .if5_content_inner .if5_modul_content .if5_seiten .if5_white_u{width:100% !important;}
+* html .if5_content_inner .if5_modul_content .if5_seiten .if5_rand .if5_verlauf_o,* html .if5_content_inner .if5_modul_content .if5_seiten .if5_rand .if5_verlauf_u{width:60em !important;}
+.if5 .if5_content{top:0;left:0;}
+.if5 .if5_content,.if5 .if5_sitemap .if5_rand{overflow:visible;position:inherit;}
+.if5 .rounded .if5_rand{}
+.if5 .if5_reiter li a,.if5 .if5_banking li a,.if5 .if5_reiter .if5_abschluss a,.if5 .if5_afr_link,.if5 .if5_banking .if5_abschluss a,.if5 .produktabschluss_wrap .produktabschluss p.button_rot,.if5 .produktabschluss_wrap .produktabschluss p.button_rot a{display:inline-block;}
+.if5 .if5_afr_link{height:1.5em;}
+.if5_schrittfolge div.schritt,.if5 .if5_schrittfolge .fourSteps{display:inline-block;float:left;}
+.msgerror,.msginfo,.msginst,.msgcont,.msgobv{clear:left;}
+.if5 .produktpotrait_wrap{width:60.1em;}
+.if5 .produktabschluss_wrap .produktabschluss p.button_rot{float:right;}
+h4#printhead{margin:0;padding:0;}
+.if5 .if5_content{left:0 !important;}
+.if5 .navigationspfadprinthelp{display:none;}
+.if5 .if5_content .if5_druckansicht{left:0;top:0;width:100%;padding-left:10px;}
+.if5 .if5_content .if5_rand .inner{background-color:transparent;}
+.if5 .if5_content .if5_rand .if5_verlauf_u{left:1px;}
+.if5 .alle_angebote .if5_row1 .if5_rand,.if5 .alle_angebote .if5_row2 .if5_rand,.if5 .alle_angebote .if5_row3 .if5_rand{}
+.if5 .if5_content .if5_content_inner #result,.if5 .if5_content .if5_content_inner #result .if5_modul_content .if5_angebote,.if5 .if5_content .if5_content_inner .if5_modul_content .if5_angebote,.if5 .if5_content .if5_content_inner #result .if5_modul_content .if5_seiten .if5_rand,.if5 .if5_content .if5_content_inner .if5_modul_content .if5_seiten .if5_rand,.if5 .if5_content .if5_content_inner #result .if5_modul_content .if5_seiten .if5_rand .sua_konditionen{clear:left;}
+.if5 .if5_content .sitemap_wrap,.if5 .if5_content .sitemap_wrap .if5_modul_content .if5_angebote,.if5 .if5_content .sitemap_wrap .if5_modul_content .if5_seiten .sitemap{clear:left;}
+.if5 .if5_content .sitemap_wrap .if5_modul_content .if5_seiten .if5_rand{overflow:visible;clear:left;}
+.if5 .if5_content .sitemap_wrap .if5_modul_content .if5_seiten .sitemap .if5_rand .rounded_content{overflow:visible;clear:left;}
+.if5 .if5_content .sitemap_wrap .if5_modul_content .if5_seiten .sitemap .if5_rand ul ul li{max-width:27em;}
+.if5 .if5_content .sitemap_wrap #openclose #openall,.if5 .if5_content .sitemap_wrap #openclose #closeall{height:100%;}
+.if5 .if5_content .sitemap_wrap #openclose,.if5 .if5_content .sitemap_wrap .if5_modul_content .if5_seiten .sitemap .toplink{margin-top:1em !important;margin-bottom:1em !important;}
+.if5 .if5_content .sitemap_wrap .if5_modul_content .if5_seiten .sitemap .if5_sitemap .if5_rand{clear:left;}
+.if5_content .if5_content_inner .vorsorgen_und_absichern_wrap .te_weiter_button{margin-top:6em;}
+* html .if5_content .if5_content_inner .vorsorgen_und_absichern_wrap .te_weiter_button{margin-top:8em;}
+* html .if5_content .if5_content_inner .vorsorgen_und_absichern_wrap .te_weiter_button .produktabschluss_wrap .button_rot,* html .if5_content .if5_content_inner .vorsorgen_und_absichern_wrap .te_weiter_button .produktabschluss_wrap .button_rot a.rot_link,* html .if5_content .if5_content_inner .vorsorgen_und_absichern_wrap .check .ergebnisse .erg_abschluss{display:inline-block;}
+* html .if5_content .if5_content_inner .vorsorgen_und_absichern_wrap .check .bisherige_angaben #schatten #check_step_2{width:29.9em;}
+* html .if5_content .if5_content_inner .vorsorgen_und_absichern_wrap .check .ergebnisse .erg_abschluss .neubeginnen A{top:3.6em !important;display:inline-block;}
+* + html .if5_content .if5_content_inner .vorsorgen_und_absichern_wrap .check .bisherige_angaben #schatten #check_step_2{width:25.4em !important;}
+* + html .if5_content .if5_content_inner .vorsorgen_und_absichern_wrap .check .ergebnisse .erg_abschluss .neubeginnen A{top:6.8em !important;}
+* + html .if5 .if5_content .sitemap_wrap .if5_modul_content .if5_seiten .sitemap .if5_verlauf_u{margin-top:4em;}
+* html .if5 .if5_content_inner .if5_modul_content .if5_rand form.formular #fieldset_container fieldset br{clear:both;}
+* html .if5 .if5_content_inner .if5_modul_content .if5_rand form.formular #fieldset_container fieldset .zweispaltig br{clear:none;}
+* + html .if5 .if5_content_inner .if5_modul_content .if5_rand form.formular #fieldset_container fieldset br{clear:both;}
+* + html .if5 .if5_content_inner .if5_modul_content .if5_rand form.formular #fieldset_container fieldset .zweispaltig br{clear:none;}
+.if5 .if5_content .schatten form fieldset input,.if5 .if5_content .schatten form fieldset select,.if5 .if5_content .schatten form fieldset span.erlaeuterung,.if5 .if5_content .schatten form fieldset span.icon{float:none;}
+.if5 .if5_content .schatten form fieldset span.icon{position:relative;top:4px;}
+.if5_banking .if5_seiten,.if5_banking .if5_rand{clear:left;float:none;}
+.if5_banking .tablegrund,.if5_banking .tablegrund2{float:none;}
+.if5_banking .if5_druckansicht .if5_hilfe,.if5_banking .if5_druckansicht .if5_hilfe_finanz{display:none;}
+.if5_banking .osppliste2{clear:both;}
+.if5_banking .osppinfoinhalt a.pfeilLink2{display:inline-block;}
+.if5_banking .if5_druckansicht div.if5_rand{border:none;}
+.if5 .if5_banking .if5_druckansicht h2.contentbereichHeadLine,.if5 .if5_banking .if5_druckansicht h2.contentbereichHeadline,.if5_banking .if5_druckansicht div.if5_verlauf_o,.if5_banking .if5_druckansicht div.if5_verlauf_u,.if5 .if5_banking .if5_druckansicht .if5_white_o,.if5 .if5_banking .if5_druckansicht .if5_white_u{display:none;}
+.if5_banking .if5_druckansicht h3.boxHeadline,.if5_banking form div.osppformtitel{border:none;}
+.if5_banking .if5_druckansicht .tdbottomborder .solltexttable,.if5_banking table.tablegrund th{color:rgb(0,0,0);}
+.if5_banking .if5_druckansicht div.osppformgrund pre{font-size:0.95em;}
+.if5_banking .osppformtitel{clear:left;border-top:0;}
+.if5_banking .if5_druckansicht .contentcontainerMainLayout form div.osppformtitel{border-bottom:solid 1px rgb(0,0,0);color:rgb(0,0,0);}
+.if5_banking .if5_druckansicht h1.osppformtitel,.if5_banking h2.osppformtitel{border-bottom:0;}
+.if5_banking .if5_druckansicht .contentcontainerMainLayout form .osppformtitel{padding-left:0;}
+.if5_banking .if5_druckansicht h1.osppformtitel{margin-bottom:0;padding-bottom:0.6em;padding-left:0em;}
+.if5_banking .if5_druckansicht .osppformgrund{border-bottom:solid 1px rgb(0,0,0);}
+.if5_banking .if5_druckansicht .right,.if5_banking .if5_druckansicht .osppformgrund td.osppinfoinhalt .right{padding-right:0;}
+.if5 .if5_banking .if5_druckansicht div.osppinfoinhalt{margin-left:0;text-align:left;}
+.if5 .if5_banking .if5_druckansicht table.tablegrund{border-bottom:solid 2px rgb(0,0,0);}
+.if5 .if5_banking .if5_druckansicht table.tablegrund th{color:rgb(0,0,0);}
+.if5_banking .if5_druckansicht th.right{text-align:right;}
+.if5 .if5_banking .if5_druckansicht.if5_content_inner,.if5 .if5_banking .if5_druckansicht .if5_seiten{float:none;}
+.if5 .if5_banking .firstrow{border-top:2px solid rgb(0,0,0);border-bottom:1px solid rgb(0,0,0);}
+.if5 .if5_banking .lastrow{border-top:1px solid rgb(0,0,0);border-bottom:2px solid rgb(0,0,0);}
+.if5_banking .loginformgrund,.if5_banking .osppformgrund{overflow:auto;}
+.newLbStyle.fancybox-overlay,.newLbStyle.fancybox-wrap{display:none !important;}

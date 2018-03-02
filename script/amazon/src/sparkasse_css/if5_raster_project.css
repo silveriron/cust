@@ -1,0 +1,8 @@
+/* --- de.pitcom.if.ce.oph.contact_regio_big --- */
+html .oph_contact .beratungs_telefon_img.phonetopcenter,
+html .oph_contact .beratungs_telefon_img.mailtopcenter {
+    top: 14px;
+}
+html .oph_contact .beratungs_telefon a {
+    color: #FFF;
+}

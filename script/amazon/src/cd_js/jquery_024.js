@@ -1,0 +1,1 @@
+!function(e){jQuery.fn.skipWhitespace=function(r){r=jQuery.extend({},r),e(this).replaceChars({regexArray:[/\s/g],replacementArray:[""]})}}(jQuery),$.ccfregistry.pluginReady("skipWhitespace");

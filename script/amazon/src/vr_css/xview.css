@@ -1,0 +1,315 @@
+.XContainer {
+	border-width: 0px;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	background-color: transparent;
+}
+
+.XLink {
+	color: #5a5a5a !important;
+}
+
+.XChoiceCheckbox, .XBoolean, .XChoiceCombo, .XChoiceList, .XChoiceRadio, .XDate, .XDecimal, .XFileSelector, .XInteger, .XLink, .XPassword, .XText, .XTextArea {
+	text-align: left;
+	vertical-align: middle;
+}
+
+.XChoiceRadio .readonly, .XChoiceCheckbox .readonly {
+	background: transparent;
+}
+
+input.InputAlignment {
+	text-align: right;
+}
+
+.choiceOption .label, .choiceOption input {
+	vertical-align: middle;
+	padding-left: 0.3em;
+}
+
+.choiceOption .label {
+	padding-top: 0.3em;
+}
+
+.XChoiceCheckbox, .XChoiceCombo, .XChoiceList, .XChoiceRadio, .XLink {
+	padding: 0em;
+	margin: 0em;
+}
+
+.XDate, .XDecimal, .XFileSelector, .XInteger, .XPassword, .XText, .XTextArea {
+	padding: 0.1em 0.2em;
+}
+
+.XBoolean {
+	margin-right: 0.2em;
+	margin-left: 0em;
+}
+
+.XChoiceCombo, .XChoiceList, .XDate, .XDecimal, .XInteger, .XPassword, .XText, .XTextArea {
+	border: 1px solid;
+}
+
+.XChoiceCheckbox, .XChoiceRadio, .XLink, .XLink img {
+	border-width: 0em;
+}
+
+.XLink img {
+	padding: 0 0.3em;
+}
+
+.XLink img[alt~=Erneut] {
+	display: none;
+}
+
+.XLink:hover {
+	text-decoration: underline !important;
+}
+
+.XLabel {
+	border-width: 0em;
+	margin: 0px;
+	padding: 0px;
+}
+
+.ebpe-anzeigen-spacer {
+	margin-left: 24px;
+	margin-left: 21px\9;
+}
+
+.XChoiceCombo, .XChoiceList, .XDate, .XDecimal, .XText, .XPassword, .XInteger {
+	background: none repeat scroll 0 0;
+	font-size: 13px !important;
+	height: 20px !important;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+.XChoiceCombo, .XChoiceList, .XDate, .XDecimal, .XText, .XPassword, .XInteger, .XTextArea {
+	background-color: #ffffff;
+	border-color: #cccccc;
+	color: #333333;
+}
+
+.XChoiceCombo, .XChoiceList {
+	text-decoration: none;
+	vertical-align: middle;
+	font-family: "Courier New", Courier, monospace !important;
+	font-size: 12px !important;
+	margin-bottom: 6px;
+}
+
+ul.XChoiceCombo {
+	height: auto !important;
+}
+
+dt.XChoiceCombo {
+	height: 23px !important;
+}
+
+.XTextArea {
+	resize: none;
+	width: 100%;
+	background: none repeat scroll 0 0;
+	padding: 5px;
+}
+
+.XFileSelector {
+	font-size: 1.1em;
+	height: 1.6em;
+}
+
+.XTableContext {
+	margin: 0em;
+	padding: 0.3em 0.4em 0.4em 0.3em;
+	background-color: #0066B3;
+	color: #FFFFFF;
+}
+
+.XTable {
+	background-color: inherit;
+	margin: 0em;
+	padding: 0em;
+	color: #333333;
+	background-color: transparent;
+	border-color: transparent !important;
+	border: 0px solid;
+	padding: 0em;
+	width: 100%;
+}
+
+.XTable, table {
+	border-collapse: separate;
+}
+
+.XTable tbody td {
+	padding-top: 5px;
+	border-top: 0px solid;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-bottom: 1px solid;
+	border-top-color: transparent !important;
+	border-right-color: #cccccc;
+	border-left-color: transparent !important;
+	border-bottom-color: #cccccc;
+}
+
+.XTable tbody td:last-child {
+	border-right: 0px solid;
+	border-right-color: transparent !important;
+}
+
+.XTable tr td {
+	padding: 3px 6px 3px 6px;
+}
+
+.XTable tr td table tr td, .XTable tr th table tr td {
+	border: 0px !important;
+	padding: 0px;
+}
+
+.XTable tr.ev, .XTable tr.ev table {
+	background: #ffffff;
+}
+
+.XTable tr.od, .XTable tr.od table {
+	background: none repeat scroll 0 0;
+	background-color: #f3f3f3;
+}
+
+.XTable thead tr th {
+	margin: 0em;
+	padding: 4px 6px;
+	border-top: 0px solid;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-bottom: 1px solid;
+	border-color: #cccccc;
+	border-top-color: transparent;
+	border-right-color: #cccccc;
+	border-left-color: transparent;
+	border-bottom-color: #cccccc;
+	background-color: transparent !important;
+	color: #333333;
+}
+
+.XTable thead tr th:last-child {
+	border-right: 0px solid;
+	border-right-color: transparent;
+}
+
+.XTableEmbeddedContainer, .XTableEmbeddedContainer tr td, .XTableEmbeddedContainer table {
+	border: 0px !important;
+}
+
+.XTableContext div.XTablePaging {
+	border-width: 0em;
+	margin: 0em;
+	padding: 0em;
+	float: right;
+}
+
+.XTableContext div.XTablePaging table {
+	border-width: 0em;
+	margin: 0em;
+	padding: 0em;
+	table-layout: auto;
+}
+
+.XTableContext div.XTablePaging td {
+	border-width: 0em;
+	margin: 0em;
+	padding: 0em;
+}
+
+.XTableContext div.XTablePaging img {
+	border-width: 0em;
+	margin: 0em 0.1em 0em 0.1em;
+	padding: 0em;
+}
+
+.XTableContext div.XTablePaging input {
+	margin: 0em 0.1em 0em 0.1em;
+	padding: 0em;
+}
+
+.XTableContext div.XTablePaging span.label {
+	border-width: 0em;
+	margin: 0em 0.4em 0em 0.4em;
+	padding: 0em;
+}
+
+.XTable tr td.itemSelection {
+	border: 0.1em solid;
+	text-align: center;
+	margin: 0em;
+	padding: 0.2em;
+	border-color: #cccccc;
+}
+
+.XTableContext div.XTableSelectAll {
+	border-width: 0em;
+	margin: 0em;
+	padding: 0em;
+	float: left;
+}
+
+.XTableContext div.XTableSelectAll table {
+	border-width: 0em;
+	margin: 0em;
+	padding: 0em;
+	table-layout: auto;
+}
+
+.XTableContext div.XTableSelectAll td {
+	border-width: 0em;
+	margin: 0em;
+	padding: 0em;
+}
+
+.XTableContext div.XTableSelectAll img {
+	border-width: 0em;
+	margin: 0em;
+	padding: 0em;
+	margin-right: 0.1em;
+}
+
+.XTableContext div.XTableSelectAll input {
+	border-width: 0em;
+	margin: 0em;
+	margin-right: 0.1em;
+	padding: 0em;
+}
+
+.XTableContext div.XTableSelectAll span.label {
+	border-width: 0em;
+	margin: 0em 0.4em 0em 0.4em;
+	padding: 0em;
+}
+
+.XTable, .XContainer {
+	background-color: transparent;
+}
+
+#WPV_GAD option[value="BitteWaehlen"] {
+	min-width: 120px;
+}
+
+.XAction.UnitCommand {
+	margin: 0em 0em 0em 0.2em;
+	overflow: hidden;
+	padding: 0em 0.3em;
+}
+
+.actAktuellesLink {
+	text-align: left;
+	width: 570px;
+	padding: 0;
+	margin: 0;
+}
+
+thead th span.XLabel {
+	float: left \9;
+	font-weight: 600;
+	color: #ffffff;
+}

@@ -1,0 +1,4614 @@
+.itx-scope {
+	font-size:.875rem
+}
+.itx-scope * {
+	box-sizing:border-box
+}
+.itx-scope input[type=date],.itx-scope input[type=password],.itx-scope input[type=text],.itx-scope select {
+	-webkit-appearance:none
+}
+.itx-scope .iconToolbar a,.itx-scope .ui-dialog,.itx-scope a:active,.itx-scope a:hover {
+	outline:0
+}
+.itx-scope .bgSecondBackground {
+	background:#f4f4f4
+}
+.itx-scope h1,.itx-scope h1>span,.itx-scope h1>span.uiOutputText.standard {
+	font-size:2rem;
+	line-height:2rem
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope h1,.itx-scope h1>span,.itx-scope h1>span.uiOutputText.standard {
+		font-size:2.5rem;
+		line-height:2.5rem
+	}
+}
+@media screen and (min-width:2.063em) {
+	.itx-scope h1,.itx-scope h1>span,.itx-scope h1>span.uiOutputText.standard {
+		font-size:2rem;
+		line-height:2rem
+	}
+}
+.itx-scope h2,.itx-scope h2>span,.itx-scope h2>span.uiOutputText.standard {
+	font-size:1.5rem;
+	line-height:1.5rem
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope h2,.itx-scope h2>span,.itx-scope h2>span.uiOutputText.standard {
+		font-size:2rem;
+		line-height:2rem
+	}
+}
+@media screen and (min-width:2.063em) {
+	.itx-scope h2,.itx-scope h2>span,.itx-scope h2>span.uiOutputText.standard {
+		font-size:1.5rem;
+		line-height:1.5rem
+	}
+}
+.itx-scope h3,.itx-scope h3>span,.itx-scope h3>span.uiOutputText.standard {
+	font-size:.975rem;
+	line-height:.975rem
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope h3,.itx-scope h3>span,.itx-scope h3>span.uiOutputText.standard {
+		font-size:1.7rem;
+		line-height:1.7rem
+	}
+}
+@media screen and (min-width:2.063em) {
+	.itx-scope h3,.itx-scope h3>span,.itx-scope h3>span.uiOutputText.standard {
+		font-size:.975rem;
+		line-height:.975rem
+	}
+}
+.itx-scope h4,.itx-scope h4>span,.itx-scope h4>span.uiOutputText.standard {
+	font-size:.875rem;
+	line-height:.875rem
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope h4,.itx-scope h4>span,.itx-scope h4>span.uiOutputText.standard {
+		font-size:1.5rem;
+		line-height:1.5rem
+	}
+}
+@media screen and (min-width:2.063em) {
+	.itx-scope h4,.itx-scope h4>span,.itx-scope h4>span.uiOutputText.standard {
+		font-size:.875rem;
+		line-height:.875rem
+	}
+}
+.itx-scope h5,.itx-scope h5>span,.itx-scope h5>span.uiOutputText.standard {
+	font-size:.7rem;
+	line-height:.7rem
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope h5,.itx-scope h5>span,.itx-scope h5>span.uiOutputText.standard {
+		font-size:1.4rem;
+		line-height:1.4rem
+	}
+}
+@media screen and (min-width:2.063em) {
+	.itx-scope h5,.itx-scope h5>span,.itx-scope h5>span.uiOutputText.standard {
+		font-size:.7rem;
+		line-height:.7rem
+	}
+}
+.itx-scope h6,.itx-scope h6>span,.itx-scope h6>span.uiOutputText.standard {
+	font-size:.6rem;
+	line-height:.6rem
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope h6,.itx-scope h6>span,.itx-scope h6>span.uiOutputText.standard {
+		font-size:1.3rem;
+		line-height:1.3rem
+	}
+}
+@media screen and (min-width:2.063em) {
+	.itx-scope h6,.itx-scope h6>span,.itx-scope h6>span.uiOutputText.standard {
+		font-size:.6rem;
+		line-height:.6rem
+	}
+}
+.itx-scope h1,.itx-scope h1>span,.itx-scope h1>span.uiOutputText.standard,.itx-scope h2,.itx-scope h2>span,.itx-scope h2>span.uiOutputText.standard,.itx-scope h3,.itx-scope h3>span,.itx-scope h3>span.uiOutputText.standard,.itx-scope h4,.itx-scope h4>span,.itx-scope h4>span.uiOutputText.standard,.itx-scope h5,.itx-scope h5>span,.itx-scope h5>span.uiOutputText.standard,.itx-scope h6,.itx-scope h6>span,.itx-scope h6>span.uiOutputText.standard {
+	font-family:Mark,'Open Sans',Arial,Helvetica,sans-serif;
+	font-weight:400;
+	color:#28373c;
+	margin:0;
+	padding:0
+}
+.itx-scope .uiLabel,.itx-scope label {
+	font-size:.875rem;
+	color:#1a2326;
+	cursor:pointer
+}
+.itx-scope .uiLabel.labelWithCheckbox,.itx-scope .uiLabel.labelWithCheckboxTable {
+	display:block;
+	margin-left:1.125rem;
+	line-height:1.25rem
+}
+.itx-scope td>.uiLabel.labelWithCheckbox {
+	margin-left:0
+}
+.itx-scope .uiLabel.bold,.itx-scope .uiLabel.bold a {
+	font-weight:700
+}
+.itx-scope a,.itx-scope a:active,.itx-scope a:hover,.itx-scope a:visited {
+	text-decoration:none;
+	font-weight:400;
+	font-size:.875rem;
+	line-height:.875rem
+}
+.itx-scope .uiCommandLink>span,.itx-scope .uiFormattedText a,.itx-scope .uiOutputLink>span,.itx-scope .uiOutputText>a,.itx-scope a.underline,.itx-scope a.underline:active,.itx-scope a.underline:hover,.itx-scope a.underline:visited {
+	text-decoration:underline
+}
+.itx-scope a.f1,.itx-scope a.f1:active,.itx-scope a.f1:hover,.itx-scope a.f1:visited {
+	font-size:2rem;
+	line-height:2rem
+}
+.itx-scope a.f2,.itx-scope a.f2:active,.itx-scope a.f2:hover,.itx-scope a.f2:visited {
+	font-size:1.5rem;
+	line-height:1.5rem
+}
+.itx-scope a.f3,.itx-scope a.f3:active,.itx-scope a.f3:hover,.itx-scope a.f3:visited {
+	font-size:.975rem;
+	line-height:.975rem
+}
+.itx-scope a.f4,.itx-scope a.f4:active,.itx-scope a.f4:hover,.itx-scope a.f4:visited {
+	font-size:.875rem;
+	line-height:.875rem
+}
+.itx-scope a.f5,.itx-scope a.f5:active,.itx-scope a.f5:hover,.itx-scope a.f5:visited {
+	font-size:.7rem;
+	line-height:.7rem
+}
+.itx-scope a.f6,.itx-scope a.f6:active,.itx-scope a.f6:hover,.itx-scope a.f6:visited {
+	font-size:.6rem;
+	line-height:.6rem
+}
+.itx-scope a,.itx-scope a.f1,.itx-scope a.f2,.itx-scope a.f3,.itx-scope a.f4,.itx-scope a.f5,.itx-scope a.f6,.itx-scope a:active,.itx-scope a:hover,.itx-scope a:visited {
+	color:#28373c;
+	font-family:'Open Sans',Arial,Helvetica,sans-serif
+}
+.itx-scope a.link:before {
+	content:"";
+	font-family:cd;
+	display:none;
+	margin-right:0;
+	font-size:0;
+	font-weight:400
+}
+.itx-scope a.bold,.itx-scope a.bold:active,.itx-scope a.bold:hover,.itx-scope a.bold:visited {
+	font-weight:700
+}
+.itx-scope .uiCommandLink>span:before,.itx-scope .uiOutputLink>span:before,.itx-scope .uiOutputText>a:before,.itx-scope a.underline:active:before,.itx-scope a.underline:before,.itx-scope a.underline:hover:before,.itx-scope a.underline:visited:before {
+	display:none
+}
+.itx-scope .uiCommandLink>span.dragAccept:hover>.handler>.inner:before,.itx-scope .uiCommandLink>span.handler:hover>.inner:before,.itx-scope .uiCommandLink>span.lastLogin>.close:before,.itx-scope .uiCommandLink>span.ui-dialog a.layerCloseIcon:before,.itx-scope .uiCommandLink>span.ui-sortable-helper .handler>.inner:before,.itx-scope .uiCommandLink>span.uiIcon:before,.itx-scope .uiCommandLink>spana.ui-datepicker-next:before,.itx-scope .uiCommandLink>spana.ui-datepicker-next:hover:before,.itx-scope .uiCommandLink>spana.ui-datepicker-prev:before,.itx-scope .uiCommandLink>spana.ui-datepicker-prev:hover:before,.itx-scope .uiOutputLink>span.dragAccept:hover>.handler>.inner:before,.itx-scope .uiOutputLink>span.handler:hover>.inner:before,.itx-scope .uiOutputLink>span.lastLogin>.close:before,.itx-scope .uiOutputLink>span.ui-dialog a.layerCloseIcon:before,.itx-scope .uiOutputLink>span.ui-sortable-helper .handler>.inner:before,.itx-scope .uiOutputLink>span.uiIcon:before,.itx-scope .uiOutputLink>spana.ui-datepicker-next:before,.itx-scope .uiOutputLink>spana.ui-datepicker-next:hover:before,.itx-scope .uiOutputLink>spana.ui-datepicker-prev:before,.itx-scope .uiOutputLink>spana.ui-datepicker-prev:hover:before,.itx-scope .uiOutputText>a.dragAccept:hover>.handler>.inner:before,.itx-scope .uiOutputText>a.handler:hover>.inner:before,.itx-scope .uiOutputText>a.lastLogin>.close:before,.itx-scope .uiOutputText>a.ui-dialog a.layerCloseIcon:before,.itx-scope .uiOutputText>a.ui-sortable-helper .handler>.inner:before,.itx-scope .uiOutputText>a.uiIcon:before,.itx-scope .uiOutputText>aa.ui-datepicker-next:before,.itx-scope .uiOutputText>aa.ui-datepicker-next:hover:before,.itx-scope .uiOutputText>aa.ui-datepicker-prev:before,.itx-scope .uiOutputText>aa.ui-datepicker-prev:hover:before {
+	display:inline-block
+}
+.itx-scope .uiCommandLink.icon>span:before,.itx-scope .uiOutputLink.icon>span:before {
+	display:block
+}
+.itx-scope .uiFormattedText a,.itx-scope .uiOutputText>a {
+	line-height:inherit;
+	-webkit-transition:color .1s ease-in-out;
+	transition:color .1s ease-in-out
+}
+.itx-scope .uiFormattedText a:hover,.itx-scope .uiOutputText>a:hover {
+	color:#48db74
+}
+.itx-scope .uiCommandLink,.itx-scope .uiOutputLink {
+	text-decoration:none;
+	text-align:left;
+	display:inline-block;
+	color:#28373c
+}
+.itx-scope .uiCommandLink.icon>span,.itx-scope .uiOutputLink.icon>span {
+	text-decoration:none
+}
+.itx-scope .uiCommandLink span:not(.uiIcon),.itx-scope .uiOutputLink span:not(.uiIcon) {
+	position:relative;
+	display:inline-block;
+	-webkit-transition:color .1s ease-in-out;
+	transition:color .1s ease-in-out
+}
+.itx-scope .uiCommandLink span:not(.uiIcon):before,.itx-scope .uiOutputLink span:not(.uiIcon):before {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-2px;
+	width:100%;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	opacity:0;
+	height:1px
+}
+.itx-scope .uiCommandLink:hover span,.itx-scope .uiOutputLink:hover span {
+	color:#48db74
+}
+.itx-scope .uiCommandLink:hover span:not(.uiIcon):before,.itx-scope .uiOutputLink:hover span:not(.uiIcon):before {
+	background:#48db74;
+	opacity:1
+}
+.itx-scope .uiCommandLink:active>span,.itx-scope .uiCommandLink:active>span.uiOutputText.standard,.itx-scope .uiCommandLink:hover>span,.itx-scope .uiCommandLink:hover>span.uiOutputText.standard,.itx-scope .uiCommandLink:visited>span,.itx-scope .uiCommandLink:visited>span.uiOutputText.standard,.itx-scope .uiCommandLink>span,.itx-scope .uiCommandLink>span.uiOutputText.standard,.itx-scope .uiOutputLink:active>span,.itx-scope .uiOutputLink:active>span.uiOutputText.standard,.itx-scope .uiOutputLink:hover>span,.itx-scope .uiOutputLink:hover>span.uiOutputText.standard,.itx-scope .uiOutputLink:visited>span,.itx-scope .uiOutputLink:visited>span.uiOutputText.standard,.itx-scope .uiOutputLink>span,.itx-scope .uiOutputLink>span.uiOutputText.standard {
+	font-weight:400;
+	font-size:.875rem;
+	line-height:.875rem
+}
+.itx-scope .bold,.itx-scope .strong,.itx-scope .uiCommandLink.bold:active>span,.itx-scope .uiCommandLink.bold:hover>span,.itx-scope .uiCommandLink.bold:visited>span,.itx-scope .uiCommandLink.bold>span,.itx-scope .uiOutputLink.bold:active>span,.itx-scope .uiOutputLink.bold:hover>span,.itx-scope .uiOutputLink.bold:visited>span,.itx-scope .uiOutputLink.bold>span,.itx-scope strong {
+	font-weight:700
+}
+.itx-scope .uiCommandLink,.itx-scope .uiCommandLink.f1,.itx-scope .uiCommandLink.f2,.itx-scope .uiCommandLink.f3,.itx-scope .uiCommandLink.f4,.itx-scope .uiCommandLink.f5,.itx-scope .uiCommandLink.f6,.itx-scope .uiCommandLink:active,.itx-scope .uiCommandLink:hover,.itx-scope .uiCommandLink:visited,.itx-scope .uiOutputLink,.itx-scope .uiOutputLink.f1,.itx-scope .uiOutputLink.f2,.itx-scope .uiOutputLink.f3,.itx-scope .uiOutputLink.f4,.itx-scope .uiOutputLink.f5,.itx-scope .uiOutputLink.f6,.itx-scope .uiOutputLink:active,.itx-scope .uiOutputLink:hover,.itx-scope .uiOutputLink:visited {
+	color:#28373c
+}
+.itx-scope .uiCommandLink.icon,.itx-scope .uiCommandLink.iconMarke,.itx-scope .uiCommandLink.iconSmall .uiOutputLink.iconMarke,.itx-scope .uiOutputLink.icon,.itx-scope .uiOutputLink.iconSmall {
+	background:0 0
+}
+.itx-scope .uiCommandLink.icon>span,.itx-scope .uiCommandLink.iconMarke>span,.itx-scope .uiCommandLink.iconSmall>span,.itx-scope .uiOutputLink.icon>span,.itx-scope .uiOutputLink.iconMarke>span,.itx-scope .uiOutputLink.iconSmall>span {
+	padding:0
+}
+.itx-scope .uiCommandLink.icon:before,.itx-scope .uiCommandLink.iconSmall:before,.itx-scope .uiOutputLink.icon:before,.itx-scope .uiOutputLink.iconSmall:before {
+	color:#28373c;
+	content:"\e808";
+	font-family:cd;
+	display:inline-block;
+	margin-right:.3rem;
+	font-size:1em;
+	float:left;
+	line-height:1em
+}
+.itx-scope .uiCommandLink.iconMarke:before,.itx-scope .uiOutputLink.iconMarke:before {
+	color:#4ce77b;
+	content:"\e805";
+	font-family:cd;
+	display:inline-block;
+	margin-right:.3rem;
+	font-size:1em;
+	float:left;
+	line-height:1em
+}
+.itx-scope .uiCommandLink.iconSmall:before,.itx-scope .uiOutputLink.iconSmall:before {
+	font-size:1em
+}
+.itx-scope .uiCommandLink.hidden,.itx-scope .uiOutputLink.hidden {
+	display:none
+}
+.itx-scope .textLeft {
+	text-align:left
+}
+.itx-scope .textCenter {
+	text-align:center
+}
+.itx-scope .textRight {
+	text-align:right
+}
+.itx-scope .textJustify {
+	text-align:justify
+}
+.itx-scope .textVerticalTop {
+	vertical-align:top
+}
+.itx-scope .textVerticalMiddle {
+	vertical-align:middle
+}
+.itx-scope .textVerticalBottom,.itx-scope .uiRadioButton {
+	vertical-align:bottom
+}
+.itx-scope .textVerticalBaseline {
+	vertical-align:baseline
+}
+.itx-scope .normal {
+	font-weight:400
+}
+.itx-scope .italic {
+	font-style:italic
+}
+.itx-scope .underline,.itx-scope .underlined {
+	text-decoration:underline
+}
+.itx-scope .uiCommandLink>span.dragAccept:hover>.handler>.inner,.itx-scope .uiCommandLink>span.handler:hover>.inner,.itx-scope .uiCommandLink>span.lastLogin>.close,.itx-scope .uiCommandLink>span.ui-dialog a.layerCloseIcon,.itx-scope .uiCommandLink>span.ui-sortable-helper .handler>.inner,.itx-scope .uiCommandLink>span.uiIcon,.itx-scope .uiCommandLink>spana.ui-datepicker-next,.itx-scope .uiCommandLink>spana.ui-datepicker-next:hover,.itx-scope .uiCommandLink>spana.ui-datepicker-prev,.itx-scope .uiCommandLink>spana.ui-datepicker-prev:hover,.itx-scope .uiOutputLink>span.dragAccept:hover>.handler>.inner,.itx-scope .uiOutputLink>span.handler:hover>.inner,.itx-scope .uiOutputLink>span.lastLogin>.close,.itx-scope .uiOutputLink>span.ui-dialog a.layerCloseIcon,.itx-scope .uiOutputLink>span.ui-sortable-helper .handler>.inner,.itx-scope .uiOutputLink>span.uiIcon,.itx-scope .uiOutputLink>spana.ui-datepicker-next,.itx-scope .uiOutputLink>spana.ui-datepicker-next:hover,.itx-scope .uiOutputLink>spana.ui-datepicker-prev,.itx-scope .uiOutputLink>spana.ui-datepicker-prev:hover,.itx-scope .uiRootModul.tab .uiModulTab .uiCommandLink,.itx-scope .uiRootModul.tab .uiModulTab a,.itx-scope .uiRootModul.tab .uiModulTab a:active,.itx-scope .uiRootModul.tab .uiModulTab a:hover,.itx-scope .uiRootModul.tab .uiModulTab a:visited {
+	text-decoration:none
+}
+.itx-scope .elevated {
+	font-size:.8em;
+	position:relative;
+	bottom:.25rem
+}
+.itx-scope .nowrap {
+	white-space:nowrap
+}
+.itx-scope .uiParagraph,.itx-scope p {
+	margin:0;
+	padding:0;
+	line-height:1.25rem
+}
+.itx-scope .charCounter,.itx-scope .charCounter>span {
+	font-size:.6rem;
+	line-height:.6rem
+}
+.itx-scope .uiParagraph.gap {
+	margin-bottom:.875rem
+}
+.itx-scope .uiArticle {
+	padding:0 1.25rem 1rem
+}
+.itx-scope .uiArticle:first-child {
+	padding-top:.5rem
+}
+.itx-scope .uiArticle.gap {
+	padding-bottom:1rem
+}
+.itx-scope .uiArticle.fullWidth {
+	padding:0 0 1rem
+}
+.itx-scope .uiArticle.highlighted,.itx-scope .uiArticle.light {
+	padding:.375rem .75rem
+}
+.itx-scope .uiArticle.light {
+	background:#f4f4f4
+}
+.itx-scope .uiArticle.highlighted {
+	background-color:#ff4c5b;
+	color:#fff
+}
+.itx-scope .uiMessages.errorMessage {
+	margin:1rem 0
+}
+.itx-scope .errorMessage,.itx-scope .errorMessage .uiOutputLink>span,.itx-scope .errorMessage .uiOutputText,.itx-scope .errorMessage .uiOutputText.standard {
+	color:#ff4c5b;
+	font-weight:700
+}
+@media screen and (max-width:1em) {
+	.itx-scope div.errorMessage {
+		width:100%;
+		display:block
+	}
+}
+.itx-scope .uiLine {
+	border-top:1px solid #eee;
+	height:0;
+	margin-top:1rem;
+	margin-bottom:1rem;
+	border-bottom:0;
+	border-right:0;
+	border-left:0
+}
+.itx-scope .m0-top,.itx-scope .uiLayout.m0-top,.itx-scope .uiLine.noMarginTop {
+	margin-top:0
+}
+.itx-scope .fcGreen,.itx-scope .plus,.itx-scope .positive,.itx-scope .trendHalfUpNumber,.itx-scope .trendHalfUpPercentage,.itx-scope .trendUpNumber,.itx-scope .trendUpPercentage {
+	color:#0c9c2e
+}
+.itx-scope .trendEvenNumber,.itx-scope .trendEvenPercentage {
+	color:inherit
+}
+.itx-scope .fcRed,.itx-scope .minus,.itx-scope .negative,.itx-scope .trendDownNumber,.itx-scope .trendDownPercentage,.itx-scope .trendHalfDownNumber,.itx-scope .trendHalfDownPercentage,.itx-scope .warning {
+	color:#f04855
+}
+.itx-scope .nonActualKursNeutralNumber,.itx-scope .nonActualKursNumber,.itx-scope .nonActualKursPercentage,.itx-scope .nonActualKursText {
+	color:#28373c
+}
+.itx-scope .neutral {
+	color:#ccc
+}
+@font-face {
+	font-family:'Open Sans';
+	src:url(../fonts/open-sans-v13-latin-300.woff?v=1477546240265) format('woff'),url(../fonts/open-sans-v13-latin-300.woff2?v=1477546240265) format('woff2');
+	font-weight:300;
+	font-style:normal
+}
+@font-face {
+	font-family:'Open Sans';
+	src:url(../fonts/open-sans-v13-latin-regular.woff?v=1477546240265) format('woff'),url(../fonts/open-sans-v13-latin-regular.woff2?v=1477546240265) format('woff2');
+	font-weight:400;
+	font-style:normal
+}
+@font-face {
+	font-family:'Open Sans';
+	src:url(../fonts/open-sans-v13-latin-600.woff?v=1477546240265) format('woff'),url(../fonts/open-sans-v13-latin-600.woff2?v=1477546240265) format('woff2');
+	font-weight:600;
+	font-style:normal
+}
+@font-face {
+	font-family:'Open Sans';
+	src:url(../fonts/open-sans-v13-latin-700.woff?v=1477546240265) format('woff'),url(../fonts/open-sans-v13-latin-700.woff2?v=1477546240265) format('woff2');
+	font-weight:700;
+	font-style:normal
+}
+@font-face {
+	font-family:Mark;
+	src:url(../fonts/MarkWeb-latin-light.woff2?v=1477546240265) format('woff2'),url(../fonts/MarkWeb-latin-light.woff?v=1477546240265) format('woff');
+	font-weight:300;
+	font-style:normal
+}
+@font-face {
+	font-family:Mark;
+	src:url(../fonts/MarkWeb-latin-regular.woff2?v=1477546240265) format('woff2'),url(../fonts/MarkWeb-latin-regular.woff?v=1477546240265) format('woff');
+	font-weight:400;
+	font-style:normal
+}
+@font-face {
+	font-family:Mark;
+	src:url(../fonts/MarkWeb-latin-medium.woff2?v=1477546240265) format('woff2'),url(../fonts/MarkWeb-latin-medium.woff?v=1477546240265) format('woff');
+	font-weight:600;
+	font-style:normal
+}
+.itx-scope .charCounter>span {
+	font-weight:700
+}
+.itx-scope .disabled {
+	color:#abafb3
+}
+.itx-scope .hasError>.uiFormLayoutColumn>label,.itx-scope .hasError>label {
+	color:#ff4c5b
+}
+.itx-scope .uiOutputText,.itx-scope .uiOutputText~.uiCommandLink>span,.itx-scope .uiOutputText~.uiOutputLink,.itx-scope .uiOutputText~.uiOutputLink>span,.itx-scope .uiOutputText~.uiOutputLink>span.uiOutputText.standard {
+	line-height:1.25rem
+}
+.itx-scope .footnote {
+	font-size:.7rem;
+	line-height:1rem
+}
+@font-face {
+	font-family:cd;
+	src:url(../fonts/cd.woff?pxsvv3&v=1477546240265) format('woff'),url(../fonts/cd.ttf?pxsvv3&v=1477546240265) format('truetype');
+	font-weight:400;
+	font-style:normal
+}
+.itx-scope .dragAccept:hover>.handler>.inner,.itx-scope .handler:hover>.inner,.itx-scope .lastLogin>.close,.itx-scope .ui-dialog a.layerCloseIcon,.itx-scope .ui-sortable-helper .handler>.inner,.itx-scope .uiIcon,.itx-scope a.ui-datepicker-next,.itx-scope a.ui-datepicker-next:hover,.itx-scope a.ui-datepicker-prev,.itx-scope a.ui-datepicker-prev:hover {
+	font-family:cd;
+	font-size:.875rem;
+	font-style:normal;
+	font-weight:400;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1rem;
+	display:inline-block;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	color:#28373c
+}
+.itx-scope .uiIcon-bg {
+	text-align:center;
+	border-radius:2rem;
+	line-height:.875rem;
+	color:#fff;
+	font-size:.875rem;
+	font-weight:400;
+	padding:.25rem
+}
+.itx-scope .uiFormLayoutColumn.label .uiOutputText,.itx-scope .uiRootModul.tab .uiModulTab.active span {
+	font-weight:700
+}
+.itx-scope .dragAccept:hover>.handler>.inner.large,.itx-scope .handler:hover>.inner.large,.itx-scope .lastLogin>.close.large,.itx-scope .ui-dialog a.layerCloseIcon.large,.itx-scope .ui-sortable-helper .handler>.inner.large,.itx-scope .uiIcon.large,.itx-scope a.ui-datepicker-next.large,.itx-scope a.ui-datepicker-next:hover.large,.itx-scope a.ui-datepicker-prev.large,.itx-scope a.ui-datepicker-prev:hover.large {
+	font-size:2.75rem;
+	line-height:3rem
+}
+.itx-scope .icon-aktion:before,.itx-scope .icon-arrow-down:before,.itx-scope .icon-arrow-left:before,.itx-scope .icon-arrow-right:before,.itx-scope .icon-arrow-up:before,.itx-scope .icon-check:before,.itx-scope .icon-close-large:before,.itx-scope .icon-close-mini:before,.itx-scope .icon-close:before,.itx-scope .icon-dot:before,.itx-scope .icon-down-small:before,.itx-scope .icon-kurs-down-right:before,.itx-scope .icon-kurs-down:before,.itx-scope .icon-kurs-realtime-c:before,.itx-scope .icon-kurs-realtime:before,.itx-scope .icon-kurs-right:before,.itx-scope .icon-kurs-up-right:before,.itx-scope .icon-kurs-up:before,.itx-scope .icon-nav-down:before,.itx-scope .icon-plus:before,.itx-scope .icon-refresh:before,.itx-scope .icon-sort-asc:before,.itx-scope .icon-sort-desc:before,.itx-scope .icon-sort:before,.itx-scope .icon-top-right:before,.itx-scope .lastLogin>.close:before,.itx-scope .ui-dialog a.layerCloseIcon:before,.itx-scope .uiTogglePanel.arrow .expand a:before,.itx-scope .uiTogglePanel.arrow .fold a:before,.itx-scope a.ui-datepicker-next:before,.itx-scope a.ui-datepicker-next:hover:before,.itx-scope a.ui-datepicker-prev:before,.itx-scope a.ui-datepicker-prev:hover:before {
+	font-size:.875rem;
+	line-height:.875rem
+}
+.itx-scope .uiIcon-bg.icon-bg-transition:hover {
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out
+}
+.itx-scope .dragAccept:hover>.handler>.inner.icon-active,.itx-scope .handler:hover>.inner.icon-active,.itx-scope .lastLogin>.close.icon-active,.itx-scope .ui-dialog a.layerCloseIcon.icon-active,.itx-scope .ui-sortable-helper .handler>.inner.icon-active,.itx-scope .uiIcon.icon-active,.itx-scope a.ui-datepicker-next.icon-active,.itx-scope a.ui-datepicker-next:hover.icon-active,.itx-scope a.ui-datepicker-prev.icon-active,.itx-scope a.ui-datepicker-prev:hover.icon-active {
+	color:#fff500
+}
+.itx-scope .uiIcon-bg.icon-twitter.icon-bg-transition:hover {
+	background:#ffe100
+}
+.itx-scope .uiIcon-bg.icon-twitter {
+	background:#fff500
+}
+.itx-scope .icon-twitter:before {
+	content:"\f099"
+}
+.itx-scope .uiIcon-bg.icon-facebook.icon-bg-transition:hover {
+	background:#ffe100
+}
+.itx-scope .uiIcon-bg.icon-facebook {
+	background:#fff500
+}
+.itx-scope .icon-facebook:before {
+	content:"\f09a"
+}
+.itx-scope .uiIcon-bg.icon-youtube.icon-bg-transition:hover {
+	background:#ffe100
+}
+.itx-scope .uiIcon-bg.icon-youtube {
+	background:#fff500
+}
+.itx-scope .icon-youtube:before {
+	content:"\f167"
+}
+.itx-scope .icon-kurs-realtime-c:before {
+	content:"\e92b"
+}
+.itx-scope .icon-kurs-realtime:before {
+	content:"\e909";
+	color:#4ce77b
+}
+.itx-scope .uiIcon-bg.icon-dot.icon-bg-transition:hover {
+	background:#fff
+}
+.itx-scope .uiIcon-bg.icon-dot {
+	background:#eee;
+	color:#28373c
+}
+.itx-scope .icon-dot:before {
+	content:"\e800"
+}
+.itx-scope .icon-close-mini:before {
+	content:"\e906"
+}
+.itx-scope .icon-kurs-down-right:before {
+	content:"\e907"
+}
+.itx-scope .icon-kurs-down:before {
+	content:"\e908"
+}
+.itx-scope .icon-kurs-right:before {
+	content:"\e90a"
+}
+.itx-scope .icon-kurs-up-right:before {
+	content:"\e90c"
+}
+.itx-scope .icon-kurs-up:before {
+	content:"\e90d"
+}
+.itx-scope .icon-sort-asc:before {
+	content:"\e90f"
+}
+.itx-scope .icon-sort-desc:before {
+	content:"\e910"
+}
+.itx-scope .icon-sort:before {
+	content:"\e911"
+}
+.itx-scope .dragAccept:hover>.handler>.inner:before,.itx-scope .handler:hover>.inner:before,.itx-scope .icon-order:before,.itx-scope .ui-sortable-helper .handler>.inner:before {
+	content:"\e90e";
+	font-size:.875rem;
+	line-height:.875rem
+}
+.itx-scope .icon-down-small:before {
+	content:"\e80a"
+}
+.itx-scope .icon-nav-down:before {
+	content:"\e806"
+}
+.itx-scope .uiIcon-bg.icon-arrow-down.icon-bg-transition:hover,.itx-scope .uiIcon-bg.uiTogglePanel.arrow .expand a.icon-bg-transition:hover {
+	background:#fff
+}
+.itx-scope .uiIcon-bg.icon-arrow-down,.itx-scope .uiIcon-bg.uiTogglePanel.arrow .expand a {
+	background:#eee;
+	color:#28373c
+}
+.itx-scope tr:hover .uiIcon-bg.icon-arrow-down,.itx-scope tr:hover .uiIcon-bg.uiTogglePanel.arrow .expand a {
+	background:#ddd
+}
+.itx-scope tr:hover .uiIcon-bg.icon-arrow-down.icon-bg-transition:hover,.itx-scope tr:hover .uiIcon-bg.uiTogglePanel.arrow .expand a.icon-bg-transition:hover {
+	background:#ccc
+}
+.itx-scope .icon-arrow-down:before,.itx-scope .uiTogglePanel.arrow .expand a:before {
+	content:"\e802"
+}
+.itx-scope .uiIcon-bg.icon-arrow-up.icon-bg-transition:hover {
+	background:#fff
+}
+.itx-scope .uiIcon-bg.icon-arrow-up {
+	background:#eee;
+	color:#28373c
+}
+.itx-scope .icon-arrow-up:before {
+	content:"\e803"
+}
+.itx-scope .uiIcon-bg.icon-arrow-left.icon-bg-transition:hover,.itx-scope .uiIcon-bga.ui-datepicker-prev.icon-bg-transition:hover,.itx-scope .uiIcon-bga.ui-datepicker-prev:hover.icon-bg-transition:hover {
+	background:#fff
+}
+.itx-scope .uiIcon-bg.icon-arrow-left,.itx-scope .uiIcon-bga.ui-datepicker-prev,.itx-scope .uiIcon-bga.ui-datepicker-prev:hover {
+	background:#eee;
+	color:#28373c
+}
+.itx-scope .icon-arrow-left:before,.itx-scope a.ui-datepicker-prev:before,.itx-scope a.ui-datepicker-prev:hover:before {
+	content:"\e804"
+}
+.itx-scope .uiIcon-bg.icon-arrow-right.icon-bg-transition:hover,.itx-scope .uiIcon-bg.uiTogglePanel.arrow .fold a.icon-bg-transition:hover,.itx-scope .uiIcon-bga.ui-datepicker-next.icon-bg-transition:hover,.itx-scope .uiIcon-bga.ui-datepicker-next:hover.icon-bg-transition:hover {
+	background:#fff
+}
+.itx-scope .uiIcon-bg.icon-arrow-right,.itx-scope .uiIcon-bg.uiTogglePanel.arrow .fold a,.itx-scope .uiIcon-bga.ui-datepicker-next,.itx-scope .uiIcon-bga.ui-datepicker-next:hover {
+	background:#eee;
+	color:#28373c
+}
+.itx-scope .icon-arrow-right:before,.itx-scope .uiTogglePanel.arrow .fold a:before,.itx-scope a.ui-datepicker-next:before,.itx-scope a.ui-datepicker-next:hover:before {
+	content:"\e805"
+}
+.itx-scope .uiIcon-bg.icon-check.icon-bg-transition:hover {
+	background:#fff
+}
+.itx-scope .uiIcon-bg.icon-check {
+	background:#eee;
+	color:#28373c
+}
+.itx-scope .icon-help.icon-transition:hover,.itx-scope .icon-mail.icon-transition:hover,.itx-scope .icon-print.icon-transition:hover,.itx-scope .icon-refresh.icon-transition:hover {
+	color:#48db74
+}
+.itx-scope .icon-check:before {
+	content:"\e801"
+}
+.itx-scope .icon-close-large:before,.itx-scope .ui-dialog a.layerCloseIcon:before {
+	content:"\e902"
+}
+.itx-scope .icon-close:before,.itx-scope .lastLogin>.close:before {
+	content:"\e903"
+}
+.itx-scope .icon-top-right:before {
+	content:"\e905"
+}
+.itx-scope .icon-search:before {
+	content:"\e90b";
+	font-size:.875rem;
+	position:relative;
+	top:-.0625rem
+}
+.itx-scope .icon-refresh:before {
+	content:"\e904"
+}
+.itx-scope .icon-plus:before {
+	content:"\e901"
+}
+.itx-scope .icon-aktion:before {
+	content:"\e808"
+}
+.itx-scope .icon-cal:before,.itx-scope .icon-comment:before,.itx-scope .icon-edit:before,.itx-scope .icon-help:before,.itx-scope .icon-info:before,.itx-scope .icon-mail:before,.itx-scope .icon-minus:before,.itx-scope .icon-note-add:before,.itx-scope .icon-note:before,.itx-scope .icon-plus-2:before,.itx-scope .icon-print:before,.itx-scope .icon-refresh-2:before,.itx-scope .icon-star-half:before,.itx-scope .icon-star-o:before,.itx-scope .icon-star:before,.itx-scope .icon-trash:before,.itx-scope .icon-user:before {
+	font-size:1rem;
+	line-height:1rem
+}
+.itx-scope .icon-star-half:before {
+	content:"\e929"
+}
+.itx-scope .icon-star-o:before {
+	content:"\e92a"
+}
+.itx-scope .icon-star:before {
+	content:"\e92c"
+}
+.itx-scope .icon-help:before {
+	content:"\e922"
+}
+.itx-scope .dragAccept:hover>.handler>.inner.icon-info,.itx-scope .handler:hover>.inner.icon-info,.itx-scope .lastLogin>.close.icon-info,.itx-scope .ui-dialog a.layerCloseIcon.icon-info,.itx-scope .ui-sortable-helper .handler>.inner.icon-info,.itx-scope .uiIcon.icon-info,.itx-scope a.ui-datepicker-next.icon-info,.itx-scope a.ui-datepicker-next:hover.icon-info,.itx-scope a.ui-datepicker-prev.icon-info,.itx-scope a.ui-datepicker-prev:hover.icon-info {
+	margin-left:.25rem
+}
+.itx-scope .icon-info:before {
+	content:"\e923"
+}
+.itx-scope .icon-plus-2:before {
+	content:"\e926"
+}
+.itx-scope .icon-minus:before {
+	content:"\e925"
+}
+.itx-scope .icon-refresh-2:before {
+	content:"\e928"
+}
+.itx-scope .icon-realtime:before {
+	content:"\e918";
+	font-size:1rem;
+	line-height:1rem
+}
+.itx-scope .icon-user:before {
+	content:"\e913"
+}
+.itx-scope .icon-mail:before {
+	content:"\e924"
+}
+.itx-scope .icon-comment:before {
+	content:"\e921"
+}
+.itx-scope .icon-print:before {
+	content:"\e927"
+}
+.itx-scope .icon-cal:before {
+	content:"\e914"
+}
+.itx-scope .icon-trash:before {
+	content:"\e912"
+}
+.itx-scope .icon-edit:before {
+	content:"\e915"
+}
+.itx-scope .icon-note-add:before {
+	content:"\e916"
+}
+.itx-scope .icon-note:before {
+	content:"\e917"
+}
+.itx-scope .icon-users:before {
+	content:"\e919";
+	font-size:1.125rem;
+	line-height:1.125rem
+}
+.itx-scope .icon-chat-video:before,.itx-scope .icon-chat:before,.itx-scope .icon-contact-mail:before,.itx-scope .icon-cursor:before,.itx-scope .icon-fax:before,.itx-scope .icon-pc:before,.itx-scope .icon-phone-24:before,.itx-scope .icon-phone-cb:before,.itx-scope .icon-phone:before {
+	font-size:2.375rem;
+	position:relative;
+	top:.75rem
+}
+.itx-scope .icon-chat-video:before {
+	content:"\e91a"
+}
+.itx-scope .icon-chat:before {
+	content:"\e91b"
+}
+.itx-scope .icon-cursor:before {
+	content:"\e91c"
+}
+.itx-scope .icon-contact-mail:before {
+	content:"\e91d"
+}
+.itx-scope .icon-pc:before {
+	content:"\e91e"
+}
+.itx-scope .icon-phone-24:before {
+	content:"\e91f"
+}
+.itx-scope .icon-phone-cb:before {
+	content:"\e920"
+}
+.itx-scope .icon-phone:before {
+	content:"\e933"
+}
+.itx-scope .icon-fax:before {
+	content:"\e932"
+}
+.itx-scope .icon-exclamation:before {
+	content:"\e900";
+	color:#ff4c5b;
+	font-size:2.75rem;
+	line-height:2.75rem
+}
+.itx-scope .icon-error-cloud:before,.itx-scope .icon-error-cookies:before,.itx-scope .icon-error-page:before,.itx-scope .icon-error-tan:before {
+	line-height:3.125rem;
+	font-size:3.125rem
+}
+.itx-scope .icon-error-cloud:before {
+	content:"\e92d"
+}
+.itx-scope .icon-error-cookies:before {
+	content:"\e92e"
+}
+.itx-scope .icon-error-page:before {
+	content:"\e92f"
+}
+.itx-scope .icon-error-tan:before {
+	content:"\e930"
+}
+.itx-scope .icon-check-o:before {
+	content:"\e934";
+	font-size:3.125rem
+}
+.itx-scope .floatLeft {
+	float:left
+}
+.itx-scope .floatRight {
+	float:right
+}
+.itx-scope .floatNone {
+	float:none
+}
+.itx-scope .floatCenter {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	display:block
+}
+.itx-scope .clear:after,.itx-scope .clearfix:after,.itx-scope .floatNone:after,.itx-scope .inhaber:after,.itx-scope .ui-helper-clearfix:after,.itx-scope .uiLayout:after {
+	content:"";
+	display:table;
+	clear:both
+}
+@media screen and (max-width:1em) {
+	.itx-scope .no-small {
+		display:none!important
+	}
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .no-medium {
+		display:none!important
+	}
+}
+@media screen and (min-width:2.063em) {
+	.itx-scope .no-large {
+		display:none!important
+	}
+}
+.itx-scope .hidden {
+	display:none
+}
+.itx-scope img.fireAndForget {
+	width:1px;
+	height:1px;
+	display:block;
+	position:absolute;
+	left:-99999px;
+	top:-99999px
+}
+.itx-scope .printOnly,.itx-scope iframe.teaserFrameEta {
+	display:none
+}
+.itx-scope iframe[src^="/pfm"] {
+	width:auto!important;
+	height:auto!important
+}
+.itx-scope .overflow-x-auto {
+	overflow-x:auto
+}
+.itx-scope .overflow-x-inherit {
+	overflow-x:inherit
+}
+.itx-scope .overflow-x-initial {
+	overflow-x:initial
+}
+.itx-scope .overflow-x-scroll {
+	overflow-x:scroll
+}
+.itx-scope .overflow-x-hidden {
+	overflow-x:hidden
+}
+.itx-scope .overflow-x-visible {
+	overflow-x:visible
+}
+.itx-scope .overflow-y-auto {
+	overflow-y:auto
+}
+.itx-scope .overflow-y-inherit {
+	overflow-y:inherit
+}
+.itx-scope .overflow-y-initial {
+	overflow-y:initial
+}
+.itx-scope .overflow-y-scroll {
+	overflow-y:scroll
+}
+.itx-scope .overflow-y-hidden {
+	overflow-y:hidden
+}
+.itx-scope .overflow-y-visible {
+	overflow-y:visible
+}
+@media print {
+	.itx-scope .overflow-print-x-auto {
+		overflow-x:auto
+	}
+	.itx-scope .overflow-print-x-inherit {
+		overflow-x:inherit
+	}
+	.itx-scope .overflow-print-x-initial {
+		overflow-x:initial
+	}
+	.itx-scope .overflow-print-x-scroll {
+		overflow-x:scroll
+	}
+	.itx-scope .overflow-print-x-hidden {
+		overflow-x:hidden
+	}
+	.itx-scope .overflow-print-x-visible {
+		overflow-x:visible
+	}
+	.itx-scope .overflow-print-y-auto {
+		overflow-y:auto
+	}
+	.itx-scope .overflow-print-y-inherit {
+		overflow-y:inherit
+	}
+	.itx-scope .overflow-print-y-initial {
+		overflow-y:initial
+	}
+	.itx-scope .overflow-print-y-scroll {
+		overflow-y:scroll
+	}
+	.itx-scope .overflow-print-y-hidden {
+		overflow-y:hidden
+	}
+	.itx-scope .overflow-print-y-visible {
+		overflow-y:visible
+	}
+	.itx-scope .printOnly {
+		display:block
+	}
+	.itx-scope .notPrint {
+		display:none!important
+	}
+	.itx-scope .ui-dialog {
+		left:0!important;
+		top:0!important
+	}
+	.itx-scope .page-break-after-always {
+		page-break-after:always
+	}
+	.itx-scope .page-break-after-auto {
+		page-break-after:auto
+	}
+	.itx-scope .page-break-after-avoid {
+		page-break-after:avoid
+	}
+	.itx-scope .page-break-inside-always {
+		page-break-inside:always
+	}
+	.itx-scope .page-break-inside-auto {
+		page-break-inside:auto
+	}
+	.itx-scope .page-break-inside-avoid {
+		page-break-inside:avoid
+	}
+	.itx-scope .page-break-before-always {
+		page-break-before:always
+	}
+	.itx-scope .page-break-before-auto {
+		page-break-before:auto
+	}
+	.itx-scope .page-break-before-avoid {
+		page-break-before:avoid
+	}
+}
+@media print and (orientation:landscape) {
+	.itx-scope .page-break-after-always-landscape {
+		page-break-after:always
+	}
+	.itx-scope .page-break-after-auto-landscape {
+		page-break-after:auto
+	}
+	.itx-scope .page-break-after-avoid-landscape {
+		page-break-after:avoid
+	}
+	.itx-scope .page-break-inside-always-landscape {
+		page-break-inside:always
+	}
+	.itx-scope .page-break-inside-auto-landscape {
+		page-break-inside:auto
+	}
+	.itx-scope .page-break-inside-avoid-landscape {
+		page-break-inside:avoid
+	}
+	.itx-scope .page-break-before-always-landscape {
+		page-break-before:always
+	}
+	.itx-scope .page-break-before-auto-landscape {
+		page-break-before:auto
+	}
+	.itx-scope .page-break-before-avoid-landscape {
+		page-break-before:avoid
+	}
+}
+@media print and (orientation:portrait) {
+	.itx-scope .page-break-after-always-portrait {
+		page-break-after:always
+	}
+	.itx-scope .page-break-after-auto-portrait {
+		page-break-after:auto
+	}
+	.itx-scope .page-break-after-avoid-portrait {
+		page-break-after:avoid
+	}
+	.itx-scope .page-break-inside-always-portrait {
+		page-break-inside:always
+	}
+	.itx-scope .page-break-inside-auto-portrait {
+		page-break-inside:auto
+	}
+	.itx-scope .page-break-inside-avoid-portrait {
+		page-break-inside:avoid
+	}
+	.itx-scope .page-break-before-always-portrait {
+		page-break-before:always
+	}
+	.itx-scope .page-break-before-auto-portrait {
+		page-break-before:auto
+	}
+	.itx-scope .page-break-before-avoid-portrait {
+		page-break-before:avoid
+	}
+}
+.itx-scope .m0,.itx-scope .uiLayout.m0 {
+	margin:0
+}
+.itx-scope .m0-left,.itx-scope .uiLayout.m0-left {
+	margin-left:0
+}
+.itx-scope .m0-right,.itx-scope .uiLayout.m0-right {
+	margin-right:0
+}
+.itx-scope .m0-bottom,.itx-scope .uiLayout.m0-bottom {
+	margin-bottom:0
+}
+.itx-scope .m1,.itx-scope .uiLayout.m1 {
+	margin:.5rem
+}
+.itx-scope .m1-left,.itx-scope .uiLayout.m1-left {
+	margin-left:.5rem
+}
+.itx-scope .m1-right,.itx-scope .uiLayout.m1-right {
+	margin-right:.5rem
+}
+.itx-scope .m1-top,.itx-scope .uiLayout.m1-top {
+	margin-top:.5rem
+}
+.itx-scope .m1-bottom,.itx-scope .uiLayout.m1-bottom {
+	margin-bottom:.5rem
+}
+.itx-scope .m2,.itx-scope .uiLayout.m2 {
+	margin:1rem
+}
+.itx-scope .m2-left,.itx-scope .uiLayout.m2-left {
+	margin-left:1rem
+}
+.itx-scope .m2-right,.itx-scope .uiLayout.m2-right {
+	margin-right:1rem
+}
+.itx-scope .m2-top,.itx-scope .uiLayout.m2-top {
+	margin-top:1rem
+}
+.itx-scope .m2-bottom,.itx-scope .uiLayout.m2-bottom {
+	margin-bottom:1rem
+}
+.itx-scope .m3,.itx-scope .uiLayout.m3 {
+	margin:1.5rem
+}
+.itx-scope .m3-left,.itx-scope .uiLayout.m3-left {
+	margin-left:1.5rem
+}
+.itx-scope .m3-right,.itx-scope .uiLayout.m3-right {
+	margin-right:1.5rem
+}
+.itx-scope .m3-top,.itx-scope .uiLayout.m3-top {
+	margin-top:1.5rem
+}
+.itx-scope .m3-bottom,.itx-scope .uiLayout.m3-bottom {
+	margin-bottom:1.5rem
+}
+.itx-scope .m4,.itx-scope .uiLayout.m4 {
+	margin:2rem
+}
+.itx-scope .m4-left,.itx-scope .uiLayout.m4-left {
+	margin-left:2rem
+}
+.itx-scope .m4-right,.itx-scope .uiLayout.m4-right {
+	margin-right:2rem
+}
+.itx-scope .m4-top,.itx-scope .uiLayout.m4-top {
+	margin-top:2rem
+}
+.itx-scope .m4-bottom,.itx-scope .uiLayout.m4-bottom {
+	margin-bottom:2rem
+}
+.itx-scope .m5,.itx-scope .uiLayout.m5 {
+	margin:2.5rem
+}
+.itx-scope .m5-left,.itx-scope .uiLayout.m5-left {
+	margin-left:2.5rem
+}
+.itx-scope .m5-right,.itx-scope .uiLayout.m5-right {
+	margin-right:2.5rem
+}
+.itx-scope .m5-top,.itx-scope .uiLayout.m5-top {
+	margin-top:2.5rem
+}
+.itx-scope .m5-bottom,.itx-scope .uiLayout.m5-bottom {
+	margin-bottom:2.5rem
+}
+.itx-scope iframe {
+	border:none
+}
+.itx-scope .uiFormLayout .uiFormLayoutRow {
+	width:100%;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	margin:.625rem 0;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.itx-scope .uiFormLayout.largeSpacing .uiFormLayoutRow {
+	margin:1.875rem 0
+}
+.itx-scope .uiFormLayout.tiny .uiFormLayoutRow {
+	margin:.25rem 0
+}
+.itx-scope .uiFormLayoutColumn {
+	margin:0;
+	padding:0;
+	float:left;
+	width:40%
+}
+.itx-scope .uiFormLayoutColumn.smallInputLast {
+	width:25%
+}
+.itx-scope .output .uiFormLayoutColumn.smallInputLast {
+	width:40%
+}
+.itx-scope .uiFormLayoutColumn.label {
+	width:18%;
+	min-width:12rem;
+	text-align:right
+}
+.itx-scope .uiFormLayoutColumn.fullWidth {
+	width:100%
+}
+.itx-scope .uiFormLayoutColumn.largeInput {
+	width:55%
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiFormLayout .uiFormLayoutRow {
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-webkit-flex-direction:column;
+		-ms-flex-direction:column;
+		flex-direction:column
+	}
+	.itx-scope .uiFormLayoutColumn,.itx-scope .uiFormLayoutColumn.largeInput,.itx-scope .uiFormLayoutColumn.smallInputLast {
+		width:100%
+	}
+	.itx-scope .uiFormLayoutColumn.label {
+		text-align:left;
+		width:100%;
+		padding:0
+	}
+}
+.itx-scope .uiFormLayout.twoFormsAside .uiFormLayoutColumn.label {
+	width:12%;
+	min-width:8rem
+}
+.itx-scope .uiFormLayout.twoFormsAside .uiFormLayoutColumn.largeInput,.itx-scope .uiFormLayout.twoFormsAside .uiFormLayoutColumn.smallInput,.itx-scope .uiFormLayout.twoFormsAside .uiFormLayoutColumn.smallInputLast {
+	min-width:20rem;
+	width:44%;
+	margin-left:3.4375rem;
+	padding:0
+}
+@media screen and (min-width:2.063em) {
+	.itx-scope .uiFormLayoutColumn.smallInputLast {
+		padding:0 0 0 .75rem
+	}
+}
+.itx-scope .uiFormLayoutColumn.input>.uiOutputText,.itx-scope .uiFormLayoutColumn.input>.uiOutputTextArea,.itx-scope .uiFormLayoutColumn.largeInput>.uiOutputText,.itx-scope .uiFormLayoutColumn.largeInput>.uiOutputTextArea,.itx-scope .uiFormLayoutColumn.smallInput>.uiOutputText,.itx-scope .uiFormLayoutColumn.smallInput>.uiOutputTextArea,.itx-scope .uiFormLayoutColumn.smallInputLast>.uiCommandLink,.itx-scope .uiFormLayoutColumn.smallInputLast>.uiOutputText {
+	display:inline;
+	padding:.7rem 0
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiFormLayoutColumn.input>.uiOutputText,.itx-scope .uiFormLayoutColumn.input>.uiOutputTextArea,.itx-scope .uiFormLayoutColumn.largeInput>.uiOutputText,.itx-scope .uiFormLayoutColumn.largeInput>.uiOutputTextArea,.itx-scope .uiFormLayoutColumn.smallInput>.uiOutputText,.itx-scope .uiFormLayoutColumn.smallInput>.uiOutputTextArea {
+		padding:0
+	}
+}
+.itx-scope .uiFormLayoutColumn .uiOutputTextArea {
+	width:auto
+}
+.itx-scope .uiFormLayoutColumn.input textarea {
+	max-width:171.4%
+}
+.itx-scope .uiFormLayoutColumn .uiMessage {
+	display:-webkit-inline-box;
+	display:-webkit-inline-flex;
+	display:-ms-inline-flexbox;
+	display:inline-flex
+}
+.itx-scope .uiFormLayoutColumn .uiCommandLink,.itx-scope .uiFormLayoutColumn .uiCommandLink.icon {
+	margin-left:0
+}
+@media screen and (max-width:2em) {
+	.itx-scope .uiFormLayout.twoFormsAside .smallInput,.itx-scope .uiFormLayout.twoFormsAside .smallInputLast {
+		width:50%
+	}
+	.itx-scope .uiFormLayout.twoFormsAside .smallInput {
+		padding-right:1rem
+	}
+	.itx-scope .uiFormLayout.twoFormsAside .uiFormLayoutColumn.label {
+		width:100%
+	}
+}
+.itx-scope .uiFormLayoutColumn.icon {
+	max-width:1rem;
+	margin:0 1.25rem;
+	min-width:1rem
+}
+.itx-scope .uiFormLayout.inputWithIcon .uiFormLayoutColumn {
+	width:40%
+}
+.itx-scope .uiFormLayout.inputWithIcon .uiFormLayoutColumn.label {
+	width:22.2222222%
+}
+.itx-scope .uiFormLayout.inputWithIcon .uiFormLayoutColumn.fullWidth {
+	width:100%
+}
+.itx-scope .uiFormLayout.inputWithIcon .uiFormLayoutColumn.largeInput {
+	width:55%
+}
+.itx-scope .uiFormLayout.inputWithIcon .uiFormLayoutColumn.smallInputLast {
+	width:25%
+}
+.itx-scope .uiFormLayout.inputWithIcon .uiFormLayoutRow>.uiFormLayoutColumn:last-child {
+	-webkit-box-flex:1;
+	-webkit-flex-grow:1;
+	-ms-flex-positive:1;
+	flex-grow:1;
+	margin-right:1.875rem
+}
+.itx-scope .uiFormLayout .uiFormLayoutRow .uiFormLayoutColumn:nth-child(2) {
+	margin-left:3.4375rem
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiFormLayout .uiFormLayoutRow .uiFormLayoutColumn:nth-child(2) {
+		margin-left:0;
+		margin-top:.5rem
+	}
+}
+.itx-scope .uiFormLayout .uiFormLayoutRow .uiFormLayoutColumn:nth-child(2).icon,.itx-scope .uiFormLayout.inputWithIcon .uiFormLayoutRow .uiFormLayoutColumn:nth-child(2) {
+	margin-left:1.125rem
+}
+.itx-scope .uiFormLayoutColumn>.uiLine {
+	margin-top:.3125rem;
+	margin-bottom:.3125rem
+}
+.itx-scope .uiLayout {
+	width:1020px;
+	padding:0 1.875rem;
+	margin:0 auto
+}
+.itx-scope .uiLayout.layout_1_1_1>.column1 {
+	float:left;
+	width:31.1%;
+	margin-left:0
+}
+.itx-scope .uiLayout.layout_1_1_1>.column2,.itx-scope .uiLayout.layout_1_1_1>.column3 {
+	float:left;
+	width:31.1%;
+	margin-left:1.55%
+}
+.itx-scope .uiLayout.layout_1_1>.column1 {
+	float:left;
+	width:47.35%;
+	margin-left:0
+}
+.itx-scope .uiLayout.layout_1_1>.column2 {
+	float:left;
+	width:47.35%;
+	margin-left:1.59%
+}
+.itx-scope .uiLayout.layout_1_2>.column1 {
+	float:left;
+	width:32.8%;
+	margin-left:0
+}
+.itx-scope .uiLayout.layout_1_2>.column2 {
+	float:left;
+	width:63.8%;
+	margin-left:1.56%
+}
+.itx-scope .uiLayout.layout_2_1>.column1 {
+	float:left;
+	width:65.6%;
+	margin-left:0
+}
+.itx-scope .uiLayout.layout_2_1>.column2 {
+	float:left;
+	width:31.1%;
+	margin-left:1.56%
+}
+.itx-scope .uiLayout.layout_ss_2_1>.column1 {
+	float:left;
+	width:72.3%;
+	margin-left:0
+}
+.itx-scope .uiLayout.layout_ss_2_1>.column2 {
+	float:left;
+	width:23.3%;
+	margin-left:2.6%
+}
+.itx-scope .uiLayout.layout_ss_1_1_1>.column1 {
+	float:left;
+	width:36.25%;
+	margin-left:0
+}
+.itx-scope .uiLayout.layout_ss_1_1_1>.column2 {
+	float:left;
+	width:34.45%;
+	margin-left:1.6%
+}
+.itx-scope .uiLayout.layout_ss_1_1_1>.column3 {
+	float:left;
+	width:23.3%;
+	margin-left:2.6%
+}
+.itx-scope .uiLayout.layout_3>.column1 {
+	width:100%;
+	margin-left:0
+}
+.itx-scope .uiLayout.layout_flexible_3 {
+	width:100%;
+	overflow:auto;
+	background:#f4f4f4;
+	padding:0;
+	margin:0 auto;
+	text-align:center
+}
+.itx-scope .uiLayout.layout_flexible_3>.column1 {
+	background:#fff;
+	display:inline-block;
+	text-align:left;
+	padding:.3125rem 1.875rem 1.875rem;
+	margin:1.875rem;
+	min-width:1020px;
+	width:auto
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiLayout[class*=layout]>div[class*=column] {
+		float:left;
+		width:100%;
+		margin:0
+	}
+}
+.itx-scope .uiLayout.flex {
+	display:-webkit-flex;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-flex-flow:column wrap;
+	-ms-flex-flow:column wrap;
+	flex-flow:column wrap;
+	-webkit-justify-content:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	height:100%
+}
+.itx-scope .uiLayout.flex>.column1,.itx-scope .uiLayout.flex>.column2,.itx-scope .uiLayout.flex>.column3 {
+	-webkit-flex:1 0 auto;
+	-webkit-box-flex:1;
+	-ms-flex:1 0 auto;
+	flex:1 0 auto;
+	overflow:hidden
+}
+.itx-scope .uiLayout.flex>.fix {
+	-webkit-flex:0 0 auto;
+	-webkit-box-flex:0;
+	-ms-flex:0 0 auto;
+	flex:0 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex1 {
+	-webkit-flex:1 0 auto;
+	-webkit-box-flex:1;
+	-ms-flex:1 0 auto;
+	flex:1 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex2 {
+	-webkit-flex:2 0 auto;
+	-webkit-box-flex:2;
+	-ms-flex:2 0 auto;
+	flex:2 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex3 {
+	-webkit-flex:3 0 auto;
+	-webkit-box-flex:3;
+	-ms-flex:3 0 auto;
+	flex:3 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex4 {
+	-webkit-flex:4 0 auto;
+	-webkit-box-flex:4;
+	-ms-flex:4 0 auto;
+	flex:4 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex5 {
+	-webkit-flex:5 0 auto;
+	-webkit-box-flex:5;
+	-ms-flex:5 0 auto;
+	flex:5 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex6 {
+	-webkit-flex:6 0 auto;
+	-webkit-box-flex:6;
+	-ms-flex:6 0 auto;
+	flex:6 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex7 {
+	-webkit-flex:7 0 auto;
+	-webkit-box-flex:7;
+	-ms-flex:7 0 auto;
+	flex:7 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex8 {
+	-webkit-flex:8 0 auto;
+	-webkit-box-flex:8;
+	-ms-flex:8 0 auto;
+	flex:8 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex9 {
+	-webkit-flex:9 0 auto;
+	-webkit-box-flex:9;
+	-ms-flex:9 0 auto;
+	flex:9 0 auto
+}
+.itx-scope .uiLayout.flex>div.flex10 {
+	-webkit-flex:10 0 auto;
+	-webkit-box-flex:10;
+	-ms-flex:10 0 auto;
+	flex:10 0 auto
+}
+.itx-scope .ui-dialog .uiLayout {
+	width:auto;
+	padding:0
+}
+.itx-scope .stickyScrollbar {
+	position:fixed;
+	bottom:0;
+	overflow-x:auto;
+	left:0
+}
+.itx-scope .stickyScrollbarFakeContent {
+	height:1px
+}
+.itx-scope .uiRootModul.tab .head ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-bottom:.0625rem solid #eee
+}
+.itx-scope .uiRootModul.tab .head ul.clearfix:before,.itx-scope .uiRootModul.tab .head ul.floatNone:before,.itx-scope .uiRootModul.tab .head ul.inhaber:before,.itx-scope .uiRootModul.tab .head ul.uiLayout:before {
+	display:none
+}
+.itx-scope .uiRootModul.tab .head ul,.itx-scope .uiRootModul.tab .head ul>form {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex
+}
+.itx-scope .uiRootModul.tab .uiModulTab {
+	margin:0 1.875rem 0 0
+}
+.itx-scope .uiRootModul.tab .uiModulTab:last-child {
+	margin-right:0
+}
+.itx-scope .uiRootModul.tab .uiModulTab a,.itx-scope .uiRootModul.tab .uiModulTab.active {
+	display:block;
+	padding:0
+}
+.itx-scope .uiRootModul.tab .uiModulTab:first-child {
+	padding-left:0
+}
+.itx-scope .uiRootModul.tab .uiModulTab span {
+	position:relative;
+	text-decoration:none
+}
+.itx-scope .uiRootModul.tab .uiModulTab span:before {
+	display:none
+}
+.itx-scope .uiRootModul.tab .uiModulTab a:hover span,.itx-scope .uiRootModul.tab .uiModulTab.active span {
+	display:inline-block;
+	-webkit-transition:border .1s ease-in-out;
+	transition:border .1s ease-in-out;
+	border-bottom:.125rem solid #4ce77b;
+	padding-bottom:.125rem;
+	margin-bottom:-1px
+}
+.itx-scope .uiRootModul.tab .uiModulTab.disabled:not(.active) span,.itx-scope .uiRootModul.tab .uiModulTab.disabled:not(.active) span:hover {
+	color:#abafb3
+}
+.itx-scope .uiRootModul.tab .uiModulTab a,.itx-scope .uiRootModul.tab .uiModulTab span {
+	font-size:.9375rem;
+	line-height:2rem;
+	color:#28373c;
+	-webkit-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out
+}
+.itx-scope .uiRootModul.tab .uiModulTab a:hover {
+	color:#48db74
+}
+.itx-scope .uiRootModul {
+	padding:0;
+	margin:0
+}
+.itx-scope .uiRootModul>.head {
+	width:1020px;
+	padding:0 1.875rem;
+	margin:1.25rem auto
+}
+.itx-scope .uiRootModul>.head h1 {
+	margin:3rem 0;
+	width:70%;
+	position:relative;
+	z-index:3
+}
+.itx-scope .uiRootModul.messageBoxNeutral>.head h1 {
+	width:auto
+}
+.itx-scope .uiRootModul.messageBoxNeutral {
+	width:60rem;
+	margin:4rem auto 1.25rem;
+	position:relative;
+	font-size:.875rem;
+	padding:3.125rem 2rem 3.75rem;
+	border:1px solid #ccc;
+	border-top:0;
+	box-shadow:0 1px 2px rgba(40,55,60,.25);
+	background:#fff
+}
+.itx-scope .uiRootModul.messageBoxNeutral .head,.itx-scope .uiRootModul.messageBoxNeutral .uiLayout {
+	width:auto;
+	margin:0
+}
+.itx-scope .uiRootModul.messageBoxNeutral>.head::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:2px;
+	width:100%;
+	background:-webkit-linear-gradient(180deg,#fff500 0,#f7f406 14%,#c6f127 48%,#7aeb5b 70%,#4ce77b 100%);
+	background:linear-gradient(-90deg,#fff500 0,#f7f406 14%,#c6f127 48%,#7aeb5b 70%,#4ce77b 100%)
+}
+.itx-scope .uiRootModul.messageBoxNeutral>.head span.dragAccept:hover>.handler>.inner,.itx-scope .uiRootModul.messageBoxNeutral>.head span.handler:hover>.inner,.itx-scope .uiRootModul.messageBoxNeutral>.head span.lastLogin>.close,.itx-scope .uiRootModul.messageBoxNeutral>.head span.ui-dialog a.layerCloseIcon,.itx-scope .uiRootModul.messageBoxNeutral>.head span.ui-sortable-helper .handler>.inner,.itx-scope .uiRootModul.messageBoxNeutral>.head span.uiIcon,.itx-scope .uiRootModul.messageBoxNeutral>.head spana.ui-datepicker-next,.itx-scope .uiRootModul.messageBoxNeutral>.head spana.ui-datepicker-next:hover,.itx-scope .uiRootModul.messageBoxNeutral>.head spana.ui-datepicker-prev,.itx-scope .uiRootModul.messageBoxNeutral>.head spana.ui-datepicker-prev:hover {
+	display:block;
+	margin-bottom:2rem;
+	width:100%;
+	text-align:center
+}
+.itx-scope .uiRootModul.messageBoxNeutral>.head h1 {
+	text-align:center;
+	line-height:2.5rem;
+	margin:0
+}
+.itx-scope .uiRootModul.messageBoxNeutral h3 {
+	margin:2rem 0 .75rem
+}
+.itx-scope .uiRootModul.messageBoxNeutral>.body {
+	margin-top:2.75rem
+}
+.itx-scope .uiRootModul.messageBoxNeutral>.body .module,.itx-scope .uiRootModul.messageBoxNeutral>.body .uiModul {
+	text-align:center;
+	padding:0 3.5rem
+}
+.itx-scope .uiRootModul.messageBoxNeutral>.body .module.alignLeft,.itx-scope .uiRootModul.messageBoxNeutral>.body .uiModul.alignLeft {
+	text-align:left;
+	padding:0 3.5rem
+}
+.itx-scope .uiRootModul.messageBoxNeutral .article {
+	line-height:1.5rem
+}
+.itx-scope .uiRootModul.messageBoxNeutral>.body ul.link.list {
+	line-height:1.25rem
+}
+.itx-scope .uiPanel {
+	padding:0
+}
+.itx-scope .uiPanel.light {
+	background-color:#f4f4f4
+}
+.itx-scope .uiPanel.highlighted {
+	background-color:#ff4c5b;
+	color:#fff;
+	box-shadow:2px 4px 2px 0 rgba(0,0,0,.25)
+}
+.itx-scope .uiPanel.scrollable {
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding:.3125rem 1rem .625rem;
+	border:1px solid #ccc
+}
+.itx-scope .uiModul {
+	margin:0 0 2rem
+}
+.itx-scope .uiModul.portlet>.head {
+	background:#f4f4f4;
+	padding:.9375rem 1.25rem;
+	margin-bottom:1rem
+}
+.itx-scope .uiModul>.head {
+	margin-bottom:1rem
+}
+.itx-scope .uiModul>.head h4,.itx-scope .uiModul>.head h4 span {
+	font-size:1rem;
+	line-height:1.6rem
+}
+.itx-scope .uiModul>.body {
+	background:0 0;
+	padding:0;
+	border:none
+}
+.itx-scope .uiModul.bordered>.body {
+	border:1px solid #ccc
+}
+.itx-scope .uiModul.portlet>.roundedBottom,.itx-scope .uiModul.portlet>.roundedTop {
+	display:none
+}
+.itx-scope .uiModul.background {
+	background-color:#f4f4f4;
+	padding:.5rem .625rem .625rem;
+	margin-bottom:1rem
+}
+.itx-scope .uiModul.background>.head {
+	margin-bottom:.625rem
+}
+.itx-scope .uiModul.m0 {
+	margin:0
+}
+.itx-scope .uiTableLayoutRow {
+	margin:0;
+	padding:0 0 .3125rem
+}
+.itx-scope .uiTableLayoutCell {
+	float:left
+}
+.itx-scope .uiTableLayoutRow>.rowend {
+	clear:both;
+	width:auto;
+	padding:0;
+	margin:0 0 .1875rem
+}
+.itx-scope .uiGridLayout {
+	width:100%
+}
+.itx-scope .uiGridLayout>.uiGridLayoutRow {
+	margin-top:1rem
+}
+.itx-scope .uiGridLayout>.uiGridLayoutRow:first-child {
+	margin-top:0
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow:after,.itx-scope .uiGridLayout .uiGridLayoutRow:before {
+	content:"";
+	display:table;
+	clear:both
+}
+.itx-scope .uiGridLayoutColumn {
+	float:left
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-1 {
+	width:8.33333333%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-2 {
+	width:16.66666667%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-3 {
+	width:25%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-4 {
+	width:33.33333333%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-5 {
+	width:41.66666667%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-6 {
+	width:50%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-7 {
+	width:58.33333333%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-8 {
+	width:66.66666667%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-9 {
+	width:75%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-10 {
+	width:83.33333333%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-11 {
+	width:91.66666667%
+}
+.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-12 {
+	width:100%
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-1 {
+		width:8.33333333%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-2 {
+		width:16.66666667%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-3 {
+		width:25%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-4 {
+		width:33.33333333%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-5 {
+		width:41.66666667%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-6 {
+		width:50%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-7 {
+		width:58.33333333%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-8 {
+		width:66.66666667%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-9 {
+		width:75%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-10 {
+		width:83.33333333%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-11 {
+		width:91.66666667%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-medium-12 {
+		width:100%
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-1 {
+		width:8.33333333%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-2 {
+		width:16.66666667%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-3 {
+		width:25%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-4 {
+		width:33.33333333%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-5 {
+		width:41.66666667%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-6 {
+		width:50%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-7 {
+		width:58.33333333%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-8 {
+		width:66.66666667%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-9 {
+		width:75%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-10 {
+		width:83.33333333%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-11 {
+		width:91.66666667%
+	}
+	.itx-scope .uiGridLayout .uiGridLayoutRow .uiGridLayoutColumn-small-12 {
+		width:100%
+	}
+}
+.itx-scope .uiButton.smallFix,.itx-scope .uiButton.smallFix>a,.itx-scope .uiFlexItemLayout>.uiFlexLayout,.itx-scope .uiStaticTable {
+	width:100%
+}
+.itx-scope .uiStaticTable .uiStaticTableRow {
+	background:#fff
+}
+.itx-scope .uiStaticTable .uiStaticTableRow>.uiStaticTableColumn:first-child {
+	padding-left:1.25rem
+}
+.itx-scope .uiStaticTable .uiStaticTableRow>.uiStaticTableColumn:last-child {
+	padding-right:1.25rem
+}
+.itx-scope .uiStaticTableColumn {
+	padding:.625rem
+}
+.itx-scope .uiButton.largeImportant>a,.itx-scope .uiButton.largeImportant>span,.itx-scope .uiButton>a,.itx-scope .uiButton>span {
+	padding:.625rem 1.25rem;
+	font-family:Mark,'Open Sans',Arial,Helvetica,sans-serif;
+	font-size:.875rem;
+	line-height:.875rem;
+	font-weight:600;
+	text-align:center;
+	text-decoration:none;
+	white-space:nowrap
+}
+.itx-scope .uiStaticTable.headUnderlined thead>.uiStaticTableRow {
+	border-bottom:1px solid #ccc
+}
+.itx-scope .flex-direction-row {
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:row;
+	-ms-flex-direction:row;
+	flex-direction:row
+}
+.itx-scope .flex-direction-column {
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	-ms-flex-direction:column;
+	flex-direction:column
+}
+.itx-scope .flex-direction-column-reversed {
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:reverse;
+	-webkit-flex-direction:column-reversed;
+	-ms-flex-direction:column-reversed;
+	flex-direction:column-reversed
+}
+.itx-scope .flex-direction-row-reversed {
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:reverse;
+	-webkit-flex-direction:row-reversed;
+	-ms-flex-direction:row-reversed;
+	flex-direction:row-reversed
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .flex-direction-medium-row {
+		-webkit-box-orient:horizontal;
+		-webkit-box-direction:normal;
+		-webkit-flex-direction:row;
+		-ms-flex-direction:row;
+		flex-direction:row
+	}
+	.itx-scope .flex-direction-medium-column {
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-webkit-flex-direction:column;
+		-ms-flex-direction:column;
+		flex-direction:column
+	}
+	.itx-scope .flex-direction-medium-column-reversed {
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:reverse;
+		-webkit-flex-direction:column-reversed;
+		-ms-flex-direction:column-reversed;
+		flex-direction:column-reversed
+	}
+	.itx-scope .flex-direction-medium-row-reversed {
+		-webkit-box-orient:horizontal;
+		-webkit-box-direction:reverse;
+		-webkit-flex-direction:row-reversed;
+		-ms-flex-direction:row-reversed;
+		flex-direction:row-reversed
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .flex-direction-small-row {
+		-webkit-box-orient:horizontal;
+		-webkit-box-direction:normal;
+		-webkit-flex-direction:row;
+		-ms-flex-direction:row;
+		flex-direction:row
+	}
+	.itx-scope .flex-direction-small-column {
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-webkit-flex-direction:column;
+		-ms-flex-direction:column;
+		flex-direction:column
+	}
+	.itx-scope .flex-direction-small-column-reversed {
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:reverse;
+		-webkit-flex-direction:column-reversed;
+		-ms-flex-direction:column-reversed;
+		flex-direction:column-reversed
+	}
+	.itx-scope .flex-direction-small-row-reversed {
+		-webkit-box-orient:horizontal;
+		-webkit-box-direction:reverse;
+		-webkit-flex-direction:row-reversed;
+		-ms-flex-direction:row-reversed;
+		flex-direction:row-reversed
+	}
+}
+.itx-scope .flex-wrap-nowrap {
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap:nowrap
+}
+.itx-scope .flex-wrap-wrap {
+	-webkit-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap
+}
+.itx-scope .flex-wrap-wrap-reverse {
+	-webkit-flex-wrap:wrap-reverse;
+	-ms-flex-wrap:wrap-reverse;
+	flex-wrap:wrap-reverse
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .flex-wrap-medium-nowrap {
+		-webkit-flex-wrap:nowrap;
+		-ms-flex-wrap:nowrap;
+		flex-wrap:nowrap
+	}
+	.itx-scope .flex-wrap-medium-wrap {
+		-webkit-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap
+	}
+	.itx-scope .flex-wrap-medium-wrap-reverse {
+		-webkit-flex-wrap:wrap-reverse;
+		-ms-flex-wrap:wrap-reverse;
+		flex-wrap:wrap-reverse
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .flex-wrap-small-nowrap {
+		-webkit-flex-wrap:nowrap;
+		-ms-flex-wrap:nowrap;
+		flex-wrap:nowrap
+	}
+	.itx-scope .flex-wrap-small-wrap {
+		-webkit-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap
+	}
+	.itx-scope .flex-wrap-small-wrap-reverse {
+		-webkit-flex-wrap:wrap-reverse;
+		-ms-flex-wrap:wrap-reverse;
+		flex-wrap:wrap-reverse
+	}
+}
+.itx-scope .flex-align-items-auto {
+	-webkit-box-align:auto;
+	-webkit-align-items:auto;
+	-ms-flex-align:auto;
+	align-items:auto
+}
+.itx-scope .flex-align-items-flex-start {
+	-webkit-box-align:start;
+	-webkit-align-items:flex-start;
+	-ms-flex-align:start;
+	align-items:flex-start
+}
+.itx-scope .flex-align-items-flex-end {
+	-webkit-box-align:end;
+	-webkit-align-items:flex-end;
+	-ms-flex-align:end;
+	align-items:flex-end
+}
+.itx-scope .flex-align-items-center {
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.itx-scope .flex-align-items-baseline {
+	-webkit-box-align:baseline;
+	-webkit-align-items:baseline;
+	-ms-flex-align:baseline;
+	align-items:baseline
+}
+.itx-scope .flex-align-items-stretch {
+	-webkit-box-align:stretch;
+	-webkit-align-items:stretch;
+	-ms-flex-align:stretch;
+	align-items:stretch
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .flex-align-items-medium-auto {
+		-webkit-box-align:auto;
+		-webkit-align-items:auto;
+		-ms-flex-align:auto;
+		align-items:auto
+	}
+	.itx-scope .flex-align-items-medium-flex-start {
+		-webkit-box-align:start;
+		-webkit-align-items:flex-start;
+		-ms-flex-align:start;
+		align-items:flex-start
+	}
+	.itx-scope .flex-align-items-medium-flex-end {
+		-webkit-box-align:end;
+		-webkit-align-items:flex-end;
+		-ms-flex-align:end;
+		align-items:flex-end
+	}
+	.itx-scope .flex-align-items-medium-center {
+		-webkit-box-align:center;
+		-webkit-align-items:center;
+		-ms-flex-align:center;
+		align-items:center
+	}
+	.itx-scope .flex-align-items-medium-baseline {
+		-webkit-box-align:baseline;
+		-webkit-align-items:baseline;
+		-ms-flex-align:baseline;
+		align-items:baseline
+	}
+	.itx-scope .flex-align-items-medium-stretch {
+		-webkit-box-align:stretch;
+		-webkit-align-items:stretch;
+		-ms-flex-align:stretch;
+		align-items:stretch
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .flex-align-items-small-auto {
+		-webkit-box-align:auto;
+		-webkit-align-items:auto;
+		-ms-flex-align:auto;
+		align-items:auto
+	}
+	.itx-scope .flex-align-items-small-flex-start {
+		-webkit-box-align:start;
+		-webkit-align-items:flex-start;
+		-ms-flex-align:start;
+		align-items:flex-start
+	}
+	.itx-scope .flex-align-items-small-flex-end {
+		-webkit-box-align:end;
+		-webkit-align-items:flex-end;
+		-ms-flex-align:end;
+		align-items:flex-end
+	}
+	.itx-scope .flex-align-items-small-center {
+		-webkit-box-align:center;
+		-webkit-align-items:center;
+		-ms-flex-align:center;
+		align-items:center
+	}
+	.itx-scope .flex-align-items-small-baseline {
+		-webkit-box-align:baseline;
+		-webkit-align-items:baseline;
+		-ms-flex-align:baseline;
+		align-items:baseline
+	}
+	.itx-scope .flex-align-items-small-stretch {
+		-webkit-box-align:stretch;
+		-webkit-align-items:stretch;
+		-ms-flex-align:stretch;
+		align-items:stretch
+	}
+}
+.itx-scope .flex-align-content-flex-start {
+	-webkit-align-content:flex-start;
+	-ms-flex-line-pack:start;
+	align-content:flex-start
+}
+.itx-scope .flex-align-content-flex-end {
+	-webkit-align-content:flex-end;
+	-ms-flex-line-pack:end;
+	align-content:flex-end
+}
+.itx-scope .flex-align-content-center {
+	-webkit-align-content:center;
+	-ms-flex-line-pack:center;
+	align-content:center
+}
+.itx-scope .flex-align-content-space-between {
+	-webkit-align-content:space-between;
+	-ms-flex-line-pack:justify;
+	align-content:space-between
+}
+.itx-scope .flex-align-content-space-around {
+	-webkit-align-content:space-around;
+	-ms-flex-line-pack:distribute;
+	align-content:space-around
+}
+.itx-scope .flex-align-content-stretch {
+	-webkit-align-content:stretch;
+	-ms-flex-line-pack:stretch;
+	align-content:stretch
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .flex-align-content-medium-flex-start {
+		-webkit-align-content:flex-start;
+		-ms-flex-line-pack:start;
+		align-content:flex-start
+	}
+	.itx-scope .flex-align-content-medium-flex-end {
+		-webkit-align-content:flex-end;
+		-ms-flex-line-pack:end;
+		align-content:flex-end
+	}
+	.itx-scope .flex-align-content-medium-center {
+		-webkit-align-content:center;
+		-ms-flex-line-pack:center;
+		align-content:center
+	}
+	.itx-scope .flex-align-content-medium-space-between {
+		-webkit-align-content:space-between;
+		-ms-flex-line-pack:justify;
+		align-content:space-between
+	}
+	.itx-scope .flex-align-content-medium-space-around {
+		-webkit-align-content:space-around;
+		-ms-flex-line-pack:distribute;
+		align-content:space-around
+	}
+	.itx-scope .flex-align-content-medium-stretch {
+		-webkit-align-content:stretch;
+		-ms-flex-line-pack:stretch;
+		align-content:stretch
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .flex-align-content-small-flex-start {
+		-webkit-align-content:flex-start;
+		-ms-flex-line-pack:start;
+		align-content:flex-start
+	}
+	.itx-scope .flex-align-content-small-flex-end {
+		-webkit-align-content:flex-end;
+		-ms-flex-line-pack:end;
+		align-content:flex-end
+	}
+	.itx-scope .flex-align-content-small-center {
+		-webkit-align-content:center;
+		-ms-flex-line-pack:center;
+		align-content:center
+	}
+	.itx-scope .flex-align-content-small-space-between {
+		-webkit-align-content:space-between;
+		-ms-flex-line-pack:justify;
+		align-content:space-between
+	}
+	.itx-scope .flex-align-content-small-space-around {
+		-webkit-align-content:space-around;
+		-ms-flex-line-pack:distribute;
+		align-content:space-around
+	}
+	.itx-scope .flex-align-content-small-stretch {
+		-webkit-align-content:stretch;
+		-ms-flex-line-pack:stretch;
+		align-content:stretch
+	}
+}
+.itx-scope .uiFlexItemLayout,.itx-scope .uiFlexLayout {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex
+}
+.itx-scope .uiFlexItemLayout .flex-order-0,.itx-scope .uiFlexLayout .flex-order-0 {
+	-webkit-box-ordinal-group:1;
+	-webkit-order:0;
+	-ms-flex-order:0;
+	order:0
+}
+.itx-scope .uiFlexItemLayout .flex-order-1,.itx-scope .uiFlexLayout .flex-order-1 {
+	-webkit-box-ordinal-group:2;
+	-webkit-order:1;
+	-ms-flex-order:1;
+	order:1
+}
+.itx-scope .uiFlexItemLayout .flex-order-2,.itx-scope .uiFlexLayout .flex-order-2 {
+	-webkit-box-ordinal-group:3;
+	-webkit-order:2;
+	-ms-flex-order:2;
+	order:2
+}
+.itx-scope .uiFlexItemLayout .flex-order-3,.itx-scope .uiFlexLayout .flex-order-3 {
+	-webkit-box-ordinal-group:4;
+	-webkit-order:3;
+	-ms-flex-order:3;
+	order:3
+}
+.itx-scope .uiFlexItemLayout .flex-order-4,.itx-scope .uiFlexLayout .flex-order-4 {
+	-webkit-box-ordinal-group:5;
+	-webkit-order:4;
+	-ms-flex-order:4;
+	order:4
+}
+.itx-scope .uiFlexItemLayout .flex-order-5,.itx-scope .uiFlexLayout .flex-order-5 {
+	-webkit-box-ordinal-group:6;
+	-webkit-order:5;
+	-ms-flex-order:5;
+	order:5
+}
+.itx-scope .uiFlexItemLayout .flex-order-6,.itx-scope .uiFlexLayout .flex-order-6 {
+	-webkit-box-ordinal-group:7;
+	-webkit-order:6;
+	-ms-flex-order:6;
+	order:6
+}
+.itx-scope .uiFlexItemLayout .flex-order-7,.itx-scope .uiFlexLayout .flex-order-7 {
+	-webkit-box-ordinal-group:8;
+	-webkit-order:7;
+	-ms-flex-order:7;
+	order:7
+}
+.itx-scope .uiFlexItemLayout .flex-order-8,.itx-scope .uiFlexLayout .flex-order-8 {
+	-webkit-box-ordinal-group:9;
+	-webkit-order:8;
+	-ms-flex-order:8;
+	order:8
+}
+.itx-scope .uiFlexItemLayout .flex-order-9,.itx-scope .uiFlexLayout .flex-order-9 {
+	-webkit-box-ordinal-group:10;
+	-webkit-order:9;
+	-ms-flex-order:9;
+	order:9
+}
+.itx-scope .uiFlexItemLayout .flex-order-10,.itx-scope .uiFlexLayout .flex-order-10 {
+	-webkit-box-ordinal-group:11;
+	-webkit-order:10;
+	-ms-flex-order:10;
+	order:10
+}
+.itx-scope .uiFlexItemLayout .flex-order-11,.itx-scope .uiFlexLayout .flex-order-11 {
+	-webkit-box-ordinal-group:12;
+	-webkit-order:11;
+	-ms-flex-order:11;
+	order:11
+}
+.itx-scope .uiFlexItemLayout .flex-order-12,.itx-scope .uiFlexLayout .flex-order-12 {
+	-webkit-box-ordinal-group:13;
+	-webkit-order:12;
+	-ms-flex-order:12;
+	order:12
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .uiFlexItemLayout .flex-order-medium-0,.itx-scope .uiFlexLayout .flex-order-medium-0 {
+		-webkit-box-ordinal-group:1;
+		-webkit-order:0;
+		-ms-flex-order:0;
+		order:0
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-1,.itx-scope .uiFlexLayout .flex-order-medium-1 {
+		-webkit-box-ordinal-group:2;
+		-webkit-order:1;
+		-ms-flex-order:1;
+		order:1
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-2,.itx-scope .uiFlexLayout .flex-order-medium-2 {
+		-webkit-box-ordinal-group:3;
+		-webkit-order:2;
+		-ms-flex-order:2;
+		order:2
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-3,.itx-scope .uiFlexLayout .flex-order-medium-3 {
+		-webkit-box-ordinal-group:4;
+		-webkit-order:3;
+		-ms-flex-order:3;
+		order:3
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-4,.itx-scope .uiFlexLayout .flex-order-medium-4 {
+		-webkit-box-ordinal-group:5;
+		-webkit-order:4;
+		-ms-flex-order:4;
+		order:4
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-5,.itx-scope .uiFlexLayout .flex-order-medium-5 {
+		-webkit-box-ordinal-group:6;
+		-webkit-order:5;
+		-ms-flex-order:5;
+		order:5
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-6,.itx-scope .uiFlexLayout .flex-order-medium-6 {
+		-webkit-box-ordinal-group:7;
+		-webkit-order:6;
+		-ms-flex-order:6;
+		order:6
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-7,.itx-scope .uiFlexLayout .flex-order-medium-7 {
+		-webkit-box-ordinal-group:8;
+		-webkit-order:7;
+		-ms-flex-order:7;
+		order:7
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-8,.itx-scope .uiFlexLayout .flex-order-medium-8 {
+		-webkit-box-ordinal-group:9;
+		-webkit-order:8;
+		-ms-flex-order:8;
+		order:8
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-9,.itx-scope .uiFlexLayout .flex-order-medium-9 {
+		-webkit-box-ordinal-group:10;
+		-webkit-order:9;
+		-ms-flex-order:9;
+		order:9
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-10,.itx-scope .uiFlexLayout .flex-order-medium-10 {
+		-webkit-box-ordinal-group:11;
+		-webkit-order:10;
+		-ms-flex-order:10;
+		order:10
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-11,.itx-scope .uiFlexLayout .flex-order-medium-11 {
+		-webkit-box-ordinal-group:12;
+		-webkit-order:11;
+		-ms-flex-order:11;
+		order:11
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-medium-12,.itx-scope .uiFlexLayout .flex-order-medium-12 {
+		-webkit-box-ordinal-group:13;
+		-webkit-order:12;
+		-ms-flex-order:12;
+		order:12
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiFlexItemLayout .flex-order-small-0,.itx-scope .uiFlexLayout .flex-order-small-0 {
+		-webkit-box-ordinal-group:1;
+		-webkit-order:0;
+		-ms-flex-order:0;
+		order:0
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-1,.itx-scope .uiFlexLayout .flex-order-small-1 {
+		-webkit-box-ordinal-group:2;
+		-webkit-order:1;
+		-ms-flex-order:1;
+		order:1
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-2,.itx-scope .uiFlexLayout .flex-order-small-2 {
+		-webkit-box-ordinal-group:3;
+		-webkit-order:2;
+		-ms-flex-order:2;
+		order:2
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-3,.itx-scope .uiFlexLayout .flex-order-small-3 {
+		-webkit-box-ordinal-group:4;
+		-webkit-order:3;
+		-ms-flex-order:3;
+		order:3
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-4,.itx-scope .uiFlexLayout .flex-order-small-4 {
+		-webkit-box-ordinal-group:5;
+		-webkit-order:4;
+		-ms-flex-order:4;
+		order:4
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-5,.itx-scope .uiFlexLayout .flex-order-small-5 {
+		-webkit-box-ordinal-group:6;
+		-webkit-order:5;
+		-ms-flex-order:5;
+		order:5
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-6,.itx-scope .uiFlexLayout .flex-order-small-6 {
+		-webkit-box-ordinal-group:7;
+		-webkit-order:6;
+		-ms-flex-order:6;
+		order:6
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-7,.itx-scope .uiFlexLayout .flex-order-small-7 {
+		-webkit-box-ordinal-group:8;
+		-webkit-order:7;
+		-ms-flex-order:7;
+		order:7
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-8,.itx-scope .uiFlexLayout .flex-order-small-8 {
+		-webkit-box-ordinal-group:9;
+		-webkit-order:8;
+		-ms-flex-order:8;
+		order:8
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-9,.itx-scope .uiFlexLayout .flex-order-small-9 {
+		-webkit-box-ordinal-group:10;
+		-webkit-order:9;
+		-ms-flex-order:9;
+		order:9
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-10,.itx-scope .uiFlexLayout .flex-order-small-10 {
+		-webkit-box-ordinal-group:11;
+		-webkit-order:10;
+		-ms-flex-order:10;
+		order:10
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-11,.itx-scope .uiFlexLayout .flex-order-small-11 {
+		-webkit-box-ordinal-group:12;
+		-webkit-order:11;
+		-ms-flex-order:11;
+		order:11
+	}
+	.itx-scope .uiFlexItemLayout .flex-order-small-12,.itx-scope .uiFlexLayout .flex-order-small-12 {
+		-webkit-box-ordinal-group:13;
+		-webkit-order:12;
+		-ms-flex-order:12;
+		order:12
+	}
+}
+.itx-scope .uiFlexItemLayout .flex-grow-0,.itx-scope .uiFlexLayout .flex-grow-0 {
+	-webkit-box-flex:0;
+	-webkit-flex-grow:0;
+	-ms-flex-positive:0;
+	flex-grow:0
+}
+.itx-scope .uiFlexItemLayout .flex-grow-1,.itx-scope .uiFlexLayout .flex-grow-1 {
+	-webkit-box-flex:1;
+	-webkit-flex-grow:1;
+	-ms-flex-positive:1;
+	flex-grow:1
+}
+.itx-scope .uiFlexItemLayout .flex-grow-2,.itx-scope .uiFlexLayout .flex-grow-2 {
+	-webkit-box-flex:2;
+	-webkit-flex-grow:2;
+	-ms-flex-positive:2;
+	flex-grow:2
+}
+.itx-scope .uiFlexItemLayout .flex-grow-3,.itx-scope .uiFlexLayout .flex-grow-3 {
+	-webkit-box-flex:3;
+	-webkit-flex-grow:3;
+	-ms-flex-positive:3;
+	flex-grow:3
+}
+.itx-scope .uiFlexItemLayout .flex-grow-4,.itx-scope .uiFlexLayout .flex-grow-4 {
+	-webkit-box-flex:4;
+	-webkit-flex-grow:4;
+	-ms-flex-positive:4;
+	flex-grow:4
+}
+.itx-scope .uiFlexItemLayout .flex-grow-5,.itx-scope .uiFlexLayout .flex-grow-5 {
+	-webkit-box-flex:5;
+	-webkit-flex-grow:5;
+	-ms-flex-positive:5;
+	flex-grow:5
+}
+.itx-scope .uiFlexItemLayout .flex-grow-6,.itx-scope .uiFlexLayout .flex-grow-6 {
+	-webkit-box-flex:6;
+	-webkit-flex-grow:6;
+	-ms-flex-positive:6;
+	flex-grow:6
+}
+.itx-scope .uiFlexItemLayout .flex-grow-7,.itx-scope .uiFlexLayout .flex-grow-7 {
+	-webkit-box-flex:7;
+	-webkit-flex-grow:7;
+	-ms-flex-positive:7;
+	flex-grow:7
+}
+.itx-scope .uiFlexItemLayout .flex-grow-8,.itx-scope .uiFlexLayout .flex-grow-8 {
+	-webkit-box-flex:8;
+	-webkit-flex-grow:8;
+	-ms-flex-positive:8;
+	flex-grow:8
+}
+.itx-scope .uiFlexItemLayout .flex-grow-9,.itx-scope .uiFlexLayout .flex-grow-9 {
+	-webkit-box-flex:9;
+	-webkit-flex-grow:9;
+	-ms-flex-positive:9;
+	flex-grow:9
+}
+.itx-scope .uiFlexItemLayout .flex-grow-10,.itx-scope .uiFlexLayout .flex-grow-10 {
+	-webkit-box-flex:10;
+	-webkit-flex-grow:10;
+	-ms-flex-positive:10;
+	flex-grow:10
+}
+.itx-scope .uiFlexItemLayout .flex-grow-11,.itx-scope .uiFlexLayout .flex-grow-11 {
+	-webkit-box-flex:11;
+	-webkit-flex-grow:11;
+	-ms-flex-positive:11;
+	flex-grow:11
+}
+.itx-scope .uiFlexItemLayout .flex-grow-12,.itx-scope .uiFlexLayout .flex-grow-12 {
+	-webkit-box-flex:12;
+	-webkit-flex-grow:12;
+	-ms-flex-positive:12;
+	flex-grow:12
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-0,.itx-scope .uiFlexLayout .flex-grow-medium-0 {
+		-webkit-box-flex:0;
+		-webkit-flex-grow:0;
+		-ms-flex-positive:0;
+		flex-grow:0
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-1,.itx-scope .uiFlexLayout .flex-grow-medium-1 {
+		-webkit-box-flex:1;
+		-webkit-flex-grow:1;
+		-ms-flex-positive:1;
+		flex-grow:1
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-2,.itx-scope .uiFlexLayout .flex-grow-medium-2 {
+		-webkit-box-flex:2;
+		-webkit-flex-grow:2;
+		-ms-flex-positive:2;
+		flex-grow:2
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-3,.itx-scope .uiFlexLayout .flex-grow-medium-3 {
+		-webkit-box-flex:3;
+		-webkit-flex-grow:3;
+		-ms-flex-positive:3;
+		flex-grow:3
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-4,.itx-scope .uiFlexLayout .flex-grow-medium-4 {
+		-webkit-box-flex:4;
+		-webkit-flex-grow:4;
+		-ms-flex-positive:4;
+		flex-grow:4
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-5,.itx-scope .uiFlexLayout .flex-grow-medium-5 {
+		-webkit-box-flex:5;
+		-webkit-flex-grow:5;
+		-ms-flex-positive:5;
+		flex-grow:5
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-6,.itx-scope .uiFlexLayout .flex-grow-medium-6 {
+		-webkit-box-flex:6;
+		-webkit-flex-grow:6;
+		-ms-flex-positive:6;
+		flex-grow:6
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-7,.itx-scope .uiFlexLayout .flex-grow-medium-7 {
+		-webkit-box-flex:7;
+		-webkit-flex-grow:7;
+		-ms-flex-positive:7;
+		flex-grow:7
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-8,.itx-scope .uiFlexLayout .flex-grow-medium-8 {
+		-webkit-box-flex:8;
+		-webkit-flex-grow:8;
+		-ms-flex-positive:8;
+		flex-grow:8
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-9,.itx-scope .uiFlexLayout .flex-grow-medium-9 {
+		-webkit-box-flex:9;
+		-webkit-flex-grow:9;
+		-ms-flex-positive:9;
+		flex-grow:9
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-10,.itx-scope .uiFlexLayout .flex-grow-medium-10 {
+		-webkit-box-flex:10;
+		-webkit-flex-grow:10;
+		-ms-flex-positive:10;
+		flex-grow:10
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-11,.itx-scope .uiFlexLayout .flex-grow-medium-11 {
+		-webkit-box-flex:11;
+		-webkit-flex-grow:11;
+		-ms-flex-positive:11;
+		flex-grow:11
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-medium-12,.itx-scope .uiFlexLayout .flex-grow-medium-12 {
+		-webkit-box-flex:12;
+		-webkit-flex-grow:12;
+		-ms-flex-positive:12;
+		flex-grow:12
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiFlexItemLayout .flex-grow-small-0,.itx-scope .uiFlexLayout .flex-grow-small-0 {
+		-webkit-box-flex:0;
+		-webkit-flex-grow:0;
+		-ms-flex-positive:0;
+		flex-grow:0
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-1,.itx-scope .uiFlexLayout .flex-grow-small-1 {
+		-webkit-box-flex:1;
+		-webkit-flex-grow:1;
+		-ms-flex-positive:1;
+		flex-grow:1
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-2,.itx-scope .uiFlexLayout .flex-grow-small-2 {
+		-webkit-box-flex:2;
+		-webkit-flex-grow:2;
+		-ms-flex-positive:2;
+		flex-grow:2
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-3,.itx-scope .uiFlexLayout .flex-grow-small-3 {
+		-webkit-box-flex:3;
+		-webkit-flex-grow:3;
+		-ms-flex-positive:3;
+		flex-grow:3
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-4,.itx-scope .uiFlexLayout .flex-grow-small-4 {
+		-webkit-box-flex:4;
+		-webkit-flex-grow:4;
+		-ms-flex-positive:4;
+		flex-grow:4
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-5,.itx-scope .uiFlexLayout .flex-grow-small-5 {
+		-webkit-box-flex:5;
+		-webkit-flex-grow:5;
+		-ms-flex-positive:5;
+		flex-grow:5
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-6,.itx-scope .uiFlexLayout .flex-grow-small-6 {
+		-webkit-box-flex:6;
+		-webkit-flex-grow:6;
+		-ms-flex-positive:6;
+		flex-grow:6
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-7,.itx-scope .uiFlexLayout .flex-grow-small-7 {
+		-webkit-box-flex:7;
+		-webkit-flex-grow:7;
+		-ms-flex-positive:7;
+		flex-grow:7
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-8,.itx-scope .uiFlexLayout .flex-grow-small-8 {
+		-webkit-box-flex:8;
+		-webkit-flex-grow:8;
+		-ms-flex-positive:8;
+		flex-grow:8
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-9,.itx-scope .uiFlexLayout .flex-grow-small-9 {
+		-webkit-box-flex:9;
+		-webkit-flex-grow:9;
+		-ms-flex-positive:9;
+		flex-grow:9
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-10,.itx-scope .uiFlexLayout .flex-grow-small-10 {
+		-webkit-box-flex:10;
+		-webkit-flex-grow:10;
+		-ms-flex-positive:10;
+		flex-grow:10
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-11,.itx-scope .uiFlexLayout .flex-grow-small-11 {
+		-webkit-box-flex:11;
+		-webkit-flex-grow:11;
+		-ms-flex-positive:11;
+		flex-grow:11
+	}
+	.itx-scope .uiFlexItemLayout .flex-grow-small-12,.itx-scope .uiFlexLayout .flex-grow-small-12 {
+		-webkit-box-flex:12;
+		-webkit-flex-grow:12;
+		-ms-flex-positive:12;
+		flex-grow:12
+	}
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-0,.itx-scope .uiFlexLayout .flex-shrink-0 {
+	-webkit-flex-shrink:0;
+	-ms-flex-negative:0;
+	flex-shrink:0
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-1,.itx-scope .uiFlexLayout .flex-shrink-1 {
+	-webkit-flex-shrink:1;
+	-ms-flex-negative:1;
+	flex-shrink:1
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-2,.itx-scope .uiFlexLayout .flex-shrink-2 {
+	-webkit-flex-shrink:2;
+	-ms-flex-negative:2;
+	flex-shrink:2
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-3,.itx-scope .uiFlexLayout .flex-shrink-3 {
+	-webkit-flex-shrink:3;
+	-ms-flex-negative:3;
+	flex-shrink:3
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-4,.itx-scope .uiFlexLayout .flex-shrink-4 {
+	-webkit-flex-shrink:4;
+	-ms-flex-negative:4;
+	flex-shrink:4
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-5,.itx-scope .uiFlexLayout .flex-shrink-5 {
+	-webkit-flex-shrink:5;
+	-ms-flex-negative:5;
+	flex-shrink:5
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-6,.itx-scope .uiFlexLayout .flex-shrink-6 {
+	-webkit-flex-shrink:6;
+	-ms-flex-negative:6;
+	flex-shrink:6
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-7,.itx-scope .uiFlexLayout .flex-shrink-7 {
+	-webkit-flex-shrink:7;
+	-ms-flex-negative:7;
+	flex-shrink:7
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-8,.itx-scope .uiFlexLayout .flex-shrink-8 {
+	-webkit-flex-shrink:8;
+	-ms-flex-negative:8;
+	flex-shrink:8
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-9,.itx-scope .uiFlexLayout .flex-shrink-9 {
+	-webkit-flex-shrink:9;
+	-ms-flex-negative:9;
+	flex-shrink:9
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-10,.itx-scope .uiFlexLayout .flex-shrink-10 {
+	-webkit-flex-shrink:10;
+	-ms-flex-negative:10;
+	flex-shrink:10
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-11,.itx-scope .uiFlexLayout .flex-shrink-11 {
+	-webkit-flex-shrink:11;
+	-ms-flex-negative:11;
+	flex-shrink:11
+}
+.itx-scope .uiFlexItemLayout .flex-shrink-12,.itx-scope .uiFlexLayout .flex-shrink-12 {
+	-webkit-flex-shrink:12;
+	-ms-flex-negative:12;
+	flex-shrink:12
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-0,.itx-scope .uiFlexLayout .flex-shrink-medium-0 {
+		-webkit-flex-shrink:0;
+		-ms-flex-negative:0;
+		flex-shrink:0
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-1,.itx-scope .uiFlexLayout .flex-shrink-medium-1 {
+		-webkit-flex-shrink:1;
+		-ms-flex-negative:1;
+		flex-shrink:1
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-2,.itx-scope .uiFlexLayout .flex-shrink-medium-2 {
+		-webkit-flex-shrink:2;
+		-ms-flex-negative:2;
+		flex-shrink:2
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-3,.itx-scope .uiFlexLayout .flex-shrink-medium-3 {
+		-webkit-flex-shrink:3;
+		-ms-flex-negative:3;
+		flex-shrink:3
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-4,.itx-scope .uiFlexLayout .flex-shrink-medium-4 {
+		-webkit-flex-shrink:4;
+		-ms-flex-negative:4;
+		flex-shrink:4
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-5,.itx-scope .uiFlexLayout .flex-shrink-medium-5 {
+		-webkit-flex-shrink:5;
+		-ms-flex-negative:5;
+		flex-shrink:5
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-6,.itx-scope .uiFlexLayout .flex-shrink-medium-6 {
+		-webkit-flex-shrink:6;
+		-ms-flex-negative:6;
+		flex-shrink:6
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-7,.itx-scope .uiFlexLayout .flex-shrink-medium-7 {
+		-webkit-flex-shrink:7;
+		-ms-flex-negative:7;
+		flex-shrink:7
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-8,.itx-scope .uiFlexLayout .flex-shrink-medium-8 {
+		-webkit-flex-shrink:8;
+		-ms-flex-negative:8;
+		flex-shrink:8
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-9,.itx-scope .uiFlexLayout .flex-shrink-medium-9 {
+		-webkit-flex-shrink:9;
+		-ms-flex-negative:9;
+		flex-shrink:9
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-10,.itx-scope .uiFlexLayout .flex-shrink-medium-10 {
+		-webkit-flex-shrink:10;
+		-ms-flex-negative:10;
+		flex-shrink:10
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-11,.itx-scope .uiFlexLayout .flex-shrink-medium-11 {
+		-webkit-flex-shrink:11;
+		-ms-flex-negative:11;
+		flex-shrink:11
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-medium-12,.itx-scope .uiFlexLayout .flex-shrink-medium-12 {
+		-webkit-flex-shrink:12;
+		-ms-flex-negative:12;
+		flex-shrink:12
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-0,.itx-scope .uiFlexLayout .flex-shrink-small-0 {
+		-webkit-flex-shrink:0;
+		-ms-flex-negative:0;
+		flex-shrink:0
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-1,.itx-scope .uiFlexLayout .flex-shrink-small-1 {
+		-webkit-flex-shrink:1;
+		-ms-flex-negative:1;
+		flex-shrink:1
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-2,.itx-scope .uiFlexLayout .flex-shrink-small-2 {
+		-webkit-flex-shrink:2;
+		-ms-flex-negative:2;
+		flex-shrink:2
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-3,.itx-scope .uiFlexLayout .flex-shrink-small-3 {
+		-webkit-flex-shrink:3;
+		-ms-flex-negative:3;
+		flex-shrink:3
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-4,.itx-scope .uiFlexLayout .flex-shrink-small-4 {
+		-webkit-flex-shrink:4;
+		-ms-flex-negative:4;
+		flex-shrink:4
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-5,.itx-scope .uiFlexLayout .flex-shrink-small-5 {
+		-webkit-flex-shrink:5;
+		-ms-flex-negative:5;
+		flex-shrink:5
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-6,.itx-scope .uiFlexLayout .flex-shrink-small-6 {
+		-webkit-flex-shrink:6;
+		-ms-flex-negative:6;
+		flex-shrink:6
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-7,.itx-scope .uiFlexLayout .flex-shrink-small-7 {
+		-webkit-flex-shrink:7;
+		-ms-flex-negative:7;
+		flex-shrink:7
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-8,.itx-scope .uiFlexLayout .flex-shrink-small-8 {
+		-webkit-flex-shrink:8;
+		-ms-flex-negative:8;
+		flex-shrink:8
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-9,.itx-scope .uiFlexLayout .flex-shrink-small-9 {
+		-webkit-flex-shrink:9;
+		-ms-flex-negative:9;
+		flex-shrink:9
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-10,.itx-scope .uiFlexLayout .flex-shrink-small-10 {
+		-webkit-flex-shrink:10;
+		-ms-flex-negative:10;
+		flex-shrink:10
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-11,.itx-scope .uiFlexLayout .flex-shrink-small-11 {
+		-webkit-flex-shrink:11;
+		-ms-flex-negative:11;
+		flex-shrink:11
+	}
+	.itx-scope .uiFlexItemLayout .flex-shrink-small-12,.itx-scope .uiFlexLayout .flex-shrink-small-12 {
+		-webkit-flex-shrink:12;
+		-ms-flex-negative:12;
+		flex-shrink:12
+	}
+}
+.itx-scope .uiFlexItemLayout .flex-justify-flex-start,.itx-scope .uiFlexLayout .flex-justify-flex-start {
+	-webkit-box-pack:start;
+	-webkit-justify-content:flex-start;
+	-ms-flex-pack:start;
+	justify-content:flex-start
+}
+.itx-scope .uiFlexItemLayout .flex-justify-flex-end,.itx-scope .uiFlexLayout .flex-justify-flex-end {
+	-webkit-box-pack:end;
+	-webkit-justify-content:flex-end;
+	-ms-flex-pack:end;
+	justify-content:flex-end
+}
+.itx-scope .uiFlexItemLayout .flex-justify-center,.itx-scope .uiFlexLayout .flex-justify-center {
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center
+}
+.itx-scope .uiFlexItemLayout .flex-justify-space-between,.itx-scope .uiFlexLayout .flex-justify-space-between {
+	-webkit-box-pack:justify;
+	-webkit-justify-content:space-between;
+	-ms-flex-pack:justify;
+	justify-content:space-between
+}
+.itx-scope .uiFlexItemLayout .flex-justify-space-around,.itx-scope .uiFlexLayout .flex-justify-space-around {
+	-webkit-justify-content:space-around;
+	-ms-flex-pack:distribute;
+	justify-content:space-around
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .uiFlexItemLayout .flex-justify-medium-flex-start,.itx-scope .uiFlexLayout .flex-justify-medium-flex-start {
+		-webkit-box-pack:start;
+		-webkit-justify-content:flex-start;
+		-ms-flex-pack:start;
+		justify-content:flex-start
+	}
+	.itx-scope .uiFlexItemLayout .flex-justify-medium-flex-end,.itx-scope .uiFlexLayout .flex-justify-medium-flex-end {
+		-webkit-box-pack:end;
+		-webkit-justify-content:flex-end;
+		-ms-flex-pack:end;
+		justify-content:flex-end
+	}
+	.itx-scope .uiFlexItemLayout .flex-justify-medium-center,.itx-scope .uiFlexLayout .flex-justify-medium-center {
+		-webkit-box-pack:center;
+		-webkit-justify-content:center;
+		-ms-flex-pack:center;
+		justify-content:center
+	}
+	.itx-scope .uiFlexItemLayout .flex-justify-medium-space-between,.itx-scope .uiFlexLayout .flex-justify-medium-space-between {
+		-webkit-box-pack:justify;
+		-webkit-justify-content:space-between;
+		-ms-flex-pack:justify;
+		justify-content:space-between
+	}
+	.itx-scope .uiFlexItemLayout .flex-justify-medium-space-around,.itx-scope .uiFlexLayout .flex-justify-medium-space-around {
+		-webkit-justify-content:space-around;
+		-ms-flex-pack:distribute;
+		justify-content:space-around
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiFlexItemLayout .flex-justify-small-flex-start,.itx-scope .uiFlexLayout .flex-justify-small-flex-start {
+		-webkit-box-pack:start;
+		-webkit-justify-content:flex-start;
+		-ms-flex-pack:start;
+		justify-content:flex-start
+	}
+	.itx-scope .uiFlexItemLayout .flex-justify-small-flex-end,.itx-scope .uiFlexLayout .flex-justify-small-flex-end {
+		-webkit-box-pack:end;
+		-webkit-justify-content:flex-end;
+		-ms-flex-pack:end;
+		justify-content:flex-end
+	}
+	.itx-scope .uiFlexItemLayout .flex-justify-small-center,.itx-scope .uiFlexLayout .flex-justify-small-center {
+		-webkit-box-pack:center;
+		-webkit-justify-content:center;
+		-ms-flex-pack:center;
+		justify-content:center
+	}
+	.itx-scope .uiFlexItemLayout .flex-justify-small-space-between,.itx-scope .uiFlexLayout .flex-justify-small-space-between {
+		-webkit-box-pack:justify;
+		-webkit-justify-content:space-between;
+		-ms-flex-pack:justify;
+		justify-content:space-between
+	}
+	.itx-scope .uiFlexItemLayout .flex-justify-small-space-around,.itx-scope .uiFlexLayout .flex-justify-small-space-around {
+		-webkit-justify-content:space-around;
+		-ms-flex-pack:distribute;
+		justify-content:space-around
+	}
+}
+.itx-scope .uiFlexItemLayout .flex-align-self-auto,.itx-scope .uiFlexLayout .flex-align-self-auto {
+	-webkit-align-self:auto;
+	-ms-flex-item-align:auto;
+	align-self:auto
+}
+.itx-scope .uiFlexItemLayout .flex-align-self-flex-start,.itx-scope .uiFlexLayout .flex-align-self-flex-start {
+	-webkit-align-self:flex-start;
+	-ms-flex-item-align:start;
+	align-self:flex-start
+}
+.itx-scope .uiFlexItemLayout .flex-align-self-flex-end,.itx-scope .uiFlexLayout .flex-align-self-flex-end {
+	-webkit-align-self:flex-end;
+	-ms-flex-item-align:end;
+	align-self:flex-end
+}
+.itx-scope .uiFlexItemLayout .flex-align-self-center,.itx-scope .uiFlexLayout .flex-align-self-center {
+	-webkit-align-self:center;
+	-ms-flex-item-align:center;
+	align-self:center
+}
+.itx-scope .uiFlexItemLayout .flex-align-self-baseline,.itx-scope .uiFlexLayout .flex-align-self-baseline {
+	-webkit-align-self:baseline;
+	-ms-flex-item-align:baseline;
+	align-self:baseline
+}
+.itx-scope .uiFlexItemLayout .flex-align-self-stretch,.itx-scope .uiFlexLayout .flex-align-self-stretch {
+	-webkit-align-self:stretch;
+	-ms-flex-item-align:stretch;
+	align-self:stretch
+}
+@media screen and (min-width:1.063em) and (max-width:2em) {
+	.itx-scope .uiFlexItemLayout .flex-align-self-medium-auto,.itx-scope .uiFlexLayout .flex-align-self-medium-auto {
+		-webkit-align-self:auto;
+		-ms-flex-item-align:auto;
+		align-self:auto
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-medium-flex-start,.itx-scope .uiFlexLayout .flex-align-self-medium-flex-start {
+		-webkit-align-self:flex-start;
+		-ms-flex-item-align:start;
+		align-self:flex-start
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-medium-flex-end,.itx-scope .uiFlexLayout .flex-align-self-medium-flex-end {
+		-webkit-align-self:flex-end;
+		-ms-flex-item-align:end;
+		align-self:flex-end
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-medium-center,.itx-scope .uiFlexLayout .flex-align-self-medium-center {
+		-webkit-align-self:center;
+		-ms-flex-item-align:center;
+		align-self:center
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-medium-baseline,.itx-scope .uiFlexLayout .flex-align-self-medium-baseline {
+		-webkit-align-self:baseline;
+		-ms-flex-item-align:baseline;
+		align-self:baseline
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-medium-stretch,.itx-scope .uiFlexLayout .flex-align-self-medium-stretch {
+		-webkit-align-self:stretch;
+		-ms-flex-item-align:stretch;
+		align-self:stretch
+	}
+}
+@media screen and (max-width:1em) {
+	.itx-scope .uiFlexItemLayout .flex-align-self-small-auto,.itx-scope .uiFlexLayout .flex-align-self-small-auto {
+		-webkit-align-self:auto;
+		-ms-flex-item-align:auto;
+		align-self:auto
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-small-flex-start,.itx-scope .uiFlexLayout .flex-align-self-small-flex-start {
+		-webkit-align-self:flex-start;
+		-ms-flex-item-align:start;
+		align-self:flex-start
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-small-flex-end,.itx-scope .uiFlexLayout .flex-align-self-small-flex-end {
+		-webkit-align-self:flex-end;
+		-ms-flex-item-align:end;
+		align-self:flex-end
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-small-center,.itx-scope .uiFlexLayout .flex-align-self-small-center {
+		-webkit-align-self:center;
+		-ms-flex-item-align:center;
+		align-self:center
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-small-baseline,.itx-scope .uiFlexLayout .flex-align-self-small-baseline {
+		-webkit-align-self:baseline;
+		-ms-flex-item-align:baseline;
+		align-self:baseline
+	}
+	.itx-scope .uiFlexItemLayout .flex-align-self-small-stretch,.itx-scope .uiFlexLayout .flex-align-self-small-stretch {
+		-webkit-align-self:stretch;
+		-ms-flex-item-align:stretch;
+		align-self:stretch
+	}
+}
+@media print {
+	.itx-scope .uiPanel.scrollable {
+		height:auto!important
+	}
+	.itx-scope .uiFlexLayout.disable-flex-on-print {
+		display:block!important;
+		height:auto!important
+	}
+	.itx-scope .flex-wrap-print-nowrap {
+		-webkit-flex-wrap:nowrap;
+		-ms-flex-wrap:nowrap;
+		flex-wrap:nowrap
+	}
+}
+.itx-scope .uiButton {
+	display:inline-block
+}
+.itx-scope .uiButton>a,.itx-scope .uiButton>span {
+	display:inline-block;
+	border-radius:2.5rem;
+	border:1px solid #eee;
+	background:#eee;
+	color:#28373c
+}
+.itx-scope .uiButton>a:hover,.itx-scope .uiButton>span:hover {
+	background:#ddd;
+	border:1px solid #ddd;
+	-webkit-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;
+	cursor:pointer
+}
+.itx-scope .uiButton.disabled>a,.itx-scope .uiButton.disabled>span,.itx-scope .uiButton.largeImportant.disabled>a,.itx-scope .uiButton.largeImportant.disabled>span,.itx-scope .uiButton.smallFix.disabled>a,.itx-scope .uiButton.smallFix.disabled>span {
+	cursor:not-allowed;
+	color:rgba(40,55,60,.3)
+}
+.itx-scope .uiButton.disabled>a:hover,.itx-scope .uiButton.disabled>span:hover,.itx-scope .uiButton.largeImportant.disabled>a:hover,.itx-scope .uiButton.largeImportant.disabled>span:hover,.itx-scope .uiButton.smallFix.disabled>a:hover,.itx-scope .uiButton.smallFix.disabled>span:hover {
+	cursor:not-allowed
+}
+.itx-scope .uiButton.largeImportant>a,.itx-scope .uiButton.largeImportant>span {
+	display:inline-block;
+	border-radius:2.5rem;
+	color:#28373c;
+	background:#fff500;
+	border:1px solid #fff500
+}
+.itx-scope .uiButton.largeImportant>a:hover,.itx-scope .uiButton.largeImportant>span:hover {
+	-webkit-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;
+	cursor:pointer;
+	background:#ffe100;
+	border:1px solid #ffe100
+}
+.itx-scope .button-large a {
+	display:inline-block;
+	border-radius:2.5rem;
+	text-decoration:none;
+	text-align:center;
+	white-space:nowrap;
+	font-size:.875rem;
+	line-height:.875rem;
+	font-weight:600;
+	border:1px solid #eee;
+	background:#eee;
+	color:#28373c;
+	font-family:Mark,'Open Sans',Arial,Helvetica,sans-serif;
+	padding:1rem 1.75rem
+}
+.itx-scope .uiButton>a:active>span,.itx-scope .uiButton>a:hover>span,.itx-scope .uiButton>a:visited>span,.itx-scope .uiButton>a>span,.itx-scope .uiButton>span>span {
+	text-decoration:none;
+	text-align:center;
+	white-space:nowrap;
+	font-size:.875rem;
+	line-height:.875rem;
+	font-weight:600;
+	color:#28373c
+}
+.itx-scope .uiButton>a:active>span:not(.uiIcon):before,.itx-scope .uiButton>a:hover>span:not(.uiIcon):before,.itx-scope .uiButton>a:visited>span:not(.uiIcon):before,.itx-scope .uiButton>a>span:not(.uiIcon):before,.itx-scope .uiButton>span>span:not(.uiIcon):before {
+	display:none
+}
+.itx-scope .uiButton.smallFix>a,.itx-scope .uiButton.smallRound>a {
+	padding:.1875rem .4375rem;
+	border-radius:7.5rem;
+	margin:0 0 .4375rem
+}
+.itx-scope .uiButton.smallFix>a:active>span,.itx-scope .uiButton.smallFix>a:hover>span,.itx-scope .uiButton.smallFix>a:visited>span,.itx-scope .uiButton.smallFix>a>span,.itx-scope .uiButton.smallRound>a:active>span,.itx-scope .uiButton.smallRound>a:hover>span,.itx-scope .uiButton.smallRound>a:visited>span,.itx-scope .uiButton.smallRound>a>span {
+	font-weight:600;
+	font-size:.75rem;
+	line-height:.75rem
+}
+.itx-scope .uiModul.background :not(.uiModul) .uiButton:not(.largeImportant)>a,.itx-scope .uiModul.background :not(.uiModul) .uiButton:not(.largeImportant)>span,.itx-scope .uiModul.background>.uiButton:not(.largeImportant)>a,.itx-scope .uiModul.background>.uiButton:not(.largeImportant)>span,.itx-scope tr:hover .uiButton.smallFix>a,.itx-scope tr:hover .uiButton.smallRound>a {
+	background:#ddd;
+	border:1px solid #ddd
+}
+.itx-scope .uiModul.background :not(.uiModul) .uiButton:not(.largeImportant)>a:hover,.itx-scope .uiModul.background :not(.uiModul) .uiButton:not(.largeImportant)>span:hover,.itx-scope .uiModul.background>.uiButton:not(.largeImportant)>a:hover,.itx-scope .uiModul.background>.uiButton:not(.largeImportant)>span:hover,.itx-scope tr:hover .uiButton.smallFix>a:active,.itx-scope tr:hover .uiButton.smallFix>a:hover,.itx-scope tr:hover .uiButton.smallRound>a:active,.itx-scope tr:hover .uiButton.smallRound>a:hover {
+	background:#ccc;
+	border:1px solid #ccc
+}
+.itx-scope .uiButton>[class*=icon-]:before {
+	font-family:cd;
+	font-size:1em;
+	font-style:normal;
+	font-weight:400;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1em;
+	display:inline-block;
+	margin-right:.5em;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	color:#28373c
+}
+.itx-scope .uiButton.active {
+	position:relative;
+	overflow:hidden
+}
+.itx-scope .uiButton.active .spinner {
+	text-align:center;
+	position:absolute;
+	width:100%;
+	-webkit-animation:loadingButton-fadeIn-progressIndicator .5s 1 linear forwards;
+	animation:loadingButton-fadeIn-progressIndicator .5s 1 linear forwards;
+	-webkit-animation-fill-mode:forwards
+}
+.itx-scope .uiButton.active .spinner>div {
+	width:.625rem;
+	height:.625rem;
+	background-color:#1a2326;
+	border-radius:100%;
+	display:inline-block;
+	-webkit-animation:loadingButton-bouncedelay 1.4s infinite ease-in-out both;
+	animation:loadingButton-bouncedelay 1.4s infinite ease-in-out both
+}
+.itx-scope .uiButton.active .spinner .bounce2 {
+	-webkit-animation-delay:.16s;
+	animation-delay:.16s
+}
+.itx-scope .uiButton.active .spinner .bounce3 {
+	-webkit-animation-delay:.32s;
+	animation-delay:.32s
+}
+.itx-scope .uiButton.active>.uiCommandLink>span {
+	font-weight:600;
+	position:relative;
+	-webkit-animation:loadingButton-fadeOut-text .5s 1 linear forwards;
+	animation:loadingButton-fadeOut-text .5s 1 linear forwards;
+	-webkit-animation-fill-mode:forwards;
+	overflow:hidden
+}
+.itx-scope .uiTable thead .uiColumnHeader>span,.itx-scope .uiTable thead .uiOutputText,.itx-scope th.uiColumn {
+	font-weight:700
+}
+.itx-scope .uiButton.active>.uiCommandLink:hover>span,.itx-scope .uiButton.active>.uiCommandLink>span {
+	color:#28373c
+}
+@-webkit-keyframes loadingButton-bouncedelay {
+	0%,100%,80% {
+		-webkit-transform:scale(0)
+	}
+	40% {
+		-webkit-transform:scale(1)
+	}
+}
+@keyframes loadingButton-bouncedelay {
+	0%,100%,80% {
+		-webkit-transform:scale(0);
+		transform:scale(0)
+	}
+	40% {
+		-webkit-transform:scale(1);
+		transform:scale(1)
+	}
+}
+@-webkit-keyframes loadingButton-fadeOut-text {
+	0% {
+		top:0
+	}
+	100% {
+		top:-2.5rem
+	}
+}
+@keyframes loadingButton-fadeOut-text {
+	0% {
+		top:0
+	}
+	100% {
+		top:-2.5rem
+	}
+}
+@-webkit-keyframes loadingButton-fadeIn-progressIndicator {
+	0% {
+		margin-top:2rem
+	}
+	100% {
+		margin-top:.625rem
+	}
+}
+@keyframes loadingButton-fadeIn-progressIndicator {
+	0% {
+		margin-top:2rem
+	}
+	100% {
+		margin-top:.625rem
+	}
+}
+.itx-scope .uiButtonArea {
+	padding:.5rem 0
+}
+.itx-scope .uiButtonArea.topLine {
+	border-top:1px solid #eee;
+	margin-top:1.25rem;
+	padding:1.25rem 0
+}
+.itx-scope .uiButtonArea>.uiButton.floatRight {
+	margin-left:1.25rem
+}
+.itx-scope .uiButtonArea>.uiButton.floatLeft {
+	margin-right:1.25rem
+}
+.itx-scope input,.itx-scope select,.itx-scope textarea {
+	text-align:left;
+	border:1px solid #ccc;
+	display:inline-block;
+	padding:.51rem .5rem;
+	font-size:.875rem;
+	color:#1a2326;
+	font-style:normal;
+	width:100%;
+	border-radius:.25rem;
+	outline:0;
+	-webkit-transition:border .3s ease-in-out;
+	transition:border .3s ease-in-out;
+	background:#fff
+}
+.itx-scope input:focus,.itx-scope input:hover,.itx-scope select:focus,.itx-scope select:hover,.itx-scope textarea:focus,.itx-scope textarea:hover {
+	border:1px solid #28373c
+}
+.itx-scope textarea {
+	line-height:1.25rem
+}
+.itx-scope input.disabled,.itx-scope input.inputdependencies-disabled,.itx-scope input[disabled=disabled],.itx-scope textarea.disabled,.itx-scope textarea.inputdependencies-disabled,.itx-scope textarea[disabled=disabled] {
+	background:#eee
+}
+.itx-scope input[type=checkbox],.itx-scope input[type=radio] {
+	width:auto;
+	margin:.1875rem 0 0;
+	padding:0
+}
+.itx-scope input[type=date]::-webkit-inner-spin-button {
+	display:none
+}
+.itx-scope input[type=date] {
+	height:2.3125rem
+}
+.itx-scope input.search {
+	background:url(../cd_img/search-lupe.png?v=1477546240265) center right no-repeat #565f66
+}
+.itx-scope .hasError input,.itx-scope .hasError select,.itx-scope .hasError textarea {
+	border:1px solid #ff4c5b
+}
+.itx-scope select {
+	-moz-appearance:none;
+	appearance:none;
+	background-image:url(../cd_img/select-box-38px.svg?v=1477546240265);
+	background-position:right center;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	padding-right:2.8125rem;
+	line-height:normal;
+	cursor:pointer;
+	-webkit-transition-property:background-image,border-color;
+	transition-property:background-image,border-color;
+	-webkit-transition-duration:.3s;
+	transition-duration:.3s;
+	-webkit-transition-timing-function:ease-in-out;
+	transition-timing-function:ease-in-out
+}
+.itx-scope select.disabled,.itx-scope select.inputdependencies-disabled,.itx-scope select[disabled=disabled] {
+	background-color:#eee
+}
+.itx-scope select:focus,.itx-scope select:hover {
+	background-image:url(../cd_img/select-box-38px-hover.svg?v=1477546240265)
+}
+.itx-scope select::-ms-expand {
+	display:none
+}
+.itx-scope .inputGroup {
+	position:relative
+}
+.itx-scope .inputGroup input:focus~span.dragAccept:hover>.handler>.inner,.itx-scope .inputGroup input:focus~span.handler:hover>.inner,.itx-scope .inputGroup input:focus~span.lastLogin>.close,.itx-scope .inputGroup input:focus~span.ui-dialog a.layerCloseIcon,.itx-scope .inputGroup input:focus~span.ui-sortable-helper .handler>.inner,.itx-scope .inputGroup input:focus~span.uiIcon,.itx-scope .inputGroup input:focus~spana.ui-datepicker-next,.itx-scope .inputGroup input:focus~spana.ui-datepicker-next:hover,.itx-scope .inputGroup input:focus~spana.ui-datepicker-prev,.itx-scope .inputGroup input:focus~spana.ui-datepicker-prev:hover,.itx-scope .inputGroup input:hover~span.dragAccept:hover>.handler>.inner,.itx-scope .inputGroup input:hover~span.handler:hover>.inner,.itx-scope .inputGroup input:hover~span.lastLogin>.close,.itx-scope .inputGroup input:hover~span.ui-dialog a.layerCloseIcon,.itx-scope .inputGroup input:hover~span.ui-sortable-helper .handler>.inner,.itx-scope .inputGroup input:hover~span.uiIcon,.itx-scope .inputGroup input:hover~spana.ui-datepicker-next,.itx-scope .inputGroup input:hover~spana.ui-datepicker-next:hover,.itx-scope .inputGroup input:hover~spana.ui-datepicker-prev,.itx-scope .inputGroup input:hover~spana.ui-datepicker-prev:hover {
+	border-left:1px solid #28373c
+}
+.itx-scope .inputGroup input {
+	padding-right:3rem
+}
+.itx-scope .inputGroup span.dragAccept:hover>.handler>.inner,.itx-scope .inputGroup span.handler:hover>.inner,.itx-scope .inputGroup span.lastLogin>.close,.itx-scope .inputGroup span.ui-dialog a.layerCloseIcon,.itx-scope .inputGroup span.ui-sortable-helper .handler>.inner,.itx-scope .inputGroup span.uiIcon,.itx-scope .inputGroup spana.ui-datepicker-next,.itx-scope .inputGroup spana.ui-datepicker-next:hover,.itx-scope .inputGroup spana.ui-datepicker-prev,.itx-scope .inputGroup spana.ui-datepicker-prev:hover {
+	-webkit-transition:border .3s ease-in-out;
+	transition:border .3s ease-in-out;
+	position:absolute;
+	display:block;
+	top:0;
+	right:0;
+	border-left:1px solid #ccc;
+	z-index:5;
+	font-size:1rem;
+	color:#28373c;
+	height:100%;
+	text-align:center;
+	line-height:2.25rem;
+	width:2.25rem
+}
+.itx-scope .inputGroup input[type=date]~span.dragAccept:hover>.handler>.inner,.itx-scope .inputGroup input[type=date]~span.handler:hover>.inner,.itx-scope .inputGroup input[type=date]~span.lastLogin>.close,.itx-scope .inputGroup input[type=date]~span.ui-dialog a.layerCloseIcon,.itx-scope .inputGroup input[type=date]~span.ui-sortable-helper .handler>.inner,.itx-scope .inputGroup input[type=date]~span.uiIcon,.itx-scope .inputGroup input[type=date]~spana.ui-datepicker-next,.itx-scope .inputGroup input[type=date]~spana.ui-datepicker-next:hover,.itx-scope .inputGroup input[type=date]~spana.ui-datepicker-prev,.itx-scope .inputGroup input[type=date]~spana.ui-datepicker-prev:hover {
+	height:2.3125rem
+}
+.itx-scope .inputGroup img.ui-datepicker-trigger {
+	display:none
+}
+.itx-scope ::-webkit-input-placeholder {
+	color:#1a2326
+}
+.itx-scope ::-moz-placeholder {
+	color:#1a2326;
+	opacity:1
+}
+.itx-scope :-ms-input-placeholder {
+	color:#1a2326
+}
+.itx-scope .uiColumnHeader.disabled,.itx-scope .uiTable .dragAccept:hover>.handler>.inner.icon-active,.itx-scope .uiTable .handler:hover>.inner.icon-active,.itx-scope .uiTable .lastLogin>.close.icon-active,.itx-scope .uiTable .ui-dialog a.layerCloseIcon.icon-active,.itx-scope .uiTable .ui-sortable-helper .handler>.inner.icon-active,.itx-scope .uiTable .uiIcon.icon-active,.itx-scope .uiTable a.ui-datepicker-next.icon-active,.itx-scope .uiTable a.ui-datepicker-next:hover.icon-active,.itx-scope .uiTable a.ui-datepicker-prev.icon-active,.itx-scope .uiTable a.ui-datepicker-prev:hover.icon-active {
+	color:inherit
+}
+.itx-scope .uiRadioButtonContainer {
+	margin-right:1rem;
+	float:left
+}
+.itx-scope .uiRadioButtonContainer+.errorMessage {
+	margin-left:-1rem
+}
+.itx-scope .uiRadioButtonGroup.vertical .uiRadioButtonContainer {
+	padding:.3125rem 0;
+	float:none
+}
+.itx-scope .uiRadioButtonNoLabel {
+	margin-right:.3125rem
+}
+.itx-scope .uiRadioButtonGroup.horizontal .uiRadioButtonContainer {
+	margin-bottom:1rem
+}
+.itx-scope .uiRadioButtonGroup.horizontal .uiRadioButtonContainer:last-child {
+	margin-right:.5rem
+}
+.itx-scope .uiStaticTable .uiRadioButtonContainer,.itx-scope .uiTable .uiRadioButtonContainer {
+	margin-bottom:0
+}
+.itx-scope .uiStaticTable .uiRadioButtonNoLabel,.itx-scope .uiTable .uiRadioButtonNoLabel {
+	margin-right:0
+}
+.itx-scope .uiRowSelector {
+	margin-top:.125rem
+}
+.itx-scope .uiCheckbox {
+	float:left;
+	margin-top:.1875rem
+}
+.itx-scope .uiTable {
+	width:100%;
+	font-size:.875rem;
+	line-height:1.25rem
+}
+.itx-scope .uiTable thead>tr {
+	border-bottom:1px solid #ccc
+}
+.itx-scope .uiTable thead>tr>th {
+	position:relative
+}
+.itx-scope .uiTable tr {
+	background:#fff;
+	border-bottom:1px solid #eee
+}
+.itx-scope .uiTable tr>td:first-child,.itx-scope .uiTable tr>th:first-child {
+	padding-left:1.25rem
+}
+.itx-scope .uiTable tr>td:last-child,.itx-scope .uiTable tr>th:last-child {
+	padding-right:1.25rem
+}
+.itx-scope .uiTable tbody>tr>td>a>span {
+	text-decoration:none
+}
+.itx-scope .uiTable tbody>tr:hover {
+	background:#f4f4f4
+}
+.itx-scope .uiTable tbody>tr:hover td>a>span:not(.uiIcon):before {
+	background:#28373c;
+	display:block;
+	opacity:1
+}
+.itx-scope .uiTable tbody>tr:hover td>a:hover>span:not(.uiIcon):before {
+	background:#48db74
+}
+.itx-scope .uiColumn {
+	padding:.625rem
+}
+.itx-scope th.uiColumn.sorted {
+	background:#f4f4f4
+}
+.itx-scope .uiTable .iconCell {
+	padding:.5rem 1.25rem .25rem .625rem
+}
+.itx-scope .uiTable thead .iconCell {
+	padding:.625rem
+}
+.itx-scope .uiColumnHeader {
+	white-space:nowrap;
+	text-decoration:none
+}
+.itx-scope .uiTable a.activeSort .uiOutputText,.itx-scope a.uiColumnHeader:hover .uiOutputText {
+	text-decoration:underline
+}
+.itx-scope .uiTable .dragAccept:hover>.handler>.inner.icon-info,.itx-scope .uiTable .handler:hover>.inner.icon-info,.itx-scope .uiTable .lastLogin>.close.icon-info,.itx-scope .uiTable .ui-dialog a.layerCloseIcon.icon-info,.itx-scope .uiTable .ui-sortable-helper .handler>.inner.icon-info,.itx-scope .uiTable .uiIcon.icon-info,.itx-scope .uiTable a.ui-datepicker-next.icon-info,.itx-scope .uiTable a.ui-datepicker-next:hover.icon-info,.itx-scope .uiTable a.ui-datepicker-prev.icon-info,.itx-scope .uiTable a.ui-datepicker-prev:hover.icon-info {
+	margin:0 .3125rem
+}
+.itx-scope .uiTooltip a,.itx-scope .uiTooltip.tooltipActionLeftDown a>span {
+	text-decoration:none
+}
+.itx-scope .uiTable .tableFloatingHeader .handler {
+	position:absolute;
+	top:.625rem;
+	width:calc(100% - 1.25rem)
+}
+.itx-scope .handler,.itx-scope .noHandler,.itx-scope .ui-widget-content.dragtable-wrap {
+	position:relative
+}
+.itx-scope .dragtable-sortable .uiTable.decorated,.itx-scope .dragtable-sortable table {
+	width:auto
+}
+.itx-scope .dragtable-sortable {
+	-moz-user-select:none;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	z-index:10
+}
+.itx-scope .dragtable-sortable>li {
+	margin:0;
+	padding:0;
+	float:left;
+	font-size:1em;
+	background:#fff
+}
+.itx-scope .dragtable-sortable * {
+	padding:0;
+	margin:0
+}
+.itx-scope .dragtable-sortable .uiColumn {
+	padding:.625rem!important
+}
+.itx-scope .dragtable-sortable .uiTable .paddingLeft,.itx-scope .dragtable-sortable .uiTable .paddingRight {
+	padding:0!important
+}
+.itx-scope .dragtable-sortable .uiTable td,.itx-scope .dragtable-sortable .uiTable th,.itx-scope .dragtable-sortable li:first-child td,.itx-scope .dragtable-sortable li:first-child th {
+	border-left:0
+}
+.itx-scope li.ui-sortable-placeholder {
+	margin:-1px 0 0;
+	border-bottom:1px solid #c6c6c6;
+	visibility:visible!important
+}
+.itx-scope li.ui-sortable-placeholder .outer {
+	background:url(/ccf2/img/bg_dragtable_placeholder.png?v=1477546240265) right top repeat-y #fff!important;
+	visibility:visible!important;
+	padding:0 1px 0 0
+}
+.itx-scope li.ui-sortable-placeholder .outer .inner {
+	background:url(/ccf2/img/bg_dragtable_placeholder.png?v=1477546240265) left top no-repeat #fff!important;
+	visibility:visible!important
+}
+.itx-scope .ui-sortable-helper .uiTable.decorated {
+	box-shadow:6px
+}
+.itx-scope .ui-sortable-helper .uiTable.decorated th,.itx-scope .ui-sortable-helper .uiTable.decorated tr.bottomLine td,.itx-scope .ui-sortable-helper .uiTable.decorated tr.mouseoverHigh.even.bottomLine td,.itx-scope .ui-sortable-helper tr td,.itx-scope :root .ui-sortable-helper .uiTable.decorated tr.mouseoverHigh.even.bottomLine td {
+	background:#fc0
+}
+.itx-scope .handler {
+	height:18px;
+	min-width:40px;
+	margin:2px 0 8px;
+	text-align:center;
+	cursor:pointer
+}
+.itx-scope .dragAccept:hover>.handler,.itx-scope .handler:hover,.itx-scope .ui-sortable-helper .handler {
+	background:#f4f4f4;
+	height:18px;
+	min-width:40px;
+	cursor:w-resize;
+	text-align:center
+}
+.itx-scope .tooltipRightDown.uiIIcon:hover,.itx-scope .tooltipRightUp.uiIIcon:hover,.itx-scope .ui-dialog .ui-dialog-titlebar a {
+	cursor:pointer
+}
+.itx-scope .sorted.dragAccept:hover>.handler {
+	background:#ddd
+}
+.itx-scope th.sort .handler.dragtable-handle-selected,.itx-scope th.sort .handler:hover {
+	margin-right:0
+}
+.itx-scope .dragAccept:hover>.handler>.inner,.itx-scope .handler:hover>.inner,.itx-scope .ui-sortable-helper .handler>.inner {
+	height:15px;
+	padding:0 1px 0 0
+}
+.itx-scope .noHandler {
+	height:15px;
+	left:5px;
+	margin:2px 0 8px;
+	text-align:left
+}
+.itx-scope .dragtable-disabled {
+	opacity:1
+}
+.itx-scope .dragtable-disabled,.itx-scope .dragtable-disabled .uiCommandLink,.itx-scope .dragtable-disabled .uiOutputLink {
+	color:#ccc
+}
+.itx-scope .dragtableHeader {
+	height:70px
+}
+.itx-scope table.tableWithSubtable tbody>tr>.uiColumn {
+	padding:0
+}
+.itx-scope table.tableWithSubtable tr.subRow {
+	border-bottom:none
+}
+.itx-scope table.tableWithSubtable tr.subRow>.uiColumn {
+	padding:.625rem
+}
+.itx-scope table.tableWithSubtable tr.subRow.even {
+	background:#f4f4f4
+}
+.itx-scope table.tableWithSubtable tr>td.uiColumn:first-child {
+	padding-left:1.25rem
+}
+.itx-scope table.tableWithSubtable tr>td.uiColumn:last-child {
+	padding-right:1.25rem
+}
+.itx-scope table.tableWithSubtable tbody>tr.subRow.even:hover,.itx-scope table.tableWithSubtable tbody>tr:hover {
+	background:#eee
+}
+.itx-scope table.ausgefuehrteOrdersTable tbody>tr>.uiColumn,.itx-scope table.teilausgefuehrteOrdersTable tbody>tr>.uiColumn {
+	padding:.625rem
+}
+.itx-scope table.ausgefuehrteOrdersTable tr.even,.itx-scope table.teilausgefuehrteOrdersTable tr.even {
+	background:#f4f4f4
+}
+.itx-scope table.ausgefuehrteOrdersTable tr>td.uiColumn:first-child,.itx-scope table.teilausgefuehrteOrdersTable tr>td.uiColumn:first-child {
+	padding-left:1.25rem
+}
+.itx-scope table.ausgefuehrteOrdersTable tr>td.uiColumn:last-child,.itx-scope table.teilausgefuehrteOrdersTable tr>td.uiColumn:last-child {
+	padding-right:1.25rem
+}
+.itx-scope table.ausgefuehrteOrdersTable tbody>tr.subRow.even:hover,.itx-scope table.ausgefuehrteOrdersTable tbody>tr:hover,.itx-scope table.teilausgefuehrteOrdersTable tbody>tr.subRow.even:hover,.itx-scope table.teilausgefuehrteOrdersTable tbody>tr:hover {
+	background:#eee
+}
+.itx-scope table.teilausgefuehrteOrdersTable tr.subRow table.uiTable tr {
+	background-color:transparent
+}
+.itx-scope table.teilausgefuehrteOrdersTable tr.even.subRow table.uiTable tr,.itx-scope table.teilausgefuehrteOrdersTable tr.odd.subRow:hover table.uiTable tr {
+	border-bottom:1px solid #ccc
+}
+.itx-scope table.teilausgefuehrteOrdersTable tr.even.subRow table.uiTable thead>tr,.itx-scope table.teilausgefuehrteOrdersTable tr.odd.subRow:hover table.uiTable thead>tr {
+	border-bottom:1px solid #aaa
+}
+.itx-scope table.teilausgefuehrteOrdersTable>tbody>tr:not(.subRow) {
+	border-bottom:none
+}
+.itx-scope .uiIIcon.tooltipLayer.large,.itx-scope .uiTooltip.tooltipLayer.large {
+	width:30rem
+}
+.itx-scope .uiIIcon.tooltipLayer.medium,.itx-scope .uiTooltip.tooltipLayer.medium {
+	width:12.5rem
+}
+.itx-scope .uiIIcon.tooltipLayer,.itx-scope .uiTooltip.tooltipLayer {
+	position:relative;
+	display:none;
+	font-size:.875rem;
+	padding:1rem 1.25rem 1.125rem;
+	border:1px solid #ccc;
+	box-shadow:0 1px 2px rgba(40,55,60,.25);
+	background:#fff
+}
+.itx-scope .uiTooltip a,.itx-scope .uiTooltip.tooltipActionLeftDown a>span:before {
+	display:block
+}
+.itx-scope .uiIIcon.tooltipLayer {
+	line-height:1.375rem
+}
+.itx-scope .uiTooltip.tooltipLayer {
+	padding:0
+}
+.itx-scope .uiTable .tooltipLayer .uiOutputText.normal {
+	font-weight:400
+}
+.itx-scope .uiIIcon.tooltipLayer span.bold {
+	border-bottom:1px solid #ccc;
+	display:block;
+	padding:0 0 1.25rem 1.25rem;
+	margin:0 -1.25rem 1.25rem
+}
+.itx-scope .uiTooltip a {
+	padding:1rem 1.25rem 0;
+	-webkit-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out
+}
+.itx-scope .ui-dialog,.itx-scope .ui-dialog .ui-dialog-titlebar-close,.itx-scope .uiLayer {
+	display:none
+}
+.itx-scope .uiTooltip a span {
+	overflow-wrap:break-word;
+	word-break:break-all
+}
+.itx-scope .uiTooltip a.uiCommandLink span.uiOutputText,.itx-scope .uiTooltip a.uiCommandLink:hover span.uiOutputText {
+	font-size:.875rem
+}
+.itx-scope .uiTooltip a:last-child {
+	padding-bottom:1.56rem
+}
+.itx-scope .uiTooltip a:hover {
+	color:#4ce77b;
+	text-decoration:underline
+}
+.itx-scope .ui-dialog a.layerCloseIcon,.itx-scope .uiList.link>.uiListEntry a>span,.itx-scope .umsatzListe .uiCommandLink>span {
+	text-decoration:none
+}
+.itx-scope .uiIIcon.tooltipLayer:after,.itx-scope .uiIIcon.tooltipLayer:before,.itx-scope .uiTooltip.tooltipLayer:after,.itx-scope .uiTooltip.tooltipLayer:before {
+	position:absolute;
+	content:'';
+	height:0;
+	width:0;
+	-webkit-transform:rotate(270deg);
+	-ms-transform:rotate(270deg);
+	transform:rotate(270deg);
+	border:6px solid transparent
+}
+.itx-scope .uiIIcon.tooltipLayer:before,.itx-scope .uiTooltip.tooltipLayer:before {
+	z-index:1;
+	border-width:.5rem
+}
+.itx-scope .uiIIcon.tooltipLayer:after,.itx-scope .uiTooltip.tooltipLayer:after {
+	z-index:2
+}
+.itx-scope .uiIIcon.arrowLeftTop.tooltipLayer:before,.itx-scope .uiIIcon.arrowRightTop.tooltipLayer:before,.itx-scope .uiTooltip.arrowLeftTop.tooltipLayer:before,.itx-scope .uiTooltip.arrowRightTop.tooltipLayer:before {
+	margin-top:-2px
+}
+.itx-scope .uiIIcon.arrowCenterTop.tooltipLayer:before,.itx-scope .uiTooltip.arrowCenterTop.tooltipLayer:before {
+	margin:-4px 0 0 -2px;
+	border-left-color:#ccc
+}
+.itx-scope .uiIIcon.arrowBottomLeft.tooltipLayer:before,.itx-scope .uiIIcon.arrowCenterBottom.tooltipLayer:before,.itx-scope .uiTooltip.arrowBottomLeft.tooltipLayer:before,.itx-scope .uiTooltip.arrowCenterBottom.tooltipLayer:before {
+	margin:0 0 -4px -2px
+}
+.itx-scope .uiIIcon.arrowBottomRight.tooltipLayer:before,.itx-scope .uiTooltip.arrowBottomRight.tooltipLayer:before {
+	margin:0 -2px -4px 0
+}
+.itx-scope .uiIIcon.arrowLeftTop.tooltipLayer:after,.itx-scope .uiIIcon.arrowLeftTop.tooltipLayer:before,.itx-scope .uiTooltip.arrowLeftTop.tooltipLayer:after,.itx-scope .uiTooltip.arrowLeftTop.tooltipLayer:before {
+	right:100%;
+	top:.875rem
+}
+.itx-scope .uiIIcon.arrowLeftTop.tooltipLayer:before,.itx-scope .uiTooltip.arrowLeftTop.tooltipLayer:before {
+	border-bottom-color:#ccc
+}
+.itx-scope .uiIIcon.arrowLeftTop.tooltipLayer:after,.itx-scope .uiTooltip.arrowLeftTop.tooltipLayer:after {
+	border-bottom-color:#fff
+}
+.itx-scope .uiIIcon.arrowRightTop.tooltipLayer:after,.itx-scope .uiIIcon.arrowRightTop.tooltipLayer:before,.itx-scope .uiTooltip.arrowRightTop.tooltipLayer:after,.itx-scope .uiTooltip.arrowRightTop.tooltipLayer:before {
+	left:100%;
+	top:.875rem
+}
+.itx-scope .uiIIcon.arrowRightTop.tooltipLayer:before,.itx-scope .uiTooltip.arrowRightTop.tooltipLayer:before {
+	border-top-color:#ccc
+}
+.itx-scope .uiIIcon.arrowRightTop.tooltipLayer:after,.itx-scope .uiTooltip.arrowRightTop.tooltipLayer:after {
+	border-top-color:#fff
+}
+.itx-scope .uiIIcon.arrowCenterTop.tooltipLayer:after,.itx-scope .uiIIcon.arrowCenterTop.tooltipLayer:before,.itx-scope .uiTooltip.arrowCenterTop.tooltipLayer:after,.itx-scope .uiTooltip.arrowCenterTop.tooltipLayer:before {
+	left:45%;
+	top:-.75rem
+}
+.itx-scope .uiIIcon.arrowCenterTop.tooltipLayer:after,.itx-scope .uiTooltip.arrowCenterTop.tooltipLayer:after {
+	border-left-color:#fff
+}
+.itx-scope .uiIIcon.arrowCenterBottom.tooltipLayer:after,.itx-scope .uiIIcon.arrowCenterBottom.tooltipLayer:before,.itx-scope .uiTooltip.arrowCenterBottom.tooltipLayer:after,.itx-scope .uiTooltip.arrowCenterBottom.tooltipLayer:before {
+	left:45%;
+	bottom:-.75rem
+}
+.itx-scope .uiIIcon.arrowBottomLeft.tooltipLayer:before,.itx-scope .uiIIcon.arrowBottomRight.tooltipLayer:before,.itx-scope .uiIIcon.arrowCenterBottom.tooltipLayer:before,.itx-scope .uiTooltip.arrowBottomLeft.tooltipLayer:before,.itx-scope .uiTooltip.arrowBottomRight.tooltipLayer:before,.itx-scope .uiTooltip.arrowCenterBottom.tooltipLayer:before {
+	border-right-color:#ccc
+}
+.itx-scope .uiIIcon.arrowBottomLeft.tooltipLayer:after,.itx-scope .uiIIcon.arrowBottomRight.tooltipLayer:after,.itx-scope .uiIIcon.arrowCenterBottom.tooltipLayer:after,.itx-scope .uiTooltip.arrowBottomLeft.tooltipLayer:after,.itx-scope .uiTooltip.arrowBottomRight.tooltipLayer:after,.itx-scope .uiTooltip.arrowCenterBottom.tooltipLayer:after {
+	border-right-color:#fff
+}
+.itx-scope .uiIIcon.arrowBottomLeft.tooltipLayer:after,.itx-scope .uiIIcon.arrowBottomLeft.tooltipLayer:before,.itx-scope .uiTooltip.arrowBottomLeft.tooltipLayer:after,.itx-scope .uiTooltip.arrowBottomLeft.tooltipLayer:before {
+	left:.875rem;
+	bottom:-.75rem
+}
+.itx-scope .uiIIcon.arrowBottomRight.tooltipLayer:after,.itx-scope .uiIIcon.arrowBottomRight.tooltipLayer:before,.itx-scope .uiTooltip.arrowBottomRight.tooltipLayer:after,.itx-scope .uiTooltip.arrowBottomRight.tooltipLayer:before {
+	right:.875rem;
+	bottom:-.75rem
+}
+.itx-scope .uiTooltip.tooltipLayer.tooltipActionLeftDown {
+	width:auto
+}
+.itx-scope .uiTooltip.tooltipDepotNotiz {
+	padding:1rem 1.25rem 1.125rem
+}
+.itx-scope .uiTooltip.tooltipDepotNotiz a {
+	padding:0
+}
+.itx-scope .uiTooltip.tooltipDepotNotiz .uiOutputTextArea {
+	word-wrap:break-word
+}
+.itx-scope .ui-dialog {
+	position:absolute!important;
+	background:#fff;
+	box-shadow:0 2px 4px rgba(40,55,60,.75);
+	margin:0 auto;
+	width:auto!important;
+	max-width:960px!important;
+	padding:0;
+	z-index:100;
+	top:10%
+}
+.itx-scope .ui-dialog::before {
+	content:'';
+	height:.25rem;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:-webkit-linear-gradient(180deg,#fff500 0,#f7f406 14%,#c6f127 48%,#7aeb5b 70%,#00e1af 100%);
+	background:linear-gradient(-90deg,#fff500 0,#f7f406 14%,#c6f127 48%,#7aeb5b 70%,#00e1af 100%)
+}
+.itx-scope .ui-dialog .uiLayer {
+	display:block
+}
+.itx-scope .ui-dialog .ui-dialog-titlebar {
+	padding:1.25rem 2.5rem;
+	font-weight:700;
+	font-size:.875rem;
+	border-bottom:1px solid #eee;
+	position:relative
+}
+.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight .dragAccept:hover>.handler>.inner,.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight .handler:hover>.inner,.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight .lastLogin>.close,.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight .ui-dialog a.layerCloseIcon,.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight .ui-sortable-helper .handler>.inner,.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight .uiIcon,.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight a.ui-datepicker-next,.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight a.ui-datepicker-next:hover,.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight a.ui-datepicker-prev,.itx-scope .ui-dialog .ui-dialog-titlebar .floatRight a.ui-datepicker-prev:hover,.itx-scope .ui-dialog .ui-dialog-titlebar .toggleIcon {
+	text-decoration:none;
+	padding-right:.5rem;
+	cursor:pointer
+}
+.itx-scope .ui-dialog-title {
+	margin-right:2rem
+}
+.itx-scope .ui-dialog a.layerCloseIcon {
+	background:0 0!important
+}
+.itx-scope .ui-dialog a.layerCloseIcon:hover {
+	color:#4ce77b
+}
+.itx-scope .ui-dialog>.ui-dialog-content {
+	padding:1.25rem 2.5rem;
+	overflow-x:auto
+}
+.itx-scope .uiLayer.ui-dialog-content.ui-widget-content {
+	background:#fff
+}
+.itx-scope .ui-dialog-content h3.head {
+	position:absolute;
+	top:1.25rem;
+	font-size:.875rem;
+	font-weight:700
+}
+.itx-scope .ui-widget-overlay {
+	background:#28373c;
+	opacity:.9;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%
+}
+.itx-scope .ui-draggable .ui-dialog-titlebar {
+	cursor:move
+}
+.itx-scope .ui-draggable-handle {
+	-ms-touch-action:none;
+	touch-action:none
+}
+.itx-scope .ui-resizable {
+	position:relative
+}
+.itx-scope .ui-resizable-handle {
+	position:absolute;
+	font-size:.1px;
+	display:block;
+	-ms-touch-action:none;
+	touch-action:none
+}
+.itx-scope .ui-resizable-autohide .ui-resizable-handle,.itx-scope .ui-resizable-disabled .ui-resizable-handle {
+	display:none
+}
+.itx-scope .ui-resizable-n {
+	cursor:n-resize;
+	height:7px;
+	width:100%;
+	top:-5px;
+	left:0
+}
+.itx-scope .ui-resizable-s {
+	cursor:s-resize;
+	height:7px;
+	width:100%;
+	bottom:-5px;
+	left:0
+}
+.itx-scope .ui-resizable-e {
+	cursor:e-resize;
+	width:7px;
+	right:-5px;
+	top:0;
+	height:100%
+}
+.itx-scope .ui-resizable-w {
+	cursor:w-resize;
+	width:7px;
+	left:-5px;
+	top:0;
+	height:100%
+}
+.itx-scope .ui-resizable-se {
+	cursor:se-resize;
+	width:12px;
+	height:12px;
+	right:1px;
+	bottom:1px
+}
+.itx-scope .ui-resizable-sw {
+	cursor:sw-resize;
+	width:9px;
+	height:9px;
+	left:-5px;
+	bottom:-5px
+}
+.itx-scope .ui-resizable-nw {
+	cursor:nw-resize;
+	width:9px;
+	height:9px;
+	left:-5px;
+	top:-5px
+}
+.itx-scope .ui-resizable-ne {
+	cursor:ne-resize;
+	width:9px;
+	height:9px;
+	right:-5px;
+	top:-5px
+}
+.itx-scope .uiLayer>.layerContent {
+	text-align:center
+}
+.itx-scope .uiLayer>.loadingIcon {
+	padding-top:1.25rem
+}
+.itx-scope ol.numbered>li,.itx-scope ul.uiList>li {
+	margin:.625rem 0
+}
+.itx-scope ul.bullets>li:before,.itx-scope ul.check>li:before {
+	margin-right:.25em;
+	font-size:1rem;
+	font-family:cd;
+	color:#4ce77b
+}
+.itx-scope ol.numbered>li {
+	list-style-type:decimal
+}
+.itx-scope ol.numbered {
+	font-weight:700
+}
+.itx-scope ol.numbered>li span {
+	font-weight:400
+}
+.itx-scope ul.bullets,.itx-scope ul.check,.itx-scope ul.link {
+	padding-left:0
+}
+.itx-scope ul.bullets>li,.itx-scope ul.check>li {
+	list-style:none;
+	padding:0
+}
+.itx-scope ul.bullets>li:before {
+	content:"\e800"
+}
+.itx-scope ul.check>li:before {
+	content:"\e802"
+}
+.itx-scope ul.link>li {
+	margin:0;
+	list-style:none
+}
+.itx-scope ul.link>li:before {
+	content:"\e805";
+	font-size:1rem;
+	margin-right:.25em;
+	font-family:cd;
+	color:#4ce77b
+}
+.itx-scope .uiList.link>.uiListEntry a>span:before {
+	display:block
+}
+.itx-scope .uiList.link>.uiListEntry {
+	margin-bottom:.25rem
+}
+.itx-scope .uiListEntry {
+	position:relative
+}
+.itx-scope .uiListEntry:before {
+	position:absolute;
+	top:.125rem
+}
+.itx-scope .uiListEntry>*,.itx-scope .uiListEntry>a,.itx-scope .uiListEntry>form>* {
+	display:inline-block;
+	line-height:1.25rem
+}
+.itx-scope .uiListEntry>:first-child,.itx-scope .uiListEntry>a:first-child {
+	margin-left:1rem
+}
+.itx-scope .uiList.check>.uiListEntry>:first-child,.itx-scope .uiList.check>.uiListEntry>a:first-child {
+	margin-left:1.25rem
+}
+.itx-scope .uiDataScroller {
+	width:100%
+}
+.itx-scope .uiDataScroller td.next img,.itx-scope .uiDataScroller td.previous img {
+	display:none
+}
+.itx-scope .uiDataScroller td.next a:after,.itx-scope .uiDataScroller td.previous a:after {
+	font-family:cd
+}
+.itx-scope .uiDataScroller td.next a:hover,.itx-scope .uiDataScroller td.previous a:hover {
+	color:#48db74
+}
+.itx-scope .uiDataScroller td.previous a:after {
+	content:"\e804"
+}
+.itx-scope .uiDataScroller td.next a:after {
+	content:"\e805"
+}
+.itx-scope .uiDataScroller .paginator {
+	width:100%;
+	max-width:10rem;
+	text-align:center
+}
+.itx-scope .uiDataScroller .paginator td {
+	padding:0 .25rem
+}
+.itx-scope .uiDataScroller .paginator .paginatorColumnActive {
+	font-weight:700
+}
+.itx-scope .uiTogglePanel.arrow .expand,.itx-scope .uiTogglePanel.arrow .fold {
+	background:0 0;
+	padding:0 0 1.25rem
+}
+.itx-scope .uiTogglePanel.arrow .expand a:before,.itx-scope .uiTogglePanel.arrow .fold a:before {
+	font-family:cd;
+	font-size:.875rem;
+	font-style:normal;
+	font-weight:400;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1rem;
+	display:inline-block;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	color:#28373c;
+	padding-right:.25rem
+}
+.itx-scope .uiTogglePanel.arrow .expand a,.itx-scope .uiTogglePanel.arrow .fold a {
+	padding-left:0
+}
+.itx-scope .uiTogglePanel .toggleBox,.itx-scope .uiTogglePanel .toggleHead.expand,.itx-scope .uiTogglePanel.togglePanel-expanded .toggleHead.fold {
+	display:none
+}
+.itx-scope .uiTogglePanel .toggleHead.fold,.itx-scope .uiTogglePanel.togglePanel-expanded .toggleBox,.itx-scope .uiTogglePanel.togglePanel-expanded .toggleHead.expand {
+	display:block
+}
+.itx-scope .uiTogglePanel .toggleHead>a {
+	padding:0 .5rem
+}
+.itx-scope .uiTogglePanel.normal .toggleHead>a {
+	font-weight:400
+}
+.itx-scope .uiTogglePanel.bold .toggleHead>a {
+	font-weight:700
+}
+.itx-scope .uiTogglePanel.arrow .toggleBox {
+	background:#f4f4f4;
+	padding:1.875rem 0
+}
+.itx-scope .uiTogglePanel.arrow .toggleHead.expand>a {
+	position:relative
+}
+.itx-scope .uiTogglePanel.arrow .toggleHead.expand>a:after {
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width:0 10px 14px;
+	border-color:transparent transparent #f4f4f4;
+	content:"";
+	position:absolute;
+	left:50%;
+	margin-left:-10px;
+	top:1.6rem
+}
+.itx-scope .uiStepCounter {
+	list-style:none;
+	width:100%;
+	margin:0;
+	padding:0
+}
+.itx-scope .uiStepCounter li {
+	display:inline-block;
+	font-size:.875rem;
+	background:#f4f4f4;
+	margin-right:.0625rem
+}
+.itx-scope .uiStepCounter li:last-child {
+	margin:0
+}
+.itx-scope .uiStepCounter.number li {
+	text-align:center;
+	padding:0 .6875rem;
+	color:rgba(40,55,60,.3);
+	line-height:1.3rem
+}
+.itx-scope .uiStepCounter.text li span.numbering {
+	padding-right:.125rem
+}
+.itx-scope .uiStepCounter.text li {
+	text-align:left;
+	padding:0 0 0 1.25rem;
+	color:rgba(40,55,60,.3);
+	line-height:2.25rem
+}
+.itx-scope .ui-datepicker,.itx-scope a.ui-datepicker-next,.itx-scope a.ui-datepicker-next:hover,.itx-scope a.ui-datepicker-prev,.itx-scope a.ui-datepicker-prev:hover {
+	text-align:center
+}
+.itx-scope .uiStepCounter.text li span {
+	line-height:2.25rem
+}
+.itx-scope .uiStepCounter.text li.full {
+	color:#28373c
+}
+.itx-scope .uiStepCounter li.full {
+	background:#4ce77b
+}
+.itx-scope .uiStepCounter li.current {
+	font-weight:700;
+	color:#28373c;
+	background:#4ce77b
+}
+.itx-scope .uiToggle {
+	margin-right:.45rem
+}
+.itx-scope .uiToggle-background {
+	display:none
+}
+.itx-scope .lastLogin {
+	position:relative;
+	box-shadow:0 .125rem .25rem rgba(40,55,60,.25);
+	background:#fff;
+	border:1px solid #ccc;
+	border-top:0;
+	padding:1.25rem;
+	width:60rem;
+	margin:1.875rem auto
+}
+.itx-scope .lastLogin::before {
+	content:'';
+	height:.125rem;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:-webkit-linear-gradient(180deg,#fff500 0,#f7f406 14%,#c6f127 48%,#7aeb5b 70%,#4ce77b 100%);
+	background:linear-gradient(-90deg,#fff500 0,#f7f406 14%,#c6f127 48%,#7aeb5b 70%,#4ce77b 100%)
+}
+.itx-scope .lastLogin>.close {
+	position:absolute;
+	top:1.25rem;
+	right:1.25rem;
+	height:1rem;
+	width:1rem
+}
+.itx-scope .lastLogin>.welcome {
+	padding-bottom:1.875rem
+}
+.itx-scope .lastLogin span {
+	line-height:1.25rem
+}
+.itx-scope .lastLogin>.table {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex
+}
+.itx-scope .lastLogin>.table .column {
+	padding-right:3.75rem;
+	height:100%;
+	font-size:.875rem;
+	display:inline-block
+}
+.itx-scope .ui-datepicker-next>.ui-icon,.itx-scope .ui-datepicker-prev>.ui-icon,.itx-scope .ui-datepicker-trigger {
+	display:none
+}
+.itx-scope .lastLogin>.table .column.last-child {
+	min-width:21.875rem
+}
+.itx-scope .lastLogin>.table .column:first-child {
+	min-width:13.125rem
+}
+.itx-scope .ui-datepicker {
+	background:#fff;
+	border:1px solid #ccc;
+	box-shadow:0 1px 2px rgba(57,68,76,.25)
+}
+.itx-scope .ui-datepicker-header {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	border-bottom:1px solid #eee
+}
+.itx-scope a.ui-datepicker-prev {
+	-webkit-box-ordinal-group:2;
+	-webkit-order:1;
+	-ms-flex-order:1;
+	order:1;
+	display:block;
+	margin-left:.3125rem
+}
+.itx-scope a.ui-datepicker-next {
+	-webkit-box-ordinal-group:4;
+	-webkit-order:3;
+	-ms-flex-order:3;
+	order:3;
+	display:block
+}
+.itx-scope .ui-datepicker-title {
+	-webkit-box-ordinal-group:3;
+	-webkit-order:2;
+	-ms-flex-order:2;
+	order:2;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex
+}
+.itx-scope .ui-datepicker-next::before,.itx-scope .ui-datepicker-prev::before {
+	width:3.75rem;
+	display:inline-block;
+	padding:1.125rem 0 1.0625rem;
+	cursor:pointer;
+	-webkit-transition:color .1s ease-in-out;
+	transition:color .1s ease-in-out
+}
+.itx-scope a.ui-datepicker-next:hover,.itx-scope a.ui-datepicker-prev:hover,.itx-scope select.ui-datepicker-month:hover,.itx-scope select.ui-datepicker-year:hover {
+	color:#48db74
+}
+.itx-scope .ui-datepicker-title span {
+	padding-top:.5625rem;
+	padding-right:.75rem
+}
+.itx-scope .ui-datepicker-title select {
+	padding:0;
+	margin:0;
+	font-size:.875rem;
+	display:inline-block;
+	border:none;
+	background:0 0;
+	font-weight:700;
+	cursor:pointer
+}
+.itx-scope .ui-datepicker-title select option {
+	color:#1a2326
+}
+.itx-scope .ui-datepicker-title select.ui-datepicker-month {
+	width:5.75rem;
+	padding-left:.625rem
+}
+.itx-scope .ui-datepicker-title select.ui-datepicker-year {
+	width:3.5625rem;
+	padding-left:.375rem
+}
+.itx-scope .ui-datepicker-calendar {
+	margin:.8125rem 1.25rem 1.25rem
+}
+.itx-scope .ui-datepicker-unselectable.ui-state-disabled {
+	cursor:not-allowed
+}
+.itx-scope .ui-datepicker-unselectable.ui-state-disabled .ui-state-default {
+	color:rgba(26,35,38,.25)
+}
+.itx-scope .ui-datepicker-calendar td {
+	border:1px solid #eee
+}
+.itx-scope .ui-datepicker-calendar th span {
+	font-weight:initial;
+	margin:.125rem 0 0
+}
+.itx-scope .ui-datepicker-calendar td a,.itx-scope .ui-datepicker-calendar td span,.itx-scope .ui-datepicker-calendar th span {
+	font-size:.875rem;
+	display:inline-block;
+	width:2.0625rem;
+	height:2.0625rem;
+	line-height:2.0625rem
+}
+.itx-scope .ui-datepicker-calendar td .ui-state-default.ui-state-highlight {
+	background:0 0;
+	font-weight:700
+}
+.itx-scope .ui-datepicker-calendar td .ui-state-default:hover {
+	background:#f4f4f4;
+	font-weight:700
+}
+.itx-scope .ui-datepicker-calendar td .ui-state-default.ui-state-active {
+	background:#fff500;
+	font-weight:700
+}
+.itx-scope .ui-datepicker-calendar td.ui-datepicker-unselectable .ui-state-default:hover {
+	background:0 0
+}
+.itx-scope .iconToolbar,.itx-scope .iconToolbar.clearfix,.itx-scope .iconToolbar.floatNone,.itx-scope .iconToolbar.inhaber,.itx-scope .iconToolbar.uiLayout {
+	list-style:none;
+	padding:2rem 1.875rem 0 0;
+	margin:0 auto 0 -31.875rem;
+	width:63.75rem;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:reverse;
+	-webkit-flex-direction:row-reverse;
+	-ms-flex-direction:row-reverse;
+	flex-direction:row-reverse;
+	-webkit-box-pack:start;
+	-webkit-justify-content:flex-start;
+	-ms-flex-pack:start;
+	justify-content:flex-start;
+	position:absolute;
+	z-index:2;
+	left:50%
+}
+.itx-scope .iconToolbar.uiList li {
+	margin:.625rem 0 0
+}
+.itx-scope .iconToolbar .uiOutputLink .uiOutputText {
+	font-size:1rem;
+	line-height:1rem
+}
+.itx-scope .inhaber {
+	width:63.75rem;
+	position:absolute;
+	z-index:1;
+	left:50%;
+	margin-left:-31.875rem
+}
+.itx-scope .inhaber .container {
+	font-size:.75rem;
+	text-align:right;
+	margin:4rem 2rem 0 0;
+	float:right;
+	width:30%
+}
+.itx-scope .uiIFrame {
+	border:none;
+	margin:0;
+	padding:0
+}
+.itx-scope .uiIFrame.teaserFrameAlphaneu,.itx-scope .uiIFrame.teaserFrameBeta,.itx-scope .uiIFrame.teaserFrameEta {
+	min-width:100%
+}
+.itx-scope .uiImageChart.standard {
+	margin:0 auto
+}
+.itx-scope .uiImageChart.center {
+	margin:0 auto;
+	padding:1.875rem 0
+}
+.itx-scope .uiImageChart,.itx-scope .uiImageChart>.uiImageChartContainer {
+	position:relative
+}
+.itx-scope .uiCrossTab .label {
+	font-weight:700;
+	white-space:nowrap
+}
+.itx-scope .uiCrossTab .uiCrossTabCell {
+	text-align:right;
+	padding:.35rem .5rem
+}
+.itx-scope .uiProgressBar {
+	width:230px
+}
+.itx-scope .uiProgressBar .progressindicator-widget {
+	float:right;
+	margin:12px 5px
+}
+.itx-scope .uiProgressBar .progressindicator-widget .progressindicator-bar {
+	width:160px;
+	margin:0 20px 0 0;
+	display:inline-block
+}
+.itx-scope .uiProgressBar .progressindicator-step {
+	font-size:1;
+	float:left;
+	height:12px
+}
+.itx-scope .uiProgressBar .progressindicator-active {
+	background:url(../cd_img/livetrading_zaehler_rot.gif?v=1477546240265) no-repeat
+}
+.itx-scope .uiProgressBar .progressinidicator-time-remain-seconds {
+	font-size:1.5rem;
+	font-weight:700;
+	line-height:40px
+}
+.itx-scope .login-page {
+	width:1020px;
+	padding:0 1.875rem;
+	margin:1.875rem auto
+}
+.itx-scope .login-page .infoLogin {
+	font-size:.875rem;
+	height:100%;
+	padding:1.875rem
+}
+.itx-scope .logoutbox {
+	border:2px solid #4ce77b;
+	padding:3rem 2rem
+}
+.itx-scope .logoutbox h1>span.uiOutputText {
+	font-size:2rem;
+	font-weight:300;
+	color:#4ce77b
+}
+.itx-scope .logoutbox h1,.itx-scope .logoutbox span.dragAccept:hover>.handler>.inner,.itx-scope .logoutbox span.handler:hover>.inner,.itx-scope .logoutbox span.lastLogin>.close,.itx-scope .logoutbox span.ui-dialog a.layerCloseIcon,.itx-scope .logoutbox span.ui-sortable-helper .handler>.inner,.itx-scope .logoutbox span.uiIcon,.itx-scope .logoutbox spana.ui-datepicker-next,.itx-scope .logoutbox spana.ui-datepicker-next:hover,.itx-scope .logoutbox spana.ui-datepicker-prev,.itx-scope .logoutbox spana.ui-datepicker-prev:hover {
+	display:inline-block
+}
+.itx-scope .logoutbox span.dragAccept:hover>.handler>.inner,.itx-scope .logoutbox span.handler:hover>.inner,.itx-scope .logoutbox span.lastLogin>.close,.itx-scope .logoutbox span.ui-dialog a.layerCloseIcon,.itx-scope .logoutbox span.ui-sortable-helper .handler>.inner,.itx-scope .logoutbox span.uiIcon,.itx-scope .logoutbox spana.ui-datepicker-next,.itx-scope .logoutbox spana.ui-datepicker-next:hover,.itx-scope .logoutbox spana.ui-datepicker-prev,.itx-scope .logoutbox spana.ui-datepicker-prev:hover {
+	padding:0 1rem;
+	color:#4ce77b
+}
+.itx-scope .logoutbox.error {
+	border:2px solid #ff4c5b
+}
+.itx-scope .logoutbox.error h1>span.uiOutputText,.itx-scope .logoutbox.error span.dragAccept:hover>.handler>.inner,.itx-scope .logoutbox.error span.handler:hover>.inner,.itx-scope .logoutbox.error span.lastLogin>.close,.itx-scope .logoutbox.error span.ui-dialog a.layerCloseIcon,.itx-scope .logoutbox.error span.ui-sortable-helper .handler>.inner,.itx-scope .logoutbox.error span.uiIcon,.itx-scope .logoutbox.error spana.ui-datepicker-next,.itx-scope .logoutbox.error spana.ui-datepicker-next:hover,.itx-scope .logoutbox.error spana.ui-datepicker-prev,.itx-scope .logoutbox.error spana.ui-datepicker-prev:hover {
+	color:#ff4c5b
+}
+.itx-scope .logoutbox.error .icon-exclamation:before {
+	line-height:1rem
+}
+.itx-scope .teaserFrameAlpha {
+	width:200px;
+	height:130px
+}
+.itx-scope .teaserFrameAlpha p {
+	background-color:#fc0;
+	text-align:right;
+	padding:5px 8px
+}
+.itx-scope .teaserFrameAlpha a:hover {
+	color:#000
+}
+.itx-scope .teaserFrameAlphaneu {
+	width:225px;
+	height:130px;
+	margin-bottom:30px
+}
+.itx-scope .teaserFrameBeta {
+	width:417px;
+	height:83px
+}
+.itx-scope .teaserFrameEta {
+	margin:0;
+	padding:10px 0 20px;
+	width:434px;
+	height:56px
+}
+.itx-scope .teaserFrameGamma {
+	width:300px;
+	height:165px;
+	margin-bottom:20px
+}
+.itx-scope .teaserFrameOmega {
+	width:630px;
+	height:300px
+}
+.itx-scope .teaserFramePi {
+	width:680px;
+	height:104px
+}
+.itx-scope .teaserFrameSigma {
+	width:300px;
+	height:300px;
+	margin-left:20px
+}
+.itx-scope .umsatzListe>.uiGridLayoutRow {
+	padding:.75rem 1.5rem;
+	margin:0;
+	border-bottom:1px solid #eee
+}
+.itx-scope .umsatzListe>.uiGridLayoutRow.umsatzRowsMitDetails {
+	padding:0
+}
+.itx-scope .umsatzListe .uiGridLayoutRow.umsatzDetailsRow {
+	border-bottom:0;
+	margin:0;
+	padding:.5rem 1.5rem
+}
+.itx-scope .umsatzListe>.umsatzDetailsPanel>.uiGridLayout {
+	padding:0 .5rem
+}
+.itx-scope .umsatzListe .umsatzDetailsPanel {
+	padding:0 1.5rem
+}
+.itx-scope .umsatzListe .umsatzDetailsPanel .umsatzDetailsRow.uiGridLayoutRow {
+	padding:.5rem 0
+}
+.itx-scope .umsatzDetailsPanel .umsatzDetailsRow {
+	border-top:1px solid #e8e8e8
+}
+.itx-scope .umsatzDetailsPanel.uiGridLayoutRow,.itx-scope .umsatzDetailsRow.uiGridLayoutRow {
+	background:#f4f4f4
+}
+.itx-scope .umsatzDetailsPanel.uiGridLayoutRow .uiButton>a,.itx-scope .umsatzDetailsPanel.uiGridLayoutRow .uiButton>span,.itx-scope .umsatzDetailsRow.uiGridLayoutRow .uiButton>a,.itx-scope .umsatzDetailsRow.uiGridLayoutRow .uiButton>span {
+	background-color:#ddd;
+	border-color:#ddd
+}
+.itx-scope .umsatzDetailsPanel.uiGridLayoutRow .uiButton>a:hover,.itx-scope .umsatzDetailsPanel.uiGridLayoutRow .uiButton>span:hover,.itx-scope .umsatzDetailsRow.uiGridLayoutRow .uiButton>a:hover,.itx-scope .umsatzDetailsRow.uiGridLayoutRow .uiButton>span:hover {
+	background-color:#ccc;
+	border-color:#ccc
+}
+.itx-scope .umsatzDetailsPanel.uiGridLayoutRow {
+	margin-top:0;
+	margin-bottom:.75rem
+}
+.itx-scope .umsatzListe>.uiGridLayoutRow:hover {
+	background:#f4f4f4
+}
+.itx-scope .umsatzListe>.uiGridLayoutRow:hover .uiCommandLink>span {
+	text-decoration:underline
+}
+.itx-scope .umsatzListe>.uiGridLayoutRow.umsatzRowsMitDetails:hover {
+	background:0 0
+}
+.itx-scope .ueberweisungsAssistent {
+	position:absolute;
+	margin-top:-.5rem
+}
+.itx-scope .ueberweisungsAssistent>.uiTogglePanel {
+	float:right;
+	display:inline-block
+}
+.itx-scope .ueberweisungsAssistent>.uiTogglePanel.arrow .toggleBox {
+	padding:1.25rem
+}
+.itx-scope .empfehlungKaufen {
+	background:url(/ccf2/img/pfeil_gruen_oben.gif) right no-repeat;
+	padding-right:11px
+}
+.itx-scope .empfehlungKaufenText {
+	color:green
+}
+.itx-scope .empfehlungWartenHalten {
+	background:url(/ccf2/img/pfeil_grau_rechts.gif) right no-repeat;
+	padding-right:11px
+}
+.itx-scope .empfehlungWartenHaltenText {
+	color:#666
+}
+.itx-scope .empfehlungVerkaufen {
+	background:url(/ccf2/img/pfeil_rot_unten.gif) right no-repeat;
+	padding-right:11px
+}
+.itx-scope .morningstar1,.itx-scope .morningstar2,.itx-scope .morningstar3,.itx-scope .morningstar4,.itx-scope .morningstar5 {
+	background:url(/ccf2/img/icon_star.gif);
+	float:right;
+	height:9px;
+	display:block
+}
+.itx-scope .empfehlungVerkaufenText {
+	color:#C00
+}
+.itx-scope .morningstar5 {
+	width:60px
+}
+.itx-scope .morningstar4 {
+	width:48px
+}
+.itx-scope .morningstar3 {
+	width:36px
+}
+.itx-scope .morningstar2 {
+	width:24px
+}
+.itx-scope .morningstar1 {
+	width:12px
+}
+.itx-scope .morningstarQualitativesGold {
+	background:url(/ccf2/img/morningstarGold.png) left center no-repeat;
+	padding-left:14px
+}
+.itx-scope .morningstarQualitativesSilber {
+	background:url(/ccf2/img/morningstarSilber.png) left center no-repeat;
+	padding-left:14px
+}
+.itx-scope .morningstarQualitativesBronze {
+	background:url(/ccf2/img/morningstarBronze.png) left center no-repeat;
+	padding-left:14px
+}
+.itx-scope .korPositiv {
+	color:#390;
+	text-align:right;
+	padding:3px 4px
+}
+.itx-scope .korNeutral {
+	color:#0;
+	text-align:right;
+	padding:3px 4px
+}
+.itx-scope .korNegativ {
+	color:#C00;
+	text-align:right;
+	padding:3px 4px
+}
+.itx-scope .korIndexName {
+	color:#828181;
+	font-weight:700
+}
+.itx-scope .korBorderTop {
+	border-top:1px solid #7A7A88
+}
+.itx-scope .korBorderBottom {
+	border-bottom:1px solid #7A7A88
+}
+.itx-scope .formcenterStartImg {
+	border-bottom:10px solid #FFF;
+	border-right:10px solid #FFF;
+	float:left
+}
+.itx-scope .popupContent {
+	padding:15px 15px 0
+}
+.itx-scope .popupTitle {
+	padding-top:19px
+}
+.itx-scope .popupContent .iconBar {
+	padding-left:10px
+}
+.itx-scope .noBreakResults li {
+	overflow-x:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap
+}
+.itx-scope .cifLayer .ui-dialog-titlebar-close {
+	visibility:visible
+}
+.itx-scope .cifLayer .ui-icon.ui-icon-closethick {
+	display:block;
+	width:15px;
+	height:15px;
+	cursor:pointer;
+	background:url(/ccf2/img/sprite_icons.png) 0 -35px no-repeat;
+	float:right
+}
+.itx-scope br {
+	line-height:1.25rem
+}
+@media print {
+	body {
+		overflow:visible!important
+	}
+	.itx-scope .notPrint,.itx-scope .stickyTableHeader-clone,.itx-scope .uiLayout.layout_flexible_3 .uiTable td.paddingLeft,.itx-scope .uiLayout.layout_flexible_3 .uiTable td.paddingRight,.itx-scope .uiLayout.layout_flexible_3 .uiTable th.paddingLeft,.itx-scope .uiLayout.layout_flexible_3 .uiTable th.paddingRight,.itx-scope .uiTable .handler,.itx-scope .uiTable .noHandler {
+		display:none
+	}
+	.itx-scope .uiLayout.layout_flexible_3 {
+		overflow:visible;
+		background:0 0
+	}
+	.itx-scope th.uiColumn.sorted {
+		background:0 0
+	}
+	.itx-scope .uiLayout.layout_flexible_3>.column1 {
+		display:block
+	}
+	.itx-scope .uiTable tr {
+		page-break-inside:avoid
+	}
+}

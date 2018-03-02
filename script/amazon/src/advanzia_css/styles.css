@@ -1,0 +1,279 @@
+/* ################################################################
+#
+#  Globals
+#
+################################################################ */
+
+.message {
+    color: #000;
+    font-size: 12px;
+    border: 1px #A31919 solid;
+    background: #ffd;
+    width: auto;
+    margin: 10px 0;
+    padding: 10px;
+}.message h6 {
+    font-size: 13px;
+    margin: 0 0 .25em 35px;
+    padding: 0;
+}.message p {
+    margin: 0 0 .25em 35px;
+    padding: 0;
+}.error span {
+    background-position: 0 -75px;
+}
+.message span {
+    background: url(../img/error-sprite.gif) no-repeat 0 0;background-position-y: -75px;
+}
+.message span {
+    float: left;
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+body, div, form { font-family: Arial, Verdana, Helvetica, Sans-Serif; font-size: 12px; color: #71757D; margin: 0px; padding: 0px;}
+body { text-align: center; }
+form {display: inline;}
+table, input, textarea, select {font-size: 100%; }
+.clear {clear: both;}
+.fett, .bold {font-weight: bold;}
+.italic {font-style: italic;}
+/*a { color: #FFB230; text-decoration: underline;  }*/
+a { color: #FFB331; text-decoration: underline; }
+a:hover, a:focus { color: #224A8F; text-decoration: underline;  }
+
+h1, h2, h3 { color: #224A8F; font-size: 12px; margin: 0px; }
+h1.contentmainheader { padding-bottom: 4px; }
+
+/* ################################################################
+#
+#  MainFrame
+#
+################################################################ */
+
+#mainbox  {width: 992px; background: url(../advanzia_img/background3.jpg); text-align: left; margin-left: auto; margin-right: auto; }
+#mainframe { width: 976px; margin-left: 9px; margin-right: 9px; }
+#leftbox { width: 194px; float: left; }
+#maincontentbox { width: 782px; float: left; }
+#footermainframe { width: 992px; text-align: right; margin-left: auto; margin-right: auto; }
+.neutral { width: 992px; text-align: left; margin-left: auto; margin-right: auto; padding: 20px; }
+
+/* ################################################################
+#
+#  Bannerbereich: Logo und Promotionbanner
+#
+################################################################ */
+
+.logobox { padding-left: 4px; padding-top: 33px; }
+.bannerbox { }
+
+/* ################################################################
+#
+#  BreadcrumbNav
+#
+################################################################ */
+.breadcrumb { text-align: right; padding-bottom: 10px; font-style: italic; }
+
+/* ################################################################
+#
+#  ContentNav
+#
+################################################################ */
+
+#contentnavbox { padding-left: 11px; padding-top: 38px; padding-bottom: 0px; }
+#contentnavbox ul { list-style: none; padding:0px; margin: 0px; }
+
+.advertbox { text-align: center; padding-bottom: 20px; }
+
+/* ----------------------------------------------------------------
+-  ContentNav Level 1
+---------------------------------------------------------------- */
+
+.cnavlevel1 { padding-bottom: 20px; font-size: 12px; }
+a.cnav1  { color: #224A8F; text-decoration: none; font-weight: bold; }
+a.cnav1:hover { color: #FFB331; text-decoration: none; font-weight: bold; }
+
+a.cnav1active  { color: #FFB331; text-decoration: none; font-weight: bold; }
+a.cnav1active:hover { color: #224A8F; text-decoration: none; font-weight: bold; }
+
+/* ----------------------------------------------------------------
+-  ContentNav Level 2
+---------------------------------------------------------------- */
+.cnavlevel2 { padding-top: 6px; padding-left: 12px; background: url(../advanzia_img/icon_nav.gif) no-repeat; background-position: 0px 9px;}
+a.cnav2 { color: #71757D; text-decoration: none; font-weight: bold; padding-left: 0px; }
+a.cnav2:hover { color: #FFB331; text-decoration: none; font-weight: bold; padding-left: 0px; }
+
+a.cnav2active { color: #FFB331; text-decoration: none; font-weight: bold;}
+a.cnav2active:hover { color: #224A8F; text-decoration: none; font-weight: bold;}
+
+/* ----------------------------------------------------------------
+-  ContentNav Level 3
+---------------------------------------------------------------- */
+.cnavlevel3 { padding-top: 6px; }
+a.cnav3 { color: #71757D; text-decoration: none; }
+a.cnav3:hover { color: #FFB331; text-decoration: none; }
+
+a.cnav3active { color: #FFB331; text-decoration: none; }
+a.cnav3active:hover { color: #224A8F; text-decoration: none; }
+
+/* ################################################################
+#
+#  TopNav
+#
+################################################################ */
+.topheadleftbox , .footerleftbox { width: 192px; height: 19px; background: #ffb331; float: left; }
+.topheadrightbox , .footerrightbox { width: 782px; height: 19px; text-align: right; float: left; background: url(../advanzia_img/topheadbackground.jpg) no-repeat; background-color: #ffb331; position: relative; }
+.topheadboxnav , .footerbox { width: 203px; background: #224A8F; position: absolute; right: 0px; height: 17px; padding-top: 2px; font-size: 11px; }
+
+a.topnavlink { color: #ffffff; text-decoration: none; padding-right: 19px; }
+a.topnavlink:hover, a.topnavlink:focus { color: #e8a72f; text-decoration: none; padding-right: 19px; }
+
+a.topnavlinkactive{ color: #e8a72f; text-decoration: none; padding-right: 19px; }
+a.topnavlinkactive:hover, a.topnavlinkactive:focus { color: #e8a72f; text-decoration: none; padding-right: 19px; }
+
+/* ################################################################
+#
+#  FooterNav
+#
+################################################################ */
+#footernavbox { background: #ffffff; text-align: right; padding-top: 10px; padding-bottom: 10px; }
+a.footernavlink { color: #71757D; text-decoration: none; padding-left: 10px; font-weight: bold; background: url(../advanzia_img/icon_nav.gif) no-repeat; background-position: 0px 4px; padding-right: 10px; }
+a.footernavlink:hover, a.footernavlink:focus { color: #e8a72f; text-decoration: none; padding-left: 10px; padding-right: 10px; }
+
+a.footernavlinkactive{ color: #e8a72f; text-decoration: none; padding-left: 10px; font-weight: bold; background: url(../advanzia_img/icon_nav.gif) no-repeat; background-position: 0px 4px; padding-right: 10px; }
+a.footernavlinkactive:hover, a.footernavlinkactive:focus { color: #e8a72f; text-decoration: none; padding-left: 10px; padding-right: 10px; }
+/* ################################################################
+#
+#  Content
+#
+################################################################ */
+.contentbox { width: 559px; padding: 10px; float: left; }
+.contentboxapp { margin-bottom: 10px; }
+.contentinbox { padding-top: 10px; padding-bottom: 12px; color: #71757D; font-size: 12px; }
+.contentinboxapp { padding-top: 10px; padding-bottom: 10px; color: #71757D; font-size: 12px; }
+.contenttextbox { width: 100%; float: left; }
+.contentdividerline { background: url(../advanzia_img/dividerline.gif) repeat-x; }
+.topic { color: #ED1C24; font-weight: bold; }
+/*.error { color: #ED1C24; padding: 5px; }*/
+.error {border: 1px solid #ED1C24; background-color: #FFEEDD; color: #ED1C24;}
+.topicheadline { color: #224A8F; font-weight: bold; }
+.topicheadlinelarge { color: #224A8F; font-weight: bold; font-size: 16px;}
+.picbox { float: left; padding-right: 10px; padding-bottom: 10px; }
+.linkbox { padding-top: 8px; text-align: right; }
+
+.infobox { width: 191px; float: left; padding-left: 4px; padding-right: 8px; }
+.infoinbox { padding-left: 4px; padding-right: 4px; padding-top: 12px; padding-bottom: 10px; border-bottom: 1px solid #B8B8B8; color: #71757D; font-size: 12px; }
+.infotext { padding-top: 4px; }
+.infopicbox { text-align: center; padding-top: 16px; }
+
+/* Includes Banking App Klassen */
+.tableborder { background: #EDEDED; border: 1px solid #B8B8B8; border-collapse: collapse; padding: 0px; }
+.tablebordernobackground { border: 1px solid #B8B8B8; border-collapse: collapse; padding: 0px; }
+.cellborderbottom { border-bottom: 1px solid #B8B8B8; border-collapse: collapse; padding: 5px; }
+.cell { padding: 5px; }
+.cellerror { background: #FFFFFF; padding:0px; height: 0px; margin: 0px; }
+.emptydiv { padding: 0px; height: 0px; display: none; }
+
+.inputtextfield {border: 1px solid #B8B8B8; width: 155px; font-size: 13px; color: #575757; }
+.inputtextfield2 {border: 1px solid #B8B8B8; width: 214px; font-size: 13px; color: #575757; }
+.inputtextfieldshort {border: 1px solid #B8B8B8; width: 30px; font-size: 13px; color: #575757; }
+.inputtextfieldlong {border: 1px solid #B8B8B8; width: 320px; font-size: 13px; color: #575757; }
+.inputtextfield-readonly {color: #888; border: 1px solid #B8B8B8; width: 155px; font-size: 13px; color: #575757; }
+.inputtextfielderror {border: 1px solid #ED1C24; width: 155px; color: #ED1C24; font-size: 13px; }
+.inputtextfieldlongerror {border: 1px solid #ED1C24; width: 320px; font-size: 13px; color: #ED1C24; }
+.inputtextfieldshorterror {border: 1px solid #ED1C24; width: 30px; color: #ED1C24; font-size: 13px; }
+.watermark { color: #c1c1c1; }
+
+.fontheader { color: #FFB331; font-weight: bold; font-size: 17px; }
+.fontsecurecode { color: #FFB331; font-weight: bold; font-size: 26px; letter-spacing: 4px; }
+.cellheader { background: #224A8F; padding: 8px; width: 160px; }
+.cellheadernobackground { padding: 8px; }
+.cellbreadcrumb { width:70%; padding: 0px;}
+.cellborderbottomnopadding {border-bottom: 1px solid #B8B8B8; border-collapse: collapse; padding:0px;}
+.cellbreadcrumblabel { padding-right:8px; }
+.cellbreadcrumbactive { background: #FFB331; border-right: 10px solid #EDEDED; padding-left:8px; padding-right:8px; }
+.cellbreadcrumbinactive { background: #B8B8B8; border-right: 10px solid #EDEDED; padding-left:8px; padding-right:8px; }
+.tablebreadcrumb { height:32px; }
+.celllabel {border-left: 5px solid #224A8F; border-top: 1px solid #B8B8B8; border-bottom: 1px solid #B8B8B8; padding-left: 10px; width: 200px; }
+.celllabel2 {border-left: 5px solid #224A8F; border-top: 1px solid #B8B8B8; border-bottom: 1px solid #B8B8B8; padding-left: 10px; width: 120px; padding-right: 6px; }
+.cellhelp {border-left: 5px solid #224A8F; padding-left: 10px; color: #224A8F; padding-top: 4px; padding-bottom: 4px; width: 160px; }
+.cellinput { padding-right: 6px;}
+.cellinput2 { }
+.celloutput { width: 260px; }
+.topicline  { color: #224A8F; }
+.topicheadlinecelllabel { color: #224A8F; font-weight: bold; border-left: 5px solid #224A8F; border-top: 1px solid #B8B8B8; border-bottom: 1px solid #B8B8B8; padding-left: 10px; padding-top: 2px; padding-bottom: 3px; padding-right: 6px; }
+.anchor {color: #FFB331; text-decoration: underline; cursor: hand; background: url(../advanzia_img/icon_nav.gif) no-repeat; background-position: 0px 5px; padding-left: 10px; }
+.anchorlink { background: url(../advanzia_img/icon_nav.gif) no-repeat; background-position: 0px 5px; padding-left: 10px; }
+.dividerline { background: #B8B8B8; height: 1px; margin-right: 7px; margin-top: 10px; margin-bottom: 10px; }
+a.errorLink  { color: #ED1C24; text-decoration: underline; font-weight: bold; }
+a.errorLink:hover { color: #FFB331; text-decoration: underline; font-weight: bold; }
+/* ################################################################
+#
+#  Invoice
+#
+################################################################ */
+.invoicecontainer { width: 544px; padding-left: 5px; padding-right: 5px; }
+.invoiceboxheaderleft { width: 384px; padding-bottom: 20px; float: left; } 
+.invoiceboxheaderright { padding-bottom: 20px; text-align: right; width: 160px; float: left;} 
+.invoicetable { width: 100%; border: 0px; }
+.invoicetablesummary { width: 100%; border: 1px solid #808080; }
+th.dataheadline1, th.dataheadline2, th.dataheadline3, td.dataheadline1, td.dataheadline2, td.dataheadline3 { font-weight: bold; vertical-align: top; padding: 2px; }
+th.dataheadline1, td.dataheadline1  { width: 100px; text-align: left; }
+th.dataheadline2, td.dataheadline2 { text-align: left; }
+th.dataheadline3  { text-align: right; width: 120px; }
+td.dataheadline3 { text-align: right; }
+.datacol, .datacolgrey, .datacoldarkgrey { vertical-align: top; padding: 2px; }
+.datacol2, .datacol2grey { text-align: right; vertical-align: top; padding: 2px; }
+.datacolgrey, .datacol2grey { background-color: #EDEDED; border-bottom: 1px solid #ffffff; }
+.datacoldarkgrey, .datacol2darkgrey { background-color: #E7E7DE; border-bottom: 1px solid #ffffff; }
+.datacol2darkgrey  { text-align: right; vertical-align: top; padding: 2px; font-weight: bold; }
+.datacolcenter { text-align: center; vertical-align: top; padding: 2px; border-right: 1px solid #808080; }
+.datacolcenterright { text-align: center; vertical-align: top; padding: 2px; }
+.invoicecol1 { width: 100px; }
+.invoicecol2 { width: 180px; }
+
+/* ################################################################
+#
+#  Editor
+#
+################################################################ */
+.left { text-align: left; }
+.right { text-align: right; }
+.contentboxhighlight { background-color: #EDEDED; color: #a1a1a1; font-weight: bold; font-size: 16px; padding: 2px; margin-bottom: 10px; }
+.contentboxhighlightsmall { background-color: #F3F3F3; padding: 2px; margin-bottom: 1px; color: #A6A6A6; }
+.contentinboxplain { padding-top: 10px; padding-bottom: 12px; color: #71757D; font-size: 12px; width: 559px; }
+
+/* JQuery Slideshow 
+.slideshow { }
+.slideshow img { border: 1px solid #ccc; }
+*/
+.read {border: 1px solid #55FF55; }
+.inputtextfield_email { display:none;  }
+
+.input_sendinfo {height: 30px; width:100%; background-image:url('../advanzia_img/sendinfo.jpg'); background-repeat:no-repeat; background-position: 10px; margin-top: 10px;}
+.inputtextbox, .inputlistbox { color: #131313; background-color: #EEEEEE; font-size: 12px; margin: 0 6px 5px 0px; padding: 2px; }
+.inputtextbox { width: 180px; }
+.inputlistbox { width: 187px; }
+.mktPanel { padding-bottom: 8px; width: 100%; }
+.ppiPanel { width: 100%; border: 1px solid #7f7f7f; padding: 3px;}
+.mktCheckbox { padding-left: 3px; }
+.mktLabel { padding-left: 9px; font-size: 12px; padding-bottom: 4px;}
+.mktLabel2 { padding-left: 4px; font-size: 10px; padding-bottom: 4px;}
+
+label { font-weight: bold; padding-left: 5px; }
+.formcontainer { padding: 14px 10px 10px 10px; height: 600px; /*background: url(../advanzia_img/bild2_antrag.gif); background-repeat:no-repeat; background-position: 6px 9px; */}
+.formcontainer select, .formcontainer textarea, .formcontainer input { font-size: 12px; font-family: Arial,Helvetica, Sans-Serif; color: #333; }
+.errormsg_active {visibility:visible; color: #ED1C24; margin-left: 140px; }
+.w50 { width: 50% }
+
+.slideshow  img{ height: auto; }
+
+.infobox  .advertbox { margin-top: 14px; }
+
+.inviteFriendsMessageTable { margin-top: 15px; }
+.inviteFriendsMessage { margin-right: 10px;}
+.hidden {display: none}
+.importantMessage { margin-top: 5px; margin-bottom: 10px; font-weight: bold; font-size: 15px;}
+.remainingTime , .remainingTime_warn { padding: 3px; border: 2px solid #ff0000; margin-bottom: 10px; margin-top: 5px;  }
+.remainingTime_warn { border: 2px solid #ff0000; background-color: #FFEEDD  }
+

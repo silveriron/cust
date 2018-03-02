@@ -1,0 +1,59 @@
+/*doNotCompress*/
+/* Brotkrumen */
+#breadcrumbs {  
+	height:2em !important;
+	margin:0 0 0 0.75em;	
+	font-size: 1.2em;
+	background-color: #FFF;
+	padding:0.1em 0 0em 0em;	
+	width: 100%;		
+}
+
+#breadcrumbs a {  	
+	text-decoration:underline;	
+}
+
+#breadcrumbs img {
+    padding: 0 .5em 0 .5em;
+}
+
+* html #breadcrumbs {
+	/*padding:1em 0 0.8em 0em;*/
+}
+
+.if5 .if5_content {
+    padding-top: 1em !important;
+}
+
+/* Behebt den Anzeigefehler innerhalb von Containern. Bisher wurden Grafiken 9 Pixel nach rechts verschoben dargestellt 
+.if5 .clip img {
+margin-left:-0px !important;
+
+}
+*/
+
+/*rückt die BLZ in der Metanav weiter nach links wegen zusätzlicher BIC */
+.if5 .metanavi_blz p.blz {
+padding: 0.3em 0 0 10px !important;
+}
+
+/* Anpassung OPH */
+.oph_contact .chat_img {position:absolute;top:5px;left:200px;}
+.oph_contact .chat_topline {font-size:12px;position:absolute;top:5px;left:240px;width:150px;height:45px;color:#fff;}
+.oph_contact .chat_bottomline {font-size:20px;position:absolute;top:20px;left:240px;height:45px;}
+.oph_contact .chat_link {text-decoration:none;color:#fff;}
+.oph_contact .kontakt_list {display:block; position:absolute;top:0px;left:330px !important;width:280px !important;height:40px;}
+.oph_contact li{position:relative;width:120px !important;height:20px;float:left;background-repeat:no-repeat; padding-left:20px;color: #ffffff;}
+
+/* Chat Container Kontakt */
+.if5 .if5_kontakt .chatberatung {border-top: 1px solid #e9e9e9;width: 15.3em;margin: .5em 0 0 -1em;}
+.if5 .if5_kontakt .chatberatung h5.hchat {background: url(../sparkasse_img/if5_container_beratung_chat.png) no-repeat left top;height: 1.7em;width: 10em;padding: 14px 0 0 34px;font-weight: bold;margin: .3em 0 0 0;}
+.if5 .if5_kontakt .chatberatung ul.kontakt_list {padding: 0;margin: 0 0 0.5em 1em;}
+.if5 .if5_kontakt .chatberatung ul.kontakt_list li {margin: .1em 0 0 0;padding: .2em 0 0 2em;background-repeat: no-repeat;color: #666666;}
+.if5 .if5_kontakt .chatberatung ul.kontakt_list li.kontakt_berater_aktiv {background-image: url(../sparkasse_img/container_kontakt_berater_aktiv.gif);}
+.if5 .if5_kontakt .chatberatung ul.kontakt_list li.kontakt_berater_inaktiv {background-image: url(../sparkasse_img/container_kontakt_berater_inaktiv.gif);}
+.if5 .if5_kontakt .chatberatung .hintbox {background:#fff;border:1px solid #c6c6c6;border-radius:4px;box-shadow:0 0 10px rgba(0,0,0,0.25);display:none;font-size:11px;left:0px;top:40px;line-height:1.25;padding:10px;position: absolute;text-align:left;width:120px;z-index:15; color:#000;}
+
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_berater_aktiv {background-image: url(../sparkasse_img/container_kontakt_berater_aktiv.gif);}
+.if5 .if5_kontakt ul.kontakt_list li.kontakt_berater_inaktiv {background-image: url(../sparkasse_img/container_kontakt_berater_inaktiv.gif);}
+.if5 .if5_kontakt .hintbox {background:#fff;border:1px solid #c6c6c6;border-radius:4px;box-shadow:0 0 10px rgba(0,0,0,0.25);display:none;font-size:11px;left:0px;top:40px;line-height:1.25;padding:10px;position: absolute;text-align:left;width:120px;z-index:15; color:#000;}

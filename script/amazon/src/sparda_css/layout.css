@@ -1,0 +1,1757 @@
+ b, strong { font-weight: bold; }
+#versteckt,.unsichtbar,.hiddenStandard,.hiddenStandard *,.guide { position: absolute; display: block; top: -10000px; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+textarea { resize: none; }
+.clearer { clear: both; }
+.hide { display: block; position: absolute; top: -10000px; left: -10000px; font-size: 0.1em; width: 1px; height: 1px; }
+a { color: #2a3d5c; text-decoration: none; outline: none; }
+a:hover { text-decoration: none; }
+a:focus { outline: none; }
+p.serviceHotline { font-size: 22px; margin-top: 10px; }
+p.infoFoot { font-size: 11px; line-height: 14px; font-style: italic; margin-top: 10px; }
+body { background: #c2cad4 url('../img/bg-content.png') 0 102px repeat-x; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #2a3d5c; }
+body,table,tr,td,p,div,h1,h2,h3,h4,h5,h6,ul,ol,li,fieldset,form,dl,dt,dd { margin: 0; padding: 0; }
+img,fieldset { border: none; }
+input,select,textarea { font-family: Arial, Helvetica, sans-serif; color: #196AA6; font-size: 13px; border: 1px solid #000000; }
+input[type=button],input[type=image] { border: none; outline: none; }
+input[disabled],select[disabled],textarea[disabled] { color: black; background-color: #D7DEE5; border: 1px solid #AEB9C5 !important; text-shadow: none; }
+input.rich-combobox-font-disabled { border: none !important; }
+#bankingBox .euroBox .disabledInput, #bankingBox .textBox .disabledInput, #bankingBox .searchBox .disabledInput, #serviceBox .textBox .disabledInput { height: 18px; padding: 1px 3px; font-size: 13px; }
+.pseudoListRow { padding: 8px 0; }
+#outer { background: url('../img/bg-kopf.png') 0 0 repeat-x; }
+#inner { width: 981px; margin: 0 auto; }
+#page { text-align: left; }
+#top { height: 102px; color: #2e3744; }
+#top #logo,#top #branding,#top #panel { float: left; }
+#top #logo { margin-left: 2px; margin-top: 16px; width: 231px; }
+#top #branding { font-size: 14px; width: 303px; max-height: 91px; line-height: 16px; margin-bottom: 5px; }
+#top #branding.notLoggedIn { width: 400px; margin-top: 10px; }
+#top #panel { font-size: 14px; width: 422px; }
+#top hr { color: #D4D5D9; background-color: #D4D5D9; border-color: #E4E6EA white #F9F9FB; border-left: 0 solid white; border-right: 0 solid white; border-style: solid; border-width: 1px 0; height: 3px; margin: 1px 8px 0 3px; }
+#institute { margin-top: 10px; margin-bottom: 5px; height: 19px; overflow: hidden; }
+#institute .blz { font-weight: bold; }
+#branding .label { display: block; width: 100px; float: left; font-weight: bold; }
+#branding #bic .label { font-weight: normal; }
+.headerButton { padding: 9px 0; margin-top: -9px; }
+#panelNav { height: 35px; }
+.panelBackground { background: url('../sparda_img/bg-kopfpanel.png') 0 0 no-repeat; position: absolute; width: 438px; height: 40px; }
+.panelBackground.red { background-image: url('../sparda_img/bg-kopfpanel-countdown.png'); display: none; }
+#panelNavContent { height: 35px; position: absolute; z-index: 1; }
+#counter,#links,#logout { padding-top: 9px; float: left; width: 100px; }
+#logout img { margin-left: 10px; }
+#timerOpak { background: url('../sparda_img/status100.png') 0 0 no-repeat; position: absolute; width: 15px; height: 17px; }
+#timerOpak.p80 { background-image: url('../sparda_img/status80.png'); }
+#timerOpak.p60 { background-image: url('../sparda_img/status60.png'); }
+#timerOpak.p40 { background-image: url('../sparda_img/status40.png'); }
+#timerOpak.p20 { background-image: url('../sparda_img/status40.png'); }
+#timerRed { background: url('../sparda_img/status-red.png') 0 0 no-repeat; display: none; position: absolute; width: 15px; height: 17px; }
+#counter { width: 78px; margin-top: 3px; }
+#counter > .bars { margin-top: 1px; margin-left: 15px; color: #283c5a; float: left; }
+#sessioncounter { float: left; margin-left: 21px; font-size: 12px; }
+#links { width: 245px; }
+#links > a { display: block; float: left; margin-right: 5px; }
+#lastLogin { float: right; margin-top: 37px; margin-right: 5px; }
+#countdown { top: -14px; left: 12px; position: relative; width: 14px; height: 0; background-color: #FFF; }
+#top .info { font-size: 11px; line-height: 13px; }
+#top #branding .value { position: relative; top: 0; }
+#dimm { position: absolute; margin-top: 2px; margin-left: 4px; z-index: 50; background: url('../sparda_img/opacity.png') 0 0 no-repeat; width: 230px; height: 245px; }
+#globalMsg { position: absolute; left: 0; top: 102px; width: 100%; height: 23px; overflow: hidden; background: url('../sparda_img/bg-globalMsg.png') left top repeat-x; text-align: left; }
+#globalMsg #msg { width: 981px; margin: 0 auto 0 auto; position: relative; }
+#globalMsg,#globalMsg a { color: #fff; font-size: 13px; }
+#globalMsg .text,#globalMsg .more { float: left; margin-top: 3px; }
+#globalMsg .text { margin-left: 233px; width: 545px; }
+#globalMsg .more a { padding-left: 16px; background: url('../sparda_img/bg-globalMsg-moreLink.png') left 3px no-repeat; }
+#globalMsg .close { background: url('../sparda_img/btn-close.png') center center no-repeat; cursor: pointer; width: 44px; height: 44px; margin: -11px -6px 0 0; position: absolute; right: 0; }
+#stage #left { float: left; width: 233px; height: 550px; }
+#stage #left .teaser { margin-top: 5px; width: 236px; height: 224px; overflow: hidden; background: url('../sparda_img/bg-teaser.png') 0 0 no-repeat; }
+#stage #left .last { margin-top: 9px; margin-bottom: 4px; }
+#stage #left .teaser .item { padding: 2px 3px 4px 3px; }
+#stage #left .teaser .item .text { padding: 0 20px 0 13px; line-height: 17px; height: 72px; margin-top: 6px; margin-bottom: 5px; overflow: hidden; }
+#stage #left .teaser .item .link { text-align: right; padding-top: 1px; padding-right: 6px; }
+#stage #left .carousel { position: relative; }
+#stage #left .container { overflow: hidden; float: left; position: relative; }
+#stage #left .move { height: 1000000px; padding-top: 0; overflow: hidden; }
+#stage #left .backwardButton { cursor: pointer; margin-left: 100px; float: left; border: none; height: 19px; width: 35px; background: transparent url('/portalstatic/spm/gfx/components/carousel/up.png') 0 0 no-repeat; }
+#stage #left .forwardButton { cursor: pointer; margin-left: 100px; float: left; border: none; height: 20px; width: 35px; background: transparent url('/portalstatic/spm/gfx/components/carousel/down.png') 0 0 no-repeat; }
+#stage #main { width: 740px; overflow: hidden; height: auto; background: url('../sparda_img/bg-main.png') 3px 53px repeat-x; }
+#modul-1-1 { margin-top: 28px; position: relative; width: 705px; }
+#modul-1-1 .item { padding: 1px 3px 2px 3px; }
+#modul-1-1 .headline { background: url('../sparda_img/bg-headline-1-1.png') 3px 0 no-repeat; color: #FFF; font-weight: bold; height: 25px; }
+.modul-1-1-start-graph { background: transparent url(../sparda_img/bg-modul-1-1-graphikview.png) no-repeat scroll 0 bottom; width: 705px; height: 476px; }
+#modul-1-2 { width: 714px; }
+.modul-1-2-outer { width: 347px; margin: 10px 9px 0 1px; float: left; }
+.modul-1-2 { width: 347px; margin: 0 9px 0 0; float: left; min-height: 39px; }
+.modul-1-2 .item { padding: 2px 3px 4px 3px; background: url('../sparda_img/bg-modul-1-2.png') 0 -1px no-repeat; }
+.modul-1-2 .toggleArrow { display: block; float: left; width: 28px; height: 25px; background: url('../sparda_img/sprite-navigation.png') -81px -212px no-repeat; cursor: pointer; margin-left: 2px; }
+.modul-1-2.open .toggleArrow { background-position: -81px -237px; }
+.modul-1-2 .toggleArrow.hidden,.modul-1-2.open .toggleArrow.hidden { background: none; cursor: default; }
+.modul-1-2 .headline { background: url('../sparda_img/bg-headline-1-2.png') 2px 0 no-repeat; font-weight: bold; height: 25px; position: relative; }
+.modul-1-2 .headline .text { float: left; margin-top: 5px; margin-left: 10px; color: #FFF; }
+.modul-1-2 .expander { float: right; margin-top: -19px; margin-right: 8px; }
+.modul-1-2 a { cursor: pointer; }
+.modul-1-2 .itemCount,.modul-1-2 .kachelCount { background: url('../sparda_img/sprite-navigation.png') -176px -238px no-repeat; height: 17px; width: 13px; position: absolute; margin: -12px 0 0 -18px; font-size: 12px; font-weight: bold; color: #FFF; text-align: left; padding-left: 4px; }
+.modul-1-2 .itemCount.wide,.modul-1-2 .kachelCount.wide { background-position: -170px -217px; width: 19px; }
+.modul-1-2 .kachelCount { margin: -3px 0 0 -4px; }
+.modul-1-2.open .kachelCount { display: none; }
+.headline h1 { font-size: 12px; padding: 5px 10px 0 18px; }
+.modul-1-2 .modulContent { background: url('../sparda_img/bg-modul-1-2-content.png') 0 -1px repeat-y; padding: 5px 10px 0 10px; display: none; }
+.modul-1-2.open .modulContent,.defaultCompact .modul-1-2 .modulContent { display: block; }
+.defaultCompact .modul-1-2 .modulContent { min-height: 74px; }
+.modul-1-2 .modulFoot { height: 11px; background: url('../sparda_img/bg-modul-1-2-foot.png') 0 -1px no-repeat; margin-bottom: 10px; display: none; }
+.modul-1-2.open .modulFoot,.defaultCompact .modul-1-2 .modulFoot { display: block; }
+#footer { width: 972px; height: 80px; background: url('../sparda_img/spiegelung-start.png') 2px 0 no-repeat; margin-top: -13px; }
+#navi { width: 231px; height: 250px; margin-top: 28px; margin-left: 3px; position: relative; z-index: 20; }
+#navBox > .item { background: url('../sparda_img/sprite-navigation.png') -3px -3px no-repeat; position: relative; display: block; width: 166px; height: 15px; padding: 5px 0 6px 28px; color: #FFF; font-weight: bold; }
+#navBox > .item > .pfeil { background: url('../sparda_img/sprite-navigation.png') -123px -222px no-repeat; position: absolute; width: 30px; height: 17px; top: 4px; right: 10px; }
+#navBox > .item > .countMails { background: url('../sparda_img/sprite-navigation.png') -12px -222px no-repeat; height: 17px; width: 13px; position: absolute; padding-left: 4px; left: -6px; top: -7px; }
+#navBox > .item > .countMails.width2 { background-position: -49px -222px; width: 23px; padding-left: 3px; }
+#navBox > .toggle { background: url('../sparda_img/sprite-navigation.png') -81px -212px no-repeat; display: block; width: 42px; height: 24px; cursor: pointer; position: absolute; z-index: 1; }
+#navBox > .toggle.active { background-position: -81px -237px; }
+#navBox > .spacer { height: 8px; width: 10px; }
+#navBox > .subnavi > .spacer { height: 11px; width: 10px; }
+#navBox > .subnavi { background: url('../sparda_img/sprite-navigation.png') -5px bottom no-repeat; font-weight: bold; display: none; overflow: hidden; padding: 1px; width: 192px; margin-top: -1px; }
+#navBox > .subnavi.active { display: block; }
+#navBox > .subnavi > a { background: url('../sparda_img/sprite-navigation.png') -12px -74px no-repeat; display: block; padding: 6px 0 6px 10px; margin: 7px 0 0 6px; color: #2e3744; }
+#navBox > .subnavi > .chosen { background-position: -12px -185px; color: #fff; }
+#navBox > .subnavi > .preview { background-position: -6px -106px; padding-left: 11px; padding-top: 11px; margin: 2px 0 0 0; }
+#navBox > .subnavi > .preview2 { background-position: -6px -143px; padding-left: 12px; }
+#navBox > .subnavi > .preview > .countMails { float: left; position: relative; top: -8px; left: -4px; margin-right: 5px; overflow: hidden; display: block; color: #fff; }
+#navBox > .subnavi > .preview2 > .countMails { left: -6px; margin-right: 3px; }
+.inputHint { color: #A9A9A9; font-style: italic; }
+.inputHintOverlay { color: #A9A9A9; font-style: italic; font-size: 13px; position: absolute; padding: 3px 0 0 5px; display: none; cursor: text; }
+#beispielrechnung #navi .subnavi { width: 195px; }
+#beispielrechnung #navi .item a { background: url('../sparda_img/baufi-mainnavilink.png') -2px 0 no-repeat; }
+#beispielrechnung #navi a.subnavilink { background: url('../sparda_img/sprite-navigation.png') -81px -212px no-repeat; }
+#beispielrechnung #navi .mainnavilink strong { margin-bottom: 0; width: 162px; float: none; }
+#beispielrechnung #navi a.subnavilink { position: absolute; margin-top: 3px; }
+.row { height: 15px; overflow: hidden; clear: both; margin: 1px 3px 3px 7px; }
+.col1,.col2,.col3 { display: block; float: left; width: 80px; overflow: hidden; }
+.col2 { width: 120px; }
+.thead,.new { font-weight: bold; }
+#modul { margin-bottom: 0; margin-top: 28px; width: 740px; }
+#modul .headline { background: url('../sparda_img/bg-headline-1-1-module.png') 0 0 no-repeat; color: #FFF; font-weight: bold; height: 25px; }
+#main .modulBackground { background: transparent url(../sparda_img/bg-main.png) no-repeat scroll 3px 25px; overflow: visible; min-height: 516px; }
+#modul .text { line-height: 18px; }
+.iconsprites.modul-help { background-position: -64px -280px; height: 38px; width: 38px; position: absolute; top: -6px; right: 10px; }
+.iconsprites.modul-graph { background-position: -51px -383px; height: 38px; width: 38px; position: absolute; top: -6px; right: 55px; }
+.iconsprites.printSmall { background-position: -1px -383px; height: 38px; width: 38px; position: absolute; top: -6px; right: 100px; }
+.iconsprites.modul-liste { background-position: -1px -422px; position: absolute; height: 38px; width: 38px; top: -6px; right: 52px; }
+#buehneOuter { position: relative; border-left: 100px solid transparent; margin-top: 16px; height: 406px; width: 537px; float: left; background-repeat: no-repeat; }
+#buehneInner { padding-left: 3px; padding-top: 2px; position: relative; }
+#buehneShadow { position: absolute; width: 531px; height: 80px; margin-top: -1px; margin-left: 103px; background: url('../sparda_img/demo/bg-spiegelung-default.png') left top no-repeat; }
+#clips { width: 21px; margin-left: -3px; float: left; padding-top: 59px; }
+#clips ul li { cursor: pointer; }
+#bHideSteps { text-align: center; height: 34px; padding-top: 16px; left: 8px; position: absolute; width: 522px; display: none; background-color: white; z-index: 99999; }
+#bHideSteps img { margin-top: 17px; }
+.actionPanel #bHideSteps { width: 692px; height: 32px; margin-top: 3px; padding-top: 22px; }
+.actionPanel #bHideSteps.tall { height: 65px; padding-top: 55px; }
+.faelligkeitForm #bHideSteps { top: 0; left: 220px; width: 200px; height: 20px; padding-top: 3px; }
+.boxProdukteStart #clips { padding-top: 188px; }
+.standardBgImg #bTools { display: none; }
+#main .standardBgImg #bInfo { top: 280px; }
+#main .boxProdukteStart #bInfo { top: 283px; }
+#main .boxProdukte #bInfo { top: 413px; }
+#main .boxProdukteStart #bSteps { top: 283px; }
+#main .boxProdukte #bSteps { top: 413px; }
+.boxProzessConfig #bCancel { width: 37px; height: 37px; position: absolute; left: 28px; top: 354px; display: block; }
+.boxProzessConfig #bAccept { width: 62px; height: 38px; position: absolute; left: 380px; top: 354px; }
+#uebersicht { font-size: 16px; font-weight: bold; color: #FFFFFF; left: 55px; top: 40px; position: relative; margin-bottom: -20px; }
+.boxProzessUebersicht #buehneOuter { border-left: none; margin-top: 50px; margin-left: 0; padding-top: 20px; padding-left: 20px; height: 402px; width: 710px; background-image: none; overflow: hidden; }
+.boxProzessUebersicht #buehneInner { }
+.boxProzessUebersicht #bShadow { background: none; }
+.boxProdukteUebersicht #buehneOuter { border-left: 49px solid transparent; height: 438px; width: 636px; background-image: url('../sparda_img/bg-buehne-produktabschluss.png'); }
+.boxProdukteUebersicht #bShadow { margin-left: 51px; width: 630px; background-image: url('../sparda_img/bg-spiegelung-boxProdukteUebersicht.png'); }
+.boxProdukteUebersicht #bDimm { background: transparent url('../sparda_img/bg-dimm-boxProdukteUebersicht.png') left top no-repeat; }
+.boxProdukteStart #buehneOuter { border-left: 105px solid transparent; margin-top: 139px; height: 335px; background-image: url('../sparda_img/bg-buehne-vertrieb.png'); }
+.boxProdukteStart #bShadow { margin-left: 106px; width: 534px; background-image: url('../sparda_img/bg-spiegelung-boxProdukteStart.png'); }
+.boxProdukteStart #bDimm { background: transparent url('../sparda_img/bg-dimm-boxProdukteStart.png') left top no-repeat; top: -6px; height: 340px; width: 538px; margin-left: -3px; }
+.boxProdukteStart #bBuehneHgImg #bDimm { top: -49px; margin-left: -11px; }
+.boxProdukteStart #bHideSteps { top: 280px; }
+.boxProzessAbschluss #bHideSteps { height: 25px; }
+.boxProdukte #buehneOuter { border-left: 105px solid transparent; margin-top: 17px; height: 463px; width: 539px; background-image: url('../sparda_img/bg-buehne-kap415.png'); }
+.boxProdukte #bShadow { margin-left: 106px; width: 534px; background-image: url('../sparda_img/bg-spiegelung-boxProdukte.png'); }
+.boxProdukte #bHideSteps { top: 406px; }
+.boxProdukte #bDimm { background: transparent url('../sparda_img/bg-dimm-boxProdukte.png') left top no-repeat; height: 462px; width: 538px; margin-left: -3px; top: -5px; }
+.boxProdukte #bBuehneHgImg #bDimm { top: -45px; margin-left: -7px; }
+.boxProdukteAbschluss #buehneOuter { border-left: 105px solid transparent; margin-top: 13px; height: 462px; width: 538px; background-image: url('../sparda_img/bg-buehne-kap418.png'); }
+.boxProdukteAbschluss #bShadow { margin-left: 106px; width: 534px; background-image: url('../sparda_img/bg-spiegelung-boxProdukteAbschluss.png'); }
+.boxProdukteAbschluss #bDimm { background: transparent url('../sparda_img/bg-dimm-boxProdukteAbschluss.png') left top no-repeat; }
+.boxProzess #buehneOuter { width: 538px; height: 404px; border-left: 105px solid transparent; margin-top: 17px; background-image: url('../sparda_img/bg-buehne-kap051.png'); }
+.boxProzess #bShadow { margin-left: 106px; width: 535px; background-image: url('../sparda_img/bg-spiegelung-boxProzess.png'); }
+.boxProzess #bHideSteps { top: 348px; }
+.boxProzess #bDimm { background: transparent url('../sparda_img/bg-dimm-boxProzess.png') left top no-repeat; height: 404px; width: 538px; margin-left: 24px; top: 2px; }
+.boxProzess #bForm #bDimm { top: -41px; margin-left: 17px; }
+.boxProzessAbschluss #buehneOuter { border-left: 105px solid transparent; margin-top: 17px; height: 404px; width: 538px; background-image: url('../sparda_img/bg-buehne-kap2110.png'); }
+.boxProzessAbschluss #bShadow { margin-left: 107px; background-image: url('../sparda_img/bg-spiegelung-boxProzessAbschluss.png'); }
+.boxProzessAbschluss #bDimm { background: transparent url('../sparda_img/bg-dimm-boxProzessAbschluss.png') left top no-repeat; top: 0; margin-left: 20px; }
+.boxProzessConfig #buehneOuter { height: 404px; background-image: url('../sparda_img/bg-buehne-back-sp.png'); }
+.boxProzessConfig #bShadow { margin-left: 102px; background-image: url('../sparda_img/bg-spiegelung-boxProzessConfig.png'); }
+.boxProzessConfig #bDimm { background: transparent url('../sparda_img/bg-dimm-boxProzessConfig.png') left top no-repeat; }
+.boxVertrieb #buehneOuter { border-left: 32px solid transparent; margin-bottom: 20px; padding-bottom: 20px; margin-top: 170px; height: auto; width: 684px; background: url('../sparda_img/bg-buehne-kap822-bottom.png') bottom left no-repeat; }
+.boxVertrieb #buehneInner { height: auto; min-height: 10px; background: url('../sparda_img/bg-buehne-kap822-top.png') top left no-repeat; }
+.boxVertrieb #bDimm { background: transparent url('../sparda_img/bg-dimm-boxVertrieb.png') left top no-repeat; width: 684px; height: 309px; top: -15px; margin-left: -5px; }
+.boxFavorits #buehneOuter { border-left-width: 55px; margin-bottom: 0; padding-bottom: 20px; margin-top: 83px; height: 305px; width: 635px; background: url('../sparda_img/bg-buehne-favorits.png') bottom left no-repeat; }
+.boxFavorits #bDimm { background: transparent url('../sparda_img/bg-dimm-poxProzess.png') left top no-repeat; }
+.boxProzessTabs #buehneOuter { width: 538px; height: 404px; border-left: 105px solid transparent; margin-top: 17px; background-image: url('../sparda_img/bg-buehne-kap061.png'); }
+.boxProzessTabs #bForm { left: 7px; top: 83px; height: 260px; background-image: url('../sparda_img/bg-form-kap061.png'); }
+.boxProzessTabs #bShadow { margin-left: 106px; width: 534px; background-image: url('../sparda_img/bg-spiegelung-kap061.png'); }
+.boxProzessTabs #bHideSteps { top: 348px; }
+.boxProzessTabs #bDimm { background: transparent url('../sparda_img/bg-dimm-boxProzess.png') left top no-repeat; top: 0; margin-left: 20px; }
+#clipInfo,#clipHelp { background-position: right top; background-repeat: no-repeat; width: 23px; height: 46px; }
+#clipInfo { background-image: url('../sparda_img/bg-clip-info.png'); }
+#clipHelp { background-image: url('../sparda_img/bg-clip-help.png'); }
+.clipOpen { background-image: url('../sparda_img/bg-clip-close.png') !important; }
+#clipInfo a,#clipHelp a { display: block; padding: 14px 0 0 10px; height: 25px; color: #2e3744; font-weight: bold; font-size: 14px; }
+#clipInfoContent,#clipHelpContent { margin-top: -2px; width: 0; background: url('../sparda_img/bg-clip-content.png') -157px bottom no-repeat; float: left; height: 140px; padding: 5px 0 5px 0; color: #2e3744; overflow: hidden; }
+#clipHelpContent.faq { background: url('../sparda_img/bg-clip-content2.png') -157px bottom no-repeat; height: 280px; display: none; }
+#clipHelpContent.faq h3 { font-size: 12px; margin-bottom: 3px; }
+#clipHelpContent.faq .upArrow { background: url('../sparda_img/scrollpfeil-up.png') no-repeat; width: 35px; height: 20px; margin-left: 60px; cursor: pointer; }
+#clipHelpContent.faq .downArrow { background: url('../sparda_img/scrollpfeil-down.png') no-repeat; width: 35px; height: 20px; margin-left: 60px; cursor: pointer; }
+#clipHelpContent.faq .upArrow.invisible { background: none; cursor: auto; }
+#clipHelpContent.faq .downArrow.invisible { background: none; cursor: auto; }
+#clipHelpContent.faq .slideWindow { height: 240px; overflow: hidden; word-wrap: break-word; }
+#clipHelpContent.faq .list li { font-weight: normal; }
+#clipInfoContent .ktnr,#clipInfoContent .saldo,#clipInfoContent .stand,#clipInfoContent .ktnrValue,#clipInfoContent .saldoValue,#clipInfoContent .standValue { padding-left: 10px; }
+#clipInfoContent .ktnr,#clipInfoContent .saldo,#clipInfoContent .stand { font-weight: bold; padding-top: 5px; }
+#clipInfoContent .ktnrValue,#clipInfoContent .saldoValue,#clipInfoContent .standValue { padding-top: 1px; }
+#clipHelpContent .list { padding: 0 5px 5px 10px; }
+#clipHelpContent .list ul { list-style-type: none; }
+#clipHelpContent .list li { font-weight: bold; padding-left: 10px; background: url('../sparda_img/listbullet.png') 0 4px no-repeat; line-height: 18px; margin-bottom: 5px; }
+#bClose { width: 18px; height: 18px; position: absolute; left: 510px; top: 9px; cursor: pointer; }
+#bClose > img { padding: 10px; margin: -10px 0 0 -10px; }
+#bTools { width: 18px; height: 18px; position: absolute; left: 486px; top: 9px; }
+#bClose a,#bTools a { display: block; width: 18px; height: 18px; }
+#bInfo { width: 37px; height: 37px; }
+#main #bInfo { position: absolute; left: 28px; top: 354px; }
+#main #bInfo #itan,#main #bInfo #atcTan { margin-top: 6px; width: 360px; white-space: nowrap; }
+#itan > div,#itan > a { display: inline-block; margin-right: 10px; zoom: 1; *display: inline; }
+#keypadIconSpan img { vertical-align: top; margin-top: 1px; margin-left: 3px; }
+#bInfo #itan .textBox { width: 500px; }
+#bInfo #itan .textBox .prelabel,#bInfo #itan .textBox .applabel { float: left; width: 69px; padding-top: 3px; }
+#bInfo #itan .textBox .formField { float: left; margin-right: 10px; }
+#bInfo #itan .textBox .formField input { width: 68px; height: 18px; color: #4788b8; text-align: right; }
+#bSteps { width: 62px; height: 38px; }
+#bSteps .back { display: block; width: 29px; height: 37px; }
+#bSteps .backonhold { }
+#bSteps .forward { display: block; width: 29px; height: 37px; }
+#bSteps .forwardonhold { }
+#main #bSteps { position: absolute; left: 447px; top: 354px; }
+#main #bSteps .back { position: absolute; top: 0; left: 0; }
+#main #bSteps .backonhold { }
+#main #bSteps .forward { position: absolute; top: 0; left: 33px; }
+#main #bSteps .forwardonhold { }
+#bFunctions { position: absolute; width: 100px; left: 413px; top: 63px; z-index: 20; }
+#bFunctions a { display: block; float: left; width: 37px; height: 37px; margin-left: 10px; overflow: hidden; }
+#bFunctions a.print { background: url('../sparda_img/drucken.png') left top no-repeat; }
+#bFunctions a.delete { background: url('../sparda_img/loeschen.png') left top no-repeat; }
+#bMoreImg { position: absolute; z-index: 10; left: 1px; top: 254px; height: 147px; width: 534px; overflow: hidden; text-align: right; }
+.boxProdukteAbschluss #bMoreImg { top: 312px; }
+#bMoreImg a img { margin: 114px 10px 0 0; }
+#bButtons { position: absolute; width: 537px; height: 59px; margin-left: -3px; }
+#bButtons .left { float: left; width: 49%; height: 59px; margin: 0; }
+#bButtons .left .buttons { margin-left: 28px; padding-top: 10px; }
+#bButtons .right { float: right; width: 49%; height: 59px; text-align: right; }
+#bButtons .right .buttons { margin-right: 28px; padding-top: 10px; }
+#bShadow { position: relative; top: -2px; clear: both; width: 531px; height: 80px; margin-left: 103px; background: url('../sparda_img/bg-spiegelung-basis.png') left top no-repeat; }
+#bDimm { background: none; position: absolute; width: 508px; height: 390px; z-index: 30; margin-top: 5px; margin-left: 13px; top: -41px; opacity: 0.0; filter: Alpha(Opacity = 0); }
+#bTab { position: absolute; top: -24px; left: 23px; }
+#bTab div,#bTab a { display: block; float: left; height: 25px; overflow: hidden; margin-right: 7px; color: #fff; cursor: pointer; }
+#bTab div strong,#bTab a strong { display: block; float: left; height: 25px; padding: 6px 15px 0 16px; background: url('../sparda_img/tab-inaktiv.png') left top repeat-x; cursor: pointer; }
+#bTab div span,#bTab a span { display: block; float: left; width: 2px; height: 25px; overflow: hidden; background: url('../sparda_img/tab-end-inaktiv.png') left top no-repeat; cursor: pointer; }
+#bTab div.on,#bTab a.on { color: #102648; }
+#bTab div.on strong,#bTab a.on strong { background-image: url('../sparda_img/tab-aktiv.png'); }
+#bTab div.on span,#bTab a.on span { background-image: url('../sparda_img/tab-end-aktiv.png'); }
+#bTab.big { top: 43px; left: 7px; z-index: 20; }
+#bTab.big div { height: 43px; margin-right: 10px; }
+#bTab.big div strong { height: 43px; padding: 13px 12px 0 20px; background: url('../sparda_img/tab-big-inaktiv.png') left top repeat-x; cursor: pointer; font-size: 13px; }
+#bTab.big div span { width: 10px; height: 43px; background: url('../sparda_img/tab-big-end-inaktiv.png') left top no-repeat; cursor: pointer; }
+#bTab.big div.on { color: #000; }
+#bTab.big div.on strong { background-image: url('../sparda_img/tab-big-aktiv.png'); }
+#bTab.big div.on span { background-image: url('../sparda_img/tab-big-end-aktiv.png'); }
+#bContent { position: static; margin-top: 41px; margin-left: -3px; background: url('../sparda_img/bg-buehne-kap822-loop.png') left top repeat-y; width: 684px; }
+#bContent .left,#bContent .right { float: left; }
+#bContent .m60-40 .left { width: 430px; margin-left: 21px; margin-right: 36px; }
+#bContent .m60-40 .right { width: 175px; overflow: hidden; margin-top: 1px; margin-right: 19px; }
+#bContent .left { width: 416px; margin-left: 26px; margin-right: 45px; }
+#bContent .lineUnder { border-bottom: 1px solid #b9c3d0; background: none; }
+#bContent .item { margin-bottom: 16px; }
+#bContent .item span.highlight,#bBuehneHgImg .item span.highlight { color: #307fb3; }
+#bContent .item .text,#bBuehneHgImg .item .text { padding-left: 6px; }
+#bContent .highlight,#bBuehneHgImg .highlight { min-height: 112px; }
+#bContent .highlight .wrapper,#bBuehneHgImg .highlight .wrapper { min-height: 112px; }
+#bBuehneHgImg .highlight .text { padding: 1px 30px 0 14px; }
+#bContent .highlight .text { padding: 11px 30px 0 14px; }
+#bContent .tab .text,#bBuehneHgImg .tab .text { padding: 15px 30px 0 14px; }
+#bContent .spaceBefore { margin-top: 25px; }
+#bContent .lineUnder { padding-bottom: 16px; }
+#bContent .right .item .text { padding-left: 1px; }
+#bContent .right .item p.infoFoot { margin-top: 4px; }
+#bContent .right .highlight { min-height: 0; }
+#bContent .right .highlight .wrapper { padding-bottom: 13px; min-height: 0; }
+#bContent .right .highlight .text { padding-top: 12px; padding-left: 11px; padding-right: 11px; }
+#bContent .right .highlight .download { padding-top: 1px; padding-left: 11px; }
+#bContent .m60-40 .left div.highlight,#bBuehneHgImg .m100 .left div.highlight { background: url('../sparda_img/bg-item-m60-highlight01.png') left top no-repeat; }
+#bContent .m60-40 .left div.highlight .wrapper,#bBuehneHgImg .m100 .left div.highlight .wrapper { background: url('../sparda_img/bg-item-m60-highlight02.png') left bottom no-repeat; }
+#bContent .m60-40 .right div.highlight,#boxVertrieb .m100 .right div.highlight,#boxVertrieb .m70-30 .right div.highlight { background: url('../sparda_img/bg-item-m40-highlight01.png') left top no-repeat; }
+#bContent .m60-40 .right div.highlight .wrapper { background: url('../sparda_img/bg-item-m40-highlight02.png') 0 bottom no-repeat; }
+#bContent .m60-40 .left div.invert,#bBuehneHgImg .m100 .left div.invert { width: 445px; background: url('../sparda_img/bg-item-m60-highlight4-01.png') left top no-repeat; }
+#bContent .m60-40 .left div.invert .wrapper,#bBuehneHgImg .m100 .left div.invert .wrapper { padding-bottom: 6px; background: url('../sparda_img/bg-item-m60-highlight4-02.png') left bottom no-repeat; }
+#bContent .m60-40 .left div.tab,#bBuehneHgImg .m100 .left div.tab { width: 432px; margin-top: 47px; background: url('../sparda_img/bg-item-m60-highlight2-01.png') left top no-repeat; }
+#bContent .m60-40 .left div.tab .wrapper,#bBuehneHgImg .m100 .left div.tab .wrapper { padding-bottom: 1px; background: url('../sparda_img/bg-item-m60-highlight2-02.png') left bottom no-repeat; }
+#bContent .m60-40 .left div.tab .wrapper .wrapper,#bBuehneHgImg .m100 .left div.tab .wrapper .wrapper { padding-bottom: 0; background: none; }
+#fv { margin-left: 26px; margin-right: 45px; padding-top: 10px; }
+#fv .highlight { background: url('../sparda_img/bg-item-m100-highlight1.png') left top no-repeat; }
+#fv .highlight .wrapper { background: url('../sparda_img/bg-item-m100-highlight2.png') left bottom no-repeat; }
+#fv .right .highlight { background: url('../sparda_img/bg-item-m40-highlight01.png') left top no-repeat; }
+#fv .right .highlight .wrapper { background: url('../sparda_img/bg-item-m40-highlight02.png') left bottom no-repeat; }
+#fv .left { float: left; margin: 0; width: 400px; }
+#fv .left .highlight { background: url('../sparda_img/bg-item-m60-highlight3-01.png') left top no-repeat; }
+#fv .left .highlight .wrapper { background: url('../sparda_img/bg-item-m60-highlight3-02.png') left bottom no-repeat; }
+#fv .leftBox { float: left; margin-right: 30px; width: 50%; }
+#fv .rightBox { width: 43%; float: right; }
+#fv .right { width: 175px; float: right; }
+#fv .item { margin-bottom: 20px; }
+#fv .highlight.angebot { height: 110px; min-height: 0; }
+#fv .highlight.angebot .wrapper { height: 110px; min-height: 0; position: relative; }
+#fv .highlight.angebot .wrapper img { float: left; margin-right: 10px; }
+#fv .highlight.angebot .wrapper a { display: inline-block; background: url('../sparda_img/buttons/button_Mehr.png'); width: 88px; height: 27px; position: absolute; bottom: 8px; right: 10px; }
+#bContent .tab .nav { position: absolute; margin-top: -24px; }
+#bContent .tab .nav a { display: block; float: left; height: 25px; overflow: hidden; margin-right: 5px; color: #fff; cursor: pointer; }
+#bContent .tab .nav a strong { display: block; float: left; height: 25px; padding: 6px 16px 0 16px; background: url('../sparda_img/item-tab-inaktiv.png') left top repeat-x; cursor: pointer; }
+#bContent .tab .nav a span { display: block; float: left; width: 3px; height: 25px; overflow: hidden; background: url('../sparda_img/item-tab-end-inaktiv.png') left top no-repeat; cursor: pointer; }
+#bContent .tab .nav a.on { color: #102648; }
+#bContent .tab .nav a.on strong { background-image: url('../sparda_img/item-tab-aktiv.png'); }
+#bContent .tab .nav a.on span { background-image: url('../sparda_img/item-tab-end-aktiv.png'); }
+#bContent .dynButton { margin-top: 8px; }
+#bContent .highlight .dynButton a { margin-right: 10px; margin-bottom: 12px; }
+#bContent #fv .highlight .dynButton { margin: 0; }
+#bContent #fv .highlight .dynButton a { margin: 10px; }
+#bContent .right .highlight .dynButton a { margin-bottom: 0; }
+#bContent .dynButton a,.ovForm .dynButton a { line-height: 25px; float: right; margin-top: 1px; padding: 0 6px 0 0; height: 27px; overflow: hidden; display: block; background: url('../sparda_img/buttons/buttonDynEnd.png') right top no-repeat; color: #394049; font-weight: bold; }
+#bForm .dynButton a,#bInfo .dynButton a { line-height: 25px; float: right; margin-top: 1px; margin-right: 10px; padding: 0 6px 0 0; height: 27px; overflow: hidden; display: block; background: url('../sparda_img/buttons/buttonDynEnd.png') right top no-repeat; color: #394049; font-weight: bold; text-align: left; }
+#bContent .dynButton span,#bForm .dynButton span,.ovForm .dynButton span,#bInfo .dynButton span { display: block; padding: 2px 0 10px 33px; background: url('../sparda_img/buttons/buttonDynStart.png') 0 0 no-repeat; }
+#bContent h3 { font-size: 12px; }
+#bContent .left .button,#bContent .right .button { display: block; float: right; margin-top: 8px; }
+#bContent .text,#bContent .item table td { line-height: 18px; }
+#bContent .text ul { list-style-type: none; }
+#bContent .text li { line-height: 18px; margin-top: 2px; margin-bottom: 2px; padding-left: 12px; background: url('../sparda_img/listbullet-vertrieb.png') 0 6px no-repeat; }
+#bContent #fv .text li { margin-bottom: 12px; }
+#bContent .item .image,#bBuehneHgImg .item .image { float: left; width: 153px; }
+#bContent .right .item .image { float: none; width: auto; margin-bottom: 10px; }
+#bContent .item .imgLarge { float: none; width: auto; }
+#bContent .download a { display: block; margin-top: 5px; margin-left: -2px; }
+#bContent .download a img { margin-right: 5px; vertical-align: text-bottom; }
+#bContent .item table td ul { list-style-type: none; }
+#bContent .item table td ul li { padding-left: 12px; background: url('../sparda_img/listbullet-vertrieb.png') left 4px no-repeat; }
+#bContent .item table,#bContent .item tr,#bContent .item th,#bContent .item td { margin: 0; padding: 0; border: none; border-collapse: collapse; vertical-align: top; }
+#bContent .item .table { margin-top: 6px; }
+#bContent .tab .table { margin-left: 13px; margin-right: 14px; }
+#bContent .item .table table tr td { padding: 3px 15px 0 5px; color: #17222f; }
+#bContent .item .table table tr td.first { padding-left: 15px; }
+#bContent .item .table table tr.odd td { background: url('../sparda_img/table-tbody-td-odd.png') left bottom repeat-x; }
+#bContent .item .table table tr.odd td.first { background: url('../sparda_img/table-tbody-td-odd-first.png') left bottom no-repeat; }
+#bContent .item .table table tr.odd td.last { background: url('../sparda_img/table-tbody-td-odd-last.png') right bottom no-repeat; }
+#bContent .item .table table tr.even td { background: url('../sparda_img/table-tbody-td-even.png') left bottom repeat-x; }
+#bContent .item .table table tr.even td.first { background: url('../sparda_img/table-tbody-td-even-first.png') left bottom no-repeat; }
+#bContent .item .table table tr.even td.last { background: url('../sparda_img/table-tbody-td-even-last.png') right bottom no-repeat; }
+#bContent .item .table table tr.first td { padding-top: 9px; padding-bottom: 3px; border-bottom: 1px solid #b6c0cd; background: url('../sparda_img/table-thead-td.png') left top repeat-x; }
+#bContent .item .table table tr.first td.first { background: url('../sparda_img/table-thead-td-first.png') left top no-repeat; }
+#bContent .item .table table tr.first td.last { background: url('../sparda_img/table-thead-td-last.png') right top no-repeat; }
+#bContent .item .table table tr.last td { padding-top: 3px; padding-bottom: 8px; }
+#bContent .item .table table tr.evenLast td { background: url('../sparda_img/table-tfoot-td-even.png') left top repeat-x; }
+#bContent .item .table table tr.evenLast td.first { background: url('../sparda_img/table-tfoot-td-even-first.png') left top no-repeat; }
+#bContent .item .table table tr.evenLast td.last { background: url('../sparda_img/table-tfoot-td-even-last.png') right top no-repeat; }
+#bContent .item .table table tr.oddLast td { background: url('../sparda_img/table-tfoot-td-odd.png') left top repeat-x; }
+#bContent .item .table table tr.oddLast td.first { background: url('../sparda_img/table-tfoot-td-odd-first.png') left top no-repeat; }
+#bContent .item .table table tr.oddLast td.last { background: url('../sparda_img/table-tfoot-td-odd-last.png') right top no-repeat; }
+#bContent .item .plaintable { margin-top: 6px; }
+#bContent .item .plaintable table tr td { padding: 0 15px 0 5px; }
+#bContent .tab .plaintable { margin-left: 19px; margin-right: 9px; }
+#bContent .invert .plaintable { margin: 0 1px 0 19px; padding-top: 11px; }
+#bContent .invert .plaintable table tr td { line-height: 20px; padding: 0 1px 0 2px; }
+#bContent .invert .plaintable table tr.first td { padding-bottom: 1px; border-bottom: 1px solid #bac4d0; }
+#bContent .invert .plaintable table tr.tr-1 td { padding-top: 2px; }
+#bContent .invert .plaintable .footnote { float: right; padding-right: 26px; color: #63707e; }
+#bContent .invert h3 { padding: 10px 0 10px 17px; }
+#bContent .form { padding: 5px 0 0 22px; }
+#bContent .textBox { margin-bottom: 5px; height: 25px; }
+#bContent .textBox .label { float: left; width: 200px; padding-top: 5px; }
+#bContent .textBox .label img { vertical-align: middle; padding-left: 10px; }
+#bContent .textBox .formField { float: left; margin-right: 10px; }
+.success { line-height: 20px; height: 46px; width: 300px; padding: 6px 0 0 67px; background: url('../sparda_img/bestaetigungshaken.png') left top no-repeat; }
+.success.longText { line-height: normal; }
+.success.tall { padding-top: 0; }
+.success.wide { width: 425px; }
+#boxProzessAbschluss h3 { font-size: 12px; margin-top: 20px; }
+#bHeadline { position: absolute; left: 28px; top: 17px; color: #2e3744; font-size: 16px; font-weight: bold; }
+#bHeadline .step { padding-left: 15px; color: #8893a4; }
+#bForm,.ovForm { position: absolute; z-index: 10; left: 7px; top: 43px; width: 522px; background: url('../sparda_img/bg-form-basis.png') 0 0 no-repeat; }
+#bForm #boxProzess .inner { height: 295px; margin-right: 1px; position: relative; }
+#bForm #boxProzessAbschluss .inner { height: 205px; margin-right: 1px; }
+#bForm #boxProzessTabs .inner { height: 255px; margin-right: 1px; position: relative; }
+#bBuehneHgImg { position: absolute; z-index: 10; left: 8px; top: 43px; width: 522px; height: 230px; }
+#bBuehneHgImg #boxProdukteStart .inner { height: 200px; margin-right: 2px; position: relative; padding-right: 15px; }
+#bBuehneHgImg #boxProdukte .inner { height: 330px; margin-right: 2px; position: relative; padding-right: 15px; }
+#bBuehneHgImg #boxProdukteAbschluss .inner { height: 300px; margin-right: 2px; }
+#boxProdukteUebersicht { position: absolute; z-index: 10; left: 8px; top: 43px; width: 615px; height: 380px; background: transparent none; }
+.textBold { font-weight: bold; }
+#bForm .inner,.ovForm .inner { margin-top: 5px; }
+#bForm input,.ovForm input { border: 1px solid #2e3744; height: 18px; padding-left: 3px; padding-right: 3px; }
+#bForm select { border: 1px solid #2e3744; }
+#bForm .disabled,.ovForm .disabled { color: black; background-color: #D7DEE5; border: 1px solid #AEB9C5 !important; text-shadow: none; font-size: 13px; padding: 1px 3px; line-height: 18px; }
+div.disabled { min-height: 18px; white-space: nowrap; overflow: hidden; }
+#bForm .left,#bForm .middle,#bForm .right,.ovForm .left,.ovForm .middle,.ovForm .right { float: left; }
+#main input.error,#main textarea.error,#main select.error { background-color: #FCEBEB; border: 1px solid #D60000; color: #2A3D5C; }
+#bForm .inputDivider,.popUp .inputDivider,.ovForm .inputDivider { padding: 0 8px 0 3px; }
+.m20-80,.m33-33-33,.m60-40,.m40-60,.m50-50,.m100 { border-top: 15px solid transparent; padding: 0; margin: 0; }
+.m25-25-25-25 { border-top: 5px solid transparent; padding: 0; margin: 0; }
+.m25-25-25-25.borderless, .m33-33-33.borderless,.m60-40.borderless,.m40-60.borderless,.m50-50.borderless,.m100.borderless { border: 0; }
+.verticalSpacer { height: 10px; width: 1px; }
+.t26 { border-top: 26px solid transparent; }
+.lineUnder { padding-bottom: 15px; background: url('../sparda_img/blockunderline.png') 20px bottom repeat-x; }
+.disabled { background-color: #EEE; }
+.m100 .left .textBox input { width: 474px; }
+.m50-50 .left .textBox input,.m50-50 .right .textBox input { width: 218px; }
+.m60-40 .left .textBox input,.m40-60 .right .textBox input,.m60-40 .left select,.m40-60 .right select { width: 279px; }
+.m40-60 .left .textBox input,.m60-40 .right .textBox input,.m40-60 .left select,.m60-40 .right select { width: 157px; }
+.popUp .m50-50 .left .textBox input { width: 145px; }
+.popUp .m50-50 .right .textBox input { width: 140px; }
+.popUp .m100 .left .textBox input { width: 324px; }
+.formFieldNotlast { margin-bottom: 4px; }
+.euroBox .floating div,.euroBox.floating div { float: left; }
+.euroBox .long { width: 82px; text-align: right; }
+.popUp .euroBox .long { width: 69px; }
+.euroBox .small { width: 20px; text-align: right; }
+.popUp .euroBox .small { width: 21px; }
+.euroBox .disabledInput { padding-right: 5px; text-align: right; }
+.euroBox .inputText,.euroBox .inputDivider { font-weight: bold; }
+.euroBox .floating .inputText,.euroBox .floating .inputDivider { margin-top: 3px; }
+.euroBox .inputDivider { padding-left: 0; padding-right: 5px; }
+.euroBox .inputText { padding-left: 5px; }
+.radioBox .euroBox .preLabel { float: left; }
+.radioBox .euroBox .formField { float: left; margin-top: -6px; padding-left: 10px; }
+.searchBox .formField,.calendarBox .formField { position: relative; }
+.searchBox input { width: 124px; }
+.searchBox a { display: block; float: left; position: absolute; top: 0; left: 142px; height: 22px; width: 22px; }
+.calendarBox input { width: 104px; }
+.calendarBox a { display: block; float: left; position: absolute; top: 0; left: 121px; background: url('../sparda_img/kalenderbutton.png') 0 0 no-repeat; height: 22px; width: 25px; }
+.m100 .left.fullWidth { width: 472px; }
+.m60-40 .left, .m40-60 .right { width: 287px; }
+.m60-40 .right, .m40-60 .left { width: 165px; }
+.m50-50 .left, .m50-50 .right { width: 226px; }
+.m33-33-33 .left, .m33-33-33 .middle, .m33-33-33 .right { width: 150px; }
+.m25-25-25-25 .outerleft, .m25-25-25-25 .innerleft, .m25-25-25-25 .innerright { float: left; width: 108px; margin-right: 10px; }
+.m25-25-25-25 .outerright { float: left; width: 108px; margin-right: 0; }
+.left { margin-left: 20px; margin-right: 30px; }
+.carouselItem .left { margin-right: 20px; }
+.left .sBox,.right .sBox { margin: -2px 0 6px 0; padding: 0; height: 22px; }
+.popUp .m50-50 .left,.popUp .m50-50 .right { float: left; width: 154px; }
+.popUp .m33-33-33 .left,.popUp .m33-33-33 .middle,.popUp .m33-33-33 .right { float: left; width: 115px; }
+.popUp .left { margin-left: 20px; margin-right: 25px; }
+.label,.preLabel { font-weight: bold; line-height: 13px; padding: 0; margin: 0 0 6px 0; }
+.selectBox { height: 25px; }
+.selectBox152 { background-image: url('../sparda_img/selectbox-152.png'); }
+.selectBox .label { position: relative; height: 25px; margin-top: -1px; padding-top: 5px; padding-left: 0; background: url('../sparda_img/selectbox.png') -1px 0 no-repeat; font-weight: normal; }
+.selectBox .label span { padding-left: 5px; }
+.selectBoxOn .label { background-image: url('../sparda_img/selectbox-offen.png'); }
+.selectBox .options { background-color: #FFF; z-index: 30; position: relative; height: auto; width: 224px; top: -15px; left: 0; border: 1px solid #2e3744; }
+.selectBox .options .option { padding: 3px; cursor: pointer; }
+.selectBox152 .options { }
+.oneLine .selectBox { margin-left: 68px; }
+.oneLine .selectBox .preLabel { float: left; margin-top: 5px; margin-left: -68px; }
+.selectBox .label { background: url('../sparda_img/selectbox-dyn.png') -1px top no-repeat; }
+.selectBoxOn .label { background: url('../sparda_img/selectbox-on-dyn.png') -1px top no-repeat; }
+.selectBox .trigger { position: absolute; display: block; width: 32px; height: 25px; overflow: hidden; background: url('../sparda_img/selectbox-trigger-dyn.png') left top no-repeat; }
+.selectBoxOn .trigger { background: url('../sparda_img/selectbox-trigger-on-dyn.png') left top no-repeat; }
+.oneLine .textBox .label,.oneLine .textBox .formField { float: left; }
+.oneLine .textBox .label { width: 80px; }
+.oneLine .textBox .formField { width: 120px; }
+.radioBox { min-height: 22px; background: url('../sparda_img/radio-inact.png') 0 top no-repeat; cursor: pointer; }
+.radioBoxOn { background: url('../sparda_img/radio-act.png') 0 top no-repeat; }
+.radioBoxDisabled { background: url('../sparda_img/radio-inact_disabled.png') 0 top no-repeat; cursor: default; }
+.radioBoxDisabledOn { background: url('../sparda_img/radio-act_disabled.png') 0 top no-repeat; cursor: default; }
+.radioBox .label { margin: 0; padding: 5px 0 0 32px; font-size: 12px; font-weight: normal; }
+.radioBoxImg { height: 22px; width: 22px; background: url('../sparda_img/sprite-cb-radio.png') 0 0 no-repeat; float: left; margin-right: 4px; }
+.clickable { cursor: pointer; }
+.rbOn { background-position: -22px 0; }
+.rbDisabled { background-position: 0 -22px; cursor: default; }
+.rbDisabledOn { background-position: -22px -22px; cursor: default; }
+.radioBoxCnt .label { margin: 0; padding: 4px 0 0 26px; font-size: 12px; font-weight: normal; }
+.radioBoxCnt .label.tall { padding-top: 0; }
+.checkBox { min-height: 22px; background: url('../sparda_img/checkbox-inact.png') 0 top no-repeat; cursor: pointer; }
+.checkBoxOn { background: url('../sparda_img/checkbox-act.png') 0 top no-repeat; }
+.checkBoxDisabled { background: url('../sparda_img/checkbox-inact_disabled.png') 0 top no-repeat; cursor: default; }
+.checkBoxDisabledOn { background: url('../sparda_img/checkbox-act_disabled.png') 0 top no-repeat; cursor: default; }
+.checkBoxModul { background: url('../sparda_img/checkboxModul-inact.png') 0 top no-repeat; }
+.checkBoxModulOn { background: url('../sparda_img/checkboxModul-act.png') 0 top no-repeat; }
+.checkBoxModulDisabled { background: url('../sparda_img/checkboxModul-inact_disabled.png') 0 top no-repeat; cursor: default; }
+.checkBoxModulDisabledOn { background: url('../sparda_img/checkboxModul-act_disabled.png') 0 top no-repeat; cursor: default; }
+.checkBox .label,.checkBoxModul .label { margin: 0; padding: 3px 0 0 32px; font-size: 12px; font-weight: normal; }
+.radioBoxDisabled .label,.radioBoxDisabledOn .label,.checkBoxDisabled .label,.checkBoxDisabledOn .label,.checkBoxModulDisabled .label,.checkBoxModulDisabledOn .label { color: #AEB9C5; }
+.radioBoxDisabled input,.radioBoxDisabled textarea,.radioBoxDisabled select,.radioBoxDisabledOn input,.radioBoxDisabledOn textarea,.radioBoxDisabledOn select,.checkBoxDisabled input,.checkBoxDisabled textarea,.checkBoxDisabled select,.checkBoxDisabledOn input,.checkBoxDisabledOn textarea,.checkBoxDisabledOn select,.checkBoxModulDisabled input,.checkBoxModulDisabled textarea,.checkBoxModulDisabled select,.checkBoxModulDisabledOn input,.checkBoxModulDisabledOn textarea,.checkBoxModulDisabledOn select { color: black; background-color: #D7DEE5; border: 1px solid #AEB9C5 !important; text-shadow: none; }
+.quicklinks { width: 740px; text-align: center; margin-top: -67px; position: absolute; z-index: 99; }
+#moreFuncs { position: absolute; left: 663px; top: 11px; width: 75px; height: 36px; background: url('../sparda_img/sprite-quicklinks-banking.png') -1087px -63px no-repeat; }
+.quicklinks.dimmed #moreFuncs { background-position: -1087px -106px; }
+#moreFuncs a { display: block; width: 75px; height: 20px; margin: 0; padding: 0; }
+.quicklinks.dimmed { opacity: 0.3; filter: Alpha(Opacity = 30); }
+.quicklinks a { display: inline-block; position: relative; }
+.quicklinks .countDocsOneDigit { position: absolute; height: 20px; width: 20px; margin-left: 50px; margin-top: -5px; padding-top: 2px; font-weight: bold; color: #FFFFFF; background: url('../sparda_img/sprite-quicklinks-postbox.png') left top no-repeat; background-position: -620px -115px; z-index: 1; top: 0; left: 0; }
+.quicklinks .countDocsTwoDigits { position: absolute; height: 20px; width: 26px; margin-left: 50px; margin-top: -5px; padding-top: 2px; font-weight: bold; color: #FFFFFF; background: url('../sparda_img/sprite-quicklinks-postbox.png') left top no-repeat; background-position: -620px -30px; z-index: 1; top: 0; left: 0; }
+#boxFavorits .selectedFavs { position: relative; height: 70px; width: 630px; }
+#boxFavorits .bgFavs { position: absolute; margin-top: 40px; margin-left: 8px; }
+#boxFavorits .availableFavs { position: absolute; margin-top: 40px; margin-left: 8px; }
+#boxFavorits .favDivider { display: block; float: left; padding-right: 10px; margin-top: 12px; }
+#boxFavorits .container { float: left; width: 140px; height: 70px; margin: 10px 0 0 10px; }
+#boxFavorits .container .bookmark { width: 20px; height: 20px; margin-top: -61px; margin-left: 4px; }
+#boxFavorits .container .jumpTop { height: 20px; margin-top: -20px; margin-left: 24px; }
+#boxFavorits .container .jumpMain { width: 130px; height: 40px; margin-left: 4px; }
+.favoritItem { float: left; width: 140px; height: 45px; padding-top: 25px; text-align: center; overflow: hidden; background: url('../sparda_img/quicklink-big-a.png') left top no-repeat; opacity: 1.0 !important; filter: none !important; }
+.favoritItem.dragged { margin-right: 6px; }
+.favoritItem .long { position: absolute; display: block; width: 140px; top: 27px; text-align: center; }
+.bgFavs .favoritItem { background: url('../sparda_img/quicklink-big-p.png') left top no-repeat; }
+.bgFavs .favoritItem .long { position: static; top: 0; color: #929aa2; }
+.dragged { background-image: url('../sparda_img/quicklink-big-h.png'); }
+.dropped { width: 85px; float: left; height: 75px !important; margin-right: 6px; }
+.dropped .short { display: block; padding: 24px 0 0 0; height: 35px; font-size: 14px; text-align: center; }
+.dropped .del { position: absolute; display: block; width: 44px; height: 44px; margin: -18px 0 0 40px; }
+.dr-pnl.smallQL_DropZone { opacity: 0; filter: Alpha(Opacity = 0); width: 0; float: left; border: 0; padding: 0; cursor: crosshair; }
+.smallQL_DropZone .dr-pnl-b { padding: 0 !important; }
+#modul .headline .camera { position: absolute; margin-top: -23px; margin-left: 630px; height: 33px; width: 105px; background: url('../sparda_img/sprite-quicklinks-banking.png') left top no-repeat; background-position: -1055px -192px; cursor: pointer; }
+.bankingsprites { width: 85px; height: 51px; background-image: url('../sparda_img/sprite-quicklinks-banking.png'); }
+.bankingsprites.kontocenter { background-position: 0 -18px; }
+.bankingsprites.umsatzanzeige.act { background-position: 0 -104px; }
+.bankingsprites.umsatzanzeige { background-position: -85px -18px; }
+.bankingsprites.umsatzanzeige.act { background-position: -85px -104px; }
+.bankingsprites.ueberweisung { background-position: -170px -18px; }
+.bankingsprites.ueberweisung.act { background-position: -170px -104px; }
+.bankingsprites.dauerauftrag { background-position: -255px -18px; }
+.bankingsprites.dauerauftrag.act { background-position: -255px -104px; }
+.bankingsprites.empfaengerliste { background-position: -342px -18px; }
+.bankingsprites.empfaengerliste.act { background-position: -342px -104px; }
+.bankingsprites.dauerauftragsliste { background-position: -425px -18px; }
+.bankingsprites.dauerauftragsliste.act { background-position: -425px -104px; }
+.bankingsprites.ueberweisungsliste { background-position: -511px -18px; }
+.bankingsprites.ueberweisungsliste.act { background-position: -511px -104px; }
+.bankingsprites.kontodetails { background-position: -595px -18px; }
+.bankingsprites.kontodetails.act { background-position: -595px -104px; }
+.bankingsprites.lastschriftrueckgabe { background-position: -680px -18px; }
+.bankingsprites.lastschriftrueckgabe.act { background-position: -680px -104px; }
+.bankingsprites.freistellungsauftrag { background-position: -766px -18px; }
+.bankingsprites.freistellungsauftrag.act { background-position: -766px -104px; }
+.bankingsprites.europaschecks { background-position: -850px -18px; }
+.bankingsprites.europaschecks.act { background-position: -850px -104px; }
+.bankingsprites.umbuchung { background-position: -934px -18px; }
+.bankingsprites.umbuchung.act { background-position: -934px -104px; }
+.bankingsprites.haushaltsbuch { background-position: 0 -264px; }
+.bankingsprites.haushaltsbuch.act { background-position: -85px -264px; }
+.bankingsprites.masterpasswallet { background-position: -255px -264px; }
+.bankingsprites.prolongation { background-position: -348px -264px; }
+.bankingsprites.wiederanlage { width: 85px; height: 51px; background-image: url('../sparda_img/quicklink_wiederanlage.png'); background-position: 3px -6px; }
+.dropped.bankingsprites.ueberweisung { background-position: -169px -179px; }
+.dropped.bankingsprites.dauerauftrag { background-position: -254px -179px; }
+.dropped.bankingsprites.umbuchung { background-position: -934px -179px; }
+.dropped.bankingsprites.umsatzanzeige { background-position: -84px -179px; }
+.dropped.bankingsprites.ueberweisungsliste { background-position: -509px -179px; }
+.dropped.bankingsprites.dauerauftragsliste { background-position: -424px -179px; }
+.dropped.bankingsprites.empfaengerliste { background-position: -340px -179px; }
+.dropped.bankingsprites.kontodetails { background-position: -596px -179px; }
+.dropped.bankingsprites.lastschriftrueckgabe { background-position: -679px -179px; }
+.dropped.bankingsprites.freistellungsauftrag { background-position: -766px -179px; }
+.dropped.bankingsprites.europaschecks { background-position: -848px -179px; }
+.spardaweltsprites { width: 118px; height: 51px; }
+.spardaweltsprites.login { background: url('../sparda_img/hh-spardawelt/login-homepage.png') 0 2px no-repeat; }
+.spardaweltsprites.themenmitgliedschaft { background: url('../sparda_img/hh-spardawelt/themenmitgliedschaft.png') 0 2px no-repeat; }
+.spardaweltsprites.bankwechselservice { background: url('../sparda_img/hh-spardawelt/bankwechselservice.png') 0 2px no-repeat; }
+.servicesprites { width: 85px; height: 51px; background-image: url('../sparda_img/sprite-quicklinks-service.png'); }
+.servicesprites.haushaltsbuch { width: 85px; height: 51px; background-image: url('../sparda_img/sprite-quicklinks-haushaltsbuch.png'); }
+.servicesprites.haushaltsbuch.verwaltung { background-position: -3px -18px; }
+.servicesprites.haushaltsbuch.freischaltung { background-position: -3px -256px; }
+.servicesprites.haushaltsbuch.verwaltung.act { background-position: -5px -97px; }
+.servicesprites.paydirekt { width: 85px; height: 51px; background-image: url('../sparda_img/sprite-quicklinks-paydirekt.png'); }
+.servicesprites.paydirekt.verwaltung { background-position: -3px -18px; }
+.servicesprites.paydirekt.verwaltung.act { background-position: -1px -97px; }
+.servicesprites.bankingzugang { background-position: -85px -18px; }
+.servicesprites.bankingzugang.act { background-position: -85px -103px; }
+.servicesprites.mobileTan { background-position: -170px -18px; }
+.servicesprites.mobileTan.act { background-position: -170px -103px; }
+.servicesprites.freistellungsauftrag { background-position: -254px -18px; }
+.servicesprites.freistellungsauftrag.act { background-position: -254px -103px; }
+.servicesprites.auftraege { background-position: -340px -18px; }
+.servicesprites.auftraege.act { background-position: -340px -103px; }
+.servicesprites.kirchensteuer { background-position: -425px -18px; }
+.servicesprites.kirchensteuer.act { background-position: -425px -103px; }
+.servicesprites.tanverwaltung { background-position: -528px -18px; }
+.servicesprites.tanverwaltung.act { background-position: -528px -103px; }
+.servicesprites.kartenverwaltung { background-position: -620px -18px; width: 60px; }
+.servicesprites.kartenverwaltung.act { background-position: -620px -103px; width: 60px; }
+.dropped.servicesprites.bankingzugang { background-position: -84px -178px }
+.dropped.servicesprites.mobileTan { background-position: -168px -178px }
+.dropped.servicesprites.freistellungsauftrag { background-position: -255px -178px }
+.dropped.servicesprites.auftraege { background-position: -339px -178px }
+.dropped.servicesprites.kirchensteuer { background-position: -424px -178px }
+.dropped.servicesprites.tanverwaltung { background-position: -527px -178px }
+.dropped.servicesprites.haushaltsbuch { background-position: -2px -173px; }
+.dropped.servicesprites.paydirekt { background-position: -2px -173px; }
+.dropped.servicesprites.kartenverwaltung { background-position: -620px -179px; }
+.postboxsprites { width: 85px; height: 51px; background-image: url('../sparda_img/sprite-quicklinks-postbox.png'); }
+.postboxsprites.mitteilungverfassen { background-position: -85px -18px; }
+.postboxsprites.mitteilungverfassen.act { background-position: -85px -103px; }
+.postboxsprites.terminvereinbarung { background-position: -170px -18px; }
+.postboxsprites.terminvereinbarung.act { background-position: -170px -103px; }
+.postboxsprites.mitteilungen { background-position: -254px -18px }
+.postboxsprites.mitteilungen.act { background-position: -254px -103px; }
+.postboxsprites.kontoauszuege { background-position: -340px -18px; }
+.postboxsprites.kontoauszuege.act { background-position: -340px -103px; }
+.postboxsprites.postboxkuendigen { background-position: -425px -18px; }
+.postboxsprites.postboxkuendigen.act { background-position: -425px -103px; }
+.postboxsprites.postboxfreischalten { background-position: -510px -18px; }
+.postboxsprites.postboxfreischalten.act { background-position: -340px -103px; }
+.slide { overflow: hidden; }
+.slider { position: absolute; width: 15px; z-index: 20; }
+.slider .up { position: absolute; left: 0; z-index: 20; width: 15px; height: 22px; background: url('../sparda_img/bg-slider-up01.png') left top no-repeat; cursor: pointer; }
+.slider .up.on { background-image: url('../sparda_img/bg-slider-up02.png'); }
+.slider .down { position: absolute; left: 0; z-index: 20; width: 15px; height: 22px; background: url('../sparda_img/bg-slider-down01.png') left top no-repeat; cursor: pointer; }
+.slider .down.on { background-image: url('../sparda_img/bg-slider-down02.png'); }
+.slider .bar { position: absolute; left: 0; z-index: 10; width: 15px; margin-top: 22px; background: url('../sparda_img/bg-slider-basis.png') left top repeat-y; }
+.slider .middle { position: absolute; left: 0; z-index: 30; width: 15px; margin-top: 16px; }
+.slider .middle .handle { position: absolute; left: 0; z-index: 30; width: 15px; cursor: n-resize; }
+.slider .middle .handle .handle-top { height: 12px; background: url('../sparda_img/bg-slider-bullet01-top.png') left top no-repeat; }
+.slider .middle .handle .handle-center { background: url('../sparda_img/bg-slider-bullet01-center.png') left top repeat-y; }
+.slider .middle .handle .handle-bottom { height: 15px; background: url('../sparda_img/bg-slider-bullet01-bottom.png') left top no-repeat; }
+.slider .middle .handle.on .handle-top,.sliderOn .middle .handle .handle-top { background-image: url('../sparda_img/bg-slider-bullet02-top.png'); }
+.slider .middle .handle.on .handle-center,.sliderOn .middle .handle .handle-center { background-image: url('../sparda_img/bg-slider-bullet02-center.png'); }
+.slider .middle .handle.on .handle-bottom,.sliderOn .middle .handle .handle-bottom { background-image: url('../sparda_img/bg-slider-bullet02-bottom.png'); }
+.tooltip { position: absolute !important; overflow: hidden; font-size: 12px; z-index: 10000 !important; }
+.tooltipBasis { background-image: url(../sparda_img/tooltip-basis.png); }
+.tooltipInput { background-image: url(../sparda_img/tooltip-input.png); }
+.tooltip .xtop,.tooltip .xbottom { display: block; font-size: 1px; }
+.tooltip .xb1,.tooltip .xb2,.tooltip .xb3,.tooltip .xb4 { display: block; overflow: hidden; }
+.tooltip .xb1,.tooltip .xb2,.tooltip .xb3 { height: 1px; }
+.tooltip .xb2,.tooltip .xb3,.tooltip .xb4 { }
+.tooltip .xbottom .xb2,.tooltip .xbottom .xb3,.tooltip .xbottom .xb4 { }
+.tooltip .xboxcontent { color: #FFF; padding: 0 .5em; margin: 0; text-align: left; white-space: nowrap; }
+#overlay { display: none; z-index: 50; background: url('../sparda_img/overlay.png') 0 0 no-repeat; position: absolute; height: 457px; width: 557px; top: 7px; left: 4px; }
+#overlay_modal { background-color: #000; opacity: 0.5; filter: Alpha(Opacity = 50); z-index: 1000 !important; }
+body.overlay { text-align: left; }
+.overlay .ovGoto { position: relative; top: 0; float: right; margin-right: 28px; z-index: 1100; }
+.overlay .ovContent { width: 100%; height: 100%; text-align: left; }
+.overlay .ovContent .wrapper { margin-top: -6px; padding: 0 28px 0 0; margin-left: 26px; width: 550px; }
+.overlay .ovContent h1 { margin-bottom: 4px; font-size: 14px; font-weight: normal; }
+.overlay .ovContent p { margin-bottom: 6px; }
+.overlay .ovContent ul { list-style-type: none; }
+.overlay .ovContent ul li { line-height: 16px; margin-bottom: 5px; padding-left: 12px; background: url('../sparda_img/bg-ulli.png') left 5px no-repeat; }
+.overlay .ovContent a.goto { position: absolute; }
+.overlay .ovForm { position: static; left: 0; top: 0; width: auto; height: auto; z-index: 10; margin: 0; background: none; }
+.overlay .ovForm .m33-33-33,.overlay .ovForm .m60-40,.overlay .ovForm .m40-60,.overlay .ovForm .m50-50,.overlay .ovForm .m100 { border-top: 2px solid transparent; }
+.overlay .ovForm .m50-50 .left,.overlay #bForm .m50-50 .right { width: 265px; }
+.overlay .ovForm .m50-50 .left .textBox input,.overlay #bForm .m50-50 .right .textBox input { width: 257px; }
+.overlay .ovForm .m33-33-33 .left,.overlay #bForm .m33-33-33 .middle,.overlay #bForm .m33-33-33 .right { width: 166px; }
+.overlay .ovForm .m33-33-33 .middle { margin-right: 32px; }
+.overlay .ovForm .m33-33-33 .left .textBox input,.overlay #bForm .m33-33-33 .middle .textBox input,.overlay #bForm .m33-33-33 .right .textBox input { width: 158px; }
+.overlay .ovForm .left { margin-left: 0; }
+.overlay .ovForm .lineUnder { background-repeat: repeat-x; }
+.overlay .button { position: relative; top: 30px; background: url('../sparda_img/abbrechen.png') right top; }
+.ov-terminvereinbarung { background: url('../sparda_img/bg-overlay-kap412.png') left top no-repeat; }
+.chiptanOverlay { background: url('../sparda_img/bg-overlay-chiptan.png') left top no-repeat; }
+.chiptanOverlay .overlay { height: 500px !important; }
+.terminvereinbarung .ovGoto { top: 10px; }
+.terminvereinbarung .ovForm { margin-top: -10px; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+* html .ui-helper-clearfix { height: 1%; }
+.ui-helper-clearfix { display: block; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter: Alpha(Opacity = 0); }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; height: 10px; }
+.ui-widget-overlay { background: #000000; opacity: .5; filter: Alpha(Opacity = 50); position: absolute; left: 0; top: 0; }
+.pop,.errpop { border: 1px solid #475973; background: #fff; }
+.errpop { border: 1px solid #d60000; }
+.pop .ui-dialog-titlebar-close,.errpop .ui-dialog-titlebar-close { position: absolute; top: -5px; right: -2px; z-index: 20; width: 20px; height: 20px; padding: 10px; overflow: hidden; background: url('../sparda_img/bg-pop-close.png') center center no-repeat; cursor: pointer; }
+.errpop .ui-dialog-titlebar-close { background-image: url('../sparda_img/bg-errpop-close.png'); }
+.pop .ui-dialog-titlebar,.errpop .ui-dialog-titlebar { position: relative; }
+.pop .ui-widget-header,.errpop .ui-widget-header { height: 33px; line-height: 30px; background: url('../sparda_img/bg-pop-title.png') left top repeat-x; border: 1px solid #ffffff; }
+.errpop .ui-widget-header { background: url('../sparda_img/bg-errpop-title.png') left top repeat-x; }
+.pop .ui-dialog-title,.errpop .ui-dialog-title { text-align: center; font-size: 12px; font-weight: bold; width: 448px; }
+.errpop .ui-dialog-title { color: #fff; }
+.pop .ui-dialog-content,.errpop .ui-dialog-content { line-height: 20px; font-weight: bold; text-align: left; }
+.errpop .ui-dialog-content { padding: 8px 20px 15px; color: #d60000; }
+.overlaypop .ui-dialog-titlebar { display: none; }
+.pop .popupFooter { margin: 0 19px 0 0; text-align: right; }
+.pop .popupFooter .popupFooterContent { display: block; float: left; height: 42px; width: 100%; padding: 0 10px 0 0; }
+.pop .popupBody .popupError { padding: 5px 0 5px 0; height: auto; line-height: 18px; margin: -3px 1px 0 1px; background: #d60000 url('../sparda_img/bg-errpop-title.png') left bottom repeat-x; color: #fff; }
+.pop .popupBody .popupError ul li { margin-left: 30px; }
+.ov-terminvereinbarung .overlay { height: 340px !important; }
+.popupFooterContent #bInfo { float: left; margin-top: 4px; padding-left: 10px; width: 360px; text-align: left; }
+.popupFooterContent #bInfo #itan { padding-top: 4px; }
+.popupFooterContent #bSteps { float: left; margin-top: 2px; width: 65px; }
+.popupFooterContent #bSteps .back { float: left; }
+.popupFooterContent #bSteps .forward { float: left; margin-left: 5px; }
+.kalenderPopUp { border: none; background: url('../sparda_img/popup-kalender.png') left top no-repeat; overflow: visible !important; }
+.kalenderPopUp .ui-dialog-titlebar { display: none !important; }
+.kalenderPopUp #zeitraumAuswahlPopupDiv { text-align: left; height: 210px !important; }
+.kalenderPopUp .popupBody { height: 268px; }
+.kalenderPopUp .top { display: none; }
+.kalenderPopUp #kalenderPopUp { margin: 6px 8px 2px 8px; }
+.kalenderPopUp .rich-calendar-input { width: 62px; height: 15px; padding-left: 3px; padding-right: 3px; border: 1px solid #2E3744; }
+.kalenderPopUp .rich-calendar-button { margin-top: 2px; margin-left: 2px; }
+.kalenderPopUp .pictoButton { display: block; text-align: right; }
+.kalenderPopUp .pictoButton img { margin-right: 17px; }
+.sort { display: inline; padding-right: 8px; }
+.sort .asc-a { padding-right: 19px; background: url('../sparda_img/btn-sort-asc-a.gif') right center no-repeat; }
+.sort .asc-p { padding-right: 19px; background: url('../sparda_img/btn-sort-asc-p.gif') right center no-repeat; }
+a.pictoButton { }
+a.pictoButton img { margin-bottom: 10px; }
+.pop .popupFooter a.pictoButton img { margin-top: 6px; margin-bottom: 0; }
+#progressBar ul { width: 522px; height: 25px; overflow: hidden; margin: 0 0 0 -1px; padding: 0; list-style-type: none; position: relative; clear: both; }
+#progressBar li { float: left; position: absolute; z-index: 10; height: 25px; line-height: 25px; margin: 0 0 0 0; padding: 0; white-space: nowrap; }
+#progressBar .first { width: 140px; margin-left: 0; background: url('../sparda_img/progress_1st_p.gif') left top no-repeat; }
+#progressBar .step2 { width: 113px; z-index: 20; left: 128px; background: url('../sparda_img/progress_2nd_p.gif') left top no-repeat; }
+#progressBar .step3 { width: 137px; z-index: 30; left: 229px; background: url('../sparda_img/progress_3rd_p.gif') left top no-repeat; }
+#progressBar .last { width: 168px; z-index: 40; left: 354px; background: url('../sparda_img/progress_4th_p.gif') left top no-repeat; }
+#progressBar .first .progressMorph { background: url('../sparda_img/progress_1st_a.gif') left top no-repeat; }
+#progressBar .step2 .progressMorph { background: url('../sparda_img/progress_2nd_a.gif') left top no-repeat; }
+#progressBar .step3 .progressMorph { background: url('../sparda_img/progress_3rd_a.gif') left top no-repeat; }
+#progressBar .last .progressMorph { background: url('../sparda_img/progress_4th_a.gif') left top no-repeat; }
+#progressBar span { padding-left: 31px; color: #404a55; font-weight: bold; white-space: nowrap; }
+#progressBar .first span { padding-left: 20px; }
+#progressBar .progressMorph { position: relative; z-index: 20; width: 0; overflow: hidden; margin-top: -25px; color: #fff; white-space: nowrap; }
+#progressBar .progressMorph span { float: left; color: #fff; }
+#progressBar.breit_2_pages .first { width: 338px; background: url('../sparda_img/progress-644px-1-2-off.gif') left top no-repeat; }
+#progressBar.breit_2_pages .last { width: 338px; left: 326px; background: url('../sparda_img/progress-644px-2-2-off.gif') left top no-repeat; }
+#progressBar.breit_2_pages .first .progressMorph { background: url('../sparda_img/progress-644px-1-2-on.gif') left top no-repeat; }
+#progressBar.breit_2_pages .last .progressMorph { background: url('../sparda_img/progress-644px-2-2-on.gif') left top no-repeat; }
+#progressBar.breit_4_pages .first { width: 172px; background: url('../sparda_img/progress-644px-1-4-off.gif') left top no-repeat; }
+#progressBar.breit_4_pages .step2 { width: 178px; left: 160px; background: url('../sparda_img/progress-644px-23-4-off.gif') left top no-repeat; }
+#progressBar.breit_4_pages .step3 { width: 178px; left: 326px; background: url('../sparda_img/progress-644px-23-4-off.gif') left top no-repeat; }
+#progressBar.breit_4_pages .last { width: 172px; left: 492px; background: url('../sparda_img/progress-644px-4-4-off.gif') left top no-repeat; }
+#progressBar.breit_4_pages .first .progressMorph { background: url('../sparda_img/progress-644px-1-4-on.gif') left top no-repeat; }
+#progressBar.breit_4_pages .step2 .progressMorph { background: url('../sparda_img/progress-644px-23-4-on.gif') left top no-repeat; }
+#progressBar.breit_4_pages .step3 .progressMorph { background: url('../sparda_img/progress-644px-23-4-on.gif') left top no-repeat; }
+#progressBar.breit_4_pages .last .progressMorph { background: url('../sparda_img/progress-644px-4-4-on.gif') left top no-repeat; }
+.panel h3 { line-height: 16px; margin: 13px 0 7px 20px; font-size: 12px; }
+.panel .left h3 { margin-left: 0; }
+.panel h4 { line-height: 12px; margin: 13px 0 0 20px; font-size: 12px; }
+.panel .left h4 { margin-left: 0; }
+.panel .left,.panel .middle,.panel .right { float: left; }
+.panel .m50-50 .right { width: 220px; }
+.panel .conditions .lineUnder { padding-bottom: 11px; }
+.panel .conditions table { margin-left: 20px; }
+.panel .conditions table tr th { text-align: left; }
+.panel .conditions table tr th,.panel .conditions table tr td { padding-right: 20px; vertical-align: top; }
+.ktoPopUp .popupForm { height: 105px; overflow: hidden; }
+.ktoPopUp .popupBody { background: url('../sparda_img/bg-popup-415b.png') left top repeat-x; }
+#boxProdukte h3 { line-height: 16px; margin: 13px 0 7px 20px; font-size: 12px; }
+#boxProzess h3,#boxProzessTabs h3 { line-height: 16px; font-size: 12px; margin-bottom: 7px; }
+#boxProdukte .conditions table tr th { width: 233px; }
+#boxProdukte .conditions table tr th,#boxProdukte .conditions table tr td { line-height: 16px; }
+.ktoExtPopUp .popupForm { height: 181px; width: 100%; overflow: hidden; }
+.ktoExtPopUp .popupBody { background: url('../sparda_img/bg-popup-416b.png') left top repeat-x; }
+.popupForm { position: relative; }
+#bForm .m100 table.dr-table { margin-left: 1px; width: 504px; }
+.rich-sort-icon { width: 9px !important; height: 5px !important; }
+table.dr-table tr img { padding-left: 5px; }
+#bForm .table table,table tr,table th,table td,table thead,table tbody,table tfoot { padding: 0; border-collapse: collapse; }
+#bForm .m100 #contentToScroll table thead tr th { height: 30px; background: url('../sparda_img/bg-table-thead-m100.gif') -10px top no-repeat; border-left: 0 solid transparent; border-right: 0 solid transparent; }
+#bForm .m100 .table-transactions { margin-top: 9px; }
+#bForm .m100 .table-transactions table tr .col-1 { width: 124px; background-position: left top; }
+#bForm .m100 .table-transactions table tr .col-2 { width: 269px; }
+#bForm .m100 .table-transactions table tr .col-3 { width: 129px; }
+#bForm .m100 .table-transactions table tr td { overflow: hidden; padding: 4px 0; font-size: 12px; border-bottom: 1px solid #dce2e8; border-left: none; border-right: none; }
+#bForm .m100 .table-transactions table tr.row-last td { border-bottom: none; }
+#bForm .m100 .table-transactions table tr th.col-1 { text-align: right; }
+#bForm .m100 .table-transactions table tr td.col-3 { text-align: right; }
+#bForm .m100 .table-transactions table tr th .sort { padding-left: 21px; }
+#bForm .m100 .table-transactions table tr th.col-first .sort { padding-left: 0; }
+#bForm .m100 .table-transactions table .icon { float: left; margin-left: 21px; margin-right: 11px; }
+#bForm .m100 .table-transactions table .star { float: left; width: 8px; overflow: hidden; }
+#bForm .m100 .table-transactions table .date { margin-left: 19px; }
+#bForm .m100 .table-transactions table .sum { padding-right: 21px; font-weight: bold; }
+#bForm .m100 .table-transactions table .minus { color: #d90000; }
+#bForm .m100 .table-transactions table .cause { margin-left: 21px; }
+#bForm #kap2-3-1 .textBox input { float: left; width: 170px; }
+#bForm #kap2-3-1 .textBox .selectBox { float: left; }
+#bForm #kap2-3-1 .oneLine .textBox .label { width: 45px; line-height: 24px; }
+#bForm #kap2-3-1 .m50-50 .right { width: 220px; }
+#bForm #kap2-3-1 #o02 { margin-left: 70px; }
+#kap2-3-1 .oneLine #o02 .preLabel { float: left; margin-left: -65px; margin-top: 3px; }
+.boxProzess #bButtons,.boxProzessTabs #bButtons { top: 348px; }
+.boxProdukte #bButtons { top: 406px; }
+.boxProdukteAbschluss #bTools { display: none; }
+.boxProdukteAbschluss #bFunctions { top: 102px; }
+.boxProdukteAbschluss #bForm { background: none; }
+#main .boxProdukteAbschluss #bInfo { top: 412px; }
+#boxProdukteAbschluss { margin-top: 9px; }
+#boxProdukteAbschluss .panel h3 { margin-top: 17px; margin-bottom: 2px; }
+.boxProzessConfig #bForm { background: none; }
+.boxProzessConfig #bTools { display: none; }
+.boxProzessConfig #bClose { display: none; }
+.boxProzessConfig #clips { display: none; }
+.boxProzessConfig #bHeadline { width: 470px; color: #dae0e4; font-size: 20px; font-weight: lighter; border-bottom: 1px solid #9ba9b4; padding: 10px 0 20px 0; }
+.boxProzessConfig .inner { padding: 0 0 0 20px; border-top: 50px solid transparent; }
+.boxProzessConfig .inner .selector,.boxProzessConfig .inner .label { float: left; }
+.boxProzessConfig .inner .label { padding-top: 3px; margin-bottom: 15px; color: #dae0e4; }
+.boxProzessConfig .inner .selector { width: 30px; }
+#successInfoLink { position: absolute; margin-top: -10px; margin-left: -70px; height: 50px; width: 50px; }
+#successInfo { position: absolute; margin-top: -14px; margin-left: -75px; height: 141px; width: 498px; background: url('../sparda_img/bestaetigungs-popupbasis.png') 0 0 no-repeat; z-index: 1000; }
+.success.tall #successInfo { margin-top: -8px; }
+#successInfo a { color: #2A3D5C; }
+#successInfoContent { padding: 11px 10px 0 75px; }
+.boxProzessAbschluss #bForm { background: none; }
+#main .boxProzessAbschluss #bSteps { display: none; }
+#boxProzessAbschluss .panel h3 { margin-top: 23px; margin-bottom: 2px; }
+#boxProdukteUebersicht .item { float: left; width: 277px; height: 99px; overflow: hidden; margin: 0 0 18px 30px; background: url('../sparda_img/produktestart-objektbasis.png') left top no-repeat; }
+#boxProdukteUebersicht .item .image { float: left; width: 117px; overflow: hidden; }
+#boxProdukteUebersicht .item .text { height: 71px; overflow: hidden; }
+#boxProdukteUebersicht .item .text h3 { line-height: 17px; margin-top: 8px; font-size: 12px; }
+#boxProdukteUebersicht .item .text .description { line-height: 17px; }
+#boxProdukteUebersicht .item .more { margin-right: 11px; text-align: right; }
+#boxProdukteUebersicht .inner { position: absolute; margin-left: -11px; }
+#boxProdukteUebersicht .m50-50 { border-top: 2px solid transparent; }
+.boxProdukteUebersicht #bFwdBwd { position: absolute; top: 406px; width: 636px; color: #0e5d98; text-align: center; }
+.boxProdukteUebersicht #bFwdBwd img { padding-left: 25px; padding-right: 25px; }
+.boxProzessUebersicht #bForm { left: 0; top: -5px; width: 650px; height: 402px; background: none; }
+.boxProzessUebersicht #bForm .inner { height: auto; }
+.boxProzessUebersicht #bClose,.boxProzessUebersicht #bTools,#main .boxProzessUebersicht #bInfo,#main .boxProzessUebersicht #bSteps,.boxProzessUebersicht #clips,.boxProzessUebersicht #bClose { display: none; }
+#boxProzessUebersicht .columnsThree { margin-left: 0; }
+#boxProzessUebersicht .columnsTwo { margin-left: 108px; }
+#boxProzessUebersicht .columnsOne { margin-left: 216px; }
+#boxProzessUebersicht h3 { float: left; line-height: 43px; padding: 3px 0 0 9px; font-size: 14px; }
+#boxProzessUebersicht .more { float: right; margin-top: 15px; margin-right: 10px; }
+#boxProzessUebersicht table,#boxProzessUebersicht tr,#boxProzessUebersicht th,#boxProzessUebersicht td { border-collapse: collapse; }
+#boxProzessUebersicht .table { height: 222px; overflow: hidden; }
+#boxProzessUebersicht .table table { margin-left: 3px; overflow: hidden; table-layout: fixed; width: 193px; }
+table .unread { font-weight: bold; }
+#boxProzessUebersicht .table thead th { height: 38px; padding: 2px 0 0 0; border-bottom: 1px solid #d2d6db; }
+#boxProzessUebersicht .table td { border-bottom: 1px solid #d2d6db; height: 38px; white-space: nowrap; overflow: hidden; }
+#boxProzessUebersicht .table-transactions .col-1 { padding-left: 8px; }
+#boxProzessUebersicht .table-transactions .col-3 { padding-right: 6px; font-weight: bold; text-align: right; }
+#boxProzessUebersicht .table-transactions table .minus { color: #d90000; }
+#boxProzessUebersicht .item { float: left; width: 205px; height: 402px; margin-right: 11px; background: url('../sparda_img/bg-carousel-neutral.png') left top no-repeat; }
+#boxProzessUebersicht .moving .item { background: url('../sparda_img/bg-carousel-neutral-dimm.png') left top no-repeat; }
+#boxProzessUebersicht .item .wrapper { height: 327px; padding: 1px 4px 1px 1px; }
+#boxProzessUebersicht .item .shadow { width: 200px; height: 70px; margin-left: 1px; background: url('../sparda_img/bg-carousel-spiegelung.png') left top no-repeat; }
+#boxProzessUebersicht .moving .item .shadow { background: url('../sparda_img/bg-carousel-spiegelung-dimm.png') left top no-repeat; }
+#boxProzessUebersicht .small { background-image: url('../sparda_img/bg-carousel-small.png'); }
+#boxProzessUebersicht .moving .small { background-image: url('../sparda_img/bg-carousel-small-dimm.png'); }
+#boxProzessUebersicht .big { background-image: url('../sparda_img/bg-carousel-big.png'); }
+#boxProzessUebersicht .big { background-image: url('../sparda_img/bg-carousel-big-dimm.png'); }
+#boxProzessUebersicht .item .top { height: 47px; }
+#boxProzessUebersicht .item .main { width: 200px; }
+#boxProzessUebersicht .item .bottom { text-align: right; }
+#boxProzessUebersicht .small .main { height: 190px; }
+#boxProzessUebersicht .small .bottom { height: 91px; }
+#boxProzessUebersicht .big .main { height: 223px; }
+#boxProzessUebersicht .big .bottom { height: 58px; }
+#boxProzessUebersicht #umsatzanzeige { }
+#boxProzessUebersicht #umsatzanzeige .saldo { margin: 19px 10px 0 0; text-align: right; }
+#boxProzessUebersicht #umsatzanzeige .saldo .sum { padding-left: 16px; }
+#boxProzessUebersicht #dauerauftragsliste { }
+#boxProzessUebersicht #empfaengerliste { }
+#boxProzessUebersicht #dauerauftragsliste thead th,#boxProzessUebersicht #empfaengerliste thead th { padding-left: 37px; }
+#boxProzessUebersicht #dauerauftragsliste .info,#boxProzessUebersicht #empfaengerliste .info { padding-left: 27px; }
+#boxProzessUebersicht .pictoButton img { margin: 13px 10px; }
+#boxProzessUebersicht .pictoButton.uwWeiterBtn img { margin-top: 10px; }
+#boxProzessUebersicht .small .pictoButton img { margin: 10px 10px 0; }
+#main .kap0-5-2 #bInfo { top: 362px; background: none; }
+.boxVertrieb #bTools,.boxVertrieb #bClose,#main .boxVertrieb #bInfo,#main .boxVertrieb #bSteps,.boxVertrieb #clips { display: none; }
+body#boxOverlay { width: 614px; }
+body#boxOverlay .ovContent { height: 359px; background-image: url('../sparda_img/bg-overlay-kap412.png'); }
+.boxFavorits #bTools,#main .boxFavorits #bInfo,#main .boxFavorits #bSteps,.boxFavorits #clips { display: none; }
+.boxFavorits #bClose { left: 606px; top: 30px; }
+.boxFavorits #bHeadline { left: 25px; top: 37px; color: #102648; font-size: 15px; }
+#login { height: 490px; width: 975px; margin-bottom: -53px; position: relative; }
+#login .loginHead { background: url('../sparda_img/bg-buehne-login-top.png') top left no-repeat; display: block; height: 16px; }
+#login .loginHeadSmall { background: url('../sparda_img/bg-buehne-login-top-small.png') top left no-repeat; display: block; height: 16px; }
+#login .loginBody { background: url('../sparda_img/bg-buehne-login-middle.png') top left repeat-y; display: block; }
+#login .loginBodySmall { background: url('../sparda_img/bg-buehne-login-middle-small.png') top left repeat-y; display: block; }
+#login .loginFoot { background: url('../sparda_img/bg-buehne-login-bottom.png') top left no-repeat; display: block; height: 22px; }
+#login .loginFootSmall { background: url('../sparda_img/bg-buehne-login-bottom-small.png') top left no-repeat; display: block; height: 17px; }
+#login .spiegelung { background: url('../sparda_img/bg-spiegelung-login.png') top left no-repeat; margin-left: 4px; height: 60px; }
+#login .spiegelungSmall { background: url('../sparda_img/bg-spiegelung-login-small.png') top left no-repeat; height: 60px; }
+#login .bgBody { background: url('../sparda_img/box-login.png') top left no-repeat; margin-left: 15px; width: 664px; }
+#login #tabs #classic { background: url('../sparda_img/reiter-classic.png') top left no-repeat; }
+#login #tabs #freischaltung { background: url('../sparda_img/reiter-freischaltung.png') top left no-repeat; }
+#login #tabs #demo { background: url('../sparda_img/reiter-demokonto.png') top left no-repeat; }
+#login #bShadow { margin-left: 2px; margin-top: -95px; width: 969px; background-image: url('../sparda_img/bg-spiegelung-login.png'); }
+#stage #login .headline h1 { padding-top: 40px; padding-left: 66px; font-size: 17px; font-style: normal; }
+#stage #login .headline p { padding-top: 20px; padding-left: 66px; }
+#login h2 { font-size: 13px; margin-bottom: 15px; }
+#login p { line-height: 18px; }
+#login .loginArea { position: relative; height: 326px; }
+#login .logoutArea { margin-top: 22px; position: relative; }
+#login #submitLoginForm { position: absolute; top: 250px; left: 535px; width: 130px; }
+#login #submitLoginForm .maintenanceButton { margin-top: 5px; float: right; }
+#login #tabs { position: absolute; top: 16px; left: 260px; height: 40px; width: 420px; }
+#login #submitClassicTabForm { float: left; margin-left: 5px; width: 125px; }
+#login #submitFreischaltungTabForm { float: left; margin-left: 5px; width: 170px; }
+#login #submitDemoTabForm { float: left; margin-left: 5px; width: 95px; }
+#login #submitLoginWerbungForm { background: url('../sparda_img/bg-werbung.png') no-repeat; height: 110px; width: 663px; margin-top: 13px; }
+#submitLoginWerbungForm .lwLink { position: absolute; top: 365px; left: 513px; }
+#submitLoginWerbungForm .lwText { position: absolute; top: 330px; left: 235px; width: 440px; }
+#submitLoginWerbungForm .lwTitel { position: absolute; top: 312px; left: 235px; width: 440px; }
+#submitLoginWerbungForm .lwBild { width: 198px; height: 108px; }
+#login #submitDemoForm { position: absolute; top: 268px; left: 808px; }
+#login #submitPinAendern { position: absolute; top: 268px; left: 778px; }
+#login #backToLogin { position: absolute; top: -115px; left: 596px; }
+#login #closeLogout { position: absolute; top: -115px; left: 764px; }
+#login .loginBox { width: 646px; height: 262px; margin-left: 18px; padding-top: 14px; }
+#login .pin-aendern .loginBox { float: none; width: 700px; margin-left: 90px; }
+#login .demoBox { float: left; width: 226px; margin-left: 60px; }
+#login #loginFormular { margin-top: 22px; font-size: 13px; }
+#login .textField { margin-bottom: 11px; }
+#login .textField label { display: block; font-weight: bold; width: 233px; float: left; }
+#login .textField input { border: 1px solid #00173c; width: 100px; }
+#login .textField img { margin-left: 10px; vertical-align: text-bottom; }
+#login.logout { background-image: url('../sparda_img/bg-buehne-logout.png'); }
+#login.logoutWithSocialMedia { background-image: url('../sparda_img/bg-weiss-auf-transparent-975x645.png'); height: 645px; }
+#login #items { margin-left: 67px; height: 232px; width: 870px; }
+#login .item { height: 232px; width: 260px; float: left; margin-right: 30px; background: url('../sparda_img/bg-item-logout.png') 0 120px no-repeat; }
+#login .item .text { height: 85px; overflow: hidden; }
+#login .item .text p { padding: 2px 16px 13px 16px; }
+#login .item .text h3 { padding: 13px 16px 2px 16px; font-size: 14px; }
+#login .item .button { text-align: right; padding-right: 12px; }
+.infoLinkAreaLogin { margin-left: 33px; margin-top: 12px; }
+.infoLinkAreaLoggedIn { font-size: 11px; margin-top: 12px; text-align: center; position: relative; }
+.infoLinkAreaLogout { font-size: 11px; text-align: center; margin-top: 24px; }
+.infoLink { margin-right: 10px; }
+#login #socialMedia { background: url('../sparda_img/bg-grau-auf-weiss-840x110.png') 0 0 no-repeat; width: 820px; height: 90px; padding: 10px; margin: 38px 0 0 67px; }
+#login #socialMedia .links { float: left; width: 280px; min-height: 1px; }
+#login #socialMedia .links a { display: block; float: left; width: 65px; }
+#login #socialMedia .text { float: left; width: 540px; }
+#login-messages { float: right; margin-top: 40px; margin-right: 18px; width: 261px; }
+.login-messages { }
+.login-messages .head { display: block; height: 16px; width: 261px; }
+.login-messages .body { padding: 0 15px; }
+.login-messages .foot { display: block; height: 16px; width: 261px; }
+#messages-warn .head { background-image: url('../sparda_img/hinweis-top.png'); }
+#messages-warn .body { background-image: url('../sparda_img/hinweis-middle.png'); background-repeat: repeat-y; }
+#messages-warn .foot { background-image: url('../sparda_img/hinweis-bottom.png'); }
+#messages-error { color: white; }
+#messages-error .head { background-image: url('../sparda_img/login-warnung-top.png'); background-repeat: no-repeat; }
+#messages-error .body { background-image: url('../sparda_img/login-warnung-middle.png'); background-repeat: repeat-y; }
+#messages-error .foot { background-image: url('../sparda_img/login-warnung-bottom.png'); background-repeat: no-repeat; }
+#keypad { display: none; margin-top: 20px; width: 277px; height: 245px; z-index: 99; background: #FFF url('../sparda_img/bg-keypad.png') 0 0 no-repeat; }
+#draggableKeypad { cursor: move; }
+#keypad table { margin: 7px 19px 19px 19px; }
+#keypad .wpsColRight { text-align: right; }
+#keypad table th { height: 45px; font-weight: normal; vertical-align: top; font-size: 18px; }
+#keypad button { cursor: pointer; width: 77px; height: 43px; font-size: 6px; color: #2d79af; border: 0; padding-top: 30px; background: url('../sparda_img/sprite_tanpad.png') no-repeat 0 0 transparent; }
+#keypad button:hover { color: #286496; }
+#keypad #bEnter:hover { color: #f87c1a; }
+#keypad #b00:hover { background-position: 0 0; }
+#keypad #b00 { background-position: -77px 0; }
+#keypad #b01:hover { background-position: 0 -43px; }
+#keypad #b01 { background-position: -77px -43px; }
+#keypad #b02:hover { background-position: 0 -86px; }
+#keypad #b02 { background-position: -77px -86px; }
+#keypad #b03:hover { background-position: 0 -129px; }
+#keypad #b03 { background-position: -77px -129px; }
+#keypad #b04:hover { background-position: 0 -172px; }
+#keypad #b04 { background-position: -77px -172px; }
+#keypad #b05:hover { background-position: 0 -215px; }
+#keypad #b05 { background-position: -77px -215px; }
+#keypad #b06:hover { background-position: 0 -258px; }
+#keypad #b06 { background-position: -77px -258px; }
+#keypad #b07:hover { background-position: 0 -301px; }
+#keypad #b07 { background-position: -77px -301px; }
+#keypad #b08:hover { background-position: 0 -344px; }
+#keypad #b08 { background-position: -77px -344px; }
+#keypad #b09:hover { background-position: 0 -387px; }
+#keypad #b09 { background-position: -77px -387px; }
+#keypad #bEntf:hover { background-position: 0 -430px; }
+#keypad #bEntf { background-position: -77px -430px; }
+#keypad #bEnter:hover { background-position: 0 -473px; }
+#keypad #bEnter { background-position: -77px -473px; }
+body .bigCalendar .rich-calendar-popup { position: absolute !important; z-index: 3 !important; left: 30px !important; top: 0 !important; margin: 0 !important; }
+body .carouselItem .bigCalendar .rich-calendar-popup { left: 95px !important; top: 20px !important; }
+body .carouselItem .bigCalendar .rich-calendar-popup.carouselScrolled { left: 740px !important; }
+.bigCalendarPdv { position: absolute; top: 20px; left: 20px; width: 464px; z-index: 10; }
+body table.rich-calendar-exterior,body table.rich-calendar-exterior tr,body table.rich-calendar-exterior tr td { border-collapse: collapse; }
+body .rich-calendar-btn { cursor: pointer; }
+body .rich-calendar-header { border: 1px solid #b6bdc7 !important;; background: url('../sparda_img/calendar-slim-header.png') left top repeat-x; vertical-align: middle !important; }
+body .bigCalendar .rich-calendar-header { background: url('../sparda_img/calendar-big-header.png') left top repeat-x; }
+body .rich-calendar-tool,body .rich-calendar-month { vertical-align: middle !important; text-align: center; height: 22px; background: none; font-size: 12px; font-family: Arial, Verdana, sans-serif; font-weight: bold; color: #2874ac; white-space: nowrap; }
+body .rich-calendar-tool { width: 20px; letter-spacing: -3px; font-size: 14px; }
+body .bigCalendar .rich-calendar-tool,body .bigCalendar .rich-calendar-month { height: 41px; font-size: 16px; }
+body .bigCalendar .rich-calendar-tool { font-size: 20px; padding: 0; width: 35px; }
+body .rich-calendar-days,body .rich-calendar-week,body .rich-calendar-cell { border-bottom: 1px solid #b6bdc7 !important; border-right: 1px solid #b6bdc7 !important; border-left: 1px solid #b6bdc7 !important; vertical-align: middle !important; padding: 0 2px 0 0 !important; width: 34px; height: 17px; line-height: 16px !important; background: #fff; font-size: 11px; font-family: Arial, Verdana, sans-serif; }
+body .bigCalendar .rich-calendar-days,body .bigCalendar .rich-calendar-week,body .bigCalendar .rich-calendar-cell { width: 51px; height: 35px; padding-right: 6px !important; font-size: 12px; }
+body .rich-calendar-days { color: #2a3d5c; text-align: center; font-weight: bold; padding: 0; }
+body .bigCalendar .rich-calendar-days { font-size: 13px; height: 30px !important; padding: 0; }
+body .rich-calendar-week { color: #196aa6; border-left: 1px solid #b6bdc7; border-right: 1px solid #b6bdc7; text-align: right; font-weight: bold; }
+body .rich-calendar-cell { color: #2a3d5c; border-right: 1px solid #b6bdc7; text-align: right; }
+body .bigCalendar .rich-calendar-cell { vertical-align: top !important; }
+body .rich-right-cell { border-right: 1px solid #2a3d5c; }
+body .rich-bottom-cell { border-bottom: none; }
+body .rich-calendar-footer { display: none; }
+body .rich-calendar-weekends { }
+body .rich-calendar-disabled,body .rich-calendar-boundary-dates { color: #A1B0C1; font-style: italic; }
+body .rich-calendar-today { background: url('../sparda_img/calendar-today.png') left top no-repeat; font-weight: normal; }
+body .bigCalendar .rich-calendar-today { background: url('../sparda_img/calendar-big-today.png') left top no-repeat; }
+body .terminCalendar .rich-calendar-today { background: url('../sparda_img/calendar-termin-today.png') left top no-repeat; }
+body .rich-calendar-cell:hover { background: #FFF url('../sparda_img/calendar-neutral.png') left top no-repeat; color: #FFF; font-weight: bold; }
+body .bigCalendar .rich-calendar-cell:hover { background: #FFF url('../sparda_img/calendar-big-neutral.png') left top no-repeat; }
+body .terminCalendar .rich-calendar-cell:hover { background: #FFF url('../sparda_img/calendar-termin-neutral.png') left top no-repeat; }
+body .rich-calendar-disabled:hover,body .rich-calendar-boundary-dates:hover { background: url('../sparda_img/calendar-warning.png') left top no-repeat; color: #FFF; }
+body .bigCalendar .rich-calendar-disabled:hover,body .bigCalendar .rich-calendar-boundary-dates:hover { background: #FFF url('../sparda_img/calendar-big-warning.png') left top no-repeat; }
+body .terminCalendar .rich-calendar-disabled:hover,body .terminCalendar .rich-calendar-boundary-dates:hover { background: #FFF url('../sparda_img/calendar-termin-warning.png') left top no-repeat; }
+body .rich-calendar-select,body .rich-calendar-select:hover { background: #fff url('../sparda_img/calendar-select.png') left top no-repeat; color: #fff; font-weight: bold; }
+body .bigCalendar .rich-calendar-select,body .bigCalendar .rich-calendar-select:hover { background: url('../sparda_img/calendar-big-select.png') left top no-repeat; }
+body .terminCalendar .rich-calendar-select,body .terminCalendar .rich-calendar-select:hover { background: url('../sparda_img/calendar-termin-select.png') left top no-repeat; }
+body .rich-calendar-tool-btn { cursor: pointer; padding: 2px 3px; white-space: nowrap; }
+body .rich-calendar-month .rich-calendar-tool-btn { cursor: default; }
+body .bigCalendar .rich-calendar-tool-btn { height: 41px; line-height: 41px; padding: 0; width: 100%; }
+body .rich-calendar-tool-close .rich-calendar-tool-btn { line-height: 38px; }
+body .rich-calendar-tool-btn-disabled { padding: 2px 3px; white-space: nowrap; }
+body .rich-calendar-tool .rich-calendar-tool-btn-hover { background-color: transparent; color: #000; border: 0 solid transparent; }
+body .rich-calendar-month .rich-calendar-tool-btn-hover { background-color: transparent; color: #2874AC; border: 0 solid transparent; }
+body .rich-calendar-tool-btn-press { border-color: #BED6F8; border-right-color: #FFF; border-bottom-color: #FFF; }
+body .rich-calendar-tool-close { padding: 2px 2px 2px 4px; background-repeat: no-repeat; background-position: left center; }
+body .rich-calendar-hover { }
+body .rich-calendar-input { width: 120px; }
+body .m33-33-33 .rich-calendar-input { width: 110px; }
+body #boxProzess .inner .bigCalendar .rich-calendar-popup { margin-left: -300px; }
+body .rich-calendar-button { cursor: pointer; vertical-align: middle; margin-left: 5px; }
+body .rich-calendar-editor-shadow { background: #FFF; opacity: .5; filter: Alpha(Opacity = 50); }
+body .rich-calendar-time-layout { background: #ECF4FE; border: 1px solid; border-color: #BED6F8; position: relative; }
+body .rich-calendar-date-layout { background: #FFF; border: 1px solid; border-color: #BED6F8; position: relative; }
+body .rich-calendar-time-layout,body .rich-calendar-date-layout,body .rich-calendar-time-layout input { font-size: 11px; font-family: Arial, Verdana, sans-serif; }
+body .rich-calendar-time-layout-fields { padding: 7px 7px 5px; white-space: nowrap; }
+body .rich-calendar-time-layout-cancel { padding: 0 7px 7px 1px; }
+body .rich-calendar-time-layout-ok { padding: 0 1px 7px 7px; }
+body .rich-calendar-date-layout-cancel { background: #ECF4FE; border-top: 1px solid; border-top-color: #BED6F8; padding: 5px 5px 5px 1px; }
+body .rich-calendar-date-layout-ok { background: #ECF4FE; border-top: 1px solid; border-top-color: #BED6F8; padding: 5px 1px 5px 5px; }
+body .rich-calendar-date-layout-split { border-right: 1px solid; border-right-color: #BED6F8; }
+body .rich-calendar-time-btn { width: 45px; border: 1px solid; border-color: #FFF; border-right-color: #BED6F8; border-bottom-color: #BED6F8; background: #ECF4FE; padding: 2px; white-space: nowrap; text-align: center; cursor: pointer; }
+body .rich-calendar-time-btn-press { border: 1px solid; border-color: #BED6F8; border-right-color: #FFF; border-bottom-color: #FFF; background-color: #F5F5F5; }
+body .rich-calendar-time-input { width: 22px; margin: 0 2px; }
+body .rich-calendar-spinner-up { height: 7px; width: 14px; margin: 0 1px 1px 0; }
+body .rich-calendar-spinner-down { height: 7px; width: 14px; margin: 0 1px 1px 0; }
+body .rich-calendar-spinner-pressed { margin: 1px 0 0 1px; }
+body .rich-calendar-editor-layout-shadow { background-color: #000; opacity: .3; filter: Alpha(Opacity = 30); position: absolute; }
+body .rich-calendar-editor-btn { width: 36px; padding: 2px; margin: 2px; text-align: center; cursor: pointer; }
+body .rich-calendar-editor-btn-over { padding: 1px; border: 1px solid; border-color: #BED6F8; background: #E4F5E2; }
+body .rich-calendar-editor-btn-selected { background-color: #FF7800; padding: 2px; border: 0; color: #FFEBDA; font-weight: bold; cursor: default; }
+body .rich-calendar-editor-tool-over { padding: 1px; background: #ECF4FE; border: 1px solid #FFF; border-right-color: #BED6F8; border-bottom-color: #BED6F8; }
+body .rich-calendar-editor-tool-press { padding: 1px; background: #ECF4FE; border: 1px solid #BED6F8; border-right-color: #FFF; border-bottom-color: #FFF; }
+.boxProdukte #ktoExtPopUpSpar #popupForm { height: 181px; overflow: hidden; }
+.boxProdukte #ktoExtPopUpSpar .popupBody { background: url('../sparda_img/bg-popup-416b.png') left top repeat-x; }
+.boxProdukte #ktoPopUpSpar #popupForm { height: 105px; overflow: hidden; }
+.boxProdukte #ktoPopUpSpar .popupBody { background: url('../sparda_img/bg-popup-415b.png') left top repeat-x; }
+#modulContentKonten { width: 704px; }
+#kontoScrollPanelOuter { background: url(../sparda_img/bg-modul-1-1-inactive.png) repeat-y scroll 0 0 transparent; }
+#kontoScrollPanel { height: 333px; width: 702px; }
+.start-portlet-content .bankingkachel-footer { height: 13px; background: url(../sparda_img/bg-modul-1-1-foot.png) no-repeat scroll transparent left bottom; }
+.start-portlet-content .gesamtsaldoPanel { background: url(../sparda_img/bg-modul-1-1-inactive.png) repeat-y scroll 0 0 transparent; font-weight: bold; vertical-align: middle; border: none; text-align: right; height: 19px; padding-top: 4px; }
+.gesamtsaldoPanel .gesamtsaldobetrag { text-align: right; width: 110px; float: right; padding-right: 27px; }
+.gesamtsaldoPanel .gesamtsaldo { text-align: right; float: right; }
+.start-portlet-content .konto-zeile { margin-left: 4px; cursor: pointer; line-height: 38px; height: 38px; }
+.start-portlet-content .konto-zeile.showDetails { background: #ffffff; }
+.start-portlet-content .konto-zeile > div { float: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; height: 38px; }
+.start-portlet-content .konto-zeile .konto { font-weight: bold; padding-left: 10px; width: 165px; }
+.start-portlet-content .konto-zeile .kontonummer { padding-left: 10px; width: 175px; }
+.start-portlet-content .konto-zeile .faelligkeitsdatum { font-weight: bold; padding-left: 10px; width: 115px; }
+.start-portlet-content .konto-zeile .saldo { padding-left: 10px; width: 35px; }
+.start-portlet-content .konto-zeile .kontostand { font-weight: bold; width: 115px; text-align: right; }
+.start-portlet-content .konto-zeile .dragAndDrop { background: url(../sparda_img/drag-and-drop-symbol.png) center 0 no-repeat; width: 38px; }
+.start-portlet-content .konto-zeile .koop { width: 470px; text-align: right; padding-right: 24px; }
+.start-portlet-content .actionPanel { background: url(../sparda_img/bg-modul-1-1-white.png) repeat-y scroll 0 0 transparent; width: 704px; }
+.actionPanel .toggleButton { float: right; margin-top: -11px; margin-right: 11px; cursor: pointer; padding: 13px 0; }
+.actionPanel .toggleButton > .opener { background: url('../sparda_img/sprite-quicklinks-banking.png') -1087px -35px no-repeat; width: 75px; height: 18px; }
+.actionPanel .toggleButton > .closer { background: url('../sparda_img/sprite-quicklinks-banking.png') -1087px -9px no-repeat; width: 95px; height: 18px; }
+.start-portlet-content .actionPanel .actionEbene1 { height: 51px; padding-top: 5px; margin-left: 35px; }
+.start-portlet-content .actionPanel .actionEbene2 { height: 57px; margin-left: 30px; display: none; }
+.start-portlet-content .actionPanel.expanded .actionEbene2 { display: block; }
+.start-portlet-content .actionPanel .actionEbene2 hr { margin: 10px 0 5px; width: 645px; }
+.start-portlet-content .actionPanel .button { display: block; float: left; margin: 0 3px; }
+.start-portlet-content .graphic { height: 395px; width: 697px; margin-left: 4px; }
+.start-portlet-content .verticalLine { width: 1px; height: 392px; position: absolute; left: 423px; top: 25px; background-color: rgb(102, 153, 153); z-index: 50; }
+.start-portlet-content .verticalLineSpacer { float: left; text-align: right; width: 3px; height: 15px; overflow: hidden; }
+.start-portlet-content .graphic .kontozeile { margin-top: 6px; float: left; }
+.start-portlet-content .graphic .konto { margin-left: 5px; float: left; text-align: left; width: 90px; overflow: hidden; text-overflow: ellipsis; }
+.start-portlet-content .graphic .kontonummer { float: left; text-align: right; width: 170px; overflow: hidden; margin-left: 3px; }
+.start-portlet-content .graphic .soll { margin-left: 10px; float: left; width: 140px; height: 13px; overflow: hidden; }
+.start-portlet-content .graphic .haben { float: left; width: 140px; height: 13px; overflow: hidden; }
+.start-portlet-content .graphic .saldo { margin-left: 10px; float: left; text-align: right; width: 99px; overflow: hidden; }
+.start-portlet-content .legende { margin-top: 2px; margin-left: 9px; }
+.start-portlet-content .legende .soll { width: 140px; height: 13px; margin-top: 1px; margin-left: 196px; float: left; }
+.start-portlet-content .legende .haben { width: 140px; height: 13px; margin-top: 1px; float: left; }
+.start-portlet-content .legende .gesamtsaldo { margin-right: 27px; float: right; text-align: left; font-weight: bold; }
+.bankingkachel-header { font-size: 12px; font-weight: bold; vertical-align: middle; color: #ffffff; height: 21px; width: 690px; border: none; float: left; margin-left: 15px; margin-top: 4px; }
+.bankingkachel-content { font-size: 12px; vertical-align: top; color: #2a3d5c; width: 700px; border: none; text-align: left; }
+.bankingkachel-content-column { width: 750px; height: 25px; }
+.bankingkachel-content-girokonto { font-size: 12px; font-weight: bold; color: #307fb3; }
+.bankingkachel-content-einlagekonto { font-size: 12px; font-weight: bold; color: #686868; }
+.bankingkachel-content-kreditkonto { font-size: 12px; font-weight: bold; color: #bc0000; }
+.bankingkachel-content-kartenkonto { font-size: 12px; font-weight: bold; color: #F27115; }
+.bankingkachel-content-saldograph { height: 15px; }
+.bankingkachel-content-legende { height: 10px; width: 10px; }
+.bankingkachel-content-legende-girokonto { background-color: #307fb3; }
+.bankingkachel-content-legende-einlagekonto { background-color: #686868; }
+.bankingkachel-content-legende-kreditkonto { background-color: #bc0000; }
+.bankingkachel-content-legende-kartenkonto { background-color: #F27115; }
+.bankingkachel-content-aktionen { vertical-align: top; background-color: #ffffff; color: #2a3d5c; width: 669px; border: none; text-align: center; }
+.bankingkachel-content-aktion { width: 570px; height: 70px; text-align: left; vertical-align: top; }
+.bankingkachel-content-kontonr { width: 170px; text-align: left; }
+.bankingkachel-content-saldo { width: 155px; text-align: right; }
+.bankingkachel-content-graphics-row { height: 15px; border: none; }
+.bankingkachel-content-graphics-kontonr { width: 104px; text-align: left; }
+.bankingkachel-content-graphics-soll { width: 140px; text-align: right; }
+.bankingkachel-content-graphics-kontostand { width: 100px; text-align: right; }
+.bankingkachel-content-graphics-trenner { width: 2px; height: 25px; background-color: #669999; z-index: 2; }
+.bankingkachel-content-graphics-haben { width: 140px; text-align: left; }
+.startkachel-content-action { background: url('../sparda_img/bg-aktion.png') 0 0 no-repeat; display: none; width: 263px; height: 18px; margin-left: 7px; margin-top: 5px; font-weight: bold; padding: 7px 10px; }
+.startkachel-content-action > .pfeil { background: url("../sparda_img/sprite-navigation.png") -123px -222px no-repeat; width: 30px; height: 17px; position: absolute; margin: -1px 0 0 212px; }
+.open .startkachel-content-action,.defaultCompact .startkachel-content-action.item0,.defaultCompact .startkachel-content-action.item1 { display: block; }
+.startkachel-content-action.min { margin-top: 0; }
+.saldo-negative { color: #d60000; }
+.start-portlet-content a { color: #2a3d5c; text-decoration: none; }
+.start-portlet-content hr { margin: 0 0 0 4px; width: 697px; padding: 0; border: none; border-top: 1px solid #9ba9b4; height: 0; }
+#d07,#dpo { background: transparent none; float: left; }
+#d07 p,#dpo p { line-height: 18px; }
+.ovStandard { background: transparent url('../sparda_img/einstellungspopup.png'); width: 805px; height: 499px; }
+.ovStandard .ovStandard { background: none; width: auto; height: auto; }
+#d07 .ovInfo,#dpo .ovInfo { background: transparent url('../sparda_img/infopopup.png'); width: 600px; height: 435px; }
+#d07 .ovHelp,#dpo .ovHelp { background: transparent url('../sparda_img/hilfepopup.png'); width: 805px; height: 499px; }
+#d07 .ovTour,#dpo .ovTour { background: transparent url('../sparda_img/tourpopup.png'); width: 805px; height: 499px; }
+#d07 .ovContent .wrapper,#dpo .ovContent .wrapper { padding: 15px 28px 0 21px; margin-left: 0; width: 775px; }
+#d07 .ovTop,#dpo .ovTop { height: 38px; }
+#d07 .ovContent,#dpo .ovContent { width: 800px; }
+#d07 .ovInfo .ovContent,#dpo .ovInfo .ovContent { width: 600px; }
+#d07 .ovContent h1,#dpo .ovContent h1 { color: #344663; font-size: 15px; font-weight: bold; }
+#d07 .ovContent .ovTopNav,#dpo .ovContent .ovTopNav { margin-left: 5px; }
+#d07 .ovContent .ovTopNav a,#dpo .ovContent .ovTopNav a,#d07 .ovContent .ovTopNav span,#dpo .ovContent .ovTopNav span { color: #344663; font-size: 15px; font-weight: bold; padding-right: 30px; }
+#d07 .ovContent .ovTopNav a:hover,#d07 .ovContent .ovTopNav a.act,#dpo .ovContent .ovTopNav a:hover,#dpo .ovContent .ovTopNav a.act { color: #1673b2; text-decoration: underline; }
+#d07 .ovContent h2,#dpo .ovContent h2 { color: #344663; font-size: 12px; font-weight: bold; padding: 10px 0 10px 2px; }
+#d07 .ovContent .wrapper,#dpo .ovContent .wrapper { padding-right: 0; }
+#d07 .ovLeft,#dpo .ovLeft { width: 210px; height: 440px; float: left; }
+#d07 ul.nav,#dpo ul.nav { list-style-type: none; margin-top: 15px; margin-left: 5px; }
+#d07 ul.nav li,#dpo ul.nav li { font-size: 13px; background-image: none; padding: 11px 0; margin: 0; }
+#d07 ul.nav li a,#dpo ul.nav li a { display: block; padding-left: 15px; background: url('../sparda_img/overlay-nav.png') 0 center no-repeat; font-weight: bold; color: #344663; }
+#d07 ul.nav li span,#dpo ul.nav li span { display: block; padding-left: 0; font-weight: bold; color: #344663; }
+#d07 ul.nav li a:hover,#d07 ul.nav li.act a,#dpo ul.nav li a:hover,#dpo ul.nav li.act a { background-image: url('../sparda_img/overlay-nav-act.png'); color: #1673b2; }
+#d07 ul.nav li.subnav a,#dpo ul.nav li.subnav a { padding-left: 30px; background: url('../sparda_img/overlay-nav.png') 15px 3px no-repeat; }
+#d07 ul.faqNav li,#dpo ul.faqNav li { display: inline; }
+#d07 ul.faqNav li a,#d07 ul.faqNav li.act a,#d07 ul.faqNav li a:hover,#dpo ul.faqNav li a,#dpo ul.faqNav li.act a,#dpo ul.faqNav li a:hover { background-image: none; padding-left: 0; width: 34px; height: 30px; float: left; }
+#d07 ul.faqNav li.act a,#d07 ul.faqNav li a:hover,#dpo ul.faqNav li.act a,#dpo ul.faqNav li a:hover { text-decoration: underline; }
+#d07 .ovRight,#dpo .ovRight { margin-left: 30px; width: 515px; float: left; height: 380px; overflow: hidden; margin-right: 10px; margin-top: 15px; }
+#d07 .ovStandard .ovRight,#dpo .ovStandard .ovRight { margin-left: 30px; width: 510px; margin-right: 0; }
+#d07 .ovRight .text,#dpo .ovRight .text { margin-left: 5px; }
+#d07 .ovRight .ovText,#dpo .ovRight .ovText { height: 330px; padding-right: 15px; }
+#d07 .ovRight .table,#dpo .ovRight .table { height: 365px; }
+#d07 .ovRight .table table,#dpo .ovRight .table table { padding: 0; margin: 5px 0 0 0; border-collapse: collapse; width: 510px; }
+#d07 .ovRight .table tr td,#dpo .ovRight .table tr td { border-bottom: 1px solid #b8c3d0; padding: 5px 0 5px 0; margin: 0; }
+#d07 .ovRight .table tr td.first,#dpo .ovRight .table tr td.first { font-weight: bold; }
+#d07 .ovRight .table tr td.last,#dpo .ovRight .table tr td.last { text-align: right; }
+#d07 .ovInfo .ovMain,#dpo .ovInfo .ovMain { width: 550px; height: 380px; overflow: hidden; }
+#d07 .ovInfo .item,#dpo .ovInfo .item { padding-top: 10px; padding-bottom: 10px; border-bottom: 1px solid #b8c3d0; }
+#d07 .ovInfo .table,#dpo .ovInfo .table { margin: 0; padding: 0; border-collapse: collapse; }
+#d07 .ovInfo .table tr td.first,#dpo .ovInfo .table tr td.first { padding: 2px 0 2px 0; width: 200px; }
+#d07 .ovInfo .table tr td.last,#dpo .ovInfo .table tr td.last { font-weight: bold; }
+#d07 .ovInfo .warning,#dpo .ovInfo .warning { color: #db2324; font-weight: bold; }
+#d07 .ovInfo div.warning,#dpo .ovInfo div.warning { padding: 10px 0 10px 0; }
+#d07 .ovHelp .ovRight,#dpo .ovHelp .ovRight { height: 410px; }
+#d07 .ovHelp .table tr td.first,#d07 .ovHelp .table tr td.last,#dpo .ovHelp .table tr td.first,#dpo .ovHelp .table tr td.last { padding-top: 0; text-align: left; vertical-align: top; border-bottom: none; }
+#d07 .ovHelp .table ul.nav,#dpo .ovHelp .table ul.nav { margin-top: 5px; }
+#d07 .ovHelp h2,#dpo .ovHelp h2 { padding-top: 15px; border-bottom: 1px solid #b8c3d0; padding-left: 5px; }
+#d07 .ovHelp .ovLeft h2,#dpo .ovHelp .ovLeft h2 { margin-right: 15px; }
+#d07 .ovHelp .backButton,#dpo .ovHelp .backButton { padding: 15px 0 15px 0; }
+#d07 .ovHelp .ovDescription,#dpo .ovHelp .ovDescription { display: block; margin-left: 100px; margin-top: -18px; }
+#d07 .ovHelp .ovUnderline,#dpo .ovHelp .ovUnderline { border-bottom: 1px solid #b8c3d0; padding-bottom: 10px; }
+#d07 .ovHelp .ovFlash,#dpo .ovHelp .ovFlash { width: 510px; height: 360px; margin-top: 5px; }
+#d07 .inner,#dpo .inner { margin-top: 10px; }
+#d07 .inner .selector,#d07 .inner .label,#dpo .inner .selector,#dpo .inner .label { float: left; font-weight: normal; }
+#d07 .inner .label,#dpo .inner .label { padding-top: 8px; margin-bottom: 15px; }
+#d07 .inner .selector,#dpo .inner .selector { padding-top: 3px; width: 30px; }
+#d07 .ovGoto,#dpo .ovGoto { position: absolute; top: 455px; left: 610px; }
+#d07 .ovRight.faq .lineUnder { background-position: 0 bottom; margin-bottom: 10px; padding-bottom: 10px; }
+#d07 .ovRight.faq .ovText { height: 315px; }
+#d07 .ovRight.faq .ovText img { margin-bottom: 6px; }
+#d07 .ovRight.faq .ovText a,#d07 .ovRight.faq .ovText a:hover { text-decoration: underline; }
+#dpo .table .m50-50 .left,#dpo .table .m50-50 .right { float: left; }
+#dpo .table .m50-50 .left { margin-left: 0; }
+.rich-combobox-input,.rich-combobox-input-disabled,.rich-combobox-input-inactive { float: left !important; padding: 4px 0 5px 5px !important; border: none !important; background: url('../sparda_img/selectbox-dyn.png') left top no-repeat !important; font-size: 13px !important; }
+.rich-combobox-button,.rich-combobox-button-icon,.rich-combobox-button-inactive,.rich-combobox-button-disabled { position: absolute !important; width: 32px !important; height: 24px !important; padding: 0 !important; border: none !important; background: url('../sparda_img/selectbox-trigger-dyn.png') left top no-repeat !important; }
+.rich-combobox-strut { display: none !important; }
+.rich-combobox-item { display: block !important; padding: 0 2px 0 20px !important; text-align: left !important; color: #2a3d5c !important; border: none !important; line-height: 38px; }
+.rich-combobox-list-position { border: none !important; top: 20px !important; left: 5px !important; }
+.rich-combobox-list-decoration { border: 1px solid #485974 !important; background: #eef2f5 url('../sparda_img/select-bg.png') repeat-x !important; }
+.rich-combobox-list-scroll { border: none !important; }
+.rich-combobox-item-selected { background: #fbfbfb url('../sparda_img/pulldown-haken.png') 3px center no-repeat !important; border: none !important; cursor: pointer !important; }
+.rich-combobox-shadow { display: none !important; }
+input.rich-combobox-font-inactive,.rich-combobox-font-inactive,input.rich-combobox-font,.rich-combobox-font,.rich-combobox-item { color: #196AA6 !important; font-size: 13px !important; }
+.zoomDataTableHeader { font-size: 20px; }
+.zoomDataTableColumn { font-size: 20px; }
+.zoomContent { font-size: 20px; float: left; color: black; }
+.zoomSubmit { float: left; margin-top: -8px; margin-left: 15px; position: relative; z-index: 100; }
+.ajax-zoom { background: #FFFFFF url(../sparda_img/input-ajax-zoom.png) no-repeat scroll center center; cursor: pointer; position: absolute; height: 32px; width: 42px; margin-left: 691px; margin-top: 2px; }
+.zoomPop .ui-dialog-titlebar { display: none !important; }
+.zoomPop .ui-dialog-content { padding-top: 30px !important; }
+.zoomPop #empfaengerZoom { text-align: left; }
+.dropDownTriangle { background: #fff url('../sparda_img/input-ajax.png') center no-repeat; cursor: pointer; position: absolute; height: 20px; width: 24px; margin: 1px 0 0 457px; }
+#empfaengerListRegion { font-size: 12px; background: #fff; position: absolute; z-index: 99; margin-top: -1px; border: 1px solid; }
+#empfaengerListRegion.empfaengerListRegionZoom { font-size: 20px; }
+#empfaengerListRegion .table { background: url(../sparda_img/empfaengerPopUpBackground.png) 0 -21px repeat-x #E1E5EB; max-height: 190px; }
+#empfaengerListRegion .row { height: 38px; line-height: 38px; clear: both; padding: 0 15px 0 5px; margin: 0; cursor: pointer; }
+#empfaengerListRegion .row > div { overflow: hidden; white-space: nowrap; float: left; text-overflow: ellipsis; }
+#empfaengerListRegion > .table > .row:hover { background-color: #fff; }
+#empfaengerListRegion > .header { color: #196AA6; font-weight: bold; }
+#empfaengerListRegion .sortIcon { vertical-align: middle; margin-left: 6px; }
+#empfaengerListRegion .first { width: 140px; }
+#empfaengerListRegion .middle { width: 130px; }
+#empfaengerListRegion .last { width: 190px; }
+#empfaengerListRegion.empfaengerListRegionZoom .first { width: 230px; }
+#empfaengerListRegion.empfaengerListRegionZoom .middle { width: 205px; }
+#empfaengerListRegion.empfaengerListRegionZoom .last { width: 345px; }
+#blzListRegion tr { background: transparent; }
+#blzListRegion .blzHeader { border-right: 0 none #C4C0C9; border-bottom: 1px solid; color: #000000; font-family: Arial, Verdana, sans-serif; font-size: 12px; padding: 4px; text-align: left; white-space: nowrap; background: transparent; }
+#blzListRegion .blzCell { background: transparent; }
+#blzListRegion .blzCell td { border-width: 0; color: #000000; font-family: Arial, Verdana, sans-serif; font-size: 12px; padding: 2px; }
+#blzListRegion .radioBox { width: 25px; margin-left: 12px; }
+#bHideStepsPopUp { height: 48px; position: absolute; left: 0; text-align: center; width: 430px; display: none; background-color: white; z-index: 99999; }
+#bHideStepsPopUp img { margin-top: 14px; }
+div.startDndInd { background: transparent url(/portalstatic/spm/gfx/apps/start/Verschieben_Flaeche.png) scroll 0 0; height: 21px; color: white; text-align: left; padding-top: 0; }
+.kalenderPopUp.dialog { overflow: visible; }
+#zeitraumAuswahlPopupDiv { width: 320px; height: 220px; overflow: visible; }
+#zeitraumAuswahlPopupDiv .radioBoxCnt { margin-bottom: 2px; }
+#zeitraumAuswahlPopupDiv .uebernehmenBtn { float: right; margin-right: 15px; margin-top: 29px; }
+#abschlussseite img { cursor: pointer; }
+#abschlussseite .frage,#abschlussseite .block1,#abschlussseite .block2 { position: absolute; }
+#abschlussseite .frage.links2 { top: 130px; }
+#abschlussseite .frage.links4 { top: 94px; }
+#abschlussseite .block1.links2 { top: 156px; }
+#abschlussseite .block1.links4 { top: 120px; }
+#abschlussseite .block2.links2 { display: none; }
+#abschlussseite .block2.links4 { top: 156px; }
+.iconsprites { background-image: url('../sparda_img/sprite-icons.png'); cursor: pointer; }
+.iconsprites.sprClose { background-position: -42px -59px; width: 18px; height: 18px; padding: 10px; margin: -10px 0 0 -10px; }
+.iconsprites.sprMorefuncsDim { background-position: -52px -3px; width: 20px; height: 30px; cursor: default; }
+.iconsprites.sprInfo { background-position: -80px -69px; width: 16px; height: 16px; float: left; margin: -2px 0 -3px 0; }
+.iconsprites.stepNextOnly { background-position: -52px -340px; width: 37px; height: 37px; cursor: pointer; }
+.iconsprites.stepNextOnly.dim { background-position: -2px -340px; cursor: default; }
+.iconsprites.stepNext { background-position: -52px -240px; width: 29px; height: 37px; cursor: pointer; }
+.iconsprites.stepNext.dim { background-position: -52px -197px; cursor: default; }
+.iconsprites.stepPrevious { background-position: -2px -240px; width: 29px; height: 37px; cursor: pointer; }
+.iconsprites.stepPrevious.dim { background-position: -2px -197px; cursor: default; }
+.m100.tight { border: 0 !important; }
+#bForm #listForm #header { position: absolute; top: 5px; margin-left: 20px; }
+#bForm #listForm #list { position: absolute; top: 28px; }
+#bForm #listForm table { background: none; border: 0; width: 100%; }
+#bForm #listForm #header table { width: 297px; }
+#listForm #list th { padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+#listForm #list td { padding: 11px 0; border: 0; border-top: 1px solid #dce2e8; font-family: Arial, Helvetica, sans-serif; font-size: 12px; vertical-align: top; line-height: 16px; white-space: nowrap; overflow: hidden; }
+#listForm #list .dr-table-firstrow td { border-top: 0; }
+#listForm #list td .iconsprites.sprInfo { margin-left: 2px; margin-right: 2px; margin-top: 0; }
+#listForm #list .minus { color: #d90000; }
+#listForm #list .infoBox { font-weight: bold; margin-top: 50px; text-align: center; width: 521px; }
+.umsatzsuche > .headerpanel { background: url(../sparda_img/bg-form-umsatzliste-head-doppeltehoehe.png) no-repeat scroll 0 0 transparent; padding-bottom: 3px; overflow: hidden; }
+.umsatzsuche .headerzeile { height: 22px; line-height: 23px; margin: 9px 9px 0; }
+.umsatzsuche .headerzeile.variabel { height: auto; min-height: 22px; }
+.umsatzsuche .headerzeile > div { float: left; }
+.umsatzsuche .umsatzsucheSucheLabel { width: 40px; font-weight: bold; }
+.umsatzsuche .umsatzsucheSuchbegriff { width: 172px; }
+.umsatzsuche .umsatzsucheSuchbegriff > input { width: 154px; }
+.umsatzsuche .umsatzsucheSucheButton { width: 121px; padding-top: 1px; }
+.umsatzsuche .umsatzsucheSucheButton > img { cursor: pointer; padding: 8px 0 4px 0; margin-top: -8px; }
+.umsatzsuche .umsatzsucheSaldoLabel { width: 56px; font-weight: bold; }
+.umsatzsuche .umsatzsucheSaldoLabel > .sprInfo { display: inline-block; float: none; }
+.umsatzsuche .umsatzsucheSaldo { width: 110px; }
+.umsatzsuche .umsatzsucheSaldo > div { width: 110px; text-align: right; }
+.umsatzsuche .umsatzsucheZeitraum { width: 212px; }
+.umsatzsuche .umsatzsucheSuchoptionenButton { width: 110px; padding-top: 2px; }
+.umsatzsuche .umsatzsucheSuchoptionenButton > img { cursor: pointer; padding: 4px 0 8px 0; margin-top: -4px; }
+.umsatzsuche .suchoptionenGeoeffnetButton { display: none; }
+.umsatzsuche .umsatzsucheBeschreibungLabel { width: 212px; font-weight: bold; }
+.umsatzsuche .umsatzsucheBeschreibung { width: 292px; }
+.umsatzsuche .umsatzsucheSuchoptionenButton { width: 110px; padding-top: 2px; }
+.suchoptionenPanel { background: url('../sparda_img/bg-umsatz-suchoptionen.png'); position: absolute; display: none; left: 0; height: 225px; width: 535px; z-index: 21; }
+.suchoptionenPanel > .horizontalLine { width: 521px; height: 0; padding: 0; margin: 0 8px; border: none; border-top: 1px solid #9ba9b4; }
+.suchoptionenPanel > .m50-50 { border-top-width: 10px; }
+.suchoptionenPanel > .m50-50 > .left { margin-left: 16px; }
+.suchoptionenPanel .rich-calendar-input { width: 108px; text-align: right; }
+.suchoptionenPanel .betragVon { width: 108px; margin-left: 6px; text-align: right; }
+.suchoptionenPanel .betragBis { width: 108px; text-align: right; }
+.suchoptionenPanel > .m50-50.checkboxen { margin-bottom: 10px; }
+.suchoptionenPanel > .m50-50.checkboxen > .left { margin-left: 93px; width: 126px; }
+.suchoptionenPanel > .m50-50.checkboxen > .right { margin-left: 43px; }
+.suchoptionenPanel .resetBtnSuchoptionen { cursor: pointer; }
+.suchoptionenPanel .suchenBtnSuchoptionen { float: right; margin-right: -15px; cursor: pointer; }
+.umsatzsuche .umsatzcheckbox { margin-left: 5px; }
+.umsatzsuche .umsatzcheckbox .checkBox { min-height: 19px; background-position: 0 -2px; }
+.umsatzsuche .umsatzcheckbox .checkBox .label { padding: 1px 0 0 25px; }
+.umsatzsuche .minus { color: #D90000; }
+.umsatzsucheFooter { margin: 10px 0 0 4px; width: 522px; overflow: hidden; }
+.umsatzsucheFooter > .buttonLeft { float: left; margin-right: 15px; }
+.umsatzsucheFooter > .buttonRight { float: right; cursor: pointer; }
+.umsatzsuche #cbAlleUmsaetze { margin-top: 6px; margin-left: 5px; }
+.umsatzsuche .tableBody { background: 0; border-bottom: 0; left: 0; height: 209px; overflow: hidden; }
+.umsatzsuche .tableRow { cursor: pointer; border-bottom: 1px solid #dce2e8; height: auto; }
+.umsatzsuche .spalte1 { height: 30px; width: 25px; }
+.umsatzsuche .spalte2 { width: 105px; text-align: center; }
+.umsatzsuche .spalte3 { width: 290px; }
+.umsatzsuche .spalte4 { width: 101px; }
+.umsatzsuche .tableHeader { text-align: center; }
+.umsatzsuche .tableBody .spalte1 { margin-top: 9px; margin-left: 6px; width: 16px; }
+.umsatzsuche .tableBody .spalte1.mehrzeilig { margin-top: -2px; }
+.umsatzsuche .tableBody .spalte2 { text-align: right; width: 81px; margin-right: 18px; }
+.umsatzsuche .tableBody .spalte3 { line-height: 16px; padding: 11px 0; }
+.umsatzsuche .tableBody .spalte4 { font-weight: bold; text-align: right; width: 94px; }
+.umsatzsuche .tableBody .spalte4 .sprInfo { float: right; margin-top: 10px; margin-left: 5px; }
+.umsatzsuche .tableBody .spalte4 .sprInfo.mehrzeilig { float: right; margin-top: -1px; margin-left: 5px; }
+.umsatzsuche .weitereUmsaetze { cursor: pointer; line-height: 16px; padding: 11px 0; font-weight: bold; text-align: center; border-bottom: 1px solid #dce2e8; }
+.umsatzsuche .keineTreffer { margin-top: 25px; font-style: italic; text-align: center; }
+#bForm #listForm.umsatzliste #header { top: 4px; margin-left: 10px; }
+#bForm #listForm.umsatzliste #list { top: 40px; }
+#listForm.umsatzliste #header .item { height: 20px; line-height: 20px; float: left; display: block; margin-right: 5px; margin-top: 3px; }
+#listForm.umsatzliste #header .item.textBold { margin-top: 4px; }
+#listForm.umsatzliste #header .item.text { text-align: right; padding-right: 5px; width: 105px; }
+#listForm.umsatzliste #header .item.sprInfo { margin-top: 6px; }
+#listForm.umsatzliste #header .item.sBox { margin-right: 10px; margin-top: 3px; }
+#listForm.umsatzliste #header .item.sBox input.rich-combobox-font-active { font-size: 12px !important; }
+#listForm.umsatzliste #header .item.sBox input.rich-combobox-font-inactive { font-size: 12px !important; }
+#listForm.umsatzliste #header .image { background: url('../sparda_img/sprite-umsatzliste.png') 0 0 no-repeat; display: inline-block; width: 27px; height: 27px; cursor: pointer; margin-left: 5px; }
+#listForm.umsatzliste #header .image.mehrzeilig { background-position: -10px -47px; margin-left: 10px; }
+#listForm.umsatzliste #header .image.einzeilig { background-position: -10px -10px; margin-left: 10px; }
+#listForm.umsatzliste #header .image.print { background-position: -10px -84px; }
+#listForm.umsatzliste #header .image.download { background-position: -10px -121px; }
+#listForm.umsatzliste #list .colA { width: 107px; max-width: 107px; }
+#listForm.umsatzliste #list .colA div { text-align: right; padding-right: 15px; }
+#listForm.umsatzliste #list .colB { width: 303px; max-width: 303px; }
+#listForm.umsatzliste #list .colC { width: 111px; max-width: 111px; text-align: right; }
+#listForm.umsatzliste #list .colC div { font-weight: bold; padding-right: 20px; }
+#listForm.umsatzliste #list td div[onclick] { cursor: pointer; }
+#listForm.ueberweisungsliste #list .colA { width: 250px; max-width: 250px; }
+#listForm.ueberweisungsliste #list .colB { width: 80px; max-width: 80px; text-align: right; }
+#listForm.ueberweisungsliste #list .colC { width: 80px; max-width: 80px; text-align: right; }
+#listForm.ueberweisungsliste #list .colD { width: 111px; max-width: 111px; text-align: right; }
+#listForm.ueberweisungsliste #list .colD div { font-weight: bold; padding-right: 20px; }
+#listForm.ueberweisungsliste #list td div { cursor: pointer; }
+#listForm.lastschriftenliste #list .colA { width: 91px; max-width: 91px; }
+#listForm.lastschriftenliste #list .colB { width: 319px; max-width: 319px; }
+#listForm.lastschriftenliste #list .colC { width: 111px; max-width: 111px; text-align: right; }
+#listForm.lastschriftenliste #list .colC div { font-weight: bold; padding-right: 20px; }
+#listForm.lastschriftenliste #list td div { cursor: pointer; }
+#listForm.dauerauftragsliste #list .colA { width: 280px; max-width: 280px; }
+#listForm.dauerauftragsliste #list .colB { width: 130px; max-width: 130px; text-align: right; }
+#listForm.dauerauftragsliste #list .colC { width: 111px; max-width: 111px; text-align: right; }
+#listForm.dauerauftragsliste #list .colC div { font-weight: bold; padding-right: 20px; }
+#listForm.dauerauftragsliste #list td div { cursor: pointer; }
+#listForm.empfaengerliste #list .colA { width: 200px; max-width: 200px; }
+#listForm.empfaengerliste #list .colB { width: 130px; max-width: 130px; text-align: left; }
+#listForm.empfaengerliste #list .colC { width: 191px; max-width: 191px; text-align: right; }
+#listForm.empfaengerliste #list .colC div { padding-right: 20px; }
+#listForm.empfaengerliste #list td div { cursor: pointer; }
+.carouselItem .left { margin-right: 20px; }
+.left.tight { margin-left: 10px; margin-right: 10px; }
+.mehr { background: url(../sparda_img/buttons/button_Mehr.png) 0 0 no-repeat; display: inline-block; width: 88px; height: 27px; cursor: pointer; }
+#bMoreImg .mehr { position: relative; top: 110px; left: -20px; }
+.buttonStandardeinstellungen { background: url('../sparda_img/buttons/button_Standardeinstellungen.png') 0 0 no-repeat; width: 166px; height: 27px; }
+.buttonUebernehmen { background: url('../sparda_img/buttons/buttonGruen_Uebernehmen.png') 0 0 no-repeat; width: 112px; height: 27px; }
+.buttonZurueck { background: url('../sparda_img/buttons/button_Zurueck.png') 0 0 no-repeat; width: 82px; height: 27px; }
+.buttonItan { background: url('../sparda_img/buttons/button_iTAN.png') 0 0 no-repeat; width: 69px; height: 27px; }
+.buttonMobileTan { background: url('../sparda_img/buttons/button_mobileTAN.png') 0 0 no-repeat; width: 101px; height: 27px; }
+.buttonItanInact { background: url('../sparda_img/buttons/button_iTAN_inact.png') 0 0 no-repeat; width: 69px; height: 27px; }
+.buttonMobileTanInact { background: url('../sparda_img/buttons/button_mobileTAN_inact.png') 0 0 no-repeat; width: 101px; height: 27px; }
+.buttonChipTan { background: url('../sparda_img/buttons/button_chipTAN.png') 0 0 no-repeat; width: 101px; height: 27px; }
+.buttonChipTanInact { background: url('../sparda_img/buttons/button_chipTAN_inact.png') 0 0 no-repeat; width: 101px; height: 27px; }
+.buttonSecureApp { background: url('../sparda_img/buttons/button_secureApp.png') 0 0 no-repeat; width: 97px; height: 27px; }
+.buttonSecureAppInact { background: url('../sparda_img/buttons/button_secureApp_inact.png') 0 0 no-repeat; width: 97px; height: 27px; }
+#keypadIconSpan div,#keypadIconSpanAtc div,#keypadIconSpanTan div { vertical-align: top; margin-top: 1px; margin-left: 3px; }
+.buttonZiffernpad { background: url('../sparda_img/ziffernpad.png') 0 0 no-repeat; width: 20px; height: 19px; display: inline-block; }
+.footerWaitBar { background: url('../sparda_img/footerWait.gif') 0 0 no-repeat; width: 128px; height: 15px; display: inline-block; }
+.rich-combobox-list-cord { z-index: 10000 !important; }
+#rechnerErgebnis .graph { clear: both; }
+#rechnerErgebnis .graph .bar { float: left; font-size: 0.9em; margin: 0 0 0 11px; padding: 0; text-align: center; width: 73px; }
+#rechnerErgebnis .graph .bar .kapital { background: url("/portalstatic/spm/gfx/apps/faelligkeit/graph_kapital.gif") repeat-y scroll 0 0 transparent; color: #FFFFFF; font-size: 1.1em; font-weight: bold; }
+#rechnerErgebnis .graph .bar .zins { background: url("/portalstatic/spm/gfx/apps/faelligkeit/graph_zins.gif") repeat-y scroll 0 0 transparent; margin-bottom: 2px; margin-top: 3px; }
+#rechnerErgebnis .graph .bar .zins_label { font-weight: bold; }
+#rechnerErgebnis .graph .bar .einheit { background: url("/portalstatic/spm/gfx/apps/faelligkeit/graph_jahr.gif") repeat-y scroll 0 0 transparent; height: 30px; margin-top: 3px; padding-top: 3px; vertical-align: bottom; }
+body .gsln .dr-table-cell { border-right: 0; border-bottom: 0; padding: 4px 4px 4px 4px; color: #000; font-family: Arial, Verdana, sans-serif; }
+#bForm #formularcenter ul { list-style-type: none; }
+#bForm #formularcenter a,#bForm #formularcenter span { background: url('../sparda_img/overlay-nav.png') 0 center no-repeat; display: block; padding: 11px 0 11px 15px; font-size: 13px; font-weight: bold; color: #344663; }
+#bForm #formularcenter a:hover,#bForm #formularcenter .act a { background-image: url('../sparda_img/overlay-nav-act.png'); color: #1673b2; }
+#bForm #formularcenter .right a { background-image: url('../sparda_img/overlay-subnav.png'); }
+#bForm #formularcenter .right a:hover { background-image: url('../sparda_img/overlay-subnav-act.png'); }
+.fixedHeights .m100,.fixedHeights .m50-50,.fixedHeights .m60-40,.fixedHeights .m40-60,.fixedHeights .m33-33-33,.fixedHeights .m20-80 { height: 41px; }
+.fixedHeight { height: 41px; }
+.buttonPdfDruckMitSaldo { display: inline-block; background: url('../sparda_img/sprite-pdf-saldo.png') -6px -4px no-repeat; width: 177px; height: 27px; }
+.buttonPdfDruckOhneSaldo { display: inline-block; background: url('../sparda_img/sprite-pdf-saldo.png') -6px -42px no-repeat; width: 187px; height: 27px; }
+.pop #ueberweisungDruckenPopupDiv .popupFooter { display: none; }
+.buttonElement { display: inline-block; cursor: pointer; }
+.buttonElement.buttonBestaetigung { background: url('../sparda_img/bestaetigungshaken.png') left top no-repeat; width: 46px; height: 46px; }
+.buttonElement.buttonBestaetigung.alignRight { float: right; clear: both; }
+.buttonElement.buttonFlach { background: url('../sparda_img/buttons/buttonFlach.png') left top no-repeat; width: 30px; height: 17px; }
+.buttonElement.buttonInfo { background: url("../sparda_img/sprite-icons.png"); background-position: -80px -69px; width: 16px; height: 16px; margin-bottom: -3px; margin-left: 5px; }
+.buttonElement.buttonFlach.alignedAbsolute { position: absolute; left: 260px; margin-top: -17px; }
+.emulateDisabledInput .disabledInput { display: inline-block; font-size: 13px; color: #2a3d5c; background-color: #D7DEE5; border: 1px solid #AEB9C5; line-height: 18px; height: 18px; padding-left: 5px; }
+.euroBox.emulateDisabledInput .disabledInput,.emulateDisabledInput .disabledInput.alignRight { padding-left: 0; padding-right: 5px; text-align: right; }
+#bForm .euroBox.emulateDisabledInput .inputDivider { padding-right: 6px; }
+.umschichtungsprodukte { margin-top: 10px; }
+#bContent .item .umschichtungsprodukte td.produkt { padding-right: 20px; }
+#bContent .item .umschichtungsprodukte th.betrag { text-align: center; }
+#bContent .item .umschichtungsprodukte td.betrag { text-align: right; }
+#faelligkeitenList { background: url('../sparda_img/bg-item-m100-highlight1.png') left top no-repeat; margin-left: 35px; }
+#faelligkeitenList .wrapper { background: url('../sparda_img/bg-item-m100-highlight2.png') left bottom no-repeat; }
+#faelligkeitenList table { margin: 10px 17px 10px 5px; }
+#faelligkeitenList table th,#faelligkeitenList table td { padding: 3px 15px; }
+#faelligkeitenList table .termin { text-align: center; width: 80px; }
+#faelligkeitenList table .bezeichnung { text-align: left; width: 130px; }
+#faelligkeitenList table .kontonummer { text-align: right; width: 85px; }
+#faelligkeitenList table .betrag { text-align: right; width: 80px; padding-right: 5px; }
+#faelligkeitenList table .euro { padding: 3px 0; width: 30px; }
+.faelligkeitForm .hotlineInfo { position: absolute; width: 220px; left: 350px; bottom: 16px; min-height: 90px; }
+.faelligkeitForm .hotlineInfo .fussnote { font-size: 11px; }
+#boxProzess #daHeights .m100,#boxProzess #daHeights .m50-50,#boxProzess #daHeights .m33-33-33 { border-top-width: 10px; }
+.boxBreit #buehneOuter { width: 708px; height: 404px; border-left: 17px solid transparent; margin-top: 17px; background: url('../sparda_img/bg-buehne-outer-breit.png') no-repeat; }
+.boxBreit #bForm { width: 692px; background: url('../sparda_img/bg-form-breit.png') no-repeat; }
+.boxBreit #clips { display: none; }
+.boxBreit #bClose { left: 680px; }
+.boxBreit #bShadow { margin-left: 18px; width: 704px; background-image: url('../sparda_img/bg-spiegelung-boxBreit.png'); }
+.boxBreit #bHideSteps { top: 348px; }
+#bForm #boxBreit .inner { height: 295px; margin-right: 1px; position: relative; }
+.boxBreit #bButtons { top: 348px; width: 700px; }
+.boxBreit #bHideSteps { width: 692px; }
+.boxBreit .m100 .left { width: 641px; }
+.m100 .left.autoWidth { width: auto; }
+.tableHeader { height: 30px; line-height: 30px; margin-left: 1px; font-weight: bold; }
+.tableHeader > .tableCol { background: url('../sparda_img/bg-table-thead-m100.gif') -10px 0 repeat-x; height: 30px; }
+.tableHeader img { margin-left: 5px; }
+.tableBody { background: #fff; position: relative; left: 1px; width: 100%; overflow: hidden; }
+.tableRow { overflow: hidden; height: 38px; line-height: 38px; border-bottom: 1px solid #dce2e8; }
+.tableCol { float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.multiLineReady .tableRow { height: auto; line-height: normal; }
+.multiLineReady .tableCol { min-height: 1px; padding-bottom: 11px; padding-top: 11px; }
+.fileUploadForm,.fileUploadIframe { margin: 0; padding: 0; border: 0; width: 0; height: 0; }
+.fileUploadInput { position: absolute; right: 0; margin: 0; padding: 0; font-size: 480px; font-family: sans-serif; cursor: pointer; }
+.fileUploadDiv { position: absolute; overflow: hidden; margin: 0; padding: 0; z-index: 2147483583; opacity: 0; filter: Alpha(Opacity = 0); }
+.nachrichtenuebersicht .suchfeld input { width: 300px; }
+.nachrichtenuebersicht .suchfeld img { vertical-align: bottom; margin-top: -3px; margin-bottom: -2px; margin-left: 10px; cursor: pointer; }
+.nachrichtenuebersicht .tableFooter { margin-left: 26px; margin-top: 6px; }
+.nachrichtenuebersicht .tableFooter .label { padding-left: 24px; }
+.nachrichtenuebersicht .tableHeader { margin-top: 15px; }
+.nachrichtenuebersicht .tableBody { height: 181px; overflow: hidden; }
+.nachrichtenuebersicht .tableRow.unread { font-weight: bold; }
+.nachrichtenuebersicht .spalte1 { width: 35px; padding-left: 25px; }
+.nachrichtenuebersicht .spalte2 { width: 50px; text-align: left; cursor: pointer; }
+.nachrichtenuebersicht .spalte3 { cursor: pointer; padding-left: 10px; text-align: left; width: 445px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.nachrichtenuebersicht .spalte4 { width: 100px; padding-right: 25px; text-align: right; cursor: pointer; }
+.nachrichtenuebersicht .tableHeader .spalte2 { padding-left: 5px; width: 45px; }
+.nachrichtenuebersicht .tableHeader .spalte4 { padding-right: 35px; width: 90px; }
+.nachrichtenuebersicht .tableBody .spalte1 { padding-top: 10px; height: 22px; }
+.nachrichtenuebersicht .tableBody .nachrichtensprites { margin-top: 10px; }
+.nachrichtenuebersicht #bButtons .left .buttons { width: 370px; }
+.nachrichtenuebersicht #bButtons .right .buttons { margin-right: 0; }
+.nachrichtenuebersicht #bButtons img { cursor: pointer; }
+.nachrichtenuebersicht #bButtons .left img { margin-right: 10px; }
+.nachrichtenuebersicht #bButtons .right img { margin-left: 10px; }
+.nachrichtenuebersicht .legende { font-weight: bold; float: right; margin-right: 15px; width: 347px; height: 18px; line-height: 18px; }
+.nachrichtenuebersicht .legende div { float: left; }
+.nachrichtenuebersicht .legende .nachrichtensprites { margin-left: 15px; margin-right: 5px; }
+#boxProzessUebersicht .nachrichtenuebersicht td { padding: 2px 0; }
+#boxProzessUebersicht .nachrichtenuebersicht .firstColumn { font-weight: bold; padding-right: 10px; }
+.nachrichtensprites { width: 30px; height: 18px; background-image: url('../sparda_img/sprite-nachrichten.png'); display: inline-block; vertical-align: bottom; }
+.nachrichtensprites.antwort { background-position: 0 -2px; }
+.nachrichtensprites.anfrage { background-position: 0 -27px; }
+.nachrichtensprites.entwurf { background-position: 0 -51px; }
+.nachrichtSchreiben .fileUploadLabel { height: 27px; line-height: 27px; }
+.nachrichtSchreiben .uploadButton { margin-bottom: -9px; margin-left: 10px; }
+.attachmentPanel { clear: both; height: 27px; line-height: 27px; margin-bottom: 2px; overflow: hidden; }
+.attachmentTextPanel { float: left; width: 280px; }
+.attachmentPanel .fileName { float: left; max-width: 210px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.attachmentPanel .fileSize { float: left; margin-right: 20px; }
+.attachmentPanel .progressBar { float: left; width: 87px; margin-top: 4px; margin-right: 10px; }
+.attachmentPanel .progressBar div { height: 19px; }
+.attachmentPanel .progressBarDone { float: left; background: url('../sparda_img/progress-done.png'); }
+.attachmentPanel .progressBarRemaining { float: left; background: url('../sparda_img/progress-remaining.png') right 0; }
+.m20-80 .left { width: 80px; }
+.nachrichtLesen textarea { width: 472px; padding: 2px 5px; }
+.inputLike { border: 1px solid #000000; color: #196AA6; background-color: #FFFFFF; font-size: 13px; line-height: 18px; min-height: 18px; padding-left: 5px; overflow: hidden; white-space: nowrap; }
+.nachrichtLesen #bButtons img { cursor: pointer; }
+.nachrichtLesen #bButtons .left { width: 60% }
+.nachrichtLesen #bButtons .right { width: 39% }
+.nachrichtLesen #bButtons .left img { margin-right: 10px; }
+.nachrichtLesen .attachmentPanel .fileName { max-width: 280px; }
+.labelLeft { font-weight: bold; width: 100px; margin-right: 0; }
+.labelLeft.forInput { height: 22px; line-height: 23px; }
+.kontakthistorieuebersicht .tableFooter { margin-left: 26px; margin-top: 6px; }
+.kontakthistorieuebersicht .tableFooter .label { padding-left: 24px; }
+.kontakthistorieuebersicht .tableHeader { margin-top: 15px; }
+.kontakthistorieuebersicht .tableBody { height: 181px; width: 690px; overflow: hidden; }
+.kontakthistorieuebersicht .tableHeader .spalte4 { padding-right: 25px; width: 290px; }
+.kontakthistorieuebersicht .spalte1 { width: 100px; padding-left: 10px; cursor: pointer; }
+.kontakthistorieuebersicht .spalte2 { width: 130px; text-align: left; cursor: pointer; height: 30px; }
+.kontakthistorieuebersicht .spalte3 { width: 125px; padding-left: 10px; text-align: left; cursor: pointer; height: 30px; }
+.kontakthistorieuebersicht .spalte4 { width: 290px; padding-right: 25px; text-align: left; cursor: pointer; }
+.kontakthistorieuebersicht .suchfeld input { width: 300px; }
+.kontakthistorieuebersicht .suchfeld img { vertical-align: bottom; margin-top: -3px; margin-bottom: -2px; margin-left: 10px; cursor: pointer; }
+.kalenderuebersicht .tableFooter { margin-left: 26px; margin-top: 6px; }
+.kalenderuebersicht .tableFooter .label { padding-left: 24px; }
+.kalenderuebersicht .tableHeader { margin-top: 15px; }
+.kalenderuebersicht .tableBody { height: 181px; width: 520px; overflow: hidden; }
+.kalenderuebersicht .spalte1 { width: 120px; padding-left: 10px; cursor: pointer; }
+.kalenderuebersicht .spalte2 { width: 390px; text-align: left; cursor: pointer; height: 30px; }
+.kalenderuebersicht .suchfeld input { width: 300px; }
+.kalenderuebersicht .suchfeld img { vertical-align: bottom; margin-top: -3px; margin-bottom: -2px; margin-left: 10px; cursor: pointer; }
+#kalenderTableHeaderId { width: 200px; }
+.kalender .tableFooter { margin-left: 26px; margin-top: 6px; }
+.kalender .tableFooter .label { padding-left: 24px; }
+.kalender .tableHeader { margin-top: 15px; }
+.kalender .tableHeader img { cursor: pointer; margin-top: 10px; }
+.kalender .tableHeader .spalte1 { width: 141px; text-align: right; height: 30px; padding-left: 30px; }
+.kalender .tableHeader .spalte2 { width: 130px; padding-left: 10px; text-align: center; height: 30px; }
+.kalender .tableHeader .spalte3 { width: 194px; text-align: left; height: 30px; }
+.kalender .tableBody { width: 455px; margin-left: 30px; margin-top: 50px; border: 2px solid #DCE2E8; }
+.kalender .tableRowHead { border-bottom: 0 solid #dce2e8; margin-left: 33px; margin-top: 30px; font-weight: bold; }
+.kalender .tableRowHead .tableCol { border: 0 solid #dce2e8; width: 40px; text-align: left; margin-left: 21px; }
+.kalender .tableRow { border-bottom: 0 solid #dce2e8; line-height: 21px; height: 21px; }
+.kalender .tableRow .tableCol{ border: 1px solid #dce2e8; }
+.kalender .tableCol { width: 58px; padding-right: 5px; text-align: right; }
+.kalender .tableCol.grey { color: #C0C0C0; }
+.kalender .tableCol.einKontakt { background-image: url('../sparda_img/buttons/button_Kalender_blau.png'); color: #ffffff; font-weight: bold; }
+.kalender .tableCol.faelligkeitenKontakt { background-image: url('../sparda_img/buttons/button_Kalender_grau_f.png'); color: #ffffff; font-weight: bold; }
+.kalender .tableCol.veranstaltungenKalender { background-image: url('../sparda_img/buttons/button_Kalender_grau_v.png'); color: #ffffff; font-weight: bold; }
+.kalender .tableCol.vergleichsangebotKalender { background-image: url('../sparda_img/buttons/button_Kalender_grau_a.png'); color: #ffffff; font-weight: bold; }
+.kalender .tableCol.terminKalender { background-image: url('../sparda_img/buttons/button_Kalender_grau_t.png'); color: #ffffff; font-weight: bold; }
+.kalender .spalte { width: 80px; }
+.kalender .spalte1 { width: 115px; text-align: left; cursor: pointer; height: 30px; padding-left: 30px; }
+.kalender .spalte2 { width: 351px; padding-left: 10px; cursor: pointer; text-align: left; }
+.kalenderTableHead { margin-left: 15px; margin-top: 15px; }
+.kalenderTableHead .tableCol { border: 0 solid #dce2e8; width: 100px; font-weight: bold; height: 15px; text-align: center; }
+.kalender .legende { font-weight: bold; float: left; width: 420px; height: 18px; line-height: 18px; margin-top: 5px; }
+.kalender .legende div { float: left; }
+.kalender .legende .kalendersprites { margin-left: 8px; margin-right: 2px; }
+.kalender .box { min-height: 30px; text-align: left; font-weight: normal; padding: 5px; min-width: 200px; z-index: 1; border: 2px solid #D1D8E0; background-color: white; position: absolute; display: none; color: #000000; }
+.kalendersprites { width: 25px; height: 25px; background-image: url('../sparda_img/icon_a_f_t_v_sprite.png'); display: inline-block; vertical-align: bottom; }
+.kalendersprites.angebot { background-position: 0 -7px; }
+.kalendersprites.faelligkeit { background-position: 0 -40px; }
+.kalendersprites.termin { background-position: 0 -70px; }
+.kalendersprites.veranstaltung { background-position: 0 -100px; }
+.kalendereintrag .m20-80 .left .label { line-height: 22px; }
+.kalendereintrag .m20-80 { border-top: 0; height: 41px; }
+.kalender.termin #bForm,.kalenderuebersicht.termin #bForm { background: url("../sparda_img/bg-form-basis_250.png") no-repeat scroll 0 0 transparent; }
+.kalender.termin #bForm #boxProzess .inner,.kalenderuebersicht.termin #bForm #boxProzess .inner { height: 250px; }
+.kalender.termin #bButtons,.kalenderuebersicht.termin #bButtons { top: 300px; }
+.kalender.termin #bButtons .left,.kalenderuebersicht.termin #bButtons .left { height: 40px; }
+.kalender.termin #bButtons .right,.kalenderuebersicht.termin #bButtons .right { height: 40px; }
+.kalender.termin .tableBody { margin-top: 30px; }
+.kalender.termin .tableRowHead,.kalenderuebersicht.termin .tableRowHead { margin-top: 10px; }
+.kalenderuebersicht.termin .tableBody { margin-top: 0; height: 155px; }
+.rufnummernSnippet { margin-top: 14px; }
+#footerButtons { position: absolute; top: 357px; left: 20px; }
+body .rueckruf .rich-calendar-input { width: 70px; }
+.depotanzeige .tableFooter { margin-left: 26px; margin-top: 6px; }
+.depotanzeige .tableFooter .label { padding-left: 24px; }
+.depotanzeige .tableBody { height: 130px; width: 690px; }
+.depotanzeige .tableBody.guv { height: 115px; }
+.depotanzeige .tableHeader .spalte4 { padding-right: 25px; width: 190px; }
+.depotanzeige .tableRow { cursor: pointer; }
+.depotanzeige .tableRow .fonds { clear: both; height: 22px; line-height: 22px; border-bottom: 1px solid #dce2e8; background-color: #d6dce4; }
+.depotanzeige .tableRow.guv { height: 30px; line-height: normal; padding: 4px 0; }
+.depotanzeige .headerspalte1 { width: 55px; padding-left: 10px; cursor: pointer; }
+.depotanzeige .headerspalte2 { width: 240px; text-align: left; cursor: pointer; }
+.depotanzeige .headerspalte3 { width: 91px; padding-left: 10px; text-align: right; cursor: pointer; }
+.depotanzeige .headerspalte4 { width: 69px; height: 30px; padding-left: 5px; }
+.depotanzeige .headerspalte5 { width: 121px; text-align: right; cursor: pointer; }
+.depotanzeige .headerspalte6 { width: 84px; height: 30px; padding-left: 5px; }
+.depotanzeige .spalte1 { width: 55px; padding-left: 10px; cursor: pointer; }
+.depotanzeige .spalte2 { width: 240px; text-align: left; cursor: pointer; }
+.depotanzeige .spalte3 { width: 160px; padding-left: 10px; text-align: right; cursor: pointer; }
+.depotanzeige .spalte4 { width: 190px; padding-right: 25px; text-align: right; cursor: pointer; }
+.depotanzeige #footerButtonRight { position: absolute; top: 354px; left: 650px; }
+.depotanzeige #footerButtonLeft, #footerButtonLeft { position: absolute; top: 358px; left: 20px; }
+.depotanzeige #footerButtonMiddle { position: absolute; top: 358px; left: 485px; }
+.depotanzeige .ueberschrift { border-top: 10px solid transparent; }
+.depotanzeige .depotnummerDropdown { float: left; width: 100px; margin-top: -4px; }
+.depotanzeige .depotbestand { display: block; float: right; margin-right: 25px; }
+.depotanzeige .unionGuv { display: block; text-align: right; }
+.depotanzeige .unionGuv.negativ { color: red; }
+.depotanzeige .unionGuv.positiv { color: green; }
+.depotanzeige .checkBox { margin-top: 6px; }
+.depotanzeige .checkBox .label { padding-left: 20px; }
+.bhwVertragsuebersicht .tableBody { height: 130px; width: 690px; }
+.bhwVertragsuebersicht .spalte1 { width: 45px; padding-right: 30px; text-align: right; }
+.bhwVertragsuebersicht .spalte2 { width: 90px; padding-right: 10px; }
+.bhwVertragsuebersicht .spalte3 { width: 110px; padding-right: 10px; text-align: right; }
+.bhwVertragsuebersicht .spalte4 { width: 110px; padding-right: 30px; text-align: right; }
+.bhwVertragsuebersicht .spalte5 { width: 235px; }
+.bhwVertragsuebersicht .tableHeader { cursor: pointer; }
+.bhwVertragsuebersicht .tableHeader .spalte5 { padding-right: 20px; }
+#DruckDetails_popupForm { overflow: visible !important; }
+.chipTanPopUp .popupForm { height: 181px; overflow: hidden; }
+.chipTanPopUp .popupBody { background: url('../sparda_img/bg-popup-416b.png') left top repeat-x; }
+#kontaktButtonId { background: url('../sparda_img/buttons/buttonOrange_kontakt.png') 0 center no-repeat; width: 83px; height: 20px; float: right; position: relative; top: 33px; padding: 12px 0; margin-top: -12px; }
+#kontaktButtonId.opened { background-image: url('../sparda_img/buttons/buttonBlau_kontakt.png'); }
+#kontaktPanelId { position: absolute; margin-top: 90px; margin-left: 753px; display: none; z-index: 10000; }
+#kontaktPanelId.opened { display: block; }
+#kontaktPanelId .main { background: url('../sparda_img/bg-kontaktpopup.png') 0 0 no-repeat; width: 184px; padding: 25px 18px 0 18px; font-size: 13px; font-weight: bold; }
+#kontaktPanelId .footer { background: url('../sparda_img/bg-kontaktpopup.png') 0 bottom no-repeat; width: 220px; height: 25px; }
+#kontaktPanelId img { margin-top: 15px; }
+#flickerControls { position: absolute; left: 310px; top: 28px; }
+.buttonElement.plus,.buttonElement.minus { float: left; height: 18px; width: 18px; }
+#chiptanOverlay { margin: 0 auto; }
+#chiptanOverlay .buttonElement.plus,#chiptanOverlay .buttonElement.minus { vertical-align: middle; }
+.buttonElement.plus { background: url('../sparda_img/plus-button.png') 0 0 no-repeat; }
+.buttonElement.plus.pressed { background-image: url('../sparda_img/plus-buttonAKTIV.png'); }
+.buttonElement.minus { background: url('../sparda_img/minus-button.png') 0 0 no-repeat; }
+.buttonElement.minus.pressed { background-image: url('../sparda_img/minus-buttonAKTIV.png'); }
+#bBaufi #progressBar { margin-left: 11px; }
+#bHideSteps.baufiLinks { background: none; padding-top: 28px; width: 740px; left: auto; }
+#terminvereinbarungskachelBaufi { width: 205px; height: 296px; position: relative; left: -6px; cursor: pointer; }
+#terminvereinbarungskachelBaufi>div { margin: 0 10px 0 25px; position: absolute; top: 200px; }
+#terminvereinbarungskachelBaufi>img { left: 45px; position: absolute; top: 259px; }
+#kreditProlongationPanel{ background-image: url('../sparda_img/bg_hervorhebung.png'); height: 114px; width: 488px; }
+#kreditProlongationPanel div{ margin-top: 20px; margin-left: 10px; margin-right: 10px; }
+.buttonElement.textBased { height: 27px; line-height: 29px; padding-right: 6px; color: #394049; font-weight: bold; text-shadow: 1px 1px #eee; background: white url('../sparda_img/buttons/buttonDynEnd.png') right 0 no-repeat; }
+.buttonElement.textBased.inactive { cursor: default; opacity: 0.5; filter: Alpha(Opacity = 50); }
+.buttonElement.textBased>div { float: right; padding: 0 6px 0 33px; background: url('../sparda_img/buttons/buttonDynStart.png') 0 0 no-repeat; }
+#tooltipFlickerSize, #tooltipFlickerSpeed { display: none; }
+.over #tooltipFlickerSize, .over #tooltipFlickerSpeed { display: block; position: absolute; top: -17px; background-image: url(../sparda_img/tooltip-basis.png); color: #FFF; padding: 0 .5em; width: 14px; height: 15px; left: 5px; }
+#sizeButtons, #speedButtons { position: relative; display: block; width: 50px; float: left; }
+#page .sdvComboBox { height: 22px; position: relative; padding-right: 30px; }
+#page .sdvComboBox > .sdvComboBoxInputDiv { background: url("../sparda_img/comboBox-input.png") -1px -1px no-repeat; border: none; padding: 2px 3px 4px 4px; }
+#page .sdvComboBox.error > .sdvComboBoxInputDiv { background-image: url("../sparda_img/comboBox-input-error.png"); }
+#page .sdvComboBox .sdvComboBoxInput { background: none; border: none; padding: 0; width: 100%; height: 18px; }
+#page .sdvComboBox .sdvComboBoxInput[readonly] { cursor: pointer; }
+#page .sdvComboBox.error .sdvComboBoxInput { color: #2A3D5C; }
+#page .sdvComboBox > .sdvComboBoxInputHidden { display: none; }
+#page .sdvComboBox > .sdvComboBoxTrigger { background: url("../sparda_img/comboBox-trigger.png") 0 -1px no-repeat; display: inline-block; position: absolute; height: 24px; width: 30px; cursor: pointer; top: 0; right: 0; }
+body .sdvComboBoxList { background: #EEF2F5 url("../sparda_img/select-bg.png") 0 0 repeat-x; display: none; position: absolute; margin-top: 21px; margin-left: 6px; border: 1px solid #475973; max-height: 190px; overflow-x: hidden; overflow-y: auto; z-index: 10; }
+body .sdvComboBoxList .sdvComboBoxItem { padding: 0 20px; color: #196AA6; font-family: Arial,Helvetica,sans-serif; font-size: 13px; text-align: left; cursor: pointer; white-space: nowrap; line-height: 38px; }
+body .sdvComboBoxList .sdvComboBoxItem.selected { background: #FDFDFE url('../sparda_img/pulldown-haken.png') 3px center no-repeat; }
+.newOverlay { background: transparent url('../sparda_img/bg-buehne-kap051.png'); width: 538px; height: 404px; display: none; position: absolute; z-index: 1001; text-align: left; }
+.newOverlayForm { background: transparent url('../sparda_img/bg-form-basis.png'); width: 521px; padding-right: 1px; height: 300px; margin: 15px 7px 0; }
+.newOverlay #bClose { left: 509px; top: 8px; }
+.newOverlay .buttonRight { float: right; margin-right: 20px; margin-top: 13px; }
+.newOverlay .buttonLeft { float: left; margin-left: 20px; margin-top: 13px; }
+.newOverlay .buttonElement.textBased.buttonLeft>div, .newOverlay .buttonElement.textBased.buttonRight>div { float: none; }
+.newOverlay .m50-50 .left input, .newOverlay .m50-50 .right input { width: 218px; }
+.inputLike.disabled { line-height: 18px; padding: 1px 3px; }
+.blzSucheErgebnisFooter { margin-top: 4px; margin-left: 20px; }
+.freischaltungKontoauszugsarchiv .emailLabel { float: left; width: 125px; }
+.freischaltungKontoauszugsarchiv .emailTextDisabled { float: left; width: 240px; }
+.freischaltungKontoauszugsarchiv .emailTextInput { float: left; width: 240px; }
+.freischaltungKontoauszugsarchiv .emailButton { float: left; margin: -3px 0 -2px 10px; }
+.dokumentenuebersicht #infoBereich > img { margin: -14px 0; padding: 12px; }
+.dokumentenuebersicht .kopfzeile { border-top-width: 10px; height: 33px; }
+.dokumentenuebersicht .zeitraum { display: inline-block; line-height: 23px; margin-left: 10px; }
+.dokumentenuebersicht .kopfzeile .sdvComboBox { width: 166px; float: left; }
+.dokumentenuebersicht .tableBody { background: none; border: none; height: 221px; }
+.dokumentenuebersicht .tableRow { cursor: pointer; }
+.dokumentenuebersicht .tableRow.unread { font-weight: bold; }
+.dokumentenuebersicht .tableBody .tableCol { height: 38px; }
+.dokumentenuebersicht .sortToggle, .dokumentenvorschau .sortToggle { padding: 12px 7px; vertical-align: middle; margin: 0; cursor: pointer; }
+.dokumentenuebersicht .tableHeader .spalte3 { cursor: pointer; }
+.dokumentenuebersicht .tableHeader .spalte6 { cursor: pointer; }
+.dokumentenuebersicht .spalte1 { width: 30px; }
+.dokumentenuebersicht .spalte2 { width: 30px; }
+.dokumentenuebersicht .spalte3 { width: 85px; }
+.dokumentenuebersicht .spalte4 { width: 195px; }
+.dokumentenuebersicht .spalte5 { width: 295px; }
+.dokumentenuebersicht .spalte6 { width: 55px; }
+.dokumentenuebersicht .tableBody .spalte6 { text-align: right; width: 30px; padding-right: 25px; }
+.dokumentenuebersicht .checkBox { background-position: 10px 9px; height: 38px; }
+.dokumentenuebersicht .spalte2 > img { margin: 10px 0 0 3px; }
+.dokumentenuebersicht .sdvComboBox { display: inline-block; }
+.dokumentenuebersicht .spalte4 .sdvComboBox { margin-top: 3px; width: 120px; }
+.dokumentenuebersicht .spalte5 .sdvComboBox { margin-top: 3px; width: 230px; }
+.dokumentenuebersicht .keineDokumente, .dokumentenuebersicht .weitereDokumente { height: 38px; line-height: 38px; text-align: center; font-weight: bold; border-bottom: 1px solid #dce2e8; }
+.dokumentenuebersicht .keineDokumente { font-style: italic; }
+.dokumentenuebersicht .weitereDokumente { cursor: pointer; }
+.dokumentenuebersicht #bButtons .left { width: 400px; }
+.dokumentenuebersicht #bButtons .right { width: 200px; }
+.dokumentenuebersicht #bButtons .left img { margin-right: 10px; }
+.dokumentenuebersicht .buttonAktionAktivVorschau, .dokumentenuebersicht .selektiert .buttonAktionInaktivVorschau { display: none; }
+.dokumentenuebersicht .selektiert .buttonAktionAktivVorschau { display: inline; }
+.dokumentenuebersicht .buttonAktionAktivPdf, .dokumentenuebersicht .selektiertPdf .buttonAktionInaktivPdf { display: none; }
+.dokumentenuebersicht .buttonAktionAktivVorschau, .dokumentenuebersicht .selektiert .buttonAktionInaktivVorschau { display: none; }
+.dokumentenuebersicht .buttonAktionAktivPdf, .dokumentenuebersicht .selektiertPdf .buttonAktionInaktivPdf { display: none; }
+.dokumentenuebersicht .selektiert .buttonAktionAktivVorschau { display: inline; }
+.dokumentenuebersicht .selektiertPdf .buttonAktionAktivPdf { display: inline; }
+.dokumentenuebersicht .selektiert .buttonAktionAktiv { display: inline; }
+.nacherstellungshinweisOverlay ul { margin-left: 15px; }
+.dokumentenvorschau .angebotBild { float: left; padding-right: 20px; }
+.dokumentenvorschau .spalte1 { padding-left: 10px; width: 100px; }
+.dokumentenvorschau .spalte2 { width: 360px; }
+.dokumentenvorschau .spalte3 { width: 100px; }
+.dokumentenvorschau .spalte4 { padding-right: 20px; text-align: right; width: 100px; }
+.dokumentenvorschau .tableHeader > .spalte4 { padding-right: 15px; width: 105px; }
+.dokumentenvorschau .tableHeader .tableCol { cursor: pointer; }
+.dokumentenvorschau .tableBody .spalte4 { font-weight: bold; }
+.dokumentenvorschau .tableBody { background: none; }
+.dokumentenvorschau #bButtons .left { width: 460px; }
+.dokumentenvorschau #bButtons .right { width: 200px; }
+.dokumentenvorschau #bButtons .right img { margin-top: -5px; }
+.dokumentenvorschau #bButtons .left img { margin-right: 10px; }
+.postboxCenterButtonBig { margin: 9px 10px; }
+.hidden { display: none; }
+.hinweisPopup { position: absolute; width: 447px; height: 304px; background: #fff; border: 1px solid #d60000; padding: 1px; }
+.hinweisPopup .titleBar { background: url(../sparda_img/bg-errpop-title.png) repeat-x 0 0; color: #fff; font-weight: bold; height: 29px; line-height: 29px; padding-bottom: 5px; position: relative; }
+.hinweisPopup .closeButton { background: url(../sparda_img/bg-errpop-close.png) no-repeat center center; position: absolute; top: -5px; right: -2px; width: 40px; height: 38px; }
+.hinweisPopup .popupBody { color: #d60000; font-weight: bold; padding: 10px 20px; text-align: left; }
+#paydirektLogo { background: url(../sparda_img/paydirekt/logo_paydirekt.png) no-repeat center center; width: 102px; height: 35px; }
+.secureAppOverlay .gesperrt { color: #d60000; }
+.secureAppVerwaltung .tableHeader { margin-top: 15px; }
+.secureAppVerwaltung .tableBody { background: none; border: none; height: 204px; }
+.secureAppVerwaltung .tableRow { cursor: pointer; }
+.secureAppVerwaltung .spalte1 { width: 421px; }
+.secureAppVerwaltung .tableHeader .spalte1 { padding-left: 29px; width: 392px; }
+.secureAppVerwaltung .infoIcon { margin: 0 5px -4px 5px; }
+.secureAppVerwaltung .spalte2 { width: 99px; }
+.secureAppVerwaltung .statusIcon { vertical-align: middle; }
+.secureAppVerwaltung .tableBody .spalte2 { width: 74px; padding-right: 25px; }
+.secureAppVerwaltung .keineGeraete { font-weight: bold; margin-top: 10px; text-align: center; }
+.secureAppVerwaltung #bButtons .left { width: 40%; }
+.secureAppVerwaltung #bButtons .right { width: 59%; }
+.secureAppVerwaltung #bButtons .right .buttonElement { margin-left: 10px; }
+.fontnormal { font-weight: normal; }
+.fontbold { font-weight: bold; }
+.nomargin { margin-right: 0px !important; margin-left: 0px !important; }
+.breite70 { width: 70px !important; }
+.breite170 { width: 170px !important; }
+.breite240 { width: 240px !important; }
+.tinfeld { display: inline; width: 200px !important; margin-right: 0px !important; margin-left: 20px !important; }
+.abstand15 { margin-bottom: 15px !important; }
+.abstand15top { margin-top: 15px !important; }
+.zwischenlinie { margin-left: -30px !important; margin-top: -15px !important; }
+.verfahrenObsoletHinweisOverlay .scrollcontent { height: 291px; }
+.verfahrenObsoletHinweisOverlay .buttonSecureAppFreischalten { background: url('../sparda_img/buttons/button_Aktivierung_SecureApp.png') left top no-repeat; width: 165px; height: 27px; }
+.verfahrenObsoletHinweisOverlay .buttonChiptanFreischalten { background: url('../sparda_img/buttons/button_aktivierungchipTAN.png') left top no-repeat; width: 152px; height: 27px; }
+.verfahrenObsoletHinweisOverlay .buttonMtanFreischalten { background: url('../sparda_img/buttons/button_Aktivierung_mobileTAN.png') left top no-repeat; width: 166px; height: 27px; }
+.verfahrenObsoletHinweisOverlay .hinweisFooter { margin: 12px 20px; }
+.verfahrenObsoletHinweisOverlay .iconsprites { display: inline-block; float: none; }
+.boxVertrieb .buttonRight { float: right; }
+.ersteinstieg .success { min-height: 46px; height: auto; }
+.ersteinstieg .pinInput { width: 100px; }
+.hintergrundmiddlebasis { min-height:365px; margin-left: 15px; background-image: url('../sparda_img/bg-buehne-outer-breit-loop.png'); background-repeat:repeat-y; }
+.hintergrundtopbasis { width:709px; margin-top:10px; margin-left: 15px; background-image: url('../sparda_img/bg-buehne-outer-breit-top.png'); background-repeat: no-repeat; height: 10px; }
+.hintergrundbottombasis { margin-left: 15px; background-image: url('../sparda_img/bg-buehne-outer-breit-bottom.png'); background-repeat: no-repeat; min-height: 20px; }
+.headlinebasis { position:relative; top:0px; margin-bottom:10px; color: #1f2631; font-size: 15px; margin-left: 10px; font-weight: bold; }
+.hintergrundtop { background-image: url('../sparda_img/bg-form-breit-top.png'); background-repeat: no-repeat; height: 11px; margin-left: 6px; }
+.hintergrundbottom { background-image: url('../sparda_img/bg-form-breit-bottom.png'); background-repeat: no-repeat; height: 15px; margin-left: 6px; }
+.hintergrundmitte { background-image: url('../sparda_img/bg-form-breit-loop.png'); background-repeat: repeat-y; margin-left: 6px; min-height: 280px; }
+.displayblock { display: block; }
+.schliessenbtn { display:block; margin-left: 140px; width: 18px; height: 18px; position: absolute; left: 525px; top: 0px; cursor: pointer; }
+.hintergrundmiddlebasis .maskentitel { margin-left: 10px; margin-bottom: 8px; }
+.hintergrundmiddlebasis .spalte1 { width: 50px; }
+.hintergrundmiddlebasis .spalte2 { width: 220px; }
+.hintergrundmiddlebasis .spalte3 { width: 200px; }
+.hintergrundmiddlebasis .spalte4 { width: 100px; }
+.hintergrundmiddlebasis .spalte5 { width: 50px; }
+.hintergrundmiddlebasis .spalte6 { width: 50px; }
+.hintergrundmiddlebasis .spalte7 { width: 20px; }
+.hintergrundmiddlebasis .lineUnder { padding-bottom:5px; height: 0px; width:690px; }
+.hintergrundmiddlebasis .fontgrau { color: #AAAAAA; }
+.hintergrundmiddlebasis .vcenter { padding-top:5px; }
+.hintergrundmiddlebasis .hcenter { padding-left:5px; }
+.hintergrundmiddlebasis .pointer { cursor: pointer; }
+.hintergrundmiddlebasis .sortbuttons { margin-bottom: 1px; }
+.hintergrundmiddlebasis .neuekarten { min-height: 15px; width: 300px; }
+.hintergrundmiddlebasis .abstandlinks { margin-left: 10px; }
+.hintergrundmiddlebasis .tabbreite { width: 390px; }
+.hintergrundmiddlebasis .zeilenhoehe { height: 28px; }
+.hintergrundmiddlebasis .tabcenter { margin-left: 273px; }
+.kartenverwaltung .faq { padding-left: 20px; padding-right: 20px; border-top: 10px solid transparent; }
+.kartenverwaltung .faqButton { padding-left: 70px; }
+.kartenverwaltung .m100 .formField{ width: 470px; }
+.kartenverwaltung .sBox{ width : 480px; }
+.kartenverwaltung .keinTopBorder{ border-top: 0px; }
+.hintergrundmiddlebasis .scrollbereich { max-height: 250px; overflow-y: auto; width:690px; }
+#buttonrand { height: 33px; }

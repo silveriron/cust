@@ -1,0 +1,4 @@
+
+#infoMessages ul li {background-image: url(../img/eb-bookmark-error.svg);}
+.messages #errorMessages ul li {background-image: url(../img/eb-bookmark-error.svg);}
+.messages #warningMessages ul li {background-image: url(../img/eb-bookmark-error.svg);}

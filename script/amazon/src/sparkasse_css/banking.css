@@ -1,0 +1,215 @@
+@charset "utf-8";
+.if5_banking .contentcontainerTop{float:left;margin-bottom:0;}
+.if5_banking .contentbereichHeadLine{float:left;margin:0.2em 2em 0.2em 0.37em;}
+.topbuttonline{position:relative;float:right;z-index:2;font-size:1.2em;}
+.topbuttonline > form{position:absolute;right:0.833em;top:0.833em;white-space:nowrap;}
+.msgerror,.msginfo,.msginst,.msgcont,.msgobv{font-size:1.2em;padding:1em;}
+.msgerror h3,.msginfo h3{display:none;}
+.msginst h3,.msgobv h3{font-size:1em;margin:0 0 0.5em 0;}
+.msgerror ul,.msginfo ul{margin:0;padding:0;}
+.msgerror ul li{color:rgb(255,0,0);font-weight:bold;}
+.if5_rand h2{margin:0.2em 0.417em;}
+.block{font-size:1.2em;padding:0.833em;clear:left;}
+.block + .block,.block + .expand,.expand + .expand,.expand + .block{border-top:1px solid rgb(233,233,233);}
+.expand.open + .block{border-top:none;}
+.buttonline + .block{border-top:1px solid rgb(233,233,233);margin-top:0.833em;}
+.block.no-padding{padding:0;}
+.block h2{margin:0 0 0.2em 0;font-size:2em;}
+.block h3{margin:0;color:rgb(102,102,102);font-size:1.167em;}
+.block h3 + .bline,.block .bline + h3{margin-top:1em;}
+.block h3 img{font-size:0.8571em;margin:0 0.5em;vertical-align:middle;}
+.block pre{font-size:1em;font-family:courier new , monospace;margin:0;}
+.lefthalf{width:23.9em;float:left;border-right:1px solid rgb(233,233,233);vertical-align:top;}
+.righthalf{width:23.9em;float:left;margin-left:-1px;border-left:1px solid rgb(233,233,233);vertical-align:top;padding-left:0.833em;margin-right:-0.833em;}
+.leftthird{width:15em;float:left;border-right:1px solid rgb(233,233,233);vertical-align:top;}
+.middlethird{width:15em;display:inline-block;margin-left:-1px;border-left:1px solid rgb(233,233,233);vertical-align:top;padding-left:0.833em;}
+.rightthird{width:15em;display:inline-block;margin-left:-1px;border-left:1px solid rgb(233,233,233);vertical-align:top;padding-left:0.833em;margin-right:-0.833em;}
+.righthalf + br,.rightthird + br{clear:both;}
+.leftthird.no-separator,.lefthalf.no-separator{border-right:none;}
+.middlethird.no-separator,.rightthird.no-separator,.righthalf.no-separator{border-left:none;margin-left:0;}
+.bline{margin-top:1em;clear:left;}
+.block > .bline{margin-top:0.2em;}
+.bline + .bline{margin-top:1em;}
+div.bcontinue{padding-left:16.5em;}
+.bline .blineunder,.bline .blineover{padding-left:16.5em;display:block;}
+.with-verticalbuttons .blineunder,.with-verticalbuttons .blineover{padding-right:9em;}
+.bline.no-label .blineover{padding-left:0;}
+.bline .ixxxl + .blineunder,.bline .ixxxl + * + .blineunder{padding-left:0.5em;margin-left:13px;}
+.blineover .msgerror,.blineover .msginfo{font-size:1em;padding:0.5em 0;}
+.bline .bterm{clear:both;}
+.bline div,.bline label{display:inline-block;vertical-align:top;margin-right:0.5em;font-weight:normal;}
+.bline > label,.bline > .label,.bline > .blineover + label,.bline > .blineover + .label{width:16em;float:left;text-align:right;}
+.bline.label-left > label,.bline.label-left > .label{width:auto;text-align:left;}
+.bline .longlabel{height:1em;}
+.bline > * + label,.bline > * + .label{width:auto;float:none;}
+.lefthalf .bline > label,.lefthalf .bline > .label,.righthalf .bline > label,.righthalf .bline > .label{width:8em;}
+.leftthird .bline > label,.leftthird .bline > .label,.middlethird .bline > label,.middlethird .bline > .label,.rightthird .bline > label,.rightthird .bline > .label{width:5em;}
+.lefthalf .bline .blineunder,.lefthalf .bline .blineover,.righthalf .bline .blineunder,.righthalf .bline .blineover{padding-left:8.5em;display:block;}
+div.bcontinue .blineover,div.bcontinue .blineunder{padding-left:0;}
+.bline .ixxxl{width:46em;margin-left:0;}
+div.bcontinue .ixxxl{margin-left:-15em;padding-left:13px;}
+.bline .ixxl,.btable .ixxl{width:28em;}
+.bline .ixl,.btable .ixl{width:21em;}
+.bline .il,.btable .il{width:14em;}
+.bline .im,.btable .im{width:7em;}
+.bline .is,.btable .is{width:4em;}
+.bline .ixs,.btable .ixs{width:2em;}
+.bline select.ixl,.btable select.ixl{width:21.4em;}
+.bline select.il,.btable select.il{width:14.4em;}
+.bline select.im,.btable select.im{width:7.4em;}
+label.ixl-m-m{width:5.7em;}
+.lefthalf .bline .il,.righthalf .bline .il{width:11.5em;}
+.bline input,.bline select,.bline textarea{font-family:Arial , Helvetica , sans-serif;font-size:1em;vertical-align:top;margin-top:-0.2em;margin-right:0.5em;}
+.bline input:last-child,.bline select:last-child,.bline textarea:last-child,.bline label:last-child{margin-right:0;}
+.bline input[type="radio"],.bline input[type="checkbox"]{margin-top:0.1em;margin-left:0;padding:0;}
+.bline select optgroup{color:rgb(102,102,102);font-style:normal;font-weight:normal;padding-left:0.2em;}
+.bline select optgroup option{padding-left:0;color:rgb(0,0,0);}
+.bline select optgroup + optgroup{margin-top:1em;}
+.bline div input[type="radio"],.bline div input[type="checkbox"]{width:13px;margin-right:-13px;}
+.bline div input[type="radio"] + *,.bline div input[type="checkbox"] + *{padding-left:0.5em;margin-left:13px;}
+.bline div.ixl label{display:inline-block;}
+.bline div.ixxxl label{display:inline-block;}
+.bline input[disabled],.bline textarea[disabled],.bline select[disabled]{background-color:rgb(212,208,200);}
+.bline div input[disabled="disabled"] + div{font-weight:bold;}
+.bline div input[disabled="disabled"] + div.label{font-weight:normal;}
+.if5 .if5_banking .bline a{color:rgb(255,0,0);font-weight:bold;}
+.if5 .if5_banking a.arrowLink{color:rgb(102,102,102);font-weight:normal;text-decoration:none;background:url(../sparkasse_img/if5_pf_klein.gif) no-repeat;padding-left:15px;}
+.if5 .if5_banking a.actioniconLink{color:rgb(0,0,0);font-weight:normal;text-decoration:none;margin-right:0;}
+.if5 .if5_banking a.actioniconLink img{vertical-align:middle;margin-right:0.25em;}
+.if5 .if5_banking a.actioniconLink + a.actioniconLink{margin-left:1em;}
+.expand{font-size:1.2em;padding:0.833em;}
+.bgroup.expand{font-size:1em;padding:0;vertical-align:bottom;margin-right:-1em;}
+.expand input{margin:0;font-family:Arial , Helvetica , sans-serif;font-size:1em;vertical-align:top;}
+.expand input[type="submit"]{background-color:transparent;color:rgb(0,0,0);vertical-align:middle;display:inline-block;border:none;font-weight:bold;padding:0;text-decoration:underline;cursor:pointer;}
+.bpager input{margin:-0.2em 0 0 0.2em;cursor:pointer;padding:0;background:none;border:none;border-bottom:1px solid rgb(0,0,0);font-weight:bold;}
+.bpager input[disabled="disabled"]{cursor:default;border-bottom:none;color:rgb(187,187,187);}
+.bpager .pagerbuttons{margin-left:1em;}
+.bpager .pagerbuttons + span{float:right;}
+.bpager .pagerbuttons .active span{display:none;}
+.bpager .pagerbuttons div{margin-right:0;}
+.btoppage{float:right;background:url(../pixel/ipo/if5_symbol_up.gif) left center no-repeat;padding-left:12px;text-decoration:none !important;}
+.buttonline{text-align:center;font-size:1.2em;margin-top:0.833em;}
+.block .buttonline{font-size:1em;}
+.buttonline .bgroup1,.buttonline .bgroup2,.buttonline .bgroup3,.buttonline .bgroup4{display:inline;}
+.buttonline input{font-size:1em;margin:0 0.5em;}
+.buttonline a{margin:0 0.5em;}
+.btableblock{width:59.8em;border-left:1px solid rgb(233,233,233);border-top:2px solid rgb(233,233,233);}
+.btableblock .btable{font-size:1.2em;}
+.btableblock .btable .btable{font-size:1em;margin:-0.3em -0.3em -0.3em -0.8em;width:auto;}
+.btable{border-collapse:collapse;border-spacing:0;width:100%;}
+.btable th,.btable td{padding:0 1.2em 0.3em 0;}
+.btableblock .btable th,.btableblock .btable td{padding:0.3em 0.3em 0.3em 0.8em;border-bottom:2px solid rgb(233,233,233);border-right:2px solid rgb(233,233,233);}
+.btableblock .btable .btable th,.btableblock .btable .btable td{padding:0.3em 0.3em 0.3em 0.8em;border-bottom:none;border-right:none;}
+.btableblock .btable th + th,.btableblock .btable td + td{padding-left:0.3em;}
+.btableblock .btable th:last-child,.btableblock .btable td:last-child{padding-right:0.8em;}
+.btableblock .btable tr.noborder td{border-color:rgb(255,255,255);border-style:none;}
+.btableblock .btable tr.noborder{border-right:2px solid rgb(233,233,233);border-bottom:2px solid rgb(233,233,233);}
+.btable td.right,.btable th.right{text-align:right;}
+.btable td.center,.btable th.center{text-align:center;}
+.btable td input,.btable th input{font-family:Arial , Helvetica , sans-serif;font-size:1em;}
+.btable td input[type="image"],.btable td a img{margin:0;vertical-align:top;}
+.btable td input[type="image"],.btable td a,.if5_i_placeholder{margin-right:0.2em;}
+.btable .minus,.bline .minus{color:rgb(255,0,0);white-space:nowrap;}
+.btable .mark,.bline .mark,.btable .less,.bline .less{color:rgb(255,0,0);}
+.btable .more,.bline .more{color:rgb(51,153,102);}
+.bline div.right{text-align:right;}
+.if5_content .btable th{background-color:transparent;}
+.if5_content .btableblock .btable th,.btableblock .btable .tablefooter td{background-color:rgb(240,240,240);color:rgb(102,102,102);font-weight:bold;}
+.if5 .btableblock .btable th.sortable a{color:rgb(102,102,102);text-decoration:none;vertical-align:middle;display:inline-block;}
+.if5 .btableblock .btable th.sortable div{display:inline-block;vertical-align:middle;}
+.if5 .btableblock .btable th.sortable div input[type="submit"]{background-color:transparent;color:rgb(102,102,102);text-decoration:none;vertical-align:middle;display:inline-block;font-weight:bold;padding:0;cursor:pointer;}
+th.sortable img{vertical-align:middle;margin-left:1em;}
+th.sortable input{border:none;}
+.btable .tableheader input[type="image"]{margin-right:0.25em;}
+.btable .iconindent{margin-left:1.5em;}
+.btable h6{color:rgb(102,102,102);font-size:1em;margin:0;}
+.if5 .if5_content .if5_content_inner .if5_seiten .btable a strong{font-weight:bold;}
+.bline .label + div,.bline .label + div + div{font-weight:bold;}
+ul.ulist,ul.linklist{margin:0;padding:0;}
+ul.ulist li{list-style-type:disc;margin-left:2em;}
+.bline input[type="radio"] + * + ul,.bline input[type="checkbox"] + * + ul{margin:0 0 0 13px;padding:0 0 0 0.5em;}
+.bline ul.linklist li{list-style-type:none;margin-left:0;}
+.if5 .bline ul.linklist li a{text-decoration:underline;color:rgb(255,0,0) !important;background:url(../sparkasse_img/dummy1.gif) left top no-repeat;padding-left:12px;font-weight:normal;}
+.bline .verticalbuttons{float:right;height:0;margin-right:-0.5em;}
+.bline .verticalbuttons > *{display:block;margin-top:0;margin-bottom:0.2em;}
+.bline .if5_symbol_hilfe,.btable .if5_symbol_hilfe{vertical-align:middle;}
+.btable span.hovercontainer,.buttonline span.hovercontainer,.block span.hovercontainer{display:inline-block;}
+.btable a span.hovercontainer.block a span.hovercontainer{vertical-align:middle;}
+.pulldown{display:inline-block;position:relative;}
+.pulldown:hover .hovercontainer .mousein{display:block;}
+.pulldown:hover .hovercontainer .mouseout{display:none;}
+.pulldown ul{display:none;position:absolute;text-align:left;background-color:rgb(255,255,255);margin:0;padding-left:0;}
+.pulldown ul li{list-style-type:none;margin-left:0;}
+.pulldown:hover ul{display:block;}
+.bline.error input,.bline input.error,.bline.error select,.bline select.error,.bline.error textarea,.bline textarea.error,.btableblock input.error,.btableblock select.error{background-color:rgb(255,227,227);}
+.bline label.error{color:rgb(255,0,0);}
+.bline .errormsg{font-weight:bold;margin-left:16.5em;display:block;margin-bottom:0.5em;}
+.cal_body{visibility:hidden;position:absolute;font-size:1.2em;width:12.25em;height:12.4em;}
+div.cal_body{z-index:6;background-color:rgb(255,255,255);border:1px solid rgb(220,220,220);}
+iframe.cal_body{z-index:1;border:0 none;padding-right:2px;padding-bottom:2px;}
+.cal_close{text-align:right;}
+.cal_header{width:100%;}
+.cal_body .cal_table{table-layout:fixed;}
+.cal_body table th,.cal_body table td{font-size:1em;text-align:center;padding:0 0 0.1em;}
+.cal_body table th{font-weight:bold;}
+.cal_body table .cal_button{width:1px;padding:0.3em 0.05em 0.1em;}
+.cal_table .satsun{color:rgb(255,0,0);}
+.cal_table .choosable{font-weight:bold;}
+.tanfeld{float:right;margin-right:8em;margin-left:0.833em;}
+.tanfeld .im{font-size:1em;width:6em;}
+.if5 div.if5_waitNotice{font-size:1.2em;position:absolute;top:-9.5em;left:9.8em;height:auto;width:28.75em;z-index:2000;padding:0.8333em;border:1px solid rgb(255,189,189);text-align:center;background:rgb(250,250,250) url(../sparkasse_img/if5_progrCircle2.gif) no-repeat center bottom;padding-bottom:58px;-moz-box-shadow:0 0 8px 1px rgb(255,189,189);box-shadow:0 0 8px 1px rgb(255,189,189);display:none;}
+.if5.spat div.if5_waitNotice{top:-0.5em;}
+.bignumber{text-align:center;font-size:2em;font-weight:bold;}
+.if5 .if5_banking .kki-continue{padding:3em 1em 0 1em;}
+.if5 .if5_banking .kki-continue a{font-size:1.2em;color:rgb(102,102,102);font-weight:normal;text-decoration:none;background:url(../sparkasse_img/if5_pf_klein.gif) left center no-repeat;padding-left:15px;}
+.invisible{display:none;}
+.nowrap{white-space:nowrap;}
+u.wbr:after{content:"​";}
+th span.checkall{display:none;}
+.hide100,.hide500,.hide900{display:inline-block;}
+label .unit,.label .unit{display:none;}
+.if5_druck .bline label,.if5_druck .bline .label{text-align:left;font-weight:bold;}
+.if5_druck .bline .label + div{font-weight:normal;}
+.if5_druck .block + .block{border-top-color:rgb(0,0,0);}
+.if5_druck .if5_content .btable th,.if5_druck .btable .tablefooter td{color:rgb(0,0,0);background-color:rgb(255,255,255);}
+.if5_druck .btableblock,.if5_druck .btable th,.if5_druck .btable td,.if5_druck .btable tr.noborder{border-color:rgb(0,0,0);border-width:1px;}
+.if5_druck .lefthalf,.if5_druck .righthalf{border-color:rgb(0,0,0);}
+.if5_druck .btable .minus,.if5_druck .bline .minus,.if5_druck .btable .mark,.if5_druck .bline .mark,.if5_druck .btable .less,.if5_druck .bline .less,.if5_druck .btable .more,.if5_druck .bline .more{color:rgb(0,0,0);}
+.if5_druck h2{color:rgb(0,0,0);}
+.if5_druck div.if5_verlauf_o,.if5_druck div.if5_verlauf_u,.if5_druck .if5_white_o,.if5_druck .if5_white_u{display:none;}
+.if5_druck .if5_rand{border:none;}
+.if5_druck .if5_banking{padding-left:10px;}
+.if5_druck .buttonline .bgroup4{display:none;}
+.js.if5_druck .buttonline .bgroup4{display:inline;}
+@media print{.js.if5_druck .buttonline .bgroup4{display:none;}
+}
+.table_finanzstatus th,.table_finanzstatus td{width:30%;}
+.table_finanzstatus th + th,.table_finanzstatus td + td{width:22%;}
+.table_finanzstatus td[colspan="2"]{width:52%;}
+.table_finanzstatus th + th + th,.table_finanzstatus td + td + td,.table_finanzstatus td[colspan="2"] + td{width:21%;}
+.table_finanzstatus th + th + th + th,.table_finanzstatus td + td + td + td,.table_finanzstatus td[colspan="2"] + td + td{width:27%;}
+.table_postfachstartseite th,.table_postfachstartseite td{width:10%;}
+.table_postfachstartseite th + th,.table_postfachstartseite td + td{width:70%;}
+.table_postfachstartseite th + th + th,.table_postfachstartseite td + td + td{width:10%;}
+.ZVBetragsgrenzenInland,.ZVBetragsgrenzenAusland,.ZVBetragsgrenzenInlandZusammen,.ZVBetragsgrenzenAuslandZusammen{background-color:rgb(255,255,255);margin-left:-1px;margin-top:-2px;margin-bottom:1em;}
+.if5_content .btableblock .ZVBetragsgrenzenInland th,.btableblock .ZVBetragsgrenzenInland td,.if5_content .btableblock .ZVBetragsgrenzenAusland th,.btableblock .ZVBetragsgrenzenAusland td,.if5_content .btableblock .ZVBetragsgrenzenInlandZusammen th,.btableblock .ZVBetragsgrenzenInlandZusammen td,.if5_content .btableblock .ZVBetragsgrenzenAuslandZusammen th,.btableblock .ZVBetragsgrenzenAuslandZusammen td{border:none;background-color:rgb(255,255,255);}
+.btableblock .ZVBetragsgrenzenInland td,.btableblock .ZVBetragsgrenzenAusland td,.btableblock .ZVBetragsgrenzenInlandZusammen td,.btableblock .ZVBetragsgrenzenAuslandZusammen td{padding-top:1em;}
+.ZVBetragsgrenzenInland td,.ZVBetragsgrenzenAusland td{width:19%;}
+.ZVBetragsgrenzenInland td + td,.ZVBetragsgrenzenAusland td + td{width:27%;}
+.ZVBetragsgrenzenInlandZusammen td,.ZVBetragsgrenzenAuslandZusammen td{width:26%;}
+.ZVBetragsgrenzenInlandZusammen td + td,.ZVBetragsgrenzenAuslandZusammen td + td{width:37%;}
+.spatabbruch{padding:0 5em;}
+.spatabbruch .block{padding:5em 0;}
+.spatabbruch .block h3{font-size:1.5em;}
+.spatabbruch .bline{margin-top:3.333em;}
+.spatabbruch .bline ul.linklist li{list-style-type:none;margin-left:0;margin-top:1.667em;}
+.if5 .spatabbruch .bline ul.linklist li a{text-decoration:none;background:url(../sparkasse_img/weiter_button.gif) left top no-repeat;padding-left:21px;color:rgb(0,0,0) !important;font-weight:normal;}
+.if5 .spatabbruch .bline ul.linklist li a:hover{text-decoration:none;}
+.js .sectype .if5_symbol_refresh{display:none;}
+.btableblock .btable.table_umsatzabfrage .tablefooter td{background-color:transparent;color:rgb(0,0,0);font-weight:normal;}
+.if5 .if5_content .if5_rand table.pf-eingang a,.if5 .if5_content .if5_rand table.pf-ausgang a{text-decoration:none;}
+table.pf-eingang .tablerowmarked,table.pf-ausgang .tablerowmarked{font-weight:bold;}
+.bline .gtsn{min-width:33.3%;text-align:center;margin-right:0;margin-bottom:0.833em;}
+.bline .gtsn img{display:block;margin:0 auto;}
+.bline .gtsn input[type="radio"]{margin-right:0;}
+.bline .gtsn input[type="radio"] + *{margin-left:0;}

@@ -1,0 +1,2912 @@
+#cntKreditwunschberechnung {
+	position: absolute;
+	margin-top: -113px;
+	width: 49em;
+	display: block;
+}
+
+#cntKreditwunschberechnung .InfoblockUndInhalt table {
+	border-collapse: separate !important;
+}
+
+#cntKreditwunschberechnung .Titel, #cntMonatlicheRateTitel {
+	margin-bottom: 0px !important;
+	text-align: center;
+}
+
+#intKreditbetrag {
+	margin-bottom: 0px;
+}
+
+#cntMonatlicheRateTitel td[align="top"] {
+	vertical-align: bottom;
+}
+
+#cntMonatlicheRateInhalt td {
+	align: center;
+}
+
+#lblTitelKreditbetrag, #lblTitelLaufzeit, #lblTitelMonatlicheRate {
+	color: #5A5A5A;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 21px;
+	padding-right: 30px;
+}
+
+#lblTitelMonatlicheRate {
+	margin-top: 3px;
+	display: block;
+}
+
+#chcLaufzeitAuswahl_label {
+	height: 24px;
+}
+
+#cntText.InfoblockUndInhalt td table, #cntText.InfoblockUndInhalt td table td, #cntGlueckwunschInhalt.InfoblockUndInhalt td table, #cntGlueckwunschInhalt.InfoblockUndInhalt td table td {
+	padding: 0px;
+}
+
+#lblBankOrt, #lblBankAnsprechpartner, #lblBankTelefonnummer, #lblBankEmail {
+	padding-left: 5px;
+}
+
+#cntText {
+	margin-bottom: 20px;
+}
+
+#cntDokumente {
+	margin: 10px 0 5px 0;
+}
+
+#cntRestkreditversicherungTitel #lblRestkreditversicherung {
+	font-weight: 600;
+}
+
+#cntKreditwunschberechnung #cntMonatlicheRateInhalt td {
+	height: 22px;
+}
+
+.ncTeaserResult {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.nc_fussnote_beispielrechnung {
+	position: absolute;
+	margin-top: -29px;
+	margin-left: 14px;
+}
+
+.Orderblock {
+	margin-bottom: 3px;
+}
+
+.Orderblock, .OrderblockInhalt .XTable td, .OrderblockInhalt .XTable th, .OrderblockInhalt .XTable {
+	background-color: #EFEFEF;
+}
+
+.Orderblock .XTableEmbeddedContainer table, .Orderblock .XTable td {
+	border: 1px solid #EFEFEF !important;
+}
+
+.Orderblock tr {
+	height: 1.8em;
+}
+
+.Orderblock table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.Orderblock td {
+	border: 1px solid;
+	padding: 5px 10px 5px 10px;
+}
+
+.Orderblock td table td {
+	padding: 0px;
+}
+
+.Orderblock table, .Orderblock td, .OrderblockUndInhalt table {
+	border-color: #cccccc;
+}
+
+.OrderblockInterneTabelle, .OrderblockInterneTabelle tr td, .OrderblockInterneTabelle tr th {
+	border-color: #cccccc !important;
+	background: #FFFFFF !important;
+}
+
+.OrderblockInterneTabelle tr td table tr td {
+	border-color: #cccccc !important;
+}
+
+.OrderblockKontextOben, .OrderblockKontextUnten {
+	background: #0066B3;
+	color: #FFFFFF;
+}
+
+.OrderblockKontextOben table, .OrderblockKontextUnten table {
+	border-color: #0066B3;
+}
+
+.Orderblock .OhneZeilenhoehe tr {
+	height: 0em;
+}
+
+.OrderblockMitKontext {
+	margin-bottom: 3px;
+}
+
+.OrderblockMitKontext .Orderblock {
+	margin-bottom: 0px;
+}
+
+.OrderblockInhalt table {
+	border: none;
+}
+
+.OrderblockInhalt td {
+	border: none;
+	padding: 0px;
+	padding-right: 2px;
+}
+
+.OrderblockEmbedded, .OrderblockEmbedded tr td {
+	padding: 0px !important;
+}
+
+.OrderblockKontextOben table, .OrderblockKontextUnten table {
+	border: 1px solid;
+}
+
+.OrderblockKontextOben td, .OrderblockKontextUnten td {
+	padding: 5px 10px 5px 10px;
+}
+
+.Orderblock, .OrderblockInhalt .XTable td, .OrderblockInhalt .XTable th, .OrderblockInhalt .XTable {
+	background-color: #EFEFEF;
+}
+
+.Orderblock .XTableEmbeddedContainer table, .Orderblock .XTable td {
+	border: 1px solid #EFEFEF !important;
+}
+
+.Orderblock table, .Orderblock td, .OrderblockUndInhalt table {
+	border-color: #cccccc;
+}
+
+.OrderblockInterneTabelle, .OrderblockInterneTabelle tr td, .OrderblockInterneTabelle tr th {
+	border-color: #cccccc !important;
+	background: #FFFFFF !important;
+}
+
+.OrderblockInterneTabelle tr td table tr td {
+	border-color: #cccccc !important;
+}
+
+.OrderblockKontextOben, .OrderblockKontextUnten {
+	background: #0066B3;
+	color: #FFFFFF;
+}
+
+.OrderblockKontextOben table, .OrderblockKontextUnten table {
+	border-color: #0066B3;
+}
+
+.Formularblock {
+	line-height: 1.3em;
+	margin-bottom: 3px;
+}
+
+.FormularblockMitKontext {
+	margin-bottom: 3px;
+}
+
+.FormularblockMitKontext .Formularblock {
+	margin-bottom: 0px;
+}
+
+.FormularblockMitKontext .FormularblockUndInhalt {
+	margin-bottom: -1px;
+}
+
+.Formularblock table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.Formularblock td {
+	border: 1px solid;
+	padding: 3px 8px 3px 8px;
+}
+
+.FormularblockInhalt table {
+	border: 0px;
+}
+
+.FormularblockInhalt td {
+	border: none;
+	padding: 2px;
+}
+
+.FormularblockUndInhalt {
+	line-height: 1.3em;
+	margin-bottom: 3px;
+}
+
+.Formularblock, .Formularblock .XTable td, .FormularblockInhalt .XTable td, .FormularblockInhalt .XTable th, .FormularblockInhalt .XTable, .FormularblockUndInhalt, .FormularblockUndInhalt .XTable td, .FormularblockUndInhalt .XTable th, .FormularblockUndInhalt .XTable {
+	background-color: transparent !important;
+}
+
+.FormularblockUndInhalt table {
+	border: 0px solid !important;
+}
+
+.FormularblockUndInhalt td {
+	padding: 3px 8px 3px 8px;
+}
+
+.FormularblockUndInhalt td table, .FormularblockUndInhalt td table td {
+	border: 0px;
+	padding: 2px 2px 2px 4px;
+	margin: 0px;
+}
+
+#cntGeldwaescheContent td {
+	padding-left: 2px !important;
+}
+
+#cntKontoInhaberinformationen td {
+	padding-left: 0px;
+}
+
+#cntOnlinekontofuehrungContent td {
+	padding-left: 3px;
+}
+
+.FormularblockInterneTabelle {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.FormularblockInterneTabelle tr td {
+	padding: 1px 2px 1px 2px !important;
+}
+
+.FormularblockInterneTabelle tr th {
+	border: 1px solid !important;
+}
+
+.FormularblockInterneTabelle tr td table tr td {
+	border: 0px solid !important;
+}
+
+.FormularblockInterneTabelle .XTableEmbeddedContainer td {
+	background: none transparent !important;
+	border: 0 none transparent !important;
+}
+
+.FormularblockEmbedded, .FormularblockEmbedded table, .FormularblockEmbedded td {
+	padding: 0px !important;
+}
+
+.FormularblockKontextOben table, .FormularblockKontextUnten table {
+	border: 1px solid;
+}
+
+.FormularblockKontextOben td, .FormularblockKontextUnten td {
+	padding: 5px 10px 5px 10px;
+}
+
+#cntFernabsatzCheckbox table, #cntFernabsatzCheckbox table td {
+	padding-left: �0px;
+}
+
+#actFernabsatzFormular input {
+	margin-left: 10px;
+}
+
+:root .Transaktionsblock {
+	border: 0 none;
+}
+
+:root .Transaktionsblock, :root #cntKontoinformationen, :root .cntKontoinfo, :root #tblKarteninformationen {
+	border-color: transparent;
+}
+
+.Transaktionsblock {
+	line-height: 1.3em;
+	border: 1px solid;
+	margin-bottom: 15px !important;
+	padding: 0 !important;
+}
+
+.Transaktionsblock, .TransaktionsblockEmbedded .XTable, .TransaktionsblockEmbedded .XTable td {
+	background-color: transparent;
+}
+
+.Transaktionsblock, #cntKontoinformationen, .cntKontoinfo, #tblKarteninformationen {
+	border-color: #cccccc;
+}
+
+.Transaktionsblock .TextButton {
+	font-size: 13px !important;
+}
+
+.Transaktionsblock table {
+	border-collapse: collapse;
+}
+
+.Transaktionsblock table, .Transaktionsblock td, .Transaktionsblock .XTableEmbeddedContainer table, .Transaktionsblock .XTableEmbeddedContainer td, .TransaktionsblockEmbedded .XTable, .TransaktionsblockEmbedded .XTable td {
+	border: 0 none !important;
+	border-color: transparent !important;
+}
+
+.Transaktionsblock td {
+	border: 1px solid;
+	padding: 5px 10px 5px 10px;
+}
+
+.TransaktionsblockInhalt table {
+	border: none;
+}
+
+.TransaktionsblockInhalt td {
+	border: none;
+	padding: 1px;
+}
+
+table td .TransaktionsblockEmbedded table td {
+	border: none;
+	padding: 0px;
+}
+
+table td .TransaktionsblockEmbedded .XTable td {
+	padding-top: 2px;
+}
+
+table td .TransaktionsblockEmbedded .XTable td table td {
+	padding-top: 0px;
+}
+
+.jsdropdown a, .jsdropdown a:visited {
+	color: #333333;
+}
+
+.jsdropdown dt a {
+	background-color: #ffffff;
+}
+
+.jsdropdown dd ul li {
+	background-color: #ffffff;
+}
+
+.jsdropdown dd ul li.selected a {
+	color: #ffffff;
+}
+
+.jsdropdown dd ul li.selected {
+	background-color: #2382C8;
+}
+
+.jsdropdown dd ul li:hover a {
+	color: #ffffff;
+}
+
+.jsdropdown dd ul li:hover, .jsdropdown dd ul li a:hover {
+	background-color: #2382C8;
+}
+
+.jsdropdown.readonly dt.XChoiceCombo {
+	border-color: #cccccc;
+}
+
+.jsdropdown .XChoiceCombo {
+	font-family: "Courier New", Courier, monospace !important;
+	font-size: 12px !important;
+}
+
+.readonly, #jsKontoauswahl.readonly {
+	background-color: #f3f3f3;
+	color: #333333;
+	border: 1px solid;
+	border-color: #cccccc;
+	box-shadow: none;
+}
+
+#scroll + #ui-datepicker-div .ui-widget-content {
+	border-color: #cccccc;
+	background-color: #E8E8E8;
+	color: #131313;
+}
+
+#scroll + #ui-datepicker-div .ui-widget-content a {
+	color: #131313;
+}
+
+#scroll + #ui-datepicker-div .ui-widget-header {
+	border-color: #0066B3;
+	background-color: #0066B3;
+	color: #FFFFFF;
+}
+
+#scroll + #ui-datepicker-div .ui-widget-header a {
+	color: #FFFFFF;
+}
+
+#scroll + #ui-datepicker-div .ui-state-default, #scroll + #ui-datepicker-div .ui-widget-content .ui-state-default, #scroll + #ui-datepicker-div .ui-widget-header .ui-state-default {
+	border-color: #cccccc;
+	background-color: #EFEFEF;
+	color: #0066B3;
+}
+
+#scroll + #ui-datepicker-div .ui-state-default a, #scroll + #ui-datepicker-div .ui-state-default a:link, #scroll + #ui-datepicker-div .ui-state-default a:visited {
+	color: #0066B3;
+}
+
+#scroll + #ui-datepicker-div .ui-state-hover, #scroll + #ui-datepicker-div .ui-widget-content .ui-state-hover, #scroll + #ui-datepicker-div .ui-widget-header .ui-state-hover, #scroll + #ui-datepicker-div .ui-state-focus, #scroll + #ui-datepicker-div .ui-widget-content .ui-state-focus, #scroll + #ui-datepicker-div .ui-widget-header .ui-state-focus {
+	background-color: #FFFFFF;
+	color: #0066B3;
+}
+
+#scroll + #ui-datepicker-div .ui-state-hover a, #scroll + #ui-datepicker-div .ui-state-hover a:hover {
+	color: #0066B3;
+}
+
+#scroll + #ui-datepicker-div .ui-state-active, #scroll + #ui-datepicker-div .ui-widget-content .ui-state-active, #scroll + #ui-datepicker-div .ui-widget-header .ui-state-active {
+	border-color: #0066B3;
+	background-color: #FFFFFF;
+	color: #0066B3;
+}
+
+#scroll + #ui-datepicker-div .ui-state-active a, #scroll + #ui-datepicker-div .ui-state-active a:link, #scroll + #ui-datepicker-div .ui-state-active a:visited {
+	color: #0066B3;
+}
+
+#scroll + #ui-datepicker-div .ui-state-highlight, #scroll + #ui-datepicker-div .ui-widget-content .ui-state-highlight, #scroll + #ui-datepicker-div .ui-widget-header .ui-state-highlight {
+	border-color: #0066B3;
+	background-color: #0066B3;
+	color: #FFFFFF;
+}
+
+#scroll + #ui-datepicker-div .ui-datepicker .ui-datepicker-title select {
+	border-color: #0066B3;
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.Infoblock {
+	margin-bottom: 3px;
+	line-height: 1.3em;
+}
+
+.InfoblockMitKontext {
+	margin-bottom: 3px;
+}
+
+.InfoblockMitKontext .Infoblock {
+	margin-bottom: 0px;
+}
+
+.Infoblock table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.Infoblock td {
+	border: 1px solid;
+	padding: 3px 8px 3px 8px;
+}
+
+.Infoblock table {
+	border: none;
+}
+
+.InfoblockInhalt td {
+	border: none;
+	padding: 2px;
+}
+
+.InfoblockInhalt td .XContainer {
+	border: none;
+	padding: 0px;
+}
+
+.InfoblockUndInhalt {
+	margin-bottom: 3px;
+	line-height: 1.3em;
+}
+
+.InfoblockUndInhalt table {
+	border: 1px solid;
+}
+
+.InfoblockUndInhalt td, #cntBookmarkKeineVertraege.InfoblockUndInhalt td {
+	padding: 3px 8px 3px 8px;
+	vertical-align: top;
+}
+
+#cntBookmarkKonten.InfoblockUndInhalt td, #cntBookmarkDepots.InfoblockUndInhalt td, #cntBookmarkVerbundPartner.InfoblockUndInhalt td, #cntBookmarkKeineVertraege.InfoblockUndInhalt td, #cntBookmark.InfoblockUndInhalt td {
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+.InfoblockUndInhalt td table, .InfoblockUndInhalt td table td {
+	border: 0px;
+	padding: 2px;
+	margin: 0px;
+}
+
+.InfoblockEmbedded .XTable, .InfobblockEmbedded .XTable td {
+	border: 0px solid;
+}
+
+table td .InfoblockEmbedded table td {
+	border: none;
+	padding: 0px;
+}
+
+table td .InfoblockEmbedded .XTable t {
+	padding-top: 2px;
+}
+
+table td .InfoblockEmbedded .XTable td table td {
+	padding-top: 0px;
+}
+
+.InfoblockOhnePadding, .InfoblockOhnePadding table td {
+	padding: 0px;
+}
+
+.InfoblockKontextOben table, .InfoblockKontextUnten table {
+	border: 1px solid;
+}
+
+.InfoblockKontextOben td, .InfoblockKontextUnten td {
+	padding: 5px 10px 5px 10px;
+}
+
+.AktionswechselBlock {
+	margin-top: 1px;
+	line-height: 1.3em;
+	margin-bottom: 2px;
+}
+
+.AktionswechselBlock table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.AktionswechselBlock td {
+	border: 1px solid;
+	padding: 3px 8px 3px 0px;
+}
+
+.FussnotenBlock {
+	margin-top: 1px;
+	line-height: 1.3em;
+	margin-bottom: 2px;
+}
+
+.FussnotenBlock table {
+	border: 1px solid;
+}
+
+.FussnotenBlock td {
+	padding: 3px 0px 3px 0px;
+}
+
+.Beschriftung {
+	font-weight: 700;
+}
+
+table, form {
+	background-color: transparent;
+}
+
+.Tabellenblock {
+	margin-bottom: 3px;
+	line-height: 1.3em;
+}
+
+.TabellenblockMitKontext {
+	margin-bottom: 3px;
+}
+
+.TabellenblockMitKontext .Tabellenblock {
+	margin-bottom: 0px;
+}
+
+.TabellenkontextOben, .TabellenkontextUnten {
+	background-color: #e5eff7 !important;
+	color: #333333 !important;
+}
+
+.TabellenkontextOben table, .TabellenkontextUnten table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.TabellenkontextOben table td, .TabellenkontextUnten table td {
+	border: 1px solid;
+	margin: 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.TabellenkontextOben td table, .TabellenkontextOben td table td, .TabellenkontextUnten td table, .TabellenkontextUnten td table td {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.TabellenIntegrierterTitel {
+	font-weight: 600;
+	background-color: #2382C8;
+	color: #ffffff;
+}
+
+.TabellenIntegrierterTitel td {
+	padding-bottom: 3px !important;
+}
+
+.TabellenblockInhalt {
+	width: 99.8%;
+	margin-left: 0.2%;
+}
+
+.TitelIconText, .TitelIconText table, .TitelIconText table tr td {
+	padding: 0px;
+	border: 0px none !important;
+	height: 23px;
+}
+
+.TitelIcon img {
+	vertical-align: middle;
+	padding-right: 3px;
+	padding-left: 7px;
+}
+
+.TitelText {
+	padding: 0px 3px;
+	vertical-align: middle;
+}
+
+.Daten, .Daten table tr td {
+	margin: 0em;
+	padding: 0px;
+}
+
+.Daten .TextButton {
+	width: 86%;
+}
+
+.Ueberwvl .TextButton {
+	width: 12em;
+}
+
+.EmpfAusbl .TextButton {
+	width: 4.3em;
+}
+
+#cntAktionen .TwoLetterButton.TextButton {
+	width: 2.5em !important;
+	padding: 0;
+	line-height: 1.3em;
+	background-image: none !important;
+	background-color: #ffffff !important;
+	border: 0 solid !important;
+	border-color: transparent !important;
+	height: 21px;
+	margin-left: 5px !important;
+	padding-left: 0px !important;
+	margin-top: 1px;
+	color: #0066B3 !important;
+}
+
+#cntAktionen .TwoLetterButton.TextButton:hover {
+	text-decoration: underline;
+}
+
+#cntAktionen .TwoLetterButton.TextButton:active {
+	border: 0px solid !important;
+	border-color: transparent !important;
+}
+
+.Aktionen {
+	margin: 0em;
+	padding: 0px;
+}
+
+.XTableSortIcons, .XTableSortIcons tbody tr td {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: top;
+}
+
+#tblVerbundpartner #cntFuenfspaltig .Titel {
+	margin-bottom: 14px !important;
+}
+
+#cntMeineBank .Titel {
+	margin-bottom: 2px !important;
+}
+
+#cntKonten, #cntDepots, #cntVerbundpartnerListe, #cntWeiterePartnerListe {
+	margin-top: 30px !important;
+}
+
+#cntMeineBank {
+	margin-top: 10px !important;
+}
+
+#cntFreistellungsauftraege #lblUeberschrift {
+	font-size: 18px !important;
+	color: #333333;
+}
+
+#lblUeberschrift, #lblUeberschriftVerbundpartner {
+	color: #5a5a5a;
+}
+
+#cntAnsprache #lblUeberschrift {
+	color: #333333 !important;
+}
+
+#cntKonten #cntUeberschrift, #cntDepots #cntUeberschrift, #cntVerbundpartnerListe #cntUeberschrift {
+	margin: 0 !important;
+}
+
+#cntMeineBank .XTable.FormularblockInterneTabelle thead .XLabel, #cntVerbundpartnerListe .XTable.FormularblockInterneTabelle thead .XLabel {
+	margin-left: 5px !important;
+	display: block;
+}
+
+#cntMeineBank .XTable.FormularblockInterneTabelle thead th:first-child .XLabel, #cntVerbundpartnerListe .XTable.FormularblockInterneTabelle thead th:first-child .XLabel {
+	margin-left: -2px !important;
+}
+
+#tblVerbundpartner #cntFuenfspaltig, #tblWeiterePartner #cntFuenfspaltig {
+	margin-top: 40px;
+}
+
+#tblVerbundpartner > tbody > tr:first-child div, #tblWeiterePartner > tbody > tr:first-child div {
+	margin-top: 0px !important;
+}
+
+#cntFreistellungsauftraege {
+	margin-top: 10px !important;
+}
+
+.XTable.FormularblockInterneTabelle tbody .XLabel {
+	margin: 0 8px;
+}
+
+.XTable.FormularblockInterneTabelle thead .XLabel, .XTable.FormularblockInterneTabelle tbody tr td:fist-child .XLabel {
+	margin: 0;
+}
+
+.XTable.FormularblockInterneTabelle thead tr th {
+	border-color: transparent !important;
+	border-right-color: #cccccc !important;
+}
+
+.XTable.FormularblockInterneTabelle thead tr th:last-child {
+	border-right-color: transparent !important;
+}
+
+.Titel td:first-child {
+	width: 10px;
+	padding-right: 10px;
+}
+
+#cntVerbundpartnerListe .TextButton, #cntMeineBank .TextButton {
+	color: #0066B3;
+	text-align: left;
+}
+
+#cntVerbundpartnerListe .TextButton.disabled, #cntMeineBank .TextButton.disabled, #cntVerbundpartnerListe .TextButton.disabled:HOVER, #cntMeineBank .TextButton.disabled:HOVER {
+	color: #131313;
+	text-decoration: none;
+}
+
+#cntBookmark.InfoblockUndInhalt, #cntMeineBank .InfoblockUndInhalt, #cntVerbundpartnerListe .InfoblockUndInhalt {
+	background-color: #f3f3f3 !important;
+	margin-top: 12px;
+	padding: 5px;
+}
+
+#cntBookmark.InfoblockUndInhalt {
+	background-color: #f3f3f3 !important;
+	margin-top: 0px;
+	padding: 5px;
+}
+
+#cntVerbundpartnerListe #cntFuenfspaltig > table > tbody > tr > td > table > tbody > tr > td, #cntWeiterePartnerVertraege #cntFuenfspaltig > table > tbody > tr > td > table > tbody > tr > td {
+	border: 1px solid #D1D3D4 !important;
+}
+
+#cntVerbundpartnerListe #cntFuenfspaltig > table > tbody > tr > td > table > tbody > tr > td:first-child, #cntWeiterePartnerVertraege #cntFuenfspaltig > table > tbody > tr > td > table > tbody > tr > td:first-child {
+	border-left: none !important;
+}
+
+#cntVerbundpartnerListe #cntFuenfspaltig > table > tbody > tr > td > table > tbody > tr > td:last-child, #cntWeiterePartnerVertraege #cntFuenfspaltig > table > tbody > tr > td > table > tbody > tr > td:last-child {
+	border-right: none !important;
+}
+
+#cntDatenblock {
+	border: 0px solid transparent;
+	margin-bottom: 15px;
+}
+
+.InfoblockUndInhalt td:first-child img {
+	margin-top: 2px !important;
+}
+
+.Bestaetigung {
+	margin-bottom: 3px;
+	line-height: 1.3em;
+}
+
+.Bestaetigung table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.Bestaetigung td {
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+}
+
+.BestaetigungInhalt table {
+	border: none;
+}
+
+.BestaetigungInhalt td {
+	border: none;
+	padding: 2px;
+}
+
+.Bestaetigung .FormularblockInterneTabelle td {
+	border: 1px solid;
+}
+
+.Bestaetigung .FormularblockInterneTabelle tr th {
+	border: 1px solid;
+}
+
+.Bestaetigung td table, .Bestaetigung td table td {
+	border: 1px solid;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.BestaetigungUndInhalt {
+	margin-bottom: 3px;
+}
+
+.BestaetigungUndInhalt table {
+	border: 1px solid;
+}
+
+.BestaetigungUndInhalt td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.BestaetigungUndInhalt td table, .BestaetigungUndInhalt td table td {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.Bestaetigungsliste {
+	margin-bottom: 3px;
+}
+
+.Bestaetigungsliste .XTable {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.Bestaetigungsliste .XTable td .XTable {
+	border: 0px;
+}
+
+.Bestaetigungsliste .XTable td {
+	padding: 5px;
+}
+
+.Bestaetigungsliste .TabellenkontextOben table td, .Bestaetigungsliste .TabellenkontextUnten table td {
+	margin: 0px;
+	padding-right: 5px;
+}
+
+.TabellenkontextOben table, .TabellenkontextUnten table, .TabellenkontextOben table td, .TabellenkontextUnten table td {
+	border: 0px none;
+	border-color: transparent;
+}
+
+.Titel {
+	font-weight: bold;
+}
+
+.Titel table {
+	border: 0px none !important;
+}
+
+.Titel td {
+	padding: 3px 6px 3px 6px;
+	border: 0px none !important;
+}
+
+.Titel td table, .Titel td table td {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.Bestaetigung table, .Bestaetigung td, .BestaetigungUndInhalt table {
+	border: 0px none;
+	margin-bottom: 28px;
+	border-color: transparent;
+	background-color: transparent !important;
+}
+
+.Bestaetigung .FormularblockInterneTabelle td, .Bestaetigung .FormularblockInterneTabelle tr th, .Bestaetigung td table, .Bestaetigung td table td {
+	border: 0px none;
+	border-color: transparent;
+	background-color: transparent !important;
+}
+
+.BestaetigungsTitel table, .BestaetigungsTitel td {
+	border: 1px solid;
+}
+
+.TitelAlsBlock {
+	margin-bottom: 3px;
+}
+
+.Suchblock {
+	margin-bottom: 3px;
+	line-height: 1.3em;
+	background-color: #f3f3f3 !important;
+}
+
+.Suchblock td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Suchblock td table, .Suchblock td table td {
+	border: 0px;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.SuchblockInhalt table {
+	border: none;
+}
+
+.SuchblockInhalt td {
+	border: none;
+	padding: 2px;
+}
+
+.KontoAuswahl {
+	background: none repeat scroll 0 0 transparent;
+	background: #FFFFFF;
+	margin-bottom: 28px !important;
+	line-height: 1.4em;
+	color: #333333;
+}
+
+.KontoAuswahl .XChoiceCombo, .KontoAuswahl .XChoiceList {
+	font-size: 0.95em;
+}
+
+.KontoAuswahl table {
+	border: 1px solid;
+}
+
+.KontoAuswahl td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.KontoAuswahl td table, .KontoAuswahl td table td {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.KontoAuswahlInhalt td {
+	border: none;
+	padding: 0px;
+}
+
+#cntKontoAuswahlZeile dl {
+	width: 35em;
+}
+
+#cntKontoAuswahlZeile ul {
+	max-height: 35em;
+}
+
+.jsdropdown a b {
+	font-weight: bold;
+	zoom: 1;
+	text-shadow: 0 0 0 transparent !important;
+}
+
+.jsdropdown ul {
+	width: 100%;
+}
+
+.jsdropdown dd, .jsdropdown dt, dl.jsdropdown, .jsdropdown ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.jsdropdown dd {
+	display: none;
+	position: relative;
+	z-index: 20;
+}
+
+.jsdropdown a, .jsdropdown a:visited {
+	text-decoration: none;
+	outline: none;
+}
+
+.jsdropdown dt {
+	padding: 0 0 0 5px;
+}
+
+.jsdropdown li {
+	padding: 0 25px 0 5px;
+}
+
+.jsdropdown dt a {
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: right top;
+	display: block;
+	padding-right: 20px;
+	white-space: nowrap;
+	font-size: 12px;
+	height: 23px;
+	line-height: 26px;
+}
+
+.jsdropdown dt a span {
+	display: inline;
+	padding-right: 10px;
+}
+
+.jsdropdown dd ul {
+	left: 0px;
+	position: absolute;
+	top: 1px;
+	width: auto;
+	list-style: none;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.jsdropdown dd ul li:hover a b, .jsdropdown dd ul li.selected a b {
+	zoom: 1;
+}
+
+.jsdropdown dd ul li {
+	list-style: none;
+}
+
+.jsdropdown span.value {
+	display: none;
+}
+
+.jsdropdown dd ul li a {
+	display: block;
+	white-space: nowrap;
+}
+
+.jsdropdown.readonly dt a {
+	cursor: default;
+	background-position: right bottom;
+}
+
+.jsdropdown.readonly dt a, .jsdropdown.readonly dt.XChoiceCombo {
+	background-color: #f3f3f3;
+	background-image: none;
+	box-shadow: none;
+	border: 0px solid;
+}
+
+.Tan {
+	margin-bottom: 3px;
+	margin-top: 10px;
+	background-color: transparent;
+	color: #333333;
+}
+
+.Tan table {
+	border-collapse: collapse;
+}
+
+.Tan td {
+	padding: 2px;
+}
+
+.Tan table, .Tan td {
+	border-color: transparent;
+}
+
+#lblTanMode1, #lblTanMode2 {
+	font-weight: 500;
+}
+
+.Tan td table, .Tan td table td {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.Tan td .XLabel {
+	margin: 2px;
+	vertical-align: middle;
+}
+
+.mTAN td {
+	padding: 0px;
+}
+
+.mTAN td .XLabel {
+	vertical-align: middle;
+	font-size: 0.9em;
+}
+
+.mTAN.zpa td .XLabel {
+	font-size: 1em;
+}
+
+#plhAuthorization, .mTAN, #cntTAN {
+	background-color: #f3f3f3 !important;
+}
+
+#iTANlayer {
+	position: relative;
+}
+
+#iTANdimension {
+	height: 57px;
+	width: 590px;
+}
+
+#iTANlayer #layer_0, #iTANlayer #layer_1, #iTANlayer #layer_2, #iTANlayer #layer_3, #iTANlayer #layer_4, #iTANlayer #layer_5, #iTANlayer #layer_6, #iTANlayer #layer_7, #iTANlayer #layer_8 {
+	position: absolute;
+	top: 0px;
+}
+
+#iTANlayer #layer_0 {
+	z-index: 0;
+	background-color: white;
+}
+
+#iTANlayer #layer_1 {
+	z-index: 1;
+}
+
+#iTANlayer #layer_2 {
+	z-index: 2;
+}
+
+#iTANlayer #layer_3 {
+	z-index: 3;
+}
+
+#iTANlayer #layer_4 {
+	z-index: 4;
+}
+
+#iTANlayer #layer_5 {
+	z-index: 5;
+}
+
+#iTANlayer #layer_6 {
+	z-index: 6;
+}
+
+#iTANlayer #layer_7 {
+	z-index: 7;
+}
+
+#iTANlayer #layer_8 {
+	z-index: 8;
+}
+
+#cntTANTabellenblock #cntTAN {
+	background-color: transparent !important;
+}
+
+#plhAuthorization {
+	position: relative;
+	z-index: 10;
+}
+
+#plhAuthorization .XText {
+	margin-bottom: 0px;
+	border: 1px solid;
+	border-color: #cccccc;
+}
+
+#actTanSenden.TextButton {
+	margin-right: 4px;
+}
+
+#lblTanHinweis.XLabel, #lblMTANDetails.XLabel {
+	margin-left: 4px;
+	display: block;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+#txtTan {
+	border: 1px solid;
+	margin-bottom: 0px !important;
+	border-color: #FF6600;
+}
+
+a, button {
+	text-decoration: none !important;
+}
+
+div.UnitCommands input.UnitCommand, .Aktionsleiste .TextButton, #actHistorie, #actNeuanlage, #cntAnzeigeSeite .TextButton, #actZahlungsartWaehlen, #actSuchen, #actSuchen .TextButton, #cntSuchen #actSuchen.TextButton, #actTerminAendern, #lnkNeuAnmelden, #actDateiHinzufuegen, #commandReturnFromFTS, #actExport, #actErsetzen, #actUebernehmen, #actLoeschen, #actExportImportOK, .TanButton, #actZurueck, #cntAktionen #actZurueck, #actBerechnen, #cntBerechnungsvariante .TextButton, #cntBetrachtungszeitraum .TextButton {
+	background-image: none !important;
+	background-color: #ffffff !important;
+	background-size: 100% auto;
+	border-color: #0066B3 !important;
+	border: 1px solid;
+	font-size: 16px;
+	position: relative;
+	padding: 0em 0.3em 3px 0.3em;
+	height: 30px;
+	line-height: 20px;
+	color: #0066B3 !important;
+}
+
+#actHistorie:hover, #actNeuanlage:hover, #actZahlungsartWaehlen:hover, .TextButton:hover {
+	text-decoration: underline;
+}
+
+#cntSuchen #actEinblenden .TextButton, #cntSuchen #actErweiterungEinblenden .TextButton, #cntSuchen #actErweiterungAusblenden .TextButton {
+	background: none !important;
+	box-shadow: none !important;
+}
+
+#actEinblenden .TextButton, #actAusblenden .TextButton, #actDetailsEinblenden .TextButton, #actDetailsAusblenden .TextButton, #cntSuchen #actErweiterungEinblenden .TextButton, #cntSuchen #actErweiterungAusblenden .TextButton {
+	color: #0066B3 !important;
+	border-color: transparent !important;
+}
+
+#cntSuchen #cntZeitraum #lblBisLabel {
+	padding-right: 15px;
+}
+
+#cntAktionsleiste .TextButton, .Aktionsleiste .TextButton {
+	margin: 5px 0 5px 5px !important;
+}
+
+#cntAktionsleiste #actLoeschen {
+	font-size: 16px;
+}
+
+.Aktionsleiste .TextButton, #actHistorie, #cntAnzeigeSeite .TextButton, #actZahlungsartWaehlen {
+	margin: 5px 0 5px 0;
+}
+
+.Aktionsleiste .TextButton:active, #actHistorie .TextButton:active, #actNeuanlage .TextButton:active, #cntAnzeigeSeite .TextButton:active {
+	border: 1px solid !important;
+}
+
+.TextButton {
+	margin: 0em 0em 0em 0.2em;
+}
+
+span .Submitlink {
+	text-align: left;
+	vertical-align: middle;
+	margin: 0px;
+}
+
+.Submitlink {
+	cursor: pointer;
+	text-decoration: none;
+	color: #5a5a5a;
+	background-color: transparent;
+}
+
+#actSonderbedingungen.Submitlink {
+	color: #0066B3;
+}
+
+input .Submitlink input {
+	border: 0px solid;
+	border-color: transparent;
+	text-align: left;
+	overflow: visible;
+	margin: 0px;
+	padding: 0px;
+}
+
+.notVisible {
+	display: none;
+}
+
+img {
+	border: none;
+}
+
+.Submitlink .ImageButton {
+	padding-right: 3px;
+}
+
+.ImageButton.disabled {
+	visibility: hidden;
+}
+
+.Submitlink.TextButton.disabled {
+	visibility: visible;
+	cursor: text;
+	color: $ebanking-color-link_2_disabled;
+}
+
+.TextButton.Submitlink {
+	border: 0px solid;
+	padding: 0px;
+	font-size: 13px !important;
+	border-color: transparent;
+}
+
+.ebie .TextButton.Submitlink {
+	white-space: normal;
+}
+
+.fullsized .TextButton {
+	width: 100%;
+}
+
+.IElimitter .TextButton {
+	width: auto;
+	overflow: visible;
+}
+
+.SmallFont {
+	font-size: 0.9em;
+	line-height: 1.3em;
+}
+
+.SmallPadding, .SmallPadding tr td {
+	padding: 0px;
+	margin: 0px;
+}
+
+.lnkSitemapLevel2 {
+	margin-left: 20px;
+}
+
+.tblSitemapLevel3 {
+	margin-bottom: 10px;
+	margin-left: 30px;
+}
+
+span#GIS {
+	float: left;
+	margin-top: 15px;
+}
+
+span#DZ {
+	float: left;
+	margin-left: -7px;
+}
+
+span#eBrokerage {
+	float: left;
+	margin-left: -10px;
+}
+
+span#PV, span#PVA, span#SA {
+	float: none !important;
+	margin-left: 0 !important;
+	display: block !important;
+}
+
+span#PV #Anbieterlogo {
+	padding-bottom: 5px;
+}
+
+span#PV #products td.tablesubheadline {
+	padding-top: 10px;
+}
+
+#content .productcolwide .hasimageleft {
+	width: 29em !important;
+}
+
+#scroll + #ui-datepicker-div {
+	font-size: 0.8em;
+}
+
+#scroll + #ui-datepicker-div.ui-widget-content {
+	background: #D2D2D2 url(../content/WEB-INF/html/images/jqui/ui-bg_highlight-datepicker.png) 50% top repeat-x;
+}
+
+#scroll + #ui-datepicker-div .ui-widget-header {
+	background: #F60;
+}
+
+#scroll + #ui-datepicker-div .ui-state-default, #scroll + #ui-datepicker-div .ui-widget-content .ui-state-default, #scroll + #ui-datepicker-div .ui-widget-header .ui-state-default {
+	color: #0066B3;
+}
+
+#cntQuickcheckEingabe .XContainer.ui-slider {
+	width: 67px;
+	position: absolute !important;
+	margin-top: 11px;
+}
+
+#lblNameKundennr {
+	font-size: 18px;
+	font-weight: 600 !important;
+	color: #333333;
+}
+
+#tblVGUebersicht #lblNameKundennr {
+	display: none;
+}
+
+#contextCommands a, a.XAction, a.XLink, .externalLink a {
+	font-weight: normal;
+	color: #5a5a5a;
+}
+
+#cntBezeichnung td[width="20"], #cntDauerauftragsdaten td[width="20"], #cntBezeichnung td[width="20"] input, #cntDauerauftragsdaten td[width="20"] input {
+	width: 0px;
+}
+
+#tblKontoauszuege .TextLink, #tblWertpapiermitteilungen .TextLink, #tblPersonen .TextLink, #tblVGUebersicht .TextLink, #cntFinanzstatus .TextButton, #actTANOptisch .TextButton, #actTANManuell .TextButton, #cntVertragsgegenstandBezeichnung .TextLink, #tblBerechtigungPersonen .TextLink, #tblUebersicht .TextLink, .AktionswechselBlock .TextButton, #cntSepaAuftrag .TextLink, #tblAdressuebersicht .TextLink, #cntDateiUploadOhneFlashAction .TextLink, #cntDateiUploadMitFlashAction .TextLink {
+	font-weight: normal;
+}
+
+.AktionswechselBlock, .AktionswechselBlock table, .AktionswechselBlock td, .Infoblock table, .Infoblock td, .InfoblockUndInhalt table, .Formularblock table, .Formularblock td, .FormularblockUndInhalt table {
+	border-color: transparent;
+}
+
+#cntAktionen .TextButton, #cntAktions .TextButton, #cntAktionen .TextLink, #actSucheEinAusblenden .TextButton, #actSuchkriterienSpeichern .TextButton, #actZahlungsartWaehlen, #actDateiHinzufuegen, #commandReturnFromFTS, #tblLastschriften .TextButton, #tblPersonen #cntAktionen .TextButton, #tblAuftragFreigabe1 #cntAktionen .TextButton, #tblAuftragFreigabe2 #cntAktionen .TextButton, #tblTerminAuftraege #cntAktionen .TextButton, #cntDateiFreigabe #cntAktionen .TextButton, #actExport, #actErsetzen, #actUebernehmen, #actLoeschen, #actExportImportOK, #tblFreistellungsauftraege .TextButton, #tblKartenUebersicht .TextButton, #tblKartenUebersicht .TextLink {
+	font-size: 12px;
+	margin-left: 0px;
+}
+
+a.XAction:link, #tblVGUebersicht .TextLink, #cntAktionen .TextButton, #cntAktionen .TextLink, #cntAktions .TextButton, #actSucheEinAusblenden .TextButton, #actSuchkriterienSpeichern .TextButton, #cntSuchen .TextButton, #actZahlungsartWaehlen, #tblPersonen #cntAktionen .TextButton, #actDateiHinzufuegen, #commandReturnFromFTS, #tblLastschriften .TextButton, #tblAuftragFreigabe1 #cntAktionen .TextButton, #tblAuftragFreigabe2 #cntAktionen .TextButton, #tblTerminAuftraege #cntAktionen .TextButton, #actExport, #actErsetzen, #actUebernehmen, #actLoeschen, #actExportImportOK, #cntDateiFreigabe #cntAktionen .TextButton, #tblMTAN #cntDaten .TextButton, #tblTAN #cntDaten .TextButton, #cntLastschriftdaten .TextButton, #cntBezeichnung input, #tblTerminueberweisungen .TextButton, #cntVorgangsdaten .TextButton, #tblPersonen .TextButton, #tblTabelleBSH .TextButton, #cntKompaktInfo .TextButton, #tblDateiFreigabe .TextButton, #tblAuftragFreigabe1 .TextButton, #tblAuftragFreigabe2 .TextButton, #tblTerminAuftraege .TextButton, #cntZVAuftragKompakt .TextButton, #tblFreistellungsauftraege .TextButton, #tblKartenUebersicht .TextButton, #tblKartenUebersicht .TextLink, #cntQuickcheckEingabe #lnkBerechnen, #actErgebnisPartnerEinblenden .TextButton, #xvwErgebnisAnw #cntDaten .TextButton, #cntQRCodeFunktionText #lnkWCInfoLink, #actZweitenInteressentenEinblenden, #lnkEBELink {
+	color: #0066B3 !important;
+}
+
+#cntAktionen #actSuchkriterienLoeschen .TextButton, .Transaktionsblock .TextButton, #tblPersonen .TextLink, #tblKontoauszuege .TextLink, #tblWertpapiermitteilungen .TextLink, #tblKontenKundenMitteilungen .TextLink, #tblHVMitteilungen .TextLink, #tblKreditkartenabrechnungen .TextLink, #tblKundenMitteilungen .TextLink, #cntFinanzstatus .TextButton, #actTANOptisch .TextButton, #actTANManuell .TextButton, #cntVertragsgegenstandBezeichnung .TextLink, #tblBerechtigungPersonen .TextLink, #tblUebersicht .TextLink, .AktionswechselBlock .TextButton, #cntSepaAuftrag .TextLink, #tblAdressuebersicht .TextLink, #tblKontenZuKonten .TextButton, #cntDateiUploadOhneFlashAction .TextLink, #cntDateiUploadMitFlashAction .TextLink, #actEinAusblenden .TextButton, #actFlowAnzeigen .TextButton, #actChartAnzeigen .TextButton, #tblTilgungsplanJahre .TextButton, #tblAntragsnummern .TextLink, #tblSuchergebnis .TextButton, #cntBezeichnung a, #tblDateianhaenge .TextButton, #xvwKorrespondenzNachrichtEmbedded .TextButton, #tblAnhaenge .TextButton, #actAlternativeBankverbindung .TextButton, #tblVormerkungen .TextButton {
+	color: #5a5a5a !important;
+}
+
+#tblPersonen thead tr th, #tblMTAN thead tr th, #tblTAN thead tr th, #cntUmsatzanzeige thead tr th, #cntLastschriften thead tr th, #tblDauerauftraege thead tr th, #tblAuftraege thead tr th, #tblTerminueberweisungen thead tr th, #cntTabelle thead tr th, #cntFinanzstatus thead tr th, #cntVerbundpartner thead tr th, #tblUebersicht thead tr th, #tblBerechtigungPersonen thead tr th, #tblDispovormerkungen thead tr th, #tblLimite thead tr th, #tblEingereichteLastchriftenOderScheck thead tr th, #tblEingereichteSepaLastschriften thead tr th, #tblVorliegendeSepaLastschriften thead tr th, #tblAuftragFreigabe1 thead tr th, #tblAuftragFreigabe2 thead tr th, #tblDateiFreigabe thead tr th, #tblTerminAuftraege thead tr th, #tblSepaDatei thead tr th, #tblSepaDateiAuftrag thead tr th, #tblUmsaetze thead tr th, #tblBerechnungen thead tr th, #tblContent thead tr th, #tblFreistellungsauftraege thead tr th, #tblKartenUebersicht thead tr th, #tblAdressuebersicht thead tr th, #cntDepot thead tr th, #tblUmsatzgruppePreis2Spaltig thead tr th, #tblKontofuehrungsentgeltStaffel thead tr th, #tblKonditionen thead tr th, #tblKonditionen2 thead tr th, #tblTilgungsplanJahre thead tr th, #tblAntragsnummern thead tr th, #tblSparten thead tr th, #tblNachweisliste thead tr th, #tblCashflow thead tr th, #tblUnterschriften thead tr th, #tblEinzelposten thead tr th, #tblTANNachweis thead tr th, #tblTabelle thead tr th, #tblTilgungsplanMonat thead tr th, #tblSuchergebnis thead tr th, #tblKontoauszuege thead tr th, #tblWertpapiermitteilungen thead tr th, #tblKontenKundenMitteilungen thead tr th, #tblHVMitteilungen thead tr th, #tblKreditkartenabrechnungen thead tr th, #tblKundenMitteilungen thead tr th, #tblSollzinsenStaffel thead tr th, #tblHabenZinsenZinsStaffel thead tr th, #tblVormerkungen thead tr th, #tblStaffelpreise thead tr th {
+	background-color: #2382C8 !important;
+}
+
+#tblMTAN #cntDaten .TextButton, #tblTAN #cntDaten .TextButton, #cntLastschriftdaten .TextButton, #cntBezeichnung input, #tblTerminueberweisungen .TextButton, #cntVorgangsdaten .TextButton, #tblPersonen .TextButton, #tblTabelleBSH .TextButton, #cntKompaktInfo .TextButton, #tblDateiFreigabe .TextButton, #tblAuftragFreigabe1 .TextButton, #tblAuftragFreigabe2 .TextButton, #tblTerminAuftraege .TextButton, #cntZVAuftragKompakt .TextButton {
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 0px;
+}
+
+#cntVorgangsdaten .TextButton, #cntBezeichnung .TextButton, #tblPersonen .TextButton, #cntDaten .TextButton, #cntZVAuftragKompakt .TextButton {
+	font-size: 12px;
+}
+
+#actEinblenden .TextButton, #actAusblenden .TextButton {
+	font-size: 13px !important;
+	box-shadow: none !important;
+	border: 0px none !important;
+	border-color: transparent !important;
+	background: none !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	color: #0066B3 !important;
+}
+
+#cntVerwendungszweckRechts input.ImageButton {
+	padding-left: 3px;
+}
+
+#cntBezeichnung .ImageButton, #cntVorgangsdaten .ImageButton, #cntDauerauftragsdaten .ImageButton, #cntDaten .ImageButton, #cntLastschriftdaten .ImageButton, #tblPersonen .ImageLink, #tblPersonen .ImageButton, #cntVerbundpartner .ImageButton, #cntKontoauszuege .ImageLink, #cntWertpapierMitteilungen .ImageLink, #tblBerechtigungPersonen .ImageLink, #tblAuftragFreigabe1 .ImageButton, #tblAuftragFreigabe2 .ImageButton, #tblDateiFreigabe .ImageButton, #tblTerminAuftraege .ImageButton, #cntSepaAuftrag .ImageLink, #cntZVAuftragKompakt .ImageButton, #tblTilgungsplanJahre .ImageButton, #tblVormerkungen .ImageButton {
+	display: none;
+}
+
+#cntVertragsgegenstandBezeichnung .ImageLink {
+	display: none !important;
+}
+
+#cntVertragsgegenstandBezeichnung .TextLink {
+	padding: 0px !important;
+}
+
+#cntVorgangsdaten .Beschriftung, #cntDauerauftragsdaten .Beschriftung, #cntLastschriftdaten .Beschriftung, #tblTerminueberweisungen #cntDaten .Beschriftung {
+	display: none;
+}
+
+#actFernabsatzFormular .ImageButton, #actSB2 .ImageButton, #actAgb2 .ImageButton, #cntUeberweisung .ImageButton, #cntUeberweisungsdaten .ImageButton, #cntZahlungsart .ImageButton, #tblPersonen #cntAktionen .ImageButton, #tblDateianhaenge .ImageButton, #tblAuftragFreigabe1 #cntAktionen .ImageButton, #tblAuftragFreigabe2 #cntAktionen .ImageButton, #tblDateiFreigabe #cntAktionen .ImageButton, #tblTerminAuftraege #cntAktionen .ImageButton, #actAgbAnzeigen .ImageButton, #xvwErgebnisAnw #cntDaten .ImageButton, #cntSepaMandat .ImageButton, #cntDauerauftragsdaten .ImageButton {
+	display: inline;
+}
+
+#cntAktionen .TextButton, #cntAktions .TextButton {
+	padding-left: 3px;
+}
+
+#cntAktionen span, #cntAktions span {
+	height: 20px;
+	display: block;
+}
+
+#tblVGUebersicht .ImageLink img {
+	position: relative;
+	top: 6px;
+}
+
+#tblVGUebersicht .XAction {
+	padding-bottom: 15px;
+}
+
+#tblVGUebersicht td[colspan="4"], #tblAdressuebersicht td[colspan="2"], #tblKartenUebersicht td[colspan="4"] {
+	padding-bottom: 10px;
+}
+
+#tblVGUebersicht tbody {
+	border-left-color: transparent !important;
+	border-right-color: transparent !important;
+}
+
+#tblVGUebersicht thead th {
+	border-bottom: 1px solid !important;
+	padding-bottom: 10px;
+	border-bottom-color: #D1D3D4 !important;
+}
+
+#tblVGUebersicht span .TextLink, #cntStartseiteEinblenden #actStartseiteEinblenden .TextButton, #cntStartseiteAusblenden #actStartseiteAusblenden .TextButton, #cntKontenFestlegenEinblenden #actKontenFestlegenEinblenden .TextButton, #cntKontenFestlegenAusblenden #actKontenFestlegenAusblenden .TextButton, #cntBevorzugtesTANVerfahrenEinblenden #actIndividuelleTANEingabeFestlegenEinblenden, #cntBevorzugtesTANVerfahrenEinblenden #actIndividuelleTANEingabeFestlegenAusblenden, #cntBevorzugtesTANVerfahrenEinblenden #actBevorzugtesTANVerfahrenEinblenden .TextButton, #cntBevorzugtesTANVerfahrenAusblenden #actBevorzugtesTANVerfahrenAusblenden .TextButton, #cntIndividuelleTANEingabeEinblenden #actIndividuelleTANEingabeFestlegenEinblenden .TextButton, #cntIndividuelleTANEingabeAusblenden #actIndividuelleTANEingabeFestlegenAusblenden .TextButton {
+	font-size: 18px !important;
+}
+
+#cntNameZuKonten #lblNameUebersichtZuKonten, #tblKontenZuKonten .Beschriftung {
+	font-weight: normal;
+}
+
+#tblVGUebersicht td[align~="right"] {
+	text-align: left;
+}
+
+#tblAdressuebersicht .TextLink, #tblKartenUebersicht .TextLink {
+	padding-top: 3px;
+	display: table;
+	padding-left: 8px;
+	float: left;
+	font-size: 13px;
+}
+
+#tblAdressuebersicht .ImageLink, #tblKartenUebersicht .ImageLink {
+	display: table;
+	float: left;
+	margin-top: 4px;
+}
+
+#tblAdressuebersicht td:first-child {
+	width: 250px;
+}
+
+#cntFreistellungsauftraege #lblUeberschrift {
+	font-size: 13px;
+	font-weight: 600;
+}
+
+#cntFreistellungsauftraege .Titel {
+	border-bottom: 1px solid;
+	margin-bottom: 8px !important;
+	border-color: transparent;
+}
+
+#cntFreistellungsauftraege thead {
+	background-color: transparent;
+}
+
+#cntFreistellungsauftraege thead tr th {
+	border-bottom: 1px solid !important;
+	text-align: right;
+	border-color: transparent !important;
+}
+
+#cntFreistellungsauftraege thead tr th:first-child {
+	border-right-color: #D1D3D4 !important;
+}
+
+#cntFreistellungsauftraege td #lbl10 {
+	white-space: nowrap;
+}
+
+#cntFinanzstatus #cntBlockBookmark #lblIcon {
+	display: none;
+}
+
+#cntFinanzstatus #cntBlockBookmark #lblText {
+	margin-left: -1.5em;
+}
+
+#cntFinanzstatus #cntBlockBookmark {
+	border-bottom: 1px solid !important;
+	padding-bottom: 2px;
+	border-color: #cccccc !important;
+}
+
+#cntFinanzstatus #cntBlockBookmark, #cntFinanzstatus #cntBlockBookmark table {
+	background-color: transparent !important;
+}
+
+#cntFinanzstatus {
+	margin-bottom: 2em;
+}
+
+#cntKontokorrent {
+	margin-top: 2em;
+}
+
+#cntKontokorrent .Summenzeile, #cntSpareinlagen .Summenzeile, #cntDepot .Summenzeile, #cntFinanzstatus .Summenzeile {
+	height: auto;
+}
+
+.Summenzeile {
+	font-weight: 700;
+	height: 4.5em;
+	border-top: 2px solid;
+	border-color: #cccccc;
+	background-color: transparent;
+	color: #333333;
+}
+
+.SZembedded {
+	border: 0px solid !important;
+	border-color: transparent !important;
+}
+
+.SZembedded td {
+	border-bottom: 1px solid !important;
+	padding: 3px 8px 3px 7px;
+	border-bottom-color: #D1D3D4 !important;
+}
+
+#cntVerbundpartner .XTable {
+	padding-bottom: 2em;
+}
+
+#cntVerbundpartner td[height="3"] img {
+	display: none;
+}
+
+#cntVerbundpartner td[height="3"] {
+	height: 0;
+}
+
+#tblUmsaetze {
+	margin: -1px 0 -1px 0;
+}
+
+#xvwEndsaldoValue {
+	font-weight: 600;
+}
+
+#chcZeitraum {
+	margin-bottom: 0px;
+	margin-left: 3px;
+	width: 273px;
+}
+
+#lblDatumFormatLabel {
+	display: none;
+}
+
+#datZeitraumVon, #datZeitraumBis, #decBetragVon, #decBetragBis {
+	width: 8.3em;
+}
+
+#datZeitraumVon, #decBetragVon {
+	margin-left: 36px;
+}
+
+#datZeitraumBis, #decBetragBis {
+	margin-left: 0px;
+}
+
+#lblBetragHinweisLabel {
+	margin-left: 150px;
+}
+
+#txtEmpfaengerdaten, #txtKreditinstitut {
+	width: 36.2em;
+}
+
+#txtKreditinstitut[size="50"] {
+	width: 17.5em;
+}
+
+#txtIBAN, #txtKundenreferenz, #txtAbweichenderAuftraggeber {
+	width: 17.5em;
+}
+
+#chcLaenderkennzeichen, #chcTextschluessel {
+	width: 238px;
+}
+
+#txtKontonummerEmpfaenger, #txtKontonummerAuftraggeber, #txtAuftraggeber, #txtBankleitzahl, #decBetrag, #datAusfuehrungsdatum, #txtBIC, #txtAuftraggeberName {
+	width: 16em;
+}
+
+#tblVerwendungszwecke .XText {
+	width: 16em;
+}
+
+#cntUeberweisung .XLabel, #cntUeberweisungsdaten .XLabel {
+	display: block;
+	padding-bottom: 3px;
+}
+
+#cntUeberweisung td, #cntUeberweisungsdaten td {
+	line-height: 21px;
+}
+
+#cntUeberweisungsdaten #txtEmpfaengerdaten1, #txtStrassePLZOrt, #cntUeberweisungsdaten #txtVerwendungszweck1, #cntUeberweisungsdaten #txtVerwendungszweck2, #cntVerwendungszwecke #txtVerwendungszweck1, #cntVerwendungszwecke #txtVerwendungszweck2, #cntUeberweisungsdaten #txtAbweichenderAuftraggeber {
+	width: 38.2em;
+}
+
+#cntVorlage #txtVorlage {
+	width: 22.4em;
+}
+
+#cntVorlagenZeile #txtVorlage {
+	width: 20.3em;
+}
+
+#txtVorlage {
+	margin-left: 5px;
+}
+
+#cntEmpfaengerbank td[width="68%"], #cntEmpfaengerbank td[width="32%"] {
+	width: 50%;
+}
+
+#chcZahlungsart {
+	margin-left: 70px;
+	margin-bottom: 0px;
+	width: 200px;
+}
+
+#actZahlungsartSpeichern .ImageButton {
+	padding-right: 0px;
+}
+
+#actZahlungsartWaehlen {
+	margin-left: 12px !important;
+	font-size: 12px !important;
+	height: 24px !important;
+}
+
+#actSuchen, #actTerminAendern {
+	margin-left: 5px !important;
+	height: 24px !important;
+	font-size: 12px !important;
+}
+
+#cntSuchen .TextButton, #actDateiHinzufuegen {
+	height: 24px !important;
+	font-size: 12px !important;
+}
+
+#lblVorlageSpeichernLabel {
+	display: block;
+	white-space: normal;
+	width: 200px;
+}
+
+#lnkNeuAnmelden {
+	padding: 0 0.5em 4px;
+}
+
+#lnkNeuAnmelden img {
+	display: none;
+}
+
+#infotext_cntRoot table, .Infoblock table {
+	border: 0px solid !important;
+}
+
+#infotext_cntRoot table, .Infoblock table, .FormularblockUndInhalt table, #cntKontoAuswahl table {
+	border-color: transparent !important;
+}
+
+.Infoblock table, .Infoblock td, .InfoblockUndInhalt table, .Formularblock table, .Formularblock td, .FormularblockUndInhalt table {
+	border: 0px solid;
+}
+
+#cntKontoAuswahl table {
+	border: 0px solid !important;
+}
+
+#cntKontoAuswahlZeile {
+	margin-bottom: 10px;
+}
+
+#xvwKontoauswahlSaldoValue {
+	font-weight: 700;
+}
+
+#cntBankTexte {
+	border: 1px solid;
+	overflow: hidden;
+	position: relative;
+	background-color: #ffffff !important;
+	border-color: transparent;
+	color: #333333 !important;
+}
+
+#cntKontoinformationen, #tblKarteninformationen, .cntKontoinfo {
+	border: 1px solid;
+	margin-bottom: 15px !important;
+	padding: 0 !important;
+	margin-bottom: 28px;
+}
+
+:root #cntKontoinformationen, :root #tblKarteninformationen, :root .cntKontoinfo {
+	border: 0 none;
+}
+
+.cntKontoinfo table, .cntKontoinfo td, .cntKontoinfo tr, #cntKontoinformationen table, #cntKontoinformationen td, #cntKontoinformationen tr, #tblKarteninformationen table, #tblKarteninformationen td, #tblKarteninformationen tr, #tblContent #cntKreditkartendaten tr {
+	border: 0 none !important;
+	background-color: transparent !important;
+	border-color: transparent !important;
+}
+
+#tblContent tr {
+	border-bottom: 1px solid !important;
+}
+
+#tblContent tr, #cntZahlungsart table, #cntVorlagenZeile table {
+	border-color: #cccccc !important;
+}
+
+#tblContent thead th {
+	text-align: right;
+}
+
+#cntMandatsreferenz.Transaktionsblock {
+	box-shadow: none;
+}
+
+#cntZahlungsart table {
+	border-bottom: 1px solid !important;
+}
+
+#cntLastschriftartAuswahl #cntZahlungsart table {
+	border-bottom: none !important;
+}
+
+#cntVorlagenZeile table {
+	border-top: 1px solid !important;
+}
+
+#cntVorlagenZeile table td {
+	padding-top: 10px;
+}
+
+#cntZahlungsart table td {
+	padding-bottom: 5px;
+}
+
+#rsct_opttan_generation {
+	border: 0 none !important;
+	margin-left: 25px;
+}
+
+#rsct_opttan_generation td {
+	border: 0 none !important;
+}
+
+#rsct_opttan_generation, #rsct_opttan_generation td {
+	border-color: transparent !important;
+}
+
+#rsct_opttan_generation ol {
+	list-style-type: decimal;
+}
+
+#cntPosteingangName table, #cntKontoauszugTitel table, #cntWertpapierMitteilungenTitel table {
+	border: 0px solid;
+}
+
+#tblKontoauszuege .bold, #tblWertpapiermitteilungen .bold, #tblKontenKundenMitteilungen .bold, #tblHVMitteilungen .bold, #tblKreditkartenabrechnungen .bold, #tblKundenMitteilungen .bold {
+	font-weight: 700;
+}
+
+#cntHinweise #lblBrowserTestInfo1 {
+	color: #cc0000;
+	font-weight: 700;
+}
+
+#cntInfobereich table, #cntText8 table, #cntHinweis table, #cntHinweisAnmeldung table, #cntKarteAktivieren table, #cntTANGenerator table, #cntChipTANGebuehr table, #cntSonderbedingungen table {
+	border: 0px solid;
+}
+
+#cntPosteingang, #cntAktuellWichtig, #cntFunktionenServices, #cntMitteilungenVTM, #cntProdukteAngebote {
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	border: 1px solid;
+	border-color: #cccccc;
+	margin-bottom: 15px !important;
+	width: 600px !important;
+	padding: 0px !important;
+}
+
+#tblPosteingang, #tblAktuellWichtig, #tblFunktionenServices, #tblMitteilungenVTM, #tblProdukteAngebote {
+	background-repeat: repeat-x;
+	margin-left: 0;
+	width: 100%;
+}
+
+#cntInfoblock .Titel, #cntTelefonnummer .Titel, #cntAbrechnungskonto .Titel, #cntGebuehrBedingungen .Titel {
+	margin-bottom: 5px !important;
+	padding: 5px 0 0 3px;
+}
+
+#cntPosteingangTitel, #cntFunktionenServicesTitel, #cntMitteilungenVTMTitel, #cntProdukteAngeboteTitel {
+	margin-bottom: 5px !important;
+	padding: 10px 0 0 0;
+}
+
+#cntAktuellWichtigTitel {
+	margin-bottom: 10px !important;
+	padding: 10px 0 0 5px;
+}
+
+#tblPosteingang td, #cntFunktionenServices td, #cntMitteilungenVTM td, #cntProdukteAngebote td {
+	border: 0px none !important;
+}
+
+#cntMitteilung {
+	margin-bottom: 10px;
+	margin-left: 1px;
+	margin-top: 20px;
+}
+
+#cntMitteilung .ImageButton {
+	margin-top: 2px;
+}
+
+#cntAktuellWichtig #cntMitteilung, #cntFunktionenServices #cntMitteilung, #tblMitteilungenVTM #cntMitteilung, #tblProdukteAngebote #cntMitteilung {
+	margin-left: 5px;
+}
+
+#cntHinweis, #cntHinweisAnmeldung, #cntTANGenerator, #cntKarteAktivierenInhalt, #cntKategorieChipTANGebuehrInhalt, #cntSonderbedingungenInhalt, #cntInhalt, #cntUeberweisung, #cntUeberweisungsteil, #cntAusfuehrung, #cntSepaLastschriftdaten, .Tabellenblock, #cntBlockBookmark, #cntBlockBookmarkSonder, .Bestaetigung, #cntKontoinformationen, .cntKontoinfo, #cntDatenDateiupload, #tblUmsatzdaten, #cntZugaenge, #cntDispovormerkungen, #cntLastschriftenLimite, #cntLastschriftenEingereichteLastschriftenOderScheck, #cntLastschriftenEingereichteSepaLastschriften, #cntLastschriftenVorliegendeSepaLastschriften, #tblAuftragFreigabe1, #cntAuftragFreigabe, #cntDateiFreigabe, #cntTerminAuftraege {
+	margin-bottom: 28px;
+}
+
+#actTANOptisch, #cntJSFlicker, #actTANManuell {
+	margin-bottom: 10px;
+	display: block;
+}
+
+#actTANOptisch .ImageButton, #cntJSFlicker .ImageButton, #actTANManuell .ImageButton {
+	float: left;
+}
+
+#cntManuell {
+	margin-top: -15px;
+}
+
+#cntJSFlicker ol {
+	padding-top: 0px;
+}
+
+#tblPersonen td[align~="right"] {
+	text-align: left;
+}
+
+#tblUebersicht td[align~="right"] {
+	text-align: left;
+}
+
+#tblPersonen th[align~="right"] {
+	text-align: left;
+}
+
+#tblPersonen td[align~="right"] > #lblKundennummerValue {
+	text-align: left;
+}
+
+#headline_cntRoot {
+	display: none;
+}
+
+.AktionswechselBlock, .AktionswechselBlock table, .AktionswechselBlock td {
+	border: 0px solid;
+	border-color: #cccccc;
+}
+
+#cntBlockBookmark {
+	margin-bottom: 4px;
+}
+
+#cntDepot .Titel, #cntFremdwaehrung .Titel, #cntDerivate .Titel {
+	margin-bottom: 0px !important;
+}
+
+#cntGesamtwert .Titel, #cntVerbundpartner .Titel {
+	margin-bottom: 1px !important;
+}
+
+#cntKontokorrent .Titel, #cntDarlehen .Titel, #cntSpareinlagen .Titel, #cntTermineinlagen .Titel, #cntGeschaeftsanteile .Titel, #cntDepot .Titel, #cntFremdwaehrung .Titel, #cntDerivate .Titel {
+	font-size: 16px !important;
+	margin-bottom: 0 !important;
+}
+
+#lblZeitraumVonLabel, #lblBisLabel, #lblKurzbezeichnung {
+	margin-right: 5px;
+}
+
+#lblZeitraumBisFormatLabel, #lblBisLabel {
+	margin-left: 5px;
+}
+
+#cntBankleitzahl td[valign~="middle"] {
+	vertical-align: top;
+}
+
+:root #cntDatenIndividuelleStartseite #cntBanking .XChoiceCombo, :root #cntDatenIndividuelleStartseite #cntBanking .XChoiceList, :root #tblVGUebersicht #cntAktionen .XChoiceCombo {
+	width: 100%;
+}
+
+#tblUebersicht .ImageLink {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	float: left;
+	display: block;
+}
+
+#tblUebersicht .TextLink {
+	margin-top: 4px;
+	padding-left: 27px;
+	display: block;
+}
+
+#cntErgaenzungContent td {
+	padding: 0px;
+}
+
+#cntErgaenzungContent #txaErgaenzung {
+	width: 98%;
+}
+
+#cntUmsatzsuche .ImageButton, #tblPersonen .ImageButton, #actEinblenden .ImageButton {
+	margin-right: 3px;
+}
+
+#cntUmsatzsuche td[valign="top"] {
+	vertical-align: middle;
+}
+
+#cntUebersichtEnde #cntTitel.FormularblockKontextOben table {
+	border-color: transparent;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 21px;
+	color: #5a5a5a;
+}
+
+#cntSalden, #cntSaldenUnten {
+	padding: 5px;
+}
+
+#tblKontenZuKonten .TextButton {
+	font-weight: normal;
+}
+
+#cntAnzeigeSeite #lblAnzeige {
+	padding-left: 5px;
+}
+
+#cntNeuerFreibetrag #cntGueltigBis td[valign="top"], #cntDatenIndividuelleStartseite #cntBanking td[valign="top"] {
+	vertical-align: middle;
+}
+
+#cntNeuerFreibetrag #cntGueltigBisEingabe input, #cntDatenIndividuelleStartseite #cntBanking select {
+	margin-bottom: 0px;
+}
+
+#cntVGAuswahl td[valign="top"], #cntEinstellungZuKonten td[valign="top"] {
+	vertical-align: middle;
+}
+
+#cntEinstellungZuKonten td[width="5%"], #cntEinstellungZuKonten td[width="10%"] {
+	width: 3%;
+	padding: 0px;
+}
+
+#cntEinstellungZuKonten td:last-child {
+	padding-left: 0px;
+}
+
+#cntQuickcheckEingabe #cntBerechnungen table td {
+	border: 0px solid !important;
+	border-color: transparent !important;
+}
+
+#cntQuickcheckEingabe .FormularblockInterneTabelle, #cntQuickcheckEingabe .FormularblockInterneTabelle tr td, #cntQuickcheckEingabe .FormularblockInterneTabelle tr th {
+	border-left: 0px solid;
+	border-right: 0px solid;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	padding: 0px;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: #e1e1e1;
+	border-top-color: #e1e1e1;
+}
+
+#cntKontodatenZusammenfassung table {
+	border: 0px solid !important;
+	border-color: transparent !important;
+}
+
+#plhGutschriftskonto #cntInhalt {
+	margin-bottom: 0px;
+}
+
+#plhAbbuchungskonto .Titel, #plhGutschriftskonto .Titel, #cntKontoinhaberTitel {
+	margin-bottom: 0px !important;
+}
+
+#plhAbbuchungskonto, #cntKonditionen, #cntPersonenAuswahl {
+	margin-bottom: 28px;
+}
+
+#tblPrimaerNavigationen .Beschriftung {
+	color: #0066B3 !important;
+}
+
+#tblPrimaerNavigationen .XLink img {
+	padding-bottom: 3px;
+}
+
+#cntSelbstaendig1 .XLabel, #cntHausGrundBesitz1 .XLabel, #cntWohnhaftKuerzerSechsMonate1 .XLabel, #cntOeffentlicherDienst1 .XLabel, #cntArbeitsverhaeltnisBefristet1 .XLabel, #cntSelbstaendig2 .XLabel, #cntHausGrundBesitz2 .XLabel, #cntWohnhaftKuerzerSechsMonate2 .XLabel, #cntOeffentlicherDienst2 .XLabel, #cntArbeitsverhaeltnisBefristet2 .XLabel, #cntKundeDerBank2 .XLabel, #cntAdresseAbweichend .XLabel, #cntEigeneFremdeRechnungAuswahl .XLabel, #cntGutschriftskontoInhalt .XLabel, #cntAbbuchungskontoInhalt .XLabel, #cntRueckzahlungsterminInhalt .XLabel, #cntSchufaanfrageInhalt .XLabel, #cntErklaerung .XLabel, #cntMehrFlexibilitaetBasis .XLabel, #cntVorvertraglicheInformationBestaetigung .Xlabel, #cntMehrFlexibilitaetKonditionen .XLabel {
+	height: 20px;
+	line-height: 19px;
+}
+
+#cntSelbstaendig1 td[valign="top"], #cntHausGrundBesitz1 td[valign="top"], #cntWohnhaftKuerzerSechsMonate1 td[valign="bottom"], #cntGeburtsname1 td[valign="top"], #cntOeffentlicherDienst1 td[valign="top"], #cntArbeitsverhaeltnisBefristet1 td[valign="top"], #cntSelbstaendig2 td[valign="top"], #cntHausGrundBesitz2 td[valign="top"], #cntWohnhaftKuerzerSechsMonate2 td[valign="bottom"], #cntGeburtsname2 td[valign="top"], #cntOeffentlicherDienst2 td[valign="top"], #cntArbeitsverhaeltnisBefristet2 td[valign="top"], #cntKundeDerBank2 td[valign="top"], #cntAdresseAbweichend td[valign="top"], #cntEigeneFremdeRechnungAuswahl td[valign="top"], #cntGutschriftskontoInhalt td[valign="top"], #cntAbbuchungskontoInhalt td[valign="top"], #cntRueckzahlungsterminInhalt td[valign="top"], #cntSchufaanfrageInhalt td[valign="top"], #cntErklaerung td[valign="top"], #cntMehrFlexibilitaetBasis td[valign="top"], #cntVorvertraglicheInformationBestaetigung td[valign="top"], #cntMehrFlexibilitaetKonditionen td[valign="top"] {
+	vertical-align: middle;
+}
+
+#cntVerwendungKreditInhalt, #cntGlueckwunschInhalt, #cntKreditberechnungInhalt, #cntMehrFlexibilitaetBasis, #cntGutschriftskontoInhalt, #cntAbbuchungskontoInhalt, #cntRueckzahlungsterminInhalt, #cntRestkreditversicherungInhalt, #cntHeader, #cntProduktdaten, #lblProduktdaten, #plhZusaetzlicheAnzeige #cntInhalt {
+	margin-bottom: 20px;
+}
+
+#cntTermin table, #cntNachricht table, #cntRueckantwort table {
+	margin-bottom: 0px;
+}
+
+#cntBerechnungsvariante td:last-child[valign="middle"], #cntBetrachtungszeitraum td:last-child[valign="middle"] {
+	vertical-align: top;
+}
+
+#cntBerechnungsvariante .TextButton, #cntBetrachtungszeitraum .TextButton {
+	font-size: 12px !important;
+	height: 24px !important;
+}
+
+#tblVGUebersicht #cntSortBezeichnung .XAction, #tblVGUebersicht #cntSortNummer .XAction, #tblVGUebersicht #cntSortWert .XAction {
+	padding-bottom: 0px;
+	padding-top: 4px;
+}
+
+#tblUmsaetze input[title~="Absteigend"], #tblLastschriften input[title~="Absteigend"], #tblAuftraege input[title~="Absteigend"], #tblKontoauszuege input[title~="Absteigend"], #tblWertpapiermitteilungen input[title~="Absteigend"], #actSortingDown, #tblUmsaetze input[title~="Aufsteigend"], #tblLastschriften input[title~="Aufsteigend"], #tblAuftraege input[title~="Aufsteigend"], #tblKontoauszuege input[title~="Aufsteigend"], #tblWertpapiermitteilungen input[title~="Aufsteigend"], #actSortingUp {
+	padding-top: 4px;
+}
+
+#tblUmsaetze input[title~="Absteigend"] {
+	margin-top: 2px;
+	padding-left: 4px;
+}
+
+#tblUmsaetze input[title~="Aufsteigend"] {
+	margin-top: 3px;
+}
+
+tr.Summenzeile td {
+	border-right: 0px solid transparent;
+}
+
+.widgetframe {
+	width: 600px;
+	border: 0px;
+	margin-left: -6px;
+}
+
+#cntBezeichnung #cntSortBezeichnung .ImageButton, #cntBezeichnung #cntSortAuftragsart .ImageButton, #cntBezeichnung #cntSortBezeichnungZeile2 .ImageButton {
+	display: inline;
+}
+
+#cntAbmeldungVergessen table td {
+	padding-left: 0px;
+}
+
+.InfoblockUndInhalt td #cntAbmeldungVergessen table, .InfoblockUndInhalt td #cntAbmeldungVergessen table td {
+	padding-left: 0px;
+}
+
+#tblDateianhaenge tr td {
+	border-right: 0px solid !important;
+	border-top: 1px solid !important;
+	border-right-color: transparent !important;
+	border-top-color: #D1D3D4 !important;
+}
+
+#cntNachrichtHeader {
+	margin-bottom: 10px;
+}
+
+#lblAbsenderValue, #lblAnValue, #lblErhaltenValue {
+	font-weight: 600;
+}
+
+#lblBetreff {
+	line-height: 21px !important;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+#lblDateianhang {
+	font-weight: normal;
+}
+
+#lblDateianhang, #lblBetreff {
+	color: #131313;
+}
+
+#cntMailHeaderBetreff #lblBetreff {
+	font-size: 18px;
+	font-weight: 600 !important;
+	color: #5A5A5A;
+}
+
+#tblNachrichtContent td {
+	border: 0px solid !important;
+	border-color: transparent !important;
+}
+
+#cntMailHeader table {
+	margin-bottom: 18px;
+	padding-left: 0px;
+}
+
+#tblAnhaenge {
+	margin-bottom: 0px !important;
+}
+
+#cntMailHeader {
+	border-bottom: 1px solid !important;
+	border-bottom-color: #D1D3D4 !important;
+}
+
+#cntSeparator {
+	margin-bottom: 15px;
+	color: #5A5A5A;
+}
+
+#tblKorrespondenzNachrichten tbody tr:first-child td {
+	border-top: 1px solid !important;
+	border-top-color: #D1D3D4 !important;
+}
+
+#tblKorrespondenzNachrichten #xvwKorrespondenzNachrichtEmbedded td {
+	border-top: 0px solid !important;
+	border-top-color: transparent !important;
+}
+
+#xvwKorrespondenzNachrichtTabelleEmbedded {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+#lblKeineDateiAngehaengt, #lblAnhangGeloescht {
+	color: #5A5A5A;
+}
+
+#cntExternesKonto tr:first-child td:first-child[colspan="2"] {
+	padding-bottom: 10px !important;
+}
+
+#ebbe .SZembedded td {
+	padding: 3px 6px 3px 2px;
+}
+
+#ebbe #cntExportImportOK td[valign="middle"], #ebbe #cntLoeschen td[valign="middle"], #ebbe #cntUebernehmen td[valign="middle"], #ebbe #cntErsetzen td[valign="middle"], #ebbe #cntSuchenInnen td[valign="middle"], #ebbe #cntExport td[valign="middle"] {
+	vertical-align: top;
+}
+
+#ebbe #cntExportImportOK .TextButton, #ebbe #cntLoeschen .TextButton, #ebbe #cntUebernehmen .TextButton, #ebbe #cntErsetzen .TextButton, #ebbe #cntExport #actExport {
+	width: 2.5em !important;
+	padding: 0;
+	line-height: 1.3em;
+	border: 0 solid !important;
+	height: 24px;
+	margin-left: 5px !important;
+	padding-bottom: 2px !important;
+	margin-top: 1px;
+}
+
+#ebbe #cntExport #actExport {
+	margin-top: 0px;
+}
+
+#ebbe #cntExportImportOK .TextButton:hover, #ebbe #cntLoeschen .TextButton:hover, #ebbe #cntUebernehmen .TextButton:hover, #ebbe #cntErsetzen .TextButton:hover, #ebbe #cntExport #actExport:hover, #cntDateiUploadOhneFlashAction .TextLink:hover, #cntDateiUploadMitFlashAction .TextLink:hover {
+	text-decoration: underline;
+}
+
+#ebbe #cntExportImportOK .TextButton, #ebbe #cntLoeschen .TextButton, #ebbe #cntUebernehmen .TextButton, #ebbe #cntErsetzen .TextButton, #ebbe #cntExport #actExport {
+	border: 1px solid !important;
+}
+
+#ebbe #cntSucheErweitert .XText {
+	width: 8.3em;
+}
+
+#ebbe #txtPrimanotaVonWert, #ebbe #txtPrimanotaBisWert, #ebbe #txtTextschluesselVonWert, #ebbe #txtTextschluesselBisWert {
+	width: 8.3em;
+}
+
+#ebbe #datZeitraumBis, #ebbe #decBetragBis, #ebbe #datZeitraumVon, #ebbe #decBetragVon {
+	margin-left: 0px;
+}
+
+#ebbe #cntSucheErweitert #chcZeitraum {
+	margin-bottom: 10px;
+}
+
+#ebbe #cntSucheErweitert td[valign="top"] {
+	vertical-align: middle;
+}
+
+#ebbe #tblUebersicht .TextLink, #ebbe #cntDispoVormerkungenAuswahl #actDispovormerkungenZuklappen .TextButton, #ebbe #cntDispoVormerkungenAuswahl #actDispovormerkungenAufklappen .TextButton, #ebbe #cntBlockLastschriften #actLastschriftenAufklappen .TextButton, #ebbe #cntBlockLastschriften #actLastschriftenZuklappen .TextButton, #ebbe #cntAuftragFreigabeAction .TextButton, #ebbe #cntDateiFreigabeAction .TextButton, #ebbe #cntTerminAuftraegeAction .TextButton, #ebbe #cntSepaDateiAction #actSepaDateienUebersicht .TextButton, #ebbe #cntSepaDateiAuftragAction #actSepaDateiAuftraegeUebersicht .TextButton, #ebbe #cntDateiUploadOhneFlashAction .TextLink, #ebbe #cntDateiUploadMitFlashAction .TextLink {
+	font-size: 18px !important;
+}
+
+#ebbe #cntSepaLastschriftdaten .ImageButton {
+	display: inline;
+}
+
+#ebbe #actZahlungsartSpeichern .TextButton, #ebbe #cntSepaLastschriftdaten .TextButton {
+	margin-left: 3px;
+}
+
+#ebbe #actUrspruenglicheMandatsdatenErfassen.readonly {
+	background-color: transparent;
+}
+
+#ebbe #cntMitteilung #txaMitteilungstext {
+	width: 95%;
+}
+
+#ebbe #cntBetrag #decBetrag {
+	height: 20px !important;
+}
+
+#ebbe #cntSucheErweitert #chcZeitraum {
+	width: 12em;
+}
+
+#cntLinks .TextButton {
+	border: 0px solid !important;
+	background: none !important;
+	margin: 0px !important;
+	border-color: transparent;
+	box-shadow: none;
+}
+
+#ebbe #cntLastschriften #tblLastschriften td[align="right"]:last-child {
+	text-align: left;
+}
+
+#ebbe #cntUebersichtAnfang #cntButtons {
+	margin-bottom: 15px;
+}
+
+#ebbe #cntElemente.Formularblock {
+	margin-bottom: 0px;
+}
+
+#ebbe #cntElemente #cntSuchen.FormularblockInhalt td {
+	padding-bottom: 0px;
+}
+
+#hilfe hr {
+	height: 20px;
+	background-color: #ffffff;
+	border: 0;
+}
+
+#hilfe .titleblock {
+	font-size: 18px;
+}
+
+#hilfe .blocksubtitle {
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+#hilfe .BODY ul {
+	list-style-image: none !important;
+	list-style: disc !important;
+	color: #BBBBBB;
+}
+
+#hilfe .BODY li div {
+	color: #333333;
+}
+
+#hilfe .p td {
+	border-top: 0px solid;
+	border-right: 0px solid;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	padding: 3px;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: #e1e1e1;
+	border-bottom-color: #e1e1e1;
+}
+
+#hilfe .p td:first-child {
+	border-top: 0px solid;
+	border-right: 0px solid;
+	border-left: 0px solid;
+	border-bottom: 1px solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e1e1e1;
+}
+
+#hilfe tr.tabellenkopf {
+	font-weight: 600 !important;
+	background-color: #2382C8;
+	color: #ffffff;
+	border-color: #cccccc;
+}
+
+#hilfe .seitenanfang a {
+	position: absolute;
+	bottom: -45px;
+	right: -325px;
+}
+
+.finanzlexikon a {
+	color: #0066B3 !important;
+}
+
+.finanzlexikon a:hover {
+	text-decoration: underline !important;
+	background-color: transparent !important;
+}
+
+.finanzlexikon {
+	border: 0px solid !important;
+	border-color: transparent !important;
+	background-color: transparent !important;
+}
+
+.finanzlexikon .toplink {
+	border: 0px solid !important;
+	border-color: transparent !important;
+}
+
+.finanzlexikon .sectionHeader {
+	font-size: 18px !important;
+	font-weight: 600 !important;
+	line-height: 21px !important;
+	margin-bottom: 16px !important;
+	background-color: transparent !important;
+	color: #5A5A5A !important;
+}
+
+#main.ebie {
+	border: 0px solid transparent !important;
+	box-shadow: none !important;
+	margin: 0px !important;
+	width: 100% !important;
+	background-image: none !important;
+}
+
+#main.ebie #maincontent {
+	margin: 0px;
+	padding: 0px;
+	width: 554px !important;
+}
+
+#main.ebie #maincontent #medItem.XMedia {
+	width: 600px;
+	display: block;
+}
+
+#WPV_FAG #contextCommands, #main.ebie .breadcrumb {
+	display: none !important;
+}
+
+#main.ebie #cntKundenfrage.FormularblockUndInhalt {
+	margin-bottom: 25px;
+}
+
+#main.ebie #cntKundenfrage.FormularblockUndInhalt tr td:first-child {
+	width: 18px;
+	padding-top: 7px;
+}
+
+#main.ebie #cntKundenfrage.FormularblockUndInhalt tr td {
+	padding: 5px 0px 0px 0px;
+}
+
+#main.ebie #cntKundenfrage.FormularblockUndInhalt .XBoolean {
+	margin: 0px;
+}
+
+#main.ebie .actionBar {
+	padding-top: 5px;
+}
+
+#main.ebie #contextCommands {
+	position: absolute;
+	left: 573px !important;
+	top: 0px;
+	box-shadow: none;
+}
+
+.v-app-loading {
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	height: 50px !important;
+	top: 0px;
+	position: absolute;
+}
+
+#SA #content .cmpFormular input[type=radio] {
+	border: none !important;
+}
+
+#flsFileSelector {
+	max-width: 470px !important;
+}
+
+#tblVertraege span.Submitlink.IElimitter input.IElimitter.TextButton {
+	color: #5a5a5a;
+}
+
+#cntUeberweisungsteil #cntBezeichnung #txtKurzbezeichnung {
+	color: #333333 !important;
+}
+
+#lblFatcaUeberschrift, #lblGeldwaescheTitel {
+	margin-left: 2px;
+}
+
+#cntGeldwaescheContent {
+	margin-left: 1px;
+}
+
+#cntAGB table, #cntAGB td {
+	padding-left: 0px;
+}
+
+#cntAdobeReader table, #cntAdobeReader td {
+	padding-left: 0px;
+}
+
+#cntAbfrage {
+	margin-left: 0px;
+}
+
+#cntAbfrage td {
+	padding-right: 2px;
+}
+
+#cntAbfrage table {
+	width: auto !important;
+}
+
+#plhFatcaInformationen .InfoblockUndInhalt::first-child {
+	padding-left: 0px;
+}
+
+#plhFatcaInformationen .InfoblockUndInhalt:last-child {
+	padding-left: 3px;
+}
+
+#lblTitelVertragsdruck {
+	color: #000 !important;
+}
+
+#lnkAbmeldung {
+	color: #fff !important;
+}
+
+#lnkAbmeldung:hover {
+	color: #616161 !important;
+}
+
+#chcZuErsetzen, #txtErsetzenDurch {
+	margin-bottom: 0px;
+}
+
+.Gewinn {
+	color: #00DF00 !important;
+}
+
+.Verlust {
+	color: #FF0000 !important;
+}
+
+.nurDruckansicht {
+	display: none;
+}
+
+.module-linklist.l-float {
+	overflow: hidden;
+}
+
+.module-linklist.l-float a {
+	display: block;
+	white-space: nowrap;
+}
+
+.module-linklist.l-float ul {
+	margin-left: 0px;
+}
+
+.module-linklist.l-float ul li:first-child {
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+}
+
+.module-linklist.l-float li {
+	float: left;
+	margin-right: 2.30769em;
+}
+
+.media-left .figure, .media-right .figure {
+	float: left;
+	position: relative;
+	z-index: 1;
+	margin-right: 3.5%;
+	width: 36.66667%;
+}
+
+.no-marginal .media-left .figure, .no-marginal .media-right .figure {
+	margin-right: 2.30769%;
+	width: 24.17583%;
+}
+
+.media-right .figure {
+	float: right;
+	margin-left: 3.5%;
+	margin-right: 0px;
+}
+
+.module-text-with-media.media-left img, .module-text-with-media.media-right img {
+	max-width: 16.92308em;
+	width: 100%;
+}
+
+.module-linklist.l-bg ul:last-child {
+	padding-bottom: 0.53846em;
+}
+
+.module-linklist.l-bg ul {
+	margin-left: 0px;
+	padding: 0.30769em 0.30769em 0.23077em 0.76923em;
+	background-color: #F3F3F3;
+}
+
+.text ol li, table ol li {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 700;
+}
+
+.text p:last-child, .text ol:last-child, .text ul:last-child, .result-item p:last-child, .result-item ol:last-child, .result-item ul:last-child, table p:last-child, table ol:last-child, table ul:last-child {
+	margin-bottom: 0;
+}
+
+.text ol, .module-ordered ol, table ol {
+	margin-left: 0;
+	list-style: none;
+	counter-reset: orderedlist;
+}
+
+.text ol > li, .module-ordered ol > li, table ol > li {
+	position: relative;
+	margin-left: 2.15385em;
+	margin-bottom: 1.53846em;
+	background-image: none;
+	counter-increment: orderedlist;
+}
+
+.text ol > li:last-child, .module-ordered ol > li:last-child, table ol > li:last-child {
+	margin-bottom: 0.38462em;
+}
+
+.text ol > li:before, .module-ordered ol > li:before, table ol > li:before {
+	position: absolute;
+	top: 0;
+	left: -2em;
+	display: block;
+	content: counter(orderedlist) "";
+	width: 1.21429em;
+	text-align: center;
+	font-size: 1.07692em;
+	line-height: 1.21429em;
+	font-weight: 700;
+	color: #f60;
+}
+
+.text ol li, table ol li {
+	margin-bottom: 0.46154em;
+	margin-left: 0;
+	padding-left: 1.69231em;
+	line-height: 1.23077em;
+	overflow: hidden;
+}
+
+.text ol li:before, table ol li:before {
+	left: 0;
+}
+
+.text .footnote-list, .result-item .footnote-list, table .footnote-list {
+	color: #5A5A5A;
+	counter-reset: folist;
+	margin-left: 0;
+	margin-top: 2.23077em;
+}
+
+.text .footnote-list > li, .result-item .footnote-list > li, table .footnote-list > li {
+	counter-increment: folist;
+	font-size: 0.84615em;
+	font-weight: 400;
+	margin: 0 0 0.36364em 1.09091em;
+	overflow: inherit;
+	padding-left: 0;
+}
+
+.text .footnote-list > li:before, .result-item .footnote-list > li:before, table .footnote-list > li:before {
+	color: #5A5A5A;
+	content: counter(folist, decimal) ")";
+	font-size: 0.90909em;
+	font-weight: 400;
+}
+
+.module.module-text-with-media.ym-clearfix ol li {
+	list-style: none;
+	padding-left: 17px;
+}
+
+.module-ordered ol > li, table ol > li {
+	margin-left: 0;
+}
+
+.module-ordered ol > li:before, table ol > li:before {
+	left: 0;
+}
+
+.module-ordered ol > li > h3, table ol > li > h3 {
+	margin-bottom: 0;
+}
+
+.module-ordered ol > li > h3, .module-ordered ol > li > div, table ol > li > h3, table ol > li > div {
+	margin-left: 1.69231em;
+}
+
+.module-ordered ol > li .module-table, table ol > li .module-table {
+	margin-left: 0;
+}
+
+.module-ordered ol > li .module-table h3, table ol > li .module-table h3 {
+	margin-left: 1.69231em;
+}
+
+.module-ordered ol > li .module-table td:first-child, table ol > li .module-table td:first-child {
+	padding-left: 1.69231em;
+}
+
+.figure-caption {
+	font-size: 0.84615em;
+	line-height: 1.36364em;
+	margin-top: 0.09091em;
+}
+
+input, textarea, button {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: checkbox;
+}
+
+input[type="radio"] {
+	-webkit-appearance: radio;
+}
+
+#alttext-container {
+	display: none !important;
+}
+
+#cntAbrechnungskontoDaten #cntKontoauswahl #chcAbrechnungskonto {
+	font-family: courier !important;
+}
+
+.v-app .v-ddwrapper {
+	padding: 0px !important;
+}
+
+#cookiehinweisform {
+	position: relative;
+	min-height: 30px;
+	background-color: #e5eff7;
+	width: 100%;
+	z-index: 10001;
+}
+
+#cookiehinweisform .cookiehinweisblock {
+	color: #333333;
+	width: 930px;
+	margin: auto;
+	padding: 5px 0;
+}
+
+#cookiehinweisform .cookiehinweisblock .cookiehinweis {
+	width: 895px;
+	display: inline-block;
+	padding: 0 10px;
+}
+
+#cookiehinweisform .cookiehinweisblock .cookiehinweis a {
+	color: #0066B3;
+}
+
+#cookiehinweisform .cookiehinweisblock form {
+	width: 15px;
+	display: inline;
+}
+
+#cookiehinweisform .cookiehinweisblock form button {
+	width: 15px;
+	height: 15px;
+	border: 0 none transparent;
+	position: absolute;
+	top: 8px;
+}

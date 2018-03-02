@@ -1,0 +1,257 @@
+#headerContainer #lastLogin,
+#headerContainer #metaNavigation,
+#headerContainer .teaser,
+#serviceNavigation,
+#locationContainer,
+#topicContainer,
+#pathNavigation,
+.pageFunctions,
+#sideContent,
+#mainContent .additionalInfo,
+#footerContainer,
+.access,
+.adContainer,
+.redDotSnippet,
+.OPRA_portal_teaserAction {
+	display: none !important;
+}
+
+#printoutNotice,
+body#login .redDotSnippet,
+.warning,
+.backendError,
+.activeNotification .redDotSnippet,
+#ConductCustomerSatisfactionSurvey .redDotSnippet,
+.OPRA_portal_teaserColInner .OPRA_portal_teaserText ul {
+	display: block !important;
+}
+
+body {
+	font-size: 62.5% !important;
+	background: #fff;
+	margin: 0;
+	text-align: left;
+}
+
+#rollContainer {
+	min-width: inherit;
+	max-width: none;
+	width: auto !important;
+	display: block;
+}
+
+#globalContainer,
+#folderContainer {
+	background: #fff;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contentContainer {
+	background: #fff;
+	padding: 0;
+	margin: -2em 0 0 0 !important;
+	min-height: none;
+	height: auto;
+}
+
+#contentContainer h1,
+#page .box-hd h2 {
+	background: none !important;
+	margin: 0 !important;
+	padding: 0 3em 1em 0 !important;
+}
+
+#mainContent, .mainContentWidth, .top, #prepaidPIN {
+	margin-right: 0 !important;
+}
+
+#contentContainer a {
+	text-decoration: underline !important;
+}
+
+.formContainer,
+.option,
+div.nextStep,
+div.advice,
+div.backendError,
+#OPRAcontainer #eingabe,
+#OPRAcontainer #completion #OPRA_page_content,
+#OPRA_SB_portal .OPRA_SB_section {
+	border: 2px solid #f4f3f2 !important;
+}
+
+div.warning,
+div.backendError {
+	border-color: #fff8ed !important;
+}
+
+.formContainer div.warning,
+div.top,
+#OPRAcontainer #checkData #eingabe, 
+#OPRAcontainer #completion #eingabe, 
+#OPRAcontainer #tanError #eingabe {
+	border: none !important;
+}
+
+div.advice h3,
+div.backendError h3,
+div.advice ul.lastChild li a,
+div.backendError ul.lastChild li a,
+.errorMsg,
+#OPRAcontainer span.error,
+#OPRAcontainer #checkData .spanlink a:link, 
+#OPRAcontainer #checkData .spanlink a:visited,
+#OPRAcontainer #OPRA_div-static-head, 
+#OPRAcontainer #OPRA_div-static-head_second, 
+#OPRAcontainer #OPRA_div-static-head_third, 
+#OPRAcontainer #OPRA_div-static-head_fourth, 
+#OPRAcontainer #OPRA_flat_rate_text, 
+#OPRAcontainer #OPRA_flat_rate_tax_text_info,
+#OPRAcontainer #OPRA_module_client_dependant_text_notice h3,
+#OPRAcontainer #OPRA_module_client_dependant_text_notice2 h3,
+.trxm_db_self_ko_lastschriftrueckgabe #OPRA_module_client_dependant_text_notice_pre h3,
+#OPRA_SB_portal .OPRA_SB_overview .OPRA_SB_section li a:link,
+#OPRA_SB_portal .OPRA_SB_overview .OPRA_SB_section li a:visited,
+#page .box-title h2 + p,
+#page #baseFeedback {
+	padding-left: 0 !important;
+	background-image: none !important;
+}
+
+textarea, 
+input[type="text"],
+input[type="password"],
+select {
+	border-color: #9ba5b5;
+}
+
+input.button,
+input[type="button"],
+input[type="submit"] {
+	border: 1px solid #c0bbb5;
+}
+
+#contentContainer table th,
+#contentContainer table td,
+#contentContainer table th.dividing,
+#contentContainer table td.dividing,
+#OPRAcontainer #checkData fieldset h3, 
+#OPRAcontainer #checkData fieldset#OPRA_page_summary_deposit p, 
+#OPRAcontainer #checkData fieldset#OPRA_page_summary_riskrate p, 
+#OPRAcontainer #checkData fieldset#OPRA_summary_includedServices p,
+#page .table-hd {
+	border-bottom: 1px solid #dbdfe6;
+	background-image: none;
+}
+
+#contentContainer table th,
+#OPRAcontainer #checkData fieldset h3, 
+#OPRAcontainer #checkData fieldset#OPRA_page_summary_deposit p, 
+#OPRAcontainer #checkData fieldset#OPRA_page_summary_riskrate p, 
+#OPRAcontainer #checkData fieldset#OPRA_summary_includedServices p,
+#page .table-hd {
+	border-bottom-color: #bbc2ce;
+}
+
+#contentContainer table th.dividing,
+#contentContainer table td.dividing {
+	border-bottom-style: dotted;
+	background-image: none !important;
+}
+
+.optional,
+#contentContainer table.layout th,
+#contentContainer table.layout td,
+#contentContainer table tr.headline td,
+#contentContainer table tr.containsAdvice td,
+#DisplayFinancialOverview h1 + table thead th,
+#OPRAcontainer #OPRA_div-static-head, #OPRAcontainer 
+#OPRA_div-static-head_second, 
+#OPRAcontainer #OPRA_div-static-head_third, 
+#OPRAcontainer #OPRA_div-static-head_fourth, 
+#OPRAcontainer #OPRA_flat_rate_text, 
+#OPRAcontainer #OPRA_flat_rate_tax_text_info {
+	border-bottom: none;
+}
+
+*+html #contentContainer table.selectable,
+*+html #contentContainer table.sortable {
+	border-collapse: collapse !important;	
+}
+
+#contentContainer table tr.success td {
+	background-image: none !important;
+	padding-left: 5px !important;
+}
+
+.formContainer .subsequent,
+.formContainer tr.subsequent th,
+.formContainer tr.subsequent td,
+.formContainer .subsequentL,
+.formContainer tr.subsequentL th,
+.formContainer tr.subsequentL td {
+    border-top-width: 0 !important;
+}
+
+.formContainer .SEPAready .col01,
+.formContainer .SEPAready .col03,
+.formContainer #beneficiaryBankDetails,
+#OPRAcontainer fieldset,
+#OPRA_portal_teaserContainer h2 {
+	border: 2px solid #eae8e6 !important;
+}
+
+#SepaDirectDebit .formContainer .SEPAready .col01,
+#SepaDirectDebit .formContainer .SEPAready .col03,
+#SepaDirectDebitTemplates .formContainer .SEPAready .col01,
+#SepaDirectDebitTemplates .formContainer .SEPAready .col03,
+#CreateEUStandardTransfer .formContainer .SEPAready .col01,
+#CreateEUStandardTransfer .formContainer .SEPAready .col03,
+#CreateForeignPaymentOrder .formContainer .SEPAready .col01,
+#CreateForeignPaymentOrder .formContainer .SEPAready .col03,
+#OPRAcontainer #checkData fieldset,
+#OPRA_portal #mainContent,
+.advice table,
+#OPRAcontainer #OPRA_module_client_dependant_text_introNotification,
+#OPRAcontainer #OPRA_module_client_dependant_text_notice,
+#OPRAcontainer #OPRA_module_client_dependant_text_notice2,
+.trxm_db_self_ko_lastschriftrueckgabe #OPRA_module_client_dependant_text_notice_pre,
+.trxm_db_self_ko_lastschriftrueckgabe #OPRA_module_client_dependant_text_introNotificationDirectDebit {
+	border: none !important;
+}
+
+#contentContainer .formContainer .formAction,
+#OPRAcontainer #OPRA_buttons {
+	background: none !important;
+	border-top: 12px solid transparent !important;
+	margin: 0 !important;
+	padding-top: 0 !important;
+}
+
+#OPRAcontainer #OPRA_buttons {
+	padding-bottom: 15px !important;
+}
+
+.OPRA_portal_teaserCol {
+	height: auto !important;
+}
+
+.OPRA_portal_teaserText ul {
+	min-height: inherit !important;
+}
+
+#OPRA_SB_portal .OPRA_SB_overview .OPRA_SB_section h2 {
+	margin-left: 0;
+}
+
+.cssFrame,
+#OPRAcontainer div.scrollableTableInner {
+	height: auto;
+	overflow: visible;	
+}
+
+#page .box-creditcard-statement .box-title h2 + p {
+	padding-top: 10px;
+}

@@ -1,0 +1,1 @@
+function changePhoneNumberPrefixDropdown(a,b,c,d){jQuery("#"+a+" option:selected").text()==d?(jQuery("#"+c).show(),jQuery("#"+b).hide()):(jQuery("#"+c).hide(),jQuery("#"+b).show())}

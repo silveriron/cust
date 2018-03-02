@@ -1,0 +1,540 @@
+#site {
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%272000%27%20height%3D%27201%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20xmlns%3Asvg%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%3E%3Crect%20fill%3D%27%23e5eff7%27%20stroke%3D%27%23000000%27%20stroke-width%3D%270%27%20x%3D%270%27%20y%3D%27115%27%20width%3D%272000%27%20height%3D%2745%27%20id%3D%27svg_2%27%2F%3E%3Crect%20fill%3D%27%23cccccc%27%20stroke%3D%27%23000000%27%20stroke-width%3D%270%27%20x%3D%270%27%20y%3D%27200%27%20width%3D%272000%27%20height%3D%271%27%20id%3D%27svg_3%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.darken-layer {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -9999px;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.darken-layer.open {
+	left: 0;
+	right: 0;
+	z-index: 8026;
+}
+
+.crossnavBlock2, .crossnavBlock3, .crossnavBlock4 .formInput, .crossnavBlock5, .crossnavBlock6 {
+	margin: 15px 0 10px 0;
+}
+
+.wCadcrossnavigationNichtAngemeldet, .wCadcrossnavigation {
+	color: #333333;
+	border-right: 1px solid #cccccc;
+	border-top: 7px solid #cccccc;
+}
+
+.XContainer.crossnavBlock {
+	border: 1px solid #cccccc;
+	border-top: 7px solid #cccccc;
+}
+
+.wCadcrossnavigationNichtAngemeldet, .XContainer.crossnavBlock {
+	width: 300px;
+}
+
+.crossNavPFM .widgetframe {
+	width: 299px;
+}
+
+#contextCommands {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	width: 299px !important;
+}
+
+.contentDiv, .crossnavContent, #tblPosteingang, #tblAktuellWichtig, #tblFunktionenServices, #tblMitteilungenVTM, #tblProdukteAngebote, .wCadcrossnavigationNichtAngemeldet, .wCadcrossnavigation, .wCadcontentdetail {
+	background-image: none !important;
+}
+
+#rsct_opttan_generation {
+	background-color: transparent !important;
+}
+
+.crossnavContent, #tblPosteingang, #tblAktuellWichtig, #tblFunktionenServices, #tblMitteilungenVTM, #tblProdukteAngebote, .wCadcrossnavigationNichtAngemeldet, .wCadcrossnavigation, .wCadcontentdetail {
+	background-color: #ffffff;
+}
+
+.wCadcrossnavigationNichtAngemeldet, .wCadcrossnavigation {
+	border-color: #cccccc;
+	color: #333333;
+}
+
+#navigation.empty {
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%272000%27%20height%3D%27201%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20xmlns%3Asvg%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%3E%3Crect%20fill%3D%27%23e5eff7%27%20stroke%3D%27%23000000%27%20stroke-width%3D%270%27%20x%3D%270%27%20y%3D%27115%27%20width%3D%272000%27%20height%3D%2745%27%20id%3D%27svg_2%27%2F%3E%3Crect%20fill%3D%27%23cccccc%27%20stroke%3D%27%23000000%27%20stroke-width%3D%270%27%20x%3D%270%27%20y%3D%27200%27%20width%3D%272000%27%20height%3D%271%27%20id%3D%27svg_3%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+	background-position: 0 -115px;
+}
+
+#nav {
+	background-color: #e5eff7;
+	border-color: #e5eff7;
+	height: 45px;
+}
+
+#nav a {
+	line-height: 44px;
+}
+
+#nav-layer {
+	border-width: 0 0 1px;
+	border-color: #cccccc;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	padding-left: 15px;
+}
+
+.nav-layer-tab {
+	padding: 5px 12px 9px 12px;
+	border: solid #ffffff;
+	border-width: 1px 1px 0 1px;
+	margin-left: -14px;
+	top: -3em;
+	line-height: 2.2em;
+}
+
+.nav-layer-tab:before, .nav-layer-tab:after {
+	display: none;
+}
+
+.breadcrumb-layer li {
+	margin-left: -0.12em;
+}
+
+.breadcrumb-layer ul {
+	border: solid #e1e1e1;
+	border-width: 1px;
+	padding-left: 6px;
+}
+
+.breadcrumb-tab {
+	border: solid #e1e1e1;
+	border-width: 1px 1px 0px 1px;
+	top: -2px;
+}
+
+.no-js .breadcrumb-layer:hover .breadcrumb-tab, .breadcrumb-layer.open .breadcrumb-tab {
+	margin-bottom: -2px;
+}
+
+.breadcrumb-layer strong:before {
+	margin-left: -0.095em;
+}
+
+.flyout {
+	padding-left: 18px;
+}
+
+#tblVGUebersicht span .TextLink {
+	color: #5a5a5a;
+}
+
+.jsdropdown.readonly dt a, .jsdropdown.readonly dt.XChoiceCombo {
+	border-color: #cccccc;
+}
+
+#cntMTAN #cntAktionen .TextButton, #tblTAN #cntAktionen .TextButton, #cntPushTAN #cntAktionen .TextButton, #cntChipTAN #cntAktionen .TextButton, #tblLastschriften .nowrap .TextButton, #tblDauerauftraege #cntAktionen .TextButton, #cntDauerauftragsdaten #cntAktionen .TextButton, #actSucheEinAusblenden .TextButton, #actSuchkriterienSpeichern .TextButton, #cntSuchen #actErweiterungEinblenden .TextButton, #cntSuchen #actErweiterungAusblenden .TextButton, #tblTerminueberweisungen #cntAktionen .TextButton, #tblAuftraege #cntAktionen .TextButton, #tblSammler #cntAktionen .TextButton, #cntAktionen .TextLink, #cntAktions .TextButton, #tblPersonen #cntAktionen .TextButton, #tblAuftragFreigabe1 #cntAktionen .TextButton, #tblAuftragFreigabe2 #cntAktionen .TextButton, #tblTerminAuftraege #cntAktionen .TextButton, #cntDateiFreigabe #cntAktionen .TextButton, #tblTabelleBSH .TextButton, #tblDateiFreigabe .TextButton, #tblAuftragFreigabe1 .TextButton, #tblAuftragFreigabe2 .TextButton, #tblTerminAuftraege .TextButton, #cntZVAuftragKompakt .TextButton, #tblFreistellungsauftraege .TextButton, #tblKartenUebersicht .TextButton, #cntQuickcheckEingabe #lnkBerechnen, #actErgebnisPartnerEinblenden .TextButton, #xvwErgebnisAnw #cntDaten .TextButton, #cntQRCodeFunktionText #lnkWCInfoLink, .Transaktionsblock .TextButton, #actZweitenInteressentenEinblenden, #lnkEBELink {
+	color: #5a5a5a !important;
+}
+
+#cntKompaktInfo .TextButton, .Transaktionsblock .TextButton, #tblKartenUebersicht .TextLink, #tblPersonen .TextLink, #tblKontoauszuege .TextLink, #tblWertpapiermitteilungen .TextLink, #tblKontenKundenMitteilungen .TextLink, #tblHVMitteilungen .TextLink, #tblKreditkartenabrechnungen .TextLink, #tblKundenMitteilungen .TextLink, #cntFinanzstatus .TextButton, #actTANOptisch .TextButton, #actTANManuell .TextButton, #cntVertragsgegenstandBezeichnung .TextLink, #tblBerechtigungPersonen .TextLink, #tblUebersicht .TextLink, .AktionswechselBlock .TextButton, #cntSepaAuftrag .TextLink, #tblAdressuebersicht .TextLink, #tblKontenZuKonten .TextButton, #cntDateiUploadOhneFlashAction .TextLink, #cntDateiUploadMitFlashAction .TextLink, #actEinAusblenden .TextButton, #actFlowAnzeigen .TextButton, #actChartAnzeigen .TextButton, #tblTilgungsplanJahre .TextButton, #tblAntragsnummern .TextLink, #tblSuchergebnis .TextButton, #cntBezeichnung a, #tblDateianhaenge .TextButton, #xvwKorrespondenzNachrichtEmbedded .TextButton, #tblAnhaenge .TextButton, #actAlternativeBankverbindung .TextButton, #tblVormerkungen .TextButton {
+	color: #0066B3 !important;
+}
+
+div.UnitCommands input.UnitCommand, .Aktionsleiste .TextButton, #actHistorie, #actNeuanlage, #cntAnzeigeSeite .TextButton, #actZahlungsartWaehlen, #actSuchen, #cntSuchen .TextButton, #actTerminAendern, #lnkNeuAnmelden, #actDateiHinzufuegen, #commandReturnFromFTS, #actExport, #actErsetzen, #actUebernehmen, #actLoeschen, #actExportImportOK, .TanButton, #actZurueck, #cntAktionen #actZurueck, #actBerechnen, #cntBerechnungsvariante .TextButton, #cntBetrachtungszeitraum .TextButton {
+	color: #0066B3 !important;
+	border: 1px solid;
+}
+
+#lnkNeuAnmelden {
+	padding: 4px 6px 4px 6px !important;
+}
+
+#cntAktionen .TwoLetterButton.TextButton {
+	color: #0066B3 !important;
+}
+
+#cntKompaktInfo image {
+	display: none;
+}
+
+.XChoiceCombo, .XChoiceList, .XDate, .XDecimal, .XText, .XPassword, .XInteger .TextButton, .XTextArea {
+	font-family: Segoe UI, Arial, sans-serif !important;
+}
+
+div.UnitCommands input.UnitCommand, .Aktionsleiste .TextButton, #actHistorie, #actNeuanlage, #cntAnzeigeSeite .TextButton, #actZahlungsartWaehlen, #actSuchen, #cntSuchen .TextButton, #actTerminAendern, #lnkNeuAnmelden, #actDateiHinzufuegen, #commandReturnFromFTS, #actExport, #actErsetzen, #actUebernehmen, #actLoeschen, #actExportImportOK, .TanButton, #actZurueck, #cntAktionen #actZurueck, #actBerechnen, #cntBerechnungsvariante .TextButton, #cntBetrachtungszeitraum .TextButton {
+	font-family: Segoe UI, Arial, sans-serif !important;
+	padding: 0em 0.3em 0px 0.3em;
+}
+
+.Infoblock td {
+	padding-left: 0px;
+}
+
+body, .Normal, .body, span .Submitlink, .XTabSelected, .XTabUnselected, .XTabSelected tr, #bankname, #exception, #WPV_GAD .navigationBar input, .XFileSelector, .XAction.UnitCommand {
+	font-family: Segoe UI, Arial, sans-serif !important;
+}
+
+.jsdropdown dd ul {
+	top: -1px !important;
+}
+
+#hilfe a:link {
+	color: #0066B3 !important;
+}
+
+#nav-layer {
+	min-height: 40px;
+}
+
+.nav-level-1 a {
+	line-height: 40px;
+	margin-right: 17px;
+}
+
+#nav .active a, #nav .active a:hover, #hilfe #nav .active a, #hilfe #nav .active a:hover {
+	color: #FF6600 !important;
+	background-color: #ffffff;
+	margin-top: -3px;
+}
+
+#nav .active {
+	margin: 0 0 -20px;
+}
+
+:root #nav li.active {
+	z-index: 999;
+	height: 45px;
+	border-top: 3px solid #FF6600;
+	margin-right: 0px;
+}
+
+#nav-layer a, #nav-layer a:hover, #hilfe .nav-level-1 > li > a {
+	color: #0066B3 !important;
+}
+
+#nav-layer a.active, #nav-layer a.active:hover, #hilfe .nav-level-1 > li > a.active {
+	color: #FF6600 !important;
+}
+
+#cntPosteingangTitel, #cntFunktionenServicesTitel, #cntMitteilungenVTMTitel, #cntProdukteAngeboteTitel, #cntAktuellWichtigTitel {
+	padding: 10px 0 6px 0;
+	background-color: #ffffff;
+}
+
+#hilfe {
+	background: #ffffff !important;
+}
+
+#logoutBlock #logoutstatus_root {
+	background-image: none !important;
+	min-height: 104px;
+}
+
+#lnkNeuAnmelden {
+	white-space: nowrap;
+}
+
+#main {
+	margin-bottom: 0px;
+	border: none;
+}
+
+#maincontent {
+	margin-bottom: 0px;
+}
+
+.contentDiv {
+	margin-bottom: 0px;
+	padding-bottom: 50px;
+}
+
+.InfoblockUndInhalt td {
+	padding-left: 0px;
+}
+
+#cntBlockBookmarkSonder, #infoMessages ul {
+	border: 1px solid #ff6600 !important;
+}
+
+#plhAuthorization {
+	background-color: #ffffff !important;
+}
+
+.Tan {
+	border: 1px solid #ff6600;
+	padding: 10px;
+	background-color: #f3f3f3 !important;
+}
+
+div.UnitCommands {
+	margin-top: 30px;
+}
+
+.KontoAuswahl td {
+	padding: 5px 5px 10px 0px;
+}
+
+.Transaktionsblock td {
+	padding-left: 0px;
+}
+
+#cntHinweis, #cntHinweisAnmeldung, #cntTANGenerator, #cntKarteAktivierenInhalt, #cntKategorieChipTANGebuehrInhalt, #cntSonderbedingungenInhalt, #cntUeberweisung, #cntUeberweisungsteil, #cntAusfuehrung, #cntSepaLastschriftdaten, #cntBlockBookmark, #cntBlockBookmarkSonder, .Bestaetigung, #cntKontoinformationen, .cntKontoinfo, #tblUmsatzdaten, #cntZugaenge, #cntDispovormerkungen, #cntLastschriftenLimite, #cntLastschriftenEingereichteLastschriftenOderScheck, #cntLastschriftenEingereichteSepaLastschriften, #cntLastschriftenVorliegendeSepaLastschriften, #tblAuftragFreigabe1, #cntAuftragFreigabe, #cntDateiFreigabe, #cntDatenDateiupload, #cntTerminAuftraege {
+	margin-bottom: 0px;
+}
+
+.Tabellenblock, #cntInhalt {
+	margin-bottom: 30px;
+}
+
+#cntDaten #cntInhalt, #mainContent_cntRoot #cntKontenKundenMitteilungen, #mainContent_cntRoot #cntKundenMitteilungen {
+	margin-bottom: 0px;
+}
+
+#mainContent_cntRoot #cntInhalt {
+	margin-bottom: 12px;
+}
+
+#cntUmsatzanzeige {
+	margin-bottom: 0px;
+}
+
+#navError {
+	border: 1px solid #cc0000;
+}
+
+.seitenanfang {
+	width: 100%;
+	padding-top: 50px;
+}
+
+.seitenanfang a {
+	bottom: 50px;
+	right: 0px;
+	padding-left: 0px;
+	background-position: 73px 5px;
+	width: 84px;
+}
+
+#footernaviInfoMenu {
+	width: 100%;
+	height: 38px;
+	border: none;
+	border-top: 1px solid #cccccc;
+}
+
+#footernaviInfoMenu ul {
+	padding: 0;
+	padding-top: 9px;
+	font-size: 13px !important;
+	position: relative;
+	left: 50%;
+	margin-left: -455px;
+	width: 950px;
+}
+
+#footernaviInfoMenu ul li {
+	padding: 0;
+	padding-left: 15px;
+}
+
+.XTable tr td {
+	padding: 4px 6px 4px 6px;
+}
+
+#cntAktuellWichtig #cntMitteilung, #cntPosteingang #cntMitteilung {
+	margin-left: 10px;
+	margin-bottom: 23px;
+}
+
+.TitelIcon img {
+	padding-left: 10px;
+}
+
+.Titel td {
+	padding-left: 0px;
+}
+
+.actionBar {
+	padding-top: 6px;
+}
+
+#cntAnzeigeSeite #actSpeichern {
+	margin-bottom: 26px;
+}
+
+#lblUeberschrift {
+	color: #333333;
+}
+
+.wCadcontentdetail .contentTitle {
+	padding-left: 14px;
+}
+
+.wCadcontentdetail .wCadtext, .wCadcontentdetail .werbungtoppadding {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.XChoiceCombo, .XChoiceList, .XDate, .XDecimal, .XText, .XPassword, .XInteger, #cntSuchen .TextButton, #actDateiHinzufuegen {
+	height: 24px !important;
+	font-size: 13px !important;
+}
+
+.Formularblock td {
+	padding: 3px 8px 3px 0px;
+}
+
+.XTextArea {
+	padding: 7px;
+}
+
+div.messages, #infoMessages {
+	margin-bottom: 0px;
+}
+
+#errorMessages ul {
+	padding: 10px;
+	border: 1px solid #cc0000;
+}
+
+#warningMessages ul {
+	padding: 10px;
+	background-color: #f3f3f3;
+	border: 1px solid #ff6600;
+}
+
+#infoMessages ul {
+	padding: 10px;
+	background-color: #f3f3f3 !important;
+	color: #333333 !important;
+	border: 1px solid #f3f3f3 !important;
+}
+
+#tblPersonen {
+	margin-top: 4px;
+}
+
+div.UnitCommands input.UnitCommand:active {
+	border: 1px solid #0066B3 !important;
+}
+
+#logoutBlock #logoutstatus_root table {
+	padding: 0px;
+}
+
+#logoutBlock {
+	top: 5px;
+}
+
+#cntAbmelden {
+	width: 108px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc #cccccc #ffffff #cccccc;
+	margin-right: -2px;
+	position: relative;
+	top: 1px;
+	right: 2px;
+	padding-top: 8px;
+	padding-bottom: 6px;
+}
+
+#logoutBlock .TextButton {
+	top: -1px;
+	margin-right: 8px !important;
+	line-height: 30px;
+}
+
+#cntAbmeldungMitStatus > table > tbody > tr:nth-child(2) > td {
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	padding-top: 3px;
+}
+
+#cntAbmeldungMitStatus > table > tbody > tr:nth-child(3) > td:first-child, #cntAbmeldungMitStatus > table > tbody > tr:nth-child(4) > td:first-child {
+	border-left: 1px solid #cccccc;
+}
+
+#cntAbmeldungMitStatus > table > tbody > tr:nth-child(3) > td:last-child, #cntAbmeldungMitStatus > table > tbody > tr:nth-child(4) > td:last-child {
+	border-right: 1px solid #cccccc;
+}
+
+#cntAbmeldungMitStatus > table > tbody > tr:last-child > td {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #cccccc;
+}
+
+#logoutBlock #lblAngemeldeterBenutzername, #logoutBlock #lblLetzteAnmeldung, #logoutBlock #lblLetzteAnmeldungStatus {
+	margin-left: 7px;
+}
+
+#logoutBlock #lblAngemeldeterBenutzername, #logoutBlock #lblTimeoutStatus, #logoutBlock #lblBenutzerkennungValue {
+	margin-right: 3px;
+}
+
+#cntAbmeldungMitStatus tr {
+	background-color: #ffffff;
+}
+
+#cntAbmeldungMitStatus > table > tbody > tr:first-child {
+	background-color: transparent;
+}
+
+#cntAbmelden {
+	background-color: #ffffff;
+}
+
+#lblTitelKreditbetrag, #lblTitelLaufzeit, #lblTitelMonatlicheRate, #cntRestkreditversicherungTitel #lblRestkreditversicherung, .TabellenIntegrierterTitel, .wCadcontentdetail .contentTitle, #lblTanHinweis.XLabel, #lblMTANDetails.XLabel, #txtTan, #xvwEndsaldoValue, #cntFreistellungsauftraege #lblUeberschrift, #cntUebersichtEnde #cntTitel.FormularblockKontextOben table, #lblAbsenderValue, #lblAnValue, #lblErhaltenValue, thead th span.XLabel, #logoutBlock #lblAngemeldeterBenutzername {
+	font-weight: bold;
+}
+
+#tblPrimaerNavigationen .XLink img {
+	padding-bottom: 0px;
+}
+
+#cntNeueAnmeldung #lnkErneutAnmeldenLabel {
+	color: #0066B3 !important;
+	font-family: Segoe UI, Arial, sans-serif !important;
+	font-size: 16px;
+}
+
+.Bestaetigung .BestaetigungInhalt #cntNeueAnmeldung {
+	margin-top: 15px;
+}
+
+#lnkNeueAnmeldung {
+	display: inline-block;
+	margin-top: 4px;
+}
+
+#lnkErneutAnmeldenLabel {
+	border: 1px solid #0066B3;
+	padding: 4px 6px 4px 6px;
+}
+
+#lblErfolgreichePinAenderung {
+	padding-bottom: 18px;
+}
+
+.ui-slider-horizontal {
+	box-shadow: none;
+}
+
+#lblAufEinenBlickTitel, #lblZusammenfassung {
+	font-size: 18px;
+	color: #5a5a5a;
+}
+
+.XTableContext {
+	color: #333333 !important;
+	background-color: #e5eff7;
+}
+
+.Suchblock table {
+	border: 1px solid;
+	border-color: #f3f3f3 !important;
+}

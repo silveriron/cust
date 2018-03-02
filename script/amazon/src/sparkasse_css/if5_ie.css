@@ -1,0 +1,35 @@
+/*doNotCompress*/
+
+/*ALAUN/MARTIN**************Klassen fuer Transparenzen ******************************************/
+.alpha20 {
+	filter:Alpha(opacity=20);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+}
+
+.alpha40 {
+	filter:Alpha(opacity=40);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+}
+
+.alpha50 {
+	filter:alpha(opacity=50);	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+.alpha60 {
+	filter:Alpha(opacity=60);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+
+.alpha80 {
+	filter:Alpha(opacity=80);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.peelbackground h2.headline{
+	text-align: right;
+	display: table-cell;
+	padding-right:10px;
+	font-size:2.4em;
+	vertical-align:bottom;	
+}

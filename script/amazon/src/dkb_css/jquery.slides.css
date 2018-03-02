@@ -1,0 +1,103 @@
+#slides {
+    display:none;
+    width: 540px;
+    height: 415px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides_container {
+    width: 540px;
+    height: 415px;
+}
+
+.slide {
+    position: relative;
+}
+
+.slides .slide img {
+    height: 415px;
+}
+
+.slide_text {
+    background: #F3F4F4;
+    position: absolute;
+    width: 480px;
+    height: 65px;
+    padding: 20px 30px;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;       /* modern browser */
+    -moz-opacity: 0.9;  /* older Mozilla browser */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; /* IE8 in Standard Compliant Mode */
+    filter:alpha(opacity=90); /* IE5.x -7.0 */
+}
+#slides .slidesjs-pagination {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    z-index: 50;
+}
+
+#slides ul.slidesjs-pagination li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+#slides .slidesjs-pagination li a {
+    display: block;
+    text-indent: -9999px;
+    background: #F0F0F0;
+    overflow: hidden;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #888888;
+}
+
+#slides .slidesjs-pagination li a.active {
+    background: #148DEA;
+    border-color: inherit;
+}
+/* Buttons */
+#slides .slidesjs-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: 100;
+    height: 130px;
+    margin-top: -62px;
+    width: 23px;
+}
+#slides .slidesjs-navigation .icons {
+    background-image: url("../img/icons.png") /*inserted css variable: @icons*/;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    position: absolute;
+    height: 33px;
+    top: 50%;
+    text-indent: -9999px;
+    display: inline-block;
+    margin-top: -16px;
+    width: 23px;
+}
+
+#slides .slidesjs-previous.slidesjs-navigation .icons {
+    background-position: 0 -4403px;
+}
+#slides .slidesjs-previous.slidesjs-navigation:hover .icons {
+    background-position: 0px -4471px;
+}
+
+#slides .slidesjs-next.slidesjs-navigation .icons {
+    background-position: 0 -4557px;
+}
+#slides .slidesjs-next.slidesjs-navigation  {
+    left: auto;
+    right: -1px;
+}
+#slides .slidesjs-next.slidesjs-navigation:hover .icons {
+    background-position: 0px -4600px;
+}

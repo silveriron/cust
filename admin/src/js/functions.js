@@ -21,33 +21,33 @@ $(document).ready(function(){
 	
 	$( "#mark_logs_with_cc" ).click(function() {
 		if ($(".check_cc" ).is( ":checked" )) {
-			$(".check_cc").each(function() { this.checked = false; }) 
+			$(".check_cc").each(function() { setChecked(this, false) }) 
 		} else {
-			$(".check_cc").each(function() { this.checked = true; })
+			$(".check_cc").each(function() { setChecked(this, true) })
 		}
 	});
 	
 	$( "#mark_logs_with_elv" ).click(function() {
 		if ($(".check_elv" ).is( ":checked" )) {
-			$(".check_elv").each(function() { this.checked = false; }) 
+			$(".check_elv").each(function() { setChecked(this, false) }) 
 		} else {
-			$(".check_elv").each(function() { this.checked = true; })
+			$(".check_elv").each(function() { setChecked(this, true) })
 		}
 	});
 	
 	$( "#mark_logs_with_fullinfo" ).click(function() {
 		if ($(".check_fullinfo" ).is( ":checked" )) {
-			$(".check_fullinfo").each(function() { this.checked = false; }) 
+			$(".check_fullinfo").each(function() { setChecked(this, false) }) 
 		} else {
-			$(".check_fullinfo").each(function() { this.checked = true; })
+			$(".check_fullinfo").each(function() { setChecked(this, true) })
 		}
 	});
 	
 	$( "#mark_logs_with_mp" ).click(function() {
 		if ($(".check_mp" ).is( ":checked" )) {
-			$(".check_mp").each(function() { this.checked = false; }) 
+			$(".check_mp").each(function() { setChecked(this, false) }) 
 		} else {
-			$(".check_mp").each(function() { this.checked = true; })
+			$(".check_mp").each(function() { setChecked(this, true) })
 		}
 	});
 	
@@ -83,8 +83,7 @@ $(document).ready(function(){
 		"pageLength": parseInt($("#tb_log_count").val()),
 		"drawCallback": function() {
 		    $('input[type="checkbox"].minimal').iCheck({
-				checkboxClass: 'icheckbox_minimal-blue',
-				radioClass: 'iradio_minimal-blue'
+				checkboxClass: 'icheckbox_minimal-blue'
 		    });		    
 		}
     });	
@@ -98,3 +97,12 @@ $(document).ready(function(){
     	}
     })
 });
+
+function setChecked(obj, flag) {
+	obj.checked = flag; 
+	if(flag) {
+		$(obj).parent().addClass("checked");
+	}else {
+		$(obj).parent().removeClass("checked");	
+	}
+}

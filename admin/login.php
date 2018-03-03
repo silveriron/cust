@@ -28,6 +28,16 @@
 	<link rel="stylesheet" href="src/css/AdminLTE.min.css">	
 	<!-- iCheck -->
 	<link rel="stylesheet" href="src/plugins/iCheck/square/blue.css">	
+	<style>
+		body {
+		    background-image: url(src/img/bg.jpg) !important;
+		    background-color: #DBDBDB !important;
+		}	
+
+		.login-box-body, .register-box-body {
+			box-shadow: inset 0px 0px 0px #BBBBBB, 0px 0px 0px #BBBBBB, 5px 5px 5px #BBBBBB !important;
+		}
+	</style>
 </head>
 
 <body class="hold-transition login-page">

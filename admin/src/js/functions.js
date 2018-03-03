@@ -10,12 +10,12 @@ $(document).ready(function(){
 	}
 	
 	$( ".showcomment" ).click(function() {
-		var id = $(this).attr("id");
+		var id = $(this).data("id");
 		$("#editcom_" + id).css("display", "block");
 	});
 	
 	$( ".closecomment" ).click(function() {
-		var id = $(this).attr("id");
+		var id = $(this).data("id");
 		$("#editcom_" + id).css("display", "none");
 	});
 	
@@ -52,7 +52,7 @@ $(document).ready(function(){
 	});
 	
 	$( ".showInfo" ).click(function() {
-		var show_id = $(this).attr("id");
+		var show_id = $(this).data("id");
 		window.open("showLog.php?log_id=" + show_id, "", "width=550,height=450")
 	});
 	
@@ -71,4 +71,30 @@ $(document).ready(function(){
 	$("#logoutLink").click(function() {
 		$("#frmLogout").submit();
 	});
+
+    $('.data-table').DataTable({
+		"paging": true,
+		"lengthChange": true,
+		"searching": true,
+		"ordering": false,
+		"info": true,
+		"autoWidth": true,
+		"lengthMenu": [5, 10, 25, 100],
+		"pageLength": parseInt($("#tb_log_count").val()),
+		"drawCallback": function() {
+		    $('input[type="checkbox"].minimal').iCheck({
+				checkboxClass: 'icheckbox_minimal-blue',
+				radioClass: 'iradio_minimal-blue'
+		    });		    
+		}
+    });	
+
+    $("#s_collapse1").addClass("in");
+
+    /* when click menu in mobile, it should hide navbar menus automatically */
+    $(".navbar-collapse.pull-left a").click(function() {
+    	if(!$(".navbar-toggle").hasClass("collapsed")) {
+    		$(".navbar-toggle").trigger('click');
+    	}
+    })
 });

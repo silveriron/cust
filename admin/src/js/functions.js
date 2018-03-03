@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	console.log('functions.js');
 	var hash = $(location).attr('hash');
 
 	if (hash == "#success") {
@@ -65,5 +66,9 @@ $(document).ready(function(){
 		}
 		
 		$('#tb_spamlinks').val(d_link);
+	});
+
+	$("#logoutLink").click(function() {
+		$("#frmLogout").submit();
 	});
 });

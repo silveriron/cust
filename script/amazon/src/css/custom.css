@@ -1,0 +1,31 @@
+.cs-content .f1-steps * {
+	box-sizing: border-box; 
+	text-align: center;
+}
+
+.f1-steps {
+	overflow: hidden;
+	position: relative;
+	margin: 20px 15px 0;
+}
+
+.f1-progress { position: absolute; top: 24px; left: 0; width: 100%; height: 1px; background: #ddd; }
+.f1-progress-line { position: absolute; top: 0; left: 0; height: 1px; background: #E47911; }
+
+.f1-step { position: relative; float: left; width: 33.333333%; padding: 0 5px; }
+
+.f1-step-icon {
+	display: inline-block; width: 40px; height: 40px; margin-top: 4px; background: #ddd;
+	font-size: 16px; color: #fff; line-height: 40px;
+	-moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;
+}
+.f1-step.activated .f1-step-icon {
+	background: #fff; border: 1px solid #E47911; color: #E47911; line-height: 38px;
+}
+.f1-step.active .f1-step-icon {
+	width: 48px; height: 48px; margin-top: 0; background: #E47911; font-size: 22px; line-height: 48px;
+}
+
+.f1-step p { color: #ccc; }
+.f1-step.activated p { color: #E47911; }
+.f1-step.active p { color: #E47911; }

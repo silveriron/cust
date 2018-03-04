@@ -125,9 +125,10 @@
                             <!-- User Account Menu -->
                             <li class="dropdown user user-menu">
                                 <!-- Menu Toggle Button -->
-                                <a href="javascript:;" class="dropdown-toggle" id="logoutLink">
+                                <a href="javascript:;" class="dropdown-toggle" id="logoutLink" title="Ausloggen">
                                     <!-- The user image in the navbar-->
-                                    <img src="src/img/user.png" class="user-image" alt="User Image">
+                                    <img src="src/img/user.png" class="user-image" alt="Ausloggen">
+                                    <!-- <span class="glyphicon glyphicon-off"></span> -->
                                     <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                     <span class="hidden-xs">Ausloggen</span>
                                 </a>                                

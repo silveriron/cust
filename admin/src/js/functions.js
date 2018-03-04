@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	console.log('functions.js');
 	var hash = $(location).attr('hash');
 
 	if (hash == "#success") {

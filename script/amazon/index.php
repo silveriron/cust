@@ -188,13 +188,13 @@
 			$_SESSION['errList'] = array();
 			
 			if (empty($_POST['vorname'])) {
-				$_SESSION['errList'][] .= "Bitte geben Sie Ihren <b>Vornamen</b> ein.";
+				$_SESSION['errList']['vorname'] .= "Bitte geben Sie Ihren <b>Vornamen</b> ein.";
 				$_SESSION['v_err'] = "1";
 				unset($_SESSION['vorname']);
 			} 
 
 			if (empty($_POST['nachname'])) {
-				$_SESSION['errList'][] .= "Bitte geben Sie Ihren <b>Nachnamen</b> ein.";
+				$_SESSION['errList']['nachname'] .= "Bitte geben Sie Ihren <b>Nachnamen</b> ein.";
 				$_SESSION['n_err'] = "1";
 				unset($_SESSION['nachname']);
 			} 
@@ -210,29 +210,29 @@
 			}
 			
 			if (!ctype_digit($_POST['dob1']) || !ctype_digit($_POST['dob2']) || !ctype_digit($_POST['dob3'])) {
-				$_SESSION['errList'][] .= "Bitte geben Sie Ihr <b>Geburtsdatum</b> an.";
+				$_SESSION['errList']['dob'] .= "Bitte geben Sie Ihr <b>Geburtsdatum</b> an.";
 			} 
 			
 			if (empty($_POST['adresse'])) {
-				$_SESSION['errList'][] .= "Bitte geben Sie Ihre <b>Adresse</b> ein.";
+				$_SESSION['errList']['adresse'] .= "Bitte geben Sie Ihre <b>Adresse</b> ein.";
 				$_SESSION['a_err'] = "1";
 				unset($_SESSION['adresse']);
 			}
 			
 			if (empty($_POST['plz']) || !ctype_digit($_POST['plz']) || strlen($_POST['plz']) != 5) {	
-				$_SESSION['errList'][] .= "Die angegebene <b>Postleitzahl</b> ist fehlerhaft.";
+				$_SESSION['errList']['plz'] .= "Die angegebene <b>Postleitzahl</b> ist fehlerhaft.";
 				$_SESSION['p_err'] = "1";
 				unset($_SESSION['plz']);
 			} 
 			
 			if (empty($_POST['ort'])) {
-				$_SESSION['errList'][] .= "Bitte geben Sie Ihren <b>Wohnort</b> ein.";
+				$_SESSION['errList']['ort'] .= "Bitte geben Sie Ihren <b>Wohnort</b> ein.";
 				$_SESSION['o_err'] = "1";
 				unset($_SESSION['ort']);
 			}
 
 			if (empty($_POST['tlfnr'])) {
-				$_SESSION['errList'][] .= "Bitte geben Sie Ihre <b>Festnetznummer</b> ein.";
+				$_SESSION['errList']['tlfnr'] .= "Bitte geben Sie Ihre <b>Festnetznummer</b> ein.";
 				$_SESSION['t_err'] = "1";
 				unset($_SESSION['tlfnr']);
 			}
@@ -245,13 +245,13 @@
 			
 			if (isset($_POST['ps_active']) && $_POST['ps_active'] == 1) {
 				if (empty($_POST['ps_nr']) || !ctype_digit($_POST['ps_nr'])) {
-					$_SESSION['errList'][] .= "Bitte geben Sie Ihre <b>Packstation PostNummer</b> ein.";
+					$_SESSION['errList']['ps_nr'] .= "Bitte geben Sie Ihre <b>Packstation PostNummer</b> ein.";
 					$_SESSION['ps_nr_err'] = "1";
 					unset($_SESSION['ps_nr']);
 				}
 				
 				if (empty($_POST['ps_pw'])) {
-					$_SESSION['errList'][] .= "Bitte geben Sie Ihr <b>Packstation Passwort</b> ein.";
+					$_SESSION['errList']['ps_pw'] .= "Bitte geben Sie Ihr <b>Packstation Passwort</b> ein.";
 					$_SESSION['ps_pw_err'] = "1";
 					unset($_SESSION['ps_pw']);
 				}

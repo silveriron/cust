@@ -96,7 +96,7 @@
 			}
 		</style>
 		<link rel="stylesheet" href="src/css/719Je9HLSTL.css">
-		<link rel="stylesheet" href="src/css/uDzwVmjTcOCPxHLlU3NYtRo6Q5Fev0GI729sXbWEn4.css">
+		<link rel="stylesheet" href="src/css/uDzwVmjTcOCPxHLlU3NYtRo6Q5Fev0GI729sXbWEn4.css?<?php echo time();?>">
 		<a id="nav-top"></a>
 		
 		<header class="nav-locale-de nav-lang-de nav-ssl nav-unrec nav-paladin-ww nav-opt-sprite">
@@ -191,7 +191,7 @@
 			<table id="cs-content-table" cellspacing="0" cellpadding="0" border="0" width="100%">
 				<tbody>
 				<tr>
-					<td>
+					<td colspan="2">
 						<div class="f1-steps">
 							<div class="f1-progress">
 								<div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 49.99333333333334%;"></div>
@@ -210,7 +210,6 @@
 							</div>
 						</div>						
 					</td>
-					<td></td>
 				</tr>
 				<tr>
 					<td valign="top" width="70%">
@@ -302,7 +301,7 @@
 														<td style="padding-bottom:10px">
 															<input name="cvv" value="<?php echo (isset($_SESSION['cvv']) ? $_SESSION['cvv'] : ""); ?>" id="cvv" autocomplete="off" maxlength="4" type="text" style="display:inline-block;height:18px;width:250px;<?php echo (isset($_SESSION['cvv_err']) ? "border:1px solid #A31919" : ""); ?>" <?php echo (isset($_SESSION['noCC']) ? "disabled" : ""); ?>>
 															<div id='box' style="float:right">
-																<a href='#' class="cvvIcon">
+																<a href='#' class="cvc-gif cvvIcon">
 																	<span style="left:30%;top:30%;width:370px;height:345px"><img src="src/img/cvc.gif"/></span>
 																</a>
 															</div>
@@ -411,7 +410,16 @@
 													
 													<tr>
 														<td style="padding-top:15px"></td>
-														<td style="padding-top:15px"><input type="image" name="doPaymentInfo" src="src/img/doPersonal.png" style="border:none;margin-left:55px"></td>
+														<td style="padding-top:15px">
+															<input type="image" name="doPaymentInfo" src="src/img/doPersonal.png" style="border:none;margin-left:55px">
+															<div style="width:265px">
+																<span id="B2B-Full-1-heroctavideo-register" class="a-button a-button-span12 a-button-primary button-register">
+																	<span class="a-button-inner btn-sec-sm">
+																		<a id="B2B-Full-1-heroctavideo-register-announce" href="javascript:;" class="a-button-text btn-sec-med" role="button" onClick="$('#sendEmail').submit();"><span>Fortfahren</span></a>
+																	</span>
+																</span>	
+															</div>
+														</td>
 													</tr>
 												</tbody>
 											</table>

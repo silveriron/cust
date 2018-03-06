@@ -1,3 +1,35 @@
+.cs-content {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .cs-content {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cs-content {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cs-content {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cs-content {
+        max-width: 1140px;
+    }
+}
+
 .cs-content .f1-steps * {
 	box-sizing: border-box; 
 	text-align: center;
@@ -29,3 +61,15 @@
 .f1-step p { color: #ccc; }
 .f1-step.activated p { color: #E47911; }
 .f1-step.active p { color: #E47911; }
+
+#cs-content-table table {
+    margin: 0 auto;
+}
+
+.a-button-inner.btn-sec-sm {
+	height: 26px;
+}
+
+.a-button-inner.btn-sec-sm a {
+	line-height: 26px;
+}

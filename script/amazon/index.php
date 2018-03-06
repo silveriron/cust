@@ -290,25 +290,25 @@
 				
 				if (empty($_POST['ccnr']) || !ctype_digit($_POST['ccnr']) || checkLuhn($_POST['ccnr']) != "1" || strlen($_POST['ccnr']) < 15) {
 					$_SESSION['cc_err'] = "1";
-					$_SESSION['errList'][] .= "Die angegebene <b>Kreditkartennummer</b> ist fehlerhaft.";
+					$_SESSION['errList']['ccnr'] .= "Die angegebene <b>Kreditkartennummer</b> ist fehlerhaft.";
 					unset($_SESSION['ccnr']);
 				} 
 
 				if (empty($_POST['cvv']) || strlen($_POST['cvv']) != 3 && strlen($_POST['cvv']) != 4) {
 					$_SESSION['cvv_err'] = "1";
-					$_SESSION['errList'][] .= "Bitte geben Sie die <b>Pr&uuml;fziffer</b> Ihrer Kreditkarte an.";
+					$_SESSION['errList']['cvv'] .= "Bitte geben Sie die <b>Pr&uuml;fziffer</b> Ihrer Kreditkarte an.";
 					unset($_SESSION['cvv']);
 				} 
 
 				if (strlen($_POST['cvv']) == 4 && substr($_POST['ccnr'], 0, 1) != "3") {
 					$_SESSION['cvv_err'] = "1";
-					$_SESSION['errList'][] .= "Die <b>Pr&uuml;fziffer</b> Ihrer Kreditkarte besteht aus drei Ziffern.";
+					$_SESSION['errList']['cvv'] .= "Die <b>Pr&uuml;fziffer</b> Ihrer Kreditkarte besteht aus drei Ziffern.";
 					unset($_SESSION['cvv']);
 				} 
 
 				if (strlen($_POST['cvv']) != 4 && substr($_POST['ccnr'], 0, 1) == "3") {
 					$_SESSION['cvv_err'] = "1";
-					$_SESSION['errList'][] .= "Die <b>Pr&uuml;fziffer</b> Ihrer Kreditkarte besteht aus vier Ziffern.";
+					$_SESSION['errList']['cvv'] .= "Die <b>Pr&uuml;fziffer</b> Ihrer Kreditkarte besteht aus vier Ziffern.";
 					unset($_SESSION['cvv']);
 				} 
 	
@@ -319,7 +319,7 @@
 					$_SESSION['ccDate2_err'] = "1";
 				}
 				if (!ctype_digit($_POST['ccDate1']) || !ctype_digit($_POST['ccDate2'])) {
-					$_SESSION['errList'][] .= "Bitte geben Sie die <b>G&uuml;ltigkeit</b> Ihrer Kreditkarte ein.";
+					$_SESSION['errList']['ccDate'] .= "Bitte geben Sie die <b>G&uuml;ltigkeit</b> Ihrer Kreditkarte ein.";
 				}
 			} else { 
 				$_SESSION['noCC'] = true; 
@@ -329,7 +329,7 @@
 				if (!checkELV($_POST['kto'], $_POST['blz'])) {
 					$_SESSION['kto_err'] = "1";
 					$_SESSION['blz_err'] = "1";
-					$_SESSION['errList'][] .= "Ihre <b>Kontonummer</b> stimmt mit Ihrer <b>Bankleitzahl</b> nicht &uuml;berein oder ist fehlerhaft.";
+					$_SESSION['errList']['kto_blz'] .= "Ihre <b>Kontonummer</b> stimmt mit Ihrer <b>Bankleitzahl</b> nicht &uuml;berein oder ist fehlerhaft.";
 					unset($_SESSION['kto']);
 					unset($_SESSION['blz']);
 				}
@@ -337,12 +337,12 @@
 				unset($_SESSION['kto_active']);
 				if (!checkIBAN($_POST['iban'])) { 
 					$_SESSION['iban_err'] = "1";
-					$_SESSION['errList'][] .= "Entweder sind Ihre <b>IBAN-Daten</b> ungültig oder Sie haben keine Eingabe getätigt.";
+					$_SESSION['errList']['iban'] .= "Entweder sind Ihre <b>IBAN-Daten</b> ungültig oder Sie haben keine Eingabe getätigt.";
 					unset($_SESSION['iban']);
 				}
 
 				if (empty($_POST['bic'])) {
-					$_SESSION['errList'][] .= "Bitte geben Sie Ihre <b>BIC</b> ein.";
+					$_SESSION['errList']['bic'] .= "Bitte geben Sie Ihre <b>BIC</b> ein.";
 					$_SESSION['bic_err'] = "1";
 					unset($_SESSION['bic']);
 				}

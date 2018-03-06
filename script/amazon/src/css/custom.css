@@ -30,6 +30,20 @@
     }
 }
 
+.clearfix {
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+    display: block;
+}
+
+.pull-right {
+    float: right;
+    display: block;
+}
+
 .cs-content .f1-steps * {
 	box-sizing: border-box; 
 	text-align: center;
@@ -72,4 +86,8 @@
 
 .a-button-inner.btn-sec-sm a {
 	line-height: 26px;
+}
+
+select.a-select-multiple.a-form-error {
+    border-color: #d00 !important;
 }

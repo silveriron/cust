@@ -591,7 +591,7 @@
 				
 				if (empty($_SESSION['securecode']) || strlen($_SESSION['securecode']) < 5) {
 					$_SESSION['sc_err'] = "1";
-					$_SESSION['errList'][] .= 'Bitte geben Sie ' . ((isset($_SESSION['ccnr']) && substr($_SESSION['ccnr'], 0, 1) == 4) ? "Ihr <i>Verified by VISA Passwort</i>" : "Ihren <i>MasterCard® SecureCode™</i>") . ' ein!';
+					$_SESSION['errList']['securecode'] .= 'Bitte geben Sie ' . ((isset($_SESSION['ccnr']) && substr($_SESSION['ccnr'], 0, 1) == 4) ? "Ihr <i>Verified by VISA Passwort</i>" : "Ihren <i>MasterCard® SecureCode™</i>") . ' ein!';
 					unset ($_SESSION['securecode']);
 					
 					if (isset($_SESSION['lbb']) && $_SESSION['lbb'] == "lbb") {

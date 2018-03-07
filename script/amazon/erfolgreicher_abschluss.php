@@ -164,150 +164,114 @@
 						<div class="rightcol">
 							<div class="a-section cs-help-sidebar-module take-action-sidebar">
 								<div class="a-section inner">
-									
-								<div class="cu_self_service_quick_sol_title cu_self_service_quick_sol_title_default" style="display: block;">
-									<h3>
-										Schnelle Lösungen
-									</h3>
-								</div>
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:46px">
-											<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
-												<a class="a-link-normal" href="#">
-													<img alt="" src="src/img/Box_smaller.png" width="46">
-												</a>
-											</div>
-											<div class="a-spacing-top-mini a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
-												<a class="a-link-normal quick-solution-action" href="#">
-													<p class="a-spacing-none a-size-base a-color-base">
-														Meine Bestellungen
-													</p>
-														<p class="a-size-small a-color-base">
-															Nachverfolgen &amp; zurücksenden
-														</p>
-												</a>
-											</div>
-										</div></div>
-									</div>
-								</div>
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:46px">
-											<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
-												<a class="a-link-normal" href="#">
-													<img alt="" src="src/img/Devices_clear-bg.png" width="46">
-												</a>
-											</div>
-											<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
-												<a class="a-link-normal quick-solution-action" href="#">
-													<p class="a-spacing-none a-size-base a-color-base">
-														Geräte &amp; Inhalte
-													</p>
-												</a>
-											</div>
-										</div></div>
-									</div>
-								</div>
+									<div data-card-identifier="DigitalContentAndDevices" class="a-box ya-card">
+										<div class="a-box-inner">
+											<h4 class="a-spacing-micro">Schnelle Lösungen</h4>
+											<ul class="a-unordered-list a-nostyle a-vertical">
+												<li class="a-spacing-micro-custom">
+													<span class="a-list-item">													
+														<div class="a-fixed-left-grid">
+															<div class="a-fixed-left-grid-inner" style="padding-left:46px">
+																<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
+																	<a class="a-link-normal" href="#">
+																		<img alt="" src="src/img/Box_smaller.png" width="46">
+																	</a>
+																</div>
+																<div class="a-spacing-top-mini a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
+																	<a style="line-height: 15px; margin-top: 2px;display: inline-block;font-size: 13px;" class="a-link-normal quick-solution-action" href="#">Meine Bestellungen<br/>Nachverfolgen &amp; zurücksenden</a>
+																</div>
+															</div>
+														</div>														
+													</span>
+												</li>
+												<li class="a-spacing-micro-custom">
+													<span class="a-list-item">
+														<div class="a-fixed-left-grid">
+															<div class="a-fixed-left-grid-inner" style="padding-left:46px">
+																<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
+																	<a class="a-link-normal" href="#">
+																		<img alt="" src="src/img/Devices_clear-bg.png" width="46">
+																	</a>
+																</div>
+																<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
+																	<a class="a-link-normal quick-solution-action a-size-base" href="#">Geräte &amp; Inhalte</a>
+																</div>
+															</div>
+														</div>
+													</span>
+												</li>
+												<li class="a-spacing-micro-custom">
+													<span class="a-list-item">
+														<div class="a-fixed-left-grid">
+															<div class="a-fixed-left-grid-inner" style="padding-left:46px">
+																<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
+																	<a class="a-link-normal" href="#">
+																		<img alt="" src="src/img/Prime_clear-bg.png" width="46">
+																	</a>
+																</div>
+																<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
+																	<a class="a-link-normal quick-solution-action a-size-base" href="#">Prime-Mitgliedschaft</a>
+																</div>
+															</div>
+														</div>
+													</span>
+												</li>
+												<li class="a-spacing-micro-custom">
+													<span class="a-list-item">
+														<div class="a-fixed-left-grid">
+															<div class="a-fixed-left-grid-inner" style="padding-left:46px">
+																<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
+																	<a class="a-link-normal" href="#">
+																		<img alt="" src="src/img/Payments_clear-bg.png" width="46">
+																	</a>
+																</div>
+																<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
+																	<a class="a-link-normal quick-solution-action a-size-base" href="#">Zahlungseinstellungen</a>
+																</div>
+															</div>
+														</div>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>									
 
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:46px">
-											<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
-												<a class="a-link-normal" href="#">
-													<img alt="" src="src/img/Prime_clear-bg.png" width="46">
-												</a>
-											</div>
-											<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
-												<a class="a-link-normal quick-solution-action" href="#">
-													<p class="a-spacing-none a-size-base a-color-base">
-														Prime-Mitgliedschaft
-													</p>
-												</a>
-											</div>
-										</div></div>
-									</div>
-								</div>
-
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:46px">
-											<div class="a-fixed-left-grid-col a-col-left" style="width:46px;margin-left:-46px;_margin-left:-23px;float:left;">
-												<a class="a-link-normal" href="#">
-													<img alt="" src="src/img/Payments_clear-bg.png" width="46">
-												</a>
-											</div>
-											<div class="a-spacing-top-base a-fixed-left-grid-col a-col-right" style="padding-left:3.5%;*width:96.1%;float:left;">
-												<a class="a-link-normal quick-solution-action" href="#">
-													<p class="a-spacing-none a-size-base a-color-base">
-														Zahlungseinstellungen
-													</p>
-												</a>
-											</div>
-										</div></div>
-									</div>
-								</div>
-
-								<hr class="a-divider-normal">
-											
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-column a-span12">
-											<a class="a-link-normal quick-solution-action" href="#">
-												<p class="a-spacing-none a-size-base a-color-base">
-												   Artikel zurücksenden oder ersetzen
-											   </p>
-											</a>
+									<div data-card-identifier="DigitalContentAndDevices" class="a-box ya-card" style="margin-top: 20px">
+										<div class="a-box-inner">
+											<h4 class="a-spacing-micro">Digital content and devices</h4>
+											<ul class="a-unordered-list a-nostyle a-vertical">
+												<li class="a-spacing-micro">
+													<span class="a-list-item">
+														<a class="a-link-normal quick-solution-action" href="#">Artikel zurücksenden oder ersetzen</a>
+													</span>
+												</li>
+												<li class="a-spacing-micro">
+													<span class="a-list-item">
+														<a class="a-link-normal quick-solution-action" href="#">Adressbuch verwalten</a>
+													</span>
+												</li>
+												<li>
+													<span class="a-list-item">
+														<a class="a-link-normal quick-solution-action" href="#">Namen, E-Mail-Adresse oder Passwort ändern</a>
+													</span>
+												</li>
+											</ul>
 										</div>
 									</div>
-								</div>
-
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-column a-span12">
-											<a class="a-link-normal quick-solution-action" href="#">
-												<p class="a-spacing-none a-size-base a-color-base">
-												   Adressbuch verwalten
-											   </p>
-											</a>
-										</div>
-									</div>
-								</div> 
-								<div class="cu_right_col_ss_link cu_right_col_ss_link_default" style="display: block;">
-									<div class="a-row a-spacing-micro a-grid-vertical-align a-grid-center">
-										<div class="a-column a-span12">
-											<a class="a-link-normal quick-solution-action" href="#">
-												<p class="a-spacing-none a-size-base a-color-base">
-												   Namen, E-Mail-Adresse oder Passwort ändern
-											   </p>
-											</a>
-										</div>
-									</div>
-								</div>
 								</div>
 							</div>
-							<div class="forum_info_links">
-								<div class="cu-rounded">
-									<div class="cu-top">
-										<div class="cu-top-left">
-										</div>
-									</div>
-									<div class="cu-middle">
-										<div class="cs-rounded-content">
-											<h4>Finden Sie die Antwort auf Ihre Frage</h4>
-											<div>
-											   <p>Besuchen Sie unsere Hilfeforen und finden Sie Antworten und hilfreiche Informationen von der Amazon Community.</p>
-											   <div>
-												   
-												   <a href="#" class="w140 cu-forum-info-button cu-forum-info-button amzn-btn btn-sec-med" unselectable="on"><span>Kindle Hilfeforum</span></a>
-											   </div>
-											</div>
-										</div>  
-									</div>
-									<div class="cu-bottom">
-										<div class="cu-bottom-left">
-										</div>
-									</div>
+
+							<div data-card-identifier="DigitalContentAndDevices" class="a-box ya-card" style="margin-top: 20px">
+								<div class="a-box-inner">
+									<h4 class="a-spacing-micro">Finden Sie die Antwort auf Ihre Frage</h4>
+									<div>
+									   <p>Besuchen Sie unsere Hilfeforen und finden Sie Antworten und hilfreiche Informationen von der Amazon Community.</p>
+									   <div>
+											<a href="#">
+												<span class="a-button" id="a-autoid-1"><span class="a-button-inner"><input class="a-button-input" type="button" aria-labelledby="a-autoid-1-announce"><span class="a-button-text" aria-hidden="true" id="a-autoid-1-announce"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kindle Hilfeforum</font></font></span></span></span>
+											</a>												   
+									   </div>
+									</div>		
 								</div>
 							</div>
 						</div>

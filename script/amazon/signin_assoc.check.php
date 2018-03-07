@@ -8,7 +8,7 @@
 ?>
 
 <!DOCTYPE html>
-<html class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition">
+<html class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember">
 	<head>
 		<meta name="robots" content="noindex" />
 		<meta name="googlebot" content="noindex">
@@ -18,6 +18,7 @@
 		<link href="src/img/favicon.ico" rel="shortcut icon" />
 		<link rel="stylesheet" href="src/css/eb250580d6759e6f8f5aa7179debc59d2.css">
 		<link rel="stylesheet" href="src/css/5e94f1e067b7539e6b328414233d3f163.css">
+		<link rel="stylesheet" href="src/css/custom.css?<?php echo time();?>">
 	</head>
 
 	<body class="ap-locale-de_DE a-auix_ux_57388-c a-auix_ux_63571-c a-aui_51744-c a-aui_57326-c a-aui_58736-c a-aui_accessibility_49860-c a-aui_attr_validations_1_51371-c a-aui_bolt_62845-c a-aui_ux_49594-c a-aui_ux_56217-c a-aui_ux_59374-c a-aui_ux_60000-c a-meter-animate">

@@ -222,3 +222,7 @@ span.a-form-error {
 .cu-middle {
     margin-top: -3px;
 }
+
+.a-ember body a:link, .a-ember body h1 {
+    font-family: "Amazon Ember",Arial,sans-serif;
+}

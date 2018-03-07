@@ -182,7 +182,7 @@
 			<table id="cs-content-table" cellspacing="0" cellpadding="0" border="0" width="100%">
 				<tbody>
 				<tr>
-					<td>
+					<td colspan="2">
 						<div class="f1-steps">
 							<div class="f1-progress">
 								<div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 49.99333333333334%;"></div>

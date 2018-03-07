@@ -92,11 +92,16 @@ select.a-select-multiple.a-form-error {
     border-color: #d00 !important;
 }
 
+.rightcol h4 {
+    font-size: 13px;
+    font-weight: 600    
+}
+
 .rightcol .cu_right_col_ss_link a.a-link-normal {
     font-weight: 700;
 }
 
-.rightcol .cu_right_col_ss_link a.a-link-normal:hover {
+.rightcol a.a-link-normal:hover {
     color: #C60;
 }
 
@@ -169,7 +174,7 @@ select.a-select-multiple.a-form-error {
 }
 
 span.a-form-error {
-    border-color: #d00;
+    border-color: #d00 !important;
     box-shadow: 0 0 0 3px rgba(221,0,0,.1) inset;
 }
 
@@ -212,4 +217,8 @@ span.a-form-error {
 
 .a-section {
     margin-bottom: 20px;
+}
+
+.cu-middle {
+    margin-top: -3px;
 }

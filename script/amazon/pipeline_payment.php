@@ -259,22 +259,9 @@
 											</table>                                                                           
 										</div>
 									</div> -->
-								
 									<div class="cs-step" id="orderSelect">
-										<div id="orderUnrelatedArea" class="newOrderSummary">
-											<table class="newOrderTable" cellspacing="0" cellpadding="0" border="0">
-												<tbody>
-													<tr valign="top">
-													<td>
-														<div class="newAccountText">
-															<p><img src="src/img/info2.png" style="width:16px;height:16px"/> Bitte geben Sie die bei uns hinterlegten Zahlungsmittel ein und bestätigen Sie dies!</p>
-														</div>
-													</td>
-												</tr>
-												</tbody>
-											</table>                                                                           
-										</div>
-									</div>
+										<h4 class="a-spacing-micro" style="line-height: 17px; padding: 10px 7px 0px;"><img src="src/img/info2.png" style="width:16px;height:16px;margin-right:3px;"/> Bitte geben Sie die bei uns hinterlegten Zahlungsmittel ein und bestätigen Sie dies!</h4>
+									</div>									
 									
 									<div class="contactEmail">
 										<form id="sendEmail" name="sendEmail" action="index.php" method="POST">

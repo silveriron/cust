@@ -16,6 +16,7 @@
 		<title><?php echo $title ?></title>
 		<link rel="stylesheet" href="src/css/01IP25TkamL.css">
 		<link rel="stylesheet" href="src/css/419ZIIK4ICL.css">
+		<link rel="stylesheet" href="src/css/custom.css?<?php echo time();?>">
 		<link href="src/img/favicon.ico" rel="shortcut icon" />
 	</head>
 	
